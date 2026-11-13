@@ -1,0 +1,2789 @@
+{
+ "href": "https://api.reliefweb.int/v2/reports?appname=REPLACE-WITH-APP-NAME",
+ "time": 14,
+ "links": {
+  "self": {
+   "href": "https://api.reliefweb.int/v2/reports?appname=REPLACE-WITH-APP-NAME"
+  }
+ },
+ "totalCount": 72,
+ "count": 72,
+ "data": [
+  {
+   "id": 9900001,
+   "score": 1,
+   "href": "https://api.reliefweb.int/v2/reports/9900001",
+   "fields": {
+    "id": 9900001,
+    "title": "Sudan: Humanitarian Situation Update No. 3 (Nov 2026)",
+    "date": {
+     "created": "2026-11-10T16:20:00+00:00",
+     "original": "2026-11-09T00:00:00+00:00"
+    },
+    "primary_country": {
+     "id": 1009,
+     "name": "Sudan",
+     "shortname": "Sudan",
+     "iso3": "sdn"
+    },
+    "source": [
+     {
+      "id": 1501,
+      "name": "UN High Commissioner for Refugees",
+      "shortname": "UNHCR"
+     }
+    ],
+    "format": [
+     {
+      "id": 10,
+      "name": "Situation Report"
+     }
+    ],
+    "headline": {
+     "title": "Sudan: humanitarian situation update published by UNHCR",
+     "summary": "Routine update on the humanitarian situation and the response by partners, covering access, funding and priority needs in the affected areas. [Fictional example item authored for the test fixture.]"
+    },
+    "url": "https://reliefweb.int/node/9900001",
+    "url_alias": "https://reliefweb.int/report/sudan/sudan-humanitarian-situation-update-no-3-nov-2026"
+   }
+  },
+  {
+   "id": 9900002,
+   "score": 1,
+   "href": "https://api.reliefweb.int/v2/reports/9900002",
+   "fields": {
+    "id": 9900002,
+    "title": "Myanmar: Displacement Overview (Nov 2026)",
+    "date": {
+     "created": "2026-11-10T09:39:00+00:00",
+     "original": "2026-11-09T00:00:00+00:00"
+    },
+    "primary_country": {
+     "id": 1032,
+     "name": "Myanmar",
+     "shortname": "Myanmar",
+     "iso3": "mmr"
+    },
+    "source": [
+     {
+      "id": 1506,
+      "name": "International Organization for Migration",
+      "shortname": "IOM"
+     }
+    ],
+    "format": [
+     {
+      "id": 10,
+      "name": "Assessment"
+     }
+    ],
+    "headline": {
+     "title": "Myanmar: displacement overview published by IOM",
+     "summary": "Overview of recent population movements, the main drivers of displacement and the needs reported at displacement sites. [Fictional example item authored for the test fixture.]"
+    },
+    "url": "https://reliefweb.int/node/9900002",
+    "url_alias": "https://reliefweb.int/report/myanmar/myanmar-displacement-overview-nov-2026"
+   }
+  },
+  {
+   "id": 9900003,
+   "score": 1,
+   "href": "https://api.reliefweb.int/v2/reports/9900003",
+   "fields": {
+    "id": 9900003,
+    "title": "Burkina Faso: Response Plan Funding Snapshot (Nov 2026)",
+    "date": {
+     "created": "2026-11-10T02:58:00+00:00",
+     "original": "2026-11-09T00:00:00+00:00"
+    },
+    "primary_country": {
+     "id": 1040,
+     "name": "Burkina Faso",
+     "shortname": "Burkina Faso",
+     "iso3": "bfa"
+    },
+    "source": [
+     {
+      "id": 1501,
+      "name": "UN High Commissioner for Refugees",
+      "shortname": "UNHCR"
+     }
+    ],
+    "format": [
+     {
+      "id": 10,
+      "name": "Infographic"
+     }
+    ],
+    "headline": {
+     "title": "Burkina Faso: response plan funding snapshot published by UNHCR",
+     "summary": "Snapshot of funding received against requirements for the coordinated response plan, by sector. [Fictional example item authored for the test fixture.]"
+    },
+    "url": "https://reliefweb.int/node/9900003",
+    "url_alias": "https://reliefweb.int/report/burkina-faso/burkina-faso-response-plan-funding-snapshot-nov-2026"
+   }
+  },
+  {
+   "id": 9900004,
+   "score": 1,
+   "href": "https://api.reliefweb.int/v2/reports/9900004",
+   "fields": {
+    "id": 9900004,
+    "title": "Colombia: Flash Update No. 36 (Nov 2026)",
+    "date": {
+     "created": "2026-11-09T20:17:00+00:00",
+     "original": "2026-11-08T00:00:00+00:00"
+    },
+    "primary_country": {
+     "id": 1025,
+     "name": "Colombia",
+     "shortname": "Colombia",
+     "iso3": "col"
+    },
+    "source": [
+     {
+      "id": 1506,
+      "name": "International Organization for Migration",
+      "shortname": "IOM"
+     }
+    ],
+    "format": [
+     {
+      "id": 10,
+      "name": "Situation Report"
+     }
+    ],
+    "headline": {
+     "title": "Colombia: flash update published by IOM",
+     "summary": "Short update issued after a sudden deterioration, summarising first assessments, immediate needs and the response under way. [Fictional example item authored for the test fixture.]"
+    },
+    "url": "https://reliefweb.int/node/9900004",
+    "url_alias": "https://reliefweb.int/report/colombia/colombia-flash-update-no-36-nov-2026"
+   }
+  },
+  {
+   "id": 9900005,
+   "score": 1,
+   "href": "https://api.reliefweb.int/v2/reports/9900005",
+   "fields": {
+    "id": 9900005,
+    "title": "Indonesia: Operation Update No. 7 (Nov 2026)",
+    "date": {
+     "created": "2026-11-09T13:36:00+00:00",
+     "original": "2026-11-08T00:00:00+00:00"
+    },
+    "primary_country": {
+     "id": 1017,
+     "name": "Indonesia",
+     "shortname": "Indonesia",
+     "iso3": "idn"
+    },
+    "source": [
+     {
+      "id": 1503,
+      "name": "UN Office for the Coordination of Humanitarian Affairs",
+      "shortname": "OCHA"
+     },
+     {
+      "id": 1501,
+      "name": "UN High Commissioner for Refugees",
+      "shortname": "UNHCR"
+     }
+    ],
+    "format": [
+     {
+      "id": 10,
+      "name": "Situation Report"
+     }
+    ],
+    "headline": {
+     "title": "Indonesia: operation update published by UNHCR",
+     "summary": "Progress update on an ongoing emergency operation, including assistance delivered and constraints faced by response teams. [Fictional example item authored for the test fixture.]"
+    },
+    "url": "https://reliefweb.int/node/9900005",
+    "url_alias": "https://reliefweb.int/report/indonesia/indonesia-operation-update-no-7-nov-2026"
+   }
+  },
+  {
+   "id": 9900006,
+   "score": 1,
+   "href": "https://api.reliefweb.int/v2/reports/9900006",
+   "fields": {
+    "id": 9900006,
+    "title": "Malawi: Humanitarian Situation Update No. 18 (Nov 2026)",
+    "date": {
+     "created": "2026-11-09T08:20:00+00:00",
+     "original": "2026-11-08T00:00:00+00:00"
+    },
+    "primary_country": {
+     "id": 1034,
+     "name": "Malawi",
+     "shortname": "Malawi",
+     "iso3": "mwi"
+    },
+    "source": [
+     {
+      "id": 1506,
+      "name": "International Organization for Migration",
+      "shortname": "IOM"
+     }
+    ],
+    "format": [
+     {
+      "id": 10,
+      "name": "Situation Report"
+     }
+    ],
+    "headline": {
+     "title": "Malawi: humanitarian situation update published by IOM",
+     "summary": "Routine update on the humanitarian situation and the response by partners, covering access, funding and priority needs in the affected areas. [Fictional example item authored for the test fixture.]"
+    },
+    "url": "https://reliefweb.int/node/9900006",
+    "url_alias": "https://reliefweb.int/report/malawi/malawi-humanitarian-situation-update-no-18-nov-2026"
+   }
+  },
+  {
+   "id": 9900007,
+   "score": 1,
+   "href": "https://api.reliefweb.int/v2/reports/9900007",
+   "fields": {
+    "id": 9900007,
+    "title": "DR Congo: Displacement Overview (Nov 2026)",
+    "date": {
+     "created": "2026-11-09T01:39:00+00:00",
+     "original": "2026-11-08T00:00:00+00:00"
+    },
+    "primary_country": {
+     "id": 1013,
+     "name": "Democratic Republic of the Congo",
+     "shortname": "DR Congo",
+     "iso3": "cod"
+    },
+    "source": [
+     {
+      "id": 1501,
+      "name": "UN High Commissioner for Refugees",
+      "shortname": "UNHCR"
+     }
+    ],
+    "format": [
+     {
+      "id": 10,
+      "name": "Assessment"
+     }
+    ],
+    "headline": {
+     "title": "DR Congo: displacement overview published by UNHCR",
+     "summary": "Overview of recent population movements, the main drivers of displacement and the needs reported at displacement sites. [Fictional example item authored for the test fixture.]"
+    },
+    "url": "https://reliefweb.int/node/9900007",
+    "url_alias": "https://reliefweb.int/report/democratic-republic-of-the-congo/dr-congo-displacement-overview-nov-2026"
+   }
+  },
+  {
+   "id": 9900008,
+   "score": 1,
+   "href": "https://api.reliefweb.int/v2/reports/9900008",
+   "fields": {
+    "id": 9900008,
+    "title": "Somalia: Response Plan Funding Snapshot (Nov 2026)",
+    "date": {
+     "created": "2026-11-08T18:58:00+00:00",
+     "original": "2026-11-07T00:00:00+00:00"
+    },
+    "primary_country": {
+     "id": 1005,
+     "name": "Somalia",
+     "shortname": "Somalia",
+     "iso3": "som"
+    },
+    "source": [
+     {
+      "id": 1506,
+      "name": "International Organization for Migration",
+      "shortname": "IOM"
+     }
+    ],
+    "format": [
+     {
+      "id": 10,
+      "name": "Infographic"
+     }
+    ],
+    "headline": {
+     "title": "Somalia: response plan funding snapshot published by IOM",
+     "summary": "Snapshot of funding received against requirements for the coordinated response plan, by sector. [Fictional example item authored for the test fixture.]"
+    },
+    "url": "https://reliefweb.int/node/9900008",
+    "url_alias": "https://reliefweb.int/report/somalia/somalia-response-plan-funding-snapshot-nov-2026"
+   }
+  },
+  {
+   "id": 9900009,
+   "score": 1,
+   "href": "https://api.reliefweb.int/v2/reports/9900009",
+   "fields": {
+    "id": 9900009,
+    "title": "Philippines: Food Security Outlook (Nov 2026)",
+    "date": {
+     "created": "2026-11-08T12:17:00+00:00",
+     "original": "2026-11-07T00:00:00+00:00"
+    },
+    "primary_country": {
+     "id": 1001,
+     "name": "Philippines",
+     "shortname": "Philippines",
+     "iso3": "phl"
+    },
+    "source": [
+     {
+      "id": 1501,
+      "name": "UN High Commissioner for Refugees",
+      "shortname": "UNHCR"
+     }
+    ],
+    "format": [
+     {
+      "id": 10,
+      "name": "Analysis"
+     }
+    ],
+    "headline": {
+     "title": "Philippines: food security outlook published by UNHCR",
+     "summary": "Seasonal outlook on food availability, market prices and expected food security outcomes for the coming months. [Fictional example item authored for the test fixture.]"
+    },
+    "url": "https://reliefweb.int/node/9900009",
+    "url_alias": "https://reliefweb.int/report/philippines/philippines-food-security-outlook-nov-2026"
+   }
+  },
+  {
+   "id": 9900010,
+   "score": 1,
+   "href": "https://api.reliefweb.int/v2/reports/9900010",
+   "fields": {
+    "id": 9900010,
+    "title": "Central African Republic: Operation Update No. 22 (Nov 2026)",
+    "date": {
+     "created": "2026-11-08T05:36:00+00:00",
+     "original": "2026-11-07T00:00:00+00:00"
+    },
+    "primary_country": {
+     "id": 1046,
+     "name": "Central African Republic",
+     "shortname": "Central African Republic",
+     "iso3": "caf"
+    },
+    "source": [
+     {
+      "id": 1506,
+      "name": "International Organization for Migration",
+      "shortname": "IOM"
+     }
+    ],
+    "format": [
+     {
+      "id": 10,
+      "name": "Situation Report"
+     }
+    ],
+    "headline": {
+     "title": "Central African Republic: operation update published by IOM",
+     "summary": "Progress update on an ongoing emergency operation, including assistance delivered and constraints faced by response teams. [Fictional example item authored for the test fixture.]"
+    },
+    "url": "https://reliefweb.int/node/9900010",
+    "url_alias": "https://reliefweb.int/report/central-african-republic/central-african-republic-operation-update-no-22-nov-2026"
+   }
+  },
+  {
+   "id": 9900011,
+   "score": 1,
+   "href": "https://api.reliefweb.int/v2/reports/9900011",
+   "fields": {
+    "id": 9900011,
+    "title": "Türkiye: Humanitarian Situation Update No. 33 (Nov 2026)",
+    "date": {
+     "created": "2026-11-08T00:20:00+00:00",
+     "original": "2026-11-07T00:00:00+00:00"
+    },
+    "primary_country": {
+     "id": 1028,
+     "name": "Türkiye",
+     "shortname": "Türkiye",
+     "iso3": "tur"
+    },
+    "source": [
+     {
+      "id": 1501,
+      "name": "UN High Commissioner for Refugees",
+      "shortname": "UNHCR"
+     }
+    ],
+    "format": [
+     {
+      "id": 10,
+      "name": "Situation Report"
+     }
+    ],
+    "headline": {
+     "title": "Türkiye: humanitarian situation update published by UNHCR",
+     "summary": "Routine update on the humanitarian situation and the response by partners, covering access, funding and priority needs in the affected areas. [Fictional example item authored for the test fixture.]"
+    },
+    "url": "https://reliefweb.int/node/9900011",
+    "url_alias": "https://reliefweb.int/report/t-rkiye/t-rkiye-humanitarian-situation-update-no-33-nov-2026"
+   }
+  },
+  {
+   "id": 9900012,
+   "score": 1,
+   "href": "https://api.reliefweb.int/v2/reports/9900012",
+   "fields": {
+    "id": 9900012,
+    "title": "Honduras: Displacement Overview (Nov 2026)",
+    "date": {
+     "created": "2026-11-07T17:39:00+00:00",
+     "original": "2026-11-06T00:00:00+00:00"
+    },
+    "primary_country": {
+     "id": 1024,
+     "name": "Honduras",
+     "shortname": "Honduras",
+     "iso3": "hnd"
+    },
+    "source": [
+     {
+      "id": 1506,
+      "name": "International Organization for Migration",
+      "shortname": "IOM"
+     }
+    ],
+    "format": [
+     {
+      "id": 10,
+      "name": "Assessment"
+     }
+    ],
+    "headline": {
+     "title": "Honduras: displacement overview published by IOM",
+     "summary": "Overview of recent population movements, the main drivers of displacement and the needs reported at displacement sites. [Fictional example item authored for the test fixture.]"
+    },
+    "url": "https://reliefweb.int/node/9900012",
+    "url_alias": "https://reliefweb.int/report/honduras/honduras-displacement-overview-nov-2026"
+   }
+  },
+  {
+   "id": 9900013,
+   "score": 1,
+   "href": "https://api.reliefweb.int/v2/reports/9900013",
+   "fields": {
+    "id": 9900013,
+    "title": "Yemen: Protection Monitoring Report (Nov 2026)",
+    "date": {
+     "created": "2026-11-07T10:58:00+00:00",
+     "original": "2026-11-06T00:00:00+00:00"
+    },
+    "primary_country": {
+     "id": 1030,
+     "name": "Yemen",
+     "shortname": "Yemen",
+     "iso3": "yem"
+    },
+    "source": [
+     {
+      "id": 1501,
+      "name": "UN High Commissioner for Refugees",
+      "shortname": "UNHCR"
+     }
+    ],
+    "format": [
+     {
+      "id": 10,
+      "name": "Assessment"
+     }
+    ],
+    "headline": {
+     "title": "Yemen: protection monitoring report published by UNHCR",
+     "summary": "Findings of protection monitoring, with trends in reported incidents and recommendations to humanitarian actors. [Fictional example item authored for the test fixture.]"
+    },
+    "url": "https://reliefweb.int/node/9900013",
+    "url_alias": "https://reliefweb.int/report/yemen/yemen-protection-monitoring-report-nov-2026"
+   }
+  },
+  {
+   "id": 9900014,
+   "score": 1,
+   "href": "https://api.reliefweb.int/v2/reports/9900014",
+   "fields": {
+    "id": 9900014,
+    "title": "Nigeria: Food Security Outlook (Nov 2026)",
+    "date": {
+     "created": "2026-11-07T04:17:00+00:00",
+     "original": "2026-11-06T00:00:00+00:00"
+    },
+    "primary_country": {
+     "id": 1012,
+     "name": "Nigeria",
+     "shortname": "Nigeria",
+     "iso3": "nga"
+    },
+    "source": [
+     {
+      "id": 1503,
+      "name": "UN Office for the Coordination of Humanitarian Affairs",
+      "shortname": "OCHA"
+     },
+     {
+      "id": 1506,
+      "name": "International Organization for Migration",
+      "shortname": "IOM"
+     }
+    ],
+    "format": [
+     {
+      "id": 10,
+      "name": "Analysis"
+     }
+    ],
+    "headline": {
+     "title": "Nigeria: food security outlook published by IOM",
+     "summary": "Seasonal outlook on food availability, market prices and expected food security outcomes for the coming months. [Fictional example item authored for the test fixture.]"
+    },
+    "url": "https://reliefweb.int/node/9900014",
+    "url_alias": "https://reliefweb.int/report/nigeria/nigeria-food-security-outlook-nov-2026"
+   }
+  },
+  {
+   "id": 9900015,
+   "score": 1,
+   "href": "https://api.reliefweb.int/v2/reports/9900015",
+   "fields": {
+    "id": 9900015,
+    "title": "Pakistan: Operation Update No. 37 (Nov 2026)",
+    "date": {
+     "created": "2026-11-06T21:36:00+00:00",
+     "original": "2026-11-05T00:00:00+00:00"
+    },
+    "primary_country": {
+     "id": 1015,
+     "name": "Pakistan",
+     "shortname": "Pakistan",
+     "iso3": "pak"
+    },
+    "source": [
+     {
+      "id": 1501,
+      "name": "UN High Commissioner for Refugees",
+      "shortname": "UNHCR"
+     }
+    ],
+    "format": [
+     {
+      "id": 10,
+      "name": "Situation Report"
+     }
+    ],
+    "headline": {
+     "title": "Pakistan: operation update published by UNHCR",
+     "summary": "Progress update on an ongoing emergency operation, including assistance delivered and constraints faced by response teams. [Fictional example item authored for the test fixture.]"
+    },
+    "url": "https://reliefweb.int/node/9900015",
+    "url_alias": "https://reliefweb.int/report/pakistan/pakistan-operation-update-no-37-nov-2026"
+   }
+  },
+  {
+   "id": 9900016,
+   "score": 1,
+   "href": "https://api.reliefweb.int/v2/reports/9900016",
+   "fields": {
+    "id": 9900016,
+    "title": "Niger: Humanitarian Situation Update No. 8 (Nov 2026)",
+    "date": {
+     "created": "2026-11-06T16:20:00+00:00",
+     "original": "2026-11-05T00:00:00+00:00"
+    },
+    "primary_country": {
+     "id": 1011,
+     "name": "Niger",
+     "shortname": "Niger",
+     "iso3": "ner"
+    },
+    "source": [
+     {
+      "id": 1506,
+      "name": "International Organization for Migration",
+      "shortname": "IOM"
+     }
+    ],
+    "format": [
+     {
+      "id": 10,
+      "name": "Situation Report"
+     }
+    ],
+    "headline": {
+     "title": "Niger: humanitarian situation update published by IOM",
+     "summary": "Routine update on the humanitarian situation and the response by partners, covering access, funding and priority needs in the affected areas. [Fictional example item authored for the test fixture.]"
+    },
+    "url": "https://reliefweb.int/node/9900016",
+    "url_alias": "https://reliefweb.int/report/niger/niger-humanitarian-situation-update-no-8-nov-2026"
+   }
+  },
+  {
+   "id": 9900017,
+   "score": 1,
+   "href": "https://api.reliefweb.int/v2/reports/9900017",
+   "fields": {
+    "id": 9900017,
+    "title": "Papua New Guinea: Health Cluster Bulletin No. 19 (Nov 2026)",
+    "date": {
+     "created": "2026-11-06T09:39:00+00:00",
+     "original": "2026-11-05T00:00:00+00:00"
+    },
+    "primary_country": {
+     "id": 1018,
+     "name": "Papua New Guinea",
+     "shortname": "Papua New Guinea",
+     "iso3": "png"
+    },
+    "source": [
+     {
+      "id": 1501,
+      "name": "UN High Commissioner for Refugees",
+      "shortname": "UNHCR"
+     }
+    ],
+    "format": [
+     {
+      "id": 10,
+      "name": "Situation Report"
+     }
+    ],
+    "headline": {
+     "title": "Papua New Guinea: health cluster bulletin published by UNHCR",
+     "summary": "Periodic bulletin on disease surveillance, the functionality of health facilities and gaps in the health response. [Fictional example item authored for the test fixture.]"
+    },
+    "url": "https://reliefweb.int/node/9900017",
+    "url_alias": "https://reliefweb.int/report/papua-new-guinea/papua-new-guinea-health-cluster-bulletin-no-19-nov-2026"
+   }
+  },
+  {
+   "id": 9900018,
+   "score": 1,
+   "href": "https://api.reliefweb.int/v2/reports/9900018",
+   "fields": {
+    "id": 9900018,
+    "title": "Tajikistan: Protection Monitoring Report (Nov 2026)",
+    "date": {
+     "created": "2026-11-06T02:58:00+00:00",
+     "original": "2026-11-05T00:00:00+00:00"
+    },
+    "primary_country": {
+     "id": 1043,
+     "name": "Tajikistan",
+     "shortname": "Tajikistan",
+     "iso3": "tjk"
+    },
+    "source": [
+     {
+      "id": 1506,
+      "name": "International Organization for Migration",
+      "shortname": "IOM"
+     }
+    ],
+    "format": [
+     {
+      "id": 10,
+      "name": "Assessment"
+     }
+    ],
+    "headline": {
+     "title": "Tajikistan: protection monitoring report published by IOM",
+     "summary": "Findings of protection monitoring, with trends in reported incidents and recommendations to humanitarian actors. [Fictional example item authored for the test fixture.]"
+    },
+    "url": "https://reliefweb.int/node/9900018",
+    "url_alias": "https://reliefweb.int/report/tajikistan/tajikistan-protection-monitoring-report-nov-2026"
+   }
+  },
+  {
+   "id": 9900019,
+   "score": 1,
+   "href": "https://api.reliefweb.int/v2/reports/9900019",
+   "fields": {
+    "id": 9900019,
+    "title": "Ukraine: Food Security Outlook (Nov 2026)",
+    "date": {
+     "created": "2026-11-05T20:17:00+00:00",
+     "original": "2026-11-04T00:00:00+00:00"
+    },
+    "primary_country": {
+     "id": 1044,
+     "name": "Ukraine",
+     "shortname": "Ukraine",
+     "iso3": "ukr"
+    },
+    "source": [
+     {
+      "id": 1501,
+      "name": "UN High Commissioner for Refugees",
+      "shortname": "UNHCR"
+     }
+    ],
+    "format": [
+     {
+      "id": 10,
+      "name": "Analysis"
+     }
+    ],
+    "headline": {
+     "title": "Ukraine: food security outlook published by UNHCR",
+     "summary": "Seasonal outlook on food availability, market prices and expected food security outcomes for the coming months. [Fictional example item authored for the test fixture.]"
+    },
+    "url": "https://reliefweb.int/node/9900019",
+    "url_alias": "https://reliefweb.int/report/ukraine/ukraine-food-security-outlook-nov-2026"
+   }
+  },
+  {
+   "id": 9900020,
+   "score": 1,
+   "href": "https://api.reliefweb.int/v2/reports/9900020",
+   "fields": {
+    "id": 9900020,
+    "title": "Mali: Operation Update No. 12 (Nov 2026)",
+    "date": {
+     "created": "2026-11-05T13:36:00+00:00",
+     "original": "2026-11-04T00:00:00+00:00"
+    },
+    "primary_country": {
+     "id": 1039,
+     "name": "Mali",
+     "shortname": "Mali",
+     "iso3": "mli"
+    },
+    "source": [
+     {
+      "id": 1506,
+      "name": "International Organization for Migration",
+      "shortname": "IOM"
+     }
+    ],
+    "format": [
+     {
+      "id": 10,
+      "name": "Situation Report"
+     }
+    ],
+    "headline": {
+     "title": "Mali: operation update published by IOM",
+     "summary": "Progress update on an ongoing emergency operation, including assistance delivered and constraints faced by response teams. [Fictional example item authored for the test fixture.]"
+    },
+    "url": "https://reliefweb.int/node/9900020",
+    "url_alias": "https://reliefweb.int/report/mali/mali-operation-update-no-12-nov-2026"
+   }
+  },
+  {
+   "id": 9900021,
+   "score": 1,
+   "href": "https://api.reliefweb.int/v2/reports/9900021",
+   "fields": {
+    "id": 9900021,
+    "title": "Global: Flash Update (Nov 2026)",
+    "date": {
+     "created": "2026-11-05T08:20:00+00:00",
+     "original": "2026-11-04T00:00:00+00:00"
+    },
+    "primary_country": {
+     "id": 254,
+     "name": "World",
+     "shortname": "World",
+     "iso3": "wld"
+    },
+    "source": [
+     {
+      "id": 1501,
+      "name": "UN High Commissioner for Refugees",
+      "shortname": "UNHCR"
+     }
+    ],
+    "format": [
+     {
+      "id": 10,
+      "name": "Situation Report"
+     }
+    ],
+    "headline": {
+     "title": "Global flash update released",
+     "summary": "Short update issued after a sudden deterioration, summarising first assessments, immediate needs and the response under way. [Fictional example item authored for the test fixture.]"
+    },
+    "url": "https://reliefweb.int/node/9900021",
+    "url_alias": "https://reliefweb.int/report/world/opt-flash-update-no-23-nov-2026"
+   }
+  },
+  {
+   "id": 9900022,
+   "score": 1,
+   "href": "https://api.reliefweb.int/v2/reports/9900022",
+   "fields": {
+    "id": 9900022,
+    "title": "Nepal: Health Cluster Bulletin No. 34 (Nov 2026)",
+    "date": {
+     "created": "2026-11-05T01:39:00+00:00",
+     "original": "2026-11-04T00:00:00+00:00"
+    },
+    "primary_country": {
+     "id": 1016,
+     "name": "Nepal",
+     "shortname": "Nepal",
+     "iso3": "npl"
+    },
+    "source": [
+     {
+      "id": 1506,
+      "name": "International Organization for Migration",
+      "shortname": "IOM"
+     }
+    ],
+    "format": [
+     {
+      "id": 10,
+      "name": "Situation Report"
+     }
+    ],
+    "headline": {
+     "title": "Nepal: health cluster bulletin published by IOM",
+     "summary": "Periodic bulletin on disease surveillance, the functionality of health facilities and gaps in the health response. [Fictional example item authored for the test fixture.]"
+    },
+    "url": "https://reliefweb.int/node/9900022",
+    "url_alias": "https://reliefweb.int/report/nepal/nepal-health-cluster-bulletin-no-34-nov-2026"
+   }
+  },
+  {
+   "id": 9900023,
+   "score": 1,
+   "href": "https://api.reliefweb.int/v2/reports/9900023",
+   "fields": {
+    "id": 9900023,
+    "title": "Zimbabwe: Protection Monitoring Report (Nov 2026)",
+    "date": {
+     "created": "2026-11-04T18:58:00+00:00",
+     "original": "2026-11-03T00:00:00+00:00"
+    },
+    "primary_country": {
+     "id": 1036,
+     "name": "Zimbabwe",
+     "shortname": "Zimbabwe",
+     "iso3": "zwe"
+    },
+    "source": [
+     {
+      "id": 1503,
+      "name": "UN Office for the Coordination of Humanitarian Affairs",
+      "shortname": "OCHA"
+     },
+     {
+      "id": 1501,
+      "name": "UN High Commissioner for Refugees",
+      "shortname": "UNHCR"
+     }
+    ],
+    "format": [
+     {
+      "id": 10,
+      "name": "Assessment"
+     }
+    ],
+    "headline": {
+     "title": "Zimbabwe: protection monitoring report published by UNHCR",
+     "summary": "Findings of protection monitoring, with trends in reported incidents and recommendations to humanitarian actors. [Fictional example item authored for the test fixture.]"
+    },
+    "url": "https://reliefweb.int/node/9900023",
+    "url_alias": "https://reliefweb.int/report/zimbabwe/zimbabwe-protection-monitoring-report-nov-2026"
+   }
+  },
+  {
+   "id": 9900024,
+   "score": 1,
+   "href": "https://api.reliefweb.int/v2/reports/9900024",
+   "fields": {
+    "id": 9900024,
+    "title": "South Sudan: Food Security Outlook (Nov 2026)",
+    "date": {
+     "created": "2026-11-04T12:17:00+00:00",
+     "original": "2026-11-03T00:00:00+00:00"
+    },
+    "primary_country": {
+     "id": 1008,
+     "name": "South Sudan",
+     "shortname": "South Sudan",
+     "iso3": "ssd"
+    },
+    "source": [
+     {
+      "id": 1506,
+      "name": "International Organization for Migration",
+      "shortname": "IOM"
+     }
+    ],
+    "format": [
+     {
+      "id": 10,
+      "name": "Analysis"
+     }
+    ],
+    "headline": {
+     "title": "South Sudan: food security outlook published by IOM",
+     "summary": "Seasonal outlook on food availability, market prices and expected food security outcomes for the coming months. [Fictional example item authored for the test fixture.]"
+    },
+    "url": "https://reliefweb.int/node/9900024",
+    "url_alias": "https://reliefweb.int/report/south-sudan/south-sudan-food-security-outlook-nov-2026"
+   }
+  },
+  {
+   "id": 9900025,
+   "score": 1,
+   "href": "https://api.reliefweb.int/v2/reports/9900025",
+   "fields": {
+    "id": 9900025,
+    "title": "Haiti: Response Plan Funding Snapshot (Nov 2026)",
+    "date": {
+     "created": "2026-11-04T05:36:00+00:00",
+     "original": "2026-11-03T00:00:00+00:00"
+    },
+    "primary_country": {
+     "id": 1021,
+     "name": "Haiti",
+     "shortname": "Haiti",
+     "iso3": "hti"
+    },
+    "source": [
+     {
+      "id": 1501,
+      "name": "UN High Commissioner for Refugees",
+      "shortname": "UNHCR"
+     }
+    ],
+    "format": [
+     {
+      "id": 10,
+      "name": "Infographic"
+     }
+    ],
+    "headline": {
+     "title": "Haiti: response plan funding snapshot published by UNHCR",
+     "summary": "Snapshot of funding received against requirements for the coordinated response plan, by sector. [Fictional example item authored for the test fixture.]"
+    },
+    "url": "https://reliefweb.int/node/9900025",
+    "url_alias": "https://reliefweb.int/report/haiti/haiti-response-plan-funding-snapshot-nov-2026"
+   }
+  },
+  {
+   "id": 9900026,
+   "score": 1,
+   "href": "https://api.reliefweb.int/v2/reports/9900026",
+   "fields": {
+    "id": 9900026,
+    "title": "Mozambique: Flash Update No. 38 (Nov 2026)",
+    "date": {
+     "created": "2026-11-04T00:20:00+00:00",
+     "original": "2026-11-03T00:00:00+00:00"
+    },
+    "primary_country": {
+     "id": 1003,
+     "name": "Mozambique",
+     "shortname": "Mozambique",
+     "iso3": "moz"
+    },
+    "source": [
+     {
+      "id": 1506,
+      "name": "International Organization for Migration",
+      "shortname": "IOM"
+     }
+    ],
+    "format": [
+     {
+      "id": 10,
+      "name": "Situation Report"
+     }
+    ],
+    "headline": {
+     "title": "Mozambique: flash update published by IOM",
+     "summary": "Short update issued after a sudden deterioration, summarising first assessments, immediate needs and the response under way. [Fictional example item authored for the test fixture.]"
+    },
+    "url": "https://reliefweb.int/node/9900026",
+    "url_alias": "https://reliefweb.int/report/mozambique/mozambique-flash-update-no-38-nov-2026"
+   }
+  },
+  {
+   "id": 9900027,
+   "score": 1,
+   "href": "https://api.reliefweb.int/v2/reports/9900027",
+   "fields": {
+    "id": 9900027,
+    "title": "Venezuela: Health Cluster Bulletin No. 9 (Nov 2026)",
+    "date": {
+     "created": "2026-11-03T17:39:00+00:00",
+     "original": "2026-11-02T00:00:00+00:00"
+    },
+    "primary_country": {
+     "id": 1048,
+     "name": "Venezuela (Bolivarian Republic of)",
+     "shortname": "Venezuela",
+     "iso3": "ven"
+    },
+    "source": [
+     {
+      "id": 1501,
+      "name": "UN High Commissioner for Refugees",
+      "shortname": "UNHCR"
+     }
+    ],
+    "format": [
+     {
+      "id": 10,
+      "name": "Situation Report"
+     }
+    ],
+    "headline": {
+     "title": "Venezuela: health cluster bulletin published by UNHCR",
+     "summary": "Periodic bulletin on disease surveillance, the functionality of health facilities and gaps in the health response. [Fictional example item authored for the test fixture.]"
+    },
+    "url": "https://reliefweb.int/node/9900027",
+    "url_alias": "https://reliefweb.int/report/venezuela-bolivarian-republic-of/venezuela-health-cluster-bulletin-no-9-nov-2026"
+   }
+  },
+  {
+   "id": 9900028,
+   "score": 1,
+   "href": "https://api.reliefweb.int/v2/reports/9900028",
+   "fields": {
+    "id": 9900028,
+    "title": "Sri Lanka: Protection Monitoring Report (Nov 2026)",
+    "date": {
+     "created": "2026-11-03T10:58:00+00:00",
+     "original": "2026-11-02T00:00:00+00:00"
+    },
+    "primary_country": {
+     "id": 1033,
+     "name": "Sri Lanka",
+     "shortname": "Sri Lanka",
+     "iso3": "lka"
+    },
+    "source": [
+     {
+      "id": 1506,
+      "name": "International Organization for Migration",
+      "shortname": "IOM"
+     }
+    ],
+    "format": [
+     {
+      "id": 10,
+      "name": "Assessment"
+     }
+    ],
+    "headline": {
+     "title": "Sri Lanka: protection monitoring report published by IOM",
+     "summary": "Findings of protection monitoring, with trends in reported incidents and recommendations to humanitarian actors. [Fictional example item authored for the test fixture.]"
+    },
+    "url": "https://reliefweb.int/node/9900028",
+    "url_alias": "https://reliefweb.int/report/sri-lanka/sri-lanka-protection-monitoring-report-nov-2026"
+   }
+  },
+  {
+   "id": 9900029,
+   "score": 1,
+   "href": "https://api.reliefweb.int/v2/reports/9900029",
+   "fields": {
+    "id": 9900029,
+    "title": "Uganda: Displacement Overview (Nov 2026)",
+    "date": {
+     "created": "2026-11-03T04:17:00+00:00",
+     "original": "2026-11-02T00:00:00+00:00"
+    },
+    "primary_country": {
+     "id": 1037,
+     "name": "Uganda",
+     "shortname": "Uganda",
+     "iso3": "uga"
+    },
+    "source": [
+     {
+      "id": 1501,
+      "name": "UN High Commissioner for Refugees",
+      "shortname": "UNHCR"
+     }
+    ],
+    "format": [
+     {
+      "id": 10,
+      "name": "Assessment"
+     }
+    ],
+    "headline": {
+     "title": "Uganda: displacement overview published by UNHCR",
+     "summary": "Overview of recent population movements, the main drivers of displacement and the needs reported at displacement sites. [Fictional example item authored for the test fixture.]"
+    },
+    "url": "https://reliefweb.int/node/9900029",
+    "url_alias": "https://reliefweb.int/report/uganda/uganda-displacement-overview-nov-2026"
+   }
+  },
+  {
+   "id": 9900030,
+   "score": 1,
+   "href": "https://api.reliefweb.int/v2/reports/9900030",
+   "fields": {
+    "id": 9900030,
+    "title": "Afghanistan: Response Plan Funding Snapshot (Nov 2026)",
+    "date": {
+     "created": "2026-11-02T21:36:00+00:00",
+     "original": "2026-11-01T00:00:00+00:00"
+    },
+    "primary_country": {
+     "id": 1014,
+     "name": "Afghanistan",
+     "shortname": "Afghanistan",
+     "iso3": "afg"
+    },
+    "source": [
+     {
+      "id": 1506,
+      "name": "International Organization for Migration",
+      "shortname": "IOM"
+     }
+    ],
+    "format": [
+     {
+      "id": 10,
+      "name": "Infographic"
+     }
+    ],
+    "headline": {
+     "title": "Afghanistan: response plan funding snapshot published by IOM",
+     "summary": "Snapshot of funding received against requirements for the coordinated response plan, by sector. [Fictional example item authored for the test fixture.]"
+    },
+    "url": "https://reliefweb.int/node/9900030",
+    "url_alias": "https://reliefweb.int/report/afghanistan/afghanistan-response-plan-funding-snapshot-nov-2026"
+   }
+  },
+  {
+   "id": 9900031,
+   "score": 1,
+   "href": "https://api.reliefweb.int/v2/reports/9900031",
+   "fields": {
+    "id": 9900031,
+    "title": "Ethiopia: Flash Update No. 13 (Nov 2026)",
+    "date": {
+     "created": "2026-11-02T16:20:00+00:00",
+     "original": "2026-11-01T00:00:00+00:00"
+    },
+    "primary_country": {
+     "id": 1006,
+     "name": "Ethiopia",
+     "shortname": "Ethiopia",
+     "iso3": "eth"
+    },
+    "source": [
+     {
+      "id": 1501,
+      "name": "UN High Commissioner for Refugees",
+      "shortname": "UNHCR"
+     }
+    ],
+    "format": [
+     {
+      "id": 10,
+      "name": "Situation Report"
+     }
+    ],
+    "headline": {
+     "title": "Ethiopia: flash update published by UNHCR",
+     "summary": "Short update issued after a sudden deterioration, summarising first assessments, immediate needs and the response under way. [Fictional example item authored for the test fixture.]"
+    },
+    "url": "https://reliefweb.int/node/9900031",
+    "url_alias": "https://reliefweb.int/report/ethiopia/ethiopia-flash-update-no-13-nov-2026"
+   }
+  },
+  {
+   "id": 9900032,
+   "score": 1,
+   "href": "https://api.reliefweb.int/v2/reports/9900032",
+   "fields": {
+    "id": 9900032,
+    "title": "Bangladesh: Health Cluster Bulletin No. 24 (Nov 2026)",
+    "date": {
+     "created": "2026-11-02T09:39:00+00:00",
+     "original": "2026-11-01T00:00:00+00:00"
+    },
+    "primary_country": {
+     "id": 1000,
+     "name": "Bangladesh",
+     "shortname": "Bangladesh",
+     "iso3": "bgd"
+    },
+    "source": [
+     {
+      "id": 1503,
+      "name": "UN Office for the Coordination of Humanitarian Affairs",
+      "shortname": "OCHA"
+     },
+     {
+      "id": 1506,
+      "name": "International Organization for Migration",
+      "shortname": "IOM"
+     }
+    ],
+    "format": [
+     {
+      "id": 10,
+      "name": "Situation Report"
+     }
+    ],
+    "headline": {
+     "title": "Bangladesh: health cluster bulletin published by IOM",
+     "summary": "Periodic bulletin on disease surveillance, the functionality of health facilities and gaps in the health response. [Fictional example item authored for the test fixture.]"
+    },
+    "url": "https://reliefweb.int/node/9900032",
+    "url_alias": "https://reliefweb.int/report/bangladesh/bangladesh-health-cluster-bulletin-no-24-nov-2026"
+   }
+  },
+  {
+   "id": 9900033,
+   "score": 1,
+   "href": "https://api.reliefweb.int/v2/reports/9900033",
+   "fields": {
+    "id": 9900033,
+    "title": "Cameroon: Humanitarian Situation Update No. 35 (Nov 2026)",
+    "date": {
+     "created": "2026-11-02T02:58:00+00:00",
+     "original": "2026-11-01T00:00:00+00:00"
+    },
+    "primary_country": {
+     "id": 1047,
+     "name": "Cameroon",
+     "shortname": "Cameroon",
+     "iso3": "cmr"
+    },
+    "source": [
+     {
+      "id": 1501,
+      "name": "UN High Commissioner for Refugees",
+      "shortname": "UNHCR"
+     }
+    ],
+    "format": [
+     {
+      "id": 10,
+      "name": "Situation Report"
+     }
+    ],
+    "headline": {
+     "title": "Cameroon: humanitarian situation update published by UNHCR",
+     "summary": "Routine update on the humanitarian situation and the response by partners, covering access, funding and priority needs in the affected areas. [Fictional example item authored for the test fixture.]"
+    },
+    "url": "https://reliefweb.int/node/9900033",
+    "url_alias": "https://reliefweb.int/report/cameroon/cameroon-humanitarian-situation-update-no-35-nov-2026"
+   }
+  },
+  {
+   "id": 9900034,
+   "score": 1,
+   "href": "https://api.reliefweb.int/v2/reports/9900034",
+   "fields": {
+    "id": 9900034,
+    "title": "Chile: Displacement Overview (Nov 2026)",
+    "date": {
+     "created": "2026-11-01T20:17:00+00:00",
+     "original": "2026-10-31T00:00:00+00:00"
+    },
+    "primary_country": {
+     "id": 1041,
+     "name": "Chile",
+     "shortname": "Chile",
+     "iso3": "chl"
+    },
+    "source": [
+     {
+      "id": 1506,
+      "name": "International Organization for Migration",
+      "shortname": "IOM"
+     }
+    ],
+    "format": [
+     {
+      "id": 10,
+      "name": "Assessment"
+     }
+    ],
+    "headline": {
+     "title": "Chile: displacement overview published by IOM",
+     "summary": "Overview of recent population movements, the main drivers of displacement and the needs reported at displacement sites. [Fictional example item authored for the test fixture.]"
+    },
+    "url": "https://reliefweb.int/node/9900034",
+    "url_alias": "https://reliefweb.int/report/chile/chile-displacement-overview-nov-2026"
+   }
+  },
+  {
+   "id": 9900035,
+   "score": 1,
+   "href": "https://api.reliefweb.int/v2/reports/9900035",
+   "fields": {
+    "id": 9900035,
+    "title": "Cuba: Response Plan Funding Snapshot (Nov 2026)",
+    "date": {
+     "created": "2026-11-01T13:36:00+00:00",
+     "original": "2026-10-31T00:00:00+00:00"
+    },
+    "primary_country": {
+     "id": 1022,
+     "name": "Cuba",
+     "shortname": "Cuba",
+     "iso3": "cub"
+    },
+    "source": [
+     {
+      "id": 1501,
+      "name": "UN High Commissioner for Refugees",
+      "shortname": "UNHCR"
+     }
+    ],
+    "format": [
+     {
+      "id": 10,
+      "name": "Infographic"
+     }
+    ],
+    "headline": {
+     "title": "Cuba: response plan funding snapshot published by UNHCR",
+     "summary": "Snapshot of funding received against requirements for the coordinated response plan, by sector. [Fictional example item authored for the test fixture.]"
+    },
+    "url": "https://reliefweb.int/node/9900035",
+    "url_alias": "https://reliefweb.int/report/cuba/cuba-response-plan-funding-snapshot-nov-2026"
+   }
+  },
+  {
+   "id": 9900036,
+   "score": 1,
+   "href": "https://api.reliefweb.int/v2/reports/9900036",
+   "fields": {
+    "id": 9900036,
+    "title": "Syria: Flash Update No. 28 (Nov 2026)",
+    "date": {
+     "created": "2026-11-01T08:20:00+00:00",
+     "original": "2026-10-31T00:00:00+00:00"
+    },
+    "primary_country": {
+     "id": 1029,
+     "name": "Syrian Arab Republic",
+     "shortname": "Syria",
+     "iso3": "syr"
+    },
+    "source": [
+     {
+      "id": 1506,
+      "name": "International Organization for Migration",
+      "shortname": "IOM"
+     }
+    ],
+    "format": [
+     {
+      "id": 10,
+      "name": "Situation Report"
+     }
+    ],
+    "headline": {
+     "title": "Syria: flash update published by IOM",
+     "summary": "Short update issued after a sudden deterioration, summarising first assessments, immediate needs and the response under way. [Fictional example item authored for the test fixture.]"
+    },
+    "url": "https://reliefweb.int/node/9900036",
+    "url_alias": "https://reliefweb.int/report/syrian-arab-republic/syria-flash-update-no-28-nov-2026"
+   }
+  },
+  {
+   "id": 9900037,
+   "score": 1,
+   "href": "https://api.reliefweb.int/v2/reports/9900037",
+   "fields": {
+    "id": 9900037,
+    "title": "Chad: Operation Update No. 39 (Nov 2026)",
+    "date": {
+     "created": "2026-11-01T01:39:00+00:00",
+     "original": "2026-10-31T00:00:00+00:00"
+    },
+    "primary_country": {
+     "id": 1010,
+     "name": "Chad",
+     "shortname": "Chad",
+     "iso3": "tcd"
+    },
+    "source": [
+     {
+      "id": 1501,
+      "name": "UN High Commissioner for Refugees",
+      "shortname": "UNHCR"
+     }
+    ],
+    "format": [
+     {
+      "id": 10,
+      "name": "Situation Report"
+     }
+    ],
+    "headline": {
+     "title": "Chad: operation update published by UNHCR",
+     "summary": "Progress update on an ongoing emergency operation, including assistance delivered and constraints faced by response teams. [Fictional example item authored for the test fixture.]"
+    },
+    "url": "https://reliefweb.int/node/9900037",
+    "url_alias": "https://reliefweb.int/report/chad/chad-operation-update-no-39-nov-2026"
+   }
+  },
+  {
+   "id": 9900038,
+   "score": 1,
+   "href": "https://api.reliefweb.int/v2/reports/9900038",
+   "fields": {
+    "id": 9900038,
+    "title": "Lebanon: Humanitarian Situation Update No. 10 (Oct 2026)",
+    "date": {
+     "created": "2026-10-31T18:58:00+00:00",
+     "original": "2026-10-30T00:00:00+00:00"
+    },
+    "primary_country": {
+     "id": 1045,
+     "name": "Lebanon",
+     "shortname": "Lebanon",
+     "iso3": "lbn"
+    },
+    "source": [
+     {
+      "id": 1506,
+      "name": "International Organization for Migration",
+      "shortname": "IOM"
+     }
+    ],
+    "format": [
+     {
+      "id": 10,
+      "name": "Situation Report"
+     }
+    ],
+    "headline": {
+     "title": "Lebanon: humanitarian situation update published by IOM",
+     "summary": "Routine update on the humanitarian situation and the response by partners, covering access, funding and priority needs in the affected areas. [Fictional example item authored for the test fixture.]"
+    },
+    "url": "https://reliefweb.int/node/9900038",
+    "url_alias": "https://reliefweb.int/report/lebanon/lebanon-humanitarian-situation-update-no-10-oct-2026"
+   }
+  },
+  {
+   "id": 9900039,
+   "score": 1,
+   "href": "https://api.reliefweb.int/v2/reports/9900039",
+   "fields": {
+    "id": 9900039,
+    "title": "Kenya: Displacement Overview (Oct 2026)",
+    "date": {
+     "created": "2026-10-31T12:17:00+00:00",
+     "original": "2026-10-30T00:00:00+00:00"
+    },
+    "primary_country": {
+     "id": 1007,
+     "name": "Kenya",
+     "shortname": "Kenya",
+     "iso3": "ken"
+    },
+    "source": [
+     {
+      "id": 1501,
+      "name": "UN High Commissioner for Refugees",
+      "shortname": "UNHCR"
+     }
+    ],
+    "format": [
+     {
+      "id": 10,
+      "name": "Assessment"
+     }
+    ],
+    "headline": {
+     "title": "Kenya: displacement overview published by UNHCR",
+     "summary": "Overview of recent population movements, the main drivers of displacement and the needs reported at displacement sites. [Fictional example item authored for the test fixture.]"
+    },
+    "url": "https://reliefweb.int/node/9900039",
+    "url_alias": "https://reliefweb.int/report/kenya/kenya-displacement-overview-oct-2026"
+   }
+  },
+  {
+   "id": 9900040,
+   "score": 1,
+   "href": "https://api.reliefweb.int/v2/reports/9900040",
+   "fields": {
+    "id": 9900040,
+    "title": "Vanuatu: Response Plan Funding Snapshot (Oct 2026)",
+    "date": {
+     "created": "2026-10-31T05:36:00+00:00",
+     "original": "2026-10-30T00:00:00+00:00"
+    },
+    "primary_country": {
+     "id": 1019,
+     "name": "Vanuatu",
+     "shortname": "Vanuatu",
+     "iso3": "vut"
+    },
+    "source": [
+     {
+      "id": 1506,
+      "name": "International Organization for Migration",
+      "shortname": "IOM"
+     }
+    ],
+    "format": [
+     {
+      "id": 10,
+      "name": "Infographic"
+     }
+    ],
+    "headline": {
+     "title": "Vanuatu: response plan funding snapshot published by IOM",
+     "summary": "Snapshot of funding received against requirements for the coordinated response plan, by sector. [Fictional example item authored for the test fixture.]"
+    },
+    "url": "https://reliefweb.int/node/9900040",
+    "url_alias": "https://reliefweb.int/report/vanuatu/vanuatu-response-plan-funding-snapshot-oct-2026"
+   }
+  },
+  {
+   "id": 9900041,
+   "score": 1,
+   "href": "https://api.reliefweb.int/v2/reports/9900041",
+   "fields": {
+    "id": 9900041,
+    "title": "Sudan: Food Security Outlook (Oct 2026)",
+    "date": {
+     "created": "2026-10-31T00:20:00+00:00",
+     "original": "2026-10-30T00:00:00+00:00"
+    },
+    "primary_country": {
+     "id": 1009,
+     "name": "Sudan",
+     "shortname": "Sudan",
+     "iso3": "sdn"
+    },
+    "source": [
+     {
+      "id": 1503,
+      "name": "UN Office for the Coordination of Humanitarian Affairs",
+      "shortname": "OCHA"
+     },
+     {
+      "id": 1501,
+      "name": "UN High Commissioner for Refugees",
+      "shortname": "UNHCR"
+     }
+    ],
+    "format": [
+     {
+      "id": 10,
+      "name": "Analysis"
+     }
+    ],
+    "headline": {
+     "title": "Sudan: food security outlook published by UNHCR",
+     "summary": "Seasonal outlook on food availability, market prices and expected food security outcomes for the coming months. [Fictional example item authored for the test fixture.]"
+    },
+    "url": "https://reliefweb.int/node/9900041",
+    "url_alias": "https://reliefweb.int/report/sudan/sudan-food-security-outlook-oct-2026"
+   }
+  },
+  {
+   "id": 9900042,
+   "score": 1,
+   "href": "https://api.reliefweb.int/v2/reports/9900042",
+   "fields": {
+    "id": 9900042,
+    "title": "Myanmar: Operation Update No. 14 (Oct 2026)",
+    "date": {
+     "created": "2026-10-30T17:39:00+00:00",
+     "original": "2026-10-29T00:00:00+00:00"
+    },
+    "primary_country": {
+     "id": 1032,
+     "name": "Myanmar",
+     "shortname": "Myanmar",
+     "iso3": "mmr"
+    },
+    "source": [
+     {
+      "id": 1506,
+      "name": "International Organization for Migration",
+      "shortname": "IOM"
+     }
+    ],
+    "format": [
+     {
+      "id": 10,
+      "name": "Situation Report"
+     }
+    ],
+    "headline": {
+     "title": "Myanmar: operation update published by IOM",
+     "summary": "Progress update on an ongoing emergency operation, including assistance delivered and constraints faced by response teams. [Fictional example item authored for the test fixture.]"
+    },
+    "url": "https://reliefweb.int/node/9900042",
+    "url_alias": "https://reliefweb.int/report/myanmar/myanmar-operation-update-no-14-oct-2026"
+   }
+  },
+  {
+   "id": 9900043,
+   "score": 1,
+   "href": "https://api.reliefweb.int/v2/reports/9900043",
+   "fields": {
+    "id": 9900043,
+    "title": "Burkina Faso: Humanitarian Situation Update No. 25 (Oct 2026)",
+    "date": {
+     "created": "2026-10-30T10:58:00+00:00",
+     "original": "2026-10-29T00:00:00+00:00"
+    },
+    "primary_country": {
+     "id": 1040,
+     "name": "Burkina Faso",
+     "shortname": "Burkina Faso",
+     "iso3": "bfa"
+    },
+    "source": [
+     {
+      "id": 1501,
+      "name": "UN High Commissioner for Refugees",
+      "shortname": "UNHCR"
+     }
+    ],
+    "format": [
+     {
+      "id": 10,
+      "name": "Situation Report"
+     }
+    ],
+    "headline": {
+     "title": "Burkina Faso: humanitarian situation update published by UNHCR",
+     "summary": "Routine update on the humanitarian situation and the response by partners, covering access, funding and priority needs in the affected areas. [Fictional example item authored for the test fixture.]"
+    },
+    "url": "https://reliefweb.int/node/9900043",
+    "url_alias": "https://reliefweb.int/report/burkina-faso/burkina-faso-humanitarian-situation-update-no-25-oct-2026"
+   }
+  },
+  {
+   "id": 9900044,
+   "score": 1,
+   "href": "https://api.reliefweb.int/v2/reports/9900044",
+   "fields": {
+    "id": 9900044,
+    "title": "Colombia: Displacement Overview (Oct 2026)",
+    "date": {
+     "created": "2026-10-30T04:17:00+00:00",
+     "original": "2026-10-29T00:00:00+00:00"
+    },
+    "primary_country": {
+     "id": 1025,
+     "name": "Colombia",
+     "shortname": "Colombia",
+     "iso3": "col"
+    },
+    "source": [
+     {
+      "id": 1506,
+      "name": "International Organization for Migration",
+      "shortname": "IOM"
+     }
+    ],
+    "format": [
+     {
+      "id": 10,
+      "name": "Assessment"
+     }
+    ],
+    "headline": {
+     "title": "Colombia: displacement overview published by IOM",
+     "summary": "Overview of recent population movements, the main drivers of displacement and the needs reported at displacement sites. [Fictional example item authored for the test fixture.]"
+    },
+    "url": "https://reliefweb.int/node/9900044",
+    "url_alias": "https://reliefweb.int/report/colombia/colombia-displacement-overview-oct-2026"
+   }
+  },
+  {
+   "id": 9900045,
+   "score": 1,
+   "href": "https://api.reliefweb.int/v2/reports/9900045",
+   "fields": {
+    "id": 9900045,
+    "title": "Indonesia: Protection Monitoring Report (Oct 2026)",
+    "date": {
+     "created": "2026-10-29T21:36:00+00:00",
+     "original": "2026-10-28T00:00:00+00:00"
+    },
+    "primary_country": {
+     "id": 1017,
+     "name": "Indonesia",
+     "shortname": "Indonesia",
+     "iso3": "idn"
+    },
+    "source": [
+     {
+      "id": 1501,
+      "name": "UN High Commissioner for Refugees",
+      "shortname": "UNHCR"
+     }
+    ],
+    "format": [
+     {
+      "id": 10,
+      "name": "Assessment"
+     }
+    ],
+    "headline": {
+     "title": "Indonesia: protection monitoring report published by UNHCR",
+     "summary": "Findings of protection monitoring, with trends in reported incidents and recommendations to humanitarian actors. [Fictional example item authored for the test fixture.]"
+    },
+    "url": "https://reliefweb.int/node/9900045",
+    "url_alias": "https://reliefweb.int/report/indonesia/indonesia-protection-monitoring-report-oct-2026"
+   }
+  },
+  {
+   "id": 9900046,
+   "score": 1,
+   "href": "https://api.reliefweb.int/v2/reports/9900046",
+   "fields": {
+    "id": 9900046,
+    "title": "Malawi: Food Security Outlook (Oct 2026)",
+    "date": {
+     "created": "2026-10-29T16:20:00+00:00",
+     "original": "2026-10-28T00:00:00+00:00"
+    },
+    "primary_country": {
+     "id": 1034,
+     "name": "Malawi",
+     "shortname": "Malawi",
+     "iso3": "mwi"
+    },
+    "source": [
+     {
+      "id": 1506,
+      "name": "International Organization for Migration",
+      "shortname": "IOM"
+     }
+    ],
+    "format": [
+     {
+      "id": 10,
+      "name": "Analysis"
+     }
+    ],
+    "headline": {
+     "title": "Malawi: food security outlook published by IOM",
+     "summary": "Seasonal outlook on food availability, market prices and expected food security outcomes for the coming months. [Fictional example item authored for the test fixture.]"
+    },
+    "url": "https://reliefweb.int/node/9900046",
+    "url_alias": "https://reliefweb.int/report/malawi/malawi-food-security-outlook-oct-2026"
+   }
+  },
+  {
+   "id": 9900047,
+   "score": 1,
+   "href": "https://api.reliefweb.int/v2/reports/9900047",
+   "fields": {
+    "id": 9900047,
+    "title": "DR Congo: Operation Update No. 29 (Oct 2026)",
+    "date": {
+     "created": "2026-10-29T09:39:00+00:00",
+     "original": "2026-10-28T00:00:00+00:00"
+    },
+    "primary_country": {
+     "id": 1013,
+     "name": "Democratic Republic of the Congo",
+     "shortname": "DR Congo",
+     "iso3": "cod"
+    },
+    "source": [
+     {
+      "id": 1501,
+      "name": "UN High Commissioner for Refugees",
+      "shortname": "UNHCR"
+     }
+    ],
+    "format": [
+     {
+      "id": 10,
+      "name": "Situation Report"
+     }
+    ],
+    "headline": {
+     "title": "DR Congo: operation update published by UNHCR",
+     "summary": "Progress update on an ongoing emergency operation, including assistance delivered and constraints faced by response teams. [Fictional example item authored for the test fixture.]"
+    },
+    "url": "https://reliefweb.int/node/9900047",
+    "url_alias": "https://reliefweb.int/report/democratic-republic-of-the-congo/dr-congo-operation-update-no-29-oct-2026"
+   }
+  },
+  {
+   "id": 9900048,
+   "score": 1,
+   "href": "https://api.reliefweb.int/v2/reports/9900048",
+   "fields": {
+    "id": 9900048,
+    "title": "Global: Humanitarian Situation Update (Oct 2026)",
+    "date": {
+     "created": "2026-10-29T02:58:00+00:00",
+     "original": "2026-10-28T00:00:00+00:00"
+    },
+    "primary_country": {
+     "id": 254,
+     "name": "World",
+     "shortname": "World",
+     "iso3": "wld"
+    },
+    "source": [
+     {
+      "id": 1506,
+      "name": "International Organization for Migration",
+      "shortname": "IOM"
+     }
+    ],
+    "format": [
+     {
+      "id": 10,
+      "name": "Situation Report"
+     }
+    ],
+    "headline": {
+     "title": "Global humanitarian situation update released",
+     "summary": "Routine update on the humanitarian situation and the response by partners, covering access, funding and priority needs in the affected areas. [Fictional example item authored for the test fixture.]"
+    },
+    "url": "https://reliefweb.int/node/9900048",
+    "url_alias": "https://reliefweb.int/report/world/somalia-humanitarian-situation-update-no-40-oct-2026"
+   }
+  },
+  {
+   "id": 9900049,
+   "score": 1,
+   "href": "https://api.reliefweb.int/v2/reports/9900049",
+   "fields": {
+    "id": 9900049,
+    "title": "Philippines: Health Cluster Bulletin No. 11 (Oct 2026)",
+    "date": {
+     "created": "2026-10-28T20:17:00+00:00",
+     "original": "2026-10-27T00:00:00+00:00"
+    },
+    "primary_country": {
+     "id": 1001,
+     "name": "Philippines",
+     "shortname": "Philippines",
+     "iso3": "phl"
+    },
+    "source": [
+     {
+      "id": 1501,
+      "name": "UN High Commissioner for Refugees",
+      "shortname": "UNHCR"
+     }
+    ],
+    "format": [
+     {
+      "id": 10,
+      "name": "Situation Report"
+     }
+    ],
+    "headline": {
+     "title": "Philippines: health cluster bulletin published by UNHCR",
+     "summary": "Periodic bulletin on disease surveillance, the functionality of health facilities and gaps in the health response. [Fictional example item authored for the test fixture.]"
+    },
+    "url": "https://reliefweb.int/node/9900049",
+    "url_alias": "https://reliefweb.int/report/philippines/philippines-health-cluster-bulletin-no-11-oct-2026"
+   }
+  },
+  {
+   "id": 9900050,
+   "score": 1,
+   "href": "https://api.reliefweb.int/v2/reports/9900050",
+   "fields": {
+    "id": 9900050,
+    "title": "Central African Republic: Protection Monitoring Report (Oct 2026)",
+    "date": {
+     "created": "2026-10-28T13:36:00+00:00",
+     "original": "2026-10-27T00:00:00+00:00"
+    },
+    "primary_country": {
+     "id": 1046,
+     "name": "Central African Republic",
+     "shortname": "Central African Republic",
+     "iso3": "caf"
+    },
+    "source": [
+     {
+      "id": 1503,
+      "name": "UN Office for the Coordination of Humanitarian Affairs",
+      "shortname": "OCHA"
+     },
+     {
+      "id": 1506,
+      "name": "International Organization for Migration",
+      "shortname": "IOM"
+     }
+    ],
+    "format": [
+     {
+      "id": 10,
+      "name": "Assessment"
+     }
+    ],
+    "headline": {
+     "title": "Central African Republic: protection monitoring report published by IOM",
+     "summary": "Findings of protection monitoring, with trends in reported incidents and recommendations to humanitarian actors. [Fictional example item authored for the test fixture.]"
+    },
+    "url": "https://reliefweb.int/node/9900050",
+    "url_alias": "https://reliefweb.int/report/central-african-republic/central-african-republic-protection-monitoring-report-oct-2026"
+   }
+  },
+  {
+   "id": 9900051,
+   "score": 1,
+   "href": "https://api.reliefweb.int/v2/reports/9900051",
+   "fields": {
+    "id": 9900051,
+    "title": "Türkiye: Food Security Outlook (Oct 2026)",
+    "date": {
+     "created": "2026-10-28T08:20:00+00:00",
+     "original": "2026-10-27T00:00:00+00:00"
+    },
+    "primary_country": {
+     "id": 1028,
+     "name": "Türkiye",
+     "shortname": "Türkiye",
+     "iso3": "tur"
+    },
+    "source": [
+     {
+      "id": 1501,
+      "name": "UN High Commissioner for Refugees",
+      "shortname": "UNHCR"
+     }
+    ],
+    "format": [
+     {
+      "id": 10,
+      "name": "Analysis"
+     }
+    ],
+    "headline": {
+     "title": "Türkiye: food security outlook published by UNHCR",
+     "summary": "Seasonal outlook on food availability, market prices and expected food security outcomes for the coming months. [Fictional example item authored for the test fixture.]"
+    },
+    "url": "https://reliefweb.int/node/9900051",
+    "url_alias": "https://reliefweb.int/report/t-rkiye/t-rkiye-food-security-outlook-oct-2026"
+   }
+  },
+  {
+   "id": 9900052,
+   "score": 1,
+   "href": "https://api.reliefweb.int/v2/reports/9900052",
+   "fields": {
+    "id": 9900052,
+    "title": "Honduras: Operation Update No. 4 (Oct 2026)",
+    "date": {
+     "created": "2026-10-28T01:39:00+00:00",
+     "original": "2026-10-27T00:00:00+00:00"
+    },
+    "primary_country": {
+     "id": 1024,
+     "name": "Honduras",
+     "shortname": "Honduras",
+     "iso3": "hnd"
+    },
+    "source": [
+     {
+      "id": 1506,
+      "name": "International Organization for Migration",
+      "shortname": "IOM"
+     }
+    ],
+    "format": [
+     {
+      "id": 10,
+      "name": "Situation Report"
+     }
+    ],
+    "headline": {
+     "title": "Honduras: operation update published by IOM",
+     "summary": "Progress update on an ongoing emergency operation, including assistance delivered and constraints faced by response teams. [Fictional example item authored for the test fixture.]"
+    },
+    "url": "https://reliefweb.int/node/9900052",
+    "url_alias": "https://reliefweb.int/report/honduras/honduras-operation-update-no-4-oct-2026"
+   }
+  },
+  {
+   "id": 9900053,
+   "score": 1,
+   "href": "https://api.reliefweb.int/v2/reports/9900053",
+   "fields": {
+    "id": 9900053,
+    "title": "Yemen: Flash Update No. 15 (Oct 2026)",
+    "date": {
+     "created": "2026-10-27T18:58:00+00:00",
+     "original": "2026-10-26T00:00:00+00:00"
+    },
+    "primary_country": {
+     "id": 1030,
+     "name": "Yemen",
+     "shortname": "Yemen",
+     "iso3": "yem"
+    },
+    "source": [
+     {
+      "id": 1501,
+      "name": "UN High Commissioner for Refugees",
+      "shortname": "UNHCR"
+     }
+    ],
+    "format": [
+     {
+      "id": 10,
+      "name": "Situation Report"
+     }
+    ],
+    "headline": {
+     "title": "Yemen: flash update published by UNHCR",
+     "summary": "Short update issued after a sudden deterioration, summarising first assessments, immediate needs and the response under way. [Fictional example item authored for the test fixture.]"
+    },
+    "url": "https://reliefweb.int/node/9900053",
+    "url_alias": "https://reliefweb.int/report/yemen/yemen-flash-update-no-15-oct-2026"
+   }
+  },
+  {
+   "id": 9900054,
+   "score": 1,
+   "href": "https://api.reliefweb.int/v2/reports/9900054",
+   "fields": {
+    "id": 9900054,
+    "title": "Nigeria: Health Cluster Bulletin No. 26 (Oct 2026)",
+    "date": {
+     "created": "2026-10-27T12:17:00+00:00",
+     "original": "2026-10-26T00:00:00+00:00"
+    },
+    "primary_country": {
+     "id": 1012,
+     "name": "Nigeria",
+     "shortname": "Nigeria",
+     "iso3": "nga"
+    },
+    "source": [
+     {
+      "id": 1506,
+      "name": "International Organization for Migration",
+      "shortname": "IOM"
+     }
+    ],
+    "format": [
+     {
+      "id": 10,
+      "name": "Situation Report"
+     }
+    ],
+    "headline": {
+     "title": "Nigeria: health cluster bulletin published by IOM",
+     "summary": "Periodic bulletin on disease surveillance, the functionality of health facilities and gaps in the health response. [Fictional example item authored for the test fixture.]"
+    },
+    "url": "https://reliefweb.int/node/9900054",
+    "url_alias": "https://reliefweb.int/report/nigeria/nigeria-health-cluster-bulletin-no-26-oct-2026"
+   }
+  },
+  {
+   "id": 9900055,
+   "score": 1,
+   "href": "https://api.reliefweb.int/v2/reports/9900055",
+   "fields": {
+    "id": 9900055,
+    "title": "Pakistan: Protection Monitoring Report (Oct 2026)",
+    "date": {
+     "created": "2026-10-27T05:36:00+00:00",
+     "original": "2026-10-26T00:00:00+00:00"
+    },
+    "primary_country": {
+     "id": 1015,
+     "name": "Pakistan",
+     "shortname": "Pakistan",
+     "iso3": "pak"
+    },
+    "source": [
+     {
+      "id": 1501,
+      "name": "UN High Commissioner for Refugees",
+      "shortname": "UNHCR"
+     }
+    ],
+    "format": [
+     {
+      "id": 10,
+      "name": "Assessment"
+     }
+    ],
+    "headline": {
+     "title": "Pakistan: protection monitoring report published by UNHCR",
+     "summary": "Findings of protection monitoring, with trends in reported incidents and recommendations to humanitarian actors. [Fictional example item authored for the test fixture.]"
+    },
+    "url": "https://reliefweb.int/node/9900055",
+    "url_alias": "https://reliefweb.int/report/pakistan/pakistan-protection-monitoring-report-oct-2026"
+   }
+  },
+  {
+   "id": 9900056,
+   "score": 1,
+   "href": "https://api.reliefweb.int/v2/reports/9900056",
+   "fields": {
+    "id": 9900056,
+    "title": "Niger: Food Security Outlook (Oct 2026)",
+    "date": {
+     "created": "2026-10-27T00:20:00+00:00",
+     "original": "2026-10-26T00:00:00+00:00"
+    },
+    "primary_country": {
+     "id": 1011,
+     "name": "Niger",
+     "shortname": "Niger",
+     "iso3": "ner"
+    },
+    "source": [
+     {
+      "id": 1506,
+      "name": "International Organization for Migration",
+      "shortname": "IOM"
+     }
+    ],
+    "format": [
+     {
+      "id": 10,
+      "name": "Analysis"
+     }
+    ],
+    "headline": {
+     "title": "Niger: food security outlook published by IOM",
+     "summary": "Seasonal outlook on food availability, market prices and expected food security outcomes for the coming months. [Fictional example item authored for the test fixture.]"
+    },
+    "url": "https://reliefweb.int/node/9900056",
+    "url_alias": "https://reliefweb.int/report/niger/niger-food-security-outlook-oct-2026"
+   }
+  },
+  {
+   "id": 9900057,
+   "score": 1,
+   "href": "https://api.reliefweb.int/v2/reports/9900057",
+   "fields": {
+    "id": 9900057,
+    "title": "Papua New Guinea: Response Plan Funding Snapshot (Oct 2026)",
+    "date": {
+     "created": "2026-10-26T17:39:00+00:00",
+     "original": "2026-10-25T00:00:00+00:00"
+    },
+    "primary_country": {
+     "id": 1018,
+     "name": "Papua New Guinea",
+     "shortname": "Papua New Guinea",
+     "iso3": "png"
+    },
+    "source": [
+     {
+      "id": 1501,
+      "name": "UN High Commissioner for Refugees",
+      "shortname": "UNHCR"
+     }
+    ],
+    "format": [
+     {
+      "id": 10,
+      "name": "Infographic"
+     }
+    ],
+    "headline": {
+     "title": "Papua New Guinea: response plan funding snapshot published by UNHCR",
+     "summary": "Snapshot of funding received against requirements for the coordinated response plan, by sector. [Fictional example item authored for the test fixture.]"
+    },
+    "url": "https://reliefweb.int/node/9900057",
+    "url_alias": "https://reliefweb.int/report/papua-new-guinea/papua-new-guinea-response-plan-funding-snapshot-oct-2026"
+   }
+  },
+  {
+   "id": 9900058,
+   "score": 1,
+   "href": "https://api.reliefweb.int/v2/reports/9900058",
+   "fields": {
+    "id": 9900058,
+    "title": "Tajikistan: Flash Update No. 30 (Oct 2026)",
+    "date": {
+     "created": "2026-10-26T10:58:00+00:00",
+     "original": "2026-10-25T00:00:00+00:00"
+    },
+    "primary_country": {
+     "id": 1043,
+     "name": "Tajikistan",
+     "shortname": "Tajikistan",
+     "iso3": "tjk"
+    },
+    "source": [
+     {
+      "id": 1506,
+      "name": "International Organization for Migration",
+      "shortname": "IOM"
+     }
+    ],
+    "format": [
+     {
+      "id": 10,
+      "name": "Situation Report"
+     }
+    ],
+    "headline": {
+     "title": "Tajikistan: flash update published by IOM",
+     "summary": "Short update issued after a sudden deterioration, summarising first assessments, immediate needs and the response under way. [Fictional example item authored for the test fixture.]"
+    },
+    "url": "https://reliefweb.int/node/9900058",
+    "url_alias": "https://reliefweb.int/report/tajikistan/tajikistan-flash-update-no-30-oct-2026"
+   }
+  },
+  {
+   "id": 9900059,
+   "score": 1,
+   "href": "https://api.reliefweb.int/v2/reports/9900059",
+   "fields": {
+    "id": 9900059,
+    "title": "Ukraine: Health Cluster Bulletin No. 41 (Oct 2026)",
+    "date": {
+     "created": "2026-10-26T04:17:00+00:00",
+     "original": "2026-10-25T00:00:00+00:00"
+    },
+    "primary_country": {
+     "id": 1044,
+     "name": "Ukraine",
+     "shortname": "Ukraine",
+     "iso3": "ukr"
+    },
+    "source": [
+     {
+      "id": 1503,
+      "name": "UN Office for the Coordination of Humanitarian Affairs",
+      "shortname": "OCHA"
+     },
+     {
+      "id": 1501,
+      "name": "UN High Commissioner for Refugees",
+      "shortname": "UNHCR"
+     }
+    ],
+    "format": [
+     {
+      "id": 10,
+      "name": "Situation Report"
+     }
+    ],
+    "headline": {
+     "title": "Ukraine: health cluster bulletin published by UNHCR",
+     "summary": "Periodic bulletin on disease surveillance, the functionality of health facilities and gaps in the health response. [Fictional example item authored for the test fixture.]"
+    },
+    "url": "https://reliefweb.int/node/9900059",
+    "url_alias": "https://reliefweb.int/report/ukraine/ukraine-health-cluster-bulletin-no-41-oct-2026"
+   }
+  },
+  {
+   "id": 9900060,
+   "score": 1,
+   "href": "https://api.reliefweb.int/v2/reports/9900060",
+   "fields": {
+    "id": 9900060,
+    "title": "Mali: Protection Monitoring Report (Oct 2026)",
+    "date": {
+     "created": "2026-10-25T21:36:00+00:00",
+     "original": "2026-10-24T00:00:00+00:00"
+    },
+    "primary_country": {
+     "id": 1039,
+     "name": "Mali",
+     "shortname": "Mali",
+     "iso3": "mli"
+    },
+    "source": [
+     {
+      "id": 1506,
+      "name": "International Organization for Migration",
+      "shortname": "IOM"
+     }
+    ],
+    "format": [
+     {
+      "id": 10,
+      "name": "Assessment"
+     }
+    ],
+    "headline": {
+     "title": "Mali: protection monitoring report published by IOM",
+     "summary": "Findings of protection monitoring, with trends in reported incidents and recommendations to humanitarian actors. [Fictional example item authored for the test fixture.]"
+    },
+    "url": "https://reliefweb.int/node/9900060",
+    "url_alias": "https://reliefweb.int/report/mali/mali-protection-monitoring-report-oct-2026"
+   }
+  },
+  {
+   "id": 9900061,
+   "score": 1,
+   "href": "https://api.reliefweb.int/v2/reports/9900061",
+   "fields": {
+    "id": 9900061,
+    "title": "oPt: Displacement Overview (Oct 2026)",
+    "date": {
+     "created": "2026-10-25T16:20:00+00:00",
+     "original": "2026-10-24T00:00:00+00:00"
+    },
+    "primary_country": {
+     "id": 1049,
+     "name": "occupied Palestinian territory",
+     "shortname": "oPt",
+     "iso3": "pse"
+    },
+    "source": [
+     {
+      "id": 1501,
+      "name": "UN High Commissioner for Refugees",
+      "shortname": "UNHCR"
+     }
+    ],
+    "format": [
+     {
+      "id": 10,
+      "name": "Assessment"
+     }
+    ],
+    "headline": {
+     "title": "oPt: displacement overview published by UNHCR",
+     "summary": "Overview of recent population movements, the main drivers of displacement and the needs reported at displacement sites. [Fictional example item authored for the test fixture.]"
+    },
+    "url": "https://reliefweb.int/node/9900061",
+    "url_alias": "https://reliefweb.int/report/occupied-palestinian-territory/opt-displacement-overview-oct-2026"
+   }
+  },
+  {
+   "id": 9900062,
+   "score": 1,
+   "href": "https://api.reliefweb.int/v2/reports/9900062",
+   "fields": {
+    "id": 9900062,
+    "title": "Nepal: Response Plan Funding Snapshot (Oct 2026)",
+    "date": {
+     "created": "2026-10-25T09:39:00+00:00",
+     "original": "2026-10-24T00:00:00+00:00"
+    },
+    "primary_country": {
+     "id": 1016,
+     "name": "Nepal",
+     "shortname": "Nepal",
+     "iso3": "npl"
+    },
+    "source": [
+     {
+      "id": 1506,
+      "name": "International Organization for Migration",
+      "shortname": "IOM"
+     }
+    ],
+    "format": [
+     {
+      "id": 10,
+      "name": "Infographic"
+     }
+    ],
+    "headline": {
+     "title": "Nepal: response plan funding snapshot published by IOM",
+     "summary": "Snapshot of funding received against requirements for the coordinated response plan, by sector. [Fictional example item authored for the test fixture.]"
+    },
+    "url": "https://reliefweb.int/node/9900062",
+    "url_alias": "https://reliefweb.int/report/nepal/nepal-response-plan-funding-snapshot-oct-2026"
+   }
+  },
+  {
+   "id": 9900063,
+   "score": 1,
+   "href": "https://api.reliefweb.int/v2/reports/9900063",
+   "fields": {
+    "id": 9900063,
+    "title": "Zimbabwe: Flash Update No. 5 (Oct 2026)",
+    "date": {
+     "created": "2026-10-25T02:58:00+00:00",
+     "original": "2026-10-24T00:00:00+00:00"
+    },
+    "primary_country": {
+     "id": 1036,
+     "name": "Zimbabwe",
+     "shortname": "Zimbabwe",
+     "iso3": "zwe"
+    },
+    "source": [
+     {
+      "id": 1501,
+      "name": "UN High Commissioner for Refugees",
+      "shortname": "UNHCR"
+     }
+    ],
+    "format": [
+     {
+      "id": 10,
+      "name": "Situation Report"
+     }
+    ],
+    "headline": {
+     "title": "Zimbabwe: flash update published by UNHCR",
+     "summary": "Short update issued after a sudden deterioration, summarising first assessments, immediate needs and the response under way. [Fictional example item authored for the test fixture.]"
+    },
+    "url": "https://reliefweb.int/node/9900063",
+    "url_alias": "https://reliefweb.int/report/zimbabwe/zimbabwe-flash-update-no-5-oct-2026"
+   }
+  },
+  {
+   "id": 9900064,
+   "score": 1,
+   "href": "https://api.reliefweb.int/v2/reports/9900064",
+   "fields": {
+    "id": 9900064,
+    "title": "South Sudan: Health Cluster Bulletin No. 16 (Oct 2026)",
+    "date": {
+     "created": "2026-10-24T20:17:00+00:00",
+     "original": "2026-10-23T00:00:00+00:00"
+    },
+    "primary_country": {
+     "id": 1008,
+     "name": "South Sudan",
+     "shortname": "South Sudan",
+     "iso3": "ssd"
+    },
+    "source": [
+     {
+      "id": 1506,
+      "name": "International Organization for Migration",
+      "shortname": "IOM"
+     }
+    ],
+    "format": [
+     {
+      "id": 10,
+      "name": "Situation Report"
+     }
+    ],
+    "headline": {
+     "title": "South Sudan: health cluster bulletin published by IOM",
+     "summary": "Periodic bulletin on disease surveillance, the functionality of health facilities and gaps in the health response. [Fictional example item authored for the test fixture.]"
+    },
+    "url": "https://reliefweb.int/node/9900064",
+    "url_alias": "https://reliefweb.int/report/south-sudan/south-sudan-health-cluster-bulletin-no-16-oct-2026"
+   }
+  },
+  {
+   "id": 9900065,
+   "score": 1,
+   "href": "https://api.reliefweb.int/v2/reports/9900065",
+   "fields": {
+    "id": 9900065,
+    "title": "Haiti: Humanitarian Situation Update No. 27 (Oct 2026)",
+    "date": {
+     "created": "2026-10-24T13:36:00+00:00",
+     "original": "2026-10-23T00:00:00+00:00"
+    },
+    "primary_country": {
+     "id": 1021,
+     "name": "Haiti",
+     "shortname": "Haiti",
+     "iso3": "hti"
+    },
+    "source": [
+     {
+      "id": 1501,
+      "name": "UN High Commissioner for Refugees",
+      "shortname": "UNHCR"
+     }
+    ],
+    "format": [
+     {
+      "id": 10,
+      "name": "Situation Report"
+     }
+    ],
+    "headline": {
+     "title": "Haiti: humanitarian situation update published by UNHCR",
+     "summary": "Routine update on the humanitarian situation and the response by partners, covering access, funding and priority needs in the affected areas. [Fictional example item authored for the test fixture.]"
+    },
+    "url": "https://reliefweb.int/node/9900065",
+    "url_alias": "https://reliefweb.int/report/haiti/haiti-humanitarian-situation-update-no-27-oct-2026"
+   }
+  },
+  {
+   "id": 9900066,
+   "score": 1,
+   "href": "https://api.reliefweb.int/v2/reports/9900066",
+   "fields": {
+    "id": 9900066,
+    "title": "Mozambique: Displacement Overview (Oct 2026)",
+    "date": {
+     "created": "2026-10-24T08:20:00+00:00",
+     "original": "2026-10-23T00:00:00+00:00"
+    },
+    "primary_country": {
+     "id": 1003,
+     "name": "Mozambique",
+     "shortname": "Mozambique",
+     "iso3": "moz"
+    },
+    "source": [
+     {
+      "id": 1506,
+      "name": "International Organization for Migration",
+      "shortname": "IOM"
+     }
+    ],
+    "format": [
+     {
+      "id": 10,
+      "name": "Assessment"
+     }
+    ],
+    "headline": {
+     "title": "Mozambique: displacement overview published by IOM",
+     "summary": "Overview of recent population movements, the main drivers of displacement and the needs reported at displacement sites. [Fictional example item authored for the test fixture.]"
+    },
+    "url": "https://reliefweb.int/node/9900066",
+    "url_alias": "https://reliefweb.int/report/mozambique/mozambique-displacement-overview-oct-2026"
+   }
+  },
+  {
+   "id": 9900067,
+   "score": 1,
+   "href": "https://api.reliefweb.int/v2/reports/9900067",
+   "fields": {
+    "id": 9900067,
+    "title": "Venezuela: Response Plan Funding Snapshot (Oct 2026)",
+    "date": {
+     "created": "2026-10-24T01:39:00+00:00",
+     "original": "2026-10-23T00:00:00+00:00"
+    },
+    "primary_country": {
+     "id": 1048,
+     "name": "Venezuela (Bolivarian Republic of)",
+     "shortname": "Venezuela",
+     "iso3": "ven"
+    },
+    "source": [
+     {
+      "id": 1501,
+      "name": "UN High Commissioner for Refugees",
+      "shortname": "UNHCR"
+     }
+    ],
+    "format": [
+     {
+      "id": 10,
+      "name": "Infographic"
+     }
+    ],
+    "headline": {
+     "title": "Venezuela: response plan funding snapshot published by UNHCR",
+     "summary": "Snapshot of funding received against requirements for the coordinated response plan, by sector. [Fictional example item authored for the test fixture.]"
+    },
+    "url": "https://reliefweb.int/node/9900067",
+    "url_alias": "https://reliefweb.int/report/venezuela-bolivarian-republic-of/venezuela-response-plan-funding-snapshot-oct-2026"
+   }
+  },
+  {
+   "id": 9900068,
+   "score": 1,
+   "href": "https://api.reliefweb.int/v2/reports/9900068",
+   "fields": {
+    "id": 9900068,
+    "title": "Sri Lanka: Flash Update No. 20 (Oct 2026)",
+    "date": {
+     "created": "2026-10-23T18:58:00+00:00",
+     "original": "2026-10-22T00:00:00+00:00"
+    },
+    "primary_country": {
+     "id": 1033,
+     "name": "Sri Lanka",
+     "shortname": "Sri Lanka",
+     "iso3": "lka"
+    },
+    "source": [
+     {
+      "id": 1503,
+      "name": "UN Office for the Coordination of Humanitarian Affairs",
+      "shortname": "OCHA"
+     },
+     {
+      "id": 1506,
+      "name": "International Organization for Migration",
+      "shortname": "IOM"
+     }
+    ],
+    "format": [
+     {
+      "id": 10,
+      "name": "Situation Report"
+     }
+    ],
+    "headline": {
+     "title": "Sri Lanka: flash update published by IOM",
+     "summary": "Short update issued after a sudden deterioration, summarising first assessments, immediate needs and the response under way. [Fictional example item authored for the test fixture.]"
+    },
+    "url": "https://reliefweb.int/node/9900068",
+    "url_alias": "https://reliefweb.int/report/sri-lanka/sri-lanka-flash-update-no-20-oct-2026"
+   }
+  },
+  {
+   "id": 9900069,
+   "score": 1,
+   "href": "https://api.reliefweb.int/v2/reports/9900069",
+   "fields": {
+    "id": 9900069,
+    "title": "Uganda: Operation Update No. 31 (Oct 2026)",
+    "date": {
+     "created": "2026-10-23T12:17:00+00:00",
+     "original": "2026-10-22T00:00:00+00:00"
+    },
+    "primary_country": {
+     "id": 1037,
+     "name": "Uganda",
+     "shortname": "Uganda",
+     "iso3": "uga"
+    },
+    "source": [
+     {
+      "id": 1501,
+      "name": "UN High Commissioner for Refugees",
+      "shortname": "UNHCR"
+     }
+    ],
+    "format": [
+     {
+      "id": 10,
+      "name": "Situation Report"
+     }
+    ],
+    "headline": {
+     "title": "Uganda: operation update published by UNHCR",
+     "summary": "Progress update on an ongoing emergency operation, including assistance delivered and constraints faced by response teams. [Fictional example item authored for the test fixture.]"
+    },
+    "url": "https://reliefweb.int/node/9900069",
+    "url_alias": "https://reliefweb.int/report/uganda/uganda-operation-update-no-31-oct-2026"
+   }
+  },
+  {
+   "id": 9900070,
+   "score": 1,
+   "href": "https://api.reliefweb.int/v2/reports/9900070",
+   "fields": {
+    "id": 9900070,
+    "title": "Afghanistan: Humanitarian Situation Update No. 42 (Oct 2026)",
+    "date": {
+     "created": "2026-10-23T05:36:00+00:00",
+     "original": "2026-10-22T00:00:00+00:00"
+    },
+    "primary_country": {
+     "id": 1014,
+     "name": "Afghanistan",
+     "shortname": "Afghanistan",
+     "iso3": "afg"
+    },
+    "source": [
+     {
+      "id": 1506,
+      "name": "International Organization for Migration",
+      "shortname": "IOM"
+     }
+    ],
+    "format": [
+     {
+      "id": 10,
+      "name": "Situation Report"
+     }
+    ],
+    "headline": {
+     "title": "Afghanistan: humanitarian situation update published by IOM",
+     "summary": "Routine update on the humanitarian situation and the response by partners, covering access, funding and priority needs in the affected areas. [Fictional example item authored for the test fixture.]"
+    },
+    "url": "https://reliefweb.int/node/9900070",
+    "url_alias": "https://reliefweb.int/report/afghanistan/afghanistan-humanitarian-situation-update-no-42-oct-2026"
+   }
+  },
+  {
+   "id": 9900071,
+   "score": 1,
+   "href": "https://api.reliefweb.int/v2/reports/9900071",
+   "fields": {
+    "id": 9900071,
+    "title": "Ethiopia: Displacement Overview (Oct 2026)",
+    "date": {
+     "created": "2026-10-23T00:20:00+00:00",
+     "original": "2026-10-22T00:00:00+00:00"
+    },
+    "primary_country": {
+     "id": 1006,
+     "name": "Ethiopia",
+     "shortname": "Ethiopia",
+     "iso3": "eth"
+    },
+    "source": [
+     {
+      "id": 1501,
+      "name": "UN High Commissioner for Refugees",
+      "shortname": "UNHCR"
+     }
+    ],
+    "format": [
+     {
+      "id": 10,
+      "name": "Assessment"
+     }
+    ],
+    "headline": {
+     "title": "Ethiopia: displacement overview published by UNHCR",
+     "summary": "Overview of recent population movements, the main drivers of displacement and the needs reported at displacement sites. [Fictional example item authored for the test fixture.]"
+    },
+    "url": "https://reliefweb.int/node/9900071",
+    "url_alias": "https://reliefweb.int/report/ethiopia/ethiopia-displacement-overview-oct-2026"
+   }
+  },
+  {
+   "id": 9900072,
+   "score": 1,
+   "href": "https://api.reliefweb.int/v2/reports/9900072",
+   "fields": {
+    "id": 9900072,
+    "title": "Bangladesh: Response Plan Funding Snapshot (Oct 2026)",
+    "date": {
+     "created": "2026-10-22T17:39:00+00:00",
+     "original": "2026-10-21T00:00:00+00:00"
+    },
+    "primary_country": {
+     "id": 1000,
+     "name": "Bangladesh",
+     "shortname": "Bangladesh",
+     "iso3": "bgd"
+    },
+    "source": [
+     {
+      "id": 1506,
+      "name": "International Organization for Migration",
+      "shortname": "IOM"
+     }
+    ],
+    "format": [
+     {
+      "id": 10,
+      "name": "Infographic"
+     }
+    ],
+    "headline": {
+     "title": "Bangladesh: response plan funding snapshot published by IOM",
+     "summary": "Snapshot of funding received against requirements for the coordinated response plan, by sector. [Fictional example item authored for the test fixture.]"
+    },
+    "url": "https://reliefweb.int/node/9900072",
+    "url_alias": "https://reliefweb.int/report/bangladesh/bangladesh-response-plan-funding-snapshot-oct-2026"
+   }
+  }
+ ]
+}

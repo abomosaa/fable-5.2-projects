@@ -1,0 +1,7 @@
+[
+ {"wait": 1.5, "do": "dump_targets"},
+ {"wait": 0.2, "do": "screenshot", "name": "spawn"},
+ {"wait": 0.2, "do": "press", "action": "aim"},
+ {"wait": 0.9, "do": "screenshot", "name": "ads"},
+ {"wait": 0.2, "do": "quit"}
+]

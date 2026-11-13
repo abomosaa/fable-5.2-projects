@@ -1,0 +1,111 @@
+/* Design tokens. Dark, low-chroma neutrals so footage stays the most colourful thing
+   on screen; one accent for selection/focus and a separate hot colour for the playhead. */
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/InterVariable.woff2") format("woff2");
+  font-weight: 100 900;
+  font-display: swap;
+}
+/* The export renderer uses these exact files, so the preview draws text with them too. */
+@font-face {
+  font-family: "Cutline Text";
+  src: url("../fonts/Inter-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-display: block;
+}
+@font-face {
+  font-family: "Cutline Text";
+  src: url("../fonts/Inter-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-display: block;
+}
+
+:root {
+  color-scheme: dark;
+
+  --bg-0: #0b0d10;
+  --bg-1: #12151a;
+  --bg-2: #181c23;
+  --bg-3: #20252e;
+  --bg-4: #2a303b;
+  --bg-5: #353c49;
+  --line: #262b35;
+  --line-strong: #363d4a;
+
+  --text: #e8ebf1;
+  --text-2: #aeb5c2;
+  --text-3: #7d8594;
+  --text-disabled: #596070;
+
+  --accent: #7c9cff;
+  --accent-hover: #93adff;
+  --accent-press: #6587f2;
+  --accent-soft: rgba(124, 156, 255, 0.16);
+  --accent-line: rgba(124, 156, 255, 0.55);
+  --on-accent: #0a1026;
+
+  --playhead: #ff5a5f;
+  --danger: #ff6b6e;
+  --danger-soft: rgba(255, 107, 110, 0.14);
+  --success: #3fcf8e;
+  --success-soft: rgba(63, 207, 142, 0.14);
+  --warning: #f2b84b;
+  --warning-soft: rgba(242, 184, 75, 0.14);
+  --info: #5cc8ff;
+
+  /* clip kinds */
+  --clip-video: #2c4f8c;
+  --clip-video-hi: #6f9dff;
+  --clip-audio: #1d5c4a;
+  --clip-audio-hi: #47d6a2;
+  --clip-image: #51398f;
+  --clip-image-hi: #a98bff;
+  --clip-text: #80561a;
+  --clip-text-hi: #ffc266;
+  --clip-caption: #7d3463;
+  --clip-caption-hi: #ff8fcb;
+
+  --radius-s: 4px;
+  --radius-m: 6px;
+  --radius-l: 10px;
+  --shadow-pop: 0 12px 32px rgba(0, 0, 0, 0.5), 0 2px 6px rgba(0, 0, 0, 0.35);
+  --shadow-dialog: 0 24px 64px rgba(0, 0, 0, 0.6), 0 4px 12px rgba(0, 0, 0, 0.4);
+
+  --font: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --fs-xs: 11px;
+  --fs-s: 12px;
+  --fs-m: 13px;
+  --fs-l: 15px;
+  --fs-xl: 20px;
+
+  --ease: cubic-bezier(0.2, 0.7, 0.2, 1);
+  --dur-fast: 110ms;
+  --dur: 180ms;
+
+  --control-h: 28px;
+  --focus-ring: 0 0 0 2px var(--bg-1), 0 0 0 4px var(--accent);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --dur-fast: 0ms;
+    --dur: 0ms;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+@media (prefers-contrast: more) {
+  :root {
+    --line: #3d4554;
+    --line-strong: #5a6478;
+    --text-2: #cfd5e0;
+    --text-3: #a4acba;
+  }
+}

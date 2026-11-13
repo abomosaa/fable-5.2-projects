@@ -1,0 +1,32 @@
+[gd_resource type="ShaderMaterial" format=3]
+
+[ext_resource type="Shader" path="res://assets/env/shaders/env_pbr.gdshader" id="1_3dic4"]
+[ext_resource type="Texture2D" path="res://assets/env/tex/planks_grey_albedo.jpg" id="2_h8m0y"]
+[ext_resource type="Texture2D" path="res://assets/env/tex/macro_noise.png" id="3_jye4g"]
+[ext_resource type="Texture2D" path="res://assets/env/tex/planks_grey_normal.jpg" id="4_od8vb"]
+[ext_resource type="Texture2D" path="res://assets/env/tex/planks_grey_orm.jpg" id="5_tdis8"]
+[ext_resource type="Texture2D" path="res://assets/env/tex/wear_atlas.png" id="6_b6wx1"]
+
+[resource]
+render_priority = 0
+shader = ExtResource("1_3dic4")
+shader_parameter/albedo_tex = ExtResource("2_h8m0y")
+shader_parameter/normal_tex = ExtResource("4_od8vb")
+shader_parameter/orm_tex = ExtResource("5_tdis8")
+shader_parameter/macro_tex = ExtResource("3_jye4g")
+shader_parameter/wear_tex = ExtResource("6_b6wx1")
+shader_parameter/tint = Color(1, 1, 1, 1)
+shader_parameter/brightness = 1.55
+shader_parameter/saturation = 0.8
+shader_parameter/normal_strength = 1.0
+shader_parameter/roughness_mul = 1.0
+shader_parameter/roughness_add = 0.0
+shader_parameter/metallic_mul = 1.0
+shader_parameter/ao_strength = 1.0
+shader_parameter/piece_variation = 0.14
+shader_parameter/macro_variation = 0.12
+shader_parameter/dirt_color = Color(0.17, 0.13, 0.095, 1)
+shader_parameter/dirt_strength = 0.55
+shader_parameter/bleach_strength = 0.5
+shader_parameter/use_wear = 1.0
+shader_parameter/specular_level = 0.5

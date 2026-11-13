@@ -1,0 +1,2337 @@
+{
+ "format": "mechanism-workshop",
+ "version": 1,
+ "id": "example-walker",
+ "name": "Walking linkage robot",
+ "description": "A six-legged walker built from three pairs of Jansen linkages on a three-throw crankshaft (throws 120° apart). One gear motor turns the crank; nothing else is driven.\n\nThis runs in free-body mode: the chassis is not grounded. The machine moves only because the feet push on the floor through unilateral contact with Coulomb friction. Watch \"Loaded feet\" and the locomotion summary in Diagnostics.\n\nTry it: the variants lower the floor friction to 0.08 (\"Icy floor\": the feet slide and the tow load wins), cut the motor torque limit (\"Weak motor\": it stalls) or raise the tow load; change a link length (for example the crank radius m) and see whether the linkage still assembles and walks. Nothing guarantees that an edited leg walks — diagnosing why not is the point.\n\nIdealisations: planar rigid bodies; pins are ideal revolute joints; part-to-part collisions are detected and reported but only floor contact produces forces.",
+ "createdAt": "2026-01-01T00:00:00.000Z",
+ "modifiedAt": "2026-01-01T00:00:00.000Z",
+ "parts": [
+  {
+   "id": "p1",
+   "name": "Side plate A",
+   "kind": "baseplate",
+   "params": {
+    "width": 102,
+    "height": 30,
+    "thickness": 3,
+    "cornerRadius": 6,
+    "holes": [
+     {
+      "x": 0,
+      "y": 6.8,
+      "d": 5
+     },
+     {
+      "x": -38,
+      "y": -1,
+      "d": 3
+     },
+     {
+      "x": 38,
+      "y": -1,
+      "d": 3
+     }
+    ]
+   },
+   "pose": {
+    "x": 0,
+    "y": -6.8,
+    "angle": 0,
+    "z": 0
+   },
+   "grounded": false,
+   "materialId": "aluminum",
+   "color": "#7d8796",
+   "groupId": "g1"
+  },
+  {
+   "id": "p2",
+   "name": "Side plate B",
+   "kind": "baseplate",
+   "params": {
+    "width": 102,
+    "height": 30,
+    "thickness": 3,
+    "cornerRadius": 6,
+    "holes": [
+     {
+      "x": 0,
+      "y": 6.8,
+      "d": 5
+     },
+     {
+      "x": -38,
+      "y": -1,
+      "d": 3
+     },
+     {
+      "x": 38,
+      "y": -1,
+      "d": 3
+     }
+    ]
+   },
+   "pose": {
+    "x": 0,
+    "y": -6.8,
+    "angle": 0,
+    "z": 70
+   },
+   "grounded": false,
+   "materialId": "aluminum",
+   "color": "#7d8796",
+   "groupId": "g1"
+  },
+  {
+   "id": "p3",
+   "name": "Pivot rod (front)",
+   "kind": "shaft",
+   "params": {
+    "diameter": 3,
+    "length": 73
+   },
+   "pose": {
+    "x": -38,
+    "y": -7.8,
+    "angle": 0,
+    "z": 0
+   },
+   "grounded": false,
+   "materialId": "steel",
+   "groupId": "g1"
+  },
+  {
+   "id": "p4",
+   "name": "Pivot rod (rear)",
+   "kind": "shaft",
+   "params": {
+    "diameter": 3,
+    "length": 73
+   },
+   "pose": {
+    "x": 38,
+    "y": -7.8,
+    "angle": 0,
+    "z": 0
+   },
+   "grounded": false,
+   "materialId": "steel",
+   "groupId": "g1"
+  },
+  {
+   "id": "p5",
+   "name": "Gear motor",
+   "kind": "motor",
+   "params": {
+    "shape": "round",
+    "size": 12,
+    "bodyLength": 24,
+    "shaftDiameter": 3,
+    "shaftLength": 4,
+    "mass": 0.012
+   },
+   "pose": {
+    "x": 0,
+    "y": 0,
+    "angle": 0,
+    "z": -2
+   },
+   "grounded": false,
+   "materialId": "motor",
+   "groupId": "g1"
+  },
+  {
+   "id": "p6",
+   "name": "Crank web 1",
+   "kind": "link",
+   "params": {
+    "shape": "binary",
+    "length": 15,
+    "sideAC": 40,
+    "sideBC": 40,
+    "flip": false,
+    "width": 8,
+    "thickness": 3,
+    "holeDiameter": 3
+   },
+   "pose": {
+    "x": 0,
+    "y": 0,
+    "angle": 1.5707963267948966,
+    "z": 3.5
+   },
+   "grounded": false,
+   "materialId": "aluminum",
+   "color": "#c9ced6",
+   "groupId": "g2"
+  },
+  {
+   "id": "p7",
+   "name": "Crank pin 1",
+   "kind": "shaft",
+   "params": {
+    "diameter": 3,
+    "length": 24
+   },
+   "pose": {
+    "x": 9.18485099360515e-16,
+    "y": 15,
+    "angle": 0,
+    "z": 3.5
+   },
+   "grounded": false,
+   "materialId": "steel",
+   "groupId": "g2"
+  },
+  {
+   "id": "p8",
+   "name": "Crank web 2",
+   "kind": "link",
+   "params": {
+    "shape": "binary",
+    "length": 25.98076211353316,
+    "sideAC": 40,
+    "sideBC": 40,
+    "flip": false,
+    "width": 8,
+    "thickness": 3,
+    "holeDiameter": 3
+   },
+   "pose": {
+    "x": 9.18485099360515e-16,
+    "y": 15,
+    "angle": -2.0943951023931957,
+    "z": 24.5
+   },
+   "grounded": false,
+   "materialId": "aluminum",
+   "color": "#c9ced6",
+   "groupId": "g2"
+  },
+  {
+   "id": "p9",
+   "name": "Crank pin 2",
+   "kind": "shaft",
+   "params": {
+    "diameter": 3,
+    "length": 24
+   },
+   "pose": {
+    "x": -12.990381056766582,
+    "y": -7.499999999999996,
+    "angle": 0,
+    "z": 24.5
+   },
+   "grounded": false,
+   "materialId": "steel",
+   "groupId": "g2"
+  },
+  {
+   "id": "p10",
+   "name": "Crank web 3",
+   "kind": "link",
+   "params": {
+    "shape": "binary",
+    "length": 25.98076211353316,
+    "sideAC": 40,
+    "sideBC": 40,
+    "flip": false,
+    "width": 8,
+    "thickness": 3,
+    "holeDiameter": 3
+   },
+   "pose": {
+    "x": -12.990381056766582,
+    "y": -7.499999999999996,
+    "angle": -4.444180430753125e-16,
+    "z": 45.5
+   },
+   "grounded": false,
+   "materialId": "aluminum",
+   "color": "#c9ced6",
+   "groupId": "g2"
+  },
+  {
+   "id": "p11",
+   "name": "Crank pin 3",
+   "kind": "shaft",
+   "params": {
+    "diameter": 3,
+    "length": 24
+   },
+   "pose": {
+    "x": 12.990381056766577,
+    "y": -7.500000000000007,
+    "angle": 0,
+    "z": 45.5
+   },
+   "grounded": false,
+   "materialId": "steel",
+   "groupId": "g2"
+  },
+  {
+   "id": "p12",
+   "name": "Crank web 4",
+   "kind": "link",
+   "params": {
+    "shape": "binary",
+    "length": 15.000000000000002,
+    "sideAC": 40,
+    "sideBC": 40,
+    "flip": false,
+    "width": 8,
+    "thickness": 3,
+    "holeDiameter": 3
+   },
+   "pose": {
+    "x": 12.990381056766577,
+    "y": -7.500000000000007,
+    "angle": 2.617993877991494,
+    "z": 66.5
+   },
+   "grounded": false,
+   "materialId": "aluminum",
+   "color": "#c9ced6",
+   "groupId": "g2"
+  },
+  {
+   "id": "p13",
+   "name": "Link j F1",
+   "kind": "link",
+   "params": {
+    "shape": "binary",
+    "length": 50,
+    "sideAC": 40,
+    "sideBC": 40,
+    "flip": false,
+    "width": 8,
+    "thickness": 3,
+    "holeDiameter": 3
+   },
+   "pose": {
+    "x": 9.18485099360515e-16,
+    "y": 15,
+    "angle": 2.7782471284547485,
+    "z": 7
+   },
+   "grounded": false,
+   "materialId": "pla",
+   "color": "#e8a33d",
+   "groupId": "g3"
+  },
+  {
+   "id": "p14",
+   "name": "Link k F1",
+   "kind": "link",
+   "params": {
+    "shape": "binary",
+    "length": 61.9,
+    "sideAC": 40,
+    "sideBC": 40,
+    "flip": false,
+    "width": 8,
+    "thickness": 3,
+    "holeDiameter": 3
+   },
+   "pose": {
+    "x": 9.18485099360515e-16,
+    "y": 15,
+    "angle": -1.916842422890973,
+    "z": 10.5
+   },
+   "grounded": false,
+   "materialId": "pla",
+   "color": "#e8a33d",
+   "groupId": "g3"
+  },
+  {
+   "id": "p15",
+   "name": "Upper triangle F1",
+   "kind": "link",
+   "params": {
+    "shape": "ternary",
+    "length": 41.5,
+    "sideAC": 40.1,
+    "sideBC": 55.8,
+    "flip": false,
+    "width": 8,
+    "thickness": 3,
+    "holeDiameter": 3
+   },
+   "pose": {
+    "x": -38,
+    "y": -7.8,
+    "angle": 1.7828803101431188,
+    "z": 14
+   },
+   "grounded": false,
+   "materialId": "pla",
+   "color": "#e8a33d",
+   "groupId": "g3"
+  },
+  {
+   "id": "p16",
+   "name": "Link c F1",
+   "kind": "link",
+   "params": {
+    "shape": "binary",
+    "length": 39.3,
+    "sideAC": 40,
+    "sideBC": 40,
+    "flip": false,
+    "width": 8,
+    "thickness": 3,
+    "holeDiameter": 3
+   },
+   "pose": {
+    "x": -38,
+    "y": -7.8,
+    "angle": -1.1233224026504531,
+    "z": 7
+   },
+   "grounded": false,
+   "materialId": "pla",
+   "color": "#e8a33d",
+   "groupId": "g3"
+  },
+  {
+   "id": "p17",
+   "name": "Link f F1",
+   "kind": "link",
+   "params": {
+    "shape": "binary",
+    "length": 39.4,
+    "sideAC": 40,
+    "sideBC": 40,
+    "flip": false,
+    "width": 8,
+    "thickness": 3,
+    "holeDiameter": 3
+   },
+   "pose": {
+    "x": -77.66779126317493,
+    "y": -13.67165532888154,
+    "angle": -1.0318839312285562,
+    "z": 7
+   },
+   "grounded": false,
+   "materialId": "pla",
+   "color": "#e8a33d",
+   "groupId": "g3"
+  },
+  {
+   "id": "p18",
+   "name": "Foot F1",
+   "kind": "link",
+   "params": {
+    "shape": "ternary",
+    "length": 36.7,
+    "sideAC": 49,
+    "sideBC": 65.7,
+    "flip": false,
+    "width": 8,
+    "thickness": 3,
+    "holeDiameter": 3
+   },
+   "pose": {
+    "x": -20.995300642707384,
+    "y": -43.230639279698195,
+    "angle": -3.0253432704764873,
+    "z": 14
+   },
+   "grounded": false,
+   "materialId": "pla",
+   "color": "#e8a33d",
+   "groupId": "g3"
+  },
+  {
+   "id": "p19",
+   "name": "Link j R1",
+   "kind": "link",
+   "params": {
+    "shape": "binary",
+    "length": 50,
+    "sideAC": 40,
+    "sideBC": 40,
+    "flip": false,
+    "width": 8,
+    "thickness": 3,
+    "holeDiameter": 3
+   },
+   "pose": {
+    "x": -9.18485099360515e-16,
+    "y": 15,
+    "angle": 0.3633455251350449,
+    "z": 14
+   },
+   "grounded": false,
+   "materialId": "pla",
+   "color": "#e8a33d",
+   "groupId": "g4"
+  },
+  {
+   "id": "p20",
+   "name": "Link k R1",
+   "kind": "link",
+   "params": {
+    "shape": "binary",
+    "length": 61.9,
+    "sideAC": 40,
+    "sideBC": 40,
+    "flip": false,
+    "width": 8,
+    "thickness": 3,
+    "holeDiameter": 3
+   },
+   "pose": {
+    "x": -9.18485099360515e-16,
+    "y": 15,
+    "angle": -1.2247502306988203,
+    "z": 17.5
+   },
+   "grounded": false,
+   "materialId": "pla",
+   "color": "#e8a33d",
+   "groupId": "g4"
+  },
+  {
+   "id": "p21",
+   "name": "Upper triangle R1",
+   "kind": "link",
+   "params": {
+    "shape": "ternary",
+    "length": 41.5,
+    "sideAC": 40.1,
+    "sideBC": 55.8,
+    "flip": true,
+    "width": 8,
+    "thickness": 3,
+    "holeDiameter": 3
+   },
+   "pose": {
+    "x": 38,
+    "y": -7.8,
+    "angle": 1.3587123434466746,
+    "z": 21
+   },
+   "grounded": false,
+   "materialId": "pla",
+   "color": "#e8a33d",
+   "groupId": "g4"
+  },
+  {
+   "id": "p22",
+   "name": "Link c R1",
+   "kind": "link",
+   "params": {
+    "shape": "binary",
+    "length": 39.3,
+    "sideAC": 40,
+    "sideBC": 40,
+    "flip": false,
+    "width": 8,
+    "thickness": 3,
+    "holeDiameter": 3
+   },
+   "pose": {
+    "x": 38,
+    "y": -7.8,
+    "angle": -2.01827025093934,
+    "z": 14
+   },
+   "grounded": false,
+   "materialId": "pla",
+   "color": "#e8a33d",
+   "groupId": "g4"
+  },
+  {
+   "id": "p23",
+   "name": "Link f R1",
+   "kind": "link",
+   "params": {
+    "shape": "binary",
+    "length": 39.4,
+    "sideAC": 40,
+    "sideBC": 40,
+    "flip": false,
+    "width": 8,
+    "thickness": 3,
+    "holeDiameter": 3
+   },
+   "pose": {
+    "x": 77.66779126317493,
+    "y": -13.67165532888154,
+    "angle": -2.109708722361237,
+    "z": 14
+   },
+   "grounded": false,
+   "materialId": "pla",
+   "color": "#e8a33d",
+   "groupId": "g4"
+  },
+  {
+   "id": "p24",
+   "name": "Foot R1",
+   "kind": "link",
+   "params": {
+    "shape": "ternary",
+    "length": 36.7,
+    "sideAC": 49,
+    "sideBC": 65.7,
+    "flip": true,
+    "width": 8,
+    "thickness": 3,
+    "holeDiameter": 3
+   },
+   "pose": {
+    "x": 20.995300642707384,
+    "y": -43.230639279698195,
+    "angle": -0.11624938311330599,
+    "z": 21
+   },
+   "grounded": false,
+   "materialId": "pla",
+   "color": "#e8a33d",
+   "groupId": "g4"
+  },
+  {
+   "id": "p25",
+   "name": "Link j F2",
+   "kind": "link",
+   "params": {
+    "shape": "binary",
+    "length": 50,
+    "sideAC": 40,
+    "sideBC": 40,
+    "flip": false,
+    "width": 8,
+    "thickness": 3,
+    "holeDiameter": 3
+   },
+   "pose": {
+    "x": -12.990381056766582,
+    "y": -7.499999999999996,
+    "angle": 2.178471610931524,
+    "z": 28
+   },
+   "grounded": false,
+   "materialId": "pla",
+   "color": "#4c9fd8",
+   "groupId": "g5"
+  },
+  {
+   "id": "p26",
+   "name": "Link k F2",
+   "kind": "link",
+   "params": {
+    "shape": "binary",
+    "length": 61.9,
+    "sideAC": 40,
+    "sideBC": 40,
+    "flip": false,
+    "width": 8,
+    "thickness": 3,
+    "holeDiameter": 3
+   },
+   "pose": {
+    "x": -12.990381056766582,
+    "y": -7.499999999999996,
+    "angle": -2.783389250307449,
+    "z": 31.5
+   },
+   "grounded": false,
+   "materialId": "pla",
+   "color": "#4c9fd8",
+   "groupId": "g5"
+  },
+  {
+   "id": "p27",
+   "name": "Upper triangle F2",
+   "kind": "link",
+   "params": {
+    "shape": "ternary",
+    "length": 41.5,
+    "sideAC": 40.1,
+    "sideBC": 55.8,
+    "flip": false,
+    "width": 8,
+    "thickness": 3,
+    "holeDiameter": 3
+   },
+   "pose": {
+    "x": -38,
+    "y": -7.8,
+    "angle": 1.656162727015481,
+    "z": 35
+   },
+   "grounded": false,
+   "materialId": "pla",
+   "color": "#4c9fd8",
+   "groupId": "g5"
+  },
+  {
+   "id": "p28",
+   "name": "Link c F2",
+   "kind": "link",
+   "params": {
+    "shape": "binary",
+    "length": 39.3,
+    "sideAC": 40,
+    "sideBC": 40,
+    "flip": false,
+    "width": 8,
+    "thickness": 3,
+    "holeDiameter": 3
+   },
+   "pose": {
+    "x": -38,
+    "y": -7.8,
+    "angle": -2.5657145401103296,
+    "z": 28
+   },
+   "grounded": false,
+   "materialId": "pla",
+   "color": "#4c9fd8",
+   "groupId": "g5"
+  },
+  {
+   "id": "p29",
+   "name": "Link f F2",
+   "kind": "link",
+   "params": {
+    "shape": "binary",
+    "length": 39.4,
+    "sideAC": 40,
+    "sideBC": 40,
+    "flip": false,
+    "width": 8,
+    "thickness": 3,
+    "holeDiameter": 3
+   },
+   "pose": {
+    "x": -78.09178982164366,
+    "y": -8.61141166934615,
+    "angle": -2.400862002261472,
+    "z": 28
+   },
+   "grounded": false,
+   "materialId": "pla",
+   "color": "#4c9fd8",
+   "groupId": "g5"
+  },
+  {
+   "id": "p30",
+   "name": "Foot F2",
+   "kind": "link",
+   "params": {
+    "shape": "ternary",
+    "length": 36.7,
+    "sideAC": 49,
+    "sideBC": 65.7,
+    "flip": false,
+    "width": 8,
+    "thickness": 3,
+    "holeDiameter": 3
+   },
+   "pose": {
+    "x": -70.961477109932,
+    "y": -29.201659438731085,
+    "angle": -2.9774244086845463,
+    "z": 35
+   },
+   "grounded": false,
+   "materialId": "pla",
+   "color": "#4c9fd8",
+   "groupId": "g5"
+  },
+  {
+   "id": "p31",
+   "name": "Link j R2",
+   "kind": "link",
+   "params": {
+    "shape": "binary",
+    "length": 50,
+    "sideAC": 40,
+    "sideBC": 40,
+    "flip": false,
+    "width": 8,
+    "thickness": 3,
+    "holeDiameter": 3
+   },
+   "pose": {
+    "x": -12.99038105676658,
+    "y": -7.499999999999997,
+    "angle": 0.8408433161622829,
+    "z": 35
+   },
+   "grounded": false,
+   "materialId": "pla",
+   "color": "#4c9fd8",
+   "groupId": "g6"
+  },
+  {
+   "id": "p32",
+   "name": "Link k R2",
+   "kind": "link",
+   "params": {
+    "shape": "binary",
+    "length": 61.9,
+    "sideAC": 40,
+    "sideBC": 40,
+    "flip": false,
+    "width": 8,
+    "thickness": 3,
+    "holeDiameter": 3
+   },
+   "pose": {
+    "x": -12.99038105676658,
+    "y": -7.499999999999997,
+    "angle": -0.6912489794554709,
+    "z": 38.5
+   },
+   "grounded": false,
+   "materialId": "pla",
+   "color": "#4c9fd8",
+   "groupId": "g6"
+  },
+  {
+   "id": "p33",
+   "name": "Upper triangle R2",
+   "kind": "link",
+   "params": {
+    "shape": "ternary",
+    "length": 41.5,
+    "sideAC": 40.1,
+    "sideBC": 55.8,
+    "flip": true,
+    "width": 8,
+    "thickness": 3,
+    "holeDiameter": 3
+   },
+   "pose": {
+    "x": 38,
+    "y": -7.8,
+    "angle": 2.0100550506515713,
+    "z": 42
+   },
+   "grounded": false,
+   "materialId": "pla",
+   "color": "#4c9fd8",
+   "groupId": "g6"
+  },
+  {
+   "id": "p34",
+   "name": "Link c R2",
+   "kind": "link",
+   "params": {
+    "shape": "binary",
+    "length": 39.3,
+    "sideAC": 40,
+    "sideBC": 40,
+    "flip": false,
+    "width": 8,
+    "thickness": 3,
+    "holeDiameter": 3
+   },
+   "pose": {
+    "x": 38,
+    "y": -7.8,
+    "angle": -1.6548520615299744,
+    "z": 35
+   },
+   "grounded": false,
+   "materialId": "pla",
+   "color": "#4c9fd8",
+   "groupId": "g6"
+  },
+  {
+   "id": "p35",
+   "name": "Link f R2",
+   "kind": "link",
+   "params": {
+    "shape": "binary",
+    "length": 39.4,
+    "sideAC": 40,
+    "sideBC": 40,
+    "flip": false,
+    "width": 8,
+    "thickness": 3,
+    "holeDiameter": 3
+   },
+   "pose": {
+    "x": 73.10634295059322,
+    "y": 11.579233334560307,
+    "angle": -1.7636300252103245,
+    "z": 35
+   },
+   "grounded": false,
+   "materialId": "pla",
+   "color": "#4c9fd8",
+   "groupId": "g6"
+  },
+  {
+   "id": "p36",
+   "name": "Foot R2",
+   "kind": "link",
+   "params": {
+    "shape": "ternary",
+    "length": 36.7,
+    "sideAC": 49,
+    "sideBC": 65.7,
+    "flip": true,
+    "width": 8,
+    "thickness": 3,
+    "holeDiameter": 3
+   },
+   "pose": {
+    "x": 34.7004981949204,
+    "y": -46.96124727122817,
+    "angle": 0.5721459215567157,
+    "z": 42
+   },
+   "grounded": false,
+   "materialId": "pla",
+   "color": "#4c9fd8",
+   "groupId": "g6"
+  },
+  {
+   "id": "p37",
+   "name": "Link j F3",
+   "kind": "link",
+   "params": {
+    "shape": "binary",
+    "length": 50,
+    "sideAC": 40,
+    "sideBC": 40,
+    "flip": false,
+    "width": 8,
+    "thickness": 3,
+    "holeDiameter": 3
+   },
+   "pose": {
+    "x": 12.990381056766577,
+    "y": -7.500000000000007,
+    "angle": 2.30074933742751,
+    "z": 49
+   },
+   "grounded": false,
+   "materialId": "pla",
+   "color": "#62c370",
+   "groupId": "g7"
+  },
+  {
+   "id": "p38",
+   "name": "Link k F3",
+   "kind": "link",
+   "params": {
+    "shape": "binary",
+    "length": 61.9,
+    "sideAC": 40,
+    "sideBC": 40,
+    "flip": false,
+    "width": 8,
+    "thickness": 3,
+    "holeDiameter": 3
+   },
+   "pose": {
+    "x": 12.990381056766577,
+    "y": -7.500000000000007,
+    "angle": -2.4503436741343227,
+    "z": 52.5
+   },
+   "grounded": false,
+   "materialId": "pla",
+   "color": "#62c370",
+   "groupId": "g7"
+  },
+  {
+   "id": "p39",
+   "name": "Upper triangle F3",
+   "kind": "link",
+   "params": {
+    "shape": "ternary",
+    "length": 41.5,
+    "sideAC": 40.1,
+    "sideBC": 55.8,
+    "flip": false,
+    "width": 8,
+    "thickness": 3,
+    "holeDiameter": 3
+   },
+   "pose": {
+    "x": -38,
+    "y": -7.8,
+    "angle": 1.131537602938222,
+    "z": 56
+   },
+   "grounded": false,
+   "materialId": "pla",
+   "color": "#62c370",
+   "groupId": "g7"
+  },
+  {
+   "id": "p40",
+   "name": "Link c F3",
+   "kind": "link",
+   "params": {
+    "shape": "binary",
+    "length": 39.3,
+    "sideAC": 40,
+    "sideBC": 40,
+    "flip": false,
+    "width": 8,
+    "thickness": 3,
+    "holeDiameter": 3
+   },
+   "pose": {
+    "x": -38,
+    "y": -7.8,
+    "angle": -1.4867405920598191,
+    "z": 49
+   },
+   "grounded": false,
+   "materialId": "pla",
+   "color": "#62c370",
+   "groupId": "g7"
+  },
+  {
+   "id": "p41",
+   "name": "Link f F3",
+   "kind": "link",
+   "params": {
+    "shape": "binary",
+    "length": 39.4,
+    "sideAC": 40,
+    "sideBC": 40,
+    "flip": false,
+    "width": 8,
+    "thickness": 3,
+    "holeDiameter": 3
+   },
+   "pose": {
+    "x": -73.10634295059324,
+    "y": 11.579233334560307,
+    "angle": -1.3779626283794684,
+    "z": 49
+   },
+   "grounded": false,
+   "materialId": "pla",
+   "color": "#62c370",
+   "groupId": "g7"
+  },
+  {
+   "id": "p42",
+   "name": "Foot F3",
+   "kind": "link",
+   "params": {
+    "shape": "ternary",
+    "length": 36.7,
+    "sideAC": 49,
+    "sideBC": 65.7,
+    "flip": false,
+    "width": 8,
+    "thickness": 3,
+    "holeDiameter": 3
+   },
+   "pose": {
+    "x": -34.700498194920414,
+    "y": -46.96124727122817,
+    "angle": 2.5694467320330774,
+    "z": 56
+   },
+   "grounded": false,
+   "materialId": "pla",
+   "color": "#62c370",
+   "groupId": "g7"
+  },
+  {
+   "id": "p43",
+   "name": "Link j R3",
+   "kind": "link",
+   "params": {
+    "shape": "binary",
+    "length": 50,
+    "sideAC": 40,
+    "sideBC": 40,
+    "flip": false,
+    "width": 8,
+    "thickness": 3,
+    "holeDiameter": 3
+   },
+   "pose": {
+    "x": 12.990381056766577,
+    "y": -7.500000000000005,
+    "angle": 0.9631210426582694,
+    "z": 56
+   },
+   "grounded": false,
+   "materialId": "pla",
+   "color": "#62c370",
+   "groupId": "g8"
+  },
+  {
+   "id": "p44",
+   "name": "Link k R3",
+   "kind": "link",
+   "params": {
+    "shape": "binary",
+    "length": 61.9,
+    "sideAC": 40,
+    "sideBC": 40,
+    "flip": false,
+    "width": 8,
+    "thickness": 3,
+    "holeDiameter": 3
+   },
+   "pose": {
+    "x": 12.990381056766577,
+    "y": -7.500000000000005,
+    "angle": -0.35820340328234407,
+    "z": 59.5
+   },
+   "grounded": false,
+   "materialId": "pla",
+   "color": "#62c370",
+   "groupId": "g8"
+  },
+  {
+   "id": "p45",
+   "name": "Upper triangle R3",
+   "kind": "link",
+   "params": {
+    "shape": "ternary",
+    "length": 41.5,
+    "sideAC": 40.1,
+    "sideBC": 55.8,
+    "flip": true,
+    "width": 8,
+    "thickness": 3,
+    "holeDiameter": 3
+   },
+   "pose": {
+    "x": 38,
+    "y": -7.8,
+    "angle": 1.485429926574313,
+    "z": 63
+   },
+   "grounded": false,
+   "materialId": "pla",
+   "color": "#62c370",
+   "groupId": "g8"
+  },
+  {
+   "id": "p46",
+   "name": "Link c R3",
+   "kind": "link",
+   "params": {
+    "shape": "binary",
+    "length": 39.3,
+    "sideAC": 40,
+    "sideBC": 40,
+    "flip": false,
+    "width": 8,
+    "thickness": 3,
+    "holeDiameter": 3
+   },
+   "pose": {
+    "x": 38,
+    "y": -7.8,
+    "angle": -0.5758781134794637,
+    "z": 56
+   },
+   "grounded": false,
+   "materialId": "pla",
+   "color": "#62c370",
+   "groupId": "g8"
+  },
+  {
+   "id": "p47",
+   "name": "Link f R3",
+   "kind": "link",
+   "params": {
+    "shape": "binary",
+    "length": 39.4,
+    "sideAC": 40,
+    "sideBC": 40,
+    "flip": false,
+    "width": 8,
+    "thickness": 3,
+    "holeDiameter": 3
+   },
+   "pose": {
+    "x": 78.09178982164366,
+    "y": -8.611411669346131,
+    "angle": -0.740730651328321,
+    "z": 56
+   },
+   "grounded": false,
+   "materialId": "pla",
+   "color": "#62c370",
+   "groupId": "g8"
+  },
+  {
+   "id": "p48",
+   "name": "Foot R3",
+   "kind": "link",
+   "params": {
+    "shape": "ternary",
+    "length": 36.7,
+    "sideAC": 49,
+    "sideBC": 65.7,
+    "flip": true,
+    "width": 8,
+    "thickness": 3,
+    "holeDiameter": 3
+   },
+   "pose": {
+    "x": 70.961477109932,
+    "y": -29.2016594387311,
+    "angle": -0.1641682449052457,
+    "z": 63
+   },
+   "grounded": false,
+   "materialId": "pla",
+   "color": "#62c370",
+   "groupId": "g8"
+  }
+ ],
+ "joints": [
+  {
+   "type": "rigid",
+   "a": "p1",
+   "b": "p3",
+   "anchorA": {
+    "port": "H2"
+   },
+   "anchorB": {
+    "port": "center"
+   },
+   "angle": 0,
+   "id": "j1",
+   "name": "Front rod in plate A"
+  },
+  {
+   "type": "rigid",
+   "a": "p1",
+   "b": "p4",
+   "anchorA": {
+    "port": "H3"
+   },
+   "anchorB": {
+    "port": "center"
+   },
+   "angle": 0,
+   "id": "j2",
+   "name": "Rear rod in plate A"
+  },
+  {
+   "type": "rigid",
+   "a": "p3",
+   "b": "p2",
+   "anchorA": {
+    "port": "center"
+   },
+   "anchorB": {
+    "port": "H2"
+   },
+   "angle": 0,
+   "id": "j3",
+   "name": "Plate B on front rod"
+  },
+  {
+   "type": "rigid",
+   "a": "p1",
+   "b": "p5",
+   "anchorA": {
+    "port": "H1"
+   },
+   "anchorB": {
+    "port": "shaft"
+   },
+   "angle": 0,
+   "id": "j4",
+   "name": "Motor mount"
+  },
+  {
+   "type": "revolute",
+   "a": "p1",
+   "b": "p6",
+   "anchorA": {
+    "port": "H1"
+   },
+   "anchorB": {
+    "port": "A"
+   },
+   "id": "j5",
+   "name": "Crank bearing",
+   "pinDiameter": 3,
+   "motor": {
+    "enabled": true,
+    "type": "servo",
+    "speed": -5.235987755982988,
+    "maxTorque": 120000,
+    "rampTime": 0.4,
+    "profile": "constant"
+   }
+  },
+  {
+   "type": "rigid",
+   "a": "p6",
+   "b": "p7",
+   "anchorA": {
+    "port": "B"
+   },
+   "anchorB": {
+    "port": "center"
+   },
+   "angle": -1.5707963267948966,
+   "id": "j6",
+   "name": "Pin 1 in web"
+  },
+  {
+   "type": "rigid",
+   "a": "p7",
+   "b": "p8",
+   "anchorA": {
+    "port": "center"
+   },
+   "anchorB": {
+    "port": "A"
+   },
+   "angle": -2.0943951023931957,
+   "id": "j7",
+   "name": "Web 2 on pin 1"
+  },
+  {
+   "type": "rigid",
+   "a": "p8",
+   "b": "p9",
+   "anchorA": {
+    "port": "B"
+   },
+   "anchorB": {
+    "port": "center"
+   },
+   "angle": 2.0943951023931957,
+   "id": "j8",
+   "name": "Pin 2 in web"
+  },
+  {
+   "type": "rigid",
+   "a": "p9",
+   "b": "p10",
+   "anchorA": {
+    "port": "center"
+   },
+   "anchorB": {
+    "port": "A"
+   },
+   "angle": -4.444180430753125e-16,
+   "id": "j9",
+   "name": "Web 3 on pin 2"
+  },
+  {
+   "type": "rigid",
+   "a": "p10",
+   "b": "p11",
+   "anchorA": {
+    "port": "B"
+   },
+   "anchorB": {
+    "port": "center"
+   },
+   "angle": 4.444180430753125e-16,
+   "id": "j10",
+   "name": "Pin 3 in web"
+  },
+  {
+   "type": "rigid",
+   "a": "p11",
+   "b": "p12",
+   "anchorA": {
+    "port": "center"
+   },
+   "anchorB": {
+    "port": "A"
+   },
+   "angle": 2.617993877991494,
+   "id": "j11",
+   "name": "Web 4 on pin 3"
+  },
+  {
+   "type": "revolute",
+   "a": "p7",
+   "b": "p13",
+   "anchorA": {
+    "port": "center"
+   },
+   "anchorB": {
+    "port": "A"
+   },
+   "id": "j12",
+   "name": "A–j F1"
+  },
+  {
+   "type": "revolute",
+   "a": "p7",
+   "b": "p14",
+   "anchorA": {
+    "port": "center"
+   },
+   "anchorB": {
+    "port": "A"
+   },
+   "id": "j13",
+   "name": "A–k F1"
+  },
+  {
+   "type": "revolute",
+   "a": "p3",
+   "b": "p15",
+   "anchorA": {
+    "port": "center"
+   },
+   "anchorB": {
+    "port": "A"
+   },
+   "id": "j14",
+   "name": "B–triangle F1"
+  },
+  {
+   "type": "revolute",
+   "a": "p3",
+   "b": "p16",
+   "anchorA": {
+    "port": "center"
+   },
+   "anchorB": {
+    "port": "A"
+   },
+   "id": "j15",
+   "name": "B–c F1"
+  },
+  {
+   "type": "revolute",
+   "a": "p13",
+   "b": "p15",
+   "anchorA": {
+    "port": "B"
+   },
+   "anchorB": {
+    "port": "B"
+   },
+   "id": "j16",
+   "name": "C F1"
+  },
+  {
+   "type": "revolute",
+   "a": "p14",
+   "b": "p16",
+   "anchorA": {
+    "port": "B"
+   },
+   "anchorB": {
+    "port": "B"
+   },
+   "id": "j17",
+   "name": "E k–c F1"
+  },
+  {
+   "type": "revolute",
+   "a": "p16",
+   "b": "p18",
+   "anchorA": {
+    "port": "B"
+   },
+   "anchorB": {
+    "port": "A"
+   },
+   "id": "j18",
+   "name": "E c–foot F1"
+  },
+  {
+   "type": "revolute",
+   "a": "p15",
+   "b": "p17",
+   "anchorA": {
+    "port": "C"
+   },
+   "anchorB": {
+    "port": "A"
+   },
+   "id": "j19",
+   "name": "D F1"
+  },
+  {
+   "type": "revolute",
+   "a": "p17",
+   "b": "p18",
+   "anchorA": {
+    "port": "B"
+   },
+   "anchorB": {
+    "port": "B"
+   },
+   "id": "j20",
+   "name": "F F1"
+  },
+  {
+   "type": "revolute",
+   "a": "p7",
+   "b": "p19",
+   "anchorA": {
+    "port": "center"
+   },
+   "anchorB": {
+    "port": "A"
+   },
+   "id": "j21",
+   "name": "A–j R1"
+  },
+  {
+   "type": "revolute",
+   "a": "p7",
+   "b": "p20",
+   "anchorA": {
+    "port": "center"
+   },
+   "anchorB": {
+    "port": "A"
+   },
+   "id": "j22",
+   "name": "A–k R1"
+  },
+  {
+   "type": "revolute",
+   "a": "p4",
+   "b": "p21",
+   "anchorA": {
+    "port": "center"
+   },
+   "anchorB": {
+    "port": "A"
+   },
+   "id": "j23",
+   "name": "B–triangle R1"
+  },
+  {
+   "type": "revolute",
+   "a": "p4",
+   "b": "p22",
+   "anchorA": {
+    "port": "center"
+   },
+   "anchorB": {
+    "port": "A"
+   },
+   "id": "j24",
+   "name": "B–c R1"
+  },
+  {
+   "type": "revolute",
+   "a": "p19",
+   "b": "p21",
+   "anchorA": {
+    "port": "B"
+   },
+   "anchorB": {
+    "port": "B"
+   },
+   "id": "j25",
+   "name": "C R1"
+  },
+  {
+   "type": "revolute",
+   "a": "p20",
+   "b": "p22",
+   "anchorA": {
+    "port": "B"
+   },
+   "anchorB": {
+    "port": "B"
+   },
+   "id": "j26",
+   "name": "E k–c R1"
+  },
+  {
+   "type": "revolute",
+   "a": "p22",
+   "b": "p24",
+   "anchorA": {
+    "port": "B"
+   },
+   "anchorB": {
+    "port": "A"
+   },
+   "id": "j27",
+   "name": "E c–foot R1"
+  },
+  {
+   "type": "revolute",
+   "a": "p21",
+   "b": "p23",
+   "anchorA": {
+    "port": "C"
+   },
+   "anchorB": {
+    "port": "A"
+   },
+   "id": "j28",
+   "name": "D R1"
+  },
+  {
+   "type": "revolute",
+   "a": "p23",
+   "b": "p24",
+   "anchorA": {
+    "port": "B"
+   },
+   "anchorB": {
+    "port": "B"
+   },
+   "id": "j29",
+   "name": "F R1"
+  },
+  {
+   "type": "revolute",
+   "a": "p9",
+   "b": "p25",
+   "anchorA": {
+    "port": "center"
+   },
+   "anchorB": {
+    "port": "A"
+   },
+   "id": "j30",
+   "name": "A–j F2"
+  },
+  {
+   "type": "revolute",
+   "a": "p9",
+   "b": "p26",
+   "anchorA": {
+    "port": "center"
+   },
+   "anchorB": {
+    "port": "A"
+   },
+   "id": "j31",
+   "name": "A–k F2"
+  },
+  {
+   "type": "revolute",
+   "a": "p3",
+   "b": "p27",
+   "anchorA": {
+    "port": "center"
+   },
+   "anchorB": {
+    "port": "A"
+   },
+   "id": "j32",
+   "name": "B–triangle F2"
+  },
+  {
+   "type": "revolute",
+   "a": "p3",
+   "b": "p28",
+   "anchorA": {
+    "port": "center"
+   },
+   "anchorB": {
+    "port": "A"
+   },
+   "id": "j33",
+   "name": "B–c F2"
+  },
+  {
+   "type": "revolute",
+   "a": "p25",
+   "b": "p27",
+   "anchorA": {
+    "port": "B"
+   },
+   "anchorB": {
+    "port": "B"
+   },
+   "id": "j34",
+   "name": "C F2"
+  },
+  {
+   "type": "revolute",
+   "a": "p26",
+   "b": "p28",
+   "anchorA": {
+    "port": "B"
+   },
+   "anchorB": {
+    "port": "B"
+   },
+   "id": "j35",
+   "name": "E k–c F2"
+  },
+  {
+   "type": "revolute",
+   "a": "p28",
+   "b": "p30",
+   "anchorA": {
+    "port": "B"
+   },
+   "anchorB": {
+    "port": "A"
+   },
+   "id": "j36",
+   "name": "E c–foot F2"
+  },
+  {
+   "type": "revolute",
+   "a": "p27",
+   "b": "p29",
+   "anchorA": {
+    "port": "C"
+   },
+   "anchorB": {
+    "port": "A"
+   },
+   "id": "j37",
+   "name": "D F2"
+  },
+  {
+   "type": "revolute",
+   "a": "p29",
+   "b": "p30",
+   "anchorA": {
+    "port": "B"
+   },
+   "anchorB": {
+    "port": "B"
+   },
+   "id": "j38",
+   "name": "F F2"
+  },
+  {
+   "type": "revolute",
+   "a": "p9",
+   "b": "p31",
+   "anchorA": {
+    "port": "center"
+   },
+   "anchorB": {
+    "port": "A"
+   },
+   "id": "j39",
+   "name": "A–j R2"
+  },
+  {
+   "type": "revolute",
+   "a": "p9",
+   "b": "p32",
+   "anchorA": {
+    "port": "center"
+   },
+   "anchorB": {
+    "port": "A"
+   },
+   "id": "j40",
+   "name": "A–k R2"
+  },
+  {
+   "type": "revolute",
+   "a": "p4",
+   "b": "p33",
+   "anchorA": {
+    "port": "center"
+   },
+   "anchorB": {
+    "port": "A"
+   },
+   "id": "j41",
+   "name": "B–triangle R2"
+  },
+  {
+   "type": "revolute",
+   "a": "p4",
+   "b": "p34",
+   "anchorA": {
+    "port": "center"
+   },
+   "anchorB": {
+    "port": "A"
+   },
+   "id": "j42",
+   "name": "B–c R2"
+  },
+  {
+   "type": "revolute",
+   "a": "p31",
+   "b": "p33",
+   "anchorA": {
+    "port": "B"
+   },
+   "anchorB": {
+    "port": "B"
+   },
+   "id": "j43",
+   "name": "C R2"
+  },
+  {
+   "type": "revolute",
+   "a": "p32",
+   "b": "p34",
+   "anchorA": {
+    "port": "B"
+   },
+   "anchorB": {
+    "port": "B"
+   },
+   "id": "j44",
+   "name": "E k–c R2"
+  },
+  {
+   "type": "revolute",
+   "a": "p34",
+   "b": "p36",
+   "anchorA": {
+    "port": "B"
+   },
+   "anchorB": {
+    "port": "A"
+   },
+   "id": "j45",
+   "name": "E c–foot R2"
+  },
+  {
+   "type": "revolute",
+   "a": "p33",
+   "b": "p35",
+   "anchorA": {
+    "port": "C"
+   },
+   "anchorB": {
+    "port": "A"
+   },
+   "id": "j46",
+   "name": "D R2"
+  },
+  {
+   "type": "revolute",
+   "a": "p35",
+   "b": "p36",
+   "anchorA": {
+    "port": "B"
+   },
+   "anchorB": {
+    "port": "B"
+   },
+   "id": "j47",
+   "name": "F R2"
+  },
+  {
+   "type": "revolute",
+   "a": "p11",
+   "b": "p37",
+   "anchorA": {
+    "port": "center"
+   },
+   "anchorB": {
+    "port": "A"
+   },
+   "id": "j48",
+   "name": "A–j F3"
+  },
+  {
+   "type": "revolute",
+   "a": "p11",
+   "b": "p38",
+   "anchorA": {
+    "port": "center"
+   },
+   "anchorB": {
+    "port": "A"
+   },
+   "id": "j49",
+   "name": "A–k F3"
+  },
+  {
+   "type": "revolute",
+   "a": "p3",
+   "b": "p39",
+   "anchorA": {
+    "port": "center"
+   },
+   "anchorB": {
+    "port": "A"
+   },
+   "id": "j50",
+   "name": "B–triangle F3"
+  },
+  {
+   "type": "revolute",
+   "a": "p3",
+   "b": "p40",
+   "anchorA": {
+    "port": "center"
+   },
+   "anchorB": {
+    "port": "A"
+   },
+   "id": "j51",
+   "name": "B–c F3"
+  },
+  {
+   "type": "revolute",
+   "a": "p37",
+   "b": "p39",
+   "anchorA": {
+    "port": "B"
+   },
+   "anchorB": {
+    "port": "B"
+   },
+   "id": "j52",
+   "name": "C F3"
+  },
+  {
+   "type": "revolute",
+   "a": "p38",
+   "b": "p40",
+   "anchorA": {
+    "port": "B"
+   },
+   "anchorB": {
+    "port": "B"
+   },
+   "id": "j53",
+   "name": "E k–c F3"
+  },
+  {
+   "type": "revolute",
+   "a": "p40",
+   "b": "p42",
+   "anchorA": {
+    "port": "B"
+   },
+   "anchorB": {
+    "port": "A"
+   },
+   "id": "j54",
+   "name": "E c–foot F3"
+  },
+  {
+   "type": "revolute",
+   "a": "p39",
+   "b": "p41",
+   "anchorA": {
+    "port": "C"
+   },
+   "anchorB": {
+    "port": "A"
+   },
+   "id": "j55",
+   "name": "D F3"
+  },
+  {
+   "type": "revolute",
+   "a": "p41",
+   "b": "p42",
+   "anchorA": {
+    "port": "B"
+   },
+   "anchorB": {
+    "port": "B"
+   },
+   "id": "j56",
+   "name": "F F3"
+  },
+  {
+   "type": "revolute",
+   "a": "p11",
+   "b": "p43",
+   "anchorA": {
+    "port": "center"
+   },
+   "anchorB": {
+    "port": "A"
+   },
+   "id": "j57",
+   "name": "A–j R3"
+  },
+  {
+   "type": "revolute",
+   "a": "p11",
+   "b": "p44",
+   "anchorA": {
+    "port": "center"
+   },
+   "anchorB": {
+    "port": "A"
+   },
+   "id": "j58",
+   "name": "A–k R3"
+  },
+  {
+   "type": "revolute",
+   "a": "p4",
+   "b": "p45",
+   "anchorA": {
+    "port": "center"
+   },
+   "anchorB": {
+    "port": "A"
+   },
+   "id": "j59",
+   "name": "B–triangle R3"
+  },
+  {
+   "type": "revolute",
+   "a": "p4",
+   "b": "p46",
+   "anchorA": {
+    "port": "center"
+   },
+   "anchorB": {
+    "port": "A"
+   },
+   "id": "j60",
+   "name": "B–c R3"
+  },
+  {
+   "type": "revolute",
+   "a": "p43",
+   "b": "p45",
+   "anchorA": {
+    "port": "B"
+   },
+   "anchorB": {
+    "port": "B"
+   },
+   "id": "j61",
+   "name": "C R3"
+  },
+  {
+   "type": "revolute",
+   "a": "p44",
+   "b": "p46",
+   "anchorA": {
+    "port": "B"
+   },
+   "anchorB": {
+    "port": "B"
+   },
+   "id": "j62",
+   "name": "E k–c R3"
+  },
+  {
+   "type": "revolute",
+   "a": "p46",
+   "b": "p48",
+   "anchorA": {
+    "port": "B"
+   },
+   "anchorB": {
+    "port": "A"
+   },
+   "id": "j63",
+   "name": "E c–foot R3"
+  },
+  {
+   "type": "revolute",
+   "a": "p45",
+   "b": "p47",
+   "anchorA": {
+    "port": "C"
+   },
+   "anchorB": {
+    "port": "A"
+   },
+   "id": "j64",
+   "name": "D R3"
+  },
+  {
+   "type": "revolute",
+   "a": "p47",
+   "b": "p48",
+   "anchorA": {
+    "port": "B"
+   },
+   "anchorB": {
+    "port": "B"
+   },
+   "id": "j65",
+   "name": "F R3"
+  }
+ ],
+ "loads": [
+  {
+   "id": "l1",
+   "name": "Tow load",
+   "type": "force",
+   "part": "p1",
+   "anchor": {
+    "port": "center"
+   },
+   "fx": -150,
+   "fy": 0,
+   "torque": 0,
+   "frame": "world",
+   "enabled": true
+  }
+ ],
+ "probes": [
+  {
+   "id": "pr1",
+   "name": "Foot F1",
+   "target": {
+    "kind": "point",
+    "part": "p18",
+    "anchor": {
+     "port": "C"
+    }
+   },
+   "trace": true,
+   "color": "#f2b44a"
+  },
+  {
+   "id": "pr2",
+   "name": "Foot R1",
+   "target": {
+    "kind": "point",
+    "part": "p24",
+    "anchor": {
+     "port": "C"
+    }
+   },
+   "trace": true,
+   "color": "#4cc2ff"
+  },
+  {
+   "id": "pr3",
+   "name": "Chassis",
+   "target": {
+    "kind": "point",
+    "part": "p1",
+    "anchor": {
+     "port": "center"
+    }
+   },
+   "trace": false,
+   "color": "#7ee081"
+  },
+  {
+   "id": "pr4",
+   "name": "Crank motor",
+   "target": {
+    "kind": "joint",
+    "joint": "j5"
+   },
+   "trace": false,
+   "color": "#ff7b72"
+  },
+  {
+   "id": "pr5",
+   "name": "Solver",
+   "target": {
+    "kind": "system"
+   },
+   "trace": false,
+   "color": "#c792ea"
+  }
+ ],
+ "plots": [
+  {
+   "id": "plot1",
+   "title": "Chassis travel",
+   "channels": [
+    {
+     "probe": "pr3",
+     "quantity": "x"
+    }
+   ]
+  },
+  {
+   "id": "plot2",
+   "title": "Foot height",
+   "channels": [
+    {
+     "probe": "pr1",
+     "quantity": "y"
+    },
+    {
+     "probe": "pr2",
+     "quantity": "y"
+    }
+   ]
+  },
+  {
+   "id": "plot3",
+   "title": "Motor torque",
+   "channels": [
+    {
+     "probe": "pr4",
+     "quantity": "torque"
+    }
+   ]
+  },
+  {
+   "id": "plot4",
+   "title": "Loaded feet",
+   "channels": [
+    {
+     "probe": "pr5",
+     "quantity": "contacts"
+    }
+   ]
+  }
+ ],
+ "groups": [
+  {
+   "id": "g1",
+   "name": "Chassis"
+  },
+  {
+   "id": "g2",
+   "name": "Crankshaft"
+  },
+  {
+   "id": "g3",
+   "name": "Leg F1"
+  },
+  {
+   "id": "g4",
+   "name": "Leg R1"
+  },
+  {
+   "id": "g5",
+   "name": "Leg F2"
+  },
+  {
+   "id": "g6",
+   "name": "Leg R2"
+  },
+  {
+   "id": "g7",
+   "name": "Leg F3"
+  },
+  {
+   "id": "g8",
+   "name": "Leg R3"
+  }
+ ],
+ "sketches": [],
+ "variants": [
+  {
+   "id": "v1",
+   "name": "Default (μ = 0.8, 0.15 N tow load)",
+   "note": "Feet grip; the machine walks toward +X pulling its load.",
+   "values": {
+    "joint:j5:motor.maxTorque": 120000,
+    "joint:j5:motor.speed": -5.235987755982988,
+    "load:l1:fx": -150,
+    "sim:floor.friction": 0.8
+   }
+  },
+  {
+   "id": "v2",
+   "name": "Icy floor (μ = 0.08)",
+   "note": "Traction (μ × weight ≈ 0.12 N) is less than the tow load: the feet slide and the machine is dragged backwards.",
+   "values": {
+    "joint:j5:motor.maxTorque": 120000,
+    "joint:j5:motor.speed": -5.235987755982988,
+    "load:l1:fx": -150,
+    "sim:floor.friction": 0.08
+   }
+  },
+  {
+   "id": "v3",
+   "name": "Weak motor (2 N·mm limit)",
+   "note": "The motor cannot hold the crank against the tow load: it saturates and the legs are driven backwards.",
+   "values": {
+    "joint:j5:motor.maxTorque": 2000,
+    "joint:j5:motor.speed": -5.235987755982988,
+    "load:l1:fx": -150,
+    "sim:floor.friction": 0.8
+   }
+  }
+ ],
+ "views": [
+  {
+   "name": "Side",
+   "position": [
+    0,
+    -30,
+    420
+   ],
+   "target": [
+    0,
+    -40,
+    30
+   ],
+   "ortho": true,
+   "zoom": 3.2
+  },
+  {
+   "name": "Three-quarter",
+   "position": [
+    230,
+    90,
+    330
+   ],
+   "target": [
+    0,
+    -40,
+    30
+   ],
+   "ortho": false
+  }
+ ],
+ "sim": {
+  "mode": "dynamic",
+  "dt": 0.001,
+  "gravity": {
+   "x": 0,
+   "y": -9806.65
+  },
+  "gravityEnabled": true,
+  "floor": {
+   "enabled": true,
+   "y": -95.88,
+   "friction": 0.8
+  },
+  "stopOnInterference": false,
+  "sampleRate": 250
+ },
+ "clearances": {
+  "hole": 0.2,
+  "slide": 0.15,
+  "backlash": 0.1,
+  "minFeature": 0.8
+ },
+ "units": {
+  "length": "mm",
+  "angle": "deg",
+  "mass": "g",
+  "time": "s",
+  "force": "N",
+  "torque": "N·mm",
+  "speed": "mm/s",
+  "angularSpeed": "rpm",
+  "acceleration": "m/s²",
+  "angularAcceleration": "rad/s²",
+  "stiffness": "N/mm",
+  "torsionStiffness": "N·mm/rad",
+  "damping": "N·s/m",
+  "rotDamping": "N·mm·s/rad",
+  "density": "g/cm³",
+  "power": "W",
+  "energy": "mJ",
+  "inertia": "g·mm²",
+  "area": "mm²",
+  "volume": "cm³",
+  "frequency": "Hz",
+  "ratio": "",
+  "count": ""
+ },
+ "materials": [],
+ "activeVariant": "v1"
+}

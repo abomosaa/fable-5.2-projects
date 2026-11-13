@@ -1,0 +1,13 @@
+{
+ "radius": 0.044047,
+ "height": 0.105964,
+ "mass": 0.088239,
+ "open_top": false,
+ "materials": [
+  "can_a_tin"
+ ],
+ "surface_area_m2": 0.044962,
+ "source_scale": 0.7,
+ "tris": 3520,
+ "note": "Poly Haven can_rusted scaled x0.70 to a 500 ml lever-lid tin (source is a ~1.5 l tin, 0.18 kg); lid pressed in, debris on the lid"
+}

@@ -1,0 +1,8 @@
+{"type":"FeatureCollection","name":"ne_50m_admin_0_breakaway_disputed_areas","features":[
+{"type":"Feature","properties":{"featurecla":"Admin-0 claim area","TYPE":"Disputed","ADMIN":"Exampleland","SOVEREIGNT":"Exampleland","NAME":"Exampleland","BRK_NAME":"Valid Valley","NOTE_BRK":"Admin. by Exampleland; Claimed by Otherland","NAME_ALT":null,"NE_ID":1999200001},"geometry":{"type":"Polygon","coordinates":[[[10,10],[11,10],[11,11],[10,11]]]}},
+{"type":"Feature","properties":{"featurecla":"Admin-0 claim area","TYPE":"Disputed","ADMIN":"Exampleland","BRK_NAME":"Two Point Ring","NOTE_BRK":"Admin. by Exampleland","NE_ID":1999200002},"geometry":{"type":"Polygon","coordinates":[[[10,10],[11,10]]]}},
+{"type":"Feature","properties":{"featurecla":"Admin-0 claim area","TYPE":"Disputed","ADMIN":"Exampleland","BRK_NAME":"Latitude Out Of Range","NOTE_BRK":"Admin. by Exampleland","NE_ID":1999200003},"geometry":{"type":"Polygon","coordinates":[[[10,10],[11,10],[11,99],[10,10]]]}},
+{"type":"Feature","properties":{"featurecla":"Admin-0 claim area","TYPE":"Disputed","ADMIN":"Exampleland","BRK_NAME":"A Point, Not An Area","NOTE_BRK":null,"NE_ID":1999200004},"geometry":{"type":"Point","coordinates":[10,10]}},
+{"type":"Feature","properties":{"featurecla":"Admin-0 claim area","TYPE":"Disputed","ADMIN":"Exampleland","BRK_NAME":null,"NAME":null,"NE_ID":1999200005},"geometry":{"type":"Polygon","coordinates":[[[10,10],[11,10],[11,11],[10,10]]]}},
+{"type":"Feature","properties":{"featurecla":"Admin-0 claim area","TYPE":"Disputed","BRK_NAME":"No Identifier"},"geometry":{"type":"Polygon","coordinates":[[[10,10],[11,10],[11,11],[10,10]]]}}
+]}

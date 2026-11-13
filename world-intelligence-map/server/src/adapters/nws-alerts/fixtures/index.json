@@ -1,0 +1,12 @@
+{
+  "capturedAt": "2026-11-10T17:49:42Z",
+  "notes": "Captured from the live api.weather.gov on 2026-11-10 and trimmed to 113 alerts. At capture time only 14 of the 390 active alerts carried a polygon (the rest were zone-based marine/winter products with geometry null), so the fixture is a composite of real, unmodified alert features: (a) from /alerts/active – all 14 polygon alerts plus 10 zone-based alerts (one per event type, geometry null, which the adapter skips); (b) from the same API's seven-day /alerts endpoint (identical feature schema; duplicate ids that endpoint returned were dropped) – 89 further polygon alerts issued 6–10 November that had already expired and were not superseded, picked across event types and states under the size budget. Group (b) therefore appears as recent history, not as active alerts. All machine-readable times (sent, effective, onset, expires, ends, references[].sent, eventEndingTime, updated) were shifted forward by a constant +6 h, keeping each alert's local UTC offset, so that the set looks as it would just before the fixture epoch (13 polygon alerts are still in force at 2026-11-11T00:00Z). Times inside free text (headline, description) and VTEC strings were left as captured. Geometries are unsimplified. The malformed variant was authored by hand.",
+  "routes": [
+    {
+      "match": "/alerts/active",
+      "file": "alerts-active.geojson",
+      "contentType": "application/geo+json",
+      "variants": { "malformed": "alerts-active.malformed.geojson" }
+    }
+  ]
+}

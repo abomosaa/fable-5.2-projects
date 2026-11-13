@@ -1,0 +1,16 @@
+{"time":1794355170,"states":[
+["f1aa01","SIMOK01 ","Germany",1794355168,1794355169,8.5432,50.0264,10972.8,false,231.5,87.2,0,null,11201.4,"1000",false,0],
+["f1aa02","<b>X</b>","France",1794355165,1794355169,2.3522,48.8566,3048,false,140.1,270,-5.2,null,3100.5,null,false,0],
+["f1aa03","SIMBAD03","Spain",1794355168,1794355169,-3.7038,95.5,10000,false,220,180,0,null,10100,null,false,0],
+["f1aa04","SIMBAD04","Italy",1794355168,1794355169,"12.4964","41.9028",10000,false,220,180,0,null,10100,null,false,0],
+[null,"SIMBAD05","Japan",1794355168,1794355169,139.6917,35.6895,10000,false,220,180,0,null,10100,null,false,0],
+["zz-not-hex","SIMBAD06","Canada",1794355168,1794355169,-79.3832,43.6532,10000,false,220,180,0,null,10100,null,false,0],
+["f1aa07","SIMBAD07","Brazil","yesterday",null,-46.6333,-23.5505,10000,false,220,180,0,null,10100,null,false,0],
+["f1aa08","SIMBAD08","India",1794355168],
+{"icao24":"f1aa09","callsign":"SIMBAD09"},
+"f1aa10",
+["f1aa11","SIMGND11","Mexico",1794355168,1794355169,-99.1332,19.4326,null,true,3.1,90,null,null,null,null,false,0],
+["f1aa12","SIMNOP12","Chile",null,1794355160,null,null,null,false,null,null,null,null,null,null,false,0],
+["f1aa01","SIMDUP01","Germany",1794355150,1794355150,9.0,50.5,10972.8,false,231.5,87.2,0,null,11201.4,"1000",false,0],
+["F1AA13",null,"Sweden",null,1794355163,18.0686,59.3293,null,false,null,null,null,null,null,"7700",false,7]
+]}

@@ -1,0 +1,12 @@
+{
+  "capturedAt": "2026-11-10T17:52:00Z",
+  "notes": "Captured from https://davidmegginson.github.io/ourairports-data/airports.csv (12.8 MB, 86,350 airports, Last-Modified 2026-11-10T02:54:14Z) and trimmed without altering any kept line: the header, all 1,175 large airports, an even sample of 360 medium airports with scheduled service and 40 without, and 4 rows each of heliport, small_airport, closed, seaplane_base and balloonport (which the adapter must skip). The malformed variant was authored by hand.",
+  "routes": [
+    {
+      "match": "/ourairports-data/airports.csv",
+      "file": "airports.csv",
+      "lastModified": "Tue, 10 Nov 2026 02:54:14 GMT",
+      "variants": { "malformed": "airports.malformed.csv" }
+    }
+  ]
+}

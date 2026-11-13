@@ -1,0 +1,51 @@
+{
+  "id": "emsc-earthquakes",
+  "provider": "European-Mediterranean Seismological Centre (EMSC)",
+  "dataset": "SeismicPortal FDSN event web service – real-time earthquake catalogue (EMSC-RTS)",
+  "description": "Near-real-time global earthquake origins M4+ of the past seven days as aggregated by EMSC from more than a hundred contributing seismological agencies, with magnitude, depth, Flinn-Engdahl region and contributing agency.",
+  "homepageUrl": "https://www.seismicportal.eu/",
+  "documentationUrl": "https://www.seismicportal.eu/fdsn-wsevent.html",
+  "sourceUrls": ["https://www.seismicportal.eu/fdsnws/event/1/query?format=json&minmag=4&orderby=time&limit=1000&start={YYYY-MM-DD}T00:00:00"],
+  "allowedHosts": ["www.seismicportal.eu"],
+  "coverage": {
+    "geographic": "Global for M4+ (the adapter's query); the catalogue is densest in the Euro-Mediterranean region.",
+    "temporal": "The seven days before each poll; older events persist locally until retention expires."
+  },
+  "updateCadence": { "upstream": "Continuously, within minutes of an earthquake (responses are cacheable for 15 seconds)", "pollIntervalSec": 300, "staleAfterSec": 1800 },
+  "auth": { "type": "none", "envVars": [] },
+  "attribution": "EMSC – European-Mediterranean Seismological Centre (SeismicPortal), CC BY 4.0",
+  "license": {
+    "name": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+    "url": "https://creativecommons.org/licenses/by/4.0/",
+    "redistribution": "allowed-with-attribution",
+    "nonCommercialOnly": false,
+    "notes": "Stated on the service documentation page: \"The data provided by this service is distributed under the Creative Commons Attribution 4.0 International (CC BY 4.0) license.\""
+  },
+  "limitations": [
+    "Real-time solutions are preliminary: location, depth and magnitude are revised as more stations report, and the contributing agency of the preferred solution can change.",
+    "Only events of magnitude 4 and larger are requested; smaller events are not shown by this source.",
+    "Magnitude types differ between events (mb, ML, Mw, unspecified 'm') and are not strictly comparable.",
+    "The service gives no review-status flag, so automatic and analyst-reviewed solutions cannot be told apart."
+  ],
+  "confidenceNotes": "The feed carries no quality or review flag, so records have no confidence value. Severity is derived by this application from magnitude (M4/5/6/7 → minor/moderate/severe/extreme), the same thresholds as the USGS layer.",
+  "retention": { "note": "Events are kept for 45 days after they occurred, then purged." },
+  "snapshot": "incremental",
+  "http": { "minIntervalMs": 1000 },
+  "enabledByDefault": true,
+  "layers": [
+    {
+      "id": "emsc-earthquakes",
+      "name": "Earthquakes (EMSC)",
+      "description": "Earthquakes M4+ of the past week from the EMSC real-time catalogue (independent of USGS; strongest in Europe and the Mediterranean).",
+      "domain": "hazards",
+      "category": "earthquake",
+      "geometry": "point",
+      "timeModel": "event",
+      "render": { "type": "point", "color": "orange", "shape": "circle" },
+      "freshForSec": 86400,
+      "retentionDays": 45,
+      "defaultOn": false,
+      "correlationClass": "earthquake"
+    }
+  ]
+}

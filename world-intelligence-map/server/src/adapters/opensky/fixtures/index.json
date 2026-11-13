@@ -1,0 +1,8 @@
+{
+  "capturedAt": "2026-11-10T17:53:27Z",
+  "notes": "AUTHORED, not captured. OpenSky's terms of use forbid making its data available to third parties and require aircraft identifiers to be de-identified in any disclosure, so no OpenSky data is bundled. states_all.json was generated deterministically, strictly from the documented /states/all response schema (17-field state vectors; the envelope and the proportions of on-ground / position-less / squawk-less vectors were checked against one live anonymous response on the capture date, which was then discarded). It holds 1,500 synthetic airborne aircraft placed on great circles between large airports of the public-domain OurAirports list, 120 on-ground vectors and 12 vectors without a position. Identifiers are placeholders (callsigns SIMnnnn, addresses f1xxxx) and correspond to no observed aircraft. `time` is 2026-11-10T23:59:30Z and time_position / last_contact fall within the 15 seconds before it, i.e. timed to just before the fixture epoch. token.json is authored from the documented OAuth2 client-credentials response (dummy token). The malformed variant was authored by hand.",
+  "routes": [
+    { "match": "/protocol/openid-connect/token", "file": "token.json" },
+    { "match": "/api/states/all", "file": "states_all.json", "variants": { "malformed": "states_all.malformed.json" } }
+  ]
+}

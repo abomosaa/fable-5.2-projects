@@ -1,0 +1,28 @@
+{
+  "name": "terraforge-world-editor",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Procedural world editor with physically grounded water, terrain erosion, biomes and glTF export.",
+  "scripts": {
+    "dev": "node server/server.mjs --dev",
+    "build": "vite build",
+    "start": "vite build && node server/server.mjs",
+    "serve": "node server/server.mjs",
+    "test": "vitest run",
+    "assets": "node tools/assets/fetch-assets.mjs",
+    "showcases": "node tools/build-showcases.mjs",
+    "verify:export": "node tools/verify-export.mjs"
+  },
+  "dependencies": {
+    "three": "^0.187.0"
+  },
+  "devDependencies": {
+    "gltf-validator": "^2.0.0-dev.3.10",
+    "meshoptimizer": "^1.3.0",
+    "playwright": "^1.65.0",
+    "sharp": "^0.33.5",
+    "vite": "^8.3.8",
+    "vitest": "^5.1.0"
+  }
+}

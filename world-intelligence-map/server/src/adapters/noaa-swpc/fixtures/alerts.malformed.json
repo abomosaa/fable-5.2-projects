@@ -1,0 +1,11 @@
+[
+  { "product_id": "K07A", "issue_datetime": "2026-11-10 21:14:22.467", "message": "Space Weather Message Code: ALTK07\r\nSerial Number: 204\r\nIssue Time: 2026 Nov 10 2114 UTC\r\n\r\nALERT: Geomagnetic K-index of 7\r\nThreshold Reached: 2026 Nov 10 2112 UTC\r\nSynoptic Period: 2100-2400\r\nActive Warning: YES\r\nNOAA Scale: G3 - Strong\r\n\r\nNOAA Space Weather Scale descriptions can be found at\r\nwww.swpc.noaa.gov/noaa-scales-explanation\r\n\r\nPotential Impacts: Area of impact primarily poleward of 50 degrees Geomagnetic Latitude." },
+  { "product_id": "XM5A", "issue_datetime": "2026-11-10 20:02:00.000", "message": "Space Weather Message Code: ALTXMF\r\nSerial Number: 411\r\nIssue Time: 2026 Nov 10 2002 UTC\r\n\r\nALERT: X-Ray Flux exceeded M5<script>alert(1)</script>\r\nThreshold Reached: 2026 Nov 10 1958 UTC\r\nNOAA Scale: R2 - Moderate\r\n<img src=x onerror=alert(1)>Potential Impacts: Area of impact centered on sub-solar point on the sunlit side of Earth." },
+  { "product_id": "K04A", "issue_datetime": "2026-10-01 12:00:00.000", "message": "Space Weather Message Code: ALTK04\r\nSerial Number: 2500\r\nIssue Time: 2026 Oct 01 1200 UTC\r\n\r\nALERT: Geomagnetic K-index of 4\r\nThreshold Reached: 2026 Oct 01 1159 UTC" },
+  { "product_id": "K04A", "message": "Space Weather Message Code: ALTK04\r\nSerial Number: 2601\r\n\r\nALERT: Geomagnetic K-index of 4" },
+  { "product_id": "K04A", "issue_datetime": "10 November, late evening", "message": "Space Weather Message Code: ALTK04\r\nSerial Number: 2602\r\n\r\nALERT: Geomagnetic K-index of 4" },
+  { "product_id": "K04A", "issue_datetime": "2026-11-10 22:00:00.000", "message": null },
+  { "product_id": "K04A", "issue_datetime": "2026-11-10 22:05:00.000", "message": "Space Weather Message Code: ALTK04\r\nSerial Number: 2604\r\nIssue Time: 2026 Nov 10 2205 UTC\r\n\r\n" },
+  { "product_id": "K05W", "issue_datetime": "2026-11-12 09:00:00.000", "message": "Space Weather Message Code: WARK05\r\nSerial Number: 2100\r\nIssue Time: 2026 Nov 12 0900 UTC\r\n\r\nWARNING: Geomagnetic K-index of 5 expected\r\nValid From: 2026 Nov 12 0900 UTC\r\nValid To: 2026 Nov 12 1500 UTC\r\nNOAA Scale: G1 - Minor" },
+  "not an object"
+]

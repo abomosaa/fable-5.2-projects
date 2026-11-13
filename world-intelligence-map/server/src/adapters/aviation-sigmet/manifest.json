@@ -1,0 +1,51 @@
+{
+  "id": "aviation-sigmet",
+  "provider": "NOAA/NWS Aviation Weather Center (AWC)",
+  "dataset": "AviationWeather.gov Data API – decoded SIGMETs (worldwide)",
+  "description": "Currently valid SIGMETs – warnings of en-route weather hazardous to aircraft (thunderstorms, severe turbulence and icing, mountain waves, volcanic ash, tropical cyclones) – issued by meteorological watch offices worldwide and decoded into polygons by the Aviation Weather Center.",
+  "homepageUrl": "https://aviationweather.gov/",
+  "documentationUrl": "https://aviationweather.gov/data/api/",
+  "sourceUrls": ["https://aviationweather.gov/api/data/sigmet?format=json"],
+  "allowedHosts": ["aviationweather.gov"],
+  "coverage": {
+    "geographic": "Worldwide flight information regions (international SIGMETs) plus United States domestic convective and non-convective SIGMETs.",
+    "temporal": "SIGMETs valid at fetch time (typically valid for 2–6 hours); expired SIGMETs persist locally until retention expires."
+  },
+  "updateCadence": { "upstream": "Updated about once a minute as SIGMETs are received", "pollIntervalSec": 300, "staleAfterSec": 1800 },
+  "auth": { "type": "none", "envVars": [] },
+  "attribution": "NOAA/NWS Aviation Weather Center; SIGMETs issued by national meteorological watch offices",
+  "license": {
+    "name": "U.S. Government work – public domain (NWS disclaimer); underlying SIGMETs are ICAO operational messages issued by national meteorological watch offices",
+    "url": "https://www.weather.gov/disclaimer",
+    "redistribution": "allowed",
+    "nonCommercialOnly": false,
+    "notes": "The Data API page states no separate data licence and links to the NWS disclaimer (NWS web information is in the public domain unless noted otherwise). API usage rules: at most 100 requests per minute, keep requests limited in scope and frequency, set a custom User-Agent. This adapter makes one request every 5 minutes."
+  },
+  "limitations": [
+    "Not for flight planning or operational use: this is a situational-awareness view that can lag the official dissemination by several minutes.",
+    "Polygons are AWC's automatic decoding of free-text SIGMETs; a SIGMET whose area could not be decoded has no usable coordinates and is rejected, and decoded shapes are occasionally wrong or simplified.",
+    "A SIGMET describes a hazard within a flight-level band (attributes baseFt/topFt), not weather at the surface.",
+    "The documentation marks the older /api/data/isigmet (international only) endpoint as deprecated; this adapter uses its documented successor /api/data/sigmet, which also returns U.S. domestic SIGMETs (hazard CONV = convective SIGMET).",
+    "The API returns at most 400 entries per request."
+  ],
+  "confidenceNotes": "Severity is derived by this application from the hazard and its qualifier and expresses the danger to aircraft, not surface impact: tropical cyclone 4; volcanic ash 3; severe (SEV) turbulence, icing or mountain wave 3; frequent (FRQ) or squall-line (SQL) thunderstorms and heavy (HVY) dust or sand storms 3; other thunderstorm, convective, dust and sand SIGMETs 2. Confidence is derived from whether the phenomenon is reported as observed (OBS, 0.9) or forecast (FCST, 0.7); SIGMETs without that flag carry no confidence.",
+  "retention": { "note": "SIGMETs are kept for 3 days after their validity ends, then purged." },
+  "snapshot": "full",
+  "http": { "minIntervalMs": 1000, "userAgentRequired": true },
+  "enabledByDefault": true,
+  "layers": [
+    {
+      "id": "sigmets",
+      "name": "Aviation SIGMETs",
+      "description": "Areas with weather hazardous to aircraft (thunderstorms, severe turbulence / icing, volcanic ash, tropical cyclones) according to currently valid SIGMETs.",
+      "domain": "weather",
+      "category": "aviation-weather",
+      "geometry": "polygon",
+      "timeModel": "interval",
+      "render": { "type": "polygon", "color": "purple" },
+      "freshForSec": 7200,
+      "retentionDays": 3,
+      "defaultOn": false
+    }
+  ]
+}

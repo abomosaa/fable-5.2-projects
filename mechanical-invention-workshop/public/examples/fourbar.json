@@ -1,0 +1,451 @@
+{
+ "format": "mechanism-workshop",
+ "version": 1,
+ "id": "example-fourbar",
+ "name": "Four-bar linkage",
+ "description": "A crank-rocker four-bar: frame 100 mm, crank 30 mm, coupler 90 mm, rocker 70 mm. The motor turns the crank; the orange curve is the path of a point fixed to the green coupler plate.\n\nDrag the orange probe marker to trace any other coupler point — the path is recomputed from the recorded motion of the coupler. Edit any link length in the inspector and the assembly re-solves.\n\nOpen Variants to try the two deliberately invalid configurations: one violates the Grashof condition and locks at a dead-centre during the run; the other cannot be assembled at all. Both produce a diagnosis instead of a broken animation.\n\nDynamic mode: joint reactions and motor torque come from the constraint multipliers of the solver (ideal pins, rigid links, gravity on).",
+ "createdAt": "2026-01-01T00:00:00.000Z",
+ "modifiedAt": "2026-01-01T00:00:00.000Z",
+ "parts": [
+  {
+   "id": "p1",
+   "name": "Frame plate",
+   "kind": "baseplate",
+   "params": {
+    "width": 150,
+    "height": 50,
+    "thickness": 4,
+    "cornerRadius": 6,
+    "holes": [
+     {
+      "x": -50,
+      "y": 0,
+      "d": 5
+     },
+     {
+      "x": 50,
+      "y": 0,
+      "d": 4
+     }
+    ]
+   },
+   "pose": {
+    "x": 50,
+    "y": 0,
+    "angle": 0,
+    "z": 0
+   },
+   "grounded": true,
+   "materialId": "aluminum"
+  },
+  {
+   "id": "p2",
+   "name": "Motor",
+   "kind": "motor",
+   "params": {
+    "shape": "square",
+    "size": 28,
+    "bodyLength": 30,
+    "shaftDiameter": 5,
+    "shaftLength": 7.5,
+    "mass": 0.11
+   },
+   "pose": {
+    "x": 0,
+    "y": 0,
+    "angle": 0,
+    "z": 0
+   },
+   "grounded": false,
+   "materialId": "motor"
+  },
+  {
+   "id": "p3",
+   "name": "Crank",
+   "kind": "link",
+   "params": {
+    "shape": "binary",
+    "length": 30,
+    "sideAC": 40,
+    "sideBC": 40,
+    "flip": false,
+    "width": 12,
+    "thickness": 4,
+    "holeDiameter": 5
+   },
+   "pose": {
+    "x": 0,
+    "y": 0,
+    "angle": 1.5707963267948966,
+    "z": 4.5
+   },
+   "grounded": false,
+   "materialId": "pla",
+   "color": "#e8a33d"
+  },
+  {
+   "id": "p4",
+   "name": "Rocker",
+   "kind": "link",
+   "params": {
+    "shape": "binary",
+    "length": 70,
+    "sideAC": 40,
+    "sideBC": 40,
+    "flip": false,
+    "width": 12,
+    "thickness": 4,
+    "holeDiameter": 4
+   },
+   "pose": {
+    "x": 99.99999999999999,
+    "y": 7.105427357601002e-15,
+    "angle": 1.8341761763579916,
+    "z": 4.5
+   },
+   "grounded": false,
+   "materialId": "pla",
+   "color": "#4c9fd8"
+  },
+  {
+   "id": "p5",
+   "name": "Coupler",
+   "kind": "link",
+   "params": {
+    "shape": "ternary",
+    "length": 90,
+    "sideAC": 60,
+    "sideBC": 55,
+    "flip": false,
+    "width": 12,
+    "thickness": 4,
+    "holeDiameter": 4
+   },
+   "pose": {
+    "x": 2.395861287141088e-13,
+    "y": 30.000000000000185,
+    "angle": 0.4308279287827918,
+    "z": 9
+   },
+   "grounded": false,
+   "materialId": "pla",
+   "color": "#62c370"
+  }
+ ],
+ "joints": [
+  {
+   "type": "rigid",
+   "a": "p1",
+   "b": "p2",
+   "anchorA": {
+    "port": "H1"
+   },
+   "anchorB": {
+    "port": "shaft"
+   },
+   "angle": 0,
+   "id": "j1",
+   "name": "Motor mount"
+  },
+  {
+   "type": "revolute",
+   "a": "p1",
+   "b": "p3",
+   "anchorA": {
+    "port": "H1"
+   },
+   "anchorB": {
+    "port": "A"
+   },
+   "id": "j2",
+   "name": "Crank pivot (motor)",
+   "pinDiameter": 5,
+   "motor": {
+    "enabled": true,
+    "type": "servo",
+    "speed": 4.1887902047863905,
+    "maxTorque": null,
+    "rampTime": 0.3,
+    "profile": "constant"
+   }
+  },
+  {
+   "type": "revolute",
+   "a": "p3",
+   "b": "p5",
+   "anchorA": {
+    "port": "B"
+   },
+   "anchorB": {
+    "port": "A"
+   },
+   "id": "j3",
+   "name": "Crank pin",
+   "pinDiameter": 4
+  },
+  {
+   "type": "revolute",
+   "a": "p4",
+   "b": "p5",
+   "anchorA": {
+    "port": "B"
+   },
+   "anchorB": {
+    "port": "B"
+   },
+   "id": "j4",
+   "name": "Coupler–rocker pin",
+   "pinDiameter": 4
+  },
+  {
+   "type": "revolute",
+   "a": "p1",
+   "b": "p4",
+   "anchorA": {
+    "port": "H2"
+   },
+   "anchorB": {
+    "port": "A"
+   },
+   "id": "j5",
+   "name": "Rocker pivot",
+   "pinDiameter": 4
+  }
+ ],
+ "loads": [],
+ "probes": [
+  {
+   "id": "pr1",
+   "name": "Coupler point",
+   "target": {
+    "kind": "point",
+    "part": "p5",
+    "anchor": {
+     "x": 45,
+     "y": 36
+    }
+   },
+   "trace": true,
+   "color": "#f2b44a"
+  },
+  {
+   "id": "pr2",
+   "name": "Rocker pivot",
+   "target": {
+    "kind": "joint",
+    "joint": "j5"
+   },
+   "trace": false,
+   "color": "#4cc2ff"
+  },
+  {
+   "id": "pr3",
+   "name": "Crank motor",
+   "target": {
+    "kind": "joint",
+    "joint": "j2"
+   },
+   "trace": false,
+   "color": "#7ee081"
+  },
+  {
+   "id": "pr4",
+   "name": "Crank pin",
+   "target": {
+    "kind": "joint",
+    "joint": "j3"
+   },
+   "trace": false,
+   "color": "#ff7b72"
+  },
+  {
+   "id": "pr5",
+   "name": "Solver",
+   "target": {
+    "kind": "system"
+   },
+   "trace": false,
+   "color": "#c792ea"
+  }
+ ],
+ "plots": [
+  {
+   "id": "plot1",
+   "title": "Coupler point position",
+   "channels": [
+    {
+     "probe": "pr1",
+     "quantity": "x"
+    },
+    {
+     "probe": "pr1",
+     "quantity": "y"
+    }
+   ]
+  },
+  {
+   "id": "plot2",
+   "title": "Rocker angle",
+   "channels": [
+    {
+     "probe": "pr2",
+     "quantity": "coord"
+    }
+   ]
+  },
+  {
+   "id": "plot3",
+   "title": "Motor torque",
+   "channels": [
+    {
+     "probe": "pr3",
+     "quantity": "torque"
+    }
+   ]
+  },
+  {
+   "id": "plot4",
+   "title": "Crank pin reaction",
+   "channels": [
+    {
+     "probe": "pr4",
+     "quantity": "reaction"
+    }
+   ]
+  },
+  {
+   "id": "plot5",
+   "title": "Closed-loop joint error",
+   "channels": [
+    {
+     "probe": "pr5",
+     "quantity": "posError"
+    },
+    {
+     "probe": "pr5",
+     "quantity": "drift"
+    }
+   ]
+  }
+ ],
+ "groups": [],
+ "sketches": [],
+ "variants": [
+  {
+   "id": "v1",
+   "name": "Crank-rocker (valid)",
+   "note": "Grashof: 30 + 100 < 90 + 70, the crank is the shortest link and turns fully.",
+   "values": {
+    "part:p3:length": 30,
+    "part:p5:length": 90,
+    "part:p5:sideAC": 60,
+    "part:p5:sideBC": 55,
+    "part:p4:length": 70
+   }
+  },
+  {
+   "id": "v2",
+   "name": "Invalid: crank too long (locks at dead-centre)",
+   "note": "Non-Grashof: 55 + 100 > 60 + 70. The linkage assembles, but the crank cannot complete a turn and the run stops with a diagnosis.",
+   "values": {
+    "part:p3:length": 55,
+    "part:p5:length": 60,
+    "part:p5:sideAC": 45,
+    "part:p5:sideBC": 40,
+    "part:p4:length": 70
+   }
+  },
+  {
+   "id": "v3",
+   "name": "Invalid: coupler too short (cannot assemble)",
+   "note": "Crank 30 + coupler 20 + rocker 30 cannot span the 100 mm between the fixed pivots, so no assembled pose exists.",
+   "values": {
+    "part:p3:length": 30,
+    "part:p5:length": 20,
+    "part:p5:sideAC": 18,
+    "part:p5:sideBC": 18,
+    "part:p4:length": 30
+   }
+  }
+ ],
+ "views": [
+  {
+   "name": "Front",
+   "position": [
+    50,
+    30,
+    400
+   ],
+   "target": [
+    50,
+    30,
+    6
+   ],
+   "ortho": true,
+   "zoom": 3.4
+  },
+  {
+   "name": "Three-quarter",
+   "position": [
+    190,
+    150,
+    260
+   ],
+   "target": [
+    50,
+    25,
+    6
+   ],
+   "ortho": false
+  }
+ ],
+ "sim": {
+  "mode": "dynamic",
+  "dt": 0.001,
+  "gravity": {
+   "x": 0,
+   "y": -9806.65
+  },
+  "gravityEnabled": true,
+  "floor": {
+   "enabled": false,
+   "y": 0,
+   "friction": 0.8
+  },
+  "stopOnInterference": false,
+  "sampleRate": 250
+ },
+ "clearances": {
+  "hole": 0.2,
+  "slide": 0.15,
+  "backlash": 0.1,
+  "minFeature": 0.8
+ },
+ "units": {
+  "length": "mm",
+  "angle": "deg",
+  "mass": "g",
+  "time": "s",
+  "force": "N",
+  "torque": "N·mm",
+  "speed": "mm/s",
+  "angularSpeed": "rpm",
+  "acceleration": "m/s²",
+  "angularAcceleration": "rad/s²",
+  "stiffness": "N/mm",
+  "torsionStiffness": "N·mm/rad",
+  "damping": "N·s/m",
+  "rotDamping": "N·mm·s/rad",
+  "density": "g/cm³",
+  "power": "W",
+  "energy": "mJ",
+  "inertia": "g·mm²",
+  "area": "mm²",
+  "volume": "cm³",
+  "frequency": "Hz",
+  "ratio": "",
+  "count": ""
+ },
+ "materials": [],
+ "activeVariant": "v1"
+}

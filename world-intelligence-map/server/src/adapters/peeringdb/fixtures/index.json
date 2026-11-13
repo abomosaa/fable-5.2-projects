@@ -1,0 +1,13 @@
+{
+  "capturedAt": "2026-11-10T18:30:00Z",
+  "notes": "Authored from the documented schema; provider terms do not permit redistributing captured data (PeeringDB Acceptable Use Policy: no part of the data may be reproduced or passed on in bulk without PeeringDB's approval). Every row is SYNTHETIC: 413 fictitious facilities (\"Example Colocation …\", \"Sample Carrier Hotel …\", \"Fictional Data Centre …\", \"Demo Interconnect …\") owned by fictitious organisations (\"Example Org 1–60\"), with ids in a synthetic range (facilities 9000001+, organisations 990001+, campuses 99001+), invented presence counts, invented CLLI-style codes (EXMPnn) and invented created/updated times. They are placed within about 5 km of the approximate public coordinates of 217 well-known cities in 148 countries so the layer looks plausible on a world map; no row describes a real facility, operator or location of one. The envelope ({\"data\": [...], \"meta\": {}}) and the field names, types and order follow the live /api/fac response for the adapter's fields= request; the live API additionally returns `website` (and sometimes `available_voltage_services`) although they are not requested, which this fixture deliberately omits. 8 rows have no complete coordinates (7 with neither, 1 with a latitude only) to exercise the silent skip, leaving 405 records. No contact fields, e-mail addresses, phone numbers, street addresses or URLs are present. The file was produced once by a throw-away generator script (not committed) and is static; `capturedAt` is the authoring time. The malformed variant is hand-authored with invented facilities.",
+  "routes": [
+    {
+      "match": "/api/fac?",
+      "file": "fac.json",
+      "variants": {
+        "malformed": "fac.malformed.json"
+      }
+    }
+  ]
+}

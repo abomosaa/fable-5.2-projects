@@ -1,0 +1,102 @@
+{
+  "id": "ooni",
+  "provider": "OONI (Open Observatory of Network Interference)",
+  "dataset": "OONI measurement aggregation API – daily per-country counts of anomalous, confirmed, failed and OK measurements",
+  "description": "Daily country-level shares of OONI Probe measurements flagged as anomalous (or matched to a known block page) for websites, instant-messaging apps and circumvention tools. Measurements are run by volunteers; an anomaly is a deviation from a control measurement, not proof of censorship.",
+  "homepageUrl": "https://ooni.org/",
+  "documentationUrl": "https://api.ooni.io/apidocs/",
+  "sourceUrls": [
+    "https://api.ooni.io/api/v1/aggregation?test_name={TEST_NAME}&since={YYYY-MM-DD}&until={YYYY-MM-DD}&time_grain=day&axis_x=probe_cc&axis_y=measurement_start_day"
+  ],
+  "allowedHosts": ["api.ooni.io"],
+  "coverage": {
+    "geographic": "Countries where volunteers ran OONI Probe on the day in question (roughly 140 countries per day for web tests, far fewer with meaningful volume for app tests). Country-days with fewer than 50 measurements are not shown.",
+    "temporal": "The 7 most recent complete UTC days, one value per country and day; older days persist locally until retention expires."
+  },
+  "updateCadence": {
+    "upstream": "Measurements are published in near real time; daily aggregates keep changing for a day or two as late uploads arrive and are occasionally reprocessed",
+    "pollIntervalSec": 21600,
+    "staleAfterSec": 86400
+  },
+  "auth": { "type": "none", "envVars": [] },
+  "attribution": "OONI – Open Observatory of Network Interference (CC BY-NC-SA 4.0)",
+  "license": {
+    "name": "Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)",
+    "url": "https://github.com/ooni/license/tree/master/data",
+    "redistribution": "restricted",
+    "nonCommercialOnly": true,
+    "notes": "The OONI data policy (https://ooni.org/about/data-policy/) refers to github.com/ooni/license/data, which states that the licence applies to all published OONI data, including data published on api.ooni.io. Sharing and adaptation are permitted for non-commercial purposes only, with attribution, and derived data must be shared under the same licence (share-alike). The percentages shown here are adaptations computed by this application from OONI's counts."
+  },
+  "limitations": [
+    "An OONI 'anomaly' is a measurement that deviates from a control measurement taken from a non-censored vantage point. OONI states that an anomalous measurement does not necessarily contain evidence of censorship and may be a false positive (transient network failures, CDN/geo differences, unreliable sites, test bugs). Anomaly shares must be read in aggregate and over time, never as a count of blocked sites.",
+    "'Confirmed' only means that a Web Connectivity measurement matched a block-page or DNS fingerprint known to OONI; fingerprints exist for a limited set of countries and networks, so a value of 0 % does not mean that nothing is blocked. In the aggregation API anomaly_count excludes measurements counted as confirmed or failed.",
+    "Coverage depends entirely on where, when and on which networks volunteers run OONI Probe and on which sites they test (global and country-specific test lists differ), so values are not comparable between countries like a survey statistic and can swing with the sample.",
+    "Country-days with fewer than 50 measurements for a layer are omitted as too small to be meaningful; this threshold is an application choice, not an OONI rule. For Web Connectivity each tested URL is one measurement, so 50 measurements can still come from a single probe run.",
+    "Messaging (WhatsApp, Telegram, Signal, Facebook Messenger) and circumvention (Tor, Psiphon) layers pool the measurements of several tests; per-test shares are given in the record attributes. Tor and Psiphon tests show elevated anomaly rates in many uncensored networks.",
+    "The probe country is inferred by OONI from the probe's IP address (GeoIP); VPN use by volunteers can misattribute measurements. Territories absent from this application's country gazetteer (e.g. Gibraltar, Guadeloupe, Martinique) are not shown.",
+    "The most recent day can be incomplete while late measurements are still being uploaded; values are re-fetched every 6 hours and revised."
+  ],
+  "confidenceNotes": "No per-value confidence is assigned. The source measures the share of volunteer-run OONI Probe measurements per country and UTC day that OONI's pipeline labelled 'anomaly' (deviates from the control; frequently a false positive) or 'confirmed' (matched a known block-page/DNS fingerprint). The percentages are derived by this application from OONI's published counts (anomaly_count or confirmed_count divided by measurement_count); the raw counts are kept in each record. These are measurement signals, not confirmed censorship events.",
+  "retention": { "note": "One record per country, day and layer; kept for 30 days after the measurement day, then purged." },
+  "snapshot": "incremental",
+  "http": { "cacheTtlSec": 19800, "minIntervalMs": 1500, "timeoutMs": 60000 },
+  "enabledByDefault": true,
+  "layers": [
+    {
+      "id": "ooni-web-anomalies",
+      "name": "Web anomalies (OONI)",
+      "description": "Share of OONI Web Connectivity measurements per country and day that were flagged as anomalous (possible, unconfirmed interference; often false positives).",
+      "domain": "cyber",
+      "category": "censorship-measurement",
+      "geometry": "country",
+      "timeModel": "indicator",
+      "render": { "type": "choropleth", "color": "red" },
+      "metric": { "name": "Anomalous web measurements", "unit": "% of measurements", "scale": "sequential", "higherIs": "worse", "transform": "linear" },
+      "freshForSec": 172800,
+      "retentionDays": 30,
+      "defaultOn": false
+    },
+    {
+      "id": "ooni-web-confirmed",
+      "name": "Web block-page matches (OONI)",
+      "description": "Share of OONI Web Connectivity measurements per country and day that matched a known block-page or DNS fingerprint (labelled 'confirmed' by OONI).",
+      "domain": "cyber",
+      "category": "censorship-measurement",
+      "geometry": "country",
+      "timeModel": "indicator",
+      "render": { "type": "choropleth", "color": "purple" },
+      "metric": { "name": "Web measurements labelled confirmed by OONI", "unit": "% of measurements", "scale": "sequential", "higherIs": "worse", "transform": "linear" },
+      "freshForSec": 172800,
+      "retentionDays": 30,
+      "defaultOn": false
+    },
+    {
+      "id": "ooni-messaging-anomalies",
+      "name": "Messaging-app anomalies (OONI)",
+      "description": "Share of OONI WhatsApp, Telegram, Signal and Facebook Messenger test measurements per country and day that were flagged as anomalous.",
+      "domain": "cyber",
+      "category": "censorship-measurement",
+      "geometry": "country",
+      "timeModel": "indicator",
+      "render": { "type": "choropleth", "color": "orange" },
+      "metric": { "name": "Anomalous messaging-app measurements", "unit": "% of measurements", "scale": "sequential", "higherIs": "worse", "transform": "linear" },
+      "freshForSec": 172800,
+      "retentionDays": 30,
+      "defaultOn": false
+    },
+    {
+      "id": "ooni-circumvention-anomalies",
+      "name": "Circumvention-tool anomalies (OONI)",
+      "description": "Share of OONI Tor and Psiphon test measurements per country and day that were flagged as anomalous.",
+      "domain": "cyber",
+      "category": "censorship-measurement",
+      "geometry": "country",
+      "timeModel": "indicator",
+      "render": { "type": "choropleth", "color": "brown" },
+      "metric": { "name": "Anomalous circumvention-tool measurements", "unit": "% of measurements", "scale": "sequential", "higherIs": "worse", "transform": "linear" },
+      "freshForSec": 172800,
+      "retentionDays": 30,
+      "defaultOn": false
+    }
+  ]
+}

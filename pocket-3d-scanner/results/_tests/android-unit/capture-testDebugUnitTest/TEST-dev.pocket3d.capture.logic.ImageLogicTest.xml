@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="dev.pocket3d.capture.logic.ImageLogicTest" tests="23" skipped="0" failures="0" errors="0" timestamp="2026-11-12T10:55:19.965Z" hostname="h4-pc" time="0.013">
+  <properties/>
+  <testcase name="portraitPhoneWithTypicalBackSensorNeedsNinetyDegrees" classname="dev.pocket3d.capture.logic.ImageLogicTest" time="0.001"/>
+  <testcase name="cropRegionAndPreCorrectionOffsetAreApplied" classname="dev.pocket3d.capture.logic.ImageLogicTest" time="0.001"/>
+  <testcase name="packsUnusualStrides" classname="dev.pocket3d.capture.logic.ImageLogicTest" time="0.003"/>
+  <testcase name="rawOrientationSnapsToQuarterTurnsWithHysteresis" classname="dev.pocket3d.capture.logic.ImageLogicTest" time="0.0"/>
+  <testcase name="packsPaddedRowsAndInterleavedChroma" classname="dev.pocket3d.capture.logic.ImageLogicTest" time="0.0"/>
+  <testcase name="otherLandscapeAndUpsideDown" classname="dev.pocket3d.capture.logic.ImageLogicTest" time="0.001"/>
+  <testcase name="sixteenByNineOutputIsACentredCrop" classname="dev.pocket3d.capture.logic.ImageLogicTest" time="0.0"/>
+  <testcase name="exifOrientationAgreesWithCoreQuarterTurns" classname="dev.pocket3d.capture.logic.ImageLogicTest" time="0.0"/>
+  <testcase name="cameraXTargetRotationIsTheInverseOfTheDeviceRotation" classname="dev.pocket3d.capture.logic.ImageLogicTest" time="0.0"/>
+  <testcase name="lumaCopyDropsRowPadding" classname="dev.pocket3d.capture.logic.ImageLogicTest" time="0.0"/>
+  <testcase name="frontCamerasSubtractTheDeviceRotation" classname="dev.pocket3d.capture.logic.ImageLogicTest" time="0.001"/>
+  <testcase name="rejectsABufferThatIsTooSmall" classname="dev.pocket3d.capture.logic.ImageLogicTest" time="0.0"/>
+  <testcase name="analysisLumaEqualsCoreDownsampleOfTheTightPlane" classname="dev.pocket3d.capture.logic.ImageLogicTest" time="0.004"/>
+  <testcase name="pixelsRotatedByTheCameraRotateTheIntrinsicsToo" classname="dev.pocket3d.capture.logic.ImageLogicTest" time="0.0"/>
+  <testcase name="flatPhoneKeepsTheLastKnownOrientation" classname="dev.pocket3d.capture.logic.ImageLogicTest" time="0.0"/>
+  <testcase name="missingOrImplausibleCalibrationIsRejected" classname="dev.pocket3d.capture.logic.ImageLogicTest" time="0.001"/>
+  <testcase name="analysisLumaKeepsSmallImagesUnchanged" classname="dev.pocket3d.capture.logic.ImageLogicTest" time="0.0"/>
+  <testcase name="packingDoesNotMoveTheCallersBufferPositions" classname="dev.pocket3d.capture.logic.ImageLogicTest" time="0.0"/>
+  <testcase name="sensorsMountedDifferently" classname="dev.pocket3d.capture.logic.ImageLogicTest" time="0.0"/>
+  <testcase name="fullSensorOutputOnlyScales" classname="dev.pocket3d.capture.logic.ImageLogicTest" time="0.0"/>
+  <testcase name="usualLandscapeGripStoresAnUprightImage" classname="dev.pocket3d.capture.logic.ImageLogicTest" time="0.0"/>
+  <testcase name="packsTightPlanarPlanes" classname="dev.pocket3d.capture.logic.ImageLogicTest" time="0.001"/>
+  <testcase name="lensDistortionIsReorderedToOpenCv" classname="dev.pocket3d.capture.logic.ImageLogicTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

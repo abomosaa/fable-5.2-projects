@@ -1,0 +1,32 @@
+[
+ {
+  "id": "fourbar",
+  "file": "fourbar.json",
+  "title": "Four-bar linkage",
+  "blurb": "Crank-rocker with coupler-point trace and two deliberately invalid variants."
+ },
+ {
+  "id": "gears",
+  "file": "gear-reduction.json",
+  "title": "Two-stage gear reduction",
+  "blurb": "12 : 1 spur-gear train with a loaded output and a torque-limited motor."
+ },
+ {
+  "id": "cam",
+  "file": "cam-follower.json",
+  "title": "Cam and spring follower",
+  "blurb": "Editable cam program, real contact, follower float at high speed."
+ },
+ {
+  "id": "slidercrank",
+  "file": "slider-crank.json",
+  "title": "Belt-driven slider-crank",
+  "blurb": "Belt ratio and stroke propagate through the assembly."
+ },
+ {
+  "id": "walker",
+  "file": "walker.json",
+  "title": "Walking linkage robot",
+  "blurb": "Six Jansen legs, free body, floor contact with friction."
+ }
+]

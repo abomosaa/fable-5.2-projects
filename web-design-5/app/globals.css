@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+/*
+ * Truly global rules only. Every design ships its own namespaced stylesheet
+ * (`.d1-*` … `.d5-*`) so the five art directions can never leak into each other,
+ * even while Next.js keeps previously visited routes mounted.
+ */
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}

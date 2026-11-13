@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <feed xmlns="http://www.w3.org/2005/Atom" xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#" xmlns:georss="http://www.georss.org/georss">
+    <id>urn:uuid:22222222-0000-4000-8000-000000000001</id><title>        TSUNAMI THREAT MESSAGE NUMBER   2        </title>
+    <updated>2026-11-09T10:50:00Z</updated>
+    <author>
+      <name>NWS PACIFIC TSUNAMI WARNING CENTER HONOLULU HI</name>
+<uri>https://www.tsunami.gov/</uri>
+     <email>ntwc@noaa.gov</email>
+    </author>
+   <entry>
+    <title>NEAR THE COAST OF TESTLAND</title><updated>2026-11-08T03:40:00Z</updated>
+<geo:lat>-20.000</geo:lat>
+<geo:long>-70.500</geo:long>
+<summary type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml">
+     <strong>Category:</strong> Threat<br/><strong>Bulletin Issue Time: </strong> 2026.11.08 03:40:00 UTC <br/><strong>Preliminary Magnitude: </strong>8.4(Mwp)<br/><strong>Lat/Lon: </strong>-20.000 / -70.500<br/><strong>Affected Region: </strong>NEAR THE COAST OF TESTLAND<br/><b>Note:</b>  * AUTHORED EXAMPLE.<br/><strong>Definition: </strong>Authored test entry. <a href="https://www.tsunami.gov/events/PHEB/2026/11/08/26312999/2/WEPA40/WEPA40.txt">View bulletin</a>  </div></summary>
+    <id>urn:uuid:dddddddd-0000-4000-8000-000000000002</id><link rel="related" title="CapXML document" href="https://www.tsunami.gov/events/PHEB/2026/11/08/26312999/2/WEPA40/WEPA40CAP.xml" type="application/cap+xml" />
+<link rel="alternate" title="Bulletin" href="https://www.tsunami.gov/events/PHEB/2026/11/08/26312999/2/WEPA40/WEPA40.txt" type="application/xml" />
+</entry>
+   <entry>
+    <title>55 miles SE of Test Bay, Alaska</title><updated>2026-11-09T10:42:00Z</updated>
+<geo:lat>55.100</geo:lat>
+<geo:long>-158.500</geo:long>
+<summary type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml">
+     <strong>Category:</strong> Warning<br/><strong>Bulletin Issue Time: </strong> 2026.11.09 10:42:00 UTC <br/><strong>Preliminary Magnitude: </strong>8.1(Mwp)<br/><strong>Lat/Lon: </strong>55.100 / -158.500<br/><strong>Affected Region: </strong>55 miles SE of Test Bay, Alaska<br/><b>Note:</b>  * Authored example: the same NTWC message repeated in the PTWC feed.<br/><strong>Definition: </strong>Authored test entry. <a href="https://www.tsunami.gov/events/PAAQ/2026/11/09/tst001/3/WEAK51/WEAK51.txt">View bulletin</a>  </div></summary>
+    <id>urn:uuid:aaaaaaaa-0000-4000-8000-000000000003</id><link rel="related" title="CapXML document" href="https://www.tsunami.gov/events/PAAQ/2026/11/09/tst001/3/WEAK51/WEAK51CAP.xml" type="application/cap+xml" />
+<link rel="alternate" title="Bulletin" href="https://www.tsunami.gov/events/PAAQ/2026/11/09/tst001/3/WEAK51/WEAK51.txt" type="application/xml" />
+</entry>
+   <entry>
+    <title>NEAR THE COAST OF TESTLAND</title><updated>2026-11-08T05:00:00Z</updated>
+<geo:lat>-20.000</geo:lat>
+<geo:long>-70.500</geo:long>
+<summary type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml">
+     <strong>Category:</strong> Cancellation<br/><strong>Bulletin Issue Time: </strong> 2026.11.08 05:00:00 UTC <br/><strong>Preliminary Magnitude: </strong>8.3(Mw)<br/><strong>Lat/Lon: </strong>-20.000 / -70.500<br/><strong>Affected Region: </strong>HAWAII<br/><b>Note:</b>  * AUTHORED EXAMPLE: THE TSUNAMI WATCH FOR HAWAII IS CANCELLED.<br/><strong>Definition: </strong>Authored test entry. <a href="https://www.tsunami.gov/events/PHEB/2026/11/08/26312999/4/WEHW40/WEHW40.txt">View bulletin</a>  </div></summary>
+    <id>urn:uuid:eeeeeeee-0000-4000-8000-000000000001</id><link rel="related" title="CapXML document" href="https://www.tsunami.gov/events/PHEB/2026/11/08/26312999/4/WEHW40/WEHW40CAP.xml" type="application/cap+xml" />
+<link rel="alternate" title="Bulletin" href="https://www.tsunami.gov/events/PHEB/2026/11/08/26312999/4/WEHW40/WEHW40.txt" type="application/xml" />
+</entry>
+</feed>

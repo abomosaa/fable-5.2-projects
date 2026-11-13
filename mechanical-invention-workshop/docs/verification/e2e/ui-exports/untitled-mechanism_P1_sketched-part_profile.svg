@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="62mm" height="22mm" viewBox="-32 -12 62 22" data-part-number="P1" data-part-id="part_mwc07jx931cbjni" data-bbox-mm="-31 -9 29 11" data-units="mm" data-y-axis="flipped">
+<title>P1 Sketched part — cutting profile</title>
+<desc>Cutting profile, true scale: 1 user unit = 1 mm. Part-local CAD coordinates with the Y axis flipped for SVG: svg_x = cad_x, svg_y = −cad_y (CAD y-up → SVG y-down). data-* attributes carry true CAD values. Red (cut-outer): outer contour, cut last. Blue (cut-inner, hole): inner cut-outs and holes, cut first. Green (hole-centre): centre marks only, do not cut. Magenta: profiles of further Z layers, for reference. Stroke width 0.1 mm (hairline); kerf is not compensated.</desc>
+<g fill="none" stroke-width="0.1" stroke-linejoin="round">
+<g id="CUT_INNER" stroke="#0000ff">
+<circle class="cut-inner hole" cx="-21" cy="-1" r="2.1" data-label="H1"/>
+<circle class="cut-inner hole" cx="19" cy="-1" r="2.1" data-label="H2"/>
+</g>
+<g id="CUT_OUTER" stroke="#ff0000">
+<path class="cut-outer" d="M-31 9L29 9L29 -11L-31 -11Z"/>
+</g>
+<g id="HOLE_CENTRES" stroke="#00a000">
+<g class="hole-centre" data-x="-21" data-y="1" data-d="4.2" data-label="H1"><path d="M-22 -1L-20 -1M-21 -2L-21 0"/></g>
+<g class="hole-centre" data-x="19" data-y="1" data-d="4.2" data-label="H2"><path d="M18 -1L20 -1M19 -2L19 0"/></g>
+</g>
+</g>
+</svg>

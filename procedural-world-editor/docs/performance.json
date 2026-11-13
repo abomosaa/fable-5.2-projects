@@ -1,0 +1,351 @@
+{
+ "date": "2026-11-12T05:31:32.757Z",
+ "gpu": "ANGLE (Intel, Vulkan 1.4.354 (Intel(R) Arc(tm) B580 Graphics (BMG G21) (0x0000E20B)), Intel open-source Mesa driver)",
+ "cpu": "Intel(R) Core(TM) i7-14700K",
+ "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36",
+ "viewport": [
+  1920,
+  1080
+ ],
+ "rows": [
+  {
+   "project": "showcase-valley",
+   "quality": "high",
+   "size": [
+    1920,
+    1080
+   ],
+   "load": 7.945,
+   "timings": {
+    "derive": 2093,
+    "engine": 4529,
+    "materials": 1287,
+    "terrain": 2602,
+    "water": 53,
+    "vegetation": 544,
+    "objects": 40
+   },
+   "walk": {
+    "frames": 227,
+    "avg": 26.866519823801674,
+    "p50": 3.7000000029802322,
+    "p95": 142.3999999910593,
+    "p99": 148.79999999701977,
+    "max": 149.5,
+    "fps": 37.22104710838196,
+    "draws": 773,
+    "tris": 24881934,
+    "veg": {
+     "instances": 15037,
+     "triangles": 8053094,
+     "impostors": 236324
+    }
+   },
+   "fly": {
+    "frames": 641,
+    "avg": 9.467238689547582,
+    "p50": 1,
+    "p95": 20.299999997019768,
+    "p99": 183,
+    "max": 323.20000000298023,
+    "fps": 105.62742028507868,
+    "draws": 271,
+    "tris": 4440791,
+    "veg": {
+     "instances": 5132,
+     "triangles": 85923,
+     "impostors": 237524
+    }
+   }
+  },
+  {
+   "project": "showcase-lake",
+   "quality": "high",
+   "size": [
+    1920,
+    1080
+   ],
+   "load": 8.442,
+   "timings": {
+    "derive": 2508,
+    "engine": 4609,
+    "materials": 1295,
+    "terrain": 2468,
+    "water": 54,
+    "vegetation": 640,
+    "objects": 150
+   },
+   "walk": {
+    "frames": 249,
+    "avg": 24.234538152574537,
+    "p50": 37.20000000298023,
+    "p95": 50.20000000298023,
+    "p99": 51.20000000298023,
+    "max": 52.5,
+    "fps": 41.26342304129141,
+    "draws": 859,
+    "tris": 20530216,
+    "veg": {
+     "instances": 17690,
+     "triangles": 5144976,
+     "impostors": 77776
+    }
+   },
+   "fly": {
+    "frames": 593,
+    "avg": 10.124114671178653,
+    "p50": 15.700000002980232,
+    "p95": 19.700000002980232,
+    "p99": 20.400000005960464,
+    "max": 21.400000005960464,
+    "fps": 98.77406889185103,
+    "draws": 197,
+    "tris": 4636972,
+    "veg": {
+     "instances": 3400,
+     "triangles": 0,
+     "impostors": 78241
+    }
+   }
+  },
+  {
+   "project": "showcase-coast",
+   "quality": "high",
+   "size": [
+    1920,
+    1080
+   ],
+   "load": 7.397,
+   "timings": {
+    "derive": 1714,
+    "engine": 4526,
+    "materials": 1309,
+    "terrain": 2408,
+    "water": 47,
+    "vegetation": 681,
+    "objects": 80
+   },
+   "walk": {
+    "frames": 437,
+    "avg": 13.73775743705048,
+    "p50": 23.599999994039536,
+    "p95": 27.100000008940697,
+    "p99": 27.799999997019768,
+    "max": 28.600000008940697,
+    "fps": 72.79208448556665,
+    "draws": 372,
+    "tris": 10537993,
+    "veg": {
+     "instances": 3119,
+     "triangles": 1986125,
+     "impostors": 30445
+    }
+   },
+   "fly": {
+    "frames": 510,
+    "avg": 11.748431372525646,
+    "p50": 19.900000005960464,
+    "p95": 24.200000002980232,
+    "p99": 25.200000002980232,
+    "max": 25.899999991059303,
+    "fps": 85.11774621576758,
+    "draws": 165,
+    "tris": 4270126,
+    "veg": {
+     "instances": 0,
+     "triangles": 0,
+     "impostors": 30458
+    }
+   }
+  },
+  {
+   "project": "showcase-valley",
+   "quality": "medium",
+   "size": [
+    1920,
+    1080
+   ],
+   "load": 7.902,
+   "timings": {
+    "derive": 2121,
+    "engine": 4573,
+    "materials": 1294,
+    "terrain": 2634,
+    "water": 57,
+    "vegetation": 549,
+    "objects": 36
+   },
+   "walk": {
+    "frames": 222,
+    "avg": 27.354054054094327,
+    "p50": 3.9000000059604645,
+    "p95": 145.70000000298023,
+    "p99": 149.1000000089407,
+    "max": 154.80000001192093,
+    "fps": 36.55765240583492,
+    "draws": 767,
+    "tris": 31174161,
+    "veg": {
+     "instances": 16895,
+     "triangles": 9252207,
+     "impostors": 235724
+    }
+   },
+   "fly": {
+    "frames": 733,
+    "avg": 8.184447476109248,
+    "p50": 1.2000000029802322,
+    "p95": 20.5,
+    "p99": 145.90000000596046,
+    "max": 210.29999999701977,
+    "fps": 122.18295772793981,
+    "draws": 272,
+    "tris": 3155396,
+    "veg": {
+     "instances": 7742,
+     "triangles": 225580,
+     "impostors": 237514
+    }
+   }
+  },
+  {
+   "project": "showcase-lake",
+   "quality": "medium",
+   "size": [
+    1920,
+    1080
+   ],
+   "load": 8.553,
+   "timings": {
+    "derive": 2533,
+    "engine": 4700,
+    "materials": 1336,
+    "terrain": 2501,
+    "water": 54,
+    "vegetation": 660,
+    "objects": 147
+   },
+   "walk": {
+    "frames": 250,
+    "avg": 23.87040000003576,
+    "p50": 35,
+    "p95": 48.900000005960464,
+    "p99": 49.5,
+    "max": 49.69999998807907,
+    "fps": 41.892888263225665,
+    "draws": 864,
+    "tris": 21771521,
+    "veg": {
+     "instances": 20609,
+     "triangles": 5629458,
+     "impostors": 77532
+    }
+   },
+   "fly": {
+    "frames": 664,
+    "avg": 9.021385542150721,
+    "p50": 13.599999994039536,
+    "p95": 17.200000002980232,
+    "p99": 17.80000001192093,
+    "max": 20.200000002980232,
+    "fps": 110.84771793952146,
+    "draws": 197,
+    "tris": 3773228,
+    "veg": {
+     "instances": 5600,
+     "triangles": 0,
+     "impostors": 78241
+    }
+   }
+  },
+  {
+   "project": "showcase-coast",
+   "quality": "medium",
+   "size": [
+    1920,
+    1080
+   ],
+   "load": 7.469,
+   "timings": {
+    "derive": 1732,
+    "engine": 4569,
+    "materials": 1320,
+    "terrain": 2430,
+    "water": 48,
+    "vegetation": 680,
+    "objects": 90
+   },
+   "walk": {
+    "frames": 491,
+    "avg": 12.240733197562077,
+    "p50": 20,
+    "p95": 23.600000008940697,
+    "p99": 24.299999997019768,
+    "max": 25.299999997019768,
+    "fps": 81.69445276359465,
+    "draws": 378,
+    "tris": 10823259,
+    "veg": {
+     "instances": 2891,
+     "triangles": 2155717,
+     "impostors": 30440
+    }
+   },
+   "fly": {
+    "frames": 579,
+    "avg": 10.37202072537316,
+    "p50": 17.099999994039536,
+    "p95": 20.700000002980232,
+    "p99": 21.799999997019768,
+    "max": 24.599999994039536,
+    "fps": 96.4132280948583,
+    "draws": 171,
+    "tris": 3410369,
+    "veg": {
+     "instances": 2,
+     "triangles": 998,
+     "impostors": 30458
+    }
+   }
+  }
+ ],
+ "edits": [
+  {
+   "project": "showcase-valley",
+   "sculptDabMedian": 4.4000000059604645,
+   "sculptDabMax": 7.5,
+   "sculptCommit": 3865.6000000089407,
+   "sculptUndo": 3758.2000000029802,
+   "riverMove": 5436.899999991059,
+   "riverUndo": 5392.600000008941,
+   "timeOfDay": 1.2999999970197678,
+   "biomeRule": 1135.8999999910593,
+   "deriveAll": 7233.5
+  },
+  {
+   "project": "showcase-lake",
+   "sculptDabMedian": 5.9000000059604645,
+   "sculptDabMax": 10.699999988079071,
+   "sculptCommit": 3682.3999999910593,
+   "sculptUndo": 3553.7999999970198,
+   "riverMove": 4711.9000000059605,
+   "riverUndo": 4635,
+   "lakeLevel": 4482.5,
+   "lakeLevelLive": 2751,
+   "timeOfDay": 1.7000000029802322,
+   "biomeRule": 1582.0999999940395,
+   "deriveAll": 7251.899999991059
+  },
+  {
+   "project": "showcase-coast",
+   "sculptDabMedian": 4,
+   "sculptDabMax": 6.799999997019768,
+   "sculptCommit": 3027.7999999970198,
+   "sculptUndo": 3028.6000000089407,
+   "seaLevel": 4178.199999988079,
+   "timeOfDay": 1,
+   "biomeRule": 1039.8999999910593,
+   "deriveAll": 10456.79999999702
+  }
+ ]
+}

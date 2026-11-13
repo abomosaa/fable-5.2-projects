@@ -1,0 +1,103 @@
+{
+  "id": "celestrak",
+  "provider": "CelesTrak (Dr. T.S. Kelso)",
+  "dataset": "GP element sets (OMM JSON) – space stations, navigation, weather and Earth-resources satellites",
+  "description": "General-perturbations orbital element sets published by CelesTrak (derived from the U.S. Space Force 18th Space Defense Squadron catalogue). This application propagates each element set with SGP4 to the current time and shows the computed sub-satellite point.",
+  "homepageUrl": "https://celestrak.org/",
+  "documentationUrl": "https://celestrak.org/NORAD/documentation/gp-data-formats.php",
+  "sourceUrls": [
+    "https://celestrak.org/NORAD/elements/gp.php?GROUP=stations&FORMAT=json",
+    "https://celestrak.org/NORAD/elements/gp.php?GROUP=gnss&FORMAT=json",
+    "https://celestrak.org/NORAD/elements/gp.php?GROUP=weather&FORMAT=json",
+    "https://celestrak.org/NORAD/elements/gp.php?GROUP=resource&FORMAT=json"
+  ],
+  "allowedHosts": ["celestrak.org"],
+  "coverage": {
+    "geographic": "Global (Earth-orbiting objects: about 20 space-station objects, 170 navigation, 75 weather and 165 Earth-resources satellites).",
+    "temporal": "Current computed position only; element sets are typically 0–3 days old."
+  },
+  "updateCadence": {
+    "upstream": "CelesTrak checks for new GP data once every 2 hours; individual element sets are updated 2–3 times a day at most",
+    "pollIntervalSec": 120,
+    "staleAfterSec": 28800
+  },
+  "auth": { "type": "none", "envVars": [] },
+  "attribution": "Orbital elements: CelesTrak (celestrak.org); positions computed by this application with SGP4",
+  "license": {
+    "name": "No formal licence – CelesTrak makes GP data freely available subject to its usage policy",
+    "url": "https://celestrak.org/usage-policy.php",
+    "redistribution": "unknown",
+    "nonCommercialOnly": false,
+    "notes": "CelesTrak states that it makes these resources freely available to all users but publishes no licence text or redistribution terms; this application therefore shows only positions it computes itself and links back to CelesTrak instead of redistributing the element files. Usage policy (2026-05): download only what is needed, at most once per update – GP data update once every 2 hours; machine clients must stop querying on any non-200 response (301/403/404/5xx) and report to a human; more than 50 such errors in 2 hours or excessive bandwidth gets the IP address firewalled. This adapter therefore caches every group for 7,500 s, never retries a failed request, and after any upstream error works only from its cached element sets for 2 hours (every 2 minutes it merely re-propagates the cached elements)."
+  },
+  "limitations": [
+    "Positions are COMPUTED by this application (SGP4 propagation of mean elements), not tracked or reported positions. Typical error is about 1 km at the element epoch and grows by roughly 1–3 km per day for low orbits; after a manoeuvre, or for objects with old elements, the error can be far larger.",
+    "Element sets older than 30 days, objects whose propagation fails and objects that have decayed are rejected.",
+    "The stations group contains every catalogued object associated with the ISS and the Chinese Space Station (modules, visiting vehicles, released cubesats, debris), not only the stations themselves.",
+    "Only four CelesTrak groups are loaded (stations, gnss, weather, resource); a satellite listed in two groups appears once in each layer.",
+    "The marker shows the point on the ground directly below the satellite; altitude and speed are given as attributes."
+  ],
+  "confidenceNotes": "The mapped position is derived by this application: it is the SGP4 sub-satellite point computed from published mean elements, so 'geometry' is always marked as derived. SGP4 accuracy degrades with element age – the element epoch and its age in hours are attached to every record – and confidence is derived from that age alone: up to 2 days 0.9, up to 7 days 0.7, up to 14 days 0.5, older 0.3. It does not account for manoeuvres after the element epoch.",
+  "retention": { "note": "One current position per object; the pipeline keeps a short track of recent positions. Records are purged 2 days after their last computed position." },
+  "snapshot": "full",
+  "http": { "cacheTtlSec": 7500, "maxRetries": 0, "minIntervalMs": 2000, "timeoutMs": 30000 },
+  "enabledByDefault": true,
+  "layers": [
+    {
+      "id": "sat-stations",
+      "name": "Space stations",
+      "description": "Computed current position of the ISS, the Chinese Space Station and associated vehicles and objects.",
+      "domain": "space",
+      "category": "space-station",
+      "geometry": "point",
+      "timeModel": "snapshot",
+      "render": { "type": "track", "color": "pink", "shape": "satellite" },
+      "freshForSec": 300,
+      "liveMaxAgeSec": 600,
+      "retentionDays": 2,
+      "defaultOn": true
+    },
+    {
+      "id": "sat-navigation",
+      "name": "Navigation satellites (GNSS)",
+      "description": "Computed current position of GPS, GLONASS, Galileo, BeiDou and regional / augmentation navigation satellites.",
+      "domain": "space",
+      "category": "navigation-satellite",
+      "geometry": "point",
+      "timeModel": "snapshot",
+      "render": { "type": "track", "color": "blue", "shape": "satellite" },
+      "freshForSec": 300,
+      "liveMaxAgeSec": 600,
+      "retentionDays": 2,
+      "defaultOn": false
+    },
+    {
+      "id": "sat-weather",
+      "name": "Weather satellites",
+      "description": "Computed current position of polar-orbiting and geostationary meteorological satellites.",
+      "domain": "space",
+      "category": "weather-satellite",
+      "geometry": "point",
+      "timeModel": "snapshot",
+      "render": { "type": "track", "color": "teal", "shape": "satellite" },
+      "freshForSec": 300,
+      "liveMaxAgeSec": 600,
+      "retentionDays": 2,
+      "defaultOn": false
+    },
+    {
+      "id": "sat-earth-observation",
+      "name": "Earth-observation satellites",
+      "description": "Computed current position of civil Earth-resources and remote-sensing satellites (Landsat, Sentinel, Terra/Aqua and others).",
+      "domain": "space",
+      "category": "earth-observation-satellite",
+      "geometry": "point",
+      "timeModel": "snapshot",
+      "render": { "type": "track", "color": "green", "shape": "satellite" },
+      "freshForSec": 300,
+      "liveMaxAgeSec": 600,
+      "retentionDays": 2,
+      "defaultOn": false
+    }
+  ]
+}

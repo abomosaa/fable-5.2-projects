@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="dev.pocket3d.data.ImportLogicTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2026-11-12T10:55:57.377Z" hostname="h4-pc" time="0.003">
+  <properties/>
+  <testcase name="unsupportedFilesGetASpecificReason" classname="dev.pocket3d.data.ImportLogicTest" time="0.001"/>
+  <testcase name="namesAreNeverPathsAndLimitsAreExplained" classname="dev.pocket3d.data.ImportLogicTest" time="0.001"/>
+  <testcase name="captureTimeParsing" classname="dev.pocket3d.data.ImportLogicTest" time="0.0"/>
+  <testcase name="implausibleOrMissingMetadataGivesNoIntrinsics" classname="dev.pocket3d.data.ImportLogicTest" time="0.001"/>
+  <testcase name="formatIsDecidedByContentNotByName" classname="dev.pocket3d.data.ImportLogicTest" time="0.0"/>
+  <testcase name="focalLengthFrom35mmEquivalentSurvivesResizing" classname="dev.pocket3d.data.ImportLogicTest" time="0.0"/>
+  <testcase name="focalPlaneResolutionIsOnlyTrustedWhenTheFileWasNotResized" classname="dev.pocket3d.data.ImportLogicTest" time="0.0"/>
+  <testcase name="emptyTruncatedAndDamagedFiles" classname="dev.pocket3d.data.ImportLogicTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

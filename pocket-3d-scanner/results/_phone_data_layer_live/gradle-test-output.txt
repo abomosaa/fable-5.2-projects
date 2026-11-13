@@ -1,0 +1,6 @@
+LiveCompanionTest > pairUploadReconstructDownloadVerifyAgainstTheRealCompanion STANDARD_OUT
+    LIVE stages seen while running: [features, matching, sfm, undistort, dense, mesh, texture, package]; sparse preview while running: true
+    LIVE model: 41944 faces, 8/12 cameras, glb 1624932 bytes
+
+BUILD SUCCESSFUL in 24s
+EXIT 0

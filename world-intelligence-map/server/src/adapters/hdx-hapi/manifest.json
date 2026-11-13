@@ -1,0 +1,88 @@
+{
+  "id": "hdx-hapi",
+  "provider": "UN OCHA Centre for Humanitarian Data – Humanitarian Data Exchange (HDX)",
+  "dataset": "HDX Humanitarian API (HDX HAPI) v2 – national-level humanitarian indicators",
+  "description": "Standardised national-level humanitarian indicators: internally displaced persons (IOM DTM), intersectoral people in need (OCHA Humanitarian Programme Cycle) and people in acute food insecurity, IPC phase 3 or above (IPC / Cadre Harmonisé).",
+  "homepageUrl": "https://data.humdata.org/hapi",
+  "documentationUrl": "https://hdx-hapi.readthedocs.io/en/latest/",
+  "sourceUrls": [
+    "https://hapi.humdata.org/api/v2/affected-people/idps?admin_level=0&start_date={YEAR-3}-01-01&output_format=json&limit=1000&offset={OFFSET}&app_identifier={HDX_APP_IDENTIFIER}",
+    "https://hapi.humdata.org/api/v2/affected-people/humanitarian-needs?admin_level=0&population_status=INN&sector_code=Intersectoral&start_date={YEAR-3}-01-01&output_format=json&limit=1000&offset={OFFSET}&app_identifier={HDX_APP_IDENTIFIER}",
+    "https://hapi.humdata.org/api/v2/food-security-nutrition-poverty/food-security?admin_level=0&ipc_phase=3%2B&ipc_type=current&start_date={YEAR-3}-01-01&output_format=json&limit=1000&offset={OFFSET}&app_identifier={HDX_APP_IDENTIFIER}"
+  ],
+  "allowedHosts": ["hapi.humdata.org"],
+  "coverage": {
+    "geographic": "Countries with a Humanitarian Response Plan plus other countries where the source data exist (20 countries in the 2026 people-in-need data).",
+    "temporal": "Reference periods overlapping the current and the three preceding calendar years."
+  },
+  "updateCadence": { "upstream": "HDX HAPI is refreshed daily; the underlying sources update weekly (IOM DTM), annually (humanitarian needs) or as analyses are released (IPC)", "pollIntervalSec": 86400, "staleAfterSec": 345600 },
+  "auth": {
+    "type": "app_identifier",
+    "envVars": [
+      { "name": "HDX_APP_IDENTIFIER", "required": true, "description": "HDX HAPI app identifier: base64(\"application_name:email_address\"). Sent as the app_identifier query parameter; it contains your e-mail address, so it is treated as a secret and redacted from logs and provenance." }
+    ],
+    "setup": "HDX HAPI needs no account, but every request must carry an app identifier that you generate yourself from an application name and your own e-mail address. Either open https://hapi.humdata.org/docs, use the 'encode_app_identifier' endpoint (GET /api/v2/encode_app_identifier?application=<name>&email=<your e-mail>) and copy the returned encoded_app_identifier, or compute base64(\"<name>:<your e-mail>\") yourself (e.g. printf '%s' 'my-map:me@example.org' | base64). Set the result as HDX_APP_IDENTIFIER and restart.",
+    "obtainUrl": "https://hdx-hapi.readthedocs.io/en/latest/getting-started/"
+  },
+  "attribution": "HDX HAPI (OCHA Centre for Humanitarian Data); sources: International Organization for Migration (IOM), Displacement Tracking Matrix (DTM); OCHA Humanitarian Programme Cycle Tools; IPC / Cadre Harmonisé",
+  "license": {
+    "name": "HDX HAPI Terms of Use; underlying datasets carry their own licences (CC BY-IGO, CC BY, and IOM DTM non-commercial / no-redistribution terms)",
+    "url": "https://data.humdata.org/hapi/terms",
+    "redistribution": "restricted",
+    "nonCommercialOnly": true,
+    "notes": "Licences were read from the HDX metadata of the three 'HDX HAPI' datasets on 2026-11-10 and differ per layer. hapi-humanitarian-needs: CC BY-IGO (OCHA HPC Tools). hapi-food-insecurity: CC BY (IPC). hapi-idps: IOM DTM custom terms – 'viewed, downloaded, and printed for non-commercial use only, without, inter alia, any right to sell, resell, redistribute or create derivative works'; credit 'Source: International Organization for Migration (IOM), Displacement Tracking Matrix (DTM)' with the HDX URL. The manifest-level flags reflect the most restrictive of the three (the IDP layer). The HDX HAPI Terms of Use page itself could not be retrieved by automated tooling (bot protection) and should be read in a browser before any public deployment."
+  },
+  "limitations": [
+    "Only national-level (admin 0) rows are used; sub-national detail available in HAPI is not shown.",
+    "IDP layer: one record per national-level DTM baseline or site assessment round. IOM operations within a country are not summed; the map shows the most recent figure of any operation, which may cover only part of the country. Flow-monitoring, emergency-tracking, registration and survey rows are not displacement stocks and are skipped.",
+    "People in need: the intersectoral figure of the Humanitarian Programme Cycle for each plan year; only countries with a humanitarian plan are covered, and methodology changes between years limit comparability.",
+    "Food insecurity: population in IPC/CH phase 3 or above for the 'current' period of each analysis; projections are not shown, analyses often cover only part of a country's population, and the figure remains on the map until a newer analysis exists even after its validity period has ended.",
+    "HDX HAPI is in beta; string query filters are case-insensitive wildcards, so every row is re-checked by the adapter."
+  ],
+  "confidenceNotes": "No per-value confidence is published. All three indicators are estimates produced by humanitarian agencies (IOM field assessments, OCHA inter-agency needs analysis, IPC consensus classification) – planning figures rather than exact counts.",
+  "retention": { "note": "Values are kept for four years after the start of their reference period, then purged." },
+  "snapshot": "incremental",
+  "http": { "cacheTtlSec": 21600, "minIntervalMs": 1000, "timeoutMs": 45000 },
+  "enabledByDefault": true,
+  "layers": [
+    {
+      "id": "hapi-idps",
+      "name": "Internally displaced persons (IOM DTM)",
+      "description": "Most recent national-level count of internally displaced persons from IOM Displacement Tracking Matrix baseline and site assessments, via HDX HAPI.",
+      "domain": "humanitarian",
+      "category": "displacement",
+      "geometry": "country",
+      "timeModel": "indicator",
+      "render": { "type": "choropleth", "color": "orange" },
+      "metric": { "name": "Internally displaced persons", "unit": "people", "scale": "sequential", "higherIs": "worse", "transform": "log" },
+      "retentionDays": 1460,
+      "defaultOn": false
+    },
+    {
+      "id": "hapi-humanitarian-needs",
+      "name": "People in need (OCHA)",
+      "description": "Intersectoral number of people in need of humanitarian assistance per plan year (Humanitarian Needs Overview / JIAF), via HDX HAPI.",
+      "domain": "humanitarian",
+      "category": "humanitarian-needs",
+      "geometry": "country",
+      "timeModel": "indicator",
+      "render": { "type": "choropleth", "color": "red" },
+      "metric": { "name": "People in need", "unit": "people", "scale": "sequential", "higherIs": "worse", "transform": "log" },
+      "retentionDays": 1460,
+      "defaultOn": true
+    },
+    {
+      "id": "hapi-food-insecurity",
+      "name": "Acute food insecurity (IPC 3+)",
+      "description": "People in IPC / Cadre Harmonisé phase 3 (crisis) or worse in the current period of the latest analysis, via HDX HAPI.",
+      "domain": "humanitarian",
+      "category": "food-security",
+      "geometry": "country",
+      "timeModel": "indicator",
+      "render": { "type": "choropleth", "color": "brown" },
+      "metric": { "name": "People in IPC phase 3 or above", "unit": "people", "scale": "sequential", "higherIs": "worse", "transform": "log" },
+      "retentionDays": 1460,
+      "defaultOn": false
+    }
+  ]
+}

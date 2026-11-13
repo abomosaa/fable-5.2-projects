@@ -1,0 +1,23 @@
+[gd_resource type="ShaderMaterial" format=3]
+
+[ext_resource type="Shader" path="res://assets/env/shaders/foliage.gdshader" id="1_7yk1q"]
+[ext_resource type="Texture2D" path="res://assets/env/veg/searsia_burchellii_albedo.png" id="2_uhyas"]
+[ext_resource type="Texture2D" path="res://assets/env/veg/searsia_burchellii_normal.jpg" id="3_6lad6"]
+[ext_resource type="Texture2D" path="res://assets/env/veg/searsia_burchellii_orm.jpg" id="4_nfgrw"]
+
+[resource]
+render_priority = 0
+shader = ExtResource("1_7yk1q")
+shader_parameter/albedo_tex = ExtResource("2_uhyas")
+shader_parameter/normal_tex = ExtResource("3_6lad6")
+shader_parameter/orm_tex = ExtResource("4_nfgrw")
+shader_parameter/tint = Color(1, 1, 1, 1)
+shader_parameter/tint_dry = Color(1.15, 1, 0.7, 1)
+shader_parameter/brightness = 0.85
+shader_parameter/alpha_cut = 0.38
+shader_parameter/backlight = 0.35
+shader_parameter/wind_strength = 0.03
+shader_parameter/wind_speed = 1.3
+shader_parameter/sway_height = 2.5
+shader_parameter/roughness_add = 0.0
+shader_parameter/normal_strength = 1.0

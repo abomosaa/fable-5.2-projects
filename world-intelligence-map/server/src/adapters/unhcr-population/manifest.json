@@ -1,0 +1,80 @@
+{
+  "id": "unhcr-population",
+  "provider": "UNHCR, the UN Refugee Agency",
+  "dataset": "Refugee Data Finder – Refugee Population Statistics Database (population figures API)",
+  "description": "Annual end-of-year counts of refugees, asylum-seekers and internally displaced persons of concern to UNHCR, by country of origin and by country of asylum.",
+  "homepageUrl": "https://www.unhcr.org/refugee-statistics/",
+  "documentationUrl": "https://api.unhcr.org/docs/refugee-statistics.html",
+  "sourceUrls": [
+    "https://api.unhcr.org/population/v1/population/?limit=1000&page={PAGE}&yearFrom={YEAR-3}&yearTo={YEAR}&coo_all=true",
+    "https://api.unhcr.org/population/v1/population/?limit=1000&page={PAGE}&yearFrom={YEAR-3}&yearTo={YEAR}&coa_all=true"
+  ],
+  "allowedHosts": ["api.unhcr.org"],
+  "coverage": {
+    "geographic": "Global: about 210 countries and territories of origin and 180 countries of asylum.",
+    "temporal": "Annual end-of-year stock figures; the three to four most recent reporting years are fetched (the database itself starts in 1951)."
+  },
+  "updateCadence": { "upstream": "Annual end-of-year figures, revised a few times a year (the API documentation gives no schedule)", "pollIntervalSec": 86400, "staleAfterSec": 604800 },
+  "auth": { "type": "none", "envVars": [] },
+  "attribution": "UNHCR Refugee Population Statistics Database",
+  "license": {
+    "name": "Creative Commons Attribution 4.0 International (CC BY 4.0), subject to UNHCR's Terms of Use for Datasets",
+    "url": "https://www.unhcr.org/what-we-do/data-and-publications/data-and-statistics/terms-use-datasets",
+    "redistribution": "allowed-with-attribution",
+    "nonCommercialOnly": false,
+    "notes": "UNHCR states that its datasets are licensed CC BY 4.0 unless flagged otherwise and asks for the credit 'UNHCR Refugee Population Statistics Database' and a reference to its Terms of Use for Datasets when data is passed on. The unhcr.org terms page answers automated clients with HTTP 403, so this entry was recorded from search-engine excerpts of that page and of the Refugee Data Finder methodology page, not from a direct read: re-check the terms in a browser before redistributing. The API documentation page itself carries no licence statement."
+  },
+  "limitations": [
+    "Figures are end-of-year stocks published with a lag of about six months; the current calendar year is normally not yet available.",
+    "The origin layer counts refugees plus asylum-seekers only. 'Other people in need of international protection' (large for Venezuela) are reported as a separate attribute and are not part of the mapped value.",
+    "The IDP layer contains only internally displaced persons protected or assisted by UNHCR; it is not a complete count of internal displacement (see IDMC for national totals).",
+    "Rows without a country (origin 'Unknown', 'Stateless', 'Tibetan') are not mapped; Serbia and Kosovo are reported by UNHCR as one combined row and appear under Serbia.",
+    "Small values are rounded or suppressed by UNHCR for statistical disclosure control; a missing country means no reported population, not necessarily zero."
+  ],
+  "confidenceNotes": "No per-value confidence is published. Official statistics compiled by UNHCR from governments and its own registration data; quality varies by country, and asylum-seeker counts depend on national reporting practices.",
+  "retention": { "note": "Annual values are kept for six years, then purged." },
+  "snapshot": "incremental",
+  "http": { "cacheTtlSec": 43200, "minIntervalMs": 1000, "timeoutMs": 45000 },
+  "enabledByDefault": true,
+  "layers": [
+    {
+      "id": "unhcr-refugees-origin",
+      "name": "Refugees by country of origin",
+      "description": "Refugees and asylum-seekers under UNHCR's mandate, by country of origin (end-of-year stock).",
+      "domain": "humanitarian",
+      "category": "displacement",
+      "geometry": "country",
+      "timeModel": "indicator",
+      "render": { "type": "choropleth", "color": "red" },
+      "metric": { "name": "Refugees and asylum-seekers by origin", "unit": "people", "scale": "sequential", "higherIs": "worse", "transform": "log" },
+      "retentionDays": 2190,
+      "defaultOn": false
+    },
+    {
+      "id": "unhcr-refugees-asylum",
+      "name": "Refugees by country of asylum",
+      "description": "Refugees and asylum-seekers under UNHCR's mandate, by country of asylum / host country (end-of-year stock).",
+      "domain": "humanitarian",
+      "category": "displacement",
+      "geometry": "country",
+      "timeModel": "indicator",
+      "render": { "type": "choropleth", "color": "blue" },
+      "metric": { "name": "Refugees and asylum-seekers hosted", "unit": "people", "scale": "sequential", "higherIs": "neutral", "transform": "log" },
+      "retentionDays": 2190,
+      "defaultOn": false
+    },
+    {
+      "id": "unhcr-idps",
+      "name": "IDPs of concern to UNHCR",
+      "description": "Internally displaced persons protected or assisted by UNHCR, by country (end-of-year stock).",
+      "domain": "humanitarian",
+      "category": "displacement",
+      "geometry": "country",
+      "timeModel": "indicator",
+      "render": { "type": "choropleth", "color": "orange" },
+      "metric": { "name": "IDPs of concern to UNHCR", "unit": "people", "scale": "sequential", "higherIs": "worse", "transform": "log" },
+      "retentionDays": 2190,
+      "defaultOn": false
+    }
+  ]
+}

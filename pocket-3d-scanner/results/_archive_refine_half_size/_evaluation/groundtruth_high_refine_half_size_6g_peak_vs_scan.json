@@ -1,0 +1,128 @@
+{
+ "dataset": "datasets/groundtruth",
+ "job": "results/groundtruth_high",
+ "procedure": "Umeyama similarity on camera centres (scale from ground-truth camera poses), crop to scan bbox + 6 mm, then rigid ICP (no scale) for the refined numbers.",
+ "cameras_used": 49,
+ "camera_alignment": {
+  "scale_mm_per_model_unit": 520.02384,
+  "residual_rms_mm": 11.082,
+  "residual_max_mm": 24.727,
+  "camera_spread_rms_mm": 488.3
+ },
+ "faces_inside_scan_box": 284853,
+ "faces_total": 400510,
+ "area_ratio_reconstruction_over_scan": 1.1213,
+ "camera_alignment_only": {
+  "accuracy_mm": {
+   "mean": 4.684,
+   "median": 0.482,
+   "rms": 11.365,
+   "p90": 17.178,
+   "p95": 28.37,
+   "max": 67.369,
+   "within_2mm": 0.758,
+   "within_1mm": 0.6815
+  },
+  "accuracy_object_attributed_mm": {
+   "mean": 0.597,
+   "median": 0.355,
+   "rms": 0.961,
+   "p90": 1.35,
+   "p95": 2.18,
+   "max": 5.0,
+   "within_2mm": 0.9425,
+   "within_1mm": 0.8474
+  },
+  "area_fraction_farther_than_object_threshold": 0.1996,
+  "completeness_mm": {
+   "mean": 0.85,
+   "median": 0.4,
+   "rms": 1.596,
+   "p90": 2.048,
+   "p95": 3.68,
+   "max": 12.323,
+   "within_2mm": 0.8976,
+   "within_1mm": 0.796
+  },
+  "extent_mm": [
+   93.37,
+   111.28,
+   227.23
+  ]
+ },
+ "after_rigid_icp": {
+  "accuracy_mm": {
+   "mean": 4.568,
+   "median": 0.397,
+   "rms": 11.309,
+   "p90": 17.093,
+   "p95": 28.153,
+   "max": 67.118,
+   "within_2mm": 0.7692,
+   "within_1mm": 0.7186
+  },
+  "accuracy_object_attributed_mm": {
+   "mean": 0.504,
+   "median": 0.291,
+   "rms": 0.875,
+   "p90": 1.094,
+   "p95": 1.908,
+   "max": 4.998,
+   "within_2mm": 0.9533,
+   "within_1mm": 0.8905
+  },
+  "area_fraction_farther_than_object_threshold": 0.1972,
+  "completeness_mm": {
+   "mean": 0.746,
+   "median": 0.329,
+   "rms": 1.504,
+   "p90": 1.857,
+   "p95": 3.504,
+   "max": 12.421,
+   "within_2mm": 0.9059,
+   "within_1mm": 0.8419
+  },
+  "extent_mm": [
+   93.98,
+   111.79,
+   227.21
+  ]
+ },
+ "icp": {
+  "translation_mm": 0.912,
+  "rotation_deg": 0.219,
+  "fitness": 0.7979
+ },
+ "scan_extent_mm": [
+  87.22,
+  110.32,
+  224.34
+ ],
+ "extent_error_mm_after_icp": [
+  6.76,
+  1.47,
+  2.87
+ ],
+ "single_reference_calibration": {
+  "reference_axis_mm": 224.34,
+  "scale_correction_vs_camera_alignment": 0.98737,
+  "other_dimensions": [
+   {
+    "scan_mm": 110.32,
+    "reconstruction_mm": 110.38,
+    "error_mm": 0.06,
+    "error_percent": 0.05
+   },
+   {
+    "scan_mm": 87.22,
+    "reconstruction_mm": 92.79,
+    "error_mm": 5.58,
+    "error_percent": 6.39
+   }
+  ]
+ },
+ "notes": [
+  "Completeness includes the object's underside/contact area, which no photo sees; it is expected to stay uncovered.",
+  "Scan-box cropping keeps any support surface within the margin; this slightly raises the accuracy tail (p95/max)."
+ ]
+}

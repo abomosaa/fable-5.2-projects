@@ -1,0 +1,24 @@
+#!/usr/bin/env bash
+# Builds a minimal static OpenCV 4.12.0 for the Linux host (used by the core CLI, tests and evaluation).
+set -euo pipefail
+ROOT="$(cd "$(dirname "$0")/.." && pwd)"
+SRC="$ROOT/third_party/opencv-src/opencv-4.12.0"
+BLD="$ROOT/third_party/build-host"
+DST="$ROOT/third_party/opencv-host"
+JOBS="${JOBS:-6}"
+cmake -S "$SRC" -B "$BLD" -G Ninja \
+  -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX="$DST" \
+  -DBUILD_SHARED_LIBS=OFF -DBUILD_LIST=core,imgproc,imgcodecs,features2d,flann,calib3d \
+  -DBUILD_TESTS=OFF -DBUILD_PERF_TESTS=OFF -DBUILD_EXAMPLES=OFF -DBUILD_opencv_apps=OFF \
+  -DBUILD_JAVA=OFF -DBUILD_opencv_python3=OFF -DBUILD_opencv_python2=OFF \
+  -DWITH_IPP=OFF -DWITH_ITT=OFF -DWITH_OPENCL=OFF -DWITH_FFMPEG=OFF -DWITH_GSTREAMER=OFF \
+  -DWITH_GTK=OFF -DWITH_QT=OFF -DWITH_V4L=OFF -DWITH_1394=OFF -DWITH_OPENEXR=OFF \
+  -DWITH_JASPER=OFF -DWITH_OPENJPEG=OFF -DWITH_WEBP=ON -DWITH_TIFF=ON -DWITH_PNG=ON -DWITH_JPEG=ON \
+  -DBUILD_JPEG=ON -DBUILD_PNG=ON -DBUILD_TIFF=ON -DBUILD_WEBP=ON -DBUILD_ZLIB=ON \
+  -DWITH_PROTOBUF=OFF -DWITH_LAPACK=OFF -DWITH_EIGEN=OFF -DWITH_TBB=OFF -DWITH_OPENMP=OFF \
+  -DWITH_AVIF=OFF -DWITH_JPEGXL=OFF -DWITH_GDAL=OFF -DWITH_IMGCODEC_HDR=OFF -DWITH_IMGCODEC_SUNRASTER=OFF \
+  -DWITH_IMGCODEC_PXM=OFF -DWITH_IMGCODEC_PFM=OFF -DWITH_IMGCODEC_GIF=OFF \
+  -DOPENCV_GENERATE_PKGCONFIG=OFF -DCV_TRACE=OFF
+cmake --build "$BLD" -j "$JOBS"
+cmake --install "$BLD" >/dev/null
+echo "OpenCV host install: $DST"

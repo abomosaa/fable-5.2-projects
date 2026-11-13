@@ -1,0 +1,48 @@
+{
+  "id": "unesco-world-heritage",
+  "provider": "UNESCO World Heritage Centre",
+  "dataset": "World Heritage List (UNESCO Datahub dataset whc001)",
+  "description": "All properties inscribed on the UNESCO World Heritage List (about 1,270) with category, year of inscription, States Parties, a short description and the 'in danger' flag.",
+  "homepageUrl": "https://whc.unesco.org/en/list/",
+  "documentationUrl": "https://data.unesco.org/explore/dataset/whc001/",
+  "sourceUrls": [
+    "https://data.unesco.org/api/explore/v2.1/catalog/datasets/whc001/exports/json?select=id_no,name_en,short_description_en,date_inscribed,danger,danger_list,date_end,area_hectares,category,states_names,iso_codes,region,transboundary,geo_point_2d"
+  ],
+  "allowedHosts": ["data.unesco.org"],
+  "coverage": { "geographic": "Global (properties in about 170 States Parties)", "temporal": "Current List; inscriptions since 1978. Changes follow the annual session of the World Heritage Committee." },
+  "updateCadence": { "upstream": "Annual (after each World Heritage Committee session), with occasional corrections", "pollIntervalSec": 2592000, "staleAfterSec": 15552000 },
+  "auth": { "type": "none", "envVars": [] },
+  "attribution": "UNESCO World Heritage Centre, World Heritage List (UNESCO Datahub, dataset whc001), CC BY-SA 4.0",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)",
+    "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "redistribution": "allowed-with-attribution",
+    "nonCommercialOnly": false,
+    "notes": "Licence as declared in the dataset metadata on data.unesco.org (license: CC BY-SA 4.0, publisher UNESCO, reference https://whc.unesco.org/en/list/). ShareAlike: adaptations of the data that are redistributed must carry the same licence. Only a short excerpt (at most 300 characters) of each description is stored; site images are not used."
+  },
+  "limitations": [
+    "One reference point per property: serial and transboundary properties (routes, groups of monuments, large parks) extend far beyond that point, and two serial properties are published without any coordinates and are attached to their State(s) Party instead.",
+    "The 'in danger' flag is the formal List of World Heritage in Danger decided by the Committee once a year; it is not a real-time damage or threat assessment, and sites under acute threat may not (yet) be listed.",
+    "The States listed are the States Parties that nominated the property, as published by UNESCO; this is not a statement about sovereignty (the Old City of Jerusalem is published without a State Party).",
+    "Open-data API quota: 10,000 requests per day per client; the dataset itself is refreshed about once a year."
+  ],
+  "confidenceNotes": "No per-record confidence is published. Authoritative register maintained by the UNESCO World Heritage Centre. Severity 2 is assigned by this application to properties that UNESCO itself flags as being on the List of World Heritage in Danger.",
+  "retention": { "note": "Reference data: a property is kept for as long as UNESCO lists it; delisted properties disappear with the next refresh." },
+  "snapshot": "full",
+  "http": { "cacheTtlSec": 604800, "timeoutMs": 60000, "minIntervalMs": 1000 },
+  "enabledByDefault": true,
+  "layers": [
+    {
+      "id": "world-heritage-sites",
+      "name": "UNESCO World Heritage sites",
+      "description": "Cultural, natural and mixed properties on the UNESCO World Heritage List; properties on the List of World Heritage in Danger are highlighted.",
+      "domain": "reference",
+      "category": "world-heritage",
+      "geometry": "point",
+      "timeModel": "reference",
+      "render": { "type": "point", "color": "yellow", "shape": "star", "minZoom": 2 },
+      "retentionDays": null,
+      "defaultOn": false
+    }
+  ]
+}

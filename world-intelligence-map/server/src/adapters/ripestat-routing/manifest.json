@@ -1,0 +1,69 @@
+{
+  "id": "ripestat-routing",
+  "provider": "RIPE NCC",
+  "dataset": "RIPEstat Data API – Country Resource Stats (BGP routing visibility in RIS)",
+  "description": "Hourly number of IPv4/IPv6 prefixes and autonomous systems registered to a country that are visible in the global BGP routing table as seen by the RIPE NCC Routing Information Service (RIS), for a curated watch-list of 40 countries. Shown as the change in routed IPv4 prefixes versus 24 hours earlier.",
+  "homepageUrl": "https://stat.ripe.net/",
+  "documentationUrl": "https://stat.ripe.net/docs/data-api/api-endpoints/country-resource-stats/",
+  "sourceUrls": [
+    "https://stat.ripe.net/data/country-resource-stats/data.json?resource={ISO2}&starttime={YYYY-MM-DDTHH:00}&resolution=1h&sourceapp={SOURCEAPP}"
+  ],
+  "allowedHosts": ["stat.ripe.net"],
+  "coverage": {
+    "geographic": "Watch-list of 40 countries (large economies plus countries with frequent shutdowns or conflict); resources are mapped to countries by the RIR delegated statistics files, not by where the networks physically operate.",
+    "temporal": "Hourly values for the last 48–54 hours per fetch; every hour that has a value 24 hours earlier becomes one record. Upstream history goes back to 2004."
+  },
+  "updateCadence": {
+    "upstream": "Derived from RIS route collectors; the latest data point is typically one to two hours old.",
+    "pollIntervalSec": 10800,
+    "staleAfterSec": 43200
+  },
+  "auth": {
+    "type": "app_identifier",
+    "envVars": [
+      {
+        "name": "RIPESTAT_SOURCEAPP",
+        "required": false,
+        "description": "Optional identifier sent as the documented `sourceapp` query parameter (letters, digits, hyphens and underscores only). Defaults to \"world-intelligence-map\"."
+      }
+    ],
+    "setup": "No credential is needed. RIPE NCC asks regular API users to send a unique `sourceapp` identifier with every request and to e-mail stat@ripe.net with that identifier and a contact address; registration is requested for more than 1000 requests/day (this adapter makes about 320). Set RIPESTAT_SOURCEAPP to your own project identifier if you have registered one."
+  },
+  "attribution": "RIPE NCC, RIPEstat (Routing Information Service data)",
+  "license": {
+    "name": "RIPEstat Service Terms and Conditions (RIPE NCC) – no open licence",
+    "url": "https://www.ripe.net/about-us/legal/ripestat-service-terms-and-conditions",
+    "redistribution": "restricted",
+    "nonCommercialOnly": true,
+    "notes": "Art. 3.1: the service is made available 'for purposes such as network analysis, network monitoring and debugging and research'. Art. 3.3: 'A User may not re-package, compile, re-distribute the RIPEstat Service and any (or all) of the RIPEstat Data'; commercial use (paid services, products or derivatives based on RIPEstat) 'is not allowed unless permission to do so is granted in writing by the RIPE NCC' (stat@ripe.net). Art. 3.2: published research results must attribute the RIPE NCC and be notified to stat@ripe.net. In plain terms: the RIPEstat terms prohibit redistribution of RIPEstat data. The fixtures bundled with this adapter are therefore synthetic (authored from the documented response schema with invented values, no captured RIPEstat data), and operating a public or commercial instance that re-serves live values needs prior written permission from the RIPE NCC (stat@ripe.net)."
+  },
+  "limitations": [
+    "A drop in routed prefixes is a routing-visibility signal, not proof of an Internet outage: prefixes are also withdrawn or aggregated for maintenance, renumbering, transfers and traffic engineering, and a network can be unreachable for users while its prefixes stay announced.",
+    "Countries are assigned from RIR delegation (registration) data; prefixes registered in one country are frequently used in another, and multinational networks are counted where they are registered.",
+    "Counts are hourly aggregates of what RIS route collectors see (fractional values such as 1399.5 occur); visibility depends on the RIS peer set. Upstream encodes unchanged hours as run-length periods, which this adapter expands to one value per hour.",
+    "Percentage changes for countries with very few routed prefixes are volatile (one prefix can be several percent); the absolute counts are included in every record.",
+    "Only the 40 watch-list countries are fetched to stay well inside RIPEstat fair-use limits (one small request per country every 3 hours, sequential, no more than 8 concurrent requests are allowed per IP).",
+    "The newest hour is usually 1–2 hours behind real time and may still be revised by upstream."
+  ],
+  "confidenceNotes": "RIPEstat reports how many prefixes and ASNs registered to a country (per the RIR delegated files) were visible in BGP at RIS route collectors. The percentage change versus the value 24 hours earlier is computed by this application (listed as derived) and is a neutral routing-visibility signal: it does not establish that an outage, shutdown or attack occurred, nor its cause. No per-value confidence is published, so records carry none.",
+  "retention": { "note": "Hourly records are kept for 14 days after the hour they describe, then purged." },
+  "snapshot": "incremental",
+  "http": { "timeoutMs": 30000, "minIntervalMs": 500, "cacheTtlSec": 9000, "maxRetries": 2 },
+  "enabledByDefault": true,
+  "layers": [
+    {
+      "id": "bgp-routed-prefixes",
+      "name": "BGP routed prefixes (24 h change)",
+      "description": "Change in the number of a country's IPv4 prefixes visible in global BGP routing (RIPE RIS) versus 24 hours earlier, for 40 watch-list countries. A sharp drop is a possible disruption signal, not a confirmed outage.",
+      "domain": "cyber",
+      "category": "routing",
+      "geometry": "country",
+      "timeModel": "indicator",
+      "render": { "type": "choropleth", "color": "teal" },
+      "metric": { "name": "Routed IPv4 prefixes, change vs 24 h earlier", "unit": "%", "scale": "diverging", "higherIs": "neutral", "transform": "linear" },
+      "freshForSec": 21600,
+      "retentionDays": 14,
+      "defaultOn": false
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <!-- Photos can also be imported, so neither a camera nor AR support is required to install. -->
+    <uses-feature android:name="android.hardware.camera.any" android:required="false" />
+    <uses-feature android:name="android.hardware.camera.ar" android:required="false" />
+
+    <application>
+        <!-- AR is optional: the app runs without Google Play Services for AR (orientation-estimated guidance). -->
+        <meta-data android:name="com.google.ar.core" android:value="optional" />
+    </application>
+</manifest>

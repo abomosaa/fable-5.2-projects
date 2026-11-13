@@ -1,0 +1,19 @@
+[
+ {"wait": 1.0, "do": "set", "key": "quality", "value": "low"},
+ {"wait": 3.0, "do": "bench_begin", "tag": "low_spawn"},
+ {"wait": 6.0, "do": "bench_end"},
+ {"wait": 0.2, "do": "set", "key": "quality", "value": "medium"},
+ {"wait": 3.0, "do": "bench_begin", "tag": "medium_spawn"},
+ {"wait": 6.0, "do": "bench_end"},
+ {"wait": 0.2, "do": "set", "key": "quality", "value": "high"},
+ {"wait": 3.0, "do": "bench_begin", "tag": "high_spawn"},
+ {"wait": 6.0, "do": "bench_end"},
+ {"wait": 0.2, "do": "set", "key": "quality", "value": "ultra"},
+ {"wait": 3.0, "do": "bench_begin", "tag": "ultra_spawn"},
+ {"wait": 6.0, "do": "bench_end"},
+ {"wait": 0.2, "do": "set", "key": "quality", "value": "high"},
+ {"wait": 0.2, "do": "teleport", "x": 6.4, "z": 0.6, "yaw": 0},
+ {"wait": 3.0, "do": "bench_begin", "tag": "high_pad"},
+ {"wait": 6.0, "do": "bench_end"},
+ {"wait": 0.2, "do": "quit"}
+]

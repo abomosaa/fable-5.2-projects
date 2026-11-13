@@ -1,0 +1,5 @@
+.venv-dev
+companion-data
+tests
+**/__pycache__
+*.pyc

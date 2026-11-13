@@ -1,0 +1,51 @@
+{
+  "id": "noaa-nhc",
+  "provider": "NOAA National Weather Service – National Hurricane Center (NHC) and Central Pacific Hurricane Center",
+  "dataset": "NHC Tropical Cyclone Status JSON (CurrentStorms.json)",
+  "description": "Latest official status of every active tropical or subtropical cyclone in the Atlantic, Eastern Pacific and Central Pacific basins: position, classification, intensity, pressure, motion and links to the current advisories.",
+  "homepageUrl": "https://www.nhc.noaa.gov/",
+  "documentationUrl": "https://www.nhc.noaa.gov/productexamples/NHC_Tropical_Cyclone_Status_JSON_File_Reference.pdf",
+  "sourceUrls": ["https://www.nhc.noaa.gov/CurrentStorms.json"],
+  "allowedHosts": ["www.nhc.noaa.gov"],
+  "coverage": {
+    "geographic": "North Atlantic, Eastern North Pacific and Central North Pacific basins only (NHC and CPHC areas of responsibility).",
+    "temporal": "Currently active cyclones only; the file is empty outside of active periods."
+  },
+  "updateCadence": { "upstream": "With every advisory (every 6 hours, intermediate advisories every 3 hours near land)", "pollIntervalSec": 600, "staleAfterSec": 7200 },
+  "auth": { "type": "none", "envVars": [] },
+  "attribution": "NOAA National Weather Service, National Hurricane Center",
+  "license": {
+    "name": "U.S. Government work – public domain (NWS data may be used for any lawful purpose without implying endorsement)",
+    "url": "https://www.weather.gov/disclaimer",
+    "redistribution": "allowed",
+    "nonCommercialOnly": false,
+    "notes": "NWS disclaimer: information on NWS web pages is in the public domain unless noted otherwise; it must not be presented as official government material after modification, and use must not imply endorsement by NOAA/NWS."
+  },
+  "limitations": [
+    "Only storms in the NHC/CPHC basins are listed; Western Pacific, Indian Ocean and Southern Hemisphere cyclones are not covered.",
+    "The file shows the latest advisory position only – no forecast track, cone or wind radii (those are linked as separate GIS files).",
+    "Published by NHC as an experimental product; the file may briefly lag the text advisories.",
+    "The start of the record is the time of the latest status update, not the time the cyclone formed."
+  ],
+  "confidenceNotes": "Positions and intensities are official NHC advisory values; the file carries no numeric uncertainty, so no confidence value is given. Severity is derived by this application from the advisory intensity (maximum sustained wind): below 34 kt minor, 34–63 kt moderate, 64–95 kt severe, 96 kt and above (major hurricane) extreme; when intensity is missing the classification code is used instead.",
+  "retention": { "note": "A storm is kept while NHC lists it as active and for 30 days after it disappears from the file." },
+  "snapshot": "full",
+  "http": { "minIntervalMs": 1000 },
+  "enabledByDefault": true,
+  "layers": [
+    {
+      "id": "nhc-active-storms",
+      "name": "Active tropical cyclones (NHC)",
+      "description": "Official current position, classification and intensity of active tropical cyclones in the Atlantic and Eastern/Central Pacific from the U.S. National Hurricane Center.",
+      "domain": "hazards",
+      "category": "tropical-cyclone",
+      "geometry": "point",
+      "timeModel": "interval",
+      "render": { "type": "point", "color": "purple", "shape": "star" },
+      "freshForSec": 21600,
+      "retentionDays": 30,
+      "defaultOn": true,
+      "correlationClass": "tropical_cyclone"
+    }
+  ]
+}

@@ -1,0 +1,617 @@
+{
+ "format": "mechanism-workshop",
+ "version": 1,
+ "id": "example-slidercrank",
+ "name": "Belt-driven slider-crank",
+ "description": "A motor drives a small pulley; an (ideal, non-slipping, inextensible) belt turns the 3.5× larger crank pulley; a pin on that pulley drives a connecting rod and a slider in a slotted guide. A constant 0.8 N process force and a little guide friction act on the slider.\n\nStroke = 2 × the crank pin radius of the large pulley. Change it (or a pulley diameter, the rod length, the motor speed) and the change propagates: pulley geometry → pin position → rod and slider pose → belt routing and ratio → plots.\n\nThe belt is a kinematic coupling on the pitch circles (ratio = pitch diameters); its drawn path is the tangent-line routing of the same two circles and its pitch length is reported in the BOM. Belt stretch, slip and pre-tension are not modelled.\n\nThe last variant makes the stroke longer than the guide: the slider runs into the end of the slot and the interference checker flags the pair with the time and overlap.",
+ "createdAt": "2026-01-01T00:00:00.000Z",
+ "modifiedAt": "2026-01-01T00:00:00.000Z",
+ "parts": [
+  {
+   "id": "p1",
+   "name": "Base plate",
+   "kind": "baseplate",
+   "params": {
+    "width": 330,
+    "height": 96,
+    "thickness": 4,
+    "cornerRadius": 6,
+    "holes": [
+     {
+      "x": -125,
+      "y": 0,
+      "d": 5
+     },
+     {
+      "x": -40,
+      "y": 0,
+      "d": 5
+     }
+    ]
+   },
+   "pose": {
+    "x": 125,
+    "y": 0,
+    "angle": 0,
+    "z": 0
+   },
+   "grounded": true,
+   "materialId": "aluminum"
+  },
+  {
+   "id": "p2",
+   "name": "Motor",
+   "kind": "motor",
+   "params": {
+    "shape": "square",
+    "size": 28,
+    "bodyLength": 30,
+    "shaftDiameter": 5,
+    "shaftLength": 12.9,
+    "mass": 0.11
+   },
+   "pose": {
+    "x": 0,
+    "y": 0,
+    "angle": 0,
+    "z": 0
+   },
+   "grounded": false,
+   "materialId": "motor"
+  },
+  {
+   "id": "p3",
+   "name": "Motor pulley",
+   "kind": "pulley",
+   "params": {
+    "pitchDiameter": 20,
+    "beltWidth": 6,
+    "beltThickness": 1.5,
+    "flangeHeight": 2,
+    "flangeThickness": 1.2,
+    "boreDiameter": 5,
+    "pinRadius": 0,
+    "pinDiameter": 4
+   },
+   "pose": {
+    "x": 0,
+    "y": 0,
+    "angle": 0,
+    "z": 4.5
+   },
+   "grounded": false,
+   "materialId": "pla",
+   "color": "#e8a33d"
+  },
+  {
+   "id": "p4",
+   "name": "Crank pulley",
+   "kind": "pulley",
+   "params": {
+    "pitchDiameter": 70,
+    "beltWidth": 6,
+    "beltThickness": 1.5,
+    "flangeHeight": 2,
+    "flangeThickness": 1.2,
+    "boreDiameter": 5,
+    "pinRadius": 18,
+    "pinDiameter": 4
+   },
+   "pose": {
+    "x": 85,
+    "y": 0,
+    "angle": 0,
+    "z": 4.5
+   },
+   "grounded": false,
+   "materialId": "pla",
+   "color": "#4c9fd8"
+  },
+  {
+   "id": "p5",
+   "name": "Connecting rod",
+   "kind": "link",
+   "params": {
+    "shape": "binary",
+    "length": 85,
+    "sideAC": 40,
+    "sideBC": 40,
+    "flip": false,
+    "width": 11,
+    "thickness": 4,
+    "holeDiameter": 4
+   },
+   "pose": {
+    "x": 103,
+    "y": 0,
+    "angle": 0,
+    "z": 13.700000000000001
+   },
+   "grounded": false,
+   "materialId": "pla",
+   "color": "#62c370"
+  },
+  {
+   "id": "p6",
+   "name": "Rail riser",
+   "kind": "baseplate",
+   "params": {
+    "width": 90,
+    "height": 30,
+    "thickness": 4.200000000000001,
+    "cornerRadius": 2,
+    "holes": []
+   },
+   "pose": {
+    "x": 170,
+    "y": 0,
+    "angle": 0,
+    "z": 4
+   },
+   "grounded": false,
+   "materialId": "aluminum"
+  },
+  {
+   "id": "p7",
+   "name": "Slotted guide",
+   "kind": "rail",
+   "params": {
+    "length": 44,
+    "slotWidth": 10,
+    "width": 26,
+    "overtravel": 13,
+    "thickness": 5,
+    "openEnds": false
+   },
+   "pose": {
+    "x": 148,
+    "y": 0,
+    "angle": 0,
+    "z": 8.200000000000001
+   },
+   "grounded": false,
+   "materialId": "pla",
+   "color": "#8a93a3"
+  },
+  {
+   "id": "p8",
+   "name": "Slider",
+   "kind": "slider",
+   "params": {
+    "length": 22,
+    "width": 10,
+    "thickness": 5,
+    "holeDiameter": 4
+   },
+   "pose": {
+    "x": 188,
+    "y": 0,
+    "angle": 0,
+    "z": 8.200000000000001
+   },
+   "grounded": false,
+   "materialId": "pla",
+   "color": "#d08770"
+  }
+ ],
+ "joints": [
+  {
+   "type": "rigid",
+   "a": "p1",
+   "b": "p2",
+   "anchorA": {
+    "port": "H1"
+   },
+   "anchorB": {
+    "port": "shaft"
+   },
+   "angle": 0,
+   "id": "j1",
+   "name": "Motor mount"
+  },
+  {
+   "type": "rigid",
+   "a": "p1",
+   "b": "p6",
+   "anchorA": {
+    "x": 45,
+    "y": 0
+   },
+   "anchorB": {
+    "port": "center"
+   },
+   "angle": 0,
+   "id": "j2",
+   "name": "Riser on plate"
+  },
+  {
+   "type": "rigid",
+   "a": "p6",
+   "b": "p7",
+   "anchorA": {
+    "x": -22,
+    "y": 0
+   },
+   "anchorB": {
+    "port": "start"
+   },
+   "angle": 0,
+   "id": "j3",
+   "name": "Guide on riser"
+  },
+  {
+   "type": "revolute",
+   "a": "p1",
+   "b": "p3",
+   "anchorA": {
+    "port": "H1"
+   },
+   "anchorB": {
+    "port": "center"
+   },
+   "id": "j4",
+   "name": "Motor shaft",
+   "pinDiameter": 5,
+   "motor": {
+    "enabled": true,
+    "type": "servo",
+    "speed": 18.84955592153876,
+    "maxTorque": 80000,
+    "rampTime": 0.3,
+    "profile": "constant"
+   }
+  },
+  {
+   "type": "revolute",
+   "a": "p1",
+   "b": "p4",
+   "anchorA": {
+    "port": "H2"
+   },
+   "anchorB": {
+    "port": "center"
+   },
+   "id": "j5",
+   "name": "Crank shaft",
+   "pinDiameter": 5
+  },
+  {
+   "type": "belt",
+   "a": "p3",
+   "b": "p4",
+   "anchorA": {
+    "port": "center"
+   },
+   "anchorB": {
+    "port": "center"
+   },
+   "id": "j6",
+   "name": "Drive belt",
+   "beltWidth": 6,
+   "beltThickness": 1.5
+  },
+  {
+   "type": "revolute",
+   "a": "p4",
+   "b": "p5",
+   "anchorA": {
+    "port": "pin"
+   },
+   "anchorB": {
+    "port": "A"
+   },
+   "id": "j7",
+   "name": "Crank pin",
+   "pinDiameter": 4
+  },
+  {
+   "type": "revolute",
+   "a": "p5",
+   "b": "p8",
+   "anchorA": {
+    "port": "B"
+   },
+   "anchorB": {
+    "port": "pin"
+   },
+   "id": "j8",
+   "name": "Wrist pin",
+   "pinDiameter": 4
+  },
+  {
+   "type": "prismatic",
+   "a": "p7",
+   "b": "p8",
+   "anchorA": {
+    "port": "start"
+   },
+   "anchorB": {
+    "port": "pin"
+   },
+   "axisAngle": 0,
+   "angle": 0,
+   "id": "j9",
+   "name": "Slide",
+   "friction": 150
+  }
+ ],
+ "loads": [
+  {
+   "id": "l1",
+   "name": "Process force on slider",
+   "type": "force",
+   "part": "p8",
+   "anchor": {
+    "port": "pin"
+   },
+   "fx": -800,
+   "fy": 0,
+   "torque": 0,
+   "frame": "world",
+   "enabled": true
+  }
+ ],
+ "probes": [
+  {
+   "id": "pr1",
+   "name": "Slider",
+   "target": {
+    "kind": "joint",
+    "joint": "j9"
+   },
+   "trace": false,
+   "color": "#f2b44a"
+  },
+  {
+   "id": "pr2",
+   "name": "Motor",
+   "target": {
+    "kind": "joint",
+    "joint": "j4"
+   },
+   "trace": false,
+   "color": "#4cc2ff"
+  },
+  {
+   "id": "pr3",
+   "name": "Belt",
+   "target": {
+    "kind": "joint",
+    "joint": "j6"
+   },
+   "trace": false,
+   "color": "#7ee081"
+  },
+  {
+   "id": "pr4",
+   "name": "Crank shaft",
+   "target": {
+    "kind": "joint",
+    "joint": "j5"
+   },
+   "trace": false,
+   "color": "#ff7b72"
+  },
+  {
+   "id": "pr5",
+   "name": "Crank pin",
+   "target": {
+    "kind": "joint",
+    "joint": "j7"
+   },
+   "trace": false,
+   "color": "#c792ea"
+  },
+  {
+   "id": "pr6",
+   "name": "Wrist pin",
+   "target": {
+    "kind": "point",
+    "part": "p8",
+    "anchor": {
+     "port": "pin"
+    }
+   },
+   "trace": true,
+   "color": "#f2b44a"
+  }
+ ],
+ "plots": [
+  {
+   "id": "plot1",
+   "title": "Slider position",
+   "channels": [
+    {
+     "probe": "pr1",
+     "quantity": "coord"
+    }
+   ]
+  },
+  {
+   "id": "plot2",
+   "title": "Slider velocity",
+   "channels": [
+    {
+     "probe": "pr1",
+     "quantity": "rate"
+    }
+   ]
+  },
+  {
+   "id": "plot3",
+   "title": "Slider acceleration",
+   "channels": [
+    {
+     "probe": "pr1",
+     "quantity": "accel"
+    }
+   ]
+  },
+  {
+   "id": "plot4",
+   "title": "Shaft speeds",
+   "channels": [
+    {
+     "probe": "pr2",
+     "quantity": "rate"
+    },
+    {
+     "probe": "pr4",
+     "quantity": "rate"
+    }
+   ]
+  },
+  {
+   "id": "plot5",
+   "title": "Motor torque & belt pull",
+   "channels": [
+    {
+     "probe": "pr2",
+     "quantity": "torque"
+    },
+    {
+     "probe": "pr3",
+     "quantity": "toothForce"
+    }
+   ]
+  },
+  {
+   "id": "plot6",
+   "title": "Crank pin reaction",
+   "channels": [
+    {
+     "probe": "pr5",
+     "quantity": "reaction"
+    }
+   ]
+  }
+ ],
+ "groups": [],
+ "sketches": [],
+ "variants": [
+  {
+   "id": "v1",
+   "name": "Stroke 36 mm, 3.5 : 1 belt, 180 rpm",
+   "note": "Baseline.",
+   "values": {
+    "part:p4:pinRadius": 18,
+    "part:p3:pitchDiameter": 20,
+    "joint:j4:motor.speed": 18.84955592153876,
+    "load:l1:fx": -800
+   }
+  },
+  {
+   "id": "v2",
+   "name": "Stroke 24 mm",
+   "note": "Crank throw 12 mm: shorter stroke, lower slider speed and motor torque.",
+   "values": {
+    "part:p4:pinRadius": 12,
+    "part:p3:pitchDiameter": 20,
+    "joint:j4:motor.speed": 18.84955592153876,
+    "load:l1:fx": -800
+   }
+  },
+  {
+   "id": "v3",
+   "name": "Stroke 36 mm, 2.33 : 1 belt (30 mm motor pulley)",
+   "note": "Larger motor pulley: the crank turns faster and the motor works harder.",
+   "values": {
+    "part:p4:pinRadius": 18,
+    "part:p3:pitchDiameter": 30,
+    "joint:j4:motor.speed": 18.84955592153876,
+    "load:l1:fx": -800
+   }
+  },
+  {
+   "id": "v4",
+   "name": "Stroke 60 mm (slider runs out of guide)",
+   "note": "A 30 mm throw needs more travel than the guide slot offers: the slider hits the ends of the slot and the interference is reported with its time and overlap.",
+   "values": {
+    "part:p4:pinRadius": 30,
+    "part:p3:pitchDiameter": 20,
+    "joint:j4:motor.speed": 18.84955592153876,
+    "load:l1:fx": -800
+   }
+  }
+ ],
+ "views": [
+  {
+   "name": "Front",
+   "position": [
+    125,
+    0,
+    520
+   ],
+   "target": [
+    125,
+    0,
+    10
+   ],
+   "ortho": true,
+   "zoom": 2.6
+  },
+  {
+   "name": "Three-quarter",
+   "position": [
+    300,
+    170,
+    300
+   ],
+   "target": [
+    125,
+    0,
+    10
+   ],
+   "ortho": false
+  }
+ ],
+ "sim": {
+  "mode": "dynamic",
+  "dt": 0.001,
+  "gravity": {
+   "x": 0,
+   "y": -9806.65
+  },
+  "gravityEnabled": true,
+  "floor": {
+   "enabled": false,
+   "y": 0,
+   "friction": 0.8
+  },
+  "stopOnInterference": false,
+  "sampleRate": 250
+ },
+ "clearances": {
+  "hole": 0.2,
+  "slide": 0.15,
+  "backlash": 0.1,
+  "minFeature": 0.8
+ },
+ "units": {
+  "length": "mm",
+  "angle": "deg",
+  "mass": "g",
+  "time": "s",
+  "force": "N",
+  "torque": "N·mm",
+  "speed": "mm/s",
+  "angularSpeed": "rpm",
+  "acceleration": "m/s²",
+  "angularAcceleration": "rad/s²",
+  "stiffness": "N/mm",
+  "torsionStiffness": "N·mm/rad",
+  "damping": "N·s/m",
+  "rotDamping": "N·mm·s/rad",
+  "density": "g/cm³",
+  "power": "W",
+  "energy": "mJ",
+  "inertia": "g·mm²",
+  "area": "mm²",
+  "volume": "cm³",
+  "frequency": "Hz",
+  "ratio": "",
+  "count": ""
+ },
+ "materials": [],
+ "activeVariant": "v1"
+}

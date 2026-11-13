@@ -1,0 +1,27 @@
+[gd_resource type="ShaderMaterial" format=3]
+
+[ext_resource type="Shader" path="res://assets/env/shaders/slab.gdshader" id="1_aan4b"]
+[ext_resource type="Texture2D" path="res://assets/env/tex/slab_concrete_albedo.jpg" id="2_kcae1"]
+[ext_resource type="Texture2D" path="res://assets/env/tex/slab_detail_normal.png" id="3_duo7h"]
+[ext_resource type="Texture2D" path="res://assets/env/tex/slab_detail.png" id="4_yt7h2"]
+[ext_resource type="Texture2D" path="res://assets/env/tex/macro_noise.png" id="5_f5j53"]
+[ext_resource type="Texture2D" path="res://assets/env/tex/slab_concrete_normal.jpg" id="6_6xrbg"]
+[ext_resource type="Texture2D" path="res://assets/env/tex/slab_concrete_orm.jpg" id="7_hgf0q"]
+
+[resource]
+render_priority = 0
+shader = ExtResource("1_aan4b")
+shader_parameter/albedo_tex = ExtResource("2_kcae1")
+shader_parameter/normal_tex = ExtResource("6_6xrbg")
+shader_parameter/orm_tex = ExtResource("7_hgf0q")
+shader_parameter/macro_tex = ExtResource("5_f5j53")
+shader_parameter/detail_tex = ExtResource("4_yt7h2")
+shader_parameter/detail_normal_tex = ExtResource("3_duo7h")
+shader_parameter/slab_rect = Vector4(-6.45, -0.9, 8.7, 5.75)
+shader_parameter/tint = Color(1, 0.985, 0.95, 1)
+shader_parameter/brightness = 2.0
+shader_parameter/stain_color = Color(0.07, 0.06, 0.05, 1)
+shader_parameter/dust_color = Color(0.42, 0.38, 0.32, 1)
+shader_parameter/paint_color = Color(0.45, 0.05, 0.04, 1)
+shader_parameter/normal_strength = 1.0
+shader_parameter/detail_normal_strength = 1.0

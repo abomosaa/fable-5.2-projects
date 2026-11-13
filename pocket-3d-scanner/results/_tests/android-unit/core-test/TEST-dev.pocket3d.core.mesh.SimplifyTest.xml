@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="dev.pocket3d.core.mesh.SimplifyTest" tests="14" skipped="0" failures="0" errors="0" timestamp="2026-11-12T10:55:41.325Z" hostname="h4-pc" time="3.2">
+  <properties/>
+  <testcase name="worksOnTriangleSoupAndWithoutUvs" classname="dev.pocket3d.core.mesh.SimplifyTest" time="0.036"/>
+  <testcase name="reportsWhenConstraintsStopEarly" classname="dev.pocket3d.core.mesh.SimplifyTest" time="0.008"/>
+  <testcase name="materialsAndRepairedPatchAreNeverMixed" classname="dev.pocket3d.core.mesh.SimplifyTest" time="0.024"/>
+  <testcase name="lockBoundaryKeepsEveryRimVertex" classname="dev.pocket3d.core.mesh.SimplifyTest" time="0.005"/>
+  <testcase name="textureTermLimitsDistortionWhereGeometryGivesNoGuidance" classname="dev.pocket3d.core.mesh.SimplifyTest" time="0.121"/>
+  <testcase name="sphereKeepsShapeTopologyAndOrientation" classname="dev.pocket3d.core.mesh.SimplifyTest" time="0.145"/>
+  <testcase name="torusKeepsGenusAndDeviationSmall" classname="dev.pocket3d.core.mesh.SimplifyTest" time="0.219"/>
+  <testcase name="planarTexturedGridKeepsTextureMapping" classname="dev.pocket3d.core.mesh.SimplifyTest" time="0.081"/>
+  <testcase name="uvSeamIsNotSmearedOnSphere" classname="dev.pocket3d.core.mesh.SimplifyTest" time="0.079"/>
+  <testcase name="deterministicAndIdempotentAtTarget" classname="dev.pocket3d.core.mesh.SimplifyTest" time="0.059"/>
+  <testcase name="confidenceIsTheMinimumOfMergedVertices" classname="dev.pocket3d.core.mesh.SimplifyTest" time="0.014"/>
+  <testcase name="openBoundaryOfCylinderStaysPut" classname="dev.pocket3d.core.mesh.SimplifyTest" time="0.054"/>
+  <testcase name="facesDoNotTurnAwayFromTheInputSurface" classname="dev.pocket3d.core.mesh.SimplifyTest" time="0.19"/>
+  <testcase name="performance300kTo50k" classname="dev.pocket3d.core.mesh.SimplifyTest" time="2.159"/>
+  <system-out><![CDATA[simplify 301088 -> 50000 faces: 1.85 s, deviation mean 0.00269% max 0.01170% of diagonal
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

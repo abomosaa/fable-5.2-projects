@@ -1,0 +1,32 @@
+[gd_resource type="ShaderMaterial" format=3]
+
+[ext_resource type="Shader" path="res://assets/env/shaders/env_pbr.gdshader" id="1_sji8y"]
+[ext_resource type="Texture2D" path="res://assets/env/tex/osb_albedo.jpg" id="2_tbjfa"]
+[ext_resource type="Texture2D" path="res://assets/env/tex/macro_noise.png" id="3_tuyx6"]
+[ext_resource type="Texture2D" path="res://assets/env/tex/osb_normal.jpg" id="4_yhepe"]
+[ext_resource type="Texture2D" path="res://assets/env/tex/osb_orm.jpg" id="5_bqfna"]
+[ext_resource type="Texture2D" path="res://assets/env/tex/wear_atlas.png" id="6_j4647"]
+
+[resource]
+render_priority = 0
+shader = ExtResource("1_sji8y")
+shader_parameter/albedo_tex = ExtResource("2_tbjfa")
+shader_parameter/normal_tex = ExtResource("4_yhepe")
+shader_parameter/orm_tex = ExtResource("5_bqfna")
+shader_parameter/macro_tex = ExtResource("3_tuyx6")
+shader_parameter/wear_tex = ExtResource("6_j4647")
+shader_parameter/tint = Color(1, 1, 1, 1)
+shader_parameter/brightness = 0.78
+shader_parameter/saturation = 0.82
+shader_parameter/normal_strength = 1.0
+shader_parameter/roughness_mul = 1.0
+shader_parameter/roughness_add = 0.0
+shader_parameter/metallic_mul = 1.0
+shader_parameter/ao_strength = 1.0
+shader_parameter/piece_variation = 0.07
+shader_parameter/macro_variation = 0.12
+shader_parameter/dirt_color = Color(0.17, 0.13, 0.095, 1)
+shader_parameter/dirt_strength = 0.5
+shader_parameter/bleach_strength = 0.3
+shader_parameter/use_wear = 1.0
+shader_parameter/specular_level = 0.5

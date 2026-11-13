@@ -1,0 +1,29 @@
+[14:37:20] gallery before the run: No result found.
+[14:37:26] pushed the overview
+[14:37:48] overview imported: No close-ups yet
+[14:37:55] pushed 7 close-ups
+selected 7
+[14:40:19] after registration: 30% verified at ≥1.5× detail | 7 verified
+[14:40:28] frame 0: status=Verified; color_profile_unknown
+[14:40:37] frame 1: status=Verified; color_profile_unknown
+[14:40:45] frame 2: status=Verified; Some regions of this photo were masked because they did not agree with the rest (reflect
+[14:40:47] timing: {"import_and_register_s": 72.7}
+exit=0
+[14:41:20] killing the process while rendering (progress 365 / 1584)
+[14:41:41] after restart: 30% verified at ≥1.5× detail | 7 verified | Fusion was interrupted. Finished tiles are kept. | Resume
+[14:41:53] resuming: Rendering detail tiles | 428 / 1584
+[14:47:04] resumed and finished in 318.9 s
+[14:47:04] timing: {"resume_s": 318.9}
+exit=0
+[14:47:28] viewer: 22208 × 18051 px
+[14:47:42] zoom label: 73% of output pixels
+[14:48:00] inspect: Overview only
+[14:48:15] details: Result details | Output grid | 22208 × 18051 (401 MP) | Overview | 5470 × 4446 (24.3 MP) | Estimated genuine detail | ≈ 78.6 MP | Area from close-ups | 29% | Area with ≥1.5× / ≥2× / ≥3× / ≥4× | 29% / 27% / 10% / 6% | Close-ups used | 7 | Colour / depth | unknown (as overview) · 8-bit | Fusion time | 314.9 s (0 tiles reused) | The pixel count of the grid is not a measure of detail. The estimate abo
+[14:48:18] timing: {}
+exit=0
+[14:48:45] camera guidance: None
+not found: id:shutter
+exit=1
+[14:52:03] denied screen: Camera access is needed to take photos | Detailed Capture uses the camera only to take the overview and close-up photos you ask for. Photos stay on this device. You can also work entirely with imported photos. | Open settings / try again | Go back and import photos instead
+[14:52:03] timing: {}
+exit=0

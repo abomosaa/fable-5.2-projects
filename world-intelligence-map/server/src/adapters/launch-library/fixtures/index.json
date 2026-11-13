@@ -1,0 +1,5 @@
+{
+  "capturedAt": "2026-11-10T17:49:45Z",
+  "notes": "Captured from the live Launch Library 2 API (launches/upcoming, limit=50, mode=normal) and trimmed to the first 45 launches. To stay within the size budget, image/infographic/logo/program/agency sub-objects and long location descriptions were removed; every field the adapter reads is as captured. `next` was set to null. Launch times lie after the fixture epoch by nature (these are scheduled launches); last_updated values are all earlier than the epoch. The malformed variant is hand-authored.",
+  "routes": [{ "match": "/launches/upcoming/", "file": "upcoming.json", "variants": { "malformed": "upcoming.malformed.json" } }]
+}

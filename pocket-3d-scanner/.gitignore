@@ -1,0 +1,10 @@
+# scratch: benchmark work directories, emulator screenshots, companion test data, downloads
+.work/
+# local tool environments (recreate: see README "Tests")
+tools/.venv/
+tools/gltf-validate/node_modules/
+companion/.venv-dev/
+companion/companion-data/
+companion-data/
+**/__pycache__/
+*.pyc

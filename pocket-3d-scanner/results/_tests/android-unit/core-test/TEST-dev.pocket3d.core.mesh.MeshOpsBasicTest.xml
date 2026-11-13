@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="dev.pocket3d.core.mesh.MeshOpsBasicTest" tests="14" skipped="0" failures="0" errors="0" timestamp="2026-11-12T10:55:41.002Z" hostname="h4-pc" time="0.103">
+  <properties/>
+  <testcase name="normalsAreNotBlendedAcrossSharpCreasesBetweenDuplicatedVertices" classname="dev.pocket3d.core.mesh.MeshOpsBasicTest" time="0.013"/>
+  <testcase name="transformRigidAndUniformScale" classname="dev.pocket3d.core.mesh.MeshOpsBasicTest" time="0.002"/>
+  <testcase name="vertexNormalsNeverFaceAwayFromTheirFacesAtAnAcuteCappedCut" classname="dev.pocket3d.core.mesh.MeshOpsBasicTest" time="0.065"/>
+  <testcase name="smoothSeamsStaySmoothWithACreaseOnTheSameMesh" classname="dev.pocket3d.core.mesh.MeshOpsBasicTest" time="0.0"/>
+  <testcase name="removeFacesCompactsVerticesAndMaterials" classname="dev.pocket3d.core.mesh.MeshOpsBasicTest" time="0.001"/>
+  <testcase name="recomputedNormalsAreAreaWeighted" classname="dev.pocket3d.core.mesh.MeshOpsBasicTest" time="0.0"/>
+  <testcase name="statsOfSphereWithCapRemoved" classname="dev.pocket3d.core.mesh.MeshOpsBasicTest" time="0.015"/>
+  <testcase name="mirrorFlipsWindingAndKeepsNormalsOutward" classname="dev.pocket3d.core.mesh.MeshOpsBasicTest" time="0.0"/>
+  <testcase name="componentsSortedByArea" classname="dev.pocket3d.core.mesh.MeshOpsBasicTest" time="0.002"/>
+  <testcase name="nonUniformScaleUsesInverseTranspose" classname="dev.pocket3d.core.mesh.MeshOpsBasicTest" time="0.001"/>
+  <testcase name="statsMedianEdgeLengthOnGrid" classname="dev.pocket3d.core.mesh.MeshOpsBasicTest" time="0.0"/>
+  <testcase name="recomputedNormalsAreSmoothAcrossSeams" classname="dev.pocket3d.core.mesh.MeshOpsBasicTest" time="0.001"/>
+  <testcase name="removeAllFacesGivesEmptyMesh" classname="dev.pocket3d.core.mesh.MeshOpsBasicTest" time="0.0"/>
+  <testcase name="transformRejectsSingularMatrix" classname="dev.pocket3d.core.mesh.MeshOpsBasicTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

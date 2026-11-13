@@ -1,0 +1,35 @@
+DATASET   : "The Townley Well-head" - 3D data for recreation of a British Museum object
+LICENSE   : Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)
+            *** NON-COMMERCIAL ***  and  *** SHARE-ALIKE ***  (see notes below)
+AUTHOR    : Daniel Pett, Digital Humanities Lead, British Museum (photographs and models)
+RETRIEVED : 2026-11-11
+
+WHERE THE LICENSE WAS VERIFIED
+  1. https://github.com/BritishMuseumDH/townleyRomanWellhead  README.md, fetched at commit
+     6d0f9240f1e54404a611c3cbec33d4707bef3d31 and saved as upstream/README.md. Verbatim excerpts:
+       "[![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](http://creativecommons.org/licenses/by-nc-sa/4.0/)"
+       "# LICENSE
+        The contents of this repository are licensed under CC-BY-NC-SA"
+       "# Credits
+        Photographs and models by Daniel Pett <dpett@britishmuseum.org>, Digital Humanities Lead, British Museum
+        144 photographs, Nikon D5100, Agisoft Pro, 10 minute scan 2/5/17 by Daniel Pett. False bottom added to model in Blender."
+  2. https://github.com/BritishMuseumDH/townleyRomanWellhead/blob/6d0f9240f1e54404a611c3cbec33d4707bef3d31/LICENSE.md
+     Full legal text, first line "Attribution-NonCommercial-ShareAlike 4.0 International";
+     saved verbatim as upstream/LICENSE.md.
+
+ATTRIBUTION
+  "The Townley Well-head", photographs and 3D model by Daniel Pett, British Museum,
+  https://github.com/BritishMuseumDH/townleyRomanWellhead , CC BY-NC-SA 4.0.
+
+WHAT NON-COMMERCIAL / SHARE-ALIKE MEANS FOR THIS PROJECT
+  * The photos, the author's model, and anything derived from them (reconstructions, screenshots, the
+    downscaled copies in ../smoke_alt/) may NOT be used for primarily commercial purposes and must stay
+    under CC BY-NC-SA 4.0 when shared. Use them for internal evaluation/benchmark reporting only; do not
+    bundle them in a shipped app or use them in marketing.
+  * Do not commit these files into a repository that is distributed under a more permissive license
+    without keeping this notice next to them.
+
+CHANGES MADE HERE
+  None to the files in images_all/ and reference/author_model/ (byte-identical to the pinned commit; see
+  SHA256SUMS). images/ contains hard links / byte-identical copies of every 2nd file of images_all/.
+  The upstream masks/ folder, the STL model and the GIF were not downloaded.

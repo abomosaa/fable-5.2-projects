@@ -1,0 +1,103 @@
+{
+ "units": "metres",
+ "axes": "Godot weapon space: -Z muzzle, +Y up, +X shooter right; origin = centre of grip",
+ "sockets": {
+  "S_Muzzle": [
+   -1.3e-05,
+   0.060819,
+   -0.173767
+  ],
+  "S_SightFront": [
+   -0.0,
+   0.077687,
+   -0.161755
+  ],
+  "S_SightRear": [
+   -0.0,
+   0.078531,
+   0.008133
+  ],
+  "S_Eject": [
+   -0.0,
+   0.066819,
+   -0.047
+  ],
+  "S_Bore": [
+   -0.0,
+   0.060819,
+   -0.0
+  ],
+  "S_MagWell": [
+   -0.0,
+   0.0,
+   -0.0
+  ]
+ },
+ "pivots": {
+  "Hammer": [
+   -0.0,
+   0.049381,
+   0.029023
+  ],
+  "Trigger": [
+   -0.0,
+   0.035757,
+   -0.051209
+  ],
+  "Safety": [
+   -0.0105,
+   0.0635,
+   0.007
+  ],
+  "SlideStop": [
+   -0.011402,
+   0.042308,
+   -0.043744
+  ],
+  "MagRelease": [
+   -0.009549,
+   0.010479,
+   -0.02322
+  ],
+  "ChamberRound": [
+   -0.0,
+   0.060819,
+   -0.050868
+  ]
+ },
+ "bore_height": 0.06081899255514145,
+ "sight_height_over_bore": 0.017711587250232697,
+ "sight_radius": 0.16988717764616013,
+ "front_sight_top_y": 0.07768678665161133,
+ "rear_sight_top_y": 0.07853057980537415,
+ "rear_notch_width": 0.0018506550695747137,
+ "front_blade_width": 0.002381283324211836,
+ "slide_stroke": 0.048,
+ "barrel_travel": 0.0064,
+ "slide_axis": [
+  0,
+  0,
+  1
+ ],
+ "mag_axis_out": [
+  0.0,
+  -0.975943,
+  0.218025
+ ],
+ "mag_round_pitch": [
+  0.0,
+  -0.010275,
+  0.002295
+ ],
+ "mag_capacity": 8,
+ "cartridge_length": 0.029335113242268562,
+ "case_length": 0.019037510764598847,
+ "case_diameter": 0.0099,
+ "chamber_round_center": [
+  -0.0,
+  0.060819,
+  -0.050868
+ ],
+ "overall_length": 0.2219170741736889,
+ "notes": "rotations are about +X (Godot); see weapon_def.gd for angles"
+}

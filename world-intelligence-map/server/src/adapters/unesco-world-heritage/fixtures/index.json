@@ -1,0 +1,7 @@
+{
+  "capturedAt": "2026-11-10T17:59:00Z",
+  "notes": "Captured from the UNESCO Datahub (Opendatasoft Explore API v2.1, dataset whc001, exports/json with the adapter's select list; dataset last processed 2026-11-08, 1,273 properties, 1.27 MB) and trimmed to 359 properties without altering any kept record: all 58 properties on the List of World Heritage in Danger, the three properties with missing coordinates or missing State Party, a few well-known sites, and an even sample across every UNESCO region and category. The file was re-serialised one record per line. Descriptions are UNESCO's short descriptions (CC BY-SA 4.0); the adapter stores at most 300 characters of each. Reference data without per-record timestamps (inscription years only). The malformed variant was authored by hand.",
+  "routes": [
+    { "match": "/datasets/whc001/exports/json", "file": "whc001.json", "variants": { "malformed": "whc001.malformed.json" } }
+  ]
+}

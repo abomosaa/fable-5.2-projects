@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SKYWARD — Flight Simulator</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230b2540'/%3E%3Cpath d='M8 38l48-18-14 26-10-8-6 10-2-12z' fill='%237fd4ff'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="css/style.css">
+<script type="importmap">{ "imports": { "three": "./vendor/three.module.js" } }</script>
+</head>
+<body>
+<canvas id="gl"></canvas>
+<canvas id="hud"></canvas>
+<div id="gfx"></div>
+<div id="whiteout"></div>
+<div id="fade"></div>
+
+<div id="loading">
+  <div class="load-box">
+    <div class="logo">SKYWARD</div>
+    <div class="tag">flight simulator</div>
+    <div class="bar"><div id="load-fill"></div></div>
+    <div id="load-text">Starting engines…</div>
+  </div>
+</div>
+
+<div id="menu" class="hidden">
+  <header>
+    <div>
+      <div class="logo">SKYWARD</div>
+      <div class="tag">physically based flight simulator</div>
+    </div>
+    <div class="head-buttons">
+      <button id="btn-help" class="ghost">Controls</button>
+      <button id="btn-settings" class="ghost">Settings</button>
+    </div>
+  </header>
+  <main>
+    <section id="aircraft-panel" class="glass">
+      <h2>Aircraft</h2>
+      <div id="aircraft-list"></div>
+    </section>
+    <section class="spacer"></section>
+    <section id="setup-panel" class="glass">
+      <h2>Flight</h2>
+      <label>Airport
+        <select id="sel-airport"></select>
+      </label>
+      <p id="airport-info" class="note"></p>
+      <label>Start
+        <select id="sel-start"></select>
+      </label>
+      <label>Time of day <span id="time-label" class="val"></span>
+        <input id="rng-time" type="range" min="0" max="24" step="0.25">
+      </label>
+      <label>Weather
+        <select id="sel-weather"></select>
+      </label>
+      <div class="row">
+        <label>Wind from <span id="winddir-label" class="val"></span>
+          <input id="rng-winddir" type="range" min="0" max="350" step="10">
+        </label>
+        <label>Wind speed <span id="windspd-label" class="val"></span>
+          <input id="rng-windspd" type="range" min="0" max="45" step="1">
+        </label>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div>
+      <div id="scenarios"></div>
+      <div id="summary"></div>
+    </div>
+    <button id="btn-fly" class="primary">FLY</button>
+  </footer>
+</div>
+
+<div id="settings" class="overlay hidden">
+  <div class="dialog glass">
+    <h2>Settings</h2>
+    <label>Graphics quality
+      <select id="sel-quality">
+        <option value="low">Low</option><option value="medium">Medium</option><option value="high">High</option>
+      </select>
+    </label>
+    <p class="note">Quality changes reload the simulator.</p>
+    <label>Volume <span id="vol-label" class="val"></span>
+      <input id="rng-volume" type="range" min="0" max="1" step="0.05">
+    </label>
+    <label class="check"><input id="chk-autorudder" type="checkbox"> Auto-rudder (coordinates turns, steers on the ground with roll keys)</label>
+    <label class="check"><input id="chk-autotrim" type="checkbox"> Auto-trim (holding a pitch key slowly re-trims)</label>
+    <label class="check"><input id="chk-bankhold" type="checkbox"> Bank hold (keeps the bank angle when the roll keys are released; cancels engine torque)</label>
+    <label class="check"><input id="chk-damage" type="checkbox"> Structural damage (over-g and overspeed break the airframe)</label>
+    <label class="check"><input id="chk-geffects" type="checkbox"> G-force vision effects (grey-out / red-out)</label>
+    <label class="check"><input id="chk-timeflow" type="checkbox"> Time of day advances during flight</label>
+    <div class="buttons"><button id="btn-settings-close" class="primary small">Done</button></div>
+  </div>
+</div>
+
+<div id="help" class="overlay hidden">
+  <div class="dialog glass wide">
+    <h2>Controls</h2>
+    <div class="help-grid">
+      <div>
+        <h3>Flight</h3>
+        <table>
+          <tr><td><kbd>W</kbd><kbd>S</kbd> / <kbd>↑</kbd><kbd>↓</kbd></td><td>Pitch (S / ↓ pulls the nose up)</td></tr>
+          <tr><td><kbd>A</kbd><kbd>D</kbd> / <kbd>←</kbd><kbd>→</kbd></td><td>Roll</td></tr>
+          <tr><td><kbd>Q</kbd><kbd>E</kbd></td><td>Rudder / nose-wheel steering</td></tr>
+          <tr><td><kbd>R</kbd><kbd>F</kbd> / <kbd>PgUp</kbd><kbd>PgDn</kbd></td><td>Throttle up / down</td></tr>
+          <tr><td><kbd>9</kbd> / <kbd>0</kbd></td><td>Full throttle / idle</td></tr>
+          <tr><td><kbd>.</kbd> <kbd>,</kbd></td><td>Pitch trim nose up / down</td></tr>
+          <tr><td><kbd>V</kbd> / <kbd>Shift</kbd>+<kbd>V</kbd></td><td>Flaps down / up one notch (also <kbd>]</kbd> <kbd>[</kbd>)</td></tr>
+          <tr><td><kbd>G</kbd></td><td>Landing gear</td></tr>
+          <tr><td><kbd>Space</kbd></td><td>Wheel brakes (hold)</td></tr>
+          <tr><td><kbd>B</kbd></td><td>Parking brake</td></tr>
+          <tr><td><kbd>X</kbd></td><td>Spoilers / speed brake</td></tr>
+          <tr><td><kbd>T</kbd></td><td>Thrust reversers (airliner, on the ground)</td></tr>
+          <tr><td><kbd>I</kbd></td><td>Engine start / stop</td></tr>
+          <tr><td><kbd>Y</kbd></td><td>Mouse yoke (move mouse to fly, right click centres)</td></tr>
+        </table>
+      </div>
+      <div>
+        <h3>Systems &amp; views</h3>
+        <table>
+          <tr><td><kbd>Z</kbd></td><td>Autopilot: hold heading &amp; altitude (arrows adjust targets)</td></tr>
+          <tr><td><kbd>U</kbd></td><td>Autothrottle: hold speed (<kbd>R</kbd><kbd>F</kbd> adjust)</td></tr>
+          <tr><td><kbd>N</kbd></td><td>Next navigation target (airport / ILS)</td></tr>
+          <tr><td><kbd>M</kbd></td><td>Map range</td></tr>
+          <tr><td><kbd>L</kbd></td><td>Landing lights</td></tr>
+          <tr><td><kbd>O</kbd></td><td>Display smoke</td></tr>
+          <tr><td><kbd>C</kbd> or <kbd>1</kbd>–<kbd>5</kbd></td><td>Camera: chase, cockpit, orbit, fly-by, tower</td></tr>
+          <tr><td>Mouse drag / wheel</td><td>Look around / zoom, <kbd>Backspace</kbd> re-centres</td></tr>
+          <tr><td><kbd>H</kbd> / <kbd>J</kbd></td><td>Toggle HUD / analog panel ↔ head-up symbols (cockpit)</td></tr>
+          <tr><td><kbd>P</kbd> / <kbd>Esc</kbd></td><td>Pause / menu</td></tr>
+          <tr><td><kbd>/</kbd></td><td>This help</td></tr>
+        </table>
+        <h3>Gamepad</h3>
+        <p class="note">Left stick: pitch &amp; roll · right stick: rudder / throttle · triggers: throttle · A: brakes · B: gear · X / Y: flaps · D-pad: trim, spoilers, reverse.</p>
+        <h3>First flight</h3>
+        <p class="note">Release the parking brake (<kbd>B</kbd>), hold <kbd>R</kbd> for full power, keep straight with <kbd>Q</kbd>/<kbd>E</kbd>, and ease back on <kbd>S</kbd> at rotation speed. To land: flaps down, fly the PAPI lights (two red, two white) at approach speed, close the throttle over the threshold and flare.</p>
+      </div>
+    </div>
+    <div class="buttons"><button id="btn-help-close" class="primary small">Close</button></div>
+  </div>
+</div>
+
+<div id="pause" class="overlay hidden">
+  <div class="dialog glass narrow">
+    <h2>Paused</h2>
+    <button id="btn-resume" class="primary small">Resume</button>
+    <button id="btn-restart" class="ghost">Restart flight</button>
+    <button id="btn-pause-help" class="ghost">Controls</button>
+    <button id="btn-pause-settings" class="ghost">Settings</button>
+    <button id="btn-quit" class="ghost">Main menu</button>
+  </div>
+</div>
+
+<div id="crash" class="overlay hidden">
+  <div class="dialog glass narrow">
+    <h2 id="crash-title">Crashed</h2>
+    <p id="crash-text"></p>
+    <button id="btn-crash-restart" class="primary small">Try again</button>
+    <button id="btn-crash-menu" class="ghost">Main menu</button>
+  </div>
+</div>
+
+<div id="report" class="glass hidden"></div>
+<div id="hint" class="hidden"></div>
+
+<script type="module" src="src/main.js"></script>
+</body>
+</html>

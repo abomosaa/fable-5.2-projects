@@ -1,0 +1,63 @@
+{
+  "id": "nws-alerts",
+  "provider": "U.S. National Weather Service (NOAA/NWS)",
+  "dataset": "api.weather.gov – active watches, warnings and advisories (CAP)",
+  "description": "Active weather, marine, flood and winter alerts issued by National Weather Service forecast offices for the United States and its territories, with CAP severity, certainty and urgency. Only alerts that carry their own polygon are mapped.",
+  "homepageUrl": "https://www.weather.gov/alerts",
+  "documentationUrl": "https://www.weather.gov/documentation/services-web-api",
+  "sourceUrls": ["https://api.weather.gov/alerts/active?status=actual&message_type=alert,update"],
+  "allowedHosts": ["api.weather.gov"],
+  "coverage": {
+    "geographic": "United States, Puerto Rico, U.S. Virgin Islands, Guam, American Samoa and adjacent coastal / offshore waters.",
+    "temporal": "Alerts that are active at fetch time; expired alerts persist locally until retention expires."
+  },
+  "updateCadence": { "upstream": "Continuous – alerts appear within about a minute of issuance", "pollIntervalSec": 120, "staleAfterSec": 900 },
+  "auth": { "type": "none", "envVars": [] },
+  "attribution": "NOAA National Weather Service",
+  "license": {
+    "name": "U.S. Government work – public domain (NWS: open data, free to use for any purpose)",
+    "url": "https://www.weather.gov/disclaimer",
+    "redistribution": "allowed",
+    "nonCommercialOnly": false,
+    "notes": "The API documentation states that all information presented via the API is intended to be open data, free to use for any purpose. The NWS disclaimer asks that the information is not presented as one's own, not altered and then presented as official government material, and not used to imply NWS endorsement."
+  },
+  "limitations": [
+    "Most alerts (marine, winter, wind and coastal products – typically well over half of the active set) are issued for forecast zones or counties and have geometry null in the API; this adapter does not resolve zone shapes and silently omits those alerts, so the map shows only polygon-based alerts (floods, severe thunderstorms, tornadoes, special marine warnings and similar).",
+    "The API requires a User-Agent header identifying the application; the request rate limit is not published.",
+    "This is not an official alerting channel: alerts may be delayed, and cancellations take effect only at the next poll. Always consult weather.gov for life-safety decisions.",
+    "Tornado and severe-thunderstorm watches appear as issued by local offices (WCN products), not with the Storm Prediction Center's watch outline."
+  ],
+  "confidenceNotes": "Severity is the CAP severity stated by NWS (Extreme/Severe/Moderate/Minor) mapped one-to-one onto the 4..1 scale; it is not derived. Confidence is derived by this application from the CAP certainty field: Observed 0.95, Likely 0.8, Possible 0.5, Unlikely 0.2; alerts with certainty Unknown carry no confidence.",
+  "retention": { "note": "Alerts are kept for 7 days after they expire or are withdrawn, then purged." },
+  "snapshot": "full",
+  "http": { "minIntervalMs": 1000, "userAgentRequired": true },
+  "enabledByDefault": true,
+  "layers": [
+    {
+      "id": "nws-warnings",
+      "name": "NWS warnings (US)",
+      "description": "Active National Weather Service warnings (event name ends in \"Warning\": tornado, severe thunderstorm, flash flood, flood, special marine …) that carry a polygon.",
+      "domain": "weather",
+      "category": "weather-warning",
+      "geometry": "polygon",
+      "timeModel": "interval",
+      "render": { "type": "polygon", "color": "red" },
+      "freshForSec": 3600,
+      "retentionDays": 7,
+      "defaultOn": true
+    },
+    {
+      "id": "nws-watches-advisories",
+      "name": "NWS watches, advisories & statements (US)",
+      "description": "Active National Weather Service watches, advisories and statements (everything that is not a warning) that carry a polygon.",
+      "domain": "weather",
+      "category": "weather-advisory",
+      "geometry": "polygon",
+      "timeModel": "interval",
+      "render": { "type": "polygon", "color": "yellow" },
+      "freshForSec": 3600,
+      "retentionDays": 7,
+      "defaultOn": false
+    }
+  ]
+}

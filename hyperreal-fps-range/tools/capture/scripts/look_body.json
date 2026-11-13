@@ -1,0 +1,23 @@
+[
+ {"wait": 2.0, "do": "look", "yaw": 0, "pitch": -60, "dur": 0.3},
+ {"wait": 0.8, "do": "screenshot", "name": "bay_down60"},
+ {"wait": 0.1, "do": "look", "yaw": 0, "pitch": -15, "dur": 0.2},
+ {"wait": 0.6, "do": "screenshot", "name": "bay_down75"},
+ {"wait": 0.1, "do": "look", "yaw": 0, "pitch": -10, "dur": 0.2},
+ {"wait": 0.6, "do": "screenshot", "name": "bay_down85"},
+ {"wait": 0.2, "do": "teleport", "x": 6.4, "z": 2.2, "yaw": 0},
+ {"wait": 1.2, "do": "look", "yaw": 0, "pitch": -60, "dur": 0.3},
+ {"wait": 0.8, "do": "screenshot", "name": "pad_down60"},
+ {"wait": 0.1, "do": "look", "yaw": 0, "pitch": -20, "dur": 0.2},
+ {"wait": 0.6, "do": "screenshot", "name": "pad_down80"},
+ {"wait": 0.1, "do": "press", "action": "move_back"},
+ {"wait": 0.55, "do": "screenshot", "name": "pad_walking_1"},
+ {"wait": 0.22, "do": "screenshot", "name": "pad_walking_2"},
+ {"wait": 0.1, "do": "release", "action": "move_back"},
+ {"wait": 0.5, "do": "tap", "action": "crouch"},
+ {"wait": 0.8, "do": "screenshot", "name": "pad_crouched_down80"},
+ {"wait": 0.1, "do": "tap", "action": "crouch"},
+ {"wait": 0.6, "do": "look", "yaw": 0, "pitch": 80, "dur": 0.3},
+ {"wait": 0.6, "do": "screenshot", "name": "pad_level"},
+ {"wait": 0.2, "do": "quit"}
+]

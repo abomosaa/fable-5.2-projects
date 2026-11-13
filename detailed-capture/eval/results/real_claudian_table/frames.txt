@@ -1,0 +1,7 @@
+file            status    reasons       warnings                           inl   scale  gain  zncc  resPx  pairs  via             mask  sigma
+closeup_01.jpg  accepted                exposure_mismatch,lens_distortion  869   8.28   1.24  0.97  3.88   1      overview        0.0   6.0  
+closeup_02.jpg  accepted                exposure_mismatch,lens_distortion  1582  5.39   2.0   0.97  4.07   3      overview        0.0   2.42 
+closeup_03.jpg  accepted                exposure_mismatch,lens_distortion  243   10.44  1.55  0.98  0.0    0      overview        0.0   6.05 
+closeup_04.jpg  accepted                exposure_mismatch,lens_distortion  369   9.89   2.28  0.97  2.92   1      overview        0.0   3.91 
+closeup_05.jpg  accepted                partial_mask,lens_distortion       555   6.92   2.45  0.93  4.77   1      chain+overview  0.1   2.55 
+closeup_06.jpg  rejected  bad_geometry                                     48    0      0     -1    0      None                   0     0.93 

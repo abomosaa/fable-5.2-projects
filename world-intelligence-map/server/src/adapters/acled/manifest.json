@@ -1,0 +1,48 @@
+{
+  "id": "acled",
+  "provider": "ACLED (Armed Conflict Location & Event Data)",
+  "dataset": "ACLED event data – political violence, demonstrations and strategic developments",
+  "description": "Researcher-coded events of political violence and protest worldwide with event type, location, date, actors and reported fatalities. Requires a myACLED account.",
+  "homepageUrl": "https://acleddata.com/",
+  "documentationUrl": "https://acleddata.com/api-documentation/getting-started",
+  "sourceUrls": [
+    "https://acleddata.com/oauth/token",
+    "https://acleddata.com/api/acled/read?_format=json&event_date={FROM}|{TO}&event_date_where=BETWEEN&limit=5000&page={N}"
+  ],
+  "allowedHosts": ["acleddata.com"],
+  "coverage": { "geographic": "Global", "temporal": "The 30 days before the current date (ACLED publishes weekly; recent access may depend on the account's access tier)" },
+  "updateCadence": { "upstream": "Weekly data release, with later corrections", "pollIntervalSec": 43200, "staleAfterSec": 950400 },
+  "auth": {
+    "type": "oauth",
+    "envVars": [
+      { "name": "ACLED_EMAIL", "required": true, "description": "E-mail address of your myACLED account (OAuth password grant: username)." },
+      { "name": "ACLED_PASSWORD", "required": true, "description": "Password of your myACLED account." }
+    ],
+    "setup": "Register a myACLED account, accept ACLED's terms, then set ACLED_EMAIL and ACLED_PASSWORD in .env and add acled to WIM_ENABLED_SOURCES. The adapter requests an OAuth access token (valid 24 h) and sends it as a Bearer token. Read the licence note first: ACLED does not permit exposing its event data through a public dashboard.",
+    "obtainUrl": "https://acleddata.com/user/register"
+  },
+  "attribution": "Armed Conflict Location & Event Data (ACLED); www.acleddata.com",
+  "license": {
+    "name": "ACLED End User License Agreement, Content Usage Terms and Attribution Policy",
+    "url": "https://acleddata.com/eula",
+    "redistribution": "restricted",
+    "nonCommercialOnly": true,
+    "notes": "EULA as read on 2026-11-10: the licence covers non-commercial use; anything disclosed externally must be transformative and must not allow the dataset to be reverse engineered – \"It is not sufficient for Licensed Content to simply be supplemented, appended, excerpted, reorganized, or made available through the Licensee's own dashboard.\" Governmental and some other organisations need additional authorisation. This source is therefore disabled by default and intended only for the account holder's own internal analysis on a non-public instance; do not enable it on a deployment that other people can reach. The bundled fixture is synthetic, not ACLED data."
+  },
+  "limitations": [
+    "Events are coded by researchers from media, NGO and local-partner reports; coverage and detail vary by country and are revised after publication.",
+    "Fatality numbers are the most conservative reported estimates and are frequently unverifiable.",
+    "Dates are whole days; locations are coded to a named place with a precision code (exact place, nearby area, or wider region).",
+    "Data are published weekly, so the most recent days are incomplete."
+  ],
+  "confidenceNotes": "Confidence is derived by this application from ACLED's geo-precision code only (1 exact location → 0.8, 2 near/within area → 0.6, 3 wider region → 0.4). It describes how precisely the event is located, not whether the report is true. Severity is derived from the reported fatality estimate.",
+  "retention": { "note": "Events are kept for 60 days after they occurred, then purged; the EULA requires deleting ACLED data when the licence ends (delete the database file)." },
+  "snapshot": "incremental",
+  "http": { "timeoutMs": 60000, "minIntervalMs": 1500, "cacheTtlSec": 21600 },
+  "enabledByDefault": false,
+  "layers": [
+    { "id": "acled-violence", "name": "Political violence (ACLED)", "description": "Battles, explosions / remote violence and violence against civilians.", "domain": "geopolitics", "category": "conflict", "geometry": "point", "timeModel": "event", "render": { "type": "point", "color": "red", "shape": "diamond" }, "freshForSec": 1209600, "retentionDays": 60, "defaultOn": false },
+    { "id": "acled-protests", "name": "Protests & riots (ACLED)", "description": "Demonstrations: protests and riots.", "domain": "geopolitics", "category": "protest", "geometry": "point", "timeModel": "event", "render": { "type": "point", "color": "orange", "shape": "diamond" }, "freshForSec": 1209600, "retentionDays": 60, "defaultOn": false },
+    { "id": "acled-strategic", "name": "Strategic developments (ACLED)", "description": "Non-violent but politically significant developments (agreements, arrests, base changes, looting).", "domain": "geopolitics", "category": "strategic development", "geometry": "point", "timeModel": "event", "render": { "type": "point", "color": "gray", "shape": "diamond" }, "freshForSec": 1209600, "retentionDays": 60, "defaultOn": false }
+  ]
+}

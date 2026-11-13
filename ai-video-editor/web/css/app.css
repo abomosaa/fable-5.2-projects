@@ -1,0 +1,315 @@
+/* App shell: boot screen, editor grid, top bar, panels, splitters, status bar. */
+.boot,
+.center-screen {
+  height: 100%;
+  display: grid;
+  place-items: center;
+  align-content: center;
+  gap: 14px;
+  color: var(--text-2);
+}
+.center-screen .boot {
+  height: auto;
+}
+
+.editor {
+  height: 100%;
+  display: grid;
+  grid-template-rows: 44px minmax(180px, 1fr) 5px var(--timeline-h) 24px;
+  min-width: 0;
+  background: var(--bg-0);
+}
+
+/* ---- top bar */
+.topbar {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+  align-items: center;
+  gap: 12px;
+  padding: 0 10px;
+  background: var(--bg-1);
+  border-bottom: 1px solid var(--line);
+}
+.project-name {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  min-width: 0;
+  max-width: 320px;
+  height: 28px;
+  padding: 0 8px;
+  border: 1px solid transparent;
+  border-radius: var(--radius-m);
+  background: transparent;
+  color: var(--text);
+  font-size: var(--fs-m);
+  font-weight: 650;
+}
+.project-name .icon {
+  color: var(--text-3);
+  opacity: 0;
+  transition: opacity var(--dur-fast) var(--ease);
+}
+.project-name:hover,
+.project-name:focus-visible {
+  background: var(--bg-3);
+}
+.project-name:hover .icon,
+.project-name:focus-visible .icon {
+  opacity: 1;
+}
+.project-name-input {
+  width: min(320px, 40vw);
+  font-weight: 650;
+  font-size: var(--fs-m);
+}
+.save-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  color: var(--text-3);
+  font-size: var(--fs-xs);
+  white-space: nowrap;
+}
+.save-status .icon {
+  width: 14px;
+  height: 14px;
+}
+.save-status .spinner {
+  width: 11px;
+  height: 11px;
+  border-width: 1.5px;
+}
+.save-status.saved .icon {
+  color: var(--success);
+}
+.save-status.error {
+  color: var(--danger);
+}
+
+/* ---- workspace */
+.workspace {
+  display: grid;
+  grid-template-columns: var(--left-w) 5px minmax(280px, 1fr) 5px var(--right-w);
+  min-height: 0;
+  min-width: 0;
+}
+.panel {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  min-height: 0;
+  background: var(--bg-1);
+}
+.panel.center {
+  background: var(--bg-0);
+}
+.panel-body {
+  flex: 1 1 auto;
+  min-height: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.timeline-region {
+  min-height: 0;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  background: var(--bg-1);
+}
+
+.splitter {
+  position: relative;
+  background: var(--bg-0);
+  z-index: 5;
+  touch-action: none;
+}
+.splitter.h {
+  cursor: col-resize;
+  border-left: 1px solid var(--line);
+  border-right: 1px solid var(--line);
+}
+.splitter.v {
+  cursor: row-resize;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+.splitter::after {
+  content: "";
+  position: absolute;
+  inset: -3px;
+}
+.splitter:hover,
+.splitter:focus-visible,
+.resizing-h .splitter.h:active,
+.resizing-v .splitter.v:active {
+  background: var(--accent);
+  border-color: var(--accent);
+  box-shadow: none;
+  border-radius: 0;
+}
+body.resizing-h {
+  cursor: col-resize;
+  user-select: none;
+}
+body.resizing-v {
+  cursor: row-resize;
+  user-select: none;
+}
+
+/* ---- status bar */
+.statusbar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0 10px;
+  background: var(--bg-1);
+  border-top: 1px solid var(--line);
+  color: var(--text-3);
+  font-size: var(--fs-xs);
+  white-space: nowrap;
+  overflow: hidden;
+}
+.statusbar .sep {
+  width: 1px;
+  height: 11px;
+  background: var(--line-strong);
+  flex: none;
+}
+.statusbar .hint {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  min-width: 0;
+}
+
+/* ---- shortcuts dialog */
+.shortcut-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 6px 28px;
+}
+.shortcut-grid h3 {
+  margin: 8px 0 6px;
+  color: var(--text-3);
+  font-size: 10.5px;
+  font-weight: 650;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.shortcut-grid dl {
+  margin: 0;
+}
+.shortcut-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 4px 0;
+  border-bottom: 1px solid var(--line);
+  font-size: var(--fs-s);
+}
+.shortcut-row dt {
+  color: var(--text-2);
+}
+.shortcut-row dd {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  white-space: nowrap;
+}
+
+/* ---- responsive: narrower desktops trade side panel width for the preview */
+@media (max-width: 1180px) {
+  .workspace {
+    grid-template-columns: min(var(--left-w), 240px) 5px minmax(240px, 1fr) 5px min(var(--right-w), 300px);
+  }
+  .statusbar .hint {
+    display: none;
+  }
+}
+@media (max-width: 900px) {
+  .workspace {
+    grid-template-columns: 0 0 minmax(0, 1fr) 5px min(var(--right-w), 46vw);
+  }
+  .panel.left,
+  .workspace > .splitter.h:first-of-type {
+    display: none;
+  }
+  .topbar {
+    grid-template-columns: minmax(0, 1fr) auto auto;
+  }
+  .save-status span:last-child {
+    display: none;
+  }
+}
+@media (max-height: 640px) {
+  .editor {
+    grid-template-rows: 40px minmax(120px, 1fr) 5px min(var(--timeline-h), 46vh) 22px;
+  }
+}
+
+/* narrow side panels: tabs drop their icons instead of clipping their labels */
+.panel.right,
+.panel.left {
+  container-type: inline-size;
+}
+@container (max-width: 335px) {
+  .tabs .tab .icon {
+    display: none;
+  }
+  .tabs .tab {
+    padding: 0 8px;
+  }
+}
+
+/* ---- tooltip bubble (see installTooltips in app.js) */
+.tip-layer {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1300;
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  width: max-content;
+  max-width: min(300px, calc(100vw - 12px));
+  padding: 4px 7px;
+  border: 1px solid var(--line-strong);
+  border-radius: 5px;
+  background: #05070a;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.45);
+  color: var(--text);
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 1.4;
+  pointer-events: none;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity var(--dur-fast) var(--ease), visibility 0s linear var(--dur-fast);
+}
+.tip-layer.show {
+  opacity: 1;
+  visibility: visible;
+  transition-delay: 0s;
+}
+.tip-kbd {
+  flex: none;
+  color: var(--text-3);
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+/* the bubble replaces the CSS ::after tooltip (kept in the DOM as the description) */
+html.tips-js [data-tip]:hover::after,
+html.tips-js [data-tip]:focus-visible::after {
+  opacity: 0;
+}
+
+/* arrow / symbol key caps read too small in the monospace key font */
+.shortcut-row .kbd.sym {
+  font-family: var(--font);
+  font-size: 12px;
+  line-height: 1.2;
+}

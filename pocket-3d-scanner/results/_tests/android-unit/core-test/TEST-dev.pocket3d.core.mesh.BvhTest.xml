@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="dev.pocket3d.core.mesh.BvhTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2026-11-12T10:55:38.978Z" hostname="h4-pc" time="0.59">
+  <properties/>
+  <testcase name="raycastMatchesBruteForce" classname="dev.pocket3d.core.mesh.BvhTest" time="0.247"/>
+  <testcase name="largeMeshBuildsAndAnswersQuickly" classname="dev.pocket3d.core.mesh.BvhTest" time="0.184"/>
+  <testcase name="closestPointOnSphereIsRadial" classname="dev.pocket3d.core.mesh.BvhTest" time="0.015"/>
+  <testcase name="degenerateAndEmptyInput" classname="dev.pocket3d.core.mesh.BvhTest" time="0.0"/>
+  <testcase name="closestPointMatchesBruteForce" classname="dev.pocket3d.core.mesh.BvhTest" time="0.143"/>
+  <testcase name="backfaceCullingFromInsideSphere" classname="dev.pocket3d.core.mesh.BvhTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

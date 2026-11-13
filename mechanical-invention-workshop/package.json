@@ -1,0 +1,41 @@
+{
+  "name": "mechanism-workshop",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Mechanical invention workshop: design, assemble, simulate, diagnose and export planar mechanisms.",
+  "scripts": {
+    "start": "node scripts/serve.mjs",
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "examples": "tsx scripts/build-examples.ts",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit",
+    "profile": "tsx scripts/profile.ts",
+    "e2e": "node scripts/e2e/run-all.mjs",
+    "export-samples": "tsx scripts/export-samples.ts exports/samples",
+    "verify-exports": ".venv/bin/python -I scripts/verify_exports.py exports/samples --report docs/verification/exports.md"
+  },
+  "dependencies": {
+    "@fontsource-variable/inter": "^5.3.0",
+    "@fontsource-variable/jetbrains-mono": "^5.3.0",
+    "fflate": "^0.8.3",
+    "lucide-react": "^1.71.0",
+    "manifold-3d": "^3.5.4",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "three": "^0.187.0"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.6",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@types/three": "^0.187.0",
+    "@vitejs/plugin-react": "^6.3.0",
+    "playwright": "^1.65.0",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.7",
+    "vitest": "^5.1.0"
+  }
+}

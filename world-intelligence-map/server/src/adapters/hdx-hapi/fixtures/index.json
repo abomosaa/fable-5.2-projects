@@ -1,0 +1,27 @@
+{
+  "capturedAt": "2026-11-10T18:20:00Z",
+  "notes": "AUTHORED, not captured: HDX HAPI requires a user-generated app identifier (an unauthenticated probe returned HTTP 403 {\"error\":\"Invalid app identifier\"}). The three files follow the response schemas of the public OpenAPI document (https://hapi.humdata.org/openapi.json, API 0.9.15: HapiGenericResponse[IdpsResponse], [HumanitarianNeedsResponse], [FoodSecurityResponse]) for the exact queries the adapter sends (admin_level=0; INN + Intersectoral; IPC 3+ current). Field conventions that the schema leaves open (empty-string category for totals, sector code 'Intersectoral', DTM operation / reporting-round layout) were checked against the first rows of the public 'HDX HAPI' CSV exports on data.humdata.org. ALL POPULATION FIGURES ARE ILLUSTRATIVE round numbers of a realistic order of magnitude for about 25 crisis countries and several reference periods – they are NOT real statistics (IOM DTM figures in particular may not be redistributed). resource_hdx_id values are real ids of the corresponding HDX resources where known and zero-padded placeholders otherwise. The malformed variants were authored by hand.",
+  "routes": [
+    {
+      "match": "/api/v2/affected-people/idps",
+      "file": "idps.json",
+      "variants": {
+        "malformed": "idps.malformed.json"
+      }
+    },
+    {
+      "match": "/api/v2/affected-people/humanitarian-needs",
+      "file": "humanitarian-needs.json",
+      "variants": {
+        "malformed": "humanitarian-needs.malformed.json"
+      }
+    },
+    {
+      "match": "/api/v2/food-security-nutrition-poverty/food-security",
+      "file": "food-security.json",
+      "variants": {
+        "malformed": "food-security.malformed.json"
+      }
+    }
+  ]
+}

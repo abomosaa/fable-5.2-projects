@@ -1,0 +1,14 @@
+[
+ {"wait": 2.0, "do": "screenshot", "name": "spawn_hip"},
+ {"wait": 0.2, "do": "press", "action": "aim"},
+ {"wait": 0.8, "do": "screenshot", "name": "spawn_ads"},
+ {"wait": 0.2, "do": "release", "action": "aim"},
+ {"wait": 0.3, "do": "look", "yaw": 0, "pitch": -35, "dur": 0.4},
+ {"wait": 0.4, "do": "screenshot", "name": "bench_down"},
+ {"wait": 0.2, "do": "look", "yaw": -75, "pitch": 35, "dur": 0.5},
+ {"wait": 0.5, "do": "screenshot", "name": "bay_right"},
+ {"wait": 0.2, "do": "teleport", "x": 6.4, "z": 0.6, "yaw": 0},
+ {"wait": 1.5, "do": "screenshot", "name": "pad"},
+ {"wait": 0.2, "do": "state", "tag": "pad"},
+ {"wait": 0.2, "do": "quit"}
+]

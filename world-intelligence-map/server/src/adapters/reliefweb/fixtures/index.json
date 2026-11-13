@@ -1,0 +1,20 @@
+{
+  "capturedAt": "2026-11-10T18:30:00Z",
+  "notes": "AUTHORED, not captured: ReliefWeb API v2 only answers pre-approved appnames (a single probe with an unapproved name returned HTTP 403 'You are not using an approved appname'). Both files follow the documented response envelope (href, time, links, totalCount, count, data[].id/score/href/fields) and the field catalogue of https://apidoc.reliefweb.int/read/resources/disasters/ and /reports/ for exactly the fields the adapter requests. EVERY ITEM IS FICTIONAL: the 35 disasters (ids 99001+, GLIDE sequence numbers 009001+) and the 72 headline reports (ids 9900001+, generic titles, summaries marked as fictional) were invented for testing, use real country and organisation names only as plausible labels, and do not correspond to real ReliefWeb content; their reliefweb.int links do not resolve. Dates are spread over the weeks before the fixture epoch (disaster event dates May–November 2026, reports 22 October–10 November 2026). The malformed variants were authored by hand.",
+  "routes": [
+    {
+      "match": "/v2/disasters",
+      "file": "disasters.json",
+      "variants": {
+        "malformed": "disasters.malformed.json"
+      }
+    },
+    {
+      "match": "/v2/reports",
+      "file": "reports.json",
+      "variants": {
+        "malformed": "reports.malformed.json"
+      }
+    }
+  ]
+}

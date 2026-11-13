@@ -1,0 +1,57 @@
+{
+  "id": "openaq",
+  "provider": "OpenAQ",
+  "dataset": "OpenAQ API v3 – latest PM2.5 measurements from air-quality monitoring stations",
+  "description": "Most recent PM2.5 (fine particulate matter) readings from government reference monitors and other sensors worldwide, aggregated by the non-profit OpenAQ. Station measurements, as opposed to modelled values.",
+  "homepageUrl": "https://openaq.org/",
+  "documentationUrl": "https://docs.openaq.org/",
+  "sourceUrls": ["https://api.openaq.org/v3/parameters/2/latest?limit=1000&page={page}&datetime_min={ISO time, 6 hours ago}"],
+  "allowedHosts": ["api.openaq.org"],
+  "coverage": {
+    "geographic": "Global where OpenAQ has data providers; dense in North America, Europe, India and East Asia, sparse in Africa and Central Asia.",
+    "temporal": "Latest value per sensor, limited to sensors that reported within the last 6 hours."
+  },
+  "updateCadence": { "upstream": "Most stations report hourly; OpenAQ ingests continuously", "pollIntervalSec": 3600, "staleAfterSec": 10800 },
+  "auth": {
+    "type": "api_key",
+    "envVars": [{ "name": "OPENAQ_API_KEY", "required": true, "description": "OpenAQ API key, sent in the X-API-Key request header." }],
+    "setup": "Register a free account at https://explore.openaq.org/register, confirm the e-mail address, copy the API key from the account settings page and set it as OPENAQ_API_KEY. The key is sent only in the X-API-Key header.",
+    "obtainUrl": "https://explore.openaq.org/register"
+  },
+  "attribution": "OpenAQ (openaq.org) and its original air-quality data providers",
+  "license": {
+    "name": "OpenAQ Terms of Use – aggregated third-party data under the providers' own (mostly open) licences; attribution to OpenAQ required",
+    "url": "https://docs.openaq.org/about/terms",
+    "redistribution": "allowed-with-attribution",
+    "nonCommercialOnly": false,
+    "notes": "OpenAQ states that it only aggregates data that, to the best of its knowledge, has been made available for redistribution and use, but gives no assurance that data are free of third-party claims; users must review and comply with terms published by the original data providers. Attribution to OpenAQ as the source is required when using the hosted API. The licence of an individual location is available from the API's locations and licenses resources (not fetched by this adapter)."
+  },
+  "limitations": [
+    "The latest resource returns only value, time, coordinates and sensor / location ids: station name, provider and instrument type are not included, so reference-grade monitors and low-cost sensors cannot be told apart here.",
+    "At most 3 pages of 1,000 sensors are fetched per poll, so in regions with very many sensors the layer is a sample rather than a census.",
+    "Readings are raw, as reported by the provider: they are not validated by OpenAQ and can contain sensor faults; negative, sentinel (e.g. -999) and implausibly large values are rejected by this adapter.",
+    "Free API keys are rate-limited to 60 requests per minute and 2,000 per hour."
+  ],
+  "confidenceNotes": "Values are station MEASUREMENTS, but the latest resource carries no quality flag or instrument grade, so no confidence value is assigned. Severity is derived by this application from the PM2.5 concentration using the US EPA AQI breakpoints (above 9.0 µg/m³ → 1, above 35.4 → 2, above 55.4 → 3, above 125.4 → 4); the breakpoints are defined for 24-hour means, so applying them to a single reading is indicative only.",
+  "retention": { "note": "One record per sensor, updated in place; records are purged 3 days after their last measurement time." },
+  "snapshot": "incremental",
+  "http": { "minIntervalMs": 1100 },
+  "enabledByDefault": true,
+  "layers": [
+    {
+      "id": "openaq-pm25",
+      "name": "PM2.5 monitoring stations (OpenAQ)",
+      "description": "Latest measured PM2.5 concentration at air-quality monitoring stations and sensors aggregated by OpenAQ.",
+      "domain": "weather",
+      "category": "air-quality",
+      "geometry": "point",
+      "timeModel": "snapshot",
+      "render": { "type": "point", "color": "pink", "shape": "circle" },
+      "metric": { "name": "PM2.5", "unit": "µg/m³", "scale": "sequential", "higherIs": "worse" },
+      "freshForSec": 7200,
+      "liveMaxAgeSec": 21600,
+      "retentionDays": 3,
+      "defaultOn": false
+    }
+  ]
+}

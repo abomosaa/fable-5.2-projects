@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="dev.pocket3d.capture.logic.ReviewLogicTest" tests="23" skipped="0" failures="0" errors="0" timestamp="2026-11-12T10:55:29.336Z" hostname="h4-pc" time="0.035">
+  <properties/>
+  <testcase name="summary_blocksBelowFallbackMinimumWhenCompanionUnknown" classname="dev.pocket3d.capture.logic.ReviewLogicTest" time="0.017"/>
+  <testcase name="summary_countsIncludedAndExcluded" classname="dev.pocket3d.capture.logic.ReviewLogicTest" time="0.0"/>
+  <testcase name="summary_limitsTextSaysUnknownWithoutCompanion" classname="dev.pocket3d.capture.logic.ReviewLogicTest" time="0.001"/>
+  <testcase name="orderByTime_putsMissingTimestampsLastAndBreaksTiesByName" classname="dev.pocket3d.capture.logic.ReviewLogicTest" time="0.0"/>
+  <testcase name="sampleSize_keepsShortSideAtOrAboveTarget" classname="dev.pocket3d.capture.logic.ReviewLogicTest" time="0.0"/>
+  <testcase name="naturalCompare_handlesNumbersLongerThanLong" classname="dev.pocket3d.capture.logic.ReviewLogicTest" time="0.001"/>
+  <testcase name="flaggedIncludedIds_skipsExcludedAndCleanPhotos" classname="dev.pocket3d.capture.logic.ReviewLogicTest" time="0.0"/>
+  <testcase name="summary_excludedPhotosDoNotCountTowardsTheMinimum" classname="dev.pocket3d.capture.logic.ReviewLogicTest" time="0.0"/>
+  <testcase name="orderByName_sortsNaturally" classname="dev.pocket3d.capture.logic.ReviewLogicTest" time="0.0"/>
+  <testcase name="naturalCompare_ordersNumbersByValueNotByText" classname="dev.pocket3d.capture.logic.ReviewLogicTest" time="0.001"/>
+  <testcase name="flagCounts_countIncludedPhotosOnlyInDisplayOrder" classname="dev.pocket3d.capture.logic.ReviewLogicTest" time="0.003"/>
+  <testcase name="summary_reportsFlaggedIncludedPhotos" classname="dev.pocket3d.capture.logic.ReviewLogicTest" time="0.0"/>
+  <testcase name="shortFlagLabel_dropsTheAdvicePart" classname="dev.pocket3d.capture.logic.ReviewLogicTest" time="0.0"/>
+  <testcase name="sampleSize_isSafeForDegenerateInput" classname="dev.pocket3d.capture.logic.ReviewLogicTest" time="0.0"/>
+  <testcase name="ordering_keepsEveryFrameExactlyOnce" classname="dev.pocket3d.capture.logic.ReviewLogicTest" time="0.002"/>
+  <testcase name="summary_warnsBelowTwentyIncludedButStillAllowsContinue" classname="dev.pocket3d.capture.logic.ReviewLogicTest" time="0.001"/>
+  <testcase name="summary_usesCompanionMinimumAndMaximumWhenKnown" classname="dev.pocket3d.capture.logic.ReviewLogicTest" time="0.006"/>
+  <testcase name="naturalCompare_isCaseInsensitiveAndIgnoresLeadingZeros" classname="dev.pocket3d.capture.logic.ReviewLogicTest" time="0.0"/>
+  <testcase name="naturalCompare_isAConsistentTotalOrder" classname="dev.pocket3d.capture.logic.ReviewLogicTest" time="0.0"/>
+  <testcase name="summary_exactlyTwentyIncludedHasNoTooFewWarning" classname="dev.pocket3d.capture.logic.ReviewLogicTest" time="0.0"/>
+  <testcase name="manualOrUnknownOrdering_keepsStoredOrder" classname="dev.pocket3d.capture.logic.ReviewLogicTest" time="0.0"/>
+  <testcase name="summary_emptySessionAsksForPhotos" classname="dev.pocket3d.capture.logic.ReviewLogicTest" time="0.0"/>
+  <testcase name="flagCounts_countAPhotoOncePerFlagEvenIfRepeated" classname="dev.pocket3d.capture.logic.ReviewLogicTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

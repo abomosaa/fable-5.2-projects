@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="297mm" height="210mm" viewBox="0 0 297 210" data-part-number="P1" data-part-id="part_mwc07jx931cbjni" data-scale="2:1" data-scale-factor="2" data-bbox-mm="-31 -9 29 11" data-thickness-mm="5" data-units="mm">
+<title>P1 Sketched part — Untitled mechanism</title>
+<desc>Engineering drawing, A4 landscape, scale 2:1. 1 user unit = 1 mm of paper; dimension texts and data-* attributes are true model millimetres in part-local coordinates. Dimensions in mm. Generated geometry — verify fits, material and loads before manufacture.</desc>
+<style>text{font-family:sans-serif;fill:#111;stroke:none}.outline{fill:none;stroke:#000;stroke-width:0.35;stroke-linejoin:round}.hidden{fill:none;stroke:#444;stroke-width:0.18;stroke-dasharray:1.6 0.8}.centre{fill:none;stroke:#b00020;stroke-width:0.13;stroke-dasharray:4 0.8 0.6 0.8}.hole-centre .centre,.origin .centre{stroke-dasharray:none}.ref{fill:none;stroke:#555;stroke-width:0.13;stroke-dasharray:5 0.9 0.7 0.9}.ext,.dimline{fill:none;stroke:#0b3d91;stroke-width:0.13}.arrow{fill:#0b3d91;stroke:none}.dimtext{fill:#0b3d91}.holelabel{fill:#b00020}.caption{fill:#555}.frame{fill:none;stroke:#000;stroke-width:0.5}.thin{fill:none;stroke:#000;stroke-width:0.18}.sheet{fill:#fff;stroke:none}</style>
+<rect class="sheet" x="0" y="0" width="297" height="210"/>
+<rect class="frame" x="8" y="8" width="281" height="194"/>
+<g class="views" transform="translate(104.99 80.71)">
+<g class="view front-view">
+<path class="outline" d="M-62 18L58 18L58 -22L-62 -22Z"/>
+<circle class="outline" cx="-42" cy="-2" r="4.2"/>
+<circle class="outline" cx="38" cy="-2" r="4.2"/>
+<g class="origin" data-x="0" data-y="0">
+<line class="centre" x1="-3" y1="0" x2="3" y2="0"/>
+<line class="centre" x1="0" y1="-3" x2="0" y2="3"/>
+</g>
+<g class="hole-centre" data-x="-21" data-y="1" data-d="4.2" data-nominal="4.2" data-label="H1">
+<line class="centre" x1="-47.8" y1="-2" x2="-36.2" y2="-2"/>
+<line class="centre" x1="-42" y1="-7.8" x2="-42" y2="3.8"/>
+</g>
+<text class="t holelabel" x="-38.05" y="-5.95" font-size="2.2" text-anchor="start">H1</text>
+<g class="hole-centre" data-x="19" data-y="1" data-d="4.2" data-nominal="4.2" data-label="H2">
+<line class="centre" x1="32.2" y1="-2" x2="43.8" y2="-2"/>
+<line class="centre" x1="38" y1="-7.8" x2="38" y2="3.8"/>
+</g>
+<text class="t holelabel" x="41.95" y="-5.95" font-size="2.2" text-anchor="start">H2</text>
+<g class="dim-linear" data-value="60" data-ax="-31" data-ay="-9" data-bx="29" data-by="-9">
+<line class="ext" x1="-62" y1="19" x2="-62" y2="35.5"/>
+<line class="ext" x1="58" y1="19" x2="58" y2="35.5"/>
+<line class="dimline" x1="-62" y1="34" x2="58" y2="34"/>
+<polygon class="arrow" points="-62,34 -59.4,33.5 -59.4,34.5"/>
+<polygon class="arrow" points="58,34 55.4,34.5 55.4,33.5"/>
+<text class="t dimtext" x="-2" y="33.1" font-size="2.8" text-anchor="middle">60</text>
+</g>
+<g class="dim-linear" data-value="20" data-ax="-31" data-ay="-9" data-bx="-31" data-by="11">
+<line class="ext" x1="-63" y1="18" x2="-79.5" y2="18"/>
+<line class="ext" x1="-63" y1="-22" x2="-79.5" y2="-22"/>
+<line class="dimline" x1="-78" y1="18" x2="-78" y2="-22"/>
+<polygon class="arrow" points="-78,18 -78.5,15.4 -77.5,15.4"/>
+<polygon class="arrow" points="-78,-22 -77.5,-19.4 -78.5,-19.4"/>
+<text class="t dimtext" x="-78.9" y="-2" font-size="2.8" text-anchor="middle" transform="rotate(-90 -78.9 -2)">20</text>
+</g>
+</g>
+<text class="t caption" x="-81.14" y="-25" font-size="2.4" text-anchor="start">FRONT VIEW (looking along −Z)</text>
+<g class="view side-view">
+<rect class="outline" x="74" y="-22" width="10" height="40"/>
+<line class="hidden" x1="74" y1="2.2" x2="84" y2="2.2"/>
+<line class="hidden" x1="74" y1="-6.2" x2="84" y2="-6.2"/>
+<line class="centre" x1="72" y1="-2" x2="86" y2="-2"/>
+<g class="dim-linear" data-value="5" data-kind="thickness">
+<line class="ext" x1="74" y1="19" x2="74" y2="27.5"/>
+<line class="ext" x1="84" y1="19" x2="84" y2="27.5"/>
+<line class="dimline" x1="74" y1="26" x2="84" y2="26"/>
+<polygon class="arrow" points="74,26 76.6,25.5 76.6,26.5"/>
+<polygon class="arrow" points="84,26 81.4,26.5 81.4,25.5"/>
+<text class="t dimtext" x="79" y="25.1" font-size="2.8" text-anchor="middle">5</text>
+</g>
+<text class="t caption" x="74" y="-25" font-size="2.4" text-anchor="start">SIDE VIEW (Z →)</text>
+</g>
+</g>
+<g class="hole-table">
+<text class="t" x="215" y="15" font-size="3" text-anchor="start" font-weight="bold">HOLE TABLE</text>
+<text class="t caption" x="287" y="15" font-size="2.2" text-anchor="end">mm, from part origin</text>
+<rect class="thin" x="215" y="17" width="72" height="14.2"/>
+<line class="thin" x1="215" y1="22" x2="287" y2="22"/>
+<text class="t" x="222" y="20.5" font-size="2.4" text-anchor="middle" font-weight="bold">Hole</text>
+<line class="thin" x1="229" y1="17" x2="229" y2="31.2"/>
+<text class="t" x="236.25" y="20.5" font-size="2.4" text-anchor="middle" font-weight="bold">X</text>
+<line class="thin" x1="243.5" y1="17" x2="243.5" y2="31.2"/>
+<text class="t" x="250.75" y="20.5" font-size="2.4" text-anchor="middle" font-weight="bold">Y</text>
+<line class="thin" x1="258" y1="17" x2="258" y2="31.2"/>
+<text class="t" x="265.25" y="20.5" font-size="2.4" text-anchor="middle" font-weight="bold">⌀ model</text>
+<line class="thin" x1="272.5" y1="17" x2="272.5" y2="31.2"/>
+<text class="t" x="279.75" y="20.5" font-size="2.4" text-anchor="middle" font-weight="bold">⌀ nominal</text>
+<g class="hole-row" data-label="H1" data-x="-21" data-y="1" data-d="4.2" data-nominal="4.2">
+<text class="t" x="222" y="25.236" font-size="2.6" text-anchor="middle">H1</text>
+<text class="t" x="242.3" y="25.236" font-size="2.6" text-anchor="end">-21</text>
+<text class="t" x="256.8" y="25.236" font-size="2.6" text-anchor="end">1</text>
+<text class="t" x="271.3" y="25.236" font-size="2.6" text-anchor="end">4.2</text>
+<text class="t" x="285.8" y="25.236" font-size="2.6" text-anchor="end">4.2</text>
+</g>
+<line class="thin" x1="215" y1="26.6" x2="287" y2="26.6"/>
+<g class="hole-row" data-label="H2" data-x="19" data-y="1" data-d="4.2" data-nominal="4.2">
+<text class="t" x="222" y="29.836" font-size="2.6" text-anchor="middle">H2</text>
+<text class="t" x="242.3" y="29.836" font-size="2.6" text-anchor="end">19</text>
+<text class="t" x="256.8" y="29.836" font-size="2.6" text-anchor="end">1</text>
+<text class="t" x="271.3" y="29.836" font-size="2.6" text-anchor="end">4.2</text>
+<text class="t" x="285.8" y="29.836" font-size="2.6" text-anchor="end">4.2</text>
+</g>
+</g>
+<g class="notes">
+<line class="thin" x1="8" y1="162" x2="165" y2="162"/>
+<text class="t" x="12" y="166.2" font-size="2.8" text-anchor="start" font-weight="bold">NOTES</text>
+<text class="t note" x="12" y="170.4" font-size="2.6" text-anchor="start">1. Thickness 5 · from sketch &quot;Sketch 1&quot;</text>
+<text class="t note" x="12" y="174.1" font-size="2.6" text-anchor="start">2. Hole clearance 0.2 on diameter · slide clearance 0.15 per side · min. feature 0.8</text>
+</g>
+<g class="title-block">
+<rect class="frame" x="165" y="162" width="124" height="40"/>
+<line class="thin" x1="165" y1="173" x2="289" y2="173"/>
+<line class="thin" x1="259" y1="162" x2="259" y2="173"/>
+<text class="t caption" x="166.2" y="164.6" font-size="1.9" text-anchor="start">PART</text>
+<text class="t part-name" x="166.5" y="170.6" font-size="5" text-anchor="start" font-weight="bold">Sketched part</text>
+<text class="t caption" x="260.2" y="164.6" font-size="1.9" text-anchor="start">PART No.</text>
+<text class="t part-number" x="274" y="170.8" font-size="5.5" text-anchor="middle" font-weight="bold">P1</text>
+<line class="thin" x1="165" y1="180" x2="289" y2="180"/>
+<line class="thin" x1="245" y1="173" x2="245" y2="180"/>
+<text class="t caption" x="166.2" y="175.6" font-size="1.9" text-anchor="start">PROJECT</text>
+<text class="t project-name" x="180" y="177.9" font-size="3.2" text-anchor="start">Untitled mechanism</text>
+<text class="t caption" x="246.2" y="175.6" font-size="1.9" text-anchor="start">TYPE</text>
+<text class="t" x="255" y="177.9" font-size="2.8" text-anchor="start">Sketched part</text>
+<line class="thin" x1="165" y1="187" x2="289" y2="187"/>
+<line class="thin" x1="233" y1="180" x2="233" y2="187"/>
+<text class="t caption" x="166.2" y="182.6" font-size="1.9" text-anchor="start">MATERIAL</text>
+<text class="t material" x="180" y="184.9" font-size="3.2" text-anchor="start">PLA (printed)</text>
+<text class="t caption" x="234.2" y="182.6" font-size="1.9" text-anchor="start">PROCESS</text>
+<text class="t" x="246" y="184.9" font-size="2.8" text-anchor="start">3D print (FDM)</text>
+<line class="thin" x1="165" y1="194" x2="289" y2="194"/>
+<text class="t caption" x="166.2" y="189.6" font-size="1.9" text-anchor="start">QTY</text>
+<text class="t tb-qty" x="183.5" y="192.2" font-size="3.2" text-anchor="end" font-weight="bold">1</text>
+<line class="thin" x1="185" y1="187" x2="185" y2="194"/>
+<text class="t caption" x="186.2" y="189.6" font-size="1.9" text-anchor="start">SCALE</text>
+<text class="t tb-scale" x="207.5" y="192.2" font-size="3.2" text-anchor="end" font-weight="bold">2:1</text>
+<line class="thin" x1="209" y1="187" x2="209" y2="194"/>
+<text class="t caption" x="210.2" y="189.6" font-size="1.9" text-anchor="start">UNITS</text>
+<text class="t tb-units" x="227.5" y="192.2" font-size="3.2" text-anchor="end">mm</text>
+<line class="thin" x1="229" y1="187" x2="229" y2="194"/>
+<text class="t caption" x="230.2" y="189.6" font-size="1.9" text-anchor="start">MASS</text>
+<text class="t tb-mass" x="261.5" y="192.2" font-size="3.2" text-anchor="end">7.27 g</text>
+<line class="thin" x1="263" y1="187" x2="263" y2="194"/>
+<text class="t caption" x="264.2" y="189.6" font-size="1.9" text-anchor="start">SHEET</text>
+<text class="t tb-sheet" x="287.5" y="192.2" font-size="3.2" text-anchor="end">A4</text>
+<text class="t general-note" x="166.5" y="197.4" font-size="2.4" text-anchor="start">Dimensions in mm. Generated geometry — verify fits, material and loads before manufacture.</text>
+</g>
+</svg>

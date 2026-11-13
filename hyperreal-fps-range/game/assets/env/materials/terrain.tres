@@ -1,0 +1,45 @@
+[gd_resource type="ShaderMaterial" format=3]
+
+[ext_resource type="Shader" path="res://assets/env/shaders/terrain.gdshader" id="1_h1pwf"]
+[ext_resource type="Texture2D" path="res://assets/env/tex/terrain_control.png" id="2_ucen1"]
+[ext_resource type="Texture2D" path="res://assets/env/tex/ground_dirt_albedo.jpg" id="3_nlrpr"]
+[ext_resource type="Texture2D" path="res://assets/env/tex/ground_dirt_normal.jpg" id="4_jbstt"]
+[ext_resource type="Texture2D" path="res://assets/env/tex/ground_dirt_orm.jpg" id="5_yhfy4"]
+[ext_resource type="Texture2D" path="res://assets/env/tex/ground_grass_albedo.jpg" id="6_qcksv"]
+[ext_resource type="Texture2D" path="res://assets/env/tex/ground_grass_normal.jpg" id="7_8f04o"]
+[ext_resource type="Texture2D" path="res://assets/env/tex/ground_grass_orm.jpg" id="8_fhov7"]
+[ext_resource type="Texture2D" path="res://assets/env/tex/ground_gravel_albedo.jpg" id="9_lwjpe"]
+[ext_resource type="Texture2D" path="res://assets/env/tex/ground_gravel_normal.jpg" id="10_ww7u0"]
+[ext_resource type="Texture2D" path="res://assets/env/tex/ground_gravel_orm.jpg" id="11_3f5um"]
+[ext_resource type="Texture2D" path="res://assets/env/tex/macro_noise.png" id="12_u3lmg"]
+[ext_resource type="Texture2D" path="res://assets/env/tex/ground_soil_albedo.jpg" id="13_hay1g"]
+[ext_resource type="Texture2D" path="res://assets/env/tex/ground_soil_normal.jpg" id="14_6acir"]
+[ext_resource type="Texture2D" path="res://assets/env/tex/ground_soil_orm.jpg" id="15_ww23t"]
+
+[resource]
+render_priority = 0
+shader = ExtResource("1_h1pwf")
+shader_parameter/control_tex = ExtResource("2_ucen1")
+shader_parameter/control_window = Vector4(-42, -94, 88, 134)
+shader_parameter/macro_tex = ExtResource("12_u3lmg")
+shader_parameter/dirt_a = ExtResource("3_nlrpr")
+shader_parameter/dirt_n = ExtResource("4_jbstt")
+shader_parameter/dirt_o = ExtResource("5_yhfy4")
+shader_parameter/soil_a = ExtResource("13_hay1g")
+shader_parameter/soil_n = ExtResource("14_6acir")
+shader_parameter/soil_o = ExtResource("15_ww23t")
+shader_parameter/grass_a = ExtResource("6_qcksv")
+shader_parameter/grass_n = ExtResource("7_8f04o")
+shader_parameter/grass_o = ExtResource("8_fhov7")
+shader_parameter/gravel_a = ExtResource("9_lwjpe")
+shader_parameter/gravel_n = ExtResource("10_ww7u0")
+shader_parameter/gravel_o = ExtResource("11_3f5um")
+shader_parameter/tile_dirt = 2.2
+shader_parameter/tile_soil = 1.5
+shader_parameter/tile_grass = 2.4
+shader_parameter/tile_gravel = 1.6
+shader_parameter/tint_dirt = Color(0.8, 0.82, 0.86, 1)
+shader_parameter/tint_soil = Color(0.85, 0.9, 1, 1)
+shader_parameter/tint_grass = Color(0.33, 0.39, 0.29, 1)
+shader_parameter/tint_gravel = Color(0.9, 0.92, 1, 1)
+shader_parameter/normal_strength = 1.0

@@ -1,0 +1,7 @@
+# Test dependencies of the companion's server layer (runtime deps come from requirements.lock).
+#   uv venv --python 3.12 .venv-dev
+#   uv pip install --python .venv-dev/bin/python aiohttp==3.14.5 cryptography==50.0.2 pillow==13.0.0 \
+#       pillow-heif==1.8.1 qrcode==8.2 psutil==7.2.2 numpy -r requirements-dev.txt
+#   .venv-dev/bin/python -m pytest tests -q
+pytest>=8
+pytest-asyncio>=1.0

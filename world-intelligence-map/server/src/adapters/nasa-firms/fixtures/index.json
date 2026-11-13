@@ -1,0 +1,7 @@
+{
+  "capturedAt": "2026-11-10T18:30:00Z",
+  "notes": "AUTHORED, not captured: the FIRMS Area API requires a MAP_KEY and none was available (a probe with an invalid key returned the plain-text body \"Invalid MAP_KEY.\", kept as invalid_key.txt). The CSV uses the documented VIIRS column set and value formats (acq_time as HHMM UTC, confidence l/n/h, satellite N20, version 2.0NRT) with 320 synthetic detections placed in regions where vegetation fires are common, dated 2026-11-09 and 2026-11-10. Positions and values are invented and do not describe real fires. The malformed variant is hand-authored. In fixture mode the demo additionally swaps in a generated high-volume CSV of the same format (server/src/demo/volume.ts).",
+  "routes": [
+    { "match": "/api/area/csv/", "file": "viirs_noaa20_world_2.csv", "contentType": "text/csv", "variants": { "malformed": "viirs.malformed.csv", "invalid-key": "invalid_key.txt" } }
+  ]
+}

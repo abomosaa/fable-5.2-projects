@@ -1,0 +1,59 @@
+{
+  "id": "ioda",
+  "provider": "IODA – Internet Outage Detection and Analysis (Internet Intelligence Lab, Georgia Institute of Technology)",
+  "dataset": "IODA HTTP API v2 – country-level outage events",
+  "description": "Automatically detected drops in country-level Internet connectivity signals (BGP-visible /24 blocks, active probing, network-telescope traffic). Each event is a possible outage signal from one data source with a start, a duration and a severity score; it is not a confirmed outage or shutdown.",
+  "homepageUrl": "https://ioda.inetintel.cc.gatech.edu/",
+  "documentationUrl": "https://api.ioda.inetintel.cc.gatech.edu/v2/",
+  "sourceUrls": [
+    "https://api.ioda.inetintel.cc.gatech.edu/v2/outages/events?from={UNIX_SECONDS}&until={UNIX_SECONDS}&entityType=country&ignoreMethods=*.sarima&limit=2000&page={PAGE}"
+  ],
+  "allowedHosts": ["api.ioda.inetintel.cc.gatech.edu"],
+  "coverage": {
+    "geographic": "Global, country level (IODA also publishes sub-national region and AS-level events, which are not ingested).",
+    "temporal": "Events active during the past 7 days, including events that started up to 14 days before that window and were still active in it."
+  },
+  "updateCadence": {
+    "upstream": "Signals are evaluated continuously (BGP visibility every 5 minutes, active probing of each /24 block at least every 10 minutes); events appear and grow with a lag of minutes to a few hours",
+    "pollIntervalSec": 900,
+    "staleAfterSec": 7200
+  },
+  "auth": { "type": "none", "envVars": [] },
+  "attribution": "IODA, Internet Intelligence Lab, Georgia Institute of Technology",
+  "license": {
+    "name": "No data licence or terms of use published (public research API)",
+    "url": "https://api.ioda.inetintel.cc.gatech.edu/v2/",
+    "redistribution": "unknown",
+    "nonCommercialOnly": true,
+    "notes": "As of 2026-11-10 neither the IODA dashboard (home, help, about/acknowledgements pages), nor the API documentation states a licence, terms of use or citation requirement for the data; the API is public and needs no key. The IODA software (github.com/InetIntel/ioda-api, ioda-ui) is released by the Regents of the University of California for academic research and education purposes only, which covers the code, not the data. Because no reuse terms are published, redistribution is recorded as unknown and the source is conservatively flagged non-commercial; credit IODA / Georgia Tech and contact ioda-info@cc.gatech.edu before any commercial or bulk reuse."
+  },
+  "limitations": [
+    "Events are produced by automated change detection on aggregate signals: IODA raises an alert when a signal falls below a fraction of the median of a sliding window of recent values. A drop can be caused by measurement artefacts, routing changes, maintenance or geolocation changes as well as by a real outage; IODA describes itself as an operational prototype.",
+    "Each record is one event from one data source (bgp, ping-slash24 or merit-nt). The same incident seen by several sources appears as several records for the same country; agreement between sources is expressed in the confidence value.",
+    "Events detected with the experimental SARIMA method (currently the Google Transparency Report signal) are excluded with ignoreMethods=*.sarima, as IODA's own dashboard does.",
+    "For an event that is still active, the API clips the duration at the query time and the score keeps growing; start times of long-running events can also be revised when IODA re-segments its alerts.",
+    "Country attribution relies on IP geolocation of address blocks. Small countries and territories with few routed /24 blocks produce frequent low-magnitude events. Territories absent from this application's country gazetteer (e.g. Gibraltar, Guadeloupe, Réunion, Tokelau) are not shown.",
+    "The severity level and the mean relative drop are derived by this application from IODA's score and duration; they are not IODA classifications."
+  ],
+  "confidenceNotes": "IODA measures drops in three independent connectivity signals per country: BGP (number of /24 blocks visible to more than 50 % of full-feed Route Views / RIPE RIS peers), active probing (number of /24 blocks responding to Trinocular-style pings) and a network telescope (unique source IPs seen at the Merit darknet). The upstream score is IODA's 'alert area': relative drop in percent multiplied by the outage length in minutes. Confidence is derived by this application from how many of these data sources report overlapping events for the same country (IODA: 'we use multiple datasources to gain confidence about an outage'): one source 0.4, two 0.65, three or more 0.85. Severity is derived from the mean relative drop (score ÷ minutes) and the duration: extreme ≥ 70 % for ≥ 3 h, severe ≥ 40 % for ≥ 1 h, moderate ≥ 10 % for ≥ 30 min, minor ≥ 2 %, otherwise info. These are possible outage signals, not confirmed outages or government-ordered shutdowns.",
+  "retention": { "note": "Events are kept for 30 days after they ended, then purged. Events that IODA no longer lists (re-segmented or withdrawn) are closed by the pipeline." },
+  "snapshot": "full",
+  "http": { "minIntervalMs": 2000, "timeoutMs": 60000 },
+  "enabledByDefault": true,
+  "layers": [
+    {
+      "id": "ioda-outages",
+      "name": "Internet outage signals (IODA)",
+      "description": "Possible country-level Internet outages detected automatically by IODA from BGP, active-probing and network-telescope signals. Drawn at the country label point.",
+      "domain": "cyber",
+      "category": "internet-outage",
+      "geometry": "country",
+      "timeModel": "interval",
+      "render": { "type": "point", "color": "red", "shape": "hexagon" },
+      "freshForSec": 21600,
+      "retentionDays": 30,
+      "defaultOn": true,
+      "correlationClass": "outage"
+    }
+  ]
+}

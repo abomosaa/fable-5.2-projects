@@ -1,0 +1,33 @@
+{
+ "note": "Expected values come from the sketch dimensions typed in the UI, not from the exported files.",
+ "bbox": [
+  60,
+  20,
+  5
+ ],
+ "volume": 5861.455763976691,
+ "holes": [
+  {
+   "x": 10,
+   "y": 10,
+   "d": 4.2
+  },
+  {
+   "x": 50,
+   "y": 10,
+   "d": 4.2
+  }
+ ],
+ "holeSpacing": 40,
+ "genus": 2,
+ "files": {
+  "stl": "untitled-mechanism_P1_sketched-part.stl",
+  "3mf": "untitled-mechanism_parts.3mf",
+  "svg:drawing": "untitled-mechanism_P1_sketched-part_drawing.svg",
+  "dxf:profile": "untitled-mechanism_P1_sketched-part_profile.dxf",
+  "svg:profile": "untitled-mechanism_P1_sketched-part_profile.svg",
+  "csv": "untitled-mechanism_bom.csv",
+  "html": "untitled-mechanism_assembly-guide.html",
+  "json": "untitled-mechanism.mechanism.json"
+ }
+}

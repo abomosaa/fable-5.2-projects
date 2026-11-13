@@ -1,0 +1,91 @@
+{
+ "name": "01-build-linkage",
+ "failures": 0,
+ "steps": [
+  {
+   "label": "fresh project is empty",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "base plate added and grounded",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "pivot joint created between plate and crank",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "crank rotated 90° about its pivot (joint stayed closed)",
+   "ok": true,
+   "detail": "{\"crankAngle\":1.5707963267948963}"
+  },
+  {
+   "label": "dragging hole onto hole created a pivot (snap)",
+   "ok": true,
+   "detail": "Pivot created between Link and Link 2. (Ctrl+Z to undo)"
+  },
+  {
+   "label": "rocker pinned to coupler by drag-snap",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "loop closed: 4 pivots, assembly solved without issues",
+   "ok": true,
+   "detail": "{\"joints\":4,\"issues\":0}"
+  },
+  {
+   "label": "parts renamed",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "motor added to the crank pivot at 45 rpm",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "point probe placed on the coupler",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "mobility is 1 DOF, no static errors",
+   "ok": true,
+   "detail": "{\"status\":\"idle\",\"t\":0,\"mode\":\"dynamic\",\"dof\":1,\"bodies\":3,\"rows\":9,\"posError\":5.2303050779300975e-11,\"maxPosError\":0,\"samples\":1,\"stepMs\":0,\"fps\":45.4,\"realtime\":0,\"events\":[],\"static\":[]}"
+  },
+  {
+   "label": "simulation runs in dynamic mode",
+   "ok": true,
+   "detail": "{\"status\":\"running\",\"t\":4.048,\"mode\":\"dynamic\",\"dof\":1,\"bodies\":3,\"rows\":9,\"posError\":9.868958983361154e-10,\"maxPosError\":9.986904814240916e-8,\"samples\":1013,\"stepMs\":0.0079,\"fps\":45.8,\"realtime\":1,\"events\":[],\"static\":[]}"
+  },
+  {
+   "label": "closed-loop joint error stays below 1e-6 mm",
+   "ok": true,
+   "detail": "{\"maxPosError\":9.986904814240916e-8}"
+  },
+  {
+   "label": "motion trace recorded (coupler point sweeps a closed curve)",
+   "ok": true,
+   "detail": "{\"n\":1013,\"xSpan\":47.08539094256232,\"ySpan\":33.114023560842725,\"provenance\":\"state\"}"
+  },
+  {
+   "label": "pause then single-step advances exactly one timestep",
+   "ok": true,
+   "detail": "{\"before\":4.598,\"after\":4.599}"
+  },
+  {
+   "label": "reset returns to the designed assembly and keeps all edits",
+   "ok": true,
+   "detail": "idle"
+  },
+  {
+   "label": "no console/page errors",
+   "ok": true,
+   "detail": ""
+  }
+ ]
+}

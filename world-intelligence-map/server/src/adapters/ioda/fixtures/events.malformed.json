@@ -1,0 +1,24 @@
+{
+  "type": "outages.events",
+  "metadata": { "requestTime": "2026-11-10T17:56:20+00:00", "responseTime": "2026-11-10T17:56:21+00:00" },
+  "requestParameters": { "from": "1793728579", "until": "1794333379", "datasource": null, "includeAlerts": false, "format": "codf", "limit": 2000, "page": 0, "relatedTo": null, "entityType": "country", "entityCode": null, "orderBy": null, "overall": false, "ignoreMethods": "*.sarima", "extendWindow": 1209600 },
+  "error": null,
+  "perf": null,
+  "data": [
+    { "location": "country/VE", "start": 1793910900, "duration": 53400, "uncertainty": null, "method": "median", "datasource": "bgp", "status": 0, "fraction": null, "score": 896.4431853950268, "location_name": "Venezuela", "overlaps_window": false },
+    { "location": "country/VE", "start": 1793914500, "duration": 7200, "uncertainty": null, "method": "median", "datasource": "ping-slash24", "status": 0, "fraction": null, "score": 8129.032258064515, "location_name": "Venezuela", "overlaps_window": false },
+    { "location": "country/VE", "start": 1793910900, "duration": 53400, "uncertainty": null, "method": "median", "datasource": "bgp", "status": 0, "fraction": null, "score": 896.4431853950268, "location_name": "Venezuela", "overlaps_window": false },
+    { "location": "country/ML", "start": 1794252000, "duration": 2400, "uncertainty": null, "method": "median", "datasource": "bgp", "status": 0, "fraction": null, "score": 67.9886685552408, "location_name": "<img src=x onerror=alert(1)>Mali<script>alert(2)</script>", "overlaps_window": false },
+    { "location": "country/KE", "start": "1794301200", "duration": 32179, "uncertainty": null, "method": "median", "datasource": "merit-nt", "status": 0, "fraction": null, "score": null, "location_name": "Kenya", "overlaps_window": true },
+    { "location": "country/GI", "start": 1794250000, "duration": 3600, "uncertainty": null, "method": "median", "datasource": "bgp", "status": 0, "fraction": null, "score": 500, "location_name": "Gibraltar", "overlaps_window": false },
+    { "location": "region/4416", "start": 1794250000, "duration": 3600, "uncertainty": null, "method": "median", "datasource": "bgp", "status": 0, "fraction": null, "score": 500, "location_name": "Tehran", "overlaps_window": false },
+    { "start": 1794250000, "duration": 3600, "uncertainty": null, "method": "median", "datasource": "bgp", "status": 0, "fraction": null, "score": 500, "overlaps_window": false },
+    { "location": "country/IR", "start": "soon", "duration": 3600, "uncertainty": null, "method": "median", "datasource": "bgp", "status": 0, "fraction": null, "score": 500, "location_name": "Iran", "overlaps_window": false },
+    { "location": "country/IR", "start": 1794250000000, "duration": 3600, "uncertainty": null, "method": "median", "datasource": "bgp", "status": 0, "fraction": null, "score": 500, "location_name": "Iran", "overlaps_window": false },
+    { "location": "country/IQ", "start": 1794250000, "duration": -300, "uncertainty": null, "method": "median", "datasource": "bgp", "status": 0, "fraction": null, "score": 500, "location_name": "Iraq", "overlaps_window": false },
+    { "location": "country/IQ", "start": 1794250000, "duration": null, "uncertainty": null, "method": "median", "datasource": "bgp", "status": 0, "fraction": null, "score": 500, "location_name": "Iraq", "overlaps_window": false },
+    { "location": "country/SD", "start": 1794250000, "duration": 3600, "uncertainty": null, "method": "median", "datasource": "<script>alert(1)</script>", "status": 0, "fraction": null, "score": 500, "location_name": "Sudan", "overlaps_window": false },
+    42,
+    null
+  ]
+}

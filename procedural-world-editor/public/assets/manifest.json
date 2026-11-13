@@ -1,0 +1,6965 @@
+{
+ "version": 1,
+ "units": "meters",
+ "upAxis": "Y",
+ "alphaCutoff": 0.4,
+ "textures": {
+  "grass_004": {
+   "name": "Grass 004",
+   "role": "grass",
+   "tileSizeM": 1.4,
+   "files": {
+    "diff": "textures/grass_004/diff.jpg",
+    "nor": "textures/grass_004/nor.jpg",
+    "arm": "textures/grass_004/arm.jpg",
+    "disp": "textures/grass_004/disp.jpg"
+   },
+   "avgColor": [
+    0.1294,
+    0.1635,
+    0.0353
+   ],
+   "source": {
+    "url": "https://ambientcg.com/view?id=Grass004",
+    "authors": [
+     "Lennart Demes (ambientCG)"
+    ],
+    "license": "CC0-1.0"
+   },
+   "bytes": 7553299
+  },
+  "forrest_ground_01": {
+   "name": "Forest Ground 01",
+   "role": "grass",
+   "tileSizeM": 2,
+   "files": {
+    "diff": "textures/forrest_ground_01/diff.jpg",
+    "nor": "textures/forrest_ground_01/nor.jpg",
+    "arm": "textures/forrest_ground_01/arm.jpg",
+    "disp": "textures/forrest_ground_01/disp.jpg"
+   },
+   "avgColor": [
+    0.2951,
+    0.2512,
+    0.1223
+   ],
+   "source": {
+    "url": "https://polyhaven.com/a/forrest_ground_01",
+    "authors": [
+     "Rob Tuytel"
+    ],
+    "license": "CC0-1.0"
+   },
+   "bytes": 6433697
+  },
+  "aerial_grass_rock": {
+   "name": "Aerial Grass Rock",
+   "role": "grass",
+   "tileSizeM": 15,
+   "files": {
+    "diff": "textures/aerial_grass_rock/diff.jpg",
+    "nor": "textures/aerial_grass_rock/nor.jpg",
+    "arm": "textures/aerial_grass_rock/arm.jpg",
+    "disp": "textures/aerial_grass_rock/disp.jpg"
+   },
+   "avgColor": [
+    0.1716,
+    0.1237,
+    0.0294
+   ],
+   "source": {
+    "url": "https://polyhaven.com/a/aerial_grass_rock",
+    "authors": [
+     "Rob Tuytel"
+    ],
+    "license": "CC0-1.0"
+   },
+   "bytes": 4442551
+  },
+  "forest_leaves_04": {
+   "name": "Forest Leaves 04",
+   "role": "forest_floor",
+   "tileSizeM": 1.5,
+   "files": {
+    "diff": "textures/forest_leaves_04/diff.jpg",
+    "nor": "textures/forest_leaves_04/nor.jpg",
+    "arm": "textures/forest_leaves_04/arm.jpg",
+    "disp": "textures/forest_leaves_04/disp.jpg"
+   },
+   "avgColor": [
+    0.2445,
+    0.1304,
+    0.0576
+   ],
+   "source": {
+    "url": "https://polyhaven.com/a/forest_leaves_04",
+    "authors": [
+     "Rob Tuytel"
+    ],
+    "license": "CC0-1.0"
+   },
+   "bytes": 6674495
+  },
+  "forest_leaves_02": {
+   "name": "Forest Leaves 02",
+   "role": "forest_floor",
+   "tileSizeM": 3.001,
+   "files": {
+    "diff": "textures/forest_leaves_02/diff.jpg",
+    "nor": "textures/forest_leaves_02/nor.jpg",
+    "arm": "textures/forest_leaves_02/arm.jpg",
+    "disp": "textures/forest_leaves_02/disp.jpg"
+   },
+   "avgColor": [
+    0.3,
+    0.181,
+    0.0593
+   ],
+   "source": {
+    "url": "https://polyhaven.com/a/forest_leaves_02",
+    "authors": [
+     "Rob Tuytel"
+    ],
+    "license": "CC0-1.0"
+   },
+   "bytes": 6666264
+  },
+  "marble_rock_01": {
+   "name": "Marble Rock 01",
+   "role": "rock_cliff",
+   "tileSizeM": 2.002,
+   "files": {
+    "diff": "textures/marble_rock_01/diff.jpg",
+    "nor": "textures/marble_rock_01/nor.jpg",
+    "arm": "textures/marble_rock_01/arm.jpg",
+    "disp": "textures/marble_rock_01/disp.jpg"
+   },
+   "avgColor": [
+    0.3358,
+    0.2767,
+    0.2108
+   ],
+   "source": {
+    "url": "https://polyhaven.com/a/marble_rock_01",
+    "authors": [
+     "Amal Kumar"
+    ],
+    "license": "CC0-1.0"
+   },
+   "bytes": 3129447
+  },
+  "mossy_rock": {
+   "name": "Mossy Rock",
+   "role": "rock_cliff",
+   "tileSizeM": 3,
+   "files": {
+    "diff": "textures/mossy_rock/diff.jpg",
+    "nor": "textures/mossy_rock/nor.jpg",
+    "arm": "textures/mossy_rock/arm.jpg",
+    "disp": "textures/mossy_rock/disp.jpg"
+   },
+   "avgColor": [
+    0.1684,
+    0.1606,
+    0.1043
+   ],
+   "source": {
+    "url": "https://polyhaven.com/a/mossy_rock",
+    "authors": [
+     "Rob Tuytel"
+    ],
+    "license": "CC0-1.0"
+   },
+   "bytes": 4418588
+  },
+  "rock_boulder_dry": {
+   "name": "Rock Boulder Dry",
+   "role": "rock_cliff",
+   "tileSizeM": 1.8,
+   "files": {
+    "diff": "textures/rock_boulder_dry/diff.jpg",
+    "nor": "textures/rock_boulder_dry/nor.jpg",
+    "arm": "textures/rock_boulder_dry/arm.jpg",
+    "disp": "textures/rock_boulder_dry/disp.jpg"
+   },
+   "avgColor": [
+    0.3909,
+    0.3424,
+    0.2804
+   ],
+   "source": {
+    "url": "https://polyhaven.com/a/rock_boulder_dry",
+    "authors": [
+     "Dimitrios Savva",
+     "Rico Cilliers"
+    ],
+    "license": "CC0-1.0"
+   },
+   "bytes": 2873024
+  },
+  "dark_rock": {
+   "name": "Dark Rock",
+   "role": "rock_coast",
+   "tileSizeM": 2.421,
+   "files": {
+    "diff": "textures/dark_rock/diff.jpg",
+    "nor": "textures/dark_rock/nor.jpg",
+    "arm": "textures/dark_rock/arm.jpg",
+    "disp": "textures/dark_rock/disp.jpg"
+   },
+   "avgColor": [
+    0.0155,
+    0.0118,
+    0.0089
+   ],
+   "source": {
+    "url": "https://polyhaven.com/a/dark_rock",
+    "authors": [
+     "Amal Kumar"
+    ],
+    "license": "CC0-1.0"
+   },
+   "bytes": 2838151
+  },
+  "lichen_rock": {
+   "name": "Lichen Rock",
+   "role": "rock_coast",
+   "tileSizeM": 2,
+   "files": {
+    "diff": "textures/lichen_rock/diff.jpg",
+    "nor": "textures/lichen_rock/nor.jpg",
+    "arm": "textures/lichen_rock/arm.jpg",
+    "disp": "textures/lichen_rock/disp.jpg"
+   },
+   "avgColor": [
+    0.0686,
+    0.0578,
+    0.0428
+   ],
+   "source": {
+    "url": "https://polyhaven.com/a/lichen_rock",
+    "authors": [
+     "Rico Cilliers"
+    ],
+    "license": "CC0-1.0"
+   },
+   "bytes": 4540309
+  },
+  "gray_rocks": {
+   "name": "Gray Rocks",
+   "role": "scree",
+   "tileSizeM": 1.8,
+   "files": {
+    "diff": "textures/gray_rocks/diff.jpg",
+    "nor": "textures/gray_rocks/nor.jpg",
+    "arm": "textures/gray_rocks/arm.jpg",
+    "disp": "textures/gray_rocks/disp.jpg"
+   },
+   "avgColor": [
+    0.1957,
+    0.1764,
+    0.1425
+   ],
+   "source": {
+    "url": "https://polyhaven.com/a/gray_rocks",
+    "authors": [
+     "Dimitrios Savva"
+    ],
+    "license": "CC0-1.0"
+   },
+   "bytes": 4882838
+  },
+  "rocks_ground_01": {
+   "name": "Rocks Ground 01",
+   "role": "scree",
+   "tileSizeM": 2,
+   "files": {
+    "diff": "textures/rocks_ground_01/diff.jpg",
+    "nor": "textures/rocks_ground_01/nor.jpg",
+    "arm": "textures/rocks_ground_01/arm.jpg",
+    "disp": "textures/rocks_ground_01/disp.jpg"
+   },
+   "avgColor": [
+    0.2711,
+    0.2315,
+    0.1818
+   ],
+   "source": {
+    "url": "https://polyhaven.com/a/rocks_ground_01",
+    "authors": [
+     "Rob Tuytel"
+    ],
+    "license": "CC0-1.0"
+   },
+   "bytes": 5190676
+  },
+  "dense_sand": {
+   "name": "Dense Sand",
+   "role": "sand",
+   "tileSizeM": 1.8,
+   "files": {
+    "diff": "textures/dense_sand/diff.jpg",
+    "nor": "textures/dense_sand/nor.jpg",
+    "arm": "textures/dense_sand/arm.jpg",
+    "disp": "textures/dense_sand/disp.jpg"
+   },
+   "avgColor": [
+    0.2949,
+    0.2185,
+    0.1273
+   ],
+   "source": {
+    "url": "https://polyhaven.com/a/dense_sand",
+    "authors": [
+     "Dimitrios Savva"
+    ],
+    "license": "CC0-1.0"
+   },
+   "bytes": 3153356
+  },
+  "aerial_beach_01": {
+   "name": "Aerial Beach 01",
+   "role": "sand",
+   "tileSizeM": 30,
+   "files": {
+    "diff": "textures/aerial_beach_01/diff.jpg",
+    "nor": "textures/aerial_beach_01/nor.jpg",
+    "arm": "textures/aerial_beach_01/arm.jpg",
+    "disp": "textures/aerial_beach_01/disp.jpg"
+   },
+   "avgColor": [
+    0.2842,
+    0.2376,
+    0.1958
+   ],
+   "source": {
+    "url": "https://polyhaven.com/a/aerial_beach_01",
+    "authors": [
+     "Rob Tuytel"
+    ],
+    "license": "CC0-1.0"
+   },
+   "bytes": 2841279
+  },
+  "damp_beach_sand": {
+   "name": "Damp Beach Sand",
+   "role": "sand",
+   "tileSizeM": 2,
+   "files": {
+    "diff": "textures/damp_beach_sand/diff.jpg",
+    "nor": "textures/damp_beach_sand/nor.jpg",
+    "arm": "textures/damp_beach_sand/arm.jpg",
+    "disp": "textures/damp_beach_sand/disp.jpg"
+   },
+   "avgColor": [
+    0.1525,
+    0.1191,
+    0.0743
+   ],
+   "source": {
+    "url": "https://polyhaven.com/a/damp_beach_sand",
+    "authors": [
+     "Dimitrios Savva"
+    ],
+    "license": "CC0-1.0"
+   },
+   "bytes": 3073807
+  },
+  "ganges_river_pebbles": {
+   "name": "Ganges River Pebbles",
+   "role": "pebbles",
+   "tileSizeM": 2.16,
+   "files": {
+    "diff": "textures/ganges_river_pebbles/diff.jpg",
+    "nor": "textures/ganges_river_pebbles/nor.jpg",
+    "arm": "textures/ganges_river_pebbles/arm.jpg",
+    "disp": "textures/ganges_river_pebbles/disp.jpg"
+   },
+   "avgColor": [
+    0.2334,
+    0.196,
+    0.1559
+   ],
+   "source": {
+    "url": "https://polyhaven.com/a/ganges_river_pebbles",
+    "authors": [
+     "Amal Kumar"
+    ],
+    "license": "CC0-1.0"
+   },
+   "bytes": 4172407
+  },
+  "brown_mud_03": {
+   "name": "Brown Mud 03",
+   "role": "mud",
+   "tileSizeM": 1.3,
+   "files": {
+    "diff": "textures/brown_mud_03/diff.jpg",
+    "nor": "textures/brown_mud_03/nor.jpg",
+    "arm": "textures/brown_mud_03/arm.jpg",
+    "disp": "textures/brown_mud_03/disp.jpg"
+   },
+   "avgColor": [
+    0.0948,
+    0.0742,
+    0.0487
+   ],
+   "source": {
+    "url": "https://polyhaven.com/a/brown_mud_03",
+    "authors": [
+     "Rob Tuytel"
+    ],
+    "license": "CC0-1.0"
+   },
+   "bytes": 4475645
+  },
+  "dirt": {
+   "name": "Dirt",
+   "role": "mud",
+   "tileSizeM": 2,
+   "files": {
+    "diff": "textures/dirt/diff.jpg",
+    "nor": "textures/dirt/nor.jpg",
+    "arm": "textures/dirt/arm.jpg",
+    "disp": "textures/dirt/disp.jpg"
+   },
+   "avgColor": [
+    0.126,
+    0.0856,
+    0.0489
+   ],
+   "source": {
+    "url": "https://polyhaven.com/a/dirt",
+    "authors": [
+     "Charlotte Baglioni"
+    ],
+    "license": "CC0-1.0"
+   },
+   "bytes": 4136171
+  },
+  "snow_02": {
+   "name": "Snow 02",
+   "role": "snow",
+   "tileSizeM": 2,
+   "files": {
+    "diff": "textures/snow_02/diff.jpg",
+    "nor": "textures/snow_02/nor.jpg",
+    "arm": "textures/snow_02/arm.jpg",
+    "disp": "textures/snow_02/disp.jpg"
+   },
+   "avgColor": [
+    0.3789,
+    0.3788,
+    0.3902
+   ],
+   "source": {
+    "url": "https://polyhaven.com/a/snow_02",
+    "authors": [
+     "Rob Tuytel"
+    ],
+    "license": "CC0-1.0"
+   },
+   "bytes": 3359477
+  },
+  "snow_field_aerial": {
+   "name": "Snow Field Aerial",
+   "role": "snow",
+   "tileSizeM": 80,
+   "files": {
+    "diff": "textures/snow_field_aerial/diff.jpg",
+    "nor": "textures/snow_field_aerial/nor.jpg",
+    "arm": "textures/snow_field_aerial/arm.jpg",
+    "disp": "textures/snow_field_aerial/disp.jpg"
+   },
+   "avgColor": [
+    0.2621,
+    0.2632,
+    0.3224
+   ],
+   "source": {
+    "url": "https://polyhaven.com/a/snow_field_aerial",
+    "authors": [
+     "Rob Tuytel"
+    ],
+    "license": "CC0-1.0"
+   },
+   "bytes": 4044757
+  },
+  "rocky_trail_02": {
+   "name": "Rocky Trail 02",
+   "role": "trail_dirt",
+   "tileSizeM": 2,
+   "files": {
+    "diff": "textures/rocky_trail_02/diff.jpg",
+    "nor": "textures/rocky_trail_02/nor.jpg",
+    "arm": "textures/rocky_trail_02/arm.jpg",
+    "disp": "textures/rocky_trail_02/disp.jpg"
+   },
+   "avgColor": [
+    0.2481,
+    0.1504,
+    0.0854
+   ],
+   "source": {
+    "url": "https://polyhaven.com/a/rocky_trail_02",
+    "authors": [
+     "Amal Kumar"
+    ],
+    "license": "CC0-1.0"
+   },
+   "bytes": 6040062
+  },
+  "gravel_floor_02": {
+   "name": "Gravel Floor 02",
+   "role": "gravel_road",
+   "tileSizeM": 2,
+   "files": {
+    "diff": "textures/gravel_floor_02/diff.jpg",
+    "nor": "textures/gravel_floor_02/nor.jpg",
+    "arm": "textures/gravel_floor_02/arm.jpg",
+    "disp": "textures/gravel_floor_02/disp.jpg"
+   },
+   "avgColor": [
+    0.426,
+    0.4089,
+    0.3579
+   ],
+   "source": {
+    "url": "https://polyhaven.com/a/gravel_floor_02",
+    "authors": [
+     "Jenelle van Heerden",
+     "Dimitrios Savva"
+    ],
+    "license": "CC0-1.0"
+   },
+   "bytes": 6933894
+  },
+  "asphalt_01": {
+   "name": "Asphalt 01",
+   "role": "asphalt",
+   "tileSizeM": 2.08,
+   "files": {
+    "diff": "textures/asphalt_01/diff.jpg",
+    "nor": "textures/asphalt_01/nor.jpg",
+    "arm": "textures/asphalt_01/arm.jpg",
+    "disp": "textures/asphalt_01/disp.jpg"
+   },
+   "avgColor": [
+    0.0978,
+    0.0814,
+    0.0643
+   ],
+   "source": {
+    "url": "https://polyhaven.com/a/asphalt_01",
+    "authors": [
+     "Dario Barresi",
+     "Charlotte Baglioni"
+    ],
+    "license": "CC0-1.0"
+   },
+   "bytes": 5403803
+  },
+  "weathered_planks": {
+   "name": "Weathered Planks",
+   "role": "wood_planks",
+   "tileSizeM": 2,
+   "files": {
+    "diff": "textures/weathered_planks/diff.jpg",
+    "nor": "textures/weathered_planks/nor.jpg",
+    "arm": "textures/weathered_planks/arm.jpg",
+    "disp": "textures/weathered_planks/disp.jpg"
+   },
+   "avgColor": [
+    0.082,
+    0.058,
+    0.0439
+   ],
+   "source": {
+    "url": "https://polyhaven.com/a/weathered_planks",
+    "authors": [
+     "Dario Barresi",
+     "Dimitrios Savva"
+    ],
+    "license": "CC0-1.0"
+   },
+   "bytes": 1947239
+  },
+  "weathered_plank_siding": {
+   "name": "Weathered Plank Siding",
+   "role": "wood_planks",
+   "tileSizeM": 1.57,
+   "files": {
+    "diff": "textures/weathered_plank_siding/diff.jpg",
+    "nor": "textures/weathered_plank_siding/nor.jpg",
+    "arm": "textures/weathered_plank_siding/arm.jpg",
+    "disp": "textures/weathered_plank_siding/disp.jpg"
+   },
+   "avgColor": [
+    0.0686,
+    0.0485,
+    0.0342
+   ],
+   "source": {
+    "url": "https://polyhaven.com/a/weathered_plank_siding",
+    "authors": [
+     "Dimitrios Savva"
+    ],
+    "license": "CC0-1.0"
+   },
+   "bytes": 1650585
+  },
+  "wood_trunk_wall": {
+   "name": "Wood Trunk Wall",
+   "role": "wood_logs",
+   "tileSizeM": 1.25,
+   "files": {
+    "diff": "textures/wood_trunk_wall/diff.jpg",
+    "nor": "textures/wood_trunk_wall/nor.jpg",
+    "arm": "textures/wood_trunk_wall/arm.jpg",
+    "disp": "textures/wood_trunk_wall/disp.jpg"
+   },
+   "avgColor": [
+    0.0763,
+    0.0489,
+    0.0357
+   ],
+   "source": {
+    "url": "https://polyhaven.com/a/wood_trunk_wall",
+    "authors": [
+     "Amal Kumar"
+    ],
+    "license": "CC0-1.0"
+   },
+   "bytes": 2325863
+  },
+  "roof_slates_02": {
+   "name": "Roof Slates 02",
+   "role": "roof",
+   "tileSizeM": 3,
+   "files": {
+    "diff": "textures/roof_slates_02/diff.jpg",
+    "nor": "textures/roof_slates_02/nor.jpg",
+    "arm": "textures/roof_slates_02/arm.jpg",
+    "disp": "textures/roof_slates_02/disp.jpg"
+   },
+   "avgColor": [
+    0.2982,
+    0.2544,
+    0.195
+   ],
+   "source": {
+    "url": "https://polyhaven.com/a/roof_slates_02",
+    "authors": [
+     "Rob Tuytel"
+    ],
+    "license": "CC0-1.0"
+   },
+   "bytes": 3738611
+  },
+  "grey_roof_tiles_02": {
+   "name": "Grey Roof Tiles 02",
+   "role": "roof",
+   "tileSizeM": 1.5,
+   "files": {
+    "diff": "textures/grey_roof_tiles_02/diff.jpg",
+    "nor": "textures/grey_roof_tiles_02/nor.jpg",
+    "arm": "textures/grey_roof_tiles_02/arm.jpg",
+    "disp": "textures/grey_roof_tiles_02/disp.jpg"
+   },
+   "avgColor": [
+    0.1943,
+    0.2009,
+    0.1982
+   ],
+   "source": {
+    "url": "https://polyhaven.com/a/grey_roof_tiles_02",
+    "authors": [
+     "Rob Tuytel"
+    ],
+    "license": "CC0-1.0"
+   },
+   "bytes": 2796874
+  },
+  "corrugated_iron": {
+   "name": "Corrugated Iron",
+   "role": "roof",
+   "tileSizeM": 1.12,
+   "files": {
+    "diff": "textures/corrugated_iron/diff.jpg",
+    "nor": "textures/corrugated_iron/nor.jpg",
+    "arm": "textures/corrugated_iron/arm.jpg",
+    "disp": "textures/corrugated_iron/disp.jpg"
+   },
+   "avgColor": [
+    0.4136,
+    0.4501,
+    0.4295
+   ],
+   "source": {
+    "url": "https://polyhaven.com/a/corrugated_iron",
+    "authors": [
+     "Jenelle van Heerden",
+     "Dimitrios Savva"
+    ],
+    "license": "CC0-1.0"
+   },
+   "bytes": 2312838
+  },
+  "stone_wall": {
+   "name": "Stone Wall",
+   "role": "stone_wall",
+   "tileSizeM": 2,
+   "files": {
+    "diff": "textures/stone_wall/diff.jpg",
+    "nor": "textures/stone_wall/nor.jpg",
+    "arm": "textures/stone_wall/arm.jpg",
+    "disp": "textures/stone_wall/disp.jpg"
+   },
+   "avgColor": [
+    0.3611,
+    0.3002,
+    0.2138
+   ],
+   "source": {
+    "url": "https://polyhaven.com/a/stone_wall",
+    "authors": [
+     "Dario Barresi",
+     "Charlotte Baglioni"
+    ],
+    "license": "CC0-1.0"
+   },
+   "bytes": 3421900
+  },
+  "green_rough_planks": {
+   "name": "Green Rough Planks",
+   "role": "wood_door",
+   "tileSizeM": 1.5,
+   "files": {
+    "diff": "textures/green_rough_planks/diff.jpg",
+    "nor": "textures/green_rough_planks/nor.jpg",
+    "arm": "textures/green_rough_planks/arm.jpg",
+    "disp": "textures/green_rough_planks/disp.jpg"
+   },
+   "avgColor": [
+    0.1198,
+    0.1644,
+    0.1293
+   ],
+   "source": {
+    "url": "https://polyhaven.com/a/green_rough_planks",
+    "authors": [
+     "Rob Tuytel"
+    ],
+    "license": "CC0-1.0"
+   },
+   "bytes": 2880786
+  }
+ },
+ "models": {
+  "fir_tree_01__a": {
+   "name": "Fir Tree 01 (A)",
+   "category": "tree_conifer",
+   "lods": [
+    {
+     "file": "models/fir_tree_01__a/lod0.glb",
+     "triangles": 35978
+    },
+    {
+     "file": "models/fir_tree_01__a/lod1.glb",
+     "triangles": 8911
+    },
+    {
+     "file": "models/fir_tree_01__a/lod2.glb",
+     "triangles": 1920
+    }
+   ],
+   "bounds": {
+    "min": [
+     -3.2479,
+     0,
+     -3.5504
+    ],
+    "max": [
+     3.3623,
+     18.983,
+     2.9279
+    ]
+   },
+   "height": 18.983,
+   "radius": 3.5506,
+   "trunkRadius": 0.132,
+   "materials": [
+    {
+     "name": "bark_bark",
+     "foliage": false
+    },
+    {
+     "name": "bark_trunk_a",
+     "foliage": false
+    },
+    {
+     "name": "foliage_cards",
+     "foliage": true
+    }
+   ],
+   "source": {
+    "url": "https://polyhaven.com/a/fir_tree_01",
+    "authors": [
+     "Rob Tuytel",
+     "Rico Cilliers"
+    ],
+    "license": "CC0-1.0"
+   },
+   "variantOf": "fir_tree_01",
+   "bytes": 4991784
+  },
+  "fir_tree_01__b": {
+   "name": "Fir Tree 01 (B)",
+   "category": "tree_conifer",
+   "lods": [
+    {
+     "file": "models/fir_tree_01__b/lod0.glb",
+     "triangles": 35848
+    },
+    {
+     "file": "models/fir_tree_01__b/lod1.glb",
+     "triangles": 8999
+    },
+    {
+     "file": "models/fir_tree_01__b/lod2.glb",
+     "triangles": 1551
+    }
+   ],
+   "bounds": {
+    "min": [
+     -2.6737,
+     0,
+     -3.1836
+    ],
+    "max": [
+     2.9702,
+     14.1109,
+     2.9768
+    ]
+   },
+   "height": 14.1109,
+   "radius": 3.2289,
+   "trunkRadius": 0.126,
+   "materials": [
+    {
+     "name": "bark_bark",
+     "foliage": false
+    },
+    {
+     "name": "bark_trunk_b",
+     "foliage": false
+    },
+    {
+     "name": "foliage_cards",
+     "foliage": true
+    }
+   ],
+   "source": {
+    "url": "https://polyhaven.com/a/fir_tree_01",
+    "authors": [
+     "Rob Tuytel",
+     "Rico Cilliers"
+    ],
+    "license": "CC0-1.0"
+   },
+   "variantOf": "fir_tree_01",
+   "bytes": 4554092
+  },
+  "fir_tree_01__c": {
+   "name": "Fir Tree 01 (C)",
+   "category": "tree_conifer",
+   "lods": [
+    {
+     "file": "models/fir_tree_01__c/lod0.glb",
+     "triangles": 19615
+    },
+    {
+     "file": "models/fir_tree_01__c/lod1.glb",
+     "triangles": 4538
+    },
+    {
+     "file": "models/fir_tree_01__c/lod2.glb",
+     "triangles": 1212
+    }
+   ],
+   "bounds": {
+    "min": [
+     -2.6872,
+     0,
+     -3.0584
+    ],
+    "max": [
+     3.7377,
+     14.5375,
+     3.0505
+    ]
+   },
+   "height": 14.5375,
+   "radius": 3.7519,
+   "trunkRadius": 0.122,
+   "materials": [
+    {
+     "name": "bark_bark",
+     "foliage": false
+    },
+    {
+     "name": "foliage_cards",
+     "foliage": true
+    }
+   ],
+   "source": {
+    "url": "https://polyhaven.com/a/fir_tree_01",
+    "authors": [
+     "Rob Tuytel",
+     "Rico Cilliers"
+    ],
+    "license": "CC0-1.0"
+   },
+   "variantOf": "fir_tree_01",
+   "bytes": 2271608
+  },
+  "pine_tree_01__a": {
+   "name": "Pine Tree 01 (A)",
+   "category": "tree_conifer",
+   "lods": [
+    {
+     "file": "models/pine_tree_01__a/lod0.glb",
+     "triangles": 33336
+    },
+    {
+     "file": "models/pine_tree_01__a/lod1.glb",
+     "triangles": 8058
+    },
+    {
+     "file": "models/pine_tree_01__a/lod2.glb",
+     "triangles": 1941
+    }
+   ],
+   "bounds": {
+    "min": [
+     -3.5326,
+     0,
+     -4.5306
+    ],
+    "max": [
+     4.1231,
+     20.4214,
+     3.8965
+    ]
+   },
+   "height": 20.4214,
+   "radius": 4.678,
+   "trunkRadius": 0.132,
+   "materials": [
+    {
+     "name": "bark_bark",
+     "foliage": false
+    },
+    {
+     "name": "bark_trunk_a",
+     "foliage": false
+    },
+    {
+     "name": "foliage_cards",
+     "foliage": true
+    }
+   ],
+   "source": {
+    "url": "https://polyhaven.com/a/pine_tree_01",
+    "authors": [
+     "Rob Tuytel",
+     "Rico Cilliers"
+    ],
+    "license": "CC0-1.0"
+   },
+   "variantOf": "pine_tree_01",
+   "bytes": 4584176
+  },
+  "pine_tree_01__b": {
+   "name": "Pine Tree 01 (B)",
+   "category": "tree_conifer",
+   "lods": [
+    {
+     "file": "models/pine_tree_01__b/lod0.glb",
+     "triangles": 27238
+    },
+    {
+     "file": "models/pine_tree_01__b/lod1.glb",
+     "triangles": 6982
+    },
+    {
+     "file": "models/pine_tree_01__b/lod2.glb",
+     "triangles": 1744
+    }
+   ],
+   "bounds": {
+    "min": [
+     -3.6523,
+     0,
+     -3.52
+    ],
+    "max": [
+     3.6466,
+     14.9063,
+     4.1181
+    ]
+   },
+   "height": 14.9063,
+   "radius": 4.1181,
+   "trunkRadius": 0.126,
+   "materials": [
+    {
+     "name": "bark_bark",
+     "foliage": false
+    },
+    {
+     "name": "bark_trunk_b",
+     "foliage": false
+    },
+    {
+     "name": "foliage_cards",
+     "foliage": true
+    }
+   ],
+   "source": {
+    "url": "https://polyhaven.com/a/pine_tree_01",
+    "authors": [
+     "Rob Tuytel",
+     "Rico Cilliers"
+    ],
+    "license": "CC0-1.0"
+   },
+   "variantOf": "pine_tree_01",
+   "bytes": 3908572
+  },
+  "pine_tree_01__c": {
+   "name": "Pine Tree 01 (C)",
+   "category": "tree_conifer",
+   "lods": [
+    {
+     "file": "models/pine_tree_01__c/lod0.glb",
+     "triangles": 30056
+    },
+    {
+     "file": "models/pine_tree_01__c/lod1.glb",
+     "triangles": 6876
+    },
+    {
+     "file": "models/pine_tree_01__c/lod2.glb",
+     "triangles": 1800
+    }
+   ],
+   "bounds": {
+    "min": [
+     -3.2251,
+     0,
+     -4.0962
+    ],
+    "max": [
+     4.4732,
+     17.5675,
+     3.8457
+    ]
+   },
+   "height": 17.5675,
+   "radius": 4.4932,
+   "trunkRadius": 0.116,
+   "materials": [
+    {
+     "name": "bark_bark",
+     "foliage": false
+    },
+    {
+     "name": "foliage_cards",
+     "foliage": true
+    }
+   ],
+   "source": {
+    "url": "https://polyhaven.com/a/pine_tree_01",
+    "authors": [
+     "Rob Tuytel",
+     "Rico Cilliers"
+    ],
+    "license": "CC0-1.0"
+   },
+   "variantOf": "pine_tree_01",
+   "bytes": 3364848
+  },
+  "fir_sapling_medium__a": {
+   "name": "Fir Sapling Medium (A)",
+   "category": "tree_conifer",
+   "lods": [
+    {
+     "file": "models/fir_sapling_medium__a/lod0.glb",
+     "triangles": 27705
+    },
+    {
+     "file": "models/fir_sapling_medium__a/lod1.glb",
+     "triangles": 7961
+    },
+    {
+     "file": "models/fir_sapling_medium__a/lod2.glb",
+     "triangles": 1850
+    }
+   ],
+   "bounds": {
+    "min": [
+     -2.6078,
+     0,
+     -2.5457
+    ],
+    "max": [
+     2.4329,
+     8.8491,
+     2.7658
+    ]
+   },
+   "height": 8.8491,
+   "radius": 2.9974,
+   "trunkRadius": 0.223,
+   "materials": [
+    {
+     "name": "bark_branches",
+     "foliage": false
+    },
+    {
+     "name": "foliage_cards",
+     "foliage": true
+    }
+   ],
+   "source": {
+    "url": "https://polyhaven.com/a/fir_sapling_medium",
+    "authors": [
+     "Rob Tuytel",
+     "Rico Cilliers"
+    ],
+    "license": "CC0-1.0"
+   },
+   "tags": [
+    "young"
+   ],
+   "variantOf": "fir_sapling_medium",
+   "bytes": 3281060
+  },
+  "fir_sapling_medium__b": {
+   "name": "Fir Sapling Medium (B)",
+   "category": "tree_conifer",
+   "lods": [
+    {
+     "file": "models/fir_sapling_medium__b/lod0.glb",
+     "triangles": 20521
+    },
+    {
+     "file": "models/fir_sapling_medium__b/lod1.glb",
+     "triangles": 7999
+    },
+    {
+     "file": "models/fir_sapling_medium__b/lod2.glb",
+     "triangles": 1999
+    }
+   ],
+   "bounds": {
+    "min": [
+     -2.1075,
+     0,
+     -1.9155
+    ],
+    "max": [
+     2.1718,
+     7.813,
+     2.0853
+    ]
+   },
+   "height": 7.813,
+   "radius": 2.3917,
+   "trunkRadius": 0.15,
+   "materials": [
+    {
+     "name": "bark_branches",
+     "foliage": false
+    },
+    {
+     "name": "foliage_cards",
+     "foliage": true
+    }
+   ],
+   "source": {
+    "url": "https://polyhaven.com/a/fir_sapling_medium",
+    "authors": [
+     "Rob Tuytel",
+     "Rico Cilliers"
+    ],
+    "license": "CC0-1.0"
+   },
+   "tags": [
+    "young"
+   ],
+   "variantOf": "fir_sapling_medium",
+   "bytes": 2935616
+  },
+  "fir_sapling_medium__c": {
+   "name": "Fir Sapling Medium (C)",
+   "category": "tree_conifer",
+   "lods": [
+    {
+     "file": "models/fir_sapling_medium__c/lod0.glb",
+     "triangles": 30000
+    },
+    {
+     "file": "models/fir_sapling_medium__c/lod1.glb",
+     "triangles": 7992
+    },
+    {
+     "file": "models/fir_sapling_medium__c/lod2.glb",
+     "triangles": 1992
+    }
+   ],
+   "bounds": {
+    "min": [
+     -2.1853,
+     0,
+     -1.9052
+    ],
+    "max": [
+     2.1295,
+     5.9245,
+     2.1376
+    ]
+   },
+   "height": 5.9245,
+   "radius": 2.4805,
+   "trunkRadius": 0.226,
+   "materials": [
+    {
+     "name": "bark_branches",
+     "foliage": false
+    },
+    {
+     "name": "foliage_cards",
+     "foliage": true
+    }
+   ],
+   "source": {
+    "url": "https://polyhaven.com/a/fir_sapling_medium",
+    "authors": [
+     "Rob Tuytel",
+     "Rico Cilliers"
+    ],
+    "license": "CC0-1.0"
+   },
+   "tags": [
+    "young"
+   ],
+   "variantOf": "fir_sapling_medium",
+   "bytes": 3561820
+  },
+  "pine_sapling_medium__a": {
+   "name": "Pine Sapling Medium (A)",
+   "category": "tree_conifer",
+   "lods": [
+    {
+     "file": "models/pine_sapling_medium__a/lod0.glb",
+     "triangles": 22318
+    },
+    {
+     "file": "models/pine_sapling_medium__a/lod1.glb",
+     "triangles": 6278
+    },
+    {
+     "file": "models/pine_sapling_medium__a/lod2.glb",
+     "triangles": 1632
+    }
+   ],
+   "bounds": {
+    "min": [
+     -2.7654,
+     0,
+     -2.1924
+    ],
+    "max": [
+     2.4667,
+     11.5445,
+     2.6814
+    ]
+   },
+   "height": 11.5445,
+   "radius": 2.8015,
+   "trunkRadius": 0.242,
+   "materials": [
+    {
+     "name": "bark_bark",
+     "foliage": false
+    },
+    {
+     "name": "foliage_cards",
+     "foliage": true
+    }
+   ],
+   "source": {
+    "url": "https://polyhaven.com/a/pine_sapling_medium",
+    "authors": [
+     "Rob Tuytel",
+     "Rico Cilliers"
+    ],
+    "license": "CC0-1.0"
+   },
+   "tags": [
+    "young"
+   ],
+   "variantOf": "pine_sapling_medium",
+   "bytes": 2792208
+  },
+  "pine_sapling_medium__b": {
+   "name": "Pine Sapling Medium (B)",
+   "category": "tree_conifer",
+   "lods": [
+    {
+     "file": "models/pine_sapling_medium__b/lod0.glb",
+     "triangles": 22491
+    },
+    {
+     "file": "models/pine_sapling_medium__b/lod1.glb",
+     "triangles": 6609
+    },
+    {
+     "file": "models/pine_sapling_medium__b/lod2.glb",
+     "triangles": 1708
+    }
+   ],
+   "bounds": {
+    "min": [
+     -2.5834,
+     0,
+     -2.6507
+    ],
+    "max": [
+     2.2125,
+     9.1556,
+     2.8391
+    ]
+   },
+   "height": 9.1556,
+   "radius": 2.9792,
+   "trunkRadius": 0.259,
+   "materials": [
+    {
+     "name": "bark_bark",
+     "foliage": false
+    },
+    {
+     "name": "foliage_cards",
+     "foliage": true
+    }
+   ],
+   "source": {
+    "url": "https://polyhaven.com/a/pine_sapling_medium",
+    "authors": [
+     "Rob Tuytel",
+     "Rico Cilliers"
+    ],
+    "license": "CC0-1.0"
+   },
+   "tags": [
+    "young"
+   ],
+   "variantOf": "pine_sapling_medium",
+   "bytes": 2917608
+  },
+  "pine_sapling_medium__c": {
+   "name": "Pine Sapling Medium (C)",
+   "category": "tree_conifer",
+   "lods": [
+    {
+     "file": "models/pine_sapling_medium__c/lod0.glb",
+     "triangles": 25612
+    },
+    {
+     "file": "models/pine_sapling_medium__c/lod1.glb",
+     "triangles": 7722
+    },
+    {
+     "file": "models/pine_sapling_medium__c/lod2.glb",
+     "triangles": 1893
+    }
+   ],
+   "bounds": {
+    "min": [
+     -2.0754,
+     0,
+     -1.6932
+    ],
+    "max": [
+     1.7949,
+     7.0373,
+     1.8843
+    ]
+   },
+   "height": 7.0373,
+   "radius": 2.0921,
+   "trunkRadius": 0.257,
+   "materials": [
+    {
+     "name": "bark_bark",
+     "foliage": false
+    },
+    {
+     "name": "foliage_cards",
+     "foliage": true
+    }
+   ],
+   "source": {
+    "url": "https://polyhaven.com/a/pine_sapling_medium",
+    "authors": [
+     "Rob Tuytel",
+     "Rico Cilliers"
+    ],
+    "license": "CC0-1.0"
+   },
+   "tags": [
+    "young"
+   ],
+   "variantOf": "pine_sapling_medium",
+   "bytes": 3282596
+  },
+  "fir_sapling__a": {
+   "name": "Fir Sapling (A)",
+   "category": "tree_conifer",
+   "lods": [
+    {
+     "file": "models/fir_sapling__a/lod0.glb",
+     "triangles": 2868
+    },
+    {
+     "file": "models/fir_sapling__a/lod1.glb",
+     "triangles": 1058
+    }
+   ],
+   "bounds": {
+    "min": [
+     -0.4379,
+     0,
+     -0.4278
+    ],
+    "max": [
+     0.4311,
+     1.3032,
+     0.4009
+    ]
+   },
+   "height": 1.3032,
+   "radius": 0.4725,
+   "trunkRadius": 0.014,
+   "materials": [
+    {
+     "name": "bark_branches",
+     "foliage": false
+    },
+    {
+     "name": "foliage_cards",
+     "foliage": true
+    }
+   ],
+   "source": {
+    "url": "https://polyhaven.com/a/fir_sapling",
+    "authors": [
+     "Rob Tuytel",
+     "Rico Cilliers"
+    ],
+    "license": "CC0-1.0"
+   },
+   "tags": [
+    "sapling"
+   ],
+   "variantOf": "fir_sapling",
+   "bytes": 1318184
+  },
+  "fir_sapling__b": {
+   "name": "Fir Sapling (B)",
+   "category": "tree_conifer",
+   "lods": [
+    {
+     "file": "models/fir_sapling__b/lod0.glb",
+     "triangles": 3570
+    },
+    {
+     "file": "models/fir_sapling__b/lod1.glb",
+     "triangles": 1190
+    }
+   ],
+   "bounds": {
+    "min": [
+     -0.3316,
+     0,
+     -0.4336
+    ],
+    "max": [
+     0.3194,
+     0.9537,
+     0.3946
+    ]
+   },
+   "height": 0.9537,
+   "radius": 0.4611,
+   "trunkRadius": 0.007,
+   "materials": [
+    {
+     "name": "bark_branches",
+     "foliage": false
+    },
+    {
+     "name": "foliage_cards",
+     "foliage": true
+    }
+   ],
+   "source": {
+    "url": "https://polyhaven.com/a/fir_sapling",
+    "authors": [
+     "Rob Tuytel",
+     "Rico Cilliers"
+    ],
+    "license": "CC0-1.0"
+   },
+   "tags": [
+    "sapling"
+   ],
+   "variantOf": "fir_sapling",
+   "bytes": 1379284
+  },
+  "fir_sapling__c": {
+   "name": "Fir Sapling (C)",
+   "category": "tree_conifer",
+   "lods": [
+    {
+     "file": "models/fir_sapling__c/lod0.glb",
+     "triangles": 2494
+    },
+    {
+     "file": "models/fir_sapling__c/lod1.glb",
+     "triangles": 884
+    }
+   ],
+   "bounds": {
+    "min": [
+     -0.318,
+     0,
+     -0.3284
+    ],
+    "max": [
+     0.3116,
+     0.7397,
+     0.3141
+    ]
+   },
+   "height": 0.7397,
+   "radius": 0.3943,
+   "trunkRadius": 0.005,
+   "materials": [
+    {
+     "name": "bark_branches",
+     "foliage": false
+    },
+    {
+     "name": "foliage_cards",
+     "foliage": true
+    }
+   ],
+   "source": {
+    "url": "https://polyhaven.com/a/fir_sapling",
+    "authors": [
+     "Rob Tuytel",
+     "Rico Cilliers"
+    ],
+    "license": "CC0-1.0"
+   },
+   "tags": [
+    "sapling"
+   ],
+   "variantOf": "fir_sapling",
+   "bytes": 1297556
+  },
+  "pine_sapling_small__a": {
+   "name": "Pine Sapling Small (A)",
+   "category": "tree_conifer",
+   "lods": [
+    {
+     "file": "models/pine_sapling_small__a/lod0.glb",
+     "triangles": 2142
+    },
+    {
+     "file": "models/pine_sapling_small__a/lod1.glb",
+     "triangles": 958
+    }
+   ],
+   "bounds": {
+    "min": [
+     -0.3695,
+     0,
+     -0.3934
+    ],
+    "max": [
+     0.4379,
+     1.318,
+     0.3632
+    ]
+   },
+   "height": 1.318,
+   "radius": 0.4815,
+   "trunkRadius": 0.011,
+   "materials": [
+    {
+     "name": "bark_bark",
+     "foliage": false
+    },
+    {
+     "name": "foliage_cards",
+     "foliage": true
+    }
+   ],
+   "source": {
+    "url": "https://polyhaven.com/a/pine_sapling_small",
+    "authors": [
+     "Rob Tuytel",
+     "Rico Cilliers"
+    ],
+    "license": "CC0-1.0"
+   },
+   "tags": [
+    "sapling"
+   ],
+   "variantOf": "pine_sapling_small",
+   "bytes": 697436
+  },
+  "pine_sapling_small__b": {
+   "name": "Pine Sapling Small (B)",
+   "category": "tree_conifer",
+   "lods": [
+    {
+     "file": "models/pine_sapling_small__b/lod0.glb",
+     "triangles": 2390
+    },
+    {
+     "file": "models/pine_sapling_small__b/lod1.glb",
+     "triangles": 942
+    }
+   ],
+   "bounds": {
+    "min": [
+     -0.2815,
+     0,
+     -0.3419
+    ],
+    "max": [
+     0.2775,
+     1.0557,
+     0.4087
+    ]
+   },
+   "height": 1.0557,
+   "radius": 0.4197,
+   "trunkRadius": 0.007,
+   "materials": [
+    {
+     "name": "bark_bark",
+     "foliage": false
+    },
+    {
+     "name": "foliage_cards",
+     "foliage": true
+    }
+   ],
+   "source": {
+    "url": "https://polyhaven.com/a/pine_sapling_small",
+    "authors": [
+     "Rob Tuytel",
+     "Rico Cilliers"
+    ],
+    "license": "CC0-1.0"
+   },
+   "tags": [
+    "sapling"
+   ],
+   "variantOf": "pine_sapling_small",
+   "bytes": 707448
+  },
+  "pine_sapling_small__c": {
+   "name": "Pine Sapling Small (C)",
+   "category": "tree_conifer",
+   "lods": [
+    {
+     "file": "models/pine_sapling_small__c/lod0.glb",
+     "triangles": 2036
+    },
+    {
+     "file": "models/pine_sapling_small__c/lod1.glb",
+     "triangles": 930
+    }
+   ],
+   "bounds": {
+    "min": [
+     -0.242,
+     0,
+     -0.3318
+    ],
+    "max": [
+     0.2924,
+     0.9635,
+     0.2724
+    ]
+   },
+   "height": 0.9635,
+   "radius": 0.3559,
+   "trunkRadius": 0.006,
+   "materials": [
+    {
+     "name": "bark_bark",
+     "foliage": false
+    },
+    {
+     "name": "foliage_cards",
+     "foliage": true
+    }
+   ],
+   "source": {
+    "url": "https://polyhaven.com/a/pine_sapling_small",
+    "authors": [
+     "Rob Tuytel",
+     "Rico Cilliers"
+    ],
+    "license": "CC0-1.0"
+   },
+   "tags": [
+    "sapling"
+   ],
+   "variantOf": "pine_sapling_small",
+   "bytes": 706612
+  },
+  "island_tree_01": {
+   "name": "Island Tree 01",
+   "category": "tree_broadleaf",
+   "lods": [
+    {
+     "file": "models/island_tree_01/lod0.glb",
+     "triangles": 44879
+    },
+    {
+     "file": "models/island_tree_01/lod1.glb",
+     "triangles": 8943
+    },
+    {
+     "file": "models/island_tree_01/lod2.glb",
+     "triangles": 1980
+    }
+   ],
+   "bounds": {
+    "min": [
+     -2.3111,
+     0,
+     -2.5724
+    ],
+    "max": [
+     2.4542,
+     5.0378,
+     2.2405
+    ]
+   },
+   "height": 5.0378,
+   "radius": 2.8732,
+   "trunkRadius": 0.213,
+   "materials": [
+    {
+     "name": "bark_island_tree_01",
+     "foliage": false
+    },
+    {
+     "name": "bark_branches",
+     "foliage": false
+    },
+    {
+     "name": "foliage_leaves",
+     "foliage": true
+    }
+   ],
+   "source": {
+    "url": "https://polyhaven.com/a/island_tree_01",
+    "authors": [
+     "Rob Tuytel",
+     "Rico Cilliers"
+    ],
+    "license": "CC0-1.0"
+   },
+   "bytes": 5695552
+  },
+  "island_tree_02": {
+   "name": "Island Tree 02",
+   "category": "tree_broadleaf",
+   "lods": [
+    {
+     "file": "models/island_tree_02/lod0.glb",
+     "triangles": 44889
+    },
+    {
+     "file": "models/island_tree_02/lod1.glb",
+     "triangles": 8822
+    },
+    {
+     "file": "models/island_tree_02/lod2.glb",
+     "triangles": 1994
+    }
+   ],
+   "bounds": {
+    "min": [
+     -2.0557,
+     0,
+     -1.1016
+    ],
+    "max": [
+     2.152,
+     3.4114,
+     2.9397
+    ]
+   },
+   "height": 3.4114,
+   "radius": 3.3183,
+   "trunkRadius": 0.17,
+   "materials": [
+    {
+     "name": "bark_island_tree_02",
+     "foliage": false
+    },
+    {
+     "name": "bark_branches",
+     "foliage": false
+    },
+    {
+     "name": "foliage_leaves",
+     "foliage": true
+    }
+   ],
+   "source": {
+    "url": "https://polyhaven.com/a/island_tree_02",
+    "authors": [
+     "Rob Tuytel",
+     "Rico Cilliers"
+    ],
+    "license": "CC0-1.0"
+   },
+   "bytes": 5376784
+  },
+  "island_tree_03": {
+   "name": "Island Tree 03",
+   "category": "tree_broadleaf",
+   "lods": [
+    {
+     "file": "models/island_tree_03/lod0.glb",
+     "triangles": 44761
+    },
+    {
+     "file": "models/island_tree_03/lod1.glb",
+     "triangles": 6281
+    },
+    {
+     "file": "models/island_tree_03/lod2.glb",
+     "triangles": 1539
+    }
+   ],
+   "bounds": {
+    "min": [
+     -0.8181,
+     0,
+     -1.3849
+    ],
+    "max": [
+     2.1502,
+     2.6274,
+     1.5373
+    ]
+   },
+   "height": 2.6274,
+   "radius": 2.1528,
+   "trunkRadius": 0.42,
+   "materials": [
+    {
+     "name": "bark_island_tree_03",
+     "foliage": false
+    },
+    {
+     "name": "bark_branches",
+     "foliage": false
+    },
+    {
+     "name": "foliage_leaves",
+     "foliage": true
+    }
+   ],
+   "source": {
+    "url": "https://polyhaven.com/a/island_tree_03",
+    "authors": [
+     "Rob Tuytel",
+     "Rico Cilliers"
+    ],
+    "license": "CC0-1.0"
+   },
+   "bytes": 5146824
+  },
+  "tree_small_02": {
+   "name": "Tree Small 02",
+   "category": "tree_broadleaf",
+   "lods": [
+    {
+     "file": "models/tree_small_02/lod0.glb",
+     "triangles": 43368
+    },
+    {
+     "file": "models/tree_small_02/lod1.glb",
+     "triangles": 8806
+    },
+    {
+     "file": "models/tree_small_02/lod2.glb",
+     "triangles": 1969
+    }
+   ],
+   "bounds": {
+    "min": [
+     -1.3171,
+     0,
+     -1.4151
+    ],
+    "max": [
+     1.6286,
+     4.5739,
+     2.9104
+    ]
+   },
+   "height": 4.5739,
+   "radius": 2.9276,
+   "trunkRadius": 0.075,
+   "materials": [
+    {
+     "name": "bark_branches",
+     "foliage": false
+    },
+    {
+     "name": "bark_trunk",
+     "foliage": false
+    },
+    {
+     "name": "foliage_cards",
+     "foliage": true
+    }
+   ],
+   "source": {
+    "url": "https://polyhaven.com/a/tree_small_02",
+    "authors": [
+     "Rico Cilliers"
+    ],
+    "license": "CC0-1.0"
+   },
+   "bytes": 5450568
+  },
+  "jacaranda_tree": {
+   "name": "Jacaranda Tree",
+   "category": "tree_broadleaf",
+   "lods": [
+    {
+     "file": "models/jacaranda_tree/lod0.glb",
+     "triangles": 44341
+    },
+    {
+     "file": "models/jacaranda_tree/lod1.glb",
+     "triangles": 8855
+    },
+    {
+     "file": "models/jacaranda_tree/lod2.glb",
+     "triangles": 1982
+    }
+   ],
+   "bounds": {
+    "min": [
+     -12.9146,
+     0,
+     -9.6195
+    ],
+    "max": [
+     11.5667,
+     19.4508,
+     9.6516
+    ]
+   },
+   "height": 19.4508,
+   "radius": 13.1537,
+   "trunkRadius": 0.603,
+   "materials": [
+    {
+     "name": "bark_branches",
+     "foliage": false
+    },
+    {
+     "name": "bark_trunk",
+     "foliage": false
+    },
+    {
+     "name": "foliage_cards",
+     "foliage": true
+    }
+   ],
+   "source": {
+    "url": "https://polyhaven.com/a/jacaranda_tree",
+    "authors": [
+     "Rob Tuytel",
+     "Rico Cilliers"
+    ],
+    "license": "CC0-1.0"
+   },
+   "bytes": 5997644
+  },
+  "shrub_01__a": {
+   "name": "Shrub 01 (A)",
+   "category": "shrub",
+   "lods": [
+    {
+     "file": "models/shrub_01__a/lod0.glb",
+     "triangles": 7581
+    },
+    {
+     "file": "models/shrub_01__a/lod1.glb",
+     "triangles": 1393
+    }
+   ],
+   "bounds": {
+    "min": [
+     -0.0844,
+     0,
+     -0.0897
+    ],
+    "max": [
+     0.0976,
+     0.3565,
+     0.0907
+    ]
+   },
+   "height": 0.3565,
+   "radius": 0.0979,
+   "materials": [
+    {
+     "name": "foliage_shrub_01",
+     "foliage": true
+    }
+   ],
+   "source": {
+    "url": "https://polyhaven.com/a/shrub_01",
+    "authors": [
+     "Rico Cilliers"
+    ],
+    "license": "CC0-1.0"
+   },
+   "variantOf": "shrub_01",
+   "bytes": 444228
+  },
+  "shrub_01__b": {
+   "name": "Shrub 01 (B)",
+   "category": "shrub",
+   "lods": [
+    {
+     "file": "models/shrub_01__b/lod0.glb",
+     "triangles": 7062
+    },
+    {
+     "file": "models/shrub_01__b/lod1.glb",
+     "triangles": 1384
+    }
+   ],
+   "bounds": {
+    "min": [
+     -0.0996,
+     0,
+     -0.1129
+    ],
+    "max": [
+     0.1345,
+     0.3983,
+     0.0911
+    ]
+   },
+   "height": 0.3983,
+   "radius": 0.1503,
+   "materials": [
+    {
+     "name": "foliage_shrub_01",
+     "foliage": true
+    }
+   ],
+   "source": {
+    "url": "https://polyhaven.com/a/shrub_01",
+    "authors": [
+     "Rico Cilliers"
+    ],
+    "license": "CC0-1.0"
+   },
+   "variantOf": "shrub_01",
+   "bytes": 464604
+  },
+  "shrub_01__c": {
+   "name": "Shrub 01 (C)",
+   "category": "shrub",
+   "lods": [
+    {
+     "file": "models/shrub_01__c/lod0.glb",
+     "triangles": 2676
+    },
+    {
+     "file": "models/shrub_01__c/lod1.glb",
+     "triangles": 1486
+    }
+   ],
+   "bounds": {
+    "min": [
+     -0.0612,
+     0,
+     -0.041
+    ],
+    "max": [
+     0.0306,
+     0.1156,
+     0.0567
+    ]
+   },
+   "height": 0.1156,
+   "radius": 0.0646,
+   "materials": [
+    {
+     "name": "foliage_shrub_01",
+     "foliage": true
+    }
+   ],
+   "source": {
+    "url": "https://polyhaven.com/a/shrub_01",
+    "authors": [
+     "Rico Cilliers"
+    ],
+    "license": "CC0-1.0"
+   },
+   "variantOf": "shrub_01",
+   "bytes": 234960
+  },
+  "shrub_01__d": {
+   "name": "Shrub 01 (D)",
+   "category": "shrub",
+   "lods": [
+    {
+     "file": "models/shrub_01__d/lod0.glb",
+     "triangles": 4040
+    },
+    {
+     "file": "models/shrub_01__d/lod1.glb",
+     "triangles": 1481
+    }
+   ],
+   "bounds": {
+    "min": [
+     -0.0474,
+     0,
+     -0.0761
+    ],
+    "max": [
+     0.0879,
+     0.2006,
+     0.0762
+    ]
+   },
+   "height": 0.2006,
+   "radius": 0.0926,
+   "materials": [
+    {
+     "name": "foliage_shrub_01",
+     "foliage": true
+    }
+   ],
+   "source": {
+    "url": "https://polyhaven.com/a/shrub_01",
+    "authors": [
+     "Rico Cilliers"
+    ],
+    "license": "CC0-1.0"
+   },
+   "variantOf": "shrub_01",
+   "bytes": 270800
+  },
+  "shrub_01__e": {
+   "name": "Shrub 01 (E)",
+   "category": "shrub",
+   "lods": [
+    {
+     "file": "models/shrub_01__e/lod0.glb",
+     "triangles": 6064
+    },
+    {
+     "file": "models/shrub_01__e/lod1.glb",
+     "triangles": 1476
+    }
+   ],
+   "bounds": {
+    "min": [
+     -0.0742,
+     0,
+     -0.0865
+    ],
+    "max": [
+     0.1078,
+     0.3323,
+     0.0886
+    ]
+   },
+   "height": 0.3323,
+   "radius": 0.1082,
+   "materials": [
+    {
+     "name": "foliage_shrub_01",
+     "foliage": true
+    }
+   ],
+   "source": {
+    "url": "https://polyhaven.com/a/shrub_01",
+    "authors": [
+     "Rico Cilliers"
+    ],
+    "license": "CC0-1.0"
+   },
+   "variantOf": "shrub_01",
+   "bytes": 323972
+  },
+  "shrub_02__a": {
+   "name": "Shrub 02 (A)",
+   "category": "shrub",
+   "lods": [
+    {
+     "file": "models/shrub_02__a/lod0.glb",
+     "triangles": 7590
+    },
+    {
+     "file": "models/shrub_02__a/lod1.glb",
+     "triangles": 1401
+    }
+   ],
+   "bounds": {
+    "min": [
+     -0.5755,
+     0,
+     -0.8818
+    ],
+    "max": [
+     0.7365,
+     1.689,
+     0.7592
+    ]
+   },
+   "height": 1.689,
+   "radius": 0.9146,
+   "materials": [
+    {
+     "name": "foliage_shrub_02",
+     "foliage": true
+    }
+   ],
+   "source": {
+    "url": "https://polyhaven.com/a/shrub_02",
+    "authors": [
+     "Rico Cilliers"
+    ],
+    "license": "CC0-1.0"
+   },
+   "variantOf": "shrub_02",
+   "bytes": 516932
+  },
+  "shrub_02__b": {
+   "name": "Shrub 02 (B)",
+   "category": "shrub",
+   "lods": [
+    {
+     "file": "models/shrub_02__b/lod0.glb",
+     "triangles": 5242
+    },
+    {
+     "file": "models/shrub_02__b/lod1.glb",
+     "triangles": 1455
+    }
+   ],
+   "bounds": {
+    "min": [
+     -0.5837,
+     0,
+     -0.4636
+    ],
+    "max": [
+     0.5265,
+     1.5063,
+     0.8163
+    ]
+   },
+   "height": 1.5063,
+   "radius": 0.9837,
+   "materials": [
+    {
+     "name": "foliage_shrub_02",
+     "foliage": true
+    }
+   ],
+   "source": {
+    "url": "https://polyhaven.com/a/shrub_02",
+    "authors": [
+     "Rico Cilliers"
+    ],
+    "license": "CC0-1.0"
+   },
+   "variantOf": "shrub_02",
+   "bytes": 452412
+  },
+  "shrub_02__c": {
+   "name": "Shrub 02 (C)",
+   "category": "shrub",
+   "lods": [
+    {
+     "file": "models/shrub_02__c/lod0.glb",
+     "triangles": 7938
+    },
+    {
+     "file": "models/shrub_02__c/lod1.glb",
+     "triangles": 1378
+    }
+   ],
+   "bounds": {
+    "min": [
+     -0.7454,
+     0,
+     -1.1686
+    ],
+    "max": [
+     1.0309,
+     1.3406,
+     1.1515
+    ]
+   },
+   "height": 1.3406,
+   "radius": 1.2054,
+   "materials": [
+    {
+     "name": "foliage_shrub_02",
+     "foliage": true
+    }
+   ],
+   "source": {
+    "url": "https://polyhaven.com/a/shrub_02",
+    "authors": [
+     "Rico Cilliers"
+    ],
+    "license": "CC0-1.0"
+   },
+   "variantOf": "shrub_02",
+   "bytes": 535636
+  },
+  "shrub_02__d": {
+   "name": "Shrub 02 (D)",
+   "category": "shrub",
+   "lods": [
+    {
+     "file": "models/shrub_02__d/lod0.glb",
+     "triangles": 5188
+    },
+    {
+     "file": "models/shrub_02__d/lod1.glb",
+     "triangles": 1453
+    }
+   ],
+   "bounds": {
+    "min": [
+     -0.4382,
+     0,
+     -0.6511
+    ],
+    "max": [
+     0.642,
+     1.2292,
+     0.4469
+    ]
+   },
+   "height": 1.2292,
+   "radius": 0.8954,
+   "materials": [
+    {
+     "name": "foliage_shrub_02",
+     "foliage": true
+    }
+   ],
+   "source": {
+    "url": "https://polyhaven.com/a/shrub_02",
+    "authors": [
+     "Rico Cilliers"
+    ],
+    "license": "CC0-1.0"
+   },
+   "variantOf": "shrub_02",
+   "bytes": 449100
+  },
+  "shrub_03__a": {
+   "name": "Shrub 03 (A)",
+   "category": "shrub",
+   "lods": [
+    {
+     "file": "models/shrub_03__a/lod0.glb",
+     "triangles": 2385
+    },
+    {
+     "file": "models/shrub_03__a/lod1.glb",
+     "triangles": 1464
+    }
+   ],
+   "bounds": {
+    "min": [
+     -0.0736,
+     0,
+     -0.0727
+    ],
+    "max": [
+     0.127,
+     0.4028,
+     0.0785
+    ]
+   },
+   "height": 0.4028,
+   "radius": 0.1276,
+   "materials": [
+    {
+     "name": "foliage_shrub_03",
+     "foliage": true
+    }
+   ],
+   "source": {
+    "url": "https://polyhaven.com/a/shrub_03",
+    "authors": [
+     "Rico Cilliers"
+    ],
+    "license": "CC0-1.0"
+   },
+   "variantOf": "shrub_03",
+   "bytes": 239188
+  },
+  "shrub_03__b": {
+   "name": "Shrub 03 (B)",
+   "category": "shrub",
+   "lods": [
+    {
+     "file": "models/shrub_03__b/lod0.glb",
+     "triangles": 2134
+    },
+    {
+     "file": "models/shrub_03__b/lod1.glb",
+     "triangles": 1466
+    }
+   ],
+   "bounds": {
+    "min": [
+     -0.0926,
+     0,
+     -0.0614
+    ],
+    "max": [
+     0.0917,
+     0.3525,
+     0.0612
+    ]
+   },
+   "height": 0.3525,
+   "radius": 0.0946,
+   "materials": [
+    {
+     "name": "foliage_shrub_03",
+     "foliage": true
+    }
+   ],
+   "source": {
+    "url": "https://polyhaven.com/a/shrub_03",
+    "authors": [
+     "Rico Cilliers"
+    ],
+    "license": "CC0-1.0"
+   },
+   "variantOf": "shrub_03",
+   "bytes": 232316
+  },
+  "shrub_03__c": {
+   "name": "Shrub 03 (C)",
+   "category": "shrub",
+   "lods": [
+    {
+     "file": "models/shrub_03__c/lod0.glb",
+     "triangles": 1790
+    },
+    {
+     "file": "models/shrub_03__c/lod1.glb",
+     "triangles": 1463
+    }
+   ],
+   "bounds": {
+    "min": [
+     -0.0354,
+     0,
+     -0.0522
+    ],
+    "max": [
+     0.0604,
+     0.3044,
+     0.061
+    ]
+   },
+   "height": 0.3044,
+   "radius": 0.0687,
+   "materials": [
+    {
+     "name": "foliage_shrub_03",
+     "foliage": true
+    }
+   ],
+   "source": {
+    "url": "https://polyhaven.com/a/shrub_03",
+    "authors": [
+     "Rico Cilliers"
+    ],
+    "license": "CC0-1.0"
+   },
+   "variantOf": "shrub_03",
+   "bytes": 220544
+  },
+  "shrub_03__d": {
+   "name": "Shrub 03 (D)",
+   "category": "shrub",
+   "lods": [
+    {
+     "file": "models/shrub_03__d/lod0.glb",
+     "triangles": 1978
+    },
+    {
+     "file": "models/shrub_03__d/lod1.glb",
+     "triangles": 1463
+    }
+   ],
+   "bounds": {
+    "min": [
+     -0.0477,
+     0,
+     -0.0343
+    ],
+    "max": [
+     0.0651,
+     0.2556,
+     0.055
+    ]
+   },
+   "height": 0.2556,
+   "radius": 0.0681,
+   "materials": [
+    {
+     "name": "foliage_shrub_03",
+     "foliage": true
+    }
+   ],
+   "source": {
+    "url": "https://polyhaven.com/a/shrub_03",
+    "authors": [
+     "Rico Cilliers"
+    ],
+    "license": "CC0-1.0"
+   },
+   "variantOf": "shrub_03",
+   "bytes": 225796
+  },
+  "shrub_04__a": {
+   "name": "Shrub 04 (A)",
+   "category": "shrub",
+   "lods": [
+    {
+     "file": "models/shrub_04__a/lod0.glb",
+     "triangles": 6589
+    },
+    {
+     "file": "models/shrub_04__a/lod1.glb",
+     "triangles": 1378
+    }
+   ],
+   "bounds": {
+    "min": [
+     -0.064,
+     0,
+     -0.0663
+    ],
+    "max": [
+     0.0476,
+     0.1623,
+     0.0638
+    ]
+   },
+   "height": 0.1623,
+   "radius": 0.077,
+   "materials": [
+    {
+     "name": "foliage_shrub_04",
+     "foliage": true
+    }
+   ],
+   "source": {
+    "url": "https://polyhaven.com/a/shrub_04",
+    "authors": [
+     "Rico Cilliers"
+    ],
+    "license": "CC0-1.0"
+   },
+   "variantOf": "shrub_04",
+   "bytes": 327132
+  },
+  "shrub_04__b": {
+   "name": "Shrub 04 (B)",
+   "category": "shrub",
+   "lods": [
+    {
+     "file": "models/shrub_04__b/lod0.glb",
+     "triangles": 7804
+    },
+    {
+     "file": "models/shrub_04__b/lod1.glb",
+     "triangles": 1389
+    }
+   ],
+   "bounds": {
+    "min": [
+     -0.1598,
+     0,
+     -0.0749
+    ],
+    "max": [
+     0.1323,
+     0.2266,
+     0.0728
+    ]
+   },
+   "height": 0.2266,
+   "radius": 0.161,
+   "materials": [
+    {
+     "name": "foliage_shrub_04",
+     "foliage": true
+    }
+   ],
+   "source": {
+    "url": "https://polyhaven.com/a/shrub_04",
+    "authors": [
+     "Rico Cilliers"
+    ],
+    "license": "CC0-1.0"
+   },
+   "variantOf": "shrub_04",
+   "bytes": 393496
+  },
+  "shrub_04__c": {
+   "name": "Shrub 04 (C)",
+   "category": "shrub",
+   "lods": [
+    {
+     "file": "models/shrub_04__c/lod0.glb",
+     "triangles": 3726
+    },
+    {
+     "file": "models/shrub_04__c/lod1.glb",
+     "triangles": 1448
+    }
+   ],
+   "bounds": {
+    "min": [
+     -0.0251,
+     0,
+     -0.0308
+    ],
+    "max": [
+     0.081,
+     0.1525,
+     0.0541
+    ]
+   },
+   "height": 0.1525,
+   "radius": 0.0822,
+   "materials": [
+    {
+     "name": "foliage_shrub_04",
+     "foliage": true
+    }
+   ],
+   "source": {
+    "url": "https://polyhaven.com/a/shrub_04",
+    "authors": [
+     "Rico Cilliers"
+    ],
+    "license": "CC0-1.0"
+   },
+   "variantOf": "shrub_04",
+   "bytes": 246436
+  },
+  "searsia_lucida__a": {
+   "name": "Searsia Lucida (A)",
+   "category": "shrub",
+   "lods": [
+    {
+     "file": "models/searsia_lucida__a/lod0.glb",
+     "triangles": 7206
+    },
+    {
+     "file": "models/searsia_lucida__a/lod1.glb",
+     "triangles": 1500
+    }
+   ],
+   "bounds": {
+    "min": [
+     -0.8328,
+     0,
+     -0.8575
+    ],
+    "max": [
+     1.0868,
+     2.3337,
+     1.1106
+    ]
+   },
+   "height": 2.3337,
+   "radius": 1.2256,
+   "materials": [
+    {
+     "name": "foliage_searsia_lucida",
+     "foliage": true
+    },
+    {
+     "name": "foliage_leaves",
+     "foliage": true
+    }
+   ],
+   "source": {
+    "url": "https://polyhaven.com/a/searsia_lucida",
+    "authors": [
+     "James Ray Cock",
+     "Jenelle van Heerden"
+    ],
+    "license": "CC0-1.0"
+   },
+   "variantOf": "searsia_lucida",
+   "bytes": 1058012
+  },
+  "searsia_lucida__b": {
+   "name": "Searsia Lucida (B)",
+   "category": "shrub",
+   "lods": [
+    {
+     "file": "models/searsia_lucida__b/lod0.glb",
+     "triangles": 6946
+    },
+    {
+     "file": "models/searsia_lucida__b/lod1.glb",
+     "triangles": 1500
+    }
+   ],
+   "bounds": {
+    "min": [
+     -0.7917,
+     0,
+     -0.6354
+    ],
+    "max": [
+     0.7279,
+     1.6809,
+     0.5936
+    ]
+   },
+   "height": 1.6809,
+   "radius": 0.9322,
+   "materials": [
+    {
+     "name": "foliage_searsia_lucida",
+     "foliage": true
+    },
+    {
+     "name": "foliage_leaves",
+     "foliage": true
+    }
+   ],
+   "source": {
+    "url": "https://polyhaven.com/a/searsia_lucida",
+    "authors": [
+     "James Ray Cock",
+     "Jenelle van Heerden"
+    ],
+    "license": "CC0-1.0"
+   },
+   "variantOf": "searsia_lucida",
+   "bytes": 1054980
+  },
+  "searsia_lucida__c": {
+   "name": "Searsia Lucida (C)",
+   "category": "shrub",
+   "lods": [
+    {
+     "file": "models/searsia_lucida__c/lod0.glb",
+     "triangles": 6199
+    },
+    {
+     "file": "models/searsia_lucida__c/lod1.glb",
+     "triangles": 1257
+    }
+   ],
+   "bounds": {
+    "min": [
+     -0.5187,
+     0,
+     -0.3522
+    ],
+    "max": [
+     0.5197,
+     1.0414,
+     0.3548
+    ]
+   },
+   "height": 1.0414,
+   "radius": 0.5525,
+   "materials": [
+    {
+     "name": "foliage_searsia_lucida",
+     "foliage": true
+    },
+    {
+     "name": "foliage_leaves",
+     "foliage": true
+    }
+   ],
+   "source": {
+    "url": "https://polyhaven.com/a/searsia_lucida",
+    "authors": [
+     "James Ray Cock",
+     "Jenelle van Heerden"
+    ],
+    "license": "CC0-1.0"
+   },
+   "variantOf": "searsia_lucida",
+   "bytes": 1146116
+  },
+  "searsia_lucida__d": {
+   "name": "Searsia Lucida (D)",
+   "category": "shrub",
+   "lods": [
+    {
+     "file": "models/searsia_lucida__d/lod0.glb",
+     "triangles": 6302
+    },
+    {
+     "file": "models/searsia_lucida__d/lod1.glb",
+     "triangles": 1314
+    }
+   ],
+   "bounds": {
+    "min": [
+     -0.2082,
+     0,
+     -0.1517
+    ],
+    "max": [
+     0.1735,
+     0.7868,
+     0.1732
+    ]
+   },
+   "height": 0.7868,
+   "radius": 0.2172,
+   "materials": [
+    {
+     "name": "foliage_searsia_lucida",
+     "foliage": true
+    },
+    {
+     "name": "foliage_leaves",
+     "foliage": true
+    }
+   ],
+   "source": {
+    "url": "https://polyhaven.com/a/searsia_lucida",
+    "authors": [
+     "James Ray Cock",
+     "Jenelle van Heerden"
+    ],
+    "license": "CC0-1.0"
+   },
+   "variantOf": "searsia_lucida",
+   "bytes": 1035948
+  },
+  "fern_02__a": {
+   "name": "Fern 02 (A)",
+   "category": "groundcover",
+   "lods": [
+    {
+     "file": "models/fern_02__a/lod0.glb",
+     "triangles": 784
+    },
+    {
+     "file": "models/fern_02__a/lod1.glb",
+     "triangles": 243
+    }
+   ],
+   "bounds": {
+    "min": [
+     -0.3155,
+     0,
+     -0.2795
+    ],
+    "max": [
+     0.2364,
+     0.2868,
+     0.3339
+    ]
+   },
+   "height": 0.2868,
+   "radius": 0.3415,
+   "materials": [
+    {
+     "name": "foliage_fern_02",
+     "foliage": true
+    }
+   ],
+   "source": {
+    "url": "https://polyhaven.com/a/fern_02",
+    "authors": [
+     "Rob Tuytel",
+     "Rico Cilliers"
+    ],
+    "license": "CC0-1.0"
+   },
+   "variantOf": "fern_02",
+   "bytes": 292608
+  },
+  "fern_02__b": {
+   "name": "Fern 02 (B)",
+   "category": "groundcover",
+   "lods": [
+    {
+     "file": "models/fern_02__b/lod0.glb",
+     "triangles": 1184
+    },
+    {
+     "file": "models/fern_02__b/lod1.glb",
+     "triangles": 231
+    }
+   ],
+   "bounds": {
+    "min": [
+     -0.3843,
+     0,
+     -0.4574
+    ],
+    "max": [
+     0.6463,
+     0.4517,
+     0.4701
+    ]
+   },
+   "height": 0.4517,
+   "radius": 0.7808,
+   "materials": [
+    {
+     "name": "foliage_fern_02",
+     "foliage": true
+    }
+   ],
+   "source": {
+    "url": "https://polyhaven.com/a/fern_02",
+    "authors": [
+     "Rob Tuytel",
+     "Rico Cilliers"
+    ],
+    "license": "CC0-1.0"
+   },
+   "variantOf": "fern_02",
+   "bytes": 307028
+  },
+  "fern_02__c": {
+   "name": "Fern 02 (C)",
+   "category": "groundcover",
+   "lods": [
+    {
+     "file": "models/fern_02__c/lod0.glb",
+     "triangles": 1187
+    },
+    {
+     "file": "models/fern_02__c/lod1.glb",
+     "triangles": 232
+    }
+   ],
+   "bounds": {
+    "min": [
+     -0.4626,
+     0,
+     -0.4093
+    ],
+    "max": [
+     0.4469,
+     0.3692,
+     0.3856
+    ]
+   },
+   "height": 0.3692,
+   "radius": 0.5092,
+   "materials": [
+    {
+     "name": "foliage_fern_02",
+     "foliage": true
+    }
+   ],
+   "source": {
+    "url": "https://polyhaven.com/a/fern_02",
+    "authors": [
+     "Rob Tuytel",
+     "Rico Cilliers"
+    ],
+    "license": "CC0-1.0"
+   },
+   "variantOf": "fern_02",
+   "bytes": 307052
+  },
+  "fern_02__d": {
+   "name": "Fern 02 (D)",
+   "category": "groundcover",
+   "lods": [
+    {
+     "file": "models/fern_02__d/lod0.glb",
+     "triangles": 816
+    },
+    {
+     "file": "models/fern_02__d/lod1.glb",
+     "triangles": 247
+    }
+   ],
+   "bounds": {
+    "min": [
+     -0.3023,
+     0,
+     -0.3498
+    ],
+    "max": [
+     0.2705,
+     0.2131,
+     0.2435
+    ]
+   },
+   "height": 0.2131,
+   "radius": 0.4007,
+   "materials": [
+    {
+     "name": "foliage_fern_02",
+     "foliage": true
+    }
+   ],
+   "source": {
+    "url": "https://polyhaven.com/a/fern_02",
+    "authors": [
+     "Rob Tuytel",
+     "Rico Cilliers"
+    ],
+    "license": "CC0-1.0"
+   },
+   "variantOf": "fern_02",
+   "bytes": 293492
+  },
+  "nettle_plant__a": {
+   "name": "Nettle Plant (A)",
+   "category": "groundcover",
+   "lods": [
+    {
+     "file": "models/nettle_plant__a/lod0.glb",
+     "triangles": 1186
+    },
+    {
+     "file": "models/nettle_plant__a/lod1.glb",
+     "triangles": 64
+    }
+   ],
+   "bounds": {
+    "min": [
+     -0.0298,
+     0,
+     -0.0491
+    ],
+    "max": [
+     0.0498,
+     0.1357,
+     0.0418
+    ]
+   },
+   "height": 0.1357,
+   "radius": 0.0515,
+   "materials": [
+    {
+     "name": "foliage_nettle_plant",
+     "foliage": true
+    }
+   ],
+   "source": {
+    "url": "https://polyhaven.com/a/nettle_plant",
+    "authors": [
+     "Rob Tuytel",
+     "Rico Cilliers"
+    ],
+    "license": "CC0-1.0"
+   },
+   "variantOf": "nettle_plant",
+   "bytes": 176860
+  },
+  "nettle_plant__b": {
+   "name": "Nettle Plant (B)",
+   "category": "groundcover",
+   "lods": [
+    {
+     "file": "models/nettle_plant__b/lod0.glb",
+     "triangles": 1088
+    },
+    {
+     "file": "models/nettle_plant__b/lod1.glb",
+     "triangles": 8
+    }
+   ],
+   "bounds": {
+    "min": [
+     -0.0302,
+     0,
+     -0.0163
+    ],
+    "max": [
+     0.0295,
+     0.0217,
+     0.0222
+    ]
+   },
+   "height": 0.0217,
+   "radius": 0.0306,
+   "materials": [
+    {
+     "name": "foliage_nettle_plant",
+     "foliage": true
+    }
+   ],
+   "source": {
+    "url": "https://polyhaven.com/a/nettle_plant",
+    "authors": [
+     "Rob Tuytel",
+     "Rico Cilliers"
+    ],
+    "license": "CC0-1.0"
+   },
+   "variantOf": "nettle_plant",
+   "bytes": 161448
+  },
+  "nettle_plant__c": {
+   "name": "Nettle Plant (C)",
+   "category": "groundcover",
+   "lods": [
+    {
+     "file": "models/nettle_plant__c/lod0.glb",
+     "triangles": 1193
+    },
+    {
+     "file": "models/nettle_plant__c/lod1.glb",
+     "triangles": 46
+    }
+   ],
+   "bounds": {
+    "min": [
+     -0.0521,
+     0,
+     -0.0456
+    ],
+    "max": [
+     0.0539,
+     0.2237,
+     0.0466
+    ]
+   },
+   "height": 0.2237,
+   "radius": 0.0553,
+   "materials": [
+    {
+     "name": "foliage_nettle_plant",
+     "foliage": true
+    }
+   ],
+   "source": {
+    "url": "https://polyhaven.com/a/nettle_plant",
+    "authors": [
+     "Rob Tuytel",
+     "Rico Cilliers"
+    ],
+    "license": "CC0-1.0"
+   },
+   "variantOf": "nettle_plant",
+   "bytes": 175024
+  },
+  "nettle_plant__d": {
+   "name": "Nettle Plant (D)",
+   "category": "groundcover",
+   "lods": [
+    {
+     "file": "models/nettle_plant__d/lod0.glb",
+     "triangles": 1192
+    },
+    {
+     "file": "models/nettle_plant__d/lod1.glb",
+     "triangles": 62
+    }
+   ],
+   "bounds": {
+    "min": [
+     -0.043,
+     0,
+     -0.0539
+    ],
+    "max": [
+     0.0444,
+     0.209,
+     0.0469
+    ]
+   },
+   "height": 0.209,
+   "radius": 0.0604,
+   "materials": [
+    {
+     "name": "foliage_nettle_plant",
+     "foliage": true
+    }
+   ],
+   "source": {
+    "url": "https://polyhaven.com/a/nettle_plant",
+    "authors": [
+     "Rob Tuytel",
+     "Rico Cilliers"
+    ],
+    "license": "CC0-1.0"
+   },
+   "variantOf": "nettle_plant",
+   "bytes": 174880
+  },
+  "dandelion_01__a": {
+   "name": "Dandelion 01 (A)",
+   "category": "groundcover",
+   "lods": [
+    {
+     "file": "models/dandelion_01__a/lod0.glb",
+     "triangles": 1121
+    },
+    {
+     "file": "models/dandelion_01__a/lod1.glb",
+     "triangles": 239
+    }
+   ],
+   "bounds": {
+    "min": [
+     -0.1349,
+     0,
+     -0.1496
+    ],
+    "max": [
+     0.1005,
+     0.1747,
+     0.1251
+    ]
+   },
+   "height": 0.1747,
+   "radius": 0.1633,
+   "materials": [
+    {
+     "name": "foliage_dandelion_01",
+     "foliage": true
+    }
+   ],
+   "source": {
+    "url": "https://polyhaven.com/a/dandelion_01",
+    "authors": [
+     "Rob Tuytel",
+     "Rico Cilliers"
+    ],
+    "license": "CC0-1.0"
+   },
+   "variantOf": "dandelion_01",
+   "bytes": 195240
+  },
+  "dandelion_01__b": {
+   "name": "Dandelion 01 (B)",
+   "category": "groundcover",
+   "lods": [
+    {
+     "file": "models/dandelion_01__b/lod0.glb",
+     "triangles": 1142
+    },
+    {
+     "file": "models/dandelion_01__b/lod1.glb",
+     "triangles": 251
+    }
+   ],
+   "bounds": {
+    "min": [
+     -0.1357,
+     0,
+     -0.1181
+    ],
+    "max": [
+     0.0806,
+     0.1229,
+     0.1156
+    ]
+   },
+   "height": 0.1229,
+   "radius": 0.1672,
+   "materials": [
+    {
+     "name": "foliage_dandelion_01",
+     "foliage": true
+    }
+   ],
+   "source": {
+    "url": "https://polyhaven.com/a/dandelion_01",
+    "authors": [
+     "Rob Tuytel",
+     "Rico Cilliers"
+    ],
+    "license": "CC0-1.0"
+   },
+   "variantOf": "dandelion_01",
+   "bytes": 196588
+  },
+  "dandelion_01__c": {
+   "name": "Dandelion 01 (C)",
+   "category": "groundcover",
+   "lods": [
+    {
+     "file": "models/dandelion_01__c/lod0.glb",
+     "triangles": 1168
+    },
+    {
+     "file": "models/dandelion_01__c/lod1.glb",
+     "triangles": 248
+    }
+   ],
+   "bounds": {
+    "min": [
+     -0.083,
+     0,
+     -0.0741
+    ],
+    "max": [
+     0.0919,
+     0.103,
+     0.0979
+    ]
+   },
+   "height": 0.103,
+   "radius": 0.0996,
+   "materials": [
+    {
+     "name": "foliage_dandelion_01",
+     "foliage": true
+    }
+   ],
+   "source": {
+    "url": "https://polyhaven.com/a/dandelion_01",
+    "authors": [
+     "Rob Tuytel",
+     "Rico Cilliers"
+    ],
+    "license": "CC0-1.0"
+   },
+   "variantOf": "dandelion_01",
+   "bytes": 190580
+  },
+  "dandelion_01__d": {
+   "name": "Dandelion 01 (D)",
+   "category": "groundcover",
+   "lods": [
+    {
+     "file": "models/dandelion_01__d/lod0.glb",
+     "triangles": 1189
+    },
+    {
+     "file": "models/dandelion_01__d/lod1.glb",
+     "triangles": 241
+    }
+   ],
+   "bounds": {
+    "min": [
+     -0.0605,
+     0,
+     -0.0839
+    ],
+    "max": [
+     0.0649,
+     0.0579,
+     0.0644
+    ]
+   },
+   "height": 0.0579,
+   "radius": 0.086,
+   "materials": [
+    {
+     "name": "foliage_dandelion_01",
+     "foliage": true
+    }
+   ],
+   "source": {
+    "url": "https://polyhaven.com/a/dandelion_01",
+    "authors": [
+     "Rob Tuytel",
+     "Rico Cilliers"
+    ],
+    "license": "CC0-1.0"
+   },
+   "variantOf": "dandelion_01",
+   "bytes": 190540
+  },
+  "dandelion_01__e": {
+   "name": "Dandelion 01 (E)",
+   "category": "groundcover",
+   "lods": [
+    {
+     "file": "models/dandelion_01__e/lod0.glb",
+     "triangles": 1186
+    },
+    {
+     "file": "models/dandelion_01__e/lod1.glb",
+     "triangles": 240
+    }
+   ],
+   "bounds": {
+    "min": [
+     -0.1262,
+     0,
+     -0.093
+    ],
+    "max": [
+     0.0945,
+     0.0503,
+     0.1189
+    ]
+   },
+   "height": 0.0503,
+   "radius": 0.1266,
+   "materials": [
+    {
+     "name": "foliage_dandelion_01",
+     "foliage": true
+    }
+   ],
+   "source": {
+    "url": "https://polyhaven.com/a/dandelion_01",
+    "authors": [
+     "Rob Tuytel",
+     "Rico Cilliers"
+    ],
+    "license": "CC0-1.0"
+   },
+   "variantOf": "dandelion_01",
+   "bytes": 184644
+  },
+  "celandine_01__a": {
+   "name": "Celandine 01 (A)",
+   "category": "groundcover",
+   "lods": [
+    {
+     "file": "models/celandine_01__a/lod0.glb",
+     "triangles": 622
+    },
+    {
+     "file": "models/celandine_01__a/lod1.glb",
+     "triangles": 243
+    }
+   ],
+   "bounds": {
+    "min": [
+     -0.1456,
+     0,
+     -0.123
+    ],
+    "max": [
+     0.1301,
+     0.1859,
+     0.1052
+    ]
+   },
+   "height": 0.1859,
+   "radius": 0.1505,
+   "materials": [
+    {
+     "name": "foliage_celandine_01",
+     "foliage": true
+    }
+   ],
+   "source": {
+    "url": "https://polyhaven.com/a/celandine_01",
+    "authors": [
+     "Rob Tuytel",
+     "Rico Cilliers"
+    ],
+    "license": "CC0-1.0"
+   },
+   "variantOf": "celandine_01",
+   "bytes": 178808
+  },
+  "celandine_01__b": {
+   "name": "Celandine 01 (B)",
+   "category": "groundcover",
+   "lods": [
+    {
+     "file": "models/celandine_01__b/lod0.glb",
+     "triangles": 599
+    },
+    {
+     "file": "models/celandine_01__b/lod1.glb",
+     "triangles": 243
+    }
+   ],
+   "bounds": {
+    "min": [
+     -0.1364,
+     0,
+     -0.1587
+    ],
+    "max": [
+     0.1153,
+     0.1445,
+     0.148
+    ]
+   },
+   "height": 0.1445,
+   "radius": 0.1686,
+   "materials": [
+    {
+     "name": "foliage_celandine_01",
+     "foliage": true
+    }
+   ],
+   "source": {
+    "url": "https://polyhaven.com/a/celandine_01",
+    "authors": [
+     "Rob Tuytel",
+     "Rico Cilliers"
+    ],
+    "license": "CC0-1.0"
+   },
+   "variantOf": "celandine_01",
+   "bytes": 178028
+  },
+  "celandine_01__c": {
+   "name": "Celandine 01 (C)",
+   "category": "groundcover",
+   "lods": [
+    {
+     "file": "models/celandine_01__c/lod0.glb",
+     "triangles": 1065
+    },
+    {
+     "file": "models/celandine_01__c/lod1.glb",
+     "triangles": 235
+    }
+   ],
+   "bounds": {
+    "min": [
+     -0.1237,
+     0,
+     -0.1061
+    ],
+    "max": [
+     0.1388,
+     0.1795,
+     0.0852
+    ]
+   },
+   "height": 0.1795,
+   "radius": 0.1405,
+   "materials": [
+    {
+     "name": "foliage_celandine_01",
+     "foliage": true
+    }
+   ],
+   "source": {
+    "url": "https://polyhaven.com/a/celandine_01",
+    "authors": [
+     "Rob Tuytel",
+     "Rico Cilliers"
+    ],
+    "license": "CC0-1.0"
+   },
+   "variantOf": "celandine_01",
+   "bytes": 212332
+  },
+  "celandine_01__d": {
+   "name": "Celandine 01 (D)",
+   "category": "groundcover",
+   "lods": [
+    {
+     "file": "models/celandine_01__d/lod0.glb",
+     "triangles": 1154
+    },
+    {
+     "file": "models/celandine_01__d/lod1.glb",
+     "triangles": 236
+    }
+   ],
+   "bounds": {
+    "min": [
+     -0.0876,
+     0,
+     -0.0908
+    ],
+    "max": [
+     0.1023,
+     0.155,
+     0.1377
+    ]
+   },
+   "height": 0.155,
+   "radius": 0.1382,
+   "materials": [
+    {
+     "name": "foliage_celandine_01",
+     "foliage": true
+    }
+   ],
+   "source": {
+    "url": "https://polyhaven.com/a/celandine_01",
+    "authors": [
+     "Rob Tuytel",
+     "Rico Cilliers"
+    ],
+    "license": "CC0-1.0"
+   },
+   "variantOf": "celandine_01",
+   "bytes": 211560
+  },
+  "celandine_01__e": {
+   "name": "Celandine 01 (E)",
+   "category": "groundcover",
+   "lods": [
+    {
+     "file": "models/celandine_01__e/lod0.glb",
+     "triangles": 442
+    },
+    {
+     "file": "models/celandine_01__e/lod1.glb",
+     "triangles": 246
+    }
+   ],
+   "bounds": {
+    "min": [
+     -0.0948,
+     0,
+     -0.1321
+    ],
+    "max": [
+     0.0935,
+     0.1237,
+     0.0842
+    ]
+   },
+   "height": 0.1237,
+   "radius": 0.1322,
+   "materials": [
+    {
+     "name": "foliage_celandine_01",
+     "foliage": true
+    }
+   ],
+   "source": {
+    "url": "https://polyhaven.com/a/celandine_01",
+    "authors": [
+     "Rob Tuytel",
+     "Rico Cilliers"
+    ],
+    "license": "CC0-1.0"
+   },
+   "variantOf": "celandine_01",
+   "bytes": 173196
+  },
+  "weed_plant_02__a": {
+   "name": "Weed Plant 02 (A)",
+   "category": "groundcover",
+   "lods": [
+    {
+     "file": "models/weed_plant_02__a/lod0.glb",
+     "triangles": 1191
+    },
+    {
+     "file": "models/weed_plant_02__a/lod1.glb",
+     "triangles": 252
+    }
+   ],
+   "bounds": {
+    "min": [
+     -0.1235,
+     0,
+     -0.1354
+    ],
+    "max": [
+     0.1025,
+     0.0752,
+     0.1646
+    ]
+   },
+   "height": 0.0752,
+   "radius": 0.1922,
+   "materials": [
+    {
+     "name": "foliage_weed_plant_02",
+     "foliage": true
+    }
+   ],
+   "source": {
+    "url": "https://polyhaven.com/a/weed_plant_02",
+    "authors": [
+     "Rob Tuytel",
+     "Rico Cilliers"
+    ],
+    "license": "CC0-1.0"
+   },
+   "variantOf": "weed_plant_02",
+   "bytes": 171360
+  },
+  "weed_plant_02__b": {
+   "name": "Weed Plant 02 (B)",
+   "category": "groundcover",
+   "lods": [
+    {
+     "file": "models/weed_plant_02__b/lod0.glb",
+     "triangles": 1196
+    },
+    {
+     "file": "models/weed_plant_02__b/lod1.glb",
+     "triangles": 249
+    }
+   ],
+   "bounds": {
+    "min": [
+     -0.1012,
+     0,
+     -0.1051
+    ],
+    "max": [
+     0.0926,
+     0.0715,
+     0.0993
+    ]
+   },
+   "height": 0.0715,
+   "radius": 0.1208,
+   "materials": [
+    {
+     "name": "foliage_weed_plant_02",
+     "foliage": true
+    }
+   ],
+   "source": {
+    "url": "https://polyhaven.com/a/weed_plant_02",
+    "authors": [
+     "Rob Tuytel",
+     "Rico Cilliers"
+    ],
+    "license": "CC0-1.0"
+   },
+   "variantOf": "weed_plant_02",
+   "bytes": 172780
+  },
+  "weed_plant_02__c": {
+   "name": "Weed Plant 02 (C)",
+   "category": "groundcover",
+   "lods": [
+    {
+     "file": "models/weed_plant_02__c/lod0.glb",
+     "triangles": 1195
+    },
+    {
+     "file": "models/weed_plant_02__c/lod1.glb",
+     "triangles": 247
+    }
+   ],
+   "bounds": {
+    "min": [
+     -0.0696,
+     0,
+     -0.0803
+    ],
+    "max": [
+     0.0775,
+     0.0589,
+     0.0672
+    ]
+   },
+   "height": 0.0589,
+   "radius": 0.0944,
+   "materials": [
+    {
+     "name": "foliage_weed_plant_02",
+     "foliage": true
+    }
+   ],
+   "source": {
+    "url": "https://polyhaven.com/a/weed_plant_02",
+    "authors": [
+     "Rob Tuytel",
+     "Rico Cilliers"
+    ],
+    "license": "CC0-1.0"
+   },
+   "variantOf": "weed_plant_02",
+   "bytes": 169308
+  },
+  "grass_medium_01__a": {
+   "name": "Grass Medium 01 (A)",
+   "category": "grass",
+   "lods": [
+    {
+     "file": "models/grass_medium_01__a/lod0.glb",
+     "triangles": 1005
+    },
+    {
+     "file": "models/grass_medium_01__a/lod1.glb",
+     "triangles": 245
+    }
+   ],
+   "bounds": {
+    "min": [
+     -0.1434,
+     0,
+     -0.1558
+    ],
+    "max": [
+     0.1782,
+     0.1531,
+     0.1765
+    ]
+   },
+   "height": 0.1531,
+   "radius": 0.1898,
+   "materials": [
+    {
+     "name": "foliage_grass_medium_01",
+     "foliage": true
+    }
+   ],
+   "source": {
+    "url": "https://polyhaven.com/a/grass_medium_01",
+    "authors": [
+     "Rob Tuytel",
+     "Rico Cilliers"
+    ],
+    "license": "CC0-1.0"
+   },
+   "variantOf": "grass_medium_01",
+   "bytes": 307096
+  },
+  "grass_medium_01__b": {
+   "name": "Grass Medium 01 (B)",
+   "category": "grass",
+   "lods": [
+    {
+     "file": "models/grass_medium_01__b/lod0.glb",
+     "triangles": 1077
+    },
+    {
+     "file": "models/grass_medium_01__b/lod1.glb",
+     "triangles": 231
+    }
+   ],
+   "bounds": {
+    "min": [
+     -0.1194,
+     0,
+     -0.1278
+    ],
+    "max": [
+     0.1665,
+     0.1476,
+     0.1289
+    ]
+   },
+   "height": 0.1476,
+   "radius": 0.1819,
+   "materials": [
+    {
+     "name": "foliage_grass_medium_01",
+     "foliage": true
+    }
+   ],
+   "source": {
+    "url": "https://polyhaven.com/a/grass_medium_01",
+    "authors": [
+     "Rob Tuytel",
+     "Rico Cilliers"
+    ],
+    "license": "CC0-1.0"
+   },
+   "variantOf": "grass_medium_01",
+   "bytes": 303988
+  },
+  "grass_medium_01__c": {
+   "name": "Grass Medium 01 (C)",
+   "category": "grass",
+   "lods": [
+    {
+     "file": "models/grass_medium_01__c/lod0.glb",
+     "triangles": 1142
+    },
+    {
+     "file": "models/grass_medium_01__c/lod1.glb",
+     "triangles": 240
+    }
+   ],
+   "bounds": {
+    "min": [
+     0,
+     0,
+     -0.0379
+    ],
+    "max": [
+     0.2243,
+     0.221,
+     0.1929
+    ]
+   },
+   "height": 0.221,
+   "radius": 0.2716,
+   "materials": [
+    {
+     "name": "foliage_grass_medium_01",
+     "foliage": true
+    }
+   ],
+   "source": {
+    "url": "https://polyhaven.com/a/grass_medium_01",
+    "authors": [
+     "Rob Tuytel",
+     "Rico Cilliers"
+    ],
+    "license": "CC0-1.0"
+   },
+   "variantOf": "grass_medium_01",
+   "bytes": 302684
+  },
+  "grass_medium_01__d": {
+   "name": "Grass Medium 01 (D)",
+   "category": "grass",
+   "lods": [
+    {
+     "file": "models/grass_medium_01__d/lod0.glb",
+     "triangles": 1144
+    },
+    {
+     "file": "models/grass_medium_01__d/lod1.glb",
+     "triangles": 225
+    }
+   ],
+   "bounds": {
+    "min": [
+     -0.0933,
+     0,
+     -0.169
+    ],
+    "max": [
+     0.1062,
+     0.1506,
+     0.0408
+    ]
+   },
+   "height": 0.1506,
+   "radius": 0.1779,
+   "materials": [
+    {
+     "name": "foliage_grass_medium_01",
+     "foliage": true
+    }
+   ],
+   "source": {
+    "url": "https://polyhaven.com/a/grass_medium_01",
+    "authors": [
+     "Rob Tuytel",
+     "Rico Cilliers"
+    ],
+    "license": "CC0-1.0"
+   },
+   "variantOf": "grass_medium_01",
+   "bytes": 292376
+  },
+  "grass_medium_01__e": {
+   "name": "Grass Medium 01 (E)",
+   "category": "grass",
+   "lods": [
+    {
+     "file": "models/grass_medium_01__e/lod0.glb",
+     "triangles": 833
+    },
+    {
+     "file": "models/grass_medium_01__e/lod1.glb",
+     "triangles": 236
+    }
+   ],
+   "bounds": {
+    "min": [
+     -0.0779,
+     0,
+     -0.0864
+    ],
+    "max": [
+     0.1069,
+     0.1404,
+     0.0759
+    ]
+   },
+   "height": 0.1404,
+   "radius": 0.1127,
+   "materials": [
+    {
+     "name": "foliage_grass_medium_01",
+     "foliage": true
+    }
+   ],
+   "source": {
+    "url": "https://polyhaven.com/a/grass_medium_01",
+    "authors": [
+     "Rob Tuytel",
+     "Rico Cilliers"
+    ],
+    "license": "CC0-1.0"
+   },
+   "variantOf": "grass_medium_01",
+   "bytes": 276952
+  },
+  "grass_medium_01__f": {
+   "name": "Grass Medium 01 (F)",
+   "category": "grass",
+   "lods": [
+    {
+     "file": "models/grass_medium_01__f/lod0.glb",
+     "triangles": 290
+    },
+    {
+     "file": "models/grass_medium_01__f/lod1.glb",
+     "triangles": 241
+    }
+   ],
+   "bounds": {
+    "min": [
+     -0.0807,
+     0,
+     -0.0737
+    ],
+    "max": [
+     0.0802,
+     0.3225,
+     0.0848
+    ]
+   },
+   "height": 0.3225,
+   "radius": 0.0874,
+   "materials": [
+    {
+     "name": "foliage_grass_medium_01",
+     "foliage": true
+    }
+   ],
+   "source": {
+    "url": "https://polyhaven.com/a/grass_medium_01",
+    "authors": [
+     "Rob Tuytel",
+     "Rico Cilliers"
+    ],
+    "license": "CC0-1.0"
+   },
+   "variantOf": "grass_medium_01",
+   "bytes": 255444
+  },
+  "grass_medium_01__g": {
+   "name": "Grass Medium 01 (G)",
+   "category": "grass",
+   "lods": [
+    {
+     "file": "models/grass_medium_01__g/lod0.glb",
+     "triangles": 340
+    },
+    {
+     "file": "models/grass_medium_01__g/lod1.glb",
+     "triangles": 238
+    }
+   ],
+   "bounds": {
+    "min": [
+     -0.0654,
+     0,
+     -0.0496
+    ],
+    "max": [
+     0.0877,
+     0.2363,
+     0.0786
+    ]
+   },
+   "height": 0.2363,
+   "radius": 0.0937,
+   "materials": [
+    {
+     "name": "foliage_grass_medium_01",
+     "foliage": true
+    }
+   ],
+   "source": {
+    "url": "https://polyhaven.com/a/grass_medium_01",
+    "authors": [
+     "Rob Tuytel",
+     "Rico Cilliers"
+    ],
+    "license": "CC0-1.0"
+   },
+   "variantOf": "grass_medium_01",
+   "bytes": 258128
+  },
+  "grass_medium_02__a": {
+   "name": "Grass Medium 02 (A)",
+   "category": "grass",
+   "lods": [
+    {
+     "file": "models/grass_medium_02__a/lod0.glb",
+     "triangles": 714
+    },
+    {
+     "file": "models/grass_medium_02__a/lod1.glb",
+     "triangles": 234
+    }
+   ],
+   "bounds": {
+    "min": [
+     -0.0621,
+     0,
+     -0.0609
+    ],
+    "max": [
+     0.0571,
+     0.1569,
+     0.0589
+    ]
+   },
+   "height": 0.1569,
+   "radius": 0.0778,
+   "materials": [
+    {
+     "name": "foliage_grass_medium_02",
+     "foliage": true
+    }
+   ],
+   "source": {
+    "url": "https://polyhaven.com/a/grass_medium_02",
+    "authors": [
+     "Rico Cilliers"
+    ],
+    "license": "CC0-1.0"
+   },
+   "variantOf": "grass_medium_02",
+   "bytes": 102376
+  },
+  "grass_medium_02__b": {
+   "name": "Grass Medium 02 (B)",
+   "category": "grass",
+   "lods": [
+    {
+     "file": "models/grass_medium_02__b/lod0.glb",
+     "triangles": 1161
+    },
+    {
+     "file": "models/grass_medium_02__b/lod1.glb",
+     "triangles": 230
+    }
+   ],
+   "bounds": {
+    "min": [
+     -0.0635,
+     0,
+     -0.108
+    ],
+    "max": [
+     0.1223,
+     0.1886,
+     0.0984
+    ]
+   },
+   "height": 0.1886,
+   "radius": 0.1224,
+   "materials": [
+    {
+     "name": "foliage_grass_medium_02",
+     "foliage": true
+    }
+   ],
+   "source": {
+    "url": "https://polyhaven.com/a/grass_medium_02",
+    "authors": [
+     "Rico Cilliers"
+    ],
+    "license": "CC0-1.0"
+   },
+   "variantOf": "grass_medium_02",
+   "bytes": 121456
+  },
+  "grass_medium_02__c": {
+   "name": "Grass Medium 02 (C)",
+   "category": "grass",
+   "lods": [
+    {
+     "file": "models/grass_medium_02__c/lod0.glb",
+     "triangles": 1186
+    },
+    {
+     "file": "models/grass_medium_02__c/lod1.glb",
+     "triangles": 234
+    }
+   ],
+   "bounds": {
+    "min": [
+     -0.1474,
+     0,
+     -0.1723
+    ],
+    "max": [
+     0.1246,
+     0.2452,
+     0.0883
+    ]
+   },
+   "height": 0.2452,
+   "radius": 0.1734,
+   "materials": [
+    {
+     "name": "foliage_grass_medium_02",
+     "foliage": true
+    }
+   ],
+   "source": {
+    "url": "https://polyhaven.com/a/grass_medium_02",
+    "authors": [
+     "Rico Cilliers"
+    ],
+    "license": "CC0-1.0"
+   },
+   "variantOf": "grass_medium_02",
+   "bytes": 119152
+  },
+  "grass_medium_02__d": {
+   "name": "Grass Medium 02 (D)",
+   "category": "grass",
+   "lods": [
+    {
+     "file": "models/grass_medium_02__d/lod0.glb",
+     "triangles": 1172
+    },
+    {
+     "file": "models/grass_medium_02__d/lod1.glb",
+     "triangles": 233
+    }
+   ],
+   "bounds": {
+    "min": [
+     -0.1922,
+     0,
+     -0.1624
+    ],
+    "max": [
+     0.1378,
+     0.2789,
+     0.2177
+    ]
+   },
+   "height": 0.2789,
+   "radius": 0.2201,
+   "materials": [
+    {
+     "name": "foliage_grass_medium_02",
+     "foliage": true
+    }
+   ],
+   "source": {
+    "url": "https://polyhaven.com/a/grass_medium_02",
+    "authors": [
+     "Rico Cilliers"
+    ],
+    "license": "CC0-1.0"
+   },
+   "variantOf": "grass_medium_02",
+   "bytes": 126008
+  },
+  "grass_medium_02__e": {
+   "name": "Grass Medium 02 (E)",
+   "category": "grass",
+   "lods": [
+    {
+     "file": "models/grass_medium_02__e/lod0.glb",
+     "triangles": 1170
+    },
+    {
+     "file": "models/grass_medium_02__e/lod1.glb",
+     "triangles": 227
+    }
+   ],
+   "bounds": {
+    "min": [
+     -0.2244,
+     0,
+     -0.1844
+    ],
+    "max": [
+     0.1466,
+     0.4301,
+     0.2709
+    ]
+   },
+   "height": 0.4301,
+   "radius": 0.278,
+   "materials": [
+    {
+     "name": "foliage_grass_medium_02",
+     "foliage": true
+    }
+   ],
+   "source": {
+    "url": "https://polyhaven.com/a/grass_medium_02",
+    "authors": [
+     "Rico Cilliers"
+    ],
+    "license": "CC0-1.0"
+   },
+   "variantOf": "grass_medium_02",
+   "bytes": 122948
+  },
+  "grass_bermuda_01__a": {
+   "name": "Grass Bermuda 01 (A)",
+   "category": "grass",
+   "lods": [
+    {
+     "file": "models/grass_bermuda_01__a/lod0.glb",
+     "triangles": 147
+    },
+    {
+     "file": "models/grass_bermuda_01__a/lod1.glb",
+     "triangles": 147
+    }
+   ],
+   "bounds": {
+    "min": [
+     -0.0488,
+     0,
+     -0.0116
+    ],
+    "max": [
+     0.0191,
+     0.1509,
+     0.034
+    ]
+   },
+   "height": 0.1509,
+   "radius": 0.0513,
+   "materials": [
+    {
+     "name": "foliage_grass_bermuda_01",
+     "foliage": true
+    }
+   ],
+   "source": {
+    "url": "https://polyhaven.com/a/grass_bermuda_01",
+    "authors": [
+     "Rico Cilliers"
+    ],
+    "license": "CC0-1.0"
+   },
+   "variantOf": "grass_bermuda_01",
+   "bytes": 129708
+  },
+  "grass_bermuda_01__b": {
+   "name": "Grass Bermuda 01 (B)",
+   "category": "grass",
+   "lods": [
+    {
+     "file": "models/grass_bermuda_01__b/lod0.glb",
+     "triangles": 140
+    },
+    {
+     "file": "models/grass_bermuda_01__b/lod1.glb",
+     "triangles": 140
+    }
+   ],
+   "bounds": {
+    "min": [
+     -0.0444,
+     0,
+     -0.0148
+    ],
+    "max": [
+     0.0322,
+     0.1272,
+     0.0345
+    ]
+   },
+   "height": 0.1272,
+   "radius": 0.0448,
+   "materials": [
+    {
+     "name": "foliage_grass_bermuda_01",
+     "foliage": true
+    }
+   ],
+   "source": {
+    "url": "https://polyhaven.com/a/grass_bermuda_01",
+    "authors": [
+     "Rico Cilliers"
+    ],
+    "license": "CC0-1.0"
+   },
+   "variantOf": "grass_bermuda_01",
+   "bytes": 129168
+  },
+  "grass_bermuda_01__c": {
+   "name": "Grass Bermuda 01 (C)",
+   "category": "grass",
+   "lods": [
+    {
+     "file": "models/grass_bermuda_01__c/lod0.glb",
+     "triangles": 128
+    },
+    {
+     "file": "models/grass_bermuda_01__c/lod1.glb",
+     "triangles": 128
+    }
+   ],
+   "bounds": {
+    "min": [
+     -0.0189,
+     0,
+     -0.0142
+    ],
+    "max": [
+     0.0183,
+     0.0923,
+     0.0303
+    ]
+   },
+   "height": 0.0923,
+   "radius": 0.0306,
+   "materials": [
+    {
+     "name": "foliage_grass_bermuda_01",
+     "foliage": true
+    }
+   ],
+   "source": {
+    "url": "https://polyhaven.com/a/grass_bermuda_01",
+    "authors": [
+     "Rico Cilliers"
+    ],
+    "license": "CC0-1.0"
+   },
+   "variantOf": "grass_bermuda_01",
+   "bytes": 128392
+  },
+  "grass_bermuda_01__d": {
+   "name": "Grass Bermuda 01 (D)",
+   "category": "grass",
+   "lods": [
+    {
+     "file": "models/grass_bermuda_01__d/lod0.glb",
+     "triangles": 268
+    },
+    {
+     "file": "models/grass_bermuda_01__d/lod1.glb",
+     "triangles": 244
+    }
+   ],
+   "bounds": {
+    "min": [
+     -0.0413,
+     0,
+     -0.0162
+    ],
+    "max": [
+     0.0284,
+     0.1522,
+     0.067
+    ]
+   },
+   "height": 0.1522,
+   "radius": 0.0695,
+   "materials": [
+    {
+     "name": "foliage_grass_bermuda_01",
+     "foliage": true
+    }
+   ],
+   "source": {
+    "url": "https://polyhaven.com/a/grass_bermuda_01",
+    "authors": [
+     "Rico Cilliers"
+    ],
+    "license": "CC0-1.0"
+   },
+   "variantOf": "grass_bermuda_01",
+   "bytes": 137096
+  },
+  "boulder_01": {
+   "name": "Boulder 01",
+   "category": "rock",
+   "lods": [
+    {
+     "file": "models/boulder_01/lod0.glb",
+     "triangles": 16000
+    },
+    {
+     "file": "models/boulder_01/lod1.glb",
+     "triangles": 3000
+    },
+    {
+     "file": "models/boulder_01/lod2.glb",
+     "triangles": 500
+    }
+   ],
+   "bounds": {
+    "min": [
+     -0.6352,
+     0,
+     -0.9144
+    ],
+    "max": [
+     0.6352,
+     1.0032,
+     0.9144
+    ]
+   },
+   "height": 1.0032,
+   "radius": 0.9829,
+   "materials": [
+    {
+     "name": "boulder_01",
+     "foliage": false
+    }
+   ],
+   "source": {
+    "url": "https://polyhaven.com/a/boulder_01",
+    "authors": [
+     "Rico Cilliers"
+    ],
+    "license": "CC0-1.0"
+   },
+   "bytes": 1679936
+  },
+  "rock_07": {
+   "name": "Rock 07",
+   "category": "rock",
+   "lods": [
+    {
+     "file": "models/rock_07/lod0.glb",
+     "triangles": 4800
+    },
+    {
+     "file": "models/rock_07/lod1.glb",
+     "triangles": 900
+    },
+    {
+     "file": "models/rock_07/lod2.glb",
+     "triangles": 150
+    }
+   ],
+   "bounds": {
+    "min": [
+     -0.0842,
+     0,
+     -0.1599
+    ],
+    "max": [
+     0.0842,
+     0.1429,
+     0.1599
+    ]
+   },
+   "height": 0.1429,
+   "radius": 0.1643,
+   "materials": [
+    {
+     "name": "rock_07",
+     "foliage": false
+    }
+   ],
+   "source": {
+    "url": "https://polyhaven.com/a/rock_07",
+    "authors": [
+     "Jenelle van Heerden"
+    ],
+    "license": "CC0-1.0"
+   },
+   "bytes": 317972
+  },
+  "rock_09": {
+   "name": "Rock 09",
+   "category": "rock",
+   "lods": [
+    {
+     "file": "models/rock_09/lod0.glb",
+     "triangles": 4800
+    },
+    {
+     "file": "models/rock_09/lod1.glb",
+     "triangles": 900
+    },
+    {
+     "file": "models/rock_09/lod2.glb",
+     "triangles": 150
+    }
+   ],
+   "bounds": {
+    "min": [
+     -0.037,
+     0,
+     -0.0723
+    ],
+    "max": [
+     0.037,
+     0.0328,
+     0.0723
+    ]
+   },
+   "height": 0.0328,
+   "radius": 0.0747,
+   "materials": [
+    {
+     "name": "rock_09",
+     "foliage": false
+    }
+   ],
+   "source": {
+    "url": "https://polyhaven.com/a/rock_09",
+    "authors": [
+     "Jenelle van Heerden"
+    ],
+    "license": "CC0-1.0"
+   },
+   "bytes": 324432
+  },
+  "stone_01": {
+   "name": "Stone 01",
+   "category": "rock",
+   "lods": [
+    {
+     "file": "models/stone_01/lod0.glb",
+     "triangles": 4800
+    },
+    {
+     "file": "models/stone_01/lod1.glb",
+     "triangles": 900
+    },
+    {
+     "file": "models/stone_01/lod2.glb",
+     "triangles": 150
+    }
+   ],
+   "bounds": {
+    "min": [
+     -0.0732,
+     0,
+     -0.0444
+    ],
+    "max": [
+     0.0732,
+     0.0713,
+     0.0444
+    ]
+   },
+   "height": 0.0713,
+   "radius": 0.0789,
+   "materials": [
+    {
+     "name": "stone_01",
+     "foliage": false
+    }
+   ],
+   "source": {
+    "url": "https://polyhaven.com/a/stone_01",
+    "authors": [
+     "Dario Barresi",
+     "Rico Cilliers"
+    ],
+    "license": "CC0-1.0"
+   },
+   "bytes": 379092
+  },
+  "rock_moss_set_01__a": {
+   "name": "Rock Moss Set 01 (A)",
+   "category": "rock",
+   "lods": [
+    {
+     "file": "models/rock_moss_set_01__a/lod0.glb",
+     "triangles": 11000
+    },
+    {
+     "file": "models/rock_moss_set_01__a/lod1.glb",
+     "triangles": 3000
+    },
+    {
+     "file": "models/rock_moss_set_01__a/lod2.glb",
+     "triangles": 500
+    }
+   ],
+   "bounds": {
+    "min": [
+     -1.1188,
+     0,
+     -1.6844
+    ],
+    "max": [
+     1.1188,
+     1.4727,
+     1.6844
+    ]
+   },
+   "height": 1.4727,
+   "radius": 1.9428,
+   "materials": [
+    {
+     "name": "rock_moss_set_01",
+     "foliage": false
+    }
+   ],
+   "source": {
+    "url": "https://polyhaven.com/a/rock_moss_set_01",
+    "authors": [
+     "Kless Gyzen"
+    ],
+    "license": "CC0-1.0"
+   },
+   "variantOf": "rock_moss_set_01",
+   "bytes": 854416
+  },
+  "rock_moss_set_01__b": {
+   "name": "Rock Moss Set 01 (B)",
+   "category": "rock",
+   "lods": [
+    {
+     "file": "models/rock_moss_set_01__b/lod0.glb",
+     "triangles": 10996
+    },
+    {
+     "file": "models/rock_moss_set_01__b/lod1.glb",
+     "triangles": 2998
+    },
+    {
+     "file": "models/rock_moss_set_01__b/lod2.glb",
+     "triangles": 500
+    }
+   ],
+   "bounds": {
+    "min": [
+     -1.3277,
+     0,
+     -1.6319
+    ],
+    "max": [
+     1.3277,
+     1.262,
+     1.6319
+    ]
+   },
+   "height": 1.262,
+   "radius": 1.9232,
+   "materials": [
+    {
+     "name": "rock_moss_set_01",
+     "foliage": false
+    }
+   ],
+   "source": {
+    "url": "https://polyhaven.com/a/rock_moss_set_01",
+    "authors": [
+     "Kless Gyzen"
+    ],
+    "license": "CC0-1.0"
+   },
+   "variantOf": "rock_moss_set_01",
+   "bytes": 862252
+  },
+  "rock_moss_set_01__c": {
+   "name": "Rock Moss Set 01 (C)",
+   "category": "rock",
+   "lods": [
+    {
+     "file": "models/rock_moss_set_01__c/lod0.glb",
+     "triangles": 5000
+    },
+    {
+     "file": "models/rock_moss_set_01__c/lod1.glb",
+     "triangles": 3000
+    },
+    {
+     "file": "models/rock_moss_set_01__c/lod2.glb",
+     "triangles": 500
+    }
+   ],
+   "bounds": {
+    "min": [
+     -1.0543,
+     0,
+     -1.0398
+    ],
+    "max": [
+     1.0543,
+     1.0997,
+     1.0398
+    ]
+   },
+   "height": 1.0997,
+   "radius": 1.4205,
+   "materials": [
+    {
+     "name": "rock_moss_set_01",
+     "foliage": false
+    }
+   ],
+   "source": {
+    "url": "https://polyhaven.com/a/rock_moss_set_01",
+    "authors": [
+     "Kless Gyzen"
+    ],
+    "license": "CC0-1.0"
+   },
+   "variantOf": "rock_moss_set_01",
+   "bytes": 707284
+  },
+  "rock_moss_set_01__d": {
+   "name": "Rock Moss Set 01 (D)",
+   "category": "rock",
+   "lods": [
+    {
+     "file": "models/rock_moss_set_01__d/lod0.glb",
+     "triangles": 10589
+    },
+    {
+     "file": "models/rock_moss_set_01__d/lod1.glb",
+     "triangles": 3000
+    },
+    {
+     "file": "models/rock_moss_set_01__d/lod2.glb",
+     "triangles": 500
+    }
+   ],
+   "bounds": {
+    "min": [
+     -1.0638,
+     0,
+     -0.9824
+    ],
+    "max": [
+     1.0638,
+     1.7683,
+     0.9824
+    ]
+   },
+   "height": 1.7683,
+   "radius": 1.2767,
+   "materials": [
+    {
+     "name": "rock_moss_set_01",
+     "foliage": false
+    }
+   ],
+   "source": {
+    "url": "https://polyhaven.com/a/rock_moss_set_01",
+    "authors": [
+     "Kless Gyzen"
+    ],
+    "license": "CC0-1.0"
+   },
+   "variantOf": "rock_moss_set_01",
+   "bytes": 835084
+  },
+  "rock_moss_set_01__e": {
+   "name": "Rock Moss Set 01 (E)",
+   "category": "rock",
+   "lods": [
+    {
+     "file": "models/rock_moss_set_01__e/lod0.glb",
+     "triangles": 16000
+    },
+    {
+     "file": "models/rock_moss_set_01__e/lod1.glb",
+     "triangles": 3000
+    },
+    {
+     "file": "models/rock_moss_set_01__e/lod2.glb",
+     "triangles": 500
+    }
+   ],
+   "bounds": {
+    "min": [
+     -0.9087,
+     0,
+     -1.4993
+    ],
+    "max": [
+     0.9087,
+     1.2055,
+     1.4993
+    ]
+   },
+   "height": 1.2055,
+   "radius": 1.5148,
+   "materials": [
+    {
+     "name": "rock_moss_set_01",
+     "foliage": false
+    }
+   ],
+   "source": {
+    "url": "https://polyhaven.com/a/rock_moss_set_01",
+    "authors": [
+     "Kless Gyzen"
+    ],
+    "license": "CC0-1.0"
+   },
+   "variantOf": "rock_moss_set_01",
+   "bytes": 944952
+  },
+  "rock_moss_set_01__f": {
+   "name": "Rock Moss Set 01 (F)",
+   "category": "rock",
+   "lods": [
+    {
+     "file": "models/rock_moss_set_01__f/lod0.glb",
+     "triangles": 8994
+    },
+    {
+     "file": "models/rock_moss_set_01__f/lod1.glb",
+     "triangles": 3000
+    },
+    {
+     "file": "models/rock_moss_set_01__f/lod2.glb",
+     "triangles": 500
+    }
+   ],
+   "bounds": {
+    "min": [
+     -1.063,
+     0,
+     -1.3787
+    ],
+    "max": [
+     1.063,
+     1.2619,
+     1.3787
+    ]
+   },
+   "height": 1.2619,
+   "radius": 1.4847,
+   "materials": [
+    {
+     "name": "rock_moss_set_01",
+     "foliage": false
+    }
+   ],
+   "source": {
+    "url": "https://polyhaven.com/a/rock_moss_set_01",
+    "authors": [
+     "Kless Gyzen"
+    ],
+    "license": "CC0-1.0"
+   },
+   "variantOf": "rock_moss_set_01",
+   "bytes": 793828
+  },
+  "rock_moss_set_02__a": {
+   "name": "Rock Moss Set 02 (A)",
+   "category": "rock",
+   "lods": [
+    {
+     "file": "models/rock_moss_set_02__a/lod0.glb",
+     "triangles": 9826
+    },
+    {
+     "file": "models/rock_moss_set_02__a/lod1.glb",
+     "triangles": 3000
+    },
+    {
+     "file": "models/rock_moss_set_02__a/lod2.glb",
+     "triangles": 500
+    }
+   ],
+   "bounds": {
+    "min": [
+     -0.8465,
+     0,
+     -0.6076
+    ],
+    "max": [
+     0.8465,
+     0.7448,
+     0.6076
+    ]
+   },
+   "height": 0.7448,
+   "radius": 0.9505,
+   "materials": [
+    {
+     "name": "rock_moss_set_02",
+     "foliage": false
+    }
+   ],
+   "source": {
+    "url": "https://polyhaven.com/a/rock_moss_set_02",
+    "authors": [
+     "Kless Gyzen"
+    ],
+    "license": "CC0-1.0"
+   },
+   "variantOf": "rock_moss_set_02",
+   "bytes": 1022320
+  },
+  "rock_moss_set_02__b": {
+   "name": "Rock Moss Set 02 (B)",
+   "category": "rock",
+   "lods": [
+    {
+     "file": "models/rock_moss_set_02__b/lod0.glb",
+     "triangles": 8000
+    },
+    {
+     "file": "models/rock_moss_set_02__b/lod1.glb",
+     "triangles": 3000
+    },
+    {
+     "file": "models/rock_moss_set_02__b/lod2.glb",
+     "triangles": 500
+    }
+   ],
+   "bounds": {
+    "min": [
+     -0.6032,
+     0,
+     -0.4918
+    ],
+    "max": [
+     0.6032,
+     0.5287,
+     0.4918
+    ]
+   },
+   "height": 0.5287,
+   "radius": 0.7292,
+   "materials": [
+    {
+     "name": "rock_moss_set_02",
+     "foliage": false
+    }
+   ],
+   "source": {
+    "url": "https://polyhaven.com/a/rock_moss_set_02",
+    "authors": [
+     "Kless Gyzen"
+    ],
+    "license": "CC0-1.0"
+   },
+   "variantOf": "rock_moss_set_02",
+   "bytes": 974612
+  },
+  "rock_moss_set_02__c": {
+   "name": "Rock Moss Set 02 (C)",
+   "category": "rock",
+   "lods": [
+    {
+     "file": "models/rock_moss_set_02__c/lod0.glb",
+     "triangles": 7894
+    },
+    {
+     "file": "models/rock_moss_set_02__c/lod1.glb",
+     "triangles": 3000
+    },
+    {
+     "file": "models/rock_moss_set_02__c/lod2.glb",
+     "triangles": 500
+    }
+   ],
+   "bounds": {
+    "min": [
+     -0.8145,
+     0,
+     -0.5057
+    ],
+    "max": [
+     0.8145,
+     0.6099,
+     0.5057
+    ]
+   },
+   "height": 0.6099,
+   "radius": 0.9109,
+   "materials": [
+    {
+     "name": "rock_moss_set_02",
+     "foliage": false
+    }
+   ],
+   "source": {
+    "url": "https://polyhaven.com/a/rock_moss_set_02",
+    "authors": [
+     "Kless Gyzen"
+    ],
+    "license": "CC0-1.0"
+   },
+   "variantOf": "rock_moss_set_02",
+   "bytes": 973432
+  },
+  "rock_moss_set_02__d": {
+   "name": "Rock Moss Set 02 (D)",
+   "category": "rock",
+   "lods": [
+    {
+     "file": "models/rock_moss_set_02__d/lod0.glb",
+     "triangles": 8000
+    },
+    {
+     "file": "models/rock_moss_set_02__d/lod1.glb",
+     "triangles": 3000
+    },
+    {
+     "file": "models/rock_moss_set_02__d/lod2.glb",
+     "triangles": 500
+    }
+   ],
+   "bounds": {
+    "min": [
+     -1.1015,
+     0,
+     -0.7758
+    ],
+    "max": [
+     1.1015,
+     0.7685,
+     0.7758
+    ]
+   },
+   "height": 0.7685,
+   "radius": 1.1082,
+   "materials": [
+    {
+     "name": "rock_moss_set_02",
+     "foliage": false
+    }
+   ],
+   "source": {
+    "url": "https://polyhaven.com/a/rock_moss_set_02",
+    "authors": [
+     "Kless Gyzen"
+    ],
+    "license": "CC0-1.0"
+   },
+   "variantOf": "rock_moss_set_02",
+   "bytes": 975260
+  },
+  "rock_moss_set_02__e": {
+   "name": "Rock Moss Set 02 (E)",
+   "category": "rock",
+   "lods": [
+    {
+     "file": "models/rock_moss_set_02__e/lod0.glb",
+     "triangles": 8000
+    },
+    {
+     "file": "models/rock_moss_set_02__e/lod1.glb",
+     "triangles": 3000
+    },
+    {
+     "file": "models/rock_moss_set_02__e/lod2.glb",
+     "triangles": 500
+    }
+   ],
+   "bounds": {
+    "min": [
+     -0.9768,
+     0,
+     -0.7644
+    ],
+    "max": [
+     0.9768,
+     1.3105,
+     0.7644
+    ]
+   },
+   "height": 1.3105,
+   "radius": 1.0917,
+   "materials": [
+    {
+     "name": "rock_moss_set_02",
+     "foliage": false
+    }
+   ],
+   "source": {
+    "url": "https://polyhaven.com/a/rock_moss_set_02",
+    "authors": [
+     "Kless Gyzen"
+    ],
+    "license": "CC0-1.0"
+   },
+   "variantOf": "rock_moss_set_02",
+   "bytes": 979836
+  },
+  "rock_moss_set_02__f": {
+   "name": "Rock Moss Set 02 (F)",
+   "category": "rock",
+   "lods": [
+    {
+     "file": "models/rock_moss_set_02__f/lod0.glb",
+     "triangles": 7999
+    },
+    {
+     "file": "models/rock_moss_set_02__f/lod1.glb",
+     "triangles": 3000
+    },
+    {
+     "file": "models/rock_moss_set_02__f/lod2.glb",
+     "triangles": 500
+    }
+   ],
+   "bounds": {
+    "min": [
+     -0.7898,
+     0,
+     -0.7217
+    ],
+    "max": [
+     0.7898,
+     0.736,
+     0.7217
+    ]
+   },
+   "height": 0.736,
+   "radius": 0.9271,
+   "materials": [
+    {
+     "name": "rock_moss_set_02",
+     "foliage": false
+    }
+   ],
+   "source": {
+    "url": "https://polyhaven.com/a/rock_moss_set_02",
+    "authors": [
+     "Kless Gyzen"
+    ],
+    "license": "CC0-1.0"
+   },
+   "variantOf": "rock_moss_set_02",
+   "bytes": 985400
+  },
+  "rock_moss_set_02__g": {
+   "name": "Rock Moss Set 02 (G)",
+   "category": "rock",
+   "lods": [
+    {
+     "file": "models/rock_moss_set_02__g/lod0.glb",
+     "triangles": 7928
+    },
+    {
+     "file": "models/rock_moss_set_02__g/lod1.glb",
+     "triangles": 3000
+    },
+    {
+     "file": "models/rock_moss_set_02__g/lod2.glb",
+     "triangles": 500
+    }
+   ],
+   "bounds": {
+    "min": [
+     -1.0457,
+     0,
+     -0.5691
+    ],
+    "max": [
+     1.0457,
+     1.2564,
+     0.5691
+    ]
+   },
+   "height": 1.2564,
+   "radius": 1.1328,
+   "materials": [
+    {
+     "name": "rock_moss_set_02",
+     "foliage": false
+    }
+   ],
+   "source": {
+    "url": "https://polyhaven.com/a/rock_moss_set_02",
+    "authors": [
+     "Kless Gyzen"
+    ],
+    "license": "CC0-1.0"
+   },
+   "variantOf": "rock_moss_set_02",
+   "bytes": 978128
+  },
+  "namaqualand_boulder_03": {
+   "name": "Namaqualand Boulder 03",
+   "category": "rock",
+   "lods": [
+    {
+     "file": "models/namaqualand_boulder_03/lod0.glb",
+     "triangles": 16000
+    },
+    {
+     "file": "models/namaqualand_boulder_03/lod1.glb",
+     "triangles": 3000
+    },
+    {
+     "file": "models/namaqualand_boulder_03/lod2.glb",
+     "triangles": 500
+    }
+   ],
+   "bounds": {
+    "min": [
+     -1.2013,
+     0,
+     -1.5326
+    ],
+    "max": [
+     1.2013,
+     1.4715,
+     1.5326
+    ]
+   },
+   "height": 1.4715,
+   "radius": 1.5345,
+   "materials": [
+    {
+     "name": "boulder_03",
+     "foliage": false
+    }
+   ],
+   "source": {
+    "url": "https://polyhaven.com/a/namaqualand_boulder_03",
+    "authors": [
+     "Jenelle van Heerden",
+     "Dario Barresi"
+    ],
+    "license": "CC0-1.0"
+   },
+   "bytes": 1175804
+  },
+  "rock_face_01": {
+   "name": "Rock Face 01",
+   "category": "rock",
+   "lods": [
+    {
+     "file": "models/rock_face_01/lod0.glb",
+     "triangles": 16000
+    },
+    {
+     "file": "models/rock_face_01/lod1.glb",
+     "triangles": 2999
+    },
+    {
+     "file": "models/rock_face_01/lod2.glb",
+     "triangles": 499
+    }
+   ],
+   "bounds": {
+    "min": [
+     -2.4768,
+     0,
+     -1.9137
+    ],
+    "max": [
+     2.4768,
+     3.564,
+     1.9137
+    ]
+   },
+   "height": 3.564,
+   "radius": 2.8718,
+   "materials": [
+    {
+     "name": "rock_face_01",
+     "foliage": false
+    }
+   ],
+   "source": {
+    "url": "https://polyhaven.com/a/rock_face_01",
+    "authors": [
+     "Dario Barresi"
+    ],
+    "license": "CC0-1.0"
+   },
+   "tags": [
+    "cliff"
+   ],
+   "bytes": 3064348
+  },
+  "rock_face_02": {
+   "name": "Rock Face 02",
+   "category": "rock",
+   "lods": [
+    {
+     "file": "models/rock_face_02/lod0.glb",
+     "triangles": 16000
+    },
+    {
+     "file": "models/rock_face_02/lod1.glb",
+     "triangles": 2999
+    },
+    {
+     "file": "models/rock_face_02/lod2.glb",
+     "triangles": 499
+    }
+   ],
+   "bounds": {
+    "min": [
+     -1.3556,
+     0,
+     -1.0634
+    ],
+    "max": [
+     1.3556,
+     2.472,
+     1.0634
+    ]
+   },
+   "height": 2.472,
+   "radius": 1.718,
+   "materials": [
+    {
+     "name": "rock_face_02",
+     "foliage": false
+    }
+   ],
+   "source": {
+    "url": "https://polyhaven.com/a/rock_face_02",
+    "authors": [
+     "Dario Barresi",
+     "Rico Cilliers"
+    ],
+    "license": "CC0-1.0"
+   },
+   "tags": [
+    "cliff"
+   ],
+   "bytes": 3256440
+  },
+  "coast_rocks_01": {
+   "name": "Coast Rocks 01",
+   "category": "rock",
+   "lods": [
+    {
+     "file": "models/coast_rocks_01/lod0.glb",
+     "triangles": 16000
+    },
+    {
+     "file": "models/coast_rocks_01/lod1.glb",
+     "triangles": 2999
+    },
+    {
+     "file": "models/coast_rocks_01/lod2.glb",
+     "triangles": 500
+    }
+   ],
+   "bounds": {
+    "min": [
+     -29.7454,
+     0,
+     -21.2528
+    ],
+    "max": [
+     29.7454,
+     3.254,
+     21.2528
+    ]
+   },
+   "height": 3.254,
+   "radius": 36.0108,
+   "materials": [
+    {
+     "name": "coast_rocks_01",
+     "foliage": false
+    }
+   ],
+   "source": {
+    "url": "https://polyhaven.com/a/coast_rocks_01",
+    "authors": [
+     "Rob Tuytel",
+     "Rico Cilliers"
+    ],
+    "license": "CC0-1.0"
+   },
+   "tags": [
+    "coast",
+    "outcrop"
+   ],
+   "bytes": 1119744
+  },
+  "coast_rocks_03": {
+   "name": "Coast Rocks 03",
+   "category": "rock",
+   "lods": [
+    {
+     "file": "models/coast_rocks_03/lod0.glb",
+     "triangles": 15999
+    },
+    {
+     "file": "models/coast_rocks_03/lod1.glb",
+     "triangles": 3000
+    },
+    {
+     "file": "models/coast_rocks_03/lod2.glb",
+     "triangles": 499
+    }
+   ],
+   "bounds": {
+    "min": [
+     -10.5585,
+     0,
+     -14.1307
+    ],
+    "max": [
+     10.5585,
+     3.1274,
+     14.1307
+    ]
+   },
+   "height": 3.1274,
+   "radius": 16.4273,
+   "materials": [
+    {
+     "name": "coast_rocks_03",
+     "foliage": false
+    }
+   ],
+   "source": {
+    "url": "https://polyhaven.com/a/coast_rocks_03",
+    "authors": [
+     "Rob Tuytel",
+     "Rico Cilliers"
+    ],
+    "license": "CC0-1.0"
+   },
+   "tags": [
+    "coast",
+    "outcrop"
+   ],
+   "bytes": 1346336
+  },
+  "coast_rocks_05": {
+   "name": "Coast Rocks 05",
+   "category": "rock",
+   "lods": [
+    {
+     "file": "models/coast_rocks_05/lod0.glb",
+     "triangles": 15999
+    },
+    {
+     "file": "models/coast_rocks_05/lod1.glb",
+     "triangles": 3000
+    },
+    {
+     "file": "models/coast_rocks_05/lod2.glb",
+     "triangles": 499
+    }
+   ],
+   "bounds": {
+    "min": [
+     -2.0181,
+     0,
+     -1.8731
+    ],
+    "max": [
+     2.0181,
+     1.3185,
+     1.8731
+    ]
+   },
+   "height": 1.3185,
+   "radius": 2.2497,
+   "materials": [
+    {
+     "name": "coast_rocks_05",
+     "foliage": false
+    }
+   ],
+   "source": {
+    "url": "https://polyhaven.com/a/coast_rocks_05",
+    "authors": [
+     "Rob Tuytel"
+    ],
+    "license": "CC0-1.0"
+   },
+   "tags": [
+    "coast"
+   ],
+   "bytes": 1760804
+  },
+  "coast_land_rocks_02": {
+   "name": "Coast Land Rocks 02",
+   "category": "rock",
+   "lods": [
+    {
+     "file": "models/coast_land_rocks_02/lod0.glb",
+     "triangles": 16000
+    },
+    {
+     "file": "models/coast_land_rocks_02/lod1.glb",
+     "triangles": 3000
+    },
+    {
+     "file": "models/coast_land_rocks_02/lod2.glb",
+     "triangles": 499
+    }
+   ],
+   "bounds": {
+    "min": [
+     -2.4389,
+     0,
+     -5.2179
+    ],
+    "max": [
+     2.4389,
+     1.3692,
+     5.2179
+    ]
+   },
+   "height": 1.3692,
+   "radius": 5.2316,
+   "materials": [
+    {
+     "name": "coast_land_rocks_02",
+     "foliage": false
+    }
+   ],
+   "source": {
+    "url": "https://polyhaven.com/a/coast_land_rocks_02",
+    "authors": [
+     "Rob Tuytel",
+     "Rico Cilliers"
+    ],
+    "license": "CC0-1.0"
+   },
+   "tags": [
+    "coast",
+    "outcrop"
+   ],
+   "bytes": 1497052
+  },
+  "sand_rocks_small_01": {
+   "name": "Sand Rocks Small 01",
+   "category": "rock",
+   "lods": [
+    {
+     "file": "models/sand_rocks_small_01/lod0.glb",
+     "triangles": 16000
+    },
+    {
+     "file": "models/sand_rocks_small_01/lod1.glb",
+     "triangles": 2999
+    },
+    {
+     "file": "models/sand_rocks_small_01/lod2.glb",
+     "triangles": 499
+    }
+   ],
+   "bounds": {
+    "min": [
+     -2.3127,
+     0,
+     -1.9402
+    ],
+    "max": [
+     2.3127,
+     0.5337,
+     1.9402
+    ]
+   },
+   "height": 0.5337,
+   "radius": 2.3495,
+   "materials": [
+    {
+     "name": "sand_rocks_small_01",
+     "foliage": false
+    }
+   ],
+   "source": {
+    "url": "https://polyhaven.com/a/sand_rocks_small_01",
+    "authors": [
+     "Rob Tuytel",
+     "Rico Cilliers"
+    ],
+    "license": "CC0-1.0"
+   },
+   "tags": [
+    "coast"
+   ],
+   "bytes": 1287804
+  },
+  "dead_tree_trunk": {
+   "name": "Dead Tree Trunk",
+   "category": "deadwood",
+   "lods": [
+    {
+     "file": "models/dead_tree_trunk/lod0.glb",
+     "triangles": 11998
+    },
+    {
+     "file": "models/dead_tree_trunk/lod1.glb",
+     "triangles": 2500
+    },
+    {
+     "file": "models/dead_tree_trunk/lod2.glb",
+     "triangles": 400
+    }
+   ],
+   "bounds": {
+    "min": [
+     -1.5244,
+     0,
+     -0.1385
+    ],
+    "max": [
+     1.5244,
+     0.287,
+     0.1385
+    ]
+   },
+   "height": 0.287,
+   "radius": 1.5244,
+   "materials": [
+    {
+     "name": "dead_tree_trunk",
+     "foliage": false
+    }
+   ],
+   "source": {
+    "url": "https://polyhaven.com/a/dead_tree_trunk",
+    "authors": [
+     "Rob Tuytel"
+    ],
+    "license": "CC0-1.0"
+   },
+   "bytes": 1197556
+  },
+  "dead_tree_trunk_02": {
+   "name": "Dead Tree Trunk 02",
+   "category": "deadwood",
+   "lods": [
+    {
+     "file": "models/dead_tree_trunk_02/lod0.glb",
+     "triangles": 11998
+    },
+    {
+     "file": "models/dead_tree_trunk_02/lod1.glb",
+     "triangles": 2498
+    },
+    {
+     "file": "models/dead_tree_trunk_02/lod2.glb",
+     "triangles": 400
+    }
+   ],
+   "bounds": {
+    "min": [
+     -2.0238,
+     0,
+     -0.526
+    ],
+    "max": [
+     2.0238,
+     1.0549,
+     0.526
+    ]
+   },
+   "height": 1.0549,
+   "radius": 2.0363,
+   "materials": [
+    {
+     "name": "dead_tree_trunk_02",
+     "foliage": false
+    }
+   ],
+   "source": {
+    "url": "https://polyhaven.com/a/dead_tree_trunk_02",
+    "authors": [
+     "Jenelle van Heerden",
+     "Rico Cilliers"
+    ],
+    "license": "CC0-1.0"
+   },
+   "bytes": 1426772
+  },
+  "tree_stump_01": {
+   "name": "Tree Stump 01",
+   "category": "deadwood",
+   "lods": [
+    {
+     "file": "models/tree_stump_01/lod0.glb",
+     "triangles": 11999
+    },
+    {
+     "file": "models/tree_stump_01/lod1.glb",
+     "triangles": 2497
+    },
+    {
+     "file": "models/tree_stump_01/lod2.glb",
+     "triangles": 400
+    }
+   ],
+   "bounds": {
+    "min": [
+     -0.7128,
+     0,
+     -0.7937
+    ],
+    "max": [
+     0.7128,
+     0.5699,
+     0.7937
+    ]
+   },
+   "height": 0.5699,
+   "radius": 0.9175,
+   "materials": [
+    {
+     "name": "tree_stump_01",
+     "foliage": false
+    }
+   ],
+   "source": {
+    "url": "https://polyhaven.com/a/tree_stump_01",
+    "authors": [
+     "Rob Tuytel"
+    ],
+    "license": "CC0-1.0"
+   },
+   "bytes": 1519712
+  },
+  "tree_stump_02": {
+   "name": "Tree Stump 02",
+   "category": "deadwood",
+   "lods": [
+    {
+     "file": "models/tree_stump_02/lod0.glb",
+     "triangles": 11999
+    },
+    {
+     "file": "models/tree_stump_02/lod1.glb",
+     "triangles": 2497
+    },
+    {
+     "file": "models/tree_stump_02/lod2.glb",
+     "triangles": 397
+    }
+   ],
+   "bounds": {
+    "min": [
+     -0.7605,
+     0,
+     -0.6952
+    ],
+    "max": [
+     0.7605,
+     0.522,
+     0.6952
+    ]
+   },
+   "height": 0.522,
+   "radius": 0.8061,
+   "materials": [
+    {
+     "name": "tree_stump_02",
+     "foliage": false
+    }
+   ],
+   "source": {
+    "url": "https://polyhaven.com/a/tree_stump_02",
+    "authors": [
+     "Rob Tuytel"
+    ],
+    "license": "CC0-1.0"
+   },
+   "bytes": 1499480
+  },
+  "root_cluster_01": {
+   "name": "Root Cluster 01",
+   "category": "deadwood",
+   "lods": [
+    {
+     "file": "models/root_cluster_01/lod0.glb",
+     "triangles": 11996
+    },
+    {
+     "file": "models/root_cluster_01/lod1.glb",
+     "triangles": 2495
+    },
+    {
+     "file": "models/root_cluster_01/lod2.glb",
+     "triangles": 395
+    }
+   ],
+   "bounds": {
+    "min": [
+     -2.0601,
+     0,
+     -1.3346
+    ],
+    "max": [
+     2.0601,
+     1.4964,
+     1.3346
+    ]
+   },
+   "height": 1.4964,
+   "radius": 2.1145,
+   "materials": [
+    {
+     "name": "root_cluster_01",
+     "foliage": false
+    }
+   ],
+   "source": {
+    "url": "https://polyhaven.com/a/root_cluster_01",
+    "authors": [
+     "Jenelle van Heerden",
+     "Rico Cilliers"
+    ],
+    "license": "CC0-1.0"
+   },
+   "bytes": 1446128
+  },
+  "dry_branches_medium_01__a": {
+   "name": "Dry Branches Medium 01 (A)",
+   "category": "deadwood",
+   "lods": [
+    {
+     "file": "models/dry_branches_medium_01__a/lod0.glb",
+     "triangles": 2999
+    },
+    {
+     "file": "models/dry_branches_medium_01__a/lod1.glb",
+     "triangles": 600
+    }
+   ],
+   "bounds": {
+    "min": [
+     -0.1615,
+     0,
+     -0.6483
+    ],
+    "max": [
+     0.1615,
+     0.341,
+     0.6483
+    ]
+   },
+   "height": 0.341,
+   "radius": 0.6671,
+   "materials": [
+    {
+     "name": "dry_branches_medium_01",
+     "foliage": false
+    }
+   ],
+   "source": {
+    "url": "https://polyhaven.com/a/dry_branches_medium_01",
+    "authors": [
+     "Rico Cilliers"
+    ],
+    "license": "CC0-1.0"
+   },
+   "variantOf": "dry_branches_medium_01",
+   "bytes": 1023604
+  },
+  "dry_branches_medium_01__b": {
+   "name": "Dry Branches Medium 01 (B)",
+   "category": "deadwood",
+   "lods": [
+    {
+     "file": "models/dry_branches_medium_01__b/lod0.glb",
+     "triangles": 3000
+    },
+    {
+     "file": "models/dry_branches_medium_01__b/lod1.glb",
+     "triangles": 600
+    }
+   ],
+   "bounds": {
+    "min": [
+     -0.0756,
+     0,
+     -0.5193
+    ],
+    "max": [
+     0.0756,
+     0.1412,
+     0.5193
+    ]
+   },
+   "height": 0.1412,
+   "radius": 0.5241,
+   "materials": [
+    {
+     "name": "dry_branches_medium_01",
+     "foliage": false
+    }
+   ],
+   "source": {
+    "url": "https://polyhaven.com/a/dry_branches_medium_01",
+    "authors": [
+     "Rico Cilliers"
+    ],
+    "license": "CC0-1.0"
+   },
+   "variantOf": "dry_branches_medium_01",
+   "bytes": 1011832
+  },
+  "dry_branches_medium_01__c": {
+   "name": "Dry Branches Medium 01 (C)",
+   "category": "deadwood",
+   "lods": [
+    {
+     "file": "models/dry_branches_medium_01__c/lod0.glb",
+     "triangles": 3000
+    },
+    {
+     "file": "models/dry_branches_medium_01__c/lod1.glb",
+     "triangles": 600
+    }
+   ],
+   "bounds": {
+    "min": [
+     -0.065,
+     0,
+     -0.3886
+    ],
+    "max": [
+     0.065,
+     0.1428,
+     0.3886
+    ]
+   },
+   "height": 0.1428,
+   "radius": 0.3891,
+   "materials": [
+    {
+     "name": "dry_branches_medium_01",
+     "foliage": false
+    }
+   ],
+   "source": {
+    "url": "https://polyhaven.com/a/dry_branches_medium_01",
+    "authors": [
+     "Rico Cilliers"
+    ],
+    "license": "CC0-1.0"
+   },
+   "variantOf": "dry_branches_medium_01",
+   "bytes": 1009864
+  },
+  "modular_wooden_pier": {
+   "name": "Modular Wooden Pier",
+   "category": "structure",
+   "lods": [
+    {
+     "file": "models/modular_wooden_pier/lod0.glb",
+     "triangles": 14966
+    },
+    {
+     "file": "models/modular_wooden_pier/lod1.glb",
+     "triangles": 2476
+    }
+   ],
+   "bounds": {
+    "min": [
+     -1.2712,
+     0,
+     -4.6781
+    ],
+    "max": [
+     1.2712,
+     4.6348,
+     4.6781
+    ]
+   },
+   "height": 4.6348,
+   "radius": 4.7891,
+   "materials": [
+    {
+     "name": "planks",
+     "foliage": false
+    },
+    {
+     "name": "poles",
+     "foliage": false
+    }
+   ],
+   "source": {
+    "url": "https://polyhaven.com/a/modular_wooden_pier",
+    "authors": [
+     "Rico Cilliers"
+    ],
+    "license": "CC0-1.0"
+   },
+   "tags": [
+    "pier"
+   ],
+   "bytes": 2066276
+  },
+  "modular_wooden_pier_kit__a": {
+   "name": "Modular Wooden Pier (A)",
+   "category": "structure",
+   "lods": [
+    {
+     "file": "models/modular_wooden_pier_kit__a/lod0.glb",
+     "triangles": 5512
+    },
+    {
+     "file": "models/modular_wooden_pier_kit__a/lod1.glb",
+     "triangles": 2500
+    }
+   ],
+   "bounds": {
+    "min": [
+     -1.2619,
+     0,
+     -1.1015
+    ],
+    "max": [
+     1.2619,
+     0.0798,
+     1.1015
+    ]
+   },
+   "height": 0.0798,
+   "radius": 1.6426,
+   "materials": [
+    {
+     "name": "planks",
+     "foliage": false
+    }
+   ],
+   "source": {
+    "url": "https://polyhaven.com/a/modular_wooden_pier",
+    "authors": [
+     "Rico Cilliers"
+    ],
+    "license": "CC0-1.0"
+   },
+   "tags": [
+    "pier",
+    "modular"
+   ],
+   "variantOf": "modular_wooden_pier_kit",
+   "bytes": 997000
+  },
+  "modular_wooden_pier_kit__b": {
+   "name": "Modular Wooden Pier (B)",
+   "category": "structure",
+   "lods": [
+    {
+     "file": "models/modular_wooden_pier_kit__b/lod0.glb",
+     "triangles": 2460
+    },
+    {
+     "file": "models/modular_wooden_pier_kit__b/lod1.glb",
+     "triangles": 2460
+    }
+   ],
+   "bounds": {
+    "min": [
+     -1.1059,
+     0,
+     -1.5405
+    ],
+    "max": [
+     1.1059,
+     3.8493,
+     1.5405
+    ]
+   },
+   "height": 3.8493,
+   "radius": 1.8494,
+   "materials": [
+    {
+     "name": "poles",
+     "foliage": false
+    }
+   ],
+   "source": {
+    "url": "https://polyhaven.com/a/modular_wooden_pier",
+    "authors": [
+     "Rico Cilliers"
+    ],
+    "license": "CC0-1.0"
+   },
+   "tags": [
+    "pier",
+    "modular"
+   ],
+   "variantOf": "modular_wooden_pier_kit",
+   "bytes": 856608
+  },
+  "modular_wooden_pier_kit__c": {
+   "name": "Modular Wooden Pier (C)",
+   "category": "structure",
+   "lods": [
+    {
+     "file": "models/modular_wooden_pier_kit__c/lod0.glb",
+     "triangles": 14999
+    },
+    {
+     "file": "models/modular_wooden_pier_kit__c/lod1.glb",
+     "triangles": 2498
+    }
+   ],
+   "bounds": {
+    "min": [
+     -1.2448,
+     0,
+     -1.7584
+    ],
+    "max": [
+     1.2448,
+     4.2653,
+     1.7584
+    ]
+   },
+   "height": 4.2653,
+   "radius": 2.0923,
+   "materials": [
+    {
+     "name": "planks",
+     "foliage": false
+    },
+    {
+     "name": "poles",
+     "foliage": false
+    }
+   ],
+   "source": {
+    "url": "https://polyhaven.com/a/modular_wooden_pier",
+    "authors": [
+     "Rico Cilliers"
+    ],
+    "license": "CC0-1.0"
+   },
+   "tags": [
+    "pier",
+    "modular"
+   ],
+   "variantOf": "modular_wooden_pier_kit",
+   "bytes": 2008480
+  },
+  "modular_wooden_pier_kit__d": {
+   "name": "Modular Wooden Pier (D)",
+   "category": "structure",
+   "lods": [
+    {
+     "file": "models/modular_wooden_pier_kit__d/lod0.glb",
+     "triangles": 11758
+    },
+    {
+     "file": "models/modular_wooden_pier_kit__d/lod1.glb",
+     "triangles": 2499
+    }
+   ],
+   "bounds": {
+    "min": [
+     -1.2535,
+     0,
+     -1.6962
+    ],
+    "max": [
+     1.2535,
+     3.8377,
+     1.6962
+    ]
+   },
+   "height": 3.8377,
+   "radius": 2.0187,
+   "materials": [
+    {
+     "name": "planks",
+     "foliage": false
+    },
+    {
+     "name": "poles",
+     "foliage": false
+    }
+   ],
+   "source": {
+    "url": "https://polyhaven.com/a/modular_wooden_pier",
+    "authors": [
+     "Rico Cilliers"
+    ],
+    "license": "CC0-1.0"
+   },
+   "tags": [
+    "pier",
+    "modular"
+   ],
+   "variantOf": "modular_wooden_pier_kit",
+   "bytes": 1898760
+  },
+  "modular_wooden_pier_kit__e": {
+   "name": "Modular Wooden Pier (E)",
+   "category": "structure",
+   "lods": [
+    {
+     "file": "models/modular_wooden_pier_kit__e/lod0.glb",
+     "triangles": 14162
+    },
+    {
+     "file": "models/modular_wooden_pier_kit__e/lod1.glb",
+     "triangles": 2488
+    }
+   ],
+   "bounds": {
+    "min": [
+     -1.2535,
+     0,
+     -1.6962
+    ],
+    "max": [
+     1.2535,
+     3.8377,
+     1.6962
+    ]
+   },
+   "height": 3.8377,
+   "radius": 2.0107,
+   "materials": [
+    {
+     "name": "planks",
+     "foliage": false
+    },
+    {
+     "name": "poles",
+     "foliage": false
+    }
+   ],
+   "source": {
+    "url": "https://polyhaven.com/a/modular_wooden_pier",
+    "authors": [
+     "Rico Cilliers"
+    ],
+    "license": "CC0-1.0"
+   },
+   "tags": [
+    "pier",
+    "modular"
+   ],
+   "variantOf": "modular_wooden_pier_kit",
+   "bytes": 1976008
+  },
+  "modular_wooden_pier_kit__f": {
+   "name": "Modular Wooden Pier (F)",
+   "category": "structure",
+   "lods": [
+    {
+     "file": "models/modular_wooden_pier_kit__f/lod0.glb",
+     "triangles": 14598
+    },
+    {
+     "file": "models/modular_wooden_pier_kit__f/lod1.glb",
+     "triangles": 2499
+    }
+   ],
+   "bounds": {
+    "min": [
+     -1.2291,
+     0,
+     -1.5792
+    ],
+    "max": [
+     1.2291,
+     4.1578,
+     1.5792
+    ]
+   },
+   "height": 4.1578,
+   "radius": 1.94,
+   "materials": [
+    {
+     "name": "planks",
+     "foliage": false
+    },
+    {
+     "name": "poles",
+     "foliage": false
+    }
+   ],
+   "source": {
+    "url": "https://polyhaven.com/a/modular_wooden_pier",
+    "authors": [
+     "Rico Cilliers"
+    ],
+    "license": "CC0-1.0"
+   },
+   "tags": [
+    "pier",
+    "modular"
+   ],
+   "variantOf": "modular_wooden_pier_kit",
+   "bytes": 1978808
+  },
+  "modular_wooden_pier_kit__g": {
+   "name": "Modular Wooden Pier (G)",
+   "category": "structure",
+   "lods": [
+    {
+     "file": "models/modular_wooden_pier_kit__g/lod0.glb",
+     "triangles": 13010
+    },
+    {
+     "file": "models/modular_wooden_pier_kit__g/lod1.glb",
+     "triangles": 2499
+    }
+   ],
+   "bounds": {
+    "min": [
+     -1.5508,
+     0,
+     -0.2323
+    ],
+    "max": [
+     1.5508,
+     7.0013,
+     0.2323
+    ]
+   },
+   "height": 7.0013,
+   "radius": 1.557,
+   "materials": [
+    {
+     "name": "planks",
+     "foliage": false
+    },
+    {
+     "name": "poles",
+     "foliage": false
+    }
+   ],
+   "source": {
+    "url": "https://polyhaven.com/a/modular_wooden_pier",
+    "authors": [
+     "Rico Cilliers"
+    ],
+    "license": "CC0-1.0"
+   },
+   "tags": [
+    "pier",
+    "modular"
+   ],
+   "variantOf": "modular_wooden_pier_kit",
+   "bytes": 1892976
+  },
+  "stone_fire_pit": {
+   "name": "Stone Fire Pit",
+   "category": "prop",
+   "lods": [
+    {
+     "file": "models/stone_fire_pit/lod0.glb",
+     "triangles": 3887
+    },
+    {
+     "file": "models/stone_fire_pit/lod1.glb",
+     "triangles": 2499
+    }
+   ],
+   "bounds": {
+    "min": [
+     -0.7242,
+     0,
+     -0.7166
+    ],
+    "max": [
+     0.7242,
+     0.3883,
+     0.7166
+    ]
+   },
+   "height": 0.3883,
+   "radius": 0.7363,
+   "materials": [
+    {
+     "name": "stone_fire_pit",
+     "foliage": false
+    }
+   ],
+   "source": {
+    "url": "https://polyhaven.com/a/stone_fire_pit",
+    "authors": [
+     "Sebastian Platen"
+    ],
+    "license": "CC0-1.0"
+   },
+   "bytes": 890788
+  },
+  "wooden_picnic_table": {
+   "name": "Wooden Picnic Table",
+   "category": "prop",
+   "lods": [
+    {
+     "file": "models/wooden_picnic_table/lod0.glb",
+     "triangles": 10210
+    },
+    {
+     "file": "models/wooden_picnic_table/lod1.glb",
+     "triangles": 2499
+    }
+   ],
+   "bounds": {
+    "min": [
+     -1.1205,
+     0,
+     -1.5112
+    ],
+    "max": [
+     1.1205,
+     0.746,
+     1.5112
+    ]
+   },
+   "height": 0.746,
+   "radius": 1.878,
+   "materials": [
+    {
+     "name": "bottom",
+     "foliage": false
+    },
+    {
+     "name": "table",
+     "foliage": false
+    }
+   ],
+   "source": {
+    "url": "https://polyhaven.com/a/wooden_picnic_table",
+    "authors": [
+     "Ulan Cabanilla"
+    ],
+    "license": "CC0-1.0"
+   },
+   "bytes": 1039768
+  },
+  "painted_wooden_bench": {
+   "name": "Painted Wooden Bench",
+   "category": "prop",
+   "lods": [
+    {
+     "file": "models/painted_wooden_bench/lod0.glb",
+     "triangles": 630
+    },
+    {
+     "file": "models/painted_wooden_bench/lod1.glb",
+     "triangles": 630
+    }
+   ],
+   "bounds": {
+    "min": [
+     -0.5825,
+     0,
+     -0.2483
+    ],
+    "max": [
+     0.5825,
+     0.8893,
+     0.2483
+    ]
+   },
+   "height": 0.8893,
+   "radius": 0.6332,
+   "materials": [
+    {
+     "name": "painted_wooden_bench",
+     "foliage": false
+    }
+   ],
+   "source": {
+    "url": "https://polyhaven.com/a/painted_wooden_bench",
+    "authors": [
+     "Kirill Sannikov"
+    ],
+    "license": "CC0-1.0"
+   },
+   "bytes": 517468
+  },
+  "ocean_buoy": {
+   "name": "Ocean Buoy",
+   "category": "prop",
+   "lods": [
+    {
+     "file": "models/ocean_buoy/lod0.glb",
+     "triangles": 12240
+    },
+    {
+     "file": "models/ocean_buoy/lod1.glb",
+     "triangles": 2500
+    }
+   ],
+   "bounds": {
+    "min": [
+     -0.5333,
+     0,
+     -0.4761
+    ],
+    "max": [
+     0.5333,
+     2.6562,
+     0.4761
+    ]
+   },
+   "height": 2.6562,
+   "radius": 0.5334,
+   "materials": [
+    {
+     "name": "buoy",
+     "foliage": false
+    }
+   ],
+   "source": {
+    "url": "https://polyhaven.com/a/ocean_buoy",
+    "authors": [
+     "Mateusz Sadek"
+    ],
+    "license": "CC0-1.0"
+   },
+   "tags": [
+    "floating"
+   ],
+   "bytes": 1235332
+  },
+  "lateral_sea_marker": {
+   "name": "Lateral Sea Marker",
+   "category": "prop",
+   "lods": [
+    {
+     "file": "models/lateral_sea_marker/lod0.glb",
+     "triangles": 13014
+    },
+    {
+     "file": "models/lateral_sea_marker/lod1.glb",
+     "triangles": 2500
+    }
+   ],
+   "bounds": {
+    "min": [
+     -1.5024,
+     0,
+     -1.5024
+    ],
+    "max": [
+     1.5024,
+     6.8387,
+     1.5024
+    ]
+   },
+   "height": 6.8387,
+   "radius": 1.506,
+   "materials": [
+    {
+     "name": "lateral_sea_marker",
+     "foliage": false
+    }
+   ],
+   "source": {
+    "url": "https://polyhaven.com/a/lateral_sea_marker",
+    "authors": [
+     "James Ray Cock",
+     "Kuutti Siitonen"
+    ],
+    "license": "CC0-1.0"
+   },
+   "tags": [
+    "floating"
+   ],
+   "bytes": 1102416
+  },
+  "rubber_duck_toy": {
+   "name": "Rubber Duck Toy",
+   "category": "prop",
+   "lods": [
+    {
+     "file": "models/rubber_duck_toy/lod0.glb",
+     "triangles": 4288
+    },
+    {
+     "file": "models/rubber_duck_toy/lod1.glb",
+     "triangles": 2500
+    }
+   ],
+   "bounds": {
+    "min": [
+     -0.1068,
+     0,
+     -0.15
+    ],
+    "max": [
+     0.1068,
+     0.2855,
+     0.15
+    ]
+   },
+   "height": 0.2855,
+   "radius": 0.15,
+   "materials": [
+    {
+     "name": "rubber_duck_toy",
+     "foliage": false
+    }
+   ],
+   "source": {
+    "url": "https://polyhaven.com/a/rubber_duck_toy",
+    "authors": [
+     "Plat251"
+    ],
+    "license": "CC0-1.0"
+   },
+   "tags": [
+    "floating"
+   ],
+   "bytes": 216496
+  },
+  "lifebuoy": {
+   "name": "Lifebuoy",
+   "category": "prop",
+   "lods": [
+    {
+     "file": "models/lifebuoy/lod0.glb",
+     "triangles": 10728
+    },
+    {
+     "file": "models/lifebuoy/lod1.glb",
+     "triangles": 2499
+    }
+   ],
+   "bounds": {
+    "min": [
+     -0.3916,
+     0,
+     -0.0776
+    ],
+    "max": [
+     0.3916,
+     0.8412,
+     0.0776
+    ]
+   },
+   "height": 0.8412,
+   "radius": 0.3916,
+   "materials": [
+    {
+     "name": "lifebuoy",
+     "foliage": false
+    }
+   ],
+   "source": {
+    "url": "https://polyhaven.com/a/lifebuoy",
+    "authors": [
+     "Hank Kaamura"
+    ],
+    "license": "CC0-1.0"
+   },
+   "tags": [
+    "floating"
+   ],
+   "bytes": 1048548
+  },
+  "wine_barrel_01": {
+   "name": "Wine Barrel 01",
+   "category": "prop",
+   "lods": [
+    {
+     "file": "models/wine_barrel_01/lod0.glb",
+     "triangles": 10000
+    },
+    {
+     "file": "models/wine_barrel_01/lod1.glb",
+     "triangles": 4499
+    }
+   ],
+   "bounds": {
+    "min": [
+     -0.371,
+     0,
+     -0.378
+    ],
+    "max": [
+     0.371,
+     0.8713,
+     0.378
+    ]
+   },
+   "height": 0.8713,
+   "radius": 0.3806,
+   "materials": [
+    {
+     "name": "wine_barrel_01",
+     "foliage": false
+    }
+   ],
+   "source": {
+    "url": "https://polyhaven.com/a/wine_barrel_01",
+    "authors": [
+     "James Ray Cock"
+    ],
+    "license": "CC0-1.0"
+   },
+   "tags": [
+    "floating"
+   ],
+   "bytes": 1094912
+  },
+  "wooden_crate_01": {
+   "name": "Wooden Crate 01",
+   "category": "prop",
+   "lods": [
+    {
+     "file": "models/wooden_crate_01/lod0.glb",
+     "triangles": 6576
+    },
+    {
+     "file": "models/wooden_crate_01/lod1.glb",
+     "triangles": 2500
+    }
+   ],
+   "bounds": {
+    "min": [
+     -0.4126,
+     0,
+     -0.2045
+    ],
+    "max": [
+     0.4126,
+     0.3496,
+     0.2045
+    ]
+   },
+   "height": 0.3496,
+   "radius": 0.4203,
+   "materials": [
+    {
+     "name": "wooden_crate_01",
+     "foliage": false
+    }
+   ],
+   "source": {
+    "url": "https://polyhaven.com/a/wooden_crate_01",
+    "authors": [
+     "James Ray Cock"
+    ],
+    "license": "CC0-1.0"
+   },
+   "tags": [
+    "floating"
+   ],
+   "bytes": 747516
+  },
+  "wooden_crate_02": {
+   "name": "Wooden Crate 02",
+   "category": "prop",
+   "lods": [
+    {
+     "file": "models/wooden_crate_02/lod0.glb",
+     "triangles": 5176
+    },
+    {
+     "file": "models/wooden_crate_02/lod1.glb",
+     "triangles": 2500
+    }
+   ],
+   "bounds": {
+    "min": [
+     -0.2646,
+     0,
+     -0.5832
+    ],
+    "max": [
+     0.2646,
+     0.464,
+     0.5832
+    ]
+   },
+   "height": 0.464,
+   "radius": 0.5832,
+   "materials": [
+    {
+     "name": "wooden_crate_02",
+     "foliage": false
+    }
+   ],
+   "source": {
+    "url": "https://polyhaven.com/a/wooden_crate_02",
+    "authors": [
+     "James Ray Cock",
+     "Jurita Burger"
+    ],
+    "license": "CC0-1.0"
+   },
+   "tags": [
+    "floating"
+   ],
+   "bytes": 729964
+  },
+  "wooden_bucket_01": {
+   "name": "Wooden Bucket 01",
+   "category": "prop",
+   "lods": [
+    {
+     "file": "models/wooden_bucket_01/lod0.glb",
+     "triangles": 5116
+    },
+    {
+     "file": "models/wooden_bucket_01/lod1.glb",
+     "triangles": 2500
+    }
+   ],
+   "bounds": {
+    "min": [
+     -0.1835,
+     0,
+     -0.1711
+    ],
+    "max": [
+     0.1835,
+     0.5499,
+     0.1711
+    ]
+   },
+   "height": 0.5499,
+   "radius": 0.1835,
+   "materials": [
+    {
+     "name": "wooden_bucket_01",
+     "foliage": false
+    }
+   ],
+   "source": {
+    "url": "https://polyhaven.com/a/wooden_bucket_01",
+    "authors": [
+     "James Ray Cock"
+    ],
+    "license": "CC0-1.0"
+   },
+   "tags": [
+    "floating"
+   ],
+   "bytes": 762168
+  }
+ }
+}

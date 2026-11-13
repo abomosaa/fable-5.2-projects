@@ -1,0 +1,54 @@
+{
+  "id": "open-meteo-air-quality",
+  "provider": "Open-Meteo (data: Copernicus Atmosphere Monitoring Service, CAMS)",
+  "dataset": "Air Quality API – current modelled PM2.5, PM10, NO₂, O₃ and air-quality indices for major world cities",
+  "description": "Current modelled air quality for about 150 major cities worldwide from the CAMS European (11 km) and CAMS global (45 km) atmospheric composition forecasts, as served by the Open-Meteo Air Quality API. Forecast-model values, not station measurements.",
+  "homepageUrl": "https://open-meteo.com/en/docs/air-quality-api",
+  "documentationUrl": "https://open-meteo.com/en/docs/air-quality-api",
+  "sourceUrls": [
+    "https://air-quality-api.open-meteo.com/v1/air-quality?latitude={lat,…}&longitude={lon,…}&current=pm2_5,pm10,nitrogen_dioxide,ozone,us_aqi,european_aqi&timeformat=unixtime"
+  ],
+  "allowedHosts": ["air-quality-api.open-meteo.com"],
+  "coverage": {
+    "geographic": "Global, sampled at a fixed list of 157 large cities and national capitals (cities.json, derived from Natural Earth populated places, public domain). CAMS European 0.1° forecast inside Europe, CAMS global 0.4° forecast elsewhere.",
+    "temporal": "Current hour only."
+  },
+  "updateCadence": { "upstream": "CAMS global forecast every 12 hours, CAMS European forecast every 24 hours; hourly time steps", "pollIntervalSec": 10800, "staleAfterSec": 25200 },
+  "auth": { "type": "none", "envVars": [] },
+  "attribution": "Air quality data by Open-Meteo.com (CC BY 4.0), based on CAMS European air quality and CAMS global atmospheric composition forecasts – Copernicus Atmosphere Monitoring Service (CAMS) information",
+  "license": {
+    "name": "CC BY 4.0 – free API tier for non-commercial use only; CAMS data under the Copernicus licence",
+    "url": "https://open-meteo.com/en/licence",
+    "redistribution": "allowed-with-attribution",
+    "nonCommercialOnly": true,
+    "notes": "Open-Meteo terms (https://open-meteo.com/en/terms): the free API may be used for non-commercial purposes only, with fewer than 10,000 API calls per day, 5,000 per hour and 600 per minute; each requested location counts as one call. This adapter makes 2 requests (157 location-calls) every 3 hours, about 1,260 calls per day, on top of the calls of the open-meteo-weather source from the same IP address. The Air Quality API documentation states that all users of Open-Meteo data must provide a clear attribution to the CAMS ENSEMBLE data provider as well as a reference to Open-Meteo. Commercial deployments need a paid Open-Meteo subscription."
+  },
+  "limitations": [
+    "All values are MODELLED: they come from the CAMS atmospheric composition forecast for the grid cell containing the city (about 11 km in Europe, about 45 km elsewhere), not from monitoring stations. Street-level and station readings can differ substantially, and local sources (traffic, fires, dust) are smoothed out or missed.",
+    "Outside Europe the 45 km global model is known to over- or under-estimate particulates in desert-dust and biomass-burning regions; extreme values (US AQI above 300) should be checked against local station networks.",
+    "Only a fixed sample of 157 cities is polled, every 3 hours, to stay within the free tier's call limit.",
+    "The US AQI is defined on 24-hour (PM) and 8-hour (ozone) averages; Open-Meteo computes it from rolling model averages, so it is indicative rather than an official index value."
+  ],
+  "confidenceNotes": "These are MODELLED values from the CAMS forecast, not station measurements, and no per-value uncertainty is published, so records carry no confidence value. Severity is derived by this application from the US AQI bands supplied by Open-Meteo: 0–50 → 0, 51–100 → 1, 101–150 → 2, 151–200 → 3, 201 and above → 4.",
+  "retention": { "note": "One record per city, updated in place at every poll; records are purged 2 days after their last model time." },
+  "snapshot": "full",
+  "http": { "minIntervalMs": 1000, "cacheTtlSec": 1800 },
+  "enabledByDefault": true,
+  "layers": [
+    {
+      "id": "air-quality",
+      "name": "Air quality – major cities (modelled)",
+      "description": "Current modelled PM2.5 and US / European air-quality index for about 150 major cities (CAMS forecast via Open-Meteo). Not station measurements.",
+      "domain": "weather",
+      "category": "air-quality",
+      "geometry": "point",
+      "timeModel": "snapshot",
+      "render": { "type": "point", "color": "purple", "shape": "circle" },
+      "metric": { "name": "PM2.5", "unit": "µg/m³", "scale": "sequential", "higherIs": "worse" },
+      "freshForSec": 12600,
+      "liveMaxAgeSec": 14400,
+      "retentionDays": 2,
+      "defaultOn": false
+    }
+  ]
+}

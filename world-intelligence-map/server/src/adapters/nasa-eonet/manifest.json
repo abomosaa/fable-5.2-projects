@@ -1,0 +1,109 @@
+{
+  "id": "nasa-eonet",
+  "provider": "NASA Earth Observatory / ESDIS",
+  "dataset": "Earth Observatory Natural Event Tracker (EONET) v3 – curated natural events",
+  "description": "Curated, continuously updated metadata about natural events (wildfires, volcanic eruptions, tropical cyclones, icebergs, floods and others) collected by NASA EONET from sources such as IRWIN, GDACS, JTWC, the Smithsonian GVP and the U.S. National Ice Center, each with dated positions and an open/closed status.",
+  "homepageUrl": "https://eonet.gsfc.nasa.gov/",
+  "documentationUrl": "https://eonet.gsfc.nasa.gov/docs/v3",
+  "sourceUrls": [
+    "https://eonet.gsfc.nasa.gov/api/v3/events?status=all&days=30",
+    "https://eonet.gsfc.nasa.gov/api/v3/events?status=open&category=volcanoes,seaLakeIce,severeStorms"
+  ],
+  "allowedHosts": ["eonet.gsfc.nasa.gov"],
+  "coverage": {
+    "geographic": "Global, but uneven: wildfires come mainly from U.S. interagency reporting (IRWIN) and GDACS, icebergs only from the Antarctic.",
+    "temporal": "Events with a dated position in the past 30 days (open or closed) plus every still-open volcano, iceberg and storm event regardless of age."
+  },
+  "updateCadence": { "upstream": "Curated several times a day; no fixed schedule", "pollIntervalSec": 1800, "staleAfterSec": 21600 },
+  "auth": { "type": "none", "envVars": [] },
+  "attribution": "NASA Earth Observatory Natural Event Tracker (EONET)",
+  "license": {
+    "name": "NASA open data (no licence restriction stated; NASA asks to be acknowledged) – EONET disclaimer applies",
+    "url": "https://www.earthdata.nasa.gov/engage/open-data-services-software-policies/data-use-guidance",
+    "redistribution": "allowed",
+    "nonCommercialOnly": false,
+    "notes": "NASA ESDIS data-use guidance: data from NASA-led missions carry no use restrictions unless marked otherwise (CC0); citation is strongly urged. EONET disclaimer (https://eonet.gsfc.nasa.gov/what-is-eonet): metadata are for visualisation and general information only and are not 'official' with regard to spatial or temporal extent. Each event links to a third-party source whose own terms govern the linked material."
+  },
+  "limitations": [
+    "EONET positions and dates are approximations taken from the linked sources; the 'closed' date does not necessarily mark the real end of an event.",
+    "Many events are never closed upstream (thousands of old wildfire events remain 'open'), so open wildfires and other events without a dated position in the past 30 days are not fetched.",
+    "Volcano events usually carry only the date on which EONET first registered the activity, which can be years old for long-lived eruptions.",
+    "Storm positions are a few fixes per day from JTWC/NHC advisories; the line between them is drawn by this application and is not an analysed best track.",
+    "Flood events from GDACS are small circular/outline polygons around a reported location, not mapped flood extents."
+  ],
+  "confidenceNotes": "EONET gives no confidence or quality value, so records carry none. Severity is derived by this application for tropical cyclones only, from the peak sustained wind reported along the track (<34 kt minor, 34–63 kt moderate, 64–95 kt severe, 96 kt and above extreme); other event types have no severity.",
+  "retention": { "note": "Events are kept while EONET lists them and for 30 days after they are closed or disappear from the feed (volcano events: 60 days)." },
+  "snapshot": "full",
+  "http": { "minIntervalMs": 2000, "timeoutMs": 60000 },
+  "enabledByDefault": true,
+  "layers": [
+    {
+      "id": "eonet-wildfires",
+      "name": "Wildfire events (EONET)",
+      "description": "Named wildfire and prescribed-fire incidents tracked by NASA EONET (mostly IRWIN for the United States and GDACS worldwide) with reported burned area.",
+      "domain": "hazards",
+      "category": "wildfire",
+      "geometry": "point",
+      "timeModel": "interval",
+      "render": { "type": "point", "color": "red", "shape": "diamond" },
+      "freshForSec": 172800,
+      "retentionDays": 30,
+      "defaultOn": true,
+      "correlationClass": "wildfire"
+    },
+    {
+      "id": "eonet-volcanoes",
+      "name": "Volcanic activity (EONET)",
+      "description": "Volcanoes with ongoing or recent eruptive activity tracked by NASA EONET (mainly from the Smithsonian Global Volcanism Program).",
+      "domain": "hazards",
+      "category": "volcano",
+      "geometry": "point",
+      "timeModel": "interval",
+      "render": { "type": "point", "color": "brown", "shape": "triangle" },
+      "freshForSec": 604800,
+      "retentionDays": 60,
+      "defaultOn": false,
+      "correlationClass": "volcano"
+    },
+    {
+      "id": "eonet-severe-storms",
+      "name": "Tropical cyclone tracks (EONET)",
+      "description": "Tropical cyclones tracked by NASA EONET from JTWC and NHC advisories: the reported positions joined into a track ending at the latest position.",
+      "domain": "hazards",
+      "category": "tropical-cyclone",
+      "geometry": "track",
+      "timeModel": "interval",
+      "render": { "type": "line", "color": "purple", "shape": "star" },
+      "freshForSec": 43200,
+      "retentionDays": 30,
+      "defaultOn": false,
+      "correlationClass": "tropical_cyclone"
+    },
+    {
+      "id": "eonet-sea-ice",
+      "name": "Icebergs (EONET)",
+      "description": "Large named icebergs tracked by NASA EONET from U.S. National Ice Center and BYU reports (latest reported position and size).",
+      "domain": "hazards",
+      "category": "iceberg",
+      "geometry": "point",
+      "timeModel": "interval",
+      "render": { "type": "point", "color": "teal", "shape": "hexagon" },
+      "freshForSec": 1209600,
+      "retentionDays": 30,
+      "defaultOn": false
+    },
+    {
+      "id": "eonet-other",
+      "name": "Other natural events (EONET)",
+      "description": "Floods, dust and haze, landslides, drought, snow, temperature extremes, water colour and other event categories tracked by NASA EONET; the EONET category is the sub-category.",
+      "domain": "hazards",
+      "category": "natural-event",
+      "geometry": "point",
+      "timeModel": "interval",
+      "render": { "type": "point", "color": "gray", "shape": "square" },
+      "freshForSec": 172800,
+      "retentionDays": 30,
+      "defaultOn": false
+    }
+  ]
+}

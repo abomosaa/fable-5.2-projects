@@ -1,0 +1,404 @@
+{"seq":1,"t":1794493101.738,"type":"stage_start","stage":"ingest","progress":0.0,"overall":0.0,"message":"Checking photos","data":{"index":0,"count":9}}
+{"seq":2,"t":1794493101.982,"type":"stage_progress","stage":"ingest","progress":0.0139,"overall":0.0003,"message":"Checked 1/72 photos"}
+{"seq":3,"t":1794493102.004,"type":"stage_progress","stage":"ingest","progress":0.0417,"overall":0.0008,"message":"Checked 3/72 photos"}
+{"seq":4,"t":1794493102.017,"type":"stage_progress","stage":"ingest","progress":0.0694,"overall":0.0014,"message":"Checked 5/72 photos"}
+{"seq":5,"t":1794493102.017,"type":"stage_progress","stage":"ingest","progress":0.0972,"overall":0.0019,"message":"Checked 7/72 photos"}
+{"seq":6,"t":1794493102.207,"type":"stage_progress","stage":"ingest","progress":0.125,"overall":0.0025,"message":"Checked 9/72 photos"}
+{"seq":7,"t":1794493102.245,"type":"stage_progress","stage":"ingest","progress":0.1528,"overall":0.0031,"message":"Checked 11/72 photos"}
+{"seq":8,"t":1794493102.245,"type":"stage_progress","stage":"ingest","progress":0.1806,"overall":0.0036,"message":"Checked 13/72 photos"}
+{"seq":9,"t":1794493102.252,"type":"stage_progress","stage":"ingest","progress":0.2083,"overall":0.0042,"message":"Checked 15/72 photos"}
+{"seq":10,"t":1794493102.577,"type":"stage_progress","stage":"ingest","progress":0.2361,"overall":0.0047,"message":"Checked 17/72 photos"}
+{"seq":11,"t":1794493102.604,"type":"stage_progress","stage":"ingest","progress":0.2639,"overall":0.0053,"message":"Checked 19/72 photos"}
+{"seq":12,"t":1794493102.661,"type":"stage_progress","stage":"ingest","progress":0.2917,"overall":0.0058,"message":"Checked 21/72 photos"}
+{"seq":13,"t":1794493102.662,"type":"stage_progress","stage":"ingest","progress":0.3194,"overall":0.0064,"message":"Checked 23/72 photos"}
+{"seq":14,"t":1794493102.83,"type":"stage_progress","stage":"ingest","progress":0.3472,"overall":0.0069,"message":"Checked 25/72 photos"}
+{"seq":15,"t":1794493102.85,"type":"stage_progress","stage":"ingest","progress":0.375,"overall":0.0075,"message":"Checked 27/72 photos"}
+{"seq":16,"t":1794493102.868,"type":"stage_progress","stage":"ingest","progress":0.4028,"overall":0.0081,"message":"Checked 29/72 photos"}
+{"seq":17,"t":1794493102.886,"type":"stage_progress","stage":"ingest","progress":0.4306,"overall":0.0086,"message":"Checked 31/72 photos"}
+{"seq":18,"t":1794493103.116,"type":"stage_progress","stage":"ingest","progress":0.4583,"overall":0.0092,"message":"Checked 33/72 photos"}
+{"seq":19,"t":1794493103.13,"type":"stage_progress","stage":"ingest","progress":0.4861,"overall":0.0097,"message":"Checked 35/72 photos"}
+{"seq":20,"t":1794493103.14,"type":"stage_progress","stage":"ingest","progress":0.5139,"overall":0.0103,"message":"Checked 37/72 photos"}
+{"seq":21,"t":1794493103.153,"type":"stage_progress","stage":"ingest","progress":0.5417,"overall":0.0108,"message":"Checked 39/72 photos"}
+{"seq":22,"t":1794493103.396,"type":"stage_progress","stage":"ingest","progress":0.5694,"overall":0.0114,"message":"Checked 41/72 photos"}
+{"seq":23,"t":1794493103.396,"type":"stage_progress","stage":"ingest","progress":0.5972,"overall":0.0119,"message":"Checked 43/72 photos"}
+{"seq":24,"t":1794493103.401,"type":"stage_progress","stage":"ingest","progress":0.625,"overall":0.0125,"message":"Checked 45/72 photos"}
+{"seq":25,"t":1794493103.401,"type":"stage_progress","stage":"ingest","progress":0.6528,"overall":0.0131,"message":"Checked 47/72 photos"}
+{"seq":26,"t":1794493103.66,"type":"stage_progress","stage":"ingest","progress":0.6806,"overall":0.0136,"message":"Checked 49/72 photos"}
+{"seq":27,"t":1794493103.68,"type":"stage_progress","stage":"ingest","progress":0.7083,"overall":0.0142,"message":"Checked 51/72 photos"}
+{"seq":28,"t":1794493103.68,"type":"stage_progress","stage":"ingest","progress":0.7361,"overall":0.0147,"message":"Checked 53/72 photos"}
+{"seq":29,"t":1794493103.684,"type":"stage_progress","stage":"ingest","progress":0.7639,"overall":0.0153,"message":"Checked 55/72 photos"}
+{"seq":30,"t":1794493103.901,"type":"stage_progress","stage":"ingest","progress":0.7917,"overall":0.0158,"message":"Checked 57/72 photos"}
+{"seq":31,"t":1794493103.932,"type":"stage_progress","stage":"ingest","progress":0.8194,"overall":0.0164,"message":"Checked 59/72 photos"}
+{"seq":32,"t":1794493103.94,"type":"stage_progress","stage":"ingest","progress":0.8472,"overall":0.0169,"message":"Checked 61/72 photos"}
+{"seq":33,"t":1794493103.94,"type":"stage_progress","stage":"ingest","progress":0.875,"overall":0.0175,"message":"Checked 63/72 photos"}
+{"seq":34,"t":1794493104.177,"type":"stage_progress","stage":"ingest","progress":0.9028,"overall":0.0181,"message":"Checked 65/72 photos"}
+{"seq":35,"t":1794493104.213,"type":"stage_progress","stage":"ingest","progress":0.9306,"overall":0.0186,"message":"Checked 67/72 photos"}
+{"seq":36,"t":1794493104.213,"type":"stage_progress","stage":"ingest","progress":0.9583,"overall":0.0192,"message":"Checked 69/72 photos"}
+{"seq":37,"t":1794493104.213,"type":"stage_progress","stage":"ingest","progress":0.9861,"overall":0.0197,"message":"Checked 71/72 photos"}
+{"seq":38,"t":1794493104.233,"type":"stage_end","stage":"ingest","progress":1.0,"overall":0.02,"message":"","data":{"reused":false,"seconds":2.5,"skipped":false}}
+{"seq":39,"t":1794493104.233,"type":"diagnostics","stage":"ingest","progress":0.0,"overall":0.02,"message":"","data":{"input":{"frames":72,"usable":72,"rejected":[],"capture_source":"import","tracking_mode":null,"camera_groups":[{"frames":35,"width":2400,"height":1590,"focal_px_prior":2195.62,"focal_source":"exif35"},{"frames":37,"width":2400,"height":1590,"focal_px_prior":1796.41,"focal_source":"exif35"}],"recompressed_working_copies":72,"frames_with_ar_pose":0}}}
+{"seq":40,"t":1794493104.233,"type":"stage_start","stage":"features","progress":0.0,"overall":0.02,"message":"Finding image features","data":{"index":1,"count":9}}
+{"seq":41,"t":1794493108.544,"type":"stage_progress","stage":"features","progress":0.0556,"overall":0.0233,"message":"Features 4/72 photos"}
+{"seq":42,"t":1794493113.003,"type":"stage_progress","stage":"features","progress":0.1111,"overall":0.0267,"message":"Features 8/72 photos"}
+{"seq":43,"t":1794493117.711,"type":"stage_progress","stage":"features","progress":0.1667,"overall":0.03,"message":"Features 12/72 photos"}
+{"seq":44,"t":1794493122.669,"type":"stage_progress","stage":"features","progress":0.2222,"overall":0.0333,"message":"Features 16/72 photos"}
+{"seq":45,"t":1794493128.58,"type":"stage_progress","stage":"features","progress":0.2778,"overall":0.0367,"message":"Features 20/72 photos"}
+{"seq":46,"t":1794493133.19,"type":"stage_progress","stage":"features","progress":0.3333,"overall":0.04,"message":"Features 24/72 photos"}
+{"seq":47,"t":1794493137.248,"type":"stage_progress","stage":"features","progress":0.3889,"overall":0.0433,"message":"Features 28/72 photos"}
+{"seq":48,"t":1794493141.208,"type":"stage_progress","stage":"features","progress":0.4444,"overall":0.0467,"message":"Features 32/72 photos"}
+{"seq":49,"t":1794493144.965,"type":"stage_progress","stage":"features","progress":0.4861,"overall":0.0492,"message":"Features 35/72 photos"}
+{"seq":50,"t":1794493148.722,"type":"stage_progress","stage":"features","progress":0.5417,"overall":0.0525,"message":"Features 39/72 photos"}
+{"seq":51,"t":1794493152.281,"type":"stage_progress","stage":"features","progress":0.5972,"overall":0.0558,"message":"Features 43/72 photos"}
+{"seq":52,"t":1794493155.89,"type":"stage_progress","stage":"features","progress":0.6528,"overall":0.0592,"message":"Features 47/72 photos"}
+{"seq":53,"t":1794493159.5,"type":"stage_progress","stage":"features","progress":0.7083,"overall":0.0625,"message":"Features 51/72 photos"}
+{"seq":54,"t":1794493162.959,"type":"stage_progress","stage":"features","progress":0.7639,"overall":0.0658,"message":"Features 55/72 photos"}
+{"seq":55,"t":1794493167.067,"type":"stage_progress","stage":"features","progress":0.8194,"overall":0.0692,"message":"Features 59/72 photos"}
+{"seq":56,"t":1794493173.129,"type":"stage_progress","stage":"features","progress":0.875,"overall":0.0725,"message":"Features 63/72 photos"}
+{"seq":57,"t":1794493179.042,"type":"stage_progress","stage":"features","progress":0.9306,"overall":0.0758,"message":"Features 67/72 photos"}
+{"seq":58,"t":1794493183.901,"type":"stage_progress","stage":"features","progress":0.9861,"overall":0.0792,"message":"Features 71/72 photos"}
+{"seq":59,"t":1794493185.404,"type":"stage_progress","stage":"features","progress":1.0,"overall":0.08,"message":"Features 72/72 photos"}
+{"seq":60,"t":1794493185.421,"type":"stage_end","stage":"features","progress":1.0,"overall":0.08,"message":"","data":{"reused":false,"seconds":81.19,"skipped":false}}
+{"seq":61,"t":1794493185.421,"type":"stage_start","stage":"matching","progress":0.0,"overall":0.08,"message":"Matching photos","data":{"index":2,"count":9}}
+{"seq":62,"t":1794493187.93,"type":"stage_progress","stage":"matching","progress":0.0403,"overall":0.0824,"message":"Matched 103/2556 photo pairs"}
+{"seq":63,"t":1794493190.291,"type":"stage_progress","stage":"matching","progress":0.0806,"overall":0.0848,"message":"Matched 206/2556 photo pairs"}
+{"seq":64,"t":1794493192.659,"type":"stage_progress","stage":"matching","progress":0.1209,"overall":0.0873,"message":"Matched 309/2556 photo pairs"}
+{"seq":65,"t":1794493194.818,"type":"stage_progress","stage":"matching","progress":0.1612,"overall":0.0897,"message":"Matched 412/2556 photo pairs"}
+{"seq":66,"t":1794493196.926,"type":"stage_progress","stage":"matching","progress":0.2015,"overall":0.0921,"message":"Matched 515/2556 photo pairs"}
+{"seq":67,"t":1794493198.985,"type":"stage_progress","stage":"matching","progress":0.2418,"overall":0.0945,"message":"Matched 618/2556 photo pairs"}
+{"seq":68,"t":1794493200.893,"type":"stage_progress","stage":"matching","progress":0.2821,"overall":0.0969,"message":"Matched 721/2556 photo pairs"}
+{"seq":69,"t":1794493202.65,"type":"stage_progress","stage":"matching","progress":0.3224,"overall":0.0993,"message":"Matched 824/2556 photo pairs"}
+{"seq":70,"t":1794493204.357,"type":"stage_progress","stage":"matching","progress":0.3627,"overall":0.1018,"message":"Matched 927/2556 photo pairs"}
+{"seq":71,"t":1794493206.215,"type":"stage_progress","stage":"matching","progress":0.403,"overall":0.1042,"message":"Matched 1030/2556 photo pairs"}
+{"seq":72,"t":1794493208.124,"type":"stage_progress","stage":"matching","progress":0.4433,"overall":0.1066,"message":"Matched 1133/2556 photo pairs"}
+{"seq":73,"t":1794493209.833,"type":"stage_progress","stage":"matching","progress":0.4836,"overall":0.109,"message":"Matched 1236/2556 photo pairs"}
+{"seq":74,"t":1794493211.441,"type":"stage_progress","stage":"matching","progress":0.5239,"overall":0.1114,"message":"Matched 1339/2556 photo pairs"}
+{"seq":75,"t":1794493212.748,"type":"stage_progress","stage":"matching","progress":0.5642,"overall":0.1138,"message":"Matched 1442/2556 photo pairs"}
+{"seq":76,"t":1794493214.155,"type":"stage_progress","stage":"matching","progress":0.6045,"overall":0.1163,"message":"Matched 1545/2556 photo pairs"}
+{"seq":77,"t":1794493215.713,"type":"stage_progress","stage":"matching","progress":0.6448,"overall":0.1187,"message":"Matched 1648/2556 photo pairs"}
+{"seq":78,"t":1794493217.372,"type":"stage_progress","stage":"matching","progress":0.6851,"overall":0.1211,"message":"Matched 1751/2556 photo pairs"}
+{"seq":79,"t":1794493218.63,"type":"stage_progress","stage":"matching","progress":0.7254,"overall":0.1235,"message":"Matched 1854/2556 photo pairs"}
+{"seq":80,"t":1794493220.286,"type":"stage_progress","stage":"matching","progress":0.7656,"overall":0.1259,"message":"Matched 1957/2556 photo pairs"}
+{"seq":81,"t":1794493221.693,"type":"stage_progress","stage":"matching","progress":0.8059,"overall":0.1284,"message":"Matched 2060/2556 photo pairs"}
+{"seq":82,"t":1794493222.849,"type":"stage_progress","stage":"matching","progress":0.8462,"overall":0.1308,"message":"Matched 2163/2556 photo pairs"}
+{"seq":83,"t":1794493224.005,"type":"stage_progress","stage":"matching","progress":0.8865,"overall":0.1332,"message":"Matched 2266/2556 photo pairs"}
+{"seq":84,"t":1794493225.211,"type":"stage_progress","stage":"matching","progress":0.9268,"overall":0.1356,"message":"Matched 2369/2556 photo pairs"}
+{"seq":85,"t":1794493226.067,"type":"stage_progress","stage":"matching","progress":0.9671,"overall":0.138,"message":"Matched 2472/2556 photo pairs"}
+{"seq":86,"t":1794493227.321,"type":"stage_progress","stage":"matching","progress":1.0,"overall":0.14,"message":"Matched 2556/2556 photo pairs"}
+{"seq":87,"t":1794493227.336,"type":"stage_end","stage":"matching","progress":1.0,"overall":0.14,"message":"","data":{"reused":false,"seconds":41.92,"skipped":false}}
+{"seq":88,"t":1794493227.336,"type":"diagnostics","stage":"matching","progress":0.0,"overall":0.14,"message":"","data":{"features":{"median_per_image":7636,"extract_threads":2},"matching":{"mode":"exhaustive","pairs_tested":2556,"pairs_verified":2556,"inlier_matches":238504,"pairs_possible":2556,"pair_configurations":{"CALIBRATED":582,"UNCALIBRATED":198,"PLANAR_OR_PANORAMIC":25},"pairs_without_3d_evidence":25,"pairs_classified":805}}}
+{"seq":89,"t":1794493227.337,"type":"stage_start","stage":"sfm","progress":0.0,"overall":0.14,"message":"Solving camera positions","data":{"index":3,"count":9}}
+{"seq":90,"t":1794493227.504,"type":"stage_progress","stage":"sfm","progress":0.0278,"overall":0.1422,"message":"Registered 2/72 cameras"}
+{"seq":91,"t":1794493228.014,"type":"stage_progress","stage":"sfm","progress":0.0556,"overall":0.1444,"message":"Registered 4/72 cameras"}
+{"seq":92,"t":1794493228.883,"type":"stage_progress","stage":"sfm","progress":0.0833,"overall":0.1467,"message":"Registered 6/72 cameras"}
+{"seq":93,"t":1794493229.485,"type":"stage_progress","stage":"sfm","progress":0.1111,"overall":0.1489,"message":"Registered 8/72 cameras"}
+{"seq":94,"t":1794493230.057,"type":"stage_progress","stage":"sfm","progress":0.1389,"overall":0.1511,"message":"Registered 10/72 cameras"}
+{"seq":95,"t":1794493230.555,"type":"stage_progress","stage":"sfm","progress":0.1667,"overall":0.1533,"message":"Registered 12/72 cameras"}
+{"seq":96,"t":1794493231.094,"type":"stage_progress","stage":"sfm","progress":0.1806,"overall":0.1544,"message":"Registered 13/72 cameras"}
+{"seq":97,"t":1794493232.254,"type":"stage_progress","stage":"sfm","progress":0.2083,"overall":0.1567,"message":"Registered 15/72 cameras"}
+{"seq":98,"t":1794493233.219,"type":"stage_progress","stage":"sfm","progress":0.2361,"overall":0.1589,"message":"Registered 17/72 cameras"}
+{"seq":99,"t":1794493233.76,"type":"stage_progress","stage":"sfm","progress":0.2639,"overall":0.1611,"message":"Registered 19/72 cameras"}
+{"seq":100,"t":1794493234.753,"type":"stage_progress","stage":"sfm","progress":0.2917,"overall":0.1633,"message":"Registered 21/72 cameras"}
+{"seq":101,"t":1794493235.076,"type":"stage_progress","stage":"sfm","progress":0.3194,"overall":0.1656,"message":"Registered 23/72 cameras"}
+{"seq":102,"t":1794493236.025,"type":"stage_progress","stage":"sfm","progress":0.3333,"overall":0.1667,"message":"Registered 24/72 cameras"}
+{"seq":103,"t":1794493236.845,"type":"stage_progress","stage":"sfm","progress":0.3611,"overall":0.1689,"message":"Registered 26/72 cameras"}
+{"seq":104,"t":1794493237.309,"type":"stage_progress","stage":"sfm","progress":0.3889,"overall":0.1711,"message":"Registered 28/72 cameras"}
+{"seq":105,"t":1794493237.827,"type":"stage_progress","stage":"sfm","progress":0.4028,"overall":0.1722,"message":"Registered 29/72 cameras"}
+{"seq":106,"t":1794493238.136,"type":"stage_progress","stage":"sfm","progress":0.4306,"overall":0.1744,"message":"Registered 31/72 cameras"}
+{"seq":107,"t":1794493238.803,"type":"stage_progress","stage":"sfm","progress":0.4444,"overall":0.1756,"message":"Registered 32/72 cameras"}
+{"seq":108,"t":1794493239.078,"type":"stage_progress","stage":"sfm","progress":0.4722,"overall":0.1778,"message":"Registered 34/72 cameras"}
+{"seq":109,"t":1794493239.628,"type":"stage_progress","stage":"sfm","progress":0.5,"overall":0.18,"message":"Registered 36/72 cameras"}
+{"seq":110,"t":1794493239.887,"type":"stage_progress","stage":"sfm","progress":0.5278,"overall":0.1822,"message":"Registered 38/72 cameras"}
+{"seq":111,"t":1794493240.6,"type":"stage_progress","stage":"sfm","progress":0.5556,"overall":0.1844,"message":"Registered 40/72 cameras"}
+{"seq":112,"t":1794493240.901,"type":"stage_progress","stage":"sfm","progress":0.5833,"overall":0.1867,"message":"Registered 42/72 cameras"}
+{"seq":113,"t":1794493241.779,"type":"stage_progress","stage":"sfm","progress":0.6111,"overall":0.1889,"message":"Registered 44/72 cameras"}
+{"seq":114,"t":1794493242.015,"type":"stage_progress","stage":"sfm","progress":0.6389,"overall":0.1911,"message":"Registered 46/72 cameras"}
+{"seq":115,"t":1794493242.198,"type":"stage_progress","stage":"sfm","progress":0.6667,"overall":0.1933,"message":"Registered 48/72 cameras"}
+{"seq":116,"t":1794493242.877,"type":"stage_progress","stage":"sfm","progress":0.6806,"overall":0.1944,"message":"Registered 49/72 cameras"}
+{"seq":117,"t":1794493243.07,"type":"stage_progress","stage":"sfm","progress":0.7083,"overall":0.1967,"message":"Registered 51/72 cameras"}
+{"seq":118,"t":1794493243.297,"type":"stage_progress","stage":"sfm","progress":0.7361,"overall":0.1989,"message":"Registered 53/72 cameras"}
+{"seq":119,"t":1794493244.076,"type":"stage_progress","stage":"sfm","progress":0.75,"overall":0.2,"message":"Registered 54/72 cameras"}
+{"seq":120,"t":1794493244.237,"type":"stage_progress","stage":"sfm","progress":0.7778,"overall":0.2022,"message":"Registered 56/72 cameras"}
+{"seq":121,"t":1794493244.393,"type":"stage_progress","stage":"sfm","progress":0.8056,"overall":0.2044,"message":"Registered 58/72 cameras"}
+{"seq":122,"t":1794493245.268,"type":"stage_progress","stage":"sfm","progress":0.8333,"overall":0.2067,"message":"Registered 60/72 cameras"}
+{"seq":123,"t":1794493245.442,"type":"stage_progress","stage":"sfm","progress":0.8611,"overall":0.2089,"message":"Registered 62/72 cameras"}
+{"seq":124,"t":1794493245.61,"type":"stage_progress","stage":"sfm","progress":0.8889,"overall":0.2111,"message":"Registered 64/72 cameras"}
+{"seq":125,"t":1794493246.396,"type":"stage_progress","stage":"sfm","progress":0.9167,"overall":0.2133,"message":"Registered 66/72 cameras"}
+{"seq":126,"t":1794493246.533,"type":"stage_progress","stage":"sfm","progress":0.9444,"overall":0.2156,"message":"Registered 68/72 cameras"}
+{"seq":127,"t":1794493246.656,"type":"stage_progress","stage":"sfm","progress":0.9722,"overall":0.2178,"message":"Registered 70/72 cameras"}
+{"seq":128,"t":1794493247.558,"type":"stage_end","stage":"sfm","progress":1.0,"overall":0.22,"message":"","data":{"reused":false,"seconds":20.22,"skipped":false}}
+{"seq":129,"t":1794493247.692,"type":"artifact","stage":"sfm","progress":0.0,"overall":0.22,"message":"sparse_preview.json","data":{"name":"sparse_preview.json","size":561062,"sha256":"dfbf21fcefef3aa5502d6f52aaffb0d532929dd0e322f6e7bc368c0868e18f79","kind":"preview"}}
+{"seq":130,"t":1794493247.692,"type":"diagnostics","stage":"sfm","progress":0.0,"overall":0.22,"message":"","data":{"sfm":{"input_frames":72,"registered":72,"unregistered":[],"other_models":[],"sparse_points":27071,"mean_reprojection_error_px":0.7188,"mean_track_length":4.723,"mean_observations_per_image":1775.7,"cameras":[{"camera_id":1,"model":"SIMPLE_RADIAL","width":2400,"height":1590,"params":[2143.924085,1200.0,795.0,-0.084415],"has_prior_focal_length":true},{"camera_id":2,"model":"SIMPLE_RADIAL","width":2400,"height":1590,"params":[1874.530862,1200.0,795.0,-0.093035],"has_prior_focal_length":true}],"focal_length_fixed_from_device_calibration":false},"scale":{"units":"arbitrary","source":"none","meters_per_unit":null,"relative_uncertainty":null,"note":"Photographs alone do not determine real-world size. Units are arbitrary (median camera-to-object distance = 1). Calibrate with a known distance to get real measurements."},"viewpoint_coverage":{"azimuth_bins":12,"elevation_edges_deg":[-90.0,20.0,50.0,90.0],"counts":[[1,2,3,2,2,5,2,1,4,4,2,2],[3,2,3,1,2,1,4,3,2,2,3,3],[1,1,0,1,0,2,2,2,0,2,2,0]],"azimuth_bins_covered":12,"bands_covered":3,"largest_azimuth_gap_deg":19.0,"azimuth_deg":[180.0,191.5,199.2,220.4,238.9,261.2,284.8,307.5,330.0,349.1,11.9,36.2,63.8,88.2,118.1,148.3,162.3,196.5,238.2,277.0,308.0,340.7,17.7,48.4,85.1,136.6,170.3,198.9,237.1,282.9,323.7,12.2,57.9,110.7,154.9,184.8,206.9,215.8,240.6,262.3,287.6,310.6,335.5,358.9,23.7,52.0,77.9,102.2,89.4,134.0,162.6,271.4,270.8,278.4,308.4,289.6,264.3,242.1,203.9,232.3,261.2,300.3,336.4,12.3,42.4,75.8,110.1,141.6,174.2,179.8,167.6,154.9],"elevation_deg":[27.9,27.0,25.8,27.2,29.1,30.4,30.8,30.6,31.8,31.7,32.4,33.8,34.7,33.9,35.6,36.6,55.8,54.9,56.8,50.9,51.5,47.9,47.3,46.6,49.6,49.8,48.6,59.9,61.9,58.8,63.5,59.5,62.2,58.4,59.5,-0.8,-1.8,-1.9,-0.9,-2.5,-2.7,-1.4,-0.9,-0.5,1.0,0.9,0.9,-7.1,-6.3,-2.2,-3.4,29.0,8.8,-6.7,-19.3,-21.3,-22.0,-19.3,29.5,31.1,32.7,30.5,31.9,34.6,4.9,4.9,4.1,3.6,-0.0,-14.2,-13.8,-17.8],"kind":"registered_viewpoints","note":"Where registered photos were taken from, around the object. This is viewpoint coverage \u2014 it does not prove the facing surface was reconstructed."}}}
+{"seq":131,"t":1794493247.692,"type":"stage_start","stage":"undistort","progress":0.0,"overall":0.22,"message":"Removing lens distortion","data":{"index":4,"count":9}}
+{"seq":132,"t":1794493247.692,"type":"stage_progress","stage":"undistort","progress":0.02,"overall":0.2204,"message":"Undistorting photos"}
+{"seq":133,"t":1794493250.107,"type":"stage_progress","stage":"undistort","progress":0.8,"overall":0.236,"message":"Building multi-view scene"}
+{"seq":134,"t":1794493250.285,"type":"stage_end","stage":"undistort","progress":1.0,"overall":0.24,"message":"","data":{"reused":false,"seconds":2.59,"skipped":false}}
+{"seq":135,"t":1794493250.285,"type":"warning","stage":"undistort","progress":0.0,"overall":0.24,"message":"Depth maps are computed at 800 px instead of 1200 px so that 72 photos fit in the companion's memory limit (5120 MB). Raise the limit for full detail.","data":{"code":"reduced_dense_resolution"}}
+{"seq":136,"t":1794493250.285,"type":"stage_start","stage":"dense","progress":0.0,"overall":0.24,"message":"Starting dense depth maps","data":{"index":5,"count":9}}
+{"seq":137,"t":1794493252.658,"type":"stage_progress","stage":"dense","progress":0.0042,"overall":0.2417,"message":"Depth maps: first pass 1/72"}
+{"seq":138,"t":1794493254.168,"type":"stage_progress","stage":"dense","progress":0.0083,"overall":0.2433,"message":"Depth maps: first pass 2/72"}
+{"seq":139,"t":1794493255.761,"type":"stage_progress","stage":"dense","progress":0.0125,"overall":0.245,"message":"Depth maps: first pass 3/72"}
+{"seq":140,"t":1794493257.454,"type":"stage_progress","stage":"dense","progress":0.0167,"overall":0.2467,"message":"Depth maps: first pass 4/72"}
+{"seq":141,"t":1794493258.965,"type":"stage_progress","stage":"dense","progress":0.0208,"overall":0.2483,"message":"Depth maps: first pass 5/72"}
+{"seq":142,"t":1794493260.753,"type":"stage_progress","stage":"dense","progress":0.025,"overall":0.25,"message":"Depth maps: first pass 6/72"}
+{"seq":143,"t":1794493262.177,"type":"stage_progress","stage":"dense","progress":0.0292,"overall":0.2517,"message":"Depth maps: first pass 7/72"}
+{"seq":144,"t":1794493263.836,"type":"stage_progress","stage":"dense","progress":0.0333,"overall":0.2533,"message":"Depth maps: first pass 8/72"}
+{"seq":145,"t":1794493265.155,"type":"stage_progress","stage":"dense","progress":0.0375,"overall":0.255,"message":"Depth maps: first pass 9/72"}
+{"seq":146,"t":1794493266.904,"type":"stage_progress","stage":"dense","progress":0.0417,"overall":0.2567,"message":"Depth maps: first pass 10/72"}
+{"seq":147,"t":1794493268.818,"type":"stage_progress","stage":"dense","progress":0.0458,"overall":0.2583,"message":"Depth maps: first pass 11/72"}
+{"seq":148,"t":1794493270.156,"type":"stage_progress","stage":"dense","progress":0.05,"overall":0.26,"message":"Depth maps: first pass 12/72"}
+{"seq":149,"t":1794493271.617,"type":"stage_progress","stage":"dense","progress":0.0542,"overall":0.2617,"message":"Depth maps: first pass 13/72"}
+{"seq":150,"t":1794493272.142,"type":"stage_progress","stage":"dense","progress":0.0583,"overall":0.2633,"message":"Depth maps: first pass 14/72"}
+{"seq":151,"t":1794493273.532,"type":"stage_progress","stage":"dense","progress":0.0625,"overall":0.265,"message":"Depth maps: first pass 15/72"}
+{"seq":152,"t":1794493275.191,"type":"stage_progress","stage":"dense","progress":0.0667,"overall":0.2667,"message":"Depth maps: first pass 16/72"}
+{"seq":153,"t":1794493276.746,"type":"stage_progress","stage":"dense","progress":0.0708,"overall":0.2683,"message":"Depth maps: first pass 17/72"}
+{"seq":154,"t":1794493278.5,"type":"stage_progress","stage":"dense","progress":0.075,"overall":0.27,"message":"Depth maps: first pass 18/72"}
+{"seq":155,"t":1794493280.273,"type":"stage_progress","stage":"dense","progress":0.0792,"overall":0.2717,"message":"Depth maps: first pass 19/72"}
+{"seq":156,"t":1794493282.014,"type":"stage_progress","stage":"dense","progress":0.0833,"overall":0.2733,"message":"Depth maps: first pass 20/72"}
+{"seq":157,"t":1794493283.466,"type":"stage_progress","stage":"dense","progress":0.0875,"overall":0.275,"message":"Depth maps: first pass 21/72"}
+{"seq":158,"t":1794493285.227,"type":"stage_progress","stage":"dense","progress":0.0917,"overall":0.2767,"message":"Depth maps: first pass 22/72"}
+{"seq":159,"t":1794493286.909,"type":"stage_progress","stage":"dense","progress":0.0958,"overall":0.2783,"message":"Depth maps: first pass 23/72"}
+{"seq":160,"t":1794493288.974,"type":"stage_progress","stage":"dense","progress":0.1,"overall":0.28,"message":"Depth maps: first pass 24/72"}
+{"seq":161,"t":1794493290.275,"type":"stage_progress","stage":"dense","progress":0.1042,"overall":0.2817,"message":"Depth maps: first pass 25/72"}
+{"seq":162,"t":1794493291.896,"type":"stage_progress","stage":"dense","progress":0.1083,"overall":0.2833,"message":"Depth maps: first pass 26/72"}
+{"seq":163,"t":1794493293.24,"type":"stage_progress","stage":"dense","progress":0.1125,"overall":0.285,"message":"Depth maps: first pass 27/72"}
+{"seq":164,"t":1794493294.947,"type":"stage_progress","stage":"dense","progress":0.1167,"overall":0.2867,"message":"Depth maps: first pass 28/72"}
+{"seq":165,"t":1794493296.5,"type":"stage_progress","stage":"dense","progress":0.1208,"overall":0.2883,"message":"Depth maps: first pass 29/72"}
+{"seq":166,"t":1794493298.373,"type":"stage_progress","stage":"dense","progress":0.125,"overall":0.29,"message":"Depth maps: first pass 30/72"}
+{"seq":167,"t":1794493299.7,"type":"stage_progress","stage":"dense","progress":0.1292,"overall":0.2917,"message":"Depth maps: first pass 31/72"}
+{"seq":168,"t":1794493301.343,"type":"stage_progress","stage":"dense","progress":0.1333,"overall":0.2933,"message":"Depth maps: first pass 32/72"}
+{"seq":169,"t":1794493302.944,"type":"stage_progress","stage":"dense","progress":0.1375,"overall":0.295,"message":"Depth maps: first pass 33/72"}
+{"seq":170,"t":1794493304.711,"type":"stage_progress","stage":"dense","progress":0.1417,"overall":0.2967,"message":"Depth maps: first pass 34/72"}
+{"seq":171,"t":1794493306.38,"type":"stage_progress","stage":"dense","progress":0.1458,"overall":0.2983,"message":"Depth maps: first pass 35/72"}
+{"seq":172,"t":1794493308.097,"type":"stage_progress","stage":"dense","progress":0.15,"overall":0.3,"message":"Depth maps: first pass 36/72"}
+{"seq":173,"t":1794493309.795,"type":"stage_progress","stage":"dense","progress":0.1542,"overall":0.3017,"message":"Depth maps: first pass 37/72"}
+{"seq":174,"t":1794493311.926,"type":"stage_progress","stage":"dense","progress":0.1583,"overall":0.3033,"message":"Depth maps: first pass 38/72"}
+{"seq":175,"t":1794493313.528,"type":"stage_progress","stage":"dense","progress":0.1625,"overall":0.305,"message":"Depth maps: first pass 39/72"}
+{"seq":176,"t":1794493314.598,"type":"stage_progress","stage":"dense","progress":0.1667,"overall":0.3067,"message":"Depth maps: first pass 40/72"}
+{"seq":177,"t":1794493315.984,"type":"stage_progress","stage":"dense","progress":0.1708,"overall":0.3083,"message":"Depth maps: first pass 41/72"}
+{"seq":178,"t":1794493317.711,"type":"stage_progress","stage":"dense","progress":0.175,"overall":0.31,"message":"Depth maps: first pass 42/72"}
+{"seq":179,"t":1794493319.222,"type":"stage_progress","stage":"dense","progress":0.1792,"overall":0.3117,"message":"Depth maps: first pass 43/72"}
+{"seq":180,"t":1794493321.088,"type":"stage_progress","stage":"dense","progress":0.1833,"overall":0.3133,"message":"Depth maps: first pass 44/72"}
+{"seq":181,"t":1794493323.027,"type":"stage_progress","stage":"dense","progress":0.1875,"overall":0.315,"message":"Depth maps: first pass 45/72"}
+{"seq":182,"t":1794493324.913,"type":"stage_progress","stage":"dense","progress":0.1917,"overall":0.3167,"message":"Depth maps: first pass 46/72"}
+{"seq":183,"t":1794493326.116,"type":"stage_progress","stage":"dense","progress":0.1958,"overall":0.3183,"message":"Depth maps: first pass 47/72"}
+{"seq":184,"t":1794493327.854,"type":"stage_progress","stage":"dense","progress":0.2,"overall":0.32,"message":"Depth maps: first pass 48/72"}
+{"seq":185,"t":1794493329.222,"type":"stage_progress","stage":"dense","progress":0.2042,"overall":0.3217,"message":"Depth maps: first pass 49/72"}
+{"seq":186,"t":1794493330.801,"type":"stage_progress","stage":"dense","progress":0.2083,"overall":0.3233,"message":"Depth maps: first pass 50/72"}
+{"seq":187,"t":1794493332.525,"type":"stage_progress","stage":"dense","progress":0.2125,"overall":0.325,"message":"Depth maps: first pass 51/72"}
+{"seq":188,"t":1794493334.194,"type":"stage_progress","stage":"dense","progress":0.2167,"overall":0.3267,"message":"Depth maps: first pass 52/72"}
+{"seq":189,"t":1794493336.049,"type":"stage_progress","stage":"dense","progress":0.2208,"overall":0.3283,"message":"Depth maps: first pass 53/72"}
+{"seq":190,"t":1794493338.134,"type":"stage_progress","stage":"dense","progress":0.225,"overall":0.33,"message":"Depth maps: first pass 54/72"}
+{"seq":191,"t":1794493339.634,"type":"stage_progress","stage":"dense","progress":0.2292,"overall":0.3317,"message":"Depth maps: first pass 55/72"}
+{"seq":192,"t":1794493341.161,"type":"stage_progress","stage":"dense","progress":0.2333,"overall":0.3333,"message":"Depth maps: first pass 56/72"}
+{"seq":193,"t":1794493342.766,"type":"stage_progress","stage":"dense","progress":0.2375,"overall":0.335,"message":"Depth maps: first pass 57/72"}
+{"seq":194,"t":1794493344.317,"type":"stage_progress","stage":"dense","progress":0.2417,"overall":0.3367,"message":"Depth maps: first pass 58/72"}
+{"seq":195,"t":1794493345.904,"type":"stage_progress","stage":"dense","progress":0.2458,"overall":0.3383,"message":"Depth maps: first pass 59/72"}
+{"seq":196,"t":1794493347.056,"type":"stage_progress","stage":"dense","progress":0.25,"overall":0.34,"message":"Depth maps: first pass 60/72"}
+{"seq":197,"t":1794493348.722,"type":"stage_progress","stage":"dense","progress":0.2542,"overall":0.3417,"message":"Depth maps: first pass 61/72"}
+{"seq":198,"t":1794493349.256,"type":"stage_progress","stage":"dense","progress":0.2583,"overall":0.3433,"message":"Depth maps: first pass 62/72"}
+{"seq":199,"t":1794493349.935,"type":"stage_progress","stage":"dense","progress":0.2625,"overall":0.345,"message":"Depth maps: first pass 63/72"}
+{"seq":200,"t":1794493351.738,"type":"stage_progress","stage":"dense","progress":0.2667,"overall":0.3467,"message":"Depth maps: first pass 64/72"}
+{"seq":201,"t":1794493353.591,"type":"stage_progress","stage":"dense","progress":0.2708,"overall":0.3483,"message":"Depth maps: first pass 65/72"}
+{"seq":202,"t":1794493354.553,"type":"stage_progress","stage":"dense","progress":0.275,"overall":0.35,"message":"Depth maps: first pass 66/72"}
+{"seq":203,"t":1794493356.146,"type":"stage_progress","stage":"dense","progress":0.2792,"overall":0.3517,"message":"Depth maps: first pass 67/72"}
+{"seq":204,"t":1794493357.89,"type":"stage_progress","stage":"dense","progress":0.2833,"overall":0.3533,"message":"Depth maps: first pass 68/72"}
+{"seq":205,"t":1794493358.442,"type":"stage_progress","stage":"dense","progress":0.3039,"overall":0.3616,"message":"Depth maps: consistency pass 1/2, 1/72"}
+{"seq":206,"t":1794493358.873,"type":"stage_progress","stage":"dense","progress":0.3078,"overall":0.3631,"message":"Depth maps: consistency pass 1/2, 2/72"}
+{"seq":207,"t":1794493359.338,"type":"stage_progress","stage":"dense","progress":0.3117,"overall":0.3647,"message":"Depth maps: consistency pass 1/2, 3/72"}
+{"seq":208,"t":1794493359.8,"type":"stage_progress","stage":"dense","progress":0.3156,"overall":0.3662,"message":"Depth maps: consistency pass 1/2, 4/72"}
+{"seq":209,"t":1794493360.235,"type":"stage_progress","stage":"dense","progress":0.3194,"overall":0.3678,"message":"Depth maps: consistency pass 1/2, 5/72"}
+{"seq":210,"t":1794493360.775,"type":"stage_progress","stage":"dense","progress":0.3233,"overall":0.3693,"message":"Depth maps: consistency pass 1/2, 6/72"}
+{"seq":211,"t":1794493361.583,"type":"stage_progress","stage":"dense","progress":0.3311,"overall":0.3724,"message":"Depth maps: consistency pass 1/2, 8/72"}
+{"seq":212,"t":1794493362.476,"type":"stage_progress","stage":"dense","progress":0.3389,"overall":0.3756,"message":"Depth maps: consistency pass 1/2, 10/72"}
+{"seq":213,"t":1794493363.021,"type":"stage_progress","stage":"dense","progress":0.3428,"overall":0.3771,"message":"Depth maps: consistency pass 1/2, 11/72"}
+{"seq":214,"t":1794493363.825,"type":"stage_progress","stage":"dense","progress":0.3506,"overall":0.3802,"message":"Depth maps: consistency pass 1/2, 13/72"}
+{"seq":215,"t":1794493364.359,"type":"stage_progress","stage":"dense","progress":0.3583,"overall":0.3833,"message":"Depth maps: consistency pass 1/2, 15/72"}
+{"seq":216,"t":1794493364.8,"type":"stage_progress","stage":"dense","progress":0.3622,"overall":0.3849,"message":"Depth maps: consistency pass 1/2, 16/72"}
+{"seq":217,"t":1794493365.699,"type":"stage_progress","stage":"dense","progress":0.37,"overall":0.388,"message":"Depth maps: consistency pass 1/2, 18/72"}
+{"seq":218,"t":1794493366.151,"type":"stage_progress","stage":"dense","progress":0.3739,"overall":0.3896,"message":"Depth maps: consistency pass 1/2, 19/72"}
+{"seq":219,"t":1794493366.667,"type":"stage_progress","stage":"dense","progress":0.3778,"overall":0.3911,"message":"Depth maps: consistency pass 1/2, 20/72"}
+{"seq":220,"t":1794493367.079,"type":"stage_progress","stage":"dense","progress":0.3817,"overall":0.3927,"message":"Depth maps: consistency pass 1/2, 21/72"}
+{"seq":221,"t":1794493367.558,"type":"stage_progress","stage":"dense","progress":0.3856,"overall":0.3942,"message":"Depth maps: consistency pass 1/2, 22/72"}
+{"seq":222,"t":1794493368.003,"type":"stage_progress","stage":"dense","progress":0.3894,"overall":0.3958,"message":"Depth maps: consistency pass 1/2, 23/72"}
+{"seq":223,"t":1794493368.6,"type":"stage_progress","stage":"dense","progress":0.3933,"overall":0.3973,"message":"Depth maps: consistency pass 1/2, 24/72"}
+{"seq":224,"t":1794493369.425,"type":"stage_progress","stage":"dense","progress":0.4011,"overall":0.4004,"message":"Depth maps: consistency pass 1/2, 26/72"}
+{"seq":225,"t":1794493370.246,"type":"stage_progress","stage":"dense","progress":0.4089,"overall":0.4036,"message":"Depth maps: consistency pass 1/2, 28/72"}
+{"seq":226,"t":1794493370.696,"type":"stage_progress","stage":"dense","progress":0.4128,"overall":0.4051,"message":"Depth maps: consistency pass 1/2, 29/72"}
+{"seq":227,"t":1794493371.261,"type":"stage_progress","stage":"dense","progress":0.4167,"overall":0.4067,"message":"Depth maps: consistency pass 1/2, 30/72"}
+{"seq":228,"t":1794493372.043,"type":"stage_progress","stage":"dense","progress":0.4244,"overall":0.4098,"message":"Depth maps: consistency pass 1/2, 32/72"}
+{"seq":229,"t":1794493372.509,"type":"stage_progress","stage":"dense","progress":0.4283,"overall":0.4113,"message":"Depth maps: consistency pass 1/2, 33/72"}
+{"seq":230,"t":1794493372.995,"type":"stage_progress","stage":"dense","progress":0.4322,"overall":0.4129,"message":"Depth maps: consistency pass 1/2, 34/72"}
+{"seq":231,"t":1794493373.443,"type":"stage_progress","stage":"dense","progress":0.4361,"overall":0.4144,"message":"Depth maps: consistency pass 1/2, 35/72"}
+{"seq":232,"t":1794493373.859,"type":"stage_progress","stage":"dense","progress":0.44,"overall":0.416,"message":"Depth maps: consistency pass 1/2, 36/72"}
+{"seq":233,"t":1794493374.336,"type":"stage_progress","stage":"dense","progress":0.4439,"overall":0.4176,"message":"Depth maps: consistency pass 1/2, 37/72"}
+{"seq":234,"t":1794493374.933,"type":"stage_progress","stage":"dense","progress":0.4478,"overall":0.4191,"message":"Depth maps: consistency pass 1/2, 38/72"}
+{"seq":235,"t":1794493375.347,"type":"stage_progress","stage":"dense","progress":0.4517,"overall":0.4207,"message":"Depth maps: consistency pass 1/2, 39/72"}
+{"seq":236,"t":1794493376.02,"type":"stage_progress","stage":"dense","progress":0.4594,"overall":0.4238,"message":"Depth maps: consistency pass 1/2, 41/72"}
+{"seq":237,"t":1794493376.45,"type":"stage_progress","stage":"dense","progress":0.4633,"overall":0.4253,"message":"Depth maps: consistency pass 1/2, 42/72"}
+{"seq":238,"t":1794493376.851,"type":"stage_progress","stage":"dense","progress":0.4672,"overall":0.4269,"message":"Depth maps: consistency pass 1/2, 43/72"}
+{"seq":239,"t":1794493377.397,"type":"stage_progress","stage":"dense","progress":0.4711,"overall":0.4284,"message":"Depth maps: consistency pass 1/2, 44/72"}
+{"seq":240,"t":1794493377.936,"type":"stage_progress","stage":"dense","progress":0.475,"overall":0.43,"message":"Depth maps: consistency pass 1/2, 45/72"}
+{"seq":241,"t":1794493378.498,"type":"stage_progress","stage":"dense","progress":0.4789,"overall":0.4316,"message":"Depth maps: consistency pass 1/2, 46/72"}
+{"seq":242,"t":1794493379.306,"type":"stage_progress","stage":"dense","progress":0.4867,"overall":0.4347,"message":"Depth maps: consistency pass 1/2, 48/72"}
+{"seq":243,"t":1794493380.15,"type":"stage_progress","stage":"dense","progress":0.4944,"overall":0.4378,"message":"Depth maps: consistency pass 1/2, 50/72"}
+{"seq":244,"t":1794493380.631,"type":"stage_progress","stage":"dense","progress":0.4983,"overall":0.4393,"message":"Depth maps: consistency pass 1/2, 51/72"}
+{"seq":245,"t":1794493381.067,"type":"stage_progress","stage":"dense","progress":0.5022,"overall":0.4409,"message":"Depth maps: consistency pass 1/2, 52/72"}
+{"seq":246,"t":1794493381.616,"type":"stage_progress","stage":"dense","progress":0.5061,"overall":0.4424,"message":"Depth maps: consistency pass 1/2, 53/72"}
+{"seq":247,"t":1794493382.201,"type":"stage_progress","stage":"dense","progress":0.51,"overall":0.444,"message":"Depth maps: consistency pass 1/2, 54/72"}
+{"seq":248,"t":1794493383.013,"type":"stage_progress","stage":"dense","progress":0.5178,"overall":0.4471,"message":"Depth maps: consistency pass 1/2, 56/72"}
+{"seq":249,"t":1794493383.474,"type":"stage_progress","stage":"dense","progress":0.5217,"overall":0.4487,"message":"Depth maps: consistency pass 1/2, 57/72"}
+{"seq":250,"t":1794493383.923,"type":"stage_progress","stage":"dense","progress":0.5256,"overall":0.4502,"message":"Depth maps: consistency pass 1/2, 58/72"}
+{"seq":251,"t":1794493384.386,"type":"stage_progress","stage":"dense","progress":0.5294,"overall":0.4518,"message":"Depth maps: consistency pass 1/2, 59/72"}
+{"seq":252,"t":1794493385.144,"type":"stage_progress","stage":"dense","progress":0.5372,"overall":0.4549,"message":"Depth maps: consistency pass 1/2, 61/72"}
+{"seq":253,"t":1794493385.996,"type":"stage_progress","stage":"dense","progress":0.5489,"overall":0.4596,"message":"Depth maps: consistency pass 1/2, 64/72"}
+{"seq":254,"t":1794493386.5,"type":"stage_progress","stage":"dense","progress":0.5528,"overall":0.4611,"message":"Depth maps: consistency pass 1/2, 65/72"}
+{"seq":255,"t":1794493387.267,"type":"stage_progress","stage":"dense","progress":0.5606,"overall":0.4642,"message":"Depth maps: consistency pass 1/2, 67/72"}
+{"seq":256,"t":1794493387.739,"type":"stage_progress","stage":"dense","progress":0.5644,"overall":0.4658,"message":"Depth maps: consistency pass 1/2, 68/72"}
+{"seq":257,"t":1794493388.293,"type":"stage_progress","stage":"dense","progress":0.5839,"overall":0.4736,"message":"Depth maps: consistency pass 2/2, 1/72"}
+{"seq":258,"t":1794493388.713,"type":"stage_progress","stage":"dense","progress":0.5878,"overall":0.4751,"message":"Depth maps: consistency pass 2/2, 2/72"}
+{"seq":259,"t":1794493389.153,"type":"stage_progress","stage":"dense","progress":0.5917,"overall":0.4767,"message":"Depth maps: consistency pass 2/2, 3/72"}
+{"seq":260,"t":1794493389.639,"type":"stage_progress","stage":"dense","progress":0.5956,"overall":0.4782,"message":"Depth maps: consistency pass 2/2, 4/72"}
+{"seq":261,"t":1794493390.069,"type":"stage_progress","stage":"dense","progress":0.5994,"overall":0.4798,"message":"Depth maps: consistency pass 2/2, 5/72"}
+{"seq":262,"t":1794493390.613,"type":"stage_progress","stage":"dense","progress":0.6033,"overall":0.4813,"message":"Depth maps: consistency pass 2/2, 6/72"}
+{"seq":263,"t":1794493391.437,"type":"stage_progress","stage":"dense","progress":0.6111,"overall":0.4844,"message":"Depth maps: consistency pass 2/2, 8/72"}
+{"seq":264,"t":1794493392.301,"type":"stage_progress","stage":"dense","progress":0.6189,"overall":0.4876,"message":"Depth maps: consistency pass 2/2, 10/72"}
+{"seq":265,"t":1794493392.844,"type":"stage_progress","stage":"dense","progress":0.6228,"overall":0.4891,"message":"Depth maps: consistency pass 2/2, 11/72"}
+{"seq":266,"t":1794493393.651,"type":"stage_progress","stage":"dense","progress":0.6306,"overall":0.4922,"message":"Depth maps: consistency pass 2/2, 13/72"}
+{"seq":267,"t":1794493394.181,"type":"stage_progress","stage":"dense","progress":0.6383,"overall":0.4953,"message":"Depth maps: consistency pass 2/2, 15/72"}
+{"seq":268,"t":1794493394.629,"type":"stage_progress","stage":"dense","progress":0.6422,"overall":0.4969,"message":"Depth maps: consistency pass 2/2, 16/72"}
+{"seq":269,"t":1794493395.031,"type":"stage_progress","stage":"dense","progress":0.6461,"overall":0.4984,"message":"Depth maps: consistency pass 2/2, 17/72"}
+{"seq":270,"t":1794493395.543,"type":"stage_progress","stage":"dense","progress":0.65,"overall":0.5,"message":"Depth maps: consistency pass 2/2, 18/72"}
+{"seq":271,"t":1794493395.994,"type":"stage_progress","stage":"dense","progress":0.6539,"overall":0.5016,"message":"Depth maps: consistency pass 2/2, 19/72"}
+{"seq":272,"t":1794493396.492,"type":"stage_progress","stage":"dense","progress":0.6578,"overall":0.5031,"message":"Depth maps: consistency pass 2/2, 20/72"}
+{"seq":273,"t":1794493396.893,"type":"stage_progress","stage":"dense","progress":0.6617,"overall":0.5047,"message":"Depth maps: consistency pass 2/2, 21/72"}
+{"seq":274,"t":1794493397.368,"type":"stage_progress","stage":"dense","progress":0.6656,"overall":0.5062,"message":"Depth maps: consistency pass 2/2, 22/72"}
+{"seq":275,"t":1794493397.814,"type":"stage_progress","stage":"dense","progress":0.6694,"overall":0.5078,"message":"Depth maps: consistency pass 2/2, 23/72"}
+{"seq":276,"t":1794493398.404,"type":"stage_progress","stage":"dense","progress":0.6733,"overall":0.5093,"message":"Depth maps: consistency pass 2/2, 24/72"}
+{"seq":277,"t":1794493399.216,"type":"stage_progress","stage":"dense","progress":0.6811,"overall":0.5124,"message":"Depth maps: consistency pass 2/2, 26/72"}
+{"seq":278,"t":1794493400.051,"type":"stage_progress","stage":"dense","progress":0.6889,"overall":0.5156,"message":"Depth maps: consistency pass 2/2, 28/72"}
+{"seq":279,"t":1794493400.512,"type":"stage_progress","stage":"dense","progress":0.6928,"overall":0.5171,"message":"Depth maps: consistency pass 2/2, 29/72"}
+{"seq":280,"t":1794493401.039,"type":"stage_progress","stage":"dense","progress":0.6967,"overall":0.5187,"message":"Depth maps: consistency pass 2/2, 30/72"}
+{"seq":281,"t":1794493401.824,"type":"stage_progress","stage":"dense","progress":0.7044,"overall":0.5218,"message":"Depth maps: consistency pass 2/2, 32/72"}
+{"seq":282,"t":1794493402.292,"type":"stage_progress","stage":"dense","progress":0.7083,"overall":0.5233,"message":"Depth maps: consistency pass 2/2, 33/72"}
+{"seq":283,"t":1794493402.781,"type":"stage_progress","stage":"dense","progress":0.7122,"overall":0.5249,"message":"Depth maps: consistency pass 2/2, 34/72"}
+{"seq":284,"t":1794493403.217,"type":"stage_progress","stage":"dense","progress":0.7161,"overall":0.5264,"message":"Depth maps: consistency pass 2/2, 35/72"}
+{"seq":285,"t":1794493403.625,"type":"stage_progress","stage":"dense","progress":0.72,"overall":0.528,"message":"Depth maps: consistency pass 2/2, 36/72"}
+{"seq":286,"t":1794493404.07,"type":"stage_progress","stage":"dense","progress":0.7239,"overall":0.5296,"message":"Depth maps: consistency pass 2/2, 37/72"}
+{"seq":287,"t":1794493404.674,"type":"stage_progress","stage":"dense","progress":0.7278,"overall":0.5311,"message":"Depth maps: consistency pass 2/2, 38/72"}
+{"seq":288,"t":1794493405.091,"type":"stage_progress","stage":"dense","progress":0.7317,"overall":0.5327,"message":"Depth maps: consistency pass 2/2, 39/72"}
+{"seq":289,"t":1794493405.748,"type":"stage_progress","stage":"dense","progress":0.7394,"overall":0.5358,"message":"Depth maps: consistency pass 2/2, 41/72"}
+{"seq":290,"t":1794493406.195,"type":"stage_progress","stage":"dense","progress":0.7433,"overall":0.5373,"message":"Depth maps: consistency pass 2/2, 42/72"}
+{"seq":291,"t":1794493406.597,"type":"stage_progress","stage":"dense","progress":0.7472,"overall":0.5389,"message":"Depth maps: consistency pass 2/2, 43/72"}
+{"seq":292,"t":1794493407.123,"type":"stage_progress","stage":"dense","progress":0.7511,"overall":0.5404,"message":"Depth maps: consistency pass 2/2, 44/72"}
+{"seq":293,"t":1794493407.675,"type":"stage_progress","stage":"dense","progress":0.755,"overall":0.542,"message":"Depth maps: consistency pass 2/2, 45/72"}
+{"seq":294,"t":1794493408.222,"type":"stage_progress","stage":"dense","progress":0.7589,"overall":0.5436,"message":"Depth maps: consistency pass 2/2, 46/72"}
+{"seq":295,"t":1794493409.035,"type":"stage_progress","stage":"dense","progress":0.7667,"overall":0.5467,"message":"Depth maps: consistency pass 2/2, 48/72"}
+{"seq":296,"t":1794493409.865,"type":"stage_progress","stage":"dense","progress":0.7744,"overall":0.5498,"message":"Depth maps: consistency pass 2/2, 50/72"}
+{"seq":297,"t":1794493410.352,"type":"stage_progress","stage":"dense","progress":0.7783,"overall":0.5513,"message":"Depth maps: consistency pass 2/2, 51/72"}
+{"seq":298,"t":1794493410.803,"type":"stage_progress","stage":"dense","progress":0.7822,"overall":0.5529,"message":"Depth maps: consistency pass 2/2, 52/72"}
+{"seq":299,"t":1794493411.343,"type":"stage_progress","stage":"dense","progress":0.7861,"overall":0.5544,"message":"Depth maps: consistency pass 2/2, 53/72"}
+{"seq":300,"t":1794493411.92,"type":"stage_progress","stage":"dense","progress":0.79,"overall":0.556,"message":"Depth maps: consistency pass 2/2, 54/72"}
+{"seq":301,"t":1794493412.332,"type":"stage_progress","stage":"dense","progress":0.7939,"overall":0.5576,"message":"Depth maps: consistency pass 2/2, 55/72"}
+{"seq":302,"t":1794493412.756,"type":"stage_progress","stage":"dense","progress":0.7978,"overall":0.5591,"message":"Depth maps: consistency pass 2/2, 56/72"}
+{"seq":303,"t":1794493413.211,"type":"stage_progress","stage":"dense","progress":0.8017,"overall":0.5607,"message":"Depth maps: consistency pass 2/2, 57/72"}
+{"seq":304,"t":1794493413.651,"type":"stage_progress","stage":"dense","progress":0.8056,"overall":0.5622,"message":"Depth maps: consistency pass 2/2, 58/72"}
+{"seq":305,"t":1794493414.1,"type":"stage_progress","stage":"dense","progress":0.8094,"overall":0.5638,"message":"Depth maps: consistency pass 2/2, 59/72"}
+{"seq":306,"t":1794493414.899,"type":"stage_progress","stage":"dense","progress":0.8172,"overall":0.5669,"message":"Depth maps: consistency pass 2/2, 61/72"}
+{"seq":307,"t":1794493415.729,"type":"stage_progress","stage":"dense","progress":0.8289,"overall":0.5716,"message":"Depth maps: consistency pass 2/2, 64/72"}
+{"seq":308,"t":1794493416.209,"type":"stage_progress","stage":"dense","progress":0.8328,"overall":0.5731,"message":"Depth maps: consistency pass 2/2, 65/72"}
+{"seq":309,"t":1794493416.96,"type":"stage_progress","stage":"dense","progress":0.8406,"overall":0.5762,"message":"Depth maps: consistency pass 2/2, 67/72"}
+{"seq":310,"t":1794493417.447,"type":"stage_progress","stage":"dense","progress":0.8444,"overall":0.5778,"message":"Depth maps: consistency pass 2/2, 68/72"}
+{"seq":311,"t":1794493418.128,"type":"stage_progress","stage":"dense","progress":0.86,"overall":0.584,"message":"Depth maps: consistency pass 2/2, 72/72"}
+{"seq":312,"t":1794493418.252,"type":"stage_progress","stage":"dense","progress":0.8917,"overall":0.5967,"message":"Filtering depth maps"}
+{"seq":313,"t":1794493418.66,"type":"stage_progress","stage":"dense","progress":0.9023,"overall":0.6009,"message":"Fusing depth maps into points"}
+{"seq":314,"t":1794493419.062,"type":"stage_progress","stage":"dense","progress":0.9139,"overall":0.6056,"message":"Fusing depth maps into points"}
+{"seq":315,"t":1794493419.554,"type":"stage_progress","stage":"dense","progress":0.9313,"overall":0.6125,"message":"Fusing depth maps into points"}
+{"seq":316,"t":1794493420.056,"type":"stage_progress","stage":"dense","progress":0.9487,"overall":0.6195,"message":"Fusing depth maps into points"}
+{"seq":317,"t":1794493420.489,"type":"stage_progress","stage":"dense","progress":0.9672,"overall":0.6269,"message":"Fusing depth maps into points"}
+{"seq":318,"t":1794493420.598,"type":"stage_progress","stage":"dense","progress":0.99,"overall":0.636,"message":"Fused 2,937,480 dense points"}
+{"seq":319,"t":1794493421.339,"type":"stage_end","stage":"dense","progress":1.0,"overall":0.64,"message":"","data":{"reused":false,"seconds":171.05,"skipped":false}}
+{"seq":320,"t":1794493421.339,"type":"diagnostics","stage":"dense","progress":0.0,"overall":0.64,"message":"","data":{"dense":{"dense_points":2937301,"depth_maps":72,"depth_map_max_side":800}}}
+{"seq":321,"t":1794493421.339,"type":"stage_start","stage":"mesh","progress":0.0,"overall":0.64,"message":"Building surface","data":{"index":6,"count":9}}
+{"seq":322,"t":1794493421.366,"type":"stage_progress","stage":"mesh","progress":0.0375,"overall":0.6438,"message":"Dense points loaded"}
+{"seq":323,"t":1794493421.873,"type":"stage_progress","stage":"mesh","progress":0.0375,"overall":0.6438,"message":"Dense points loaded"}
+{"seq":324,"t":1794493422.633,"type":"stage_progress","stage":"mesh","progress":0.0391,"overall":0.6439,"message":"Tetrahedralising dense points"}
+{"seq":325,"t":1794493423.033,"type":"stage_progress","stage":"mesh","progress":0.0468,"overall":0.6447,"message":"Tetrahedralising dense points"}
+{"seq":326,"t":1794493423.433,"type":"stage_progress","stage":"mesh","progress":0.0546,"overall":0.6455,"message":"Tetrahedralising dense points"}
+{"seq":327,"t":1794493423.933,"type":"stage_progress","stage":"mesh","progress":0.0656,"overall":0.6466,"message":"Tetrahedralising dense points"}
+{"seq":328,"t":1794493424.333,"type":"stage_progress","stage":"mesh","progress":0.0766,"overall":0.6477,"message":"Tetrahedralising dense points"}
+{"seq":329,"t":1794493424.733,"type":"stage_progress","stage":"mesh","progress":0.0874,"overall":0.6487,"message":"Tetrahedralising dense points"}
+{"seq":330,"t":1794493425.133,"type":"stage_progress","stage":"mesh","progress":0.0983,"overall":0.6498,"message":"Tetrahedralising dense points"}
+{"seq":331,"t":1794493425.533,"type":"stage_progress","stage":"mesh","progress":0.1088,"overall":0.6509,"message":"Tetrahedralising dense points"}
+{"seq":332,"t":1794493425.934,"type":"stage_progress","stage":"mesh","progress":0.1173,"overall":0.6517,"message":"Tetrahedralising dense points"}
+{"seq":333,"t":1794493426.334,"type":"stage_progress","stage":"mesh","progress":0.1263,"overall":0.6526,"message":"Tetrahedralising dense points"}
+{"seq":334,"t":1794493426.734,"type":"stage_progress","stage":"mesh","progress":0.1366,"overall":0.6537,"message":"Tetrahedralising dense points"}
+{"seq":335,"t":1794493427.134,"type":"stage_progress","stage":"mesh","progress":0.1462,"overall":0.6546,"message":"Tetrahedralising dense points"}
+{"seq":336,"t":1794493427.634,"type":"stage_progress","stage":"mesh","progress":0.1584,"overall":0.6558,"message":"Tetrahedralising dense points"}
+{"seq":337,"t":1794493428.134,"type":"stage_progress","stage":"mesh","progress":0.1699,"overall":0.657,"message":"Tetrahedralising dense points"}
+{"seq":338,"t":1794493428.534,"type":"stage_progress","stage":"mesh","progress":0.1787,"overall":0.6579,"message":"Tetrahedralising dense points"}
+{"seq":339,"t":1794493429.034,"type":"stage_progress","stage":"mesh","progress":0.1917,"overall":0.6592,"message":"Tetrahedralising dense points"}
+{"seq":340,"t":1794493429.434,"type":"stage_progress","stage":"mesh","progress":0.2024,"overall":0.6602,"message":"Tetrahedralising dense points"}
+{"seq":341,"t":1794493429.934,"type":"stage_progress","stage":"mesh","progress":0.2161,"overall":0.6616,"message":"Tetrahedralising dense points"}
+{"seq":342,"t":1794493430.59,"type":"stage_progress","stage":"mesh","progress":0.225,"overall":0.6625,"message":"Tetrahedralising dense points"}
+{"seq":343,"t":1794493435.267,"type":"stage_progress","stage":"mesh","progress":0.227,"overall":0.6627,"message":"Weighting visibility"}
+{"seq":344,"t":1794493435.767,"type":"stage_progress","stage":"mesh","progress":0.2387,"overall":0.6639,"message":"Weighting visibility"}
+{"seq":345,"t":1794493436.167,"type":"stage_progress","stage":"mesh","progress":0.2478,"overall":0.6648,"message":"Weighting visibility"}
+{"seq":346,"t":1794493436.567,"type":"stage_progress","stage":"mesh","progress":0.2568,"overall":0.6657,"message":"Weighting visibility"}
+{"seq":347,"t":1794493436.967,"type":"stage_progress","stage":"mesh","progress":0.2655,"overall":0.6665,"message":"Weighting visibility"}
+{"seq":348,"t":1794493437.467,"type":"stage_progress","stage":"mesh","progress":0.2834,"overall":0.6683,"message":"Weighting visibility"}
+{"seq":349,"t":1794493437.867,"type":"stage_progress","stage":"mesh","progress":0.297,"overall":0.6697,"message":"Weighting visibility"}
+{"seq":350,"t":1794493438.267,"type":"stage_progress","stage":"mesh","progress":0.3085,"overall":0.6709,"message":"Weighting visibility"}
+{"seq":351,"t":1794493438.667,"type":"stage_progress","stage":"mesh","progress":0.3151,"overall":0.6715,"message":"Weighting visibility"}
+{"seq":352,"t":1794493439.067,"type":"stage_progress","stage":"mesh","progress":0.3243,"overall":0.6724,"message":"Weighting visibility"}
+{"seq":353,"t":1794493439.467,"type":"stage_progress","stage":"mesh","progress":0.3348,"overall":0.6735,"message":"Weighting visibility"}
+{"seq":354,"t":1794493439.867,"type":"stage_progress","stage":"mesh","progress":0.3457,"overall":0.6746,"message":"Weighting visibility"}
+{"seq":355,"t":1794493440.267,"type":"stage_progress","stage":"mesh","progress":0.3588,"overall":0.6759,"message":"Weighting visibility"}
+{"seq":356,"t":1794493440.667,"type":"stage_progress","stage":"mesh","progress":0.3675,"overall":0.6767,"message":"Weighting visibility"}
+{"seq":357,"t":1794493441.067,"type":"stage_progress","stage":"mesh","progress":0.3784,"overall":0.6778,"message":"Weighting visibility"}
+{"seq":358,"t":1794493441.567,"type":"stage_progress","stage":"mesh","progress":0.3915,"overall":0.6791,"message":"Weighting visibility"}
+{"seq":359,"t":1794493441.967,"type":"stage_progress","stage":"mesh","progress":0.4032,"overall":0.6803,"message":"Weighting visibility"}
+{"seq":360,"t":1794493442.367,"type":"stage_progress","stage":"mesh","progress":0.4152,"overall":0.6815,"message":"Weighting visibility"}
+{"seq":361,"t":1794493442.767,"type":"stage_progress","stage":"mesh","progress":0.4261,"overall":0.6826,"message":"Weighting visibility"}
+{"seq":362,"t":1794493443.167,"type":"stage_progress","stage":"mesh","progress":0.4342,"overall":0.6834,"message":"Weighting visibility"}
+{"seq":363,"t":1794493443.567,"type":"stage_progress","stage":"mesh","progress":0.4426,"overall":0.6843,"message":"Weighting visibility"}
+{"seq":364,"t":1794493443.967,"type":"stage_progress","stage":"mesh","progress":0.4494,"overall":0.6849,"message":"Weighting visibility"}
+{"seq":365,"t":1794493444.467,"type":"stage_progress","stage":"mesh","progress":0.4654,"overall":0.6865,"message":"Weighting visibility"}
+{"seq":366,"t":1794493444.867,"type":"stage_progress","stage":"mesh","progress":0.478,"overall":0.6878,"message":"Weighting visibility"}
+{"seq":367,"t":1794493459.464,"type":"stage_progress","stage":"mesh","progress":0.615,"overall":0.7015,"message":"Surface extracted"}
+{"seq":368,"t":1794493460.149,"type":"stage_progress","stage":"mesh","progress":0.63,"overall":0.703,"message":"Cleaning mesh"}
+{"seq":369,"t":1794493465.241,"type":"stage_progress","stage":"mesh","progress":0.69,"overall":0.709,"message":"Cleaning mesh"}
+{"seq":370,"t":1794493469.997,"type":"stage_progress","stage":"mesh","progress":0.69,"overall":0.709,"message":"Cleaning mesh"}
+{"seq":371,"t":1794493472.517,"type":"stage_progress","stage":"mesh","progress":0.69,"overall":0.709,"message":"Cleaning mesh"}
+{"seq":372,"t":1794493472.649,"type":"stage_progress","stage":"mesh","progress":0.7425,"overall":0.7142,"message":"Mesh saved"}
+{"seq":373,"t":1794493473.523,"type":"stage_progress","stage":"mesh","progress":0.775,"overall":0.7175,"message":"Analysing dense points"}
+{"seq":374,"t":1794493473.675,"type":"stage_progress","stage":"mesh","progress":0.825,"overall":0.7225,"message":"Separating object from surroundings"}
+{"seq":375,"t":1794493475.384,"type":"stage_progress","stage":"mesh","progress":0.875,"overall":0.7275,"message":"Checking photographic support"}
+{"seq":376,"t":1794493477.051,"type":"stage_progress","stage":"mesh","progress":0.925,"overall":0.7325,"message":"Simplifying to triangle budget"}
+{"seq":377,"t":1794493494.221,"type":"stage_progress","stage":"mesh","progress":1.0,"overall":0.74,"message":"Mesh cleaned"}
+{"seq":378,"t":1794493494.28,"type":"stage_end","stage":"mesh","progress":1.0,"overall":0.74,"message":"","data":{"reused":false,"seconds":72.94,"skipped":false}}
+{"seq":379,"t":1794493494.28,"type":"stage_start","stage":"texture","progress":0.0,"overall":0.74,"message":"Texturing","data":{"index":7,"count":9}}
+{"seq":380,"t":1794493494.281,"type":"stage_progress","stage":"texture","progress":0.01,"overall":0.7422,"message":"Texturing"}
+{"seq":381,"t":1794493494.679,"type":"stage_progress","stage":"texture","progress":0.0331,"overall":0.7473,"message":"Projecting photos onto the surface"}
+{"seq":382,"t":1794493494.815,"type":"stage_progress","stage":"texture","progress":0.0575,"overall":0.7527,"message":"Projecting photos onto the surface"}
+{"seq":383,"t":1794493494.924,"type":"stage_progress","stage":"texture","progress":0.0819,"overall":0.758,"message":"Projecting photos onto the surface"}
+{"seq":384,"t":1794493495.033,"type":"stage_progress","stage":"texture","progress":0.1033,"overall":0.7627,"message":"Projecting photos onto the surface"}
+{"seq":385,"t":1794493495.239,"type":"stage_progress","stage":"texture","progress":0.14,"overall":0.7708,"message":"Projecting photos onto the surface"}
+{"seq":386,"t":1794493495.473,"type":"stage_progress","stage":"texture","progress":0.1736,"overall":0.7782,"message":"Projecting photos onto the surface"}
+{"seq":387,"t":1794493495.725,"type":"stage_progress","stage":"texture","progress":0.2072,"overall":0.7856,"message":"Projecting photos onto the surface"}
+{"seq":388,"t":1794493495.832,"type":"stage_progress","stage":"texture","progress":0.2286,"overall":0.7903,"message":"Projecting photos onto the surface"}
+{"seq":389,"t":1794493502.395,"type":"stage_progress","stage":"texture","progress":0.25,"overall":0.795,"message":"Projecting photos onto the surface"}
+{"seq":390,"t":1794493502.395,"type":"stage_progress","stage":"texture","progress":0.8,"overall":0.916,"message":"Building texture atlas"}
+{"seq":391,"t":1794493505.814,"type":"stage_progress","stage":"texture","progress":0.95,"overall":0.949,"message":"Texture atlas built"}
+{"seq":392,"t":1794493505.819,"type":"stage_progress","stage":"texture","progress":0.97,"overall":0.9534,"message":"Texture done"}
+{"seq":393,"t":1794493506.079,"type":"stage_progress","stage":"texture","progress":0.99,"overall":0.9578,"message":"Textured mesh saved"}
+{"seq":394,"t":1794493506.115,"type":"stage_end","stage":"texture","progress":1.0,"overall":0.96,"message":"","data":{"reused":false,"seconds":11.83,"skipped":false}}
+{"seq":395,"t":1794493506.115,"type":"stage_start","stage":"package","progress":0.0,"overall":0.96,"message":"Packaging model","data":{"index":8,"count":9}}
+{"seq":396,"t":1794493506.116,"type":"stage_progress","stage":"package","progress":0.05,"overall":0.962,"message":"Reading textured mesh"}
+{"seq":397,"t":1794493506.648,"type":"stage_progress","stage":"package","progress":0.2,"overall":0.968,"message":"Measuring photographic support"}
+{"seq":398,"t":1794493507.683,"type":"stage_progress","stage":"package","progress":0.6,"overall":0.984,"message":"Writing model"}
+{"seq":399,"t":1794493508.091,"type":"stage_progress","stage":"package","progress":0.95,"overall":0.998,"message":"Model written"}
+{"seq":400,"t":1794493508.095,"type":"stage_end","stage":"package","progress":1.0,"overall":1.0,"message":"","data":{"seconds":1.98,"skipped":false}}
+{"seq":401,"t":1794493508.104,"type":"artifact","stage":"package","progress":0.0,"overall":1.0,"message":"model.glb","data":{"name":"model.glb","size":20271312,"sha256":"d99c1f0d65ffbdfa70b0c4580ccc817bb73e7f9e49e5c57b31573288cc6f0704","kind":"model"}}
+{"seq":402,"t":1794493508.104,"type":"artifact","stage":"package","progress":0.0,"overall":1.0,"message":"cameras.json","data":{"name":"cameras.json","size":22135,"sha256":"5fd0d0e9e9fd7c599875a27d69473b543ef2f738063ee88628888a1c515639ba","kind":"cameras"}}
+{"seq":403,"t":1794493508.104,"type":"artifact","stage":"package","progress":0.0,"overall":1.0,"message":"diagnostics.json","data":{"name":"diagnostics.json","size":7701,"sha256":"c4cc7b69e110fc50785d5d492e6460e1e96b8698cd2623284c52baa8bac937a5","kind":"diagnostics"}}
+{"seq":404,"t":1794493508.104,"type":"diagnostics","stage":"package","progress":0.0,"overall":1.0,"message":"","data":{"mesh":{"vertices":120144,"welded_vertices":102689,"faces":199999,"surface_area":5.438922,"bbox_min":[-0.903038,-0.659965,-1.012779],"bbox_max":[0.977358,0.314002,1.000888],"boundary":{"boundary_edges":5501,"boundary_loops":103,"boundary_length":53.66265},"winding_flipped_for_consistency":false,"object_region":{"faces":147540,"surface_area":3.519895,"well_supported_area_fraction":0.9485,"weak_area_fraction":0.0365,"unsupported_area_fraction":0.0151,"boundary":{"boundary_edges":2592,"boundary_loops":67,"boundary_length":28.59821,"cut_edges_excluded":508},"size":[1.098988,1.070584,1.175422]},"views_per_vertex_median":10.0,"untextured_area_fraction":0.0005},"texture":{"pages":[{"width":4096,"height":4096,"bytes":4934690,"format":"jpeg"},{"width":4096,"height":4096,"bytes":4638103,"format":"jpeg"},{"width":4096,"height":4096,"bytes":3203011,"format":"jpeg"},{"width":2048,"height":2048,"bytes":765646,"format":"jpeg"}]},"surface_coverage":{"azimuth_bins":12,"bands":["facing_down","sideways","facing_up"],"supported_area_fraction":[[0.00172,0.0019,0.00266,0.00218,0.00236,0.00211,0.00175,0.00169,0.00117,0.00197,0.00171,0.00153],[0.05943,0.07306,0.06653,0.05677,0.06421,0.05454,0.0542,0.05347,0.04754,0.05675,0.05832,0.06304],[0.03227,0.02556,0.02531,0.02085,0.01507,0.01457,0.01154,0.01156,0.01113,0.01114,0.01461,0.02425]],"weak_area_fraction":[[0.00021,0.00017,7e-05,0.00019,0.00035,0.00016,6e-05,0.00011,0.00014,0.00044,0.00019,0.00035],[0.00287,0.00019,0.00117,0.00186,0.00066,0.00209,0.00135,0.00239,0.00298,0.00479,0.00239,0.00374],[0.00239,0.00198,0.00238,0.00164,0.00136,0.00148,0.00174,0.00133,0.00214,0.00237,0.00191,0.0019]],"sideways_bins_supported":12,"kind":"verified_surface","note":"Share of the object-region surface area with photographic support, by the direction the surface faces. Derived from the reconstructed mesh and its evidence."},"timings_s":{"ingest":2.5,"features":81.19,"matching":41.92,"sfm":20.22,"undistort":2.59,"dense":171.05,"mesh":72.94,"texture":11.83,"package":1.98,"total":406.22},"peak_rss_mb_by_stage":{"ingest":1062.7,"features":2646.0,"matching":931.4,"sfm":693.0,"undistort":688.3,"dense":2377.7,"mesh":4887.3,"texture":3039.3,"package":1298.4},"mesh_cleanup":{"raw_faces":3072505,"faces_in_region":2921947,"unsupported_faces_removed":4726,"unsupported_area_fraction":0.0871,"stray_components_removed":16,"stray_faces_removed":670,"decimated":true,"nonmanifold_vertices_split":137,"faces":199999,"vertices":102689,"min_point_distance_px":2.5},"warnings":[{"code":"reduced_dense_resolution","message":"Depth maps are computed at 800 px instead of 1200 px so that 72 photos fit in the companion's memory limit (5120 MB). Raise the limit for full detail."}]}}

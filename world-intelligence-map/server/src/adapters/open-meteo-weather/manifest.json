@@ -1,0 +1,84 @@
+{
+  "id": "open-meteo-weather",
+  "provider": "Open-Meteo",
+  "dataset": "Weather Forecast API – current conditions for major world cities",
+  "description": "Current temperature, precipitation and wind for about 150 major cities worldwide, taken from the best-matching national weather model as served by the Open-Meteo Forecast API. Modelled values, not station observations.",
+  "homepageUrl": "https://open-meteo.com/",
+  "documentationUrl": "https://open-meteo.com/en/docs",
+  "sourceUrls": [
+    "https://api.open-meteo.com/v1/forecast?latitude={lat,…}&longitude={lon,…}&current=temperature_2m,apparent_temperature,precipitation,wind_speed_10m,wind_gusts_10m,weather_code&timeformat=unixtime"
+  ],
+  "allowedHosts": ["api.open-meteo.com"],
+  "coverage": {
+    "geographic": "Global, sampled at a fixed list of 157 large cities and national capitals (cities.json, derived from Natural Earth populated places, public domain).",
+    "temporal": "Current conditions only (15-minute model time step at fetch time)."
+  },
+  "updateCadence": { "upstream": "Model data refresh every 1–6 hours depending on the model; current values are interpolated to 15 minutes", "pollIntervalSec": 10800, "staleAfterSec": 25200 },
+  "auth": { "type": "none", "envVars": [] },
+  "attribution": "Weather data by Open-Meteo.com (CC BY 4.0)",
+  "license": {
+    "name": "CC BY 4.0 – free API tier for non-commercial use only",
+    "url": "https://open-meteo.com/en/licence",
+    "redistribution": "allowed-with-attribution",
+    "nonCommercialOnly": true,
+    "notes": "Open-Meteo terms (https://open-meteo.com/en/terms): the free API may be used for non-commercial purposes only, with fewer than 10,000 API calls per day, 5,000 per hour and 600 per minute; a request for several locations is counted as one call per location (observed header X-RateLimit-Cost: 100 for 100 locations). This adapter makes 2 requests (157 location-calls) every 3 hours, about 1,260 calls per day. Commercial deployments need a paid Open-Meteo subscription or a self-hosted instance. A link to open-meteo.com must be shown wherever the data are displayed. Underlying model data come from national weather services under their own open licences."
+  },
+  "limitations": [
+    "Values are numerical-weather-model output for the model grid cell containing the city (a few kilometres across), not measurements from a weather station; local conditions can differ, especially in mountainous or coastal cities.",
+    "Only a fixed sample of 157 cities is polled, so the layers are a global overview, not a weather map; severe weather between sampled cities is not shown.",
+    "Polled every 3 hours to stay well within the free tier's daily call limit, so values can be up to about 3 hours old.",
+    "Precipitation is the model sum over the preceding 15 minutes; the precipitation and wind layers only contain cities that currently exceed their thresholds."
+  ],
+  "confidenceNotes": "No confidence value is given: Open-Meteo does not publish an uncertainty for current conditions. The wind layer's severity is derived by this application from the gust speed (≥50 km/h minor, ≥75 moderate, ≥90 severe, ≥118 extreme); it is not an official warning level.",
+  "retention": { "note": "One record per city and layer, updated in place at every poll; records are purged 2 days after their last observation time." },
+  "snapshot": "full",
+  "http": { "minIntervalMs": 1000, "cacheTtlSec": 1800 },
+  "enabledByDefault": true,
+  "layers": [
+    {
+      "id": "weather-temperature",
+      "name": "Temperature – major cities",
+      "description": "Current modelled 2 m air temperature for about 150 major cities (Open-Meteo).",
+      "domain": "weather",
+      "category": "current-weather",
+      "geometry": "point",
+      "timeModel": "snapshot",
+      "render": { "type": "point", "color": "orange", "shape": "circle" },
+      "metric": { "name": "Air temperature (2 m)", "unit": "°C", "scale": "diverging", "higherIs": "neutral" },
+      "freshForSec": 12600,
+      "liveMaxAgeSec": 14400,
+      "retentionDays": 2,
+      "defaultOn": false
+    },
+    {
+      "id": "weather-precipitation",
+      "name": "Precipitation – major cities",
+      "description": "Major cities where the model currently shows precipitation (sum over the preceding 15 minutes).",
+      "domain": "weather",
+      "category": "precipitation",
+      "geometry": "point",
+      "timeModel": "snapshot",
+      "render": { "type": "point", "color": "blue", "shape": "circle" },
+      "metric": { "name": "Precipitation (preceding 15 minutes)", "unit": "mm", "scale": "sequential", "higherIs": "neutral" },
+      "freshForSec": 12600,
+      "liveMaxAgeSec": 14400,
+      "retentionDays": 2,
+      "defaultOn": false
+    },
+    {
+      "id": "weather-wind",
+      "name": "Strong wind – major cities",
+      "description": "Major cities with modelled gusts of at least 50 km/h or sustained wind of at least 40 km/h.",
+      "domain": "weather",
+      "category": "strong-wind",
+      "geometry": "point",
+      "timeModel": "snapshot",
+      "render": { "type": "point", "color": "teal", "shape": "triangle" },
+      "metric": { "name": "Wind gusts (10 m)", "unit": "km/h", "scale": "sequential", "higherIs": "worse" },
+      "freshForSec": 12600,
+      "liveMaxAgeSec": 14400,
+      "retentionDays": 2,
+      "defaultOn": false
+    }
+  ]
+}

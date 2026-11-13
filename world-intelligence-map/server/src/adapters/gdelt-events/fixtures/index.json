@@ -1,0 +1,13 @@
+{
+  "capturedAt": "2026-11-10T17:51:00Z",
+  "notes": "lastupdate.txt is the live file as captured (its size/md5 columns describe the original 99 KB export, not the trimmed fixture). The export zip was built from seven real GDELT 2.0 15-minute export files captured from data.gdeltproject.org (20261107100000, 20261108160000, 20261109140000, 20261109210000, 20261110060000, 20261110120000 and 20261110174500): 460 real rows were selected (all usable protest rows, a place-diverse sample of conflict and cooperation rows, same-article duplicate codings, plus non-matching rows: country-level geocodes, verbal events, low-mention cooperation and retrospective SQLDATEs), concatenated in time order with each row keeping its own DATEADDED, and re-zipped with fflate under the newest file's name so that the real unzip path is exercised. Two privacy trims were applied to every row: the unused Actor1Name/Actor2Name columns were blanked, and SOURCEURL was reduced to the publisher's origin plus a '#gdelt-fixture-<hash>' fragment (article slugs can carry names of individuals); all other columns are unmodified. The malformed variant is a hand-authored 15-row export (zipped the same way) using example.org URLs.",
+  "routes": [
+    { "match": "/gdeltv2/lastupdate.txt", "file": "lastupdate.txt", "contentType": "text/plain", "etag": "\"94bf5bf111618e4b7ae858c168d31e32\"" },
+    {
+      "regex": "/gdeltv2/\\d{14}\\.export\\.CSV\\.zip$",
+      "file": "20261110174500.export.CSV.zip",
+      "contentType": "application/zip",
+      "variants": { "malformed": "20261110174500.export.CSV.malformed.zip" }
+    }
+  ]
+}

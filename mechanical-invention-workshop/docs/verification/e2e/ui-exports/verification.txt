@@ -1,0 +1,17 @@
+PASS  STL watertight and winding-consistent  faces=212
+PASS  STL bounding box = 60 × 20 × 5 mm (±0.02)  measured=[60.0, 20.0, 5.0]
+PASS  STL volume matches (60·20 − 2·π·2.1²)·5 within 0.5 %  measured=5863.033 expected=5861.456 mm³
+PASS  STL is a single body with 2 through-holes (Euler number = 2 − 2·genus)  bodies=1 euler=-2
+PASS  STL hole at (10, 10) has ⌀4.2 (±0.02)  measured ⌀4.2000 from 24 rim vertices
+PASS  STL hole at (50, 10) has ⌀4.2 (±0.02)  measured ⌀4.2000 from 24 rim vertices
+PASS  3MF unit is millimeter  millimeter
+PASS  3MF contains 1 watertight object of the same volume  objects=1 volume=5863.033
+PASS  DXF units are millimetres ($INSUNITS = 4)  4
+PASS  DXF outline polylines are closed  polylines=1
+PASS  DXF has 2 true CIRCLE entities, r = 2.1, centres 40 mm apart (±0.001)  circles=[(-21.0, 1.0, 2.1), (19.0, 1.0, 2.1)] spacing=40.00000
+PASS  DXF outline extents are 60 × 20 mm (±0.02)  60.0000 × 20.0000
+PASS  drawing SVG is sized in mm and carries the part number  297mm × 210mm scale 2:1
+PASS  drawing shows linear dimensions 60 and 20 and two hole centre marks  dims=[60.0, 20.0, 5.0] holes=2
+PASS  BOM lists the sketched part as a custom part  2 row(s)
+
+15/15 checks passed (trimesh 5.2.0, ezdxf 1.4.5)

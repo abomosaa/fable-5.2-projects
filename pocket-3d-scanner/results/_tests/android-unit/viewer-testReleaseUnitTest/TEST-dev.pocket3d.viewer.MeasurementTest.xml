@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="dev.pocket3d.viewer.MeasurementTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2026-11-12T10:56:41.010Z" hostname="h4-pc" time="0.045">
+  <properties/>
+  <testcase name="historyGivesTheSameMeshAsAFullReplay" classname="dev.pocket3d.viewer.MeasurementTest" time="0.01"/>
+  <testcase name="lengthsAlwaysGoThroughTheOneFormatter" classname="dev.pocket3d.viewer.MeasurementTest" time="0.003"/>
+  <testcase name="removedSurfaceIsFlaggedButTheMeasurementStays" classname="dev.pocket3d.viewer.MeasurementTest" time="0.009"/>
+  <testcase name="scalePillStates" classname="dev.pocket3d.viewer.MeasurementTest" time="0.001"/>
+  <testcase name="unitParsing" classname="dev.pocket3d.viewer.MeasurementTest" time="0.002"/>
+  <testcase name="calibrationUsesBaseCoordinatesAndRefusesShortReferences" classname="dev.pocket3d.viewer.MeasurementTest" time="0.001"/>
+  <testcase name="pickPrecisionIsTheCoarserOfMeshAndScreen" classname="dev.pocket3d.viewer.MeasurementTest" time="0.0"/>
+  <testcase name="labelsAndAttachmentSurviveReorientUndoRedo" classname="dev.pocket3d.viewer.MeasurementTest" time="0.019"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

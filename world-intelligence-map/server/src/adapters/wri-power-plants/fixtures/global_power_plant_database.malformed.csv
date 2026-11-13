@@ -1,0 +1,12 @@
+country,country_long,name,gppd_idnr,capacity_mw,latitude,longitude,primary_fuel,other_fuel1,other_fuel2,other_fuel3,commissioning_year,owner,source,url,geolocation_source,wepp_id,year_of_capacity_data,generation_gwh_2013,generation_gwh_2014,generation_gwh_2015,generation_gwh_2016,generation_gwh_2017,generation_gwh_2018,generation_gwh_2019,generation_data_source,estimated_generation_gwh_2013,estimated_generation_gwh_2014,estimated_generation_gwh_2015,estimated_generation_gwh_2016,estimated_generation_gwh_2017,estimated_generation_note_2013,estimated_generation_note_2014,estimated_generation_note_2015,estimated_generation_note_2016,estimated_generation_note_2017
+FRA,France,Valid Nuclear Test Plant,TST0000001,2600.0,47.5,2.5,Nuclear,,,,1985.5,Test Utility SA,Test Registry,https://example.org/plants/1,Test Registry,,2019,,,,,,,15000.5,Test Registry,,,,,16000.0,NO-ESTIMATION,NO-ESTIMATION,NO-ESTIMATION,NO-ESTIMATION,CAPACITY-FACTOR-V1
+BRA,Brazil,"<script>alert(1)</script>Sanitised ""Hydro"" Plant, Unit 1",TST0000002,120.0,-15.5,-47.5,Hydro,Oil,,,,<b>Owner</b> Ltda,Test Registry,javascript:alert(1),Test Registry,,2017,,,,,,,,,400.0,410.0,,,,HYDRO-V1,HYDRO-V1,,,
+USA,United States of America,Latitude Out Of Range,TST0000003,500.0,95.0,-100.0,Gas,,,,,,Test Registry,https://example.org/3,,,,,,,,,,,,,,,,,,,,,
+USA,United States of America,Text Coordinates,TST0000004,500.0,north,west,Coal,,,,,,Test Registry,https://example.org/4,,,,,,,,,,,,,,,,,,,,,
+USA,United States of America,Capacity Not A Number,TST0000005,lots,40.0,-100.0,Coal,,,,,,Test Registry,https://example.org/5,,,,,,,,,,,,,,,,,,,,,
+USA,United States of America,Negative Capacity,TST0000006,-10,40.0,-100.0,Wind,,,,,,Test Registry,https://example.org/6,,,,,,,,,,,,,,,,,,,,,
+USA,United States of America,Unknown Fuel,TST0000007,900.0,40.0,-100.0,Antimatter,,,,,,Test Registry,https://example.org/7,,,,,,,,,,,,,,,,,,,,,
+USA,United States of America,No Identifier,,900.0,40.0,-100.0,Gas,,,,,,Test Registry,https://example.org/8,,,,,,,,,,,,,,,,,,,,,
+FRA,France,Duplicate Identifier,TST0000001,900.0,48.0,3.0,Nuclear,,,,,,Test Registry,https://example.org/9,,,,,,,,,,,,,,,,,,,,,
+USA,United States of America,Truncated Row,TST0000010
+USA,United States of America,Small Solar Farm (skipped),TST0000011,12.5,35.0,-110.0,Solar,,,,,,Test Registry,https://example.org/11,,,,,,,,,,,,,,,,,,,,,

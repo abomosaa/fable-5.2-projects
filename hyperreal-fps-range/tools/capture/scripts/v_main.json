@@ -1,0 +1,550 @@
+[
+{
+"wait": 2.0,
+"do": "state",
+"tag": "launch"
+},
+{
+"wait": 0.1,
+"do": "settings_dump",
+"tag": "launch"
+},
+{
+"wait": 0.5,
+"do": "screenshot",
+"name": "01_spawn_ready"
+},
+{
+"wait": 0.3,
+"do": "look",
+"yaw": -25,
+"pitch": -8,
+"dur": 0.7
+},
+{
+"wait": 0.4,
+"do": "look",
+"yaw": 50,
+"pitch": 5,
+"dur": 0.9
+},
+{
+"wait": 0.4,
+"do": "look",
+"yaw": -25,
+"pitch": 3,
+"dur": 0.7
+},
+{
+"wait": 0.4,
+"do": "press",
+"action": "aim"
+},
+{
+"wait": 0.5,
+"do": "aim_node",
+"path": "Paper2/Paper",
+"dur": 0.5
+},
+{
+"wait": 0.6,
+"do": "screenshot",
+"name": "02_sights_on_paper_10m"
+},
+{
+"wait": 0.3,
+"do": "tap",
+"action": "fire",
+"hold": 0.3
+},
+{
+"wait": 1.4,
+"do": "tap",
+"action": "fire",
+"hold": 0.06
+},
+{
+"wait": 1.2,
+"do": "tap",
+"action": "fire",
+"hold": 0.06
+},
+{
+"wait": 1.0,
+"do": "screenshot",
+"name": "03_paper_3_holes"
+},
+{
+"wait": 0.2,
+"do": "aim_node",
+"path": "Gong0/Plate",
+"dur": 0.45
+},
+{
+"wait": 0.3,
+"do": "tap",
+"action": "fire",
+"hold": 0.06
+},
+{
+"wait": 0.32,
+"do": "tap",
+"action": "fire",
+"hold": 0.05
+},
+{
+"wait": 0.32,
+"do": "tap",
+"action": "fire",
+"hold": 0.05
+},
+{
+"wait": 0.32,
+"do": "tap",
+"action": "fire",
+"hold": 0.05
+},
+{
+"wait": 0.9,
+"do": "screenshot",
+"name": "04_gong_swinging"
+},
+{
+"wait": 0.3,
+"do": "aim_node",
+"path": "Gong1/Plate",
+"dur": 0.4
+},
+{
+"wait": 0.4,
+"do": "tap",
+"action": "fire",
+"hold": 0.06
+},
+{
+"wait": 0.9,
+"do": "tap",
+"action": "fire",
+"hold": 0.06
+},
+{
+"wait": 0.7,
+"do": "screenshot",
+"name": "05_slide_locked_empty"
+},
+{
+"wait": 0.1,
+"do": "state",
+"tag": "empty"
+},
+{
+"wait": 0.3,
+"do": "tap",
+"action": "fire",
+"hold": 0.06
+},
+{
+"wait": 0.4,
+"do": "release",
+"action": "aim"
+},
+{
+"wait": 0.4,
+"do": "tap",
+"action": "reload",
+"hold": 0.06
+},
+{
+"wait": 1.2,
+"do": "screenshot",
+"name": "06_reload_mag_out"
+},
+{
+"wait": 1.3,
+"do": "screenshot",
+"name": "07_reload_mag_in"
+},
+{
+"wait": 1.9,
+"do": "state",
+"tag": "reloaded_empty"
+},
+{
+"wait": 0.2,
+"do": "tap",
+"action": "inspect",
+"hold": 0.06
+},
+{
+"wait": 1.1,
+"do": "screenshot",
+"name": "08_inspect_left"
+},
+{
+"wait": 1.3,
+"do": "screenshot",
+"name": "09_inspect_right"
+},
+{
+"wait": 1.1,
+"do": "screenshot",
+"name": "10_inspect_top"
+},
+{
+"wait": 1.4,
+"do": "tap",
+"action": "safety",
+"hold": 0.06
+},
+{
+"wait": 0.7,
+"do": "screenshot",
+"name": "11_safety_on"
+},
+{
+"wait": 0.1,
+"do": "state",
+"tag": "safe"
+},
+{
+"wait": 0.3,
+"do": "tap",
+"action": "fire",
+"hold": 0.25
+},
+{
+"wait": 0.5,
+"do": "tap",
+"action": "safety",
+"hold": 0.06
+},
+{
+"wait": 0.7,
+"do": "state",
+"tag": "safety_off_hammer_down"
+},
+{
+"wait": 0.2,
+"do": "tap",
+"action": "cock_hammer",
+"hold": 0.06
+},
+{
+"wait": 0.7,
+"do": "state",
+"tag": "hammer_cocked"
+},
+{
+"wait": 0.3,
+"do": "goto",
+"x": -1.6,
+"z": 1.5,
+"tol": 0.15
+},
+{
+"wait": 0.1,
+"do": "look",
+"yaw": -90,
+"dur": 0.5
+},
+{
+"wait": 0.1,
+"do": "goto",
+"x": 1.2,
+"z": 1.5,
+"tol": 0.2
+},
+{
+"wait": 0.1,
+"do": "look",
+"yaw": 90,
+"dur": 0.5
+},
+{
+"wait": 0.2,
+"do": "press",
+"action": "aim"
+},
+{
+"wait": 0.5,
+"do": "aim_at",
+"x": 1.3,
+"y": 0.4,
+"z": -30.0,
+"dur": 0.3
+},
+{
+"wait": 0.3,
+"do": "tap",
+"action": "fire",
+"hold": 0.06
+},
+{
+"wait": 0.3,
+"do": "state",
+"tag": "shot_at_bay_edge"
+},
+{
+"wait": 0.8,
+"do": "release",
+"action": "aim"
+},
+{
+"wait": 0.1,
+"do": "look",
+"yaw": -90,
+"pitch": 0,
+"dur": 0.4
+},
+{
+"wait": 0.1,
+"do": "goto",
+"x": 3.6,
+"z": 1.2,
+"tol": 0.2
+},
+{
+"wait": 0.1,
+"do": "look",
+"yaw": 90,
+"dur": 0.4
+},
+{
+"wait": 0.2,
+"do": "press",
+"action": "aim"
+},
+{
+"wait": 0.5,
+"do": "aim_at",
+"x": 3.6,
+"y": 0.4,
+"z": -30.0,
+"dur": 0.3
+},
+{
+"wait": 0.3,
+"do": "tap",
+"action": "fire",
+"hold": 0.06
+},
+{
+"wait": 0.3,
+"do": "state",
+"tag": "shot_between"
+},
+{
+"wait": 0.8,
+"do": "release",
+"action": "aim"
+},
+{
+"wait": 0.1,
+"do": "look",
+"yaw": -90,
+"dur": 0.4
+},
+{
+"wait": 0.1,
+"do": "goto",
+"x": 6.4,
+"z": 0.75,
+"tol": 0.15
+},
+{
+"wait": 0.1,
+"do": "look",
+"yaw": 90,
+"dur": 0.5
+},
+{
+"wait": 0.5,
+"do": "screenshot",
+"name": "12_pad_ready"
+},
+{
+"wait": 0.2,
+"do": "press",
+"action": "aim"
+},
+{
+"wait": 0.5,
+"do": "aim_node",
+"path": "Paper4/Paper",
+"dur": 0.5
+},
+{
+"wait": 0.5,
+"do": "screenshot",
+"name": "13_pad_sights_paper"
+},
+{
+"wait": 0.3,
+"do": "tap",
+"action": "fire",
+"hold": 0.06
+},
+{
+"wait": 1.5,
+"do": "tap",
+"action": "fire",
+"hold": 0.06
+},
+{
+"wait": 1.5,
+"do": "tap",
+"action": "fire",
+"hold": 0.06
+},
+{
+"wait": 1.2,
+"do": "aim_node",
+"path": "Gong2/Plate",
+"dur": 0.5
+},
+{
+"wait": 0.6,
+"do": "tap",
+"action": "fire",
+"hold": 0.06
+},
+{
+"wait": 0.35,
+"do": "screenshot",
+"name": "14_gong_25m_hit"
+},
+{
+"wait": 1.2,
+"do": "tap",
+"action": "fire",
+"hold": 0.06
+},
+{
+"wait": 1.0,
+"do": "release",
+"action": "aim"
+},
+{
+"wait": 0.3,
+"do": "tap",
+"action": "reload",
+"hold": 0.06
+},
+{
+"wait": 4.2,
+"do": "state",
+"tag": "reloaded_tactical"
+},
+{
+"wait": 0.1,
+"do": "press",
+"action": "aim"
+},
+{
+"wait": 0.5,
+"do": "aim_node",
+"path": "Gong3/Plate",
+"dur": 0.6
+},
+{
+"wait": 0.3,
+"do": "press",
+"action": "steady"
+},
+{
+"wait": 0.8,
+"do": "tap",
+"action": "fire",
+"hold": 0.06
+},
+{
+"wait": 1.6,
+"do": "tap",
+"action": "fire",
+"hold": 0.06
+},
+{
+"wait": 0.3,
+"do": "release",
+"action": "steady"
+},
+{
+"wait": 1.0,
+"do": "aim_node",
+"path": "Breakables/bottle_wine_10",
+"oy": 0.12,
+"dur": 0.5
+},
+{
+"wait": 0.5,
+"do": "tap",
+"action": "fire",
+"hold": 0.06
+},
+{
+"wait": 0.12,
+"do": "screenshot",
+"name": "15_bottle_breaking"
+},
+{
+"wait": 0.8,
+"do": "aim_node",
+"path": "Breakables/clay_8",
+"dur": 0.35
+},
+{
+"wait": 0.4,
+"do": "tap",
+"action": "fire",
+"hold": 0.06
+},
+{
+"wait": 0.8,
+"do": "aim_node",
+"path": "Breakables/can_c_2",
+"oy": 0.05,
+"dur": 0.35
+},
+{
+"wait": 0.4,
+"do": "tap",
+"action": "fire",
+"hold": 0.06
+},
+{
+"wait": 0.5,
+"do": "screenshot",
+"name": "16_can_hit"
+},
+{
+"wait": 0.6,
+"do": "aim_node",
+"path": "Breakables/clay_9",
+"dur": 0.35
+},
+{
+"wait": 0.4,
+"do": "tap",
+"action": "fire",
+"hold": 0.06
+},
+{
+"wait": 1.0,
+"do": "release",
+"action": "aim"
+},
+{
+"wait": 0.5,
+"do": "screenshot",
+"name": "17_pad_after"
+},
+{
+"wait": 0.2,
+"do": "state",
+"tag": "end"
+},
+{
+"wait": 0.5,
+"do": "quit"
+}
+]

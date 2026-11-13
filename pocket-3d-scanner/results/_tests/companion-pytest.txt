@@ -1,0 +1,13 @@
+........................................................................ [ 40%]
+........................................................................ [ 80%]
+..................................                                       [100%]
+============================= slowest 8 durations ==============================
+30.75s call     tests/test_e2e_server_container.py::test_launcher_image_and_real_pipeline_over_https
+21.46s setup    tests/test_e2e_reconstruction.py::test_real_photos_reconstruct_to_a_valid_textured_model
+3.31s call     tests/test_e2e_reconstruction.py::test_cancelled_job_never_leaves_a_result
+3.19s call     tests/test_e2e_reconstruction.py::test_turning_on_the_spot_is_diagnosed_as_missing_parallax
+1.05s call     tests/test_jobs.py::test_preview_artifact_and_log_are_available_before_the_job_finishes
+0.96s call     tests/test_e2e_reconstruction.py::test_retry_reuses_finished_stages
+0.94s call     tests/test_e2e_reconstruction.py::test_unusable_input_fails_with_diagnosis_and_guidance
+0.74s call     tests/test_jobs.py::test_long_poll_semantics
+178 passed in 71.97s (0:01:11)

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#" xmlns:gdacs="http://www.gdacs.org" xmlns:glide="http://glidenumber.net" xmlns:georss="http://www.georss.org/georss" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>GDACS RSS information</title>
+    <link>http://www.gdacs.org/</link>
+    <copyright>public domain</copyright>
+    <description>Near real-time notification about natural disaster with a potential humanitarian impact</description>
+    <pubDate>Tue, 10 Nov 2026 12:00:00 GMT</pubDate>
+    <item>
+      <title>Red earthquake (Magnitude 7.4M, Depth:12km) in Testland 10/11/2026 09:30 UTC, 2.1 million in MMI VIII.</title>
+      <description>On 11/10/2026 9:30:00 AM, an earthquake occurred in Testland potentially affecting 2.1 million in MMI VIII.</description>
+      <gdacs:temporary>true</gdacs:temporary>
+      <link>http://www.gdacs.org/report.aspx?eventtype=EQ&amp;eventid=9000001</link>
+      <pubDate>Tue, 10 Nov 2026 09:45:00 GMT</pubDate>
+      <gdacs:datemodified>Tue, 10 Nov 2026 10:15:00 GMT</gdacs:datemodified>
+      <gdacs:iscurrent>true</gdacs:iscurrent>
+      <gdacs:fromdate>Tue, 10 Nov 2026 09:30:00 GMT</gdacs:fromdate>
+      <gdacs:todate>Tue, 10 Nov 2026 09:30:00 GMT</gdacs:todate>
+      <guid isPermaLink="false">EQ9000001</guid>
+      <geo:Point><geo:lat>36.2</geo:lat><geo:long>37.1</geo:long></geo:Point>
+      <georss:point>36.2 37.1</georss:point>
+      <gdacs:eventtype>EQ</gdacs:eventtype>
+      <gdacs:alertlevel>Red</gdacs:alertlevel>
+      <gdacs:alertscore>3</gdacs:alertscore>
+      <gdacs:episodealertlevel>Red</gdacs:episodealertlevel>
+      <gdacs:episodealertscore>2.6</gdacs:episodealertscore>
+      <gdacs:eventname />
+      <gdacs:eventid>9000001</gdacs:eventid>
+      <gdacs:episodeid>9100001</gdacs:episodeid>
+      <gdacs:severity unit="M" value="7.4">Magnitude 7.4M, Depth:12km</gdacs:severity>
+      <gdacs:population unit="in MMI VIII" value="2100000">2.1 million in MMI VIII</gdacs:population>
+      <gdacs:vulnerability value="2.5" />
+      <gdacs:iso3>SYR</gdacs:iso3>
+      <gdacs:country>Syria, Turkey</gdacs:country>
+    </item>
+    <item>
+      <title>Orange flood alert in &lt;script&gt;alert(1)&lt;/script&gt;&lt;b&gt;Floodland&lt;/b&gt;</title>
+      <description>&lt;img src=x onerror=alert(1)&gt;On 08/11/2026, a flood started in Floodland.</description>
+      <gdacs:temporary>false</gdacs:temporary>
+      <link>javascript:alert(1)</link>
+      <pubDate>Sun, 08 Nov 2026 06:00:00 GMT</pubDate>
+      <gdacs:datemodified>Mon, 09 Nov 2026 06:00:00 GMT</gdacs:datemodified>
+      <gdacs:iscurrent>false</gdacs:iscurrent>
+      <gdacs:fromdate>Sun, 08 Nov 2026 01:00:00 GMT</gdacs:fromdate>
+      <gdacs:todate>Mon, 09 Nov 2026 01:00:00 GMT</gdacs:todate>
+      <guid isPermaLink="false">FL9000002</guid>
+      <georss:point>-15.5 28.3</georss:point>
+      <gdacs:eventtype>FL</gdacs:eventtype>
+      <gdacs:alertlevel>Orange</gdacs:alertlevel>
+      <gdacs:alertscore>2</gdacs:alertscore>
+      <gdacs:eventid>9000002</gdacs:eventid>
+      <gdacs:episodeid>3</gdacs:episodeid>
+      <gdacs:severity unit="" value="0">Magnitude 0 </gdacs:severity>
+      <gdacs:population unit="Population Affected" value="12500">12500 people affected in the area</gdacs:population>
+      <gdacs:iso3>ZMB</gdacs:iso3>
+      <gdacs:country>Zambia</gdacs:country>
+    </item>
+    <item>
+      <title>Item without coordinates</title>
+      <gdacs:iscurrent>true</gdacs:iscurrent>
+      <gdacs:fromdate>Tue, 10 Nov 2026 00:00:00 GMT</gdacs:fromdate>
+      <gdacs:eventtype>WF</gdacs:eventtype>
+      <gdacs:alertlevel>Green</gdacs:alertlevel>
+      <gdacs:eventid>9000003</gdacs:eventid>
+    </item>
+    <item>
+      <title>Item with impossible latitude</title>
+      <gdacs:iscurrent>true</gdacs:iscurrent>
+      <gdacs:fromdate>Tue, 10 Nov 2026 00:00:00 GMT</gdacs:fromdate>
+      <geo:Point><geo:lat>-124.0</geo:lat><geo:long>20.0</geo:long></geo:Point>
+      <gdacs:eventtype>WF</gdacs:eventtype>
+      <gdacs:alertlevel>Green</gdacs:alertlevel>
+      <gdacs:eventid>9000004</gdacs:eventid>
+    </item>
+    <item>
+      <title>Item with a broken start date</title>
+      <gdacs:iscurrent>true</gdacs:iscurrent>
+      <gdacs:fromdate>the day before yesterday</gdacs:fromdate>
+      <geo:Point><geo:lat>10.0</geo:lat><geo:long>20.0</geo:long></geo:Point>
+      <gdacs:eventtype>WF</gdacs:eventtype>
+      <gdacs:alertlevel>Green</gdacs:alertlevel>
+      <gdacs:eventid>9000005</gdacs:eventid>
+    </item>
+    <item>
+      <title>Item with an unknown alert level</title>
+      <gdacs:iscurrent>true</gdacs:iscurrent>
+      <gdacs:fromdate>Tue, 10 Nov 2026 00:00:00 GMT</gdacs:fromdate>
+      <geo:Point><geo:lat>10.0</geo:lat><geo:long>20.0</geo:long></geo:Point>
+      <gdacs:eventtype>WF</gdacs:eventtype>
+      <gdacs:alertlevel>Purple</gdacs:alertlevel>
+      <gdacs:eventid>9000006</gdacs:eventid>
+    </item>
+    <item>
+      <title>Item without event id</title>
+      <gdacs:iscurrent>true</gdacs:iscurrent>
+      <gdacs:fromdate>Tue, 10 Nov 2026 00:00:00 GMT</gdacs:fromdate>
+      <geo:Point><geo:lat>10.0</geo:lat><geo:long>20.0</geo:long></geo:Point>
+      <gdacs:eventtype>WF</gdacs:eventtype>
+      <gdacs:alertlevel>Green</gdacs:alertlevel>
+    </item>
+    <item>
+      <title>Item with an event type this application has no layer for</title>
+      <gdacs:iscurrent>true</gdacs:iscurrent>
+      <gdacs:fromdate>Tue, 10 Nov 2026 00:00:00 GMT</gdacs:fromdate>
+      <geo:Point><geo:lat>10.0</geo:lat><geo:long>20.0</geo:long></geo:Point>
+      <gdacs:eventtype>TS</gdacs:eventtype>
+      <gdacs:alertlevel>Green</gdacs:alertlevel>
+      <gdacs:eventid>9000008</gdacs:eventid>
+    </item>
+  </channel>
+</rss>

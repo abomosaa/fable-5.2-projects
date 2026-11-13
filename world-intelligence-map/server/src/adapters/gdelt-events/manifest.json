@@ -1,0 +1,82 @@
+{
+  "id": "gdelt-events",
+  "provider": "The GDELT Project",
+  "dataset": "GDELT 2.0 Event Database – 15-minute event export",
+  "description": "Machine-coded events (CAMEO taxonomy) extracted automatically from worldwide news reports: material conflict, protests and diplomatic/material cooperation, geocoded by GDELT to the city or landmark named in the text.",
+  "homepageUrl": "https://www.gdeltproject.org/",
+  "documentationUrl": "https://www.gdeltproject.org/data.html#documentation",
+  "sourceUrls": [
+    "https://data.gdeltproject.org/gdeltv2/lastupdate.txt",
+    "https://data.gdeltproject.org/gdeltv2/{YYYYMMDDHHMMSS}.export.CSV.zip"
+  ],
+  "allowedHosts": ["data.gdeltproject.org"],
+  "coverage": {
+    "geographic": "Global, wherever monitored news media report; strongly skewed towards countries and cities with dense (English-language and translated) media coverage.",
+    "temporal": "Only the most recent 15-minute export is read on each poll; events are kept locally for 14 days."
+  },
+  "updateCadence": { "upstream": "A new export file every 15 minutes", "pollIntervalSec": 900, "staleAfterSec": 5400 },
+  "auth": { "type": "none", "envVars": [] },
+  "attribution": "The GDELT Project (https://www.gdeltproject.org/)",
+  "license": {
+    "name": "GDELT Terms of Use – unrestricted use and redistribution with citation and link",
+    "url": "https://www.gdeltproject.org/about.html#termsofuse",
+    "redistribution": "allowed-with-attribution",
+    "nonCommercialOnly": false,
+    "notes": "\"All datasets released by the GDELT Project are available for unlimited and unrestricted use for any academic, commercial, or governmental use of any kind without fee\"; redistribution is permitted provided a citation to the GDELT Project and a link to gdeltproject.org are included. Linked news articles remain the copyright of their publishers; only the article URL is stored."
+  },
+  "limitations": [
+    "Events are produced by fully automated text coding of news reports. They are NOT verified: false positives, mis-attributed actors, metaphorical language coded as violence and duplicates of one incident are common.",
+    "The location is GDELT's machine geocode of a place name found in the article; it can be the place where something was said or reported rather than where it happened. Only city/landmark-level matches (ActionGeo_Type 3 or 4) are shown; country- and state-level matches are dropped because they pile up on centroids.",
+    "The event time shown is DATEADDED (when GDELT first saw the report, 15-minute resolution, UTC), not the time of the underlying incident. Rows whose coded event day (SQLDATE) lies more than 2 days before DATEADDED – retrospective mentions such as anniversaries – are skipped.",
+    "Counts of mentions, sources and articles cover only the first 15 minutes after the event was first seen and are never updated.",
+    "Cooperation events are kept only when NumMentions is at least 3; rows coded from the same article with the same CAMEO root code at the same place are collapsed into one record.",
+    "Only the newest export file is fetched per poll: if the application is down or a poll is missed, the intermediate 15-minute files are not back-filled.",
+    "Coverage reflects media attention, not the true distribution of events."
+  ],
+  "confidenceNotes": "GDELT is an automated machine-coding system, not a curated event dataset: every record is a claim that some news report was algorithmically read as describing this type of event at this place. Confidence is derived by this application and deliberately low: 0.20 for a single source, plus 0.05 per additional source seen in the first 15 minutes, capped at 0.50. No severity is assigned. Titles are generated from the CAMEO event-type label and the geocoded place name and are prefixed with \"Media-reported\".",
+  "retention": { "note": "Events are kept for 14 days after DATEADDED, then purged." },
+  "snapshot": "incremental",
+  "http": { "minIntervalMs": 1000, "timeoutMs": 45000 },
+  "enabledByDefault": true,
+  "layers": [
+    {
+      "id": "gdelt-conflict",
+      "name": "Media-reported conflict (GDELT)",
+      "description": "Machine-coded 'material conflict' events from news reports (CAMEO 15–20: force posture, reduced relations, coercion, assault, fighting, mass violence). Unverified; city-level machine geocode.",
+      "domain": "geopolitics",
+      "category": "conflict",
+      "geometry": "point",
+      "timeModel": "event",
+      "render": { "type": "heatmap", "color": "red", "shape": "triangle", "heatmapBelowZoom": 4 },
+      "freshForSec": 21600,
+      "retentionDays": 14,
+      "defaultOn": true
+    },
+    {
+      "id": "gdelt-protests",
+      "name": "Media-reported protests (GDELT)",
+      "description": "Machine-coded protest events from news reports (CAMEO 14: demonstrations, strikes, blockades, riots). Unverified; city-level machine geocode.",
+      "domain": "geopolitics",
+      "category": "protest",
+      "geometry": "point",
+      "timeModel": "event",
+      "render": { "type": "point", "color": "orange", "shape": "diamond" },
+      "freshForSec": 21600,
+      "retentionDays": 14,
+      "defaultOn": false
+    },
+    {
+      "id": "gdelt-cooperation",
+      "name": "Media-reported diplomacy & cooperation (GDELT)",
+      "description": "Machine-coded cooperation events from news reports (CAMEO 03–08: intent to cooperate, consultations and visits, diplomatic and material cooperation, aid, concessions) with at least 3 mentions. Unverified.",
+      "domain": "geopolitics",
+      "category": "cooperation",
+      "geometry": "point",
+      "timeModel": "event",
+      "render": { "type": "point", "color": "blue", "shape": "square" },
+      "freshForSec": 21600,
+      "retentionDays": 14,
+      "defaultOn": false
+    }
+  ]
+}

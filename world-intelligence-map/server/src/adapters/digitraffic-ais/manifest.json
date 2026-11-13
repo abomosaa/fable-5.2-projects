@@ -1,0 +1,58 @@
+{
+  "id": "digitraffic-ais",
+  "provider": "Fintraffic (Digitraffic)",
+  "dataset": "Digitraffic Marine – AIS vessel locations and vessel metadata (API v1)",
+  "description": "Latest AIS class A position reports and static voyage data (name, ship type, destination, draught) received by the Finnish AIS shore network, covering Finnish waters and the surrounding Baltic Sea.",
+  "homepageUrl": "https://www.digitraffic.fi/en/marine-traffic/",
+  "documentationUrl": "https://www.digitraffic.fi/en/marine-traffic/",
+  "sourceUrls": ["https://meri.digitraffic.fi/api/ais/v1/locations", "https://meri.digitraffic.fi/api/ais/v1/vessels"],
+  "allowedHosts": ["meri.digitraffic.fi"],
+  "coverage": {
+    "geographic": "Finnish coastal waters, the Gulf of Finland, the Archipelago Sea, the Gulf of Bothnia and the northern Baltic Sea within range of Finnish AIS base stations (plus Lake Saimaa). Not a global feed.",
+    "temporal": "Latest known position per vessel; only positions reported within the last 60 minutes are shown."
+  },
+  "updateCadence": { "upstream": "Continuous; API responses are cached upstream for about one minute", "pollIntervalSec": 300, "staleAfterSec": 1800 },
+  "auth": {
+    "type": "app_identifier",
+    "envVars": [
+      { "name": "DIGITRAFFIC_USER", "required": false, "description": "Value of the Digitraffic-User request header identifying this deployment (e.g. \"MyOrg/WorldMap 1.0\"). Never put personal data in it. Defaults to \"world-intelligence-map/1.0\"." }
+    ],
+    "setup": "No registration is needed. Digitraffic asks every client to send a Digitraffic-User header naming the organisation and/or application (no personal data) and to accept gzip; requests without the header are limited to 60 per minute per IP. Set DIGITRAFFIC_USER to identify your own deployment.",
+    "obtainUrl": "https://www.digitraffic.fi/en/support/instructions/"
+  },
+  "attribution": "Source: Fintraffic / digitraffic.fi, license CC 4.0 BY",
+  "license": {
+    "name": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+    "url": "https://creativecommons.org/licenses/by/4.0/",
+    "redistribution": "allowed-with-attribution",
+    "nonCommercialOnly": false,
+    "notes": "Terms of service: https://www.digitraffic.fi/en/terms-of-service/ – Fintraffic's open data is CC BY 4.0; credit as \"Source: Fintraffic / digitraffic.fi, license CC 4.0 BY\", link to the original where possible and state modifications. This application filters to recent positions and decodes AIS code values."
+  },
+  "limitations": [
+    "Regional coverage only: vessels outside the reach of Finnish AIS base stations are not present, so the layer says nothing about the rest of the Baltic or the world.",
+    "Class A transponders only; Digitraffic removes all fishing vessels (AIS type 30) and collapses detailed ship-type codes into decade classes (e.g. 70–79 → 70).",
+    "Name, destination, draught, ship type and navigational status are typed in by the crew and broadcast unverified: they are often outdated, abbreviated or wrong, and AIS positions can be spoofed or switched off.",
+    "Positions older than 60 minutes are not shown; a vessel that leaves coverage simply stops updating."
+  ],
+  "confidenceNotes": "No per-record confidence is published. Records are self-reported AIS broadcasts relayed by Fintraffic without verification; the AIS position-accuracy flag is passed through as an attribute.",
+  "retention": { "note": "Latest position per vessel plus the recent path; observations are purged after 2 days." },
+  "snapshot": "incremental",
+  "http": { "minIntervalMs": 1000, "timeoutMs": 30000 },
+  "enabledByDefault": true,
+  "layers": [
+    {
+      "id": "vessels-baltic",
+      "name": "Vessels – Baltic (AIS)",
+      "description": "Ships in Finnish waters and the northern Baltic Sea from Fintraffic's AIS network, identified exactly as broadcast (MMSI, AIS name and ship type). Regional coverage, positions from the last hour.",
+      "domain": "transport",
+      "category": "vessel",
+      "geometry": "track",
+      "timeModel": "snapshot",
+      "render": { "type": "track", "color": "blue", "shape": "ship" },
+      "freshForSec": 600,
+      "liveMaxAgeSec": 3600,
+      "retentionDays": 2,
+      "defaultOn": false
+    }
+  ]
+}

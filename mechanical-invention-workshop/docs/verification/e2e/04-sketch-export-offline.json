@@ -1,0 +1,76 @@
+{
+ "name": "04-sketch-export-offline",
+ "failures": 0,
+ "steps": [
+  {
+   "label": "sketch mode opens with an empty-state message",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "rectangle + 2 circles drawn: 6 points, 4 lines, 2 circles, H/V constraints inferred",
+   "ok": true,
+   "detail": "{\"points\":6,\"constraints\":[\"horizontal\",\"vertical\",\"horizontal\",\"vertical\"]}"
+  },
+  {
+   "label": "status reports under-constrained with the remaining degrees of freedom",
+   "ok": true,
+   "detail": "Under-constrained: 10 degrees of freedom remain (blue geometry can still move). Fix a point and add dimensions."
+  },
+  {
+   "label": "fully constrained after dimensions: exact 60 × 20 with holes 40 mm apart",
+   "ok": true,
+   "detail": "{\"status\":\"fully-constrained\",\"text\":\"Fully constrained: every point is determined by the dimensions.\"}"
+  },
+  {
+   "label": "adding an implied dimension is reported as redundant",
+   "ok": true,
+   "detail": "Redundant constraints: 1 constraint(s) repeat what others already impose (orange in the list)."
+  },
+  {
+   "label": "a contradictory dimension is reported as conflicting and the geometry is NOT deformed",
+   "ok": true,
+   "detail": "Conflicting constraints — Distance k14 = 75 mm conflicts with: vertical k2, vertical k4, distance k6 = 60 mm. The conflicting constraint was not applied. The geometry keeps its last valid shape; delete or change the red constraint."
+  },
+  {
+   "label": "deleting the conflicting constraint returns to fully constrained",
+   "ok": true,
+   "detail": "fully-constrained"
+  },
+  {
+   "label": "closed profile with two cut-outs detected for extrusion",
+   "ok": true,
+   "detail": "1 closed region, 2 cut-out(s), area 1173 mm²"
+  },
+  {
+   "label": "sketch extruded into a 5 mm solid part with two hole anchors",
+   "ok": true,
+   "detail": "{\"kind\":\"plate\",\"name\":\"Sketched part\",\"ports\":2,\"layers\":1,\"thickness\":5,\"warnings\":[]}"
+  },
+  {
+   "label": "sketched part works in the simulation (pinned at its hole, swings under gravity)",
+   "ok": true,
+   "detail": "{\"t\":1.495,\"dof\":1,\"err\":9.89536417250747e-8}"
+  },
+  {
+   "label": "eight export files produced by the UI",
+   "ok": true,
+   "detail": "[\"untitled-mechanism_P1_sketched-part.stl (10684)\",\"untitled-mechanism_parts.3mf (3047)\",\"untitled-mechanism_P1_sketched-part_drawing.svg (10077)\",\"untitled-mechanism_P1_sketched-part_profile.dxf (1367)\",\"untitled-mechanism_P1_sketched-part_profile.svg (1440)\",\"untitled-mechanism_bom.csv (449)\",\"untitled-mechanism_assembly-guide.html (14505)\",\"untitled-mechanism.mechanism.json (4048)\"]"
+  },
+  {
+   "label": "app loads, opens an example and simulates with every non-local request blocked",
+   "ok": true,
+   "detail": "{\"t\":0.5500000000000004,\"parts\":9}"
+  },
+  {
+   "label": "no request to any external host during the whole session",
+   "ok": true,
+   "detail": "{\"total\":25,\"external\":[]}"
+  },
+  {
+   "label": "no console/page errors",
+   "ok": true,
+   "detail": ""
+  }
+ ]
+}

@@ -1,0 +1,764 @@
+[
+{
+"wait": 2.0,
+"do": "state",
+"tag": "start"
+},
+{
+"wait": 0.1,
+"do": "teleport",
+"x": -5.2,
+"z": 1.2,
+"yaw": 90
+},
+{
+"wait": 0.6,
+"do": "screenshot",
+"name": "e01_near_block_wall_before"
+},
+{
+"wait": 0.1,
+"do": "goto",
+"x": -6.5,
+"z": 1.2,
+"tol": 0.05,
+"timeout": 3.0
+},
+{
+"wait": 0.5,
+"do": "state",
+"tag": "at_block_wall"
+},
+{
+"wait": 0.1,
+"do": "screenshot",
+"name": "e02_at_block_wall"
+},
+{
+"wait": 0.1,
+"do": "press",
+"action": "aim"
+},
+{
+"wait": 0.6,
+"do": "state",
+"tag": "at_block_wall_aiming"
+},
+{
+"wait": 0.1,
+"do": "screenshot",
+"name": "e03_at_block_wall_aim"
+},
+{
+"wait": 0.2,
+"do": "tap",
+"action": "fire",
+"hold": 0.3
+},
+{
+"wait": 0.6,
+"do": "release",
+"action": "aim"
+},
+{
+"wait": 0.2,
+"do": "teleport",
+"x": -1.6,
+"z": 0.2,
+"yaw": -90
+},
+{
+"wait": 0.3,
+"do": "goto",
+"x": -0.3,
+"z": 0.2,
+"tol": 0.05,
+"timeout": 2.5
+},
+{
+"wait": 0.5,
+"do": "state",
+"tag": "at_divider"
+},
+{
+"wait": 0.1,
+"do": "screenshot",
+"name": "e04_at_divider"
+},
+{
+"wait": 0.2,
+"do": "teleport",
+"x": -1.6,
+"z": 0.9,
+"yaw": 0
+},
+{
+"wait": 0.3,
+"do": "tap",
+"action": "crouch",
+"hold": 0.06
+},
+{
+"wait": 0.6,
+"do": "goto",
+"x": -1.6,
+"z": -0.5,
+"tol": 0.05,
+"timeout": 3.0
+},
+{
+"wait": 0.5,
+"do": "state",
+"tag": "crouched_at_bench"
+},
+{
+"wait": 0.1,
+"do": "screenshot",
+"name": "e05_crouched_at_bench"
+},
+{
+"wait": 0.2,
+"do": "tap",
+"action": "crouch",
+"hold": 0.06
+},
+{
+"wait": 0.6,
+"do": "teleport",
+"x": -1.6,
+"z": 0.55,
+"yaw": 0
+},
+{
+"wait": 0.5,
+"do": "press",
+"action": "aim"
+},
+{
+"wait": 0.5,
+"do": "aim_node",
+"path": "Paper2/Paper",
+"dur": 0.3
+},
+{
+"wait": 0.3,
+"do": "tap",
+"action": "fire",
+"hold": 0.3
+},
+{
+"wait": 0.8,
+"do": "tap",
+"action": "fire",
+"hold": 0.06
+},
+{
+"wait": 0.6,
+"do": "release",
+"action": "aim"
+},
+{
+"wait": 0.3,
+"do": "state",
+"tag": "before_cancel"
+},
+{
+"wait": 0.1,
+"do": "tap",
+"action": "reload",
+"hold": 0.06
+},
+{
+"wait": 0.25,
+"do": "tap",
+"action": "reload",
+"hold": 0.06
+},
+{
+"wait": 0.4,
+"do": "state",
+"tag": "reload_cancelled_by_second_press"
+},
+{
+"wait": 0.2,
+"do": "tap",
+"action": "reload",
+"hold": 0.06
+},
+{
+"wait": 0.2,
+"do": "tap",
+"action": "fire",
+"hold": 0.06
+},
+{
+"wait": 0.5,
+"do": "state",
+"tag": "reload_cancelled_by_fire"
+},
+{
+"wait": 0.3,
+"do": "tap",
+"action": "reload",
+"hold": 0.06
+},
+{
+"wait": 0.12,
+"do": "tap",
+"action": "reload",
+"hold": 0.06
+},
+{
+"wait": 0.12,
+"do": "tap",
+"action": "reload",
+"hold": 0.06
+},
+{
+"wait": 0.12,
+"do": "tap",
+"action": "reload",
+"hold": 0.06
+},
+{
+"wait": 0.12,
+"do": "tap",
+"action": "reload",
+"hold": 0.06
+},
+{
+"wait": 0.12,
+"do": "tap",
+"action": "reload",
+"hold": 0.06
+},
+{
+"wait": 0.12,
+"do": "tap",
+"action": "reload",
+"hold": 0.06
+},
+{
+"wait": 0.12,
+"do": "tap",
+"action": "reload",
+"hold": 0.06
+},
+{
+"wait": 0.12,
+"do": "tap",
+"action": "reload",
+"hold": 0.06
+},
+{
+"wait": 0.12,
+"do": "tap",
+"action": "reload",
+"hold": 0.06
+},
+{
+"wait": 0.12,
+"do": "tap",
+"action": "reload",
+"hold": 0.06
+},
+{
+"wait": 0.12,
+"do": "tap",
+"action": "reload",
+"hold": 0.06
+},
+{
+"wait": 0.12,
+"do": "tap",
+"action": "reload",
+"hold": 0.06
+},
+{
+"wait": 0.12,
+"do": "tap",
+"action": "reload",
+"hold": 0.06
+},
+{
+"wait": 0.12,
+"do": "tap",
+"action": "reload",
+"hold": 0.06
+},
+{
+"wait": 0.12,
+"do": "tap",
+"action": "reload",
+"hold": 0.06
+},
+{
+"wait": 0.12,
+"do": "tap",
+"action": "reload",
+"hold": 0.06
+},
+{
+"wait": 0.12,
+"do": "tap",
+"action": "reload",
+"hold": 0.06
+},
+{
+"wait": 0.12,
+"do": "tap",
+"action": "reload",
+"hold": 0.06
+},
+{
+"wait": 0.12,
+"do": "tap",
+"action": "reload",
+"hold": 0.06
+},
+{
+"wait": 0.12,
+"do": "tap",
+"action": "reload",
+"hold": 0.06
+},
+{
+"wait": 0.05,
+"do": "tap",
+"action": "fire",
+"hold": 0.06
+},
+{
+"wait": 0.05,
+"do": "tap",
+"action": "fire",
+"hold": 0.06
+},
+{
+"wait": 0.05,
+"do": "tap",
+"action": "fire",
+"hold": 0.06
+},
+{
+"wait": 0.05,
+"do": "tap",
+"action": "fire",
+"hold": 0.06
+},
+{
+"wait": 0.05,
+"do": "tap",
+"action": "fire",
+"hold": 0.06
+},
+{
+"wait": 0.05,
+"do": "tap",
+"action": "fire",
+"hold": 0.06
+},
+{
+"wait": 0.1,
+"do": "tap",
+"action": "crouch",
+"hold": 0.06
+},
+{
+"wait": 0.2,
+"do": "press",
+"action": "aim"
+},
+{
+"wait": 0.4,
+"do": "release",
+"action": "aim"
+},
+{
+"wait": 0.2,
+"do": "tap",
+"action": "crouch",
+"hold": 0.06
+},
+{
+"wait": 2.2,
+"do": "state",
+"tag": "after_reload_spam"
+},
+{
+"wait": 0.2,
+"do": "tap",
+"action": "inspect",
+"hold": 0.06
+},
+{
+"wait": 0.8,
+"do": "press",
+"action": "aim"
+},
+{
+"wait": 0.5,
+"do": "state",
+"tag": "inspect_interrupted_by_aim"
+},
+{
+"wait": 0.2,
+"do": "release",
+"action": "aim"
+},
+{
+"wait": 0.3,
+"do": "tap",
+"action": "inspect",
+"hold": 0.06
+},
+{
+"wait": 0.7,
+"do": "tap",
+"action": "reload",
+"hold": 0.06
+},
+{
+"wait": 4.5,
+"do": "state",
+"tag": "inspect_then_reload"
+},
+{
+"wait": 0.2,
+"do": "tap",
+"action": "safety",
+"hold": 0.06
+},
+{
+"wait": 0.7,
+"do": "tap",
+"action": "safety",
+"hold": 0.06
+},
+{
+"wait": 0.7,
+"do": "state",
+"tag": "hammer_down"
+},
+{
+"wait": 0.2,
+"do": "press",
+"action": "fire"
+},
+{
+"wait": 0.05,
+"do": "pause",
+"on": true
+},
+{
+"wait": 1.0,
+"do": "state",
+"tag": "paused_mid_da"
+},
+{
+"wait": 0.2,
+"do": "screenshot",
+"name": "e06_pause_menu"
+},
+{
+"wait": 0.3,
+"do": "pause",
+"on": false
+},
+{
+"wait": 0.8,
+"do": "state",
+"tag": "resumed_after_pause_mid_da"
+},
+{
+"wait": 0.1,
+"do": "release",
+"action": "fire"
+},
+{
+"wait": 0.3,
+"do": "press",
+"action": "fire"
+},
+{
+"wait": 0.04,
+"do": "focus_out"
+},
+{
+"wait": 1.0,
+"do": "state",
+"tag": "focus_lost_mid_da"
+},
+{
+"wait": 0.2,
+"do": "pause",
+"on": false
+},
+{
+"wait": 0.6,
+"do": "state",
+"tag": "after_focus_return"
+},
+{
+"wait": 0.1,
+"do": "release",
+"action": "fire"
+},
+{
+"wait": 0.4,
+"do": "tap",
+"action": "fire",
+"hold": 0.3
+},
+{
+"wait": 0.6,
+"do": "state",
+"tag": "fires_normally_again"
+},
+{
+"wait": 0.3,
+"do": "tap",
+"action": "reload",
+"hold": 0.06
+},
+{
+"wait": 1.2,
+"do": "focus_out"
+},
+{
+"wait": 1.0,
+"do": "state",
+"tag": "focus_lost_mid_reload"
+},
+{
+"wait": 0.2,
+"do": "pause",
+"on": false
+},
+{
+"wait": 3.5,
+"do": "state",
+"tag": "reload_completed_after_focus"
+},
+{
+"wait": 0.2,
+"do": "press",
+"action": "aim"
+},
+{
+"wait": 0.5,
+"do": "aim_node",
+"path": "Paper2/Paper",
+"ox": 0.255,
+"dur": 0.4
+},
+{
+"wait": 0.4,
+"do": "tap",
+"action": "fire",
+"hold": 0.06
+},
+{
+"wait": 0.9,
+"do": "aim_node",
+"path": "Paper2/Paper",
+"ox": 0.28,
+"dur": 0.3
+},
+{
+"wait": 0.4,
+"do": "tap",
+"action": "fire",
+"hold": 0.06
+},
+{
+"wait": 0.6,
+"do": "release",
+"action": "aim"
+},
+{
+"wait": 0.2,
+"do": "state",
+"tag": "edge_shots"
+},
+{
+"wait": 0.2,
+"do": "key",
+"keycode": 93
+},
+{
+"wait": 0.02,
+"do": "key",
+"keycode": 93,
+"down": false
+},
+{
+"wait": 1.5,
+"do": "state",
+"tag": "target_farther"
+},
+{
+"wait": 0.1,
+"do": "screenshot",
+"name": "e07_stand_at_15m"
+},
+{
+"wait": 0.2,
+"do": "press",
+"action": "aim"
+},
+{
+"wait": 0.5,
+"do": "aim_node",
+"path": "Paper2/Paper",
+"dur": 0.4
+},
+{
+"wait": 0.4,
+"do": "tap",
+"action": "fire",
+"hold": 0.06
+},
+{
+"wait": 0.8,
+"do": "release",
+"action": "aim"
+},
+{
+"wait": 0.2,
+"do": "state",
+"tag": "hit_at_15m"
+},
+{
+"wait": 0.2,
+"do": "tap",
+"action": "inspect_group",
+"hold": 0.06
+},
+{
+"wait": 1.0,
+"do": "screenshot",
+"name": "e08_group_inspector"
+},
+{
+"wait": 0.2,
+"do": "tap",
+"action": "pause",
+"hold": 0.06
+},
+{
+"wait": 0.5,
+"do": "pause",
+"on": false
+},
+{
+"wait": 0.5,
+"do": "tap",
+"action": "reset_targets",
+"hold": 0.06
+},
+{
+"wait": 1.0,
+"do": "state",
+"tag": "after_reset"
+},
+{
+"wait": 0.1,
+"do": "screenshot",
+"name": "e09_after_reset"
+},
+{
+"wait": 0.2,
+"do": "restart"
+},
+{
+"wait": 1.5,
+"do": "state",
+"tag": "after_restart"
+},
+{
+"wait": 0.1,
+"do": "screenshot",
+"name": "e10_after_restart"
+},
+{
+"wait": 0.2,
+"do": "press",
+"action": "aim"
+},
+{
+"wait": 0.5,
+"do": "aim_node",
+"path": "Paper2/Paper",
+"dur": 0.3
+},
+{
+"wait": 0.3,
+"do": "tap",
+"action": "fire",
+"hold": 0.3
+},
+{
+"wait": 0.6,
+"do": "tap",
+"action": "fire",
+"hold": 0.06
+},
+{
+"wait": 0.5,
+"do": "release",
+"action": "aim"
+},
+{
+"wait": 0.2,
+"do": "rebind_key",
+"action": "reload",
+"keycode": 72
+},
+{
+"wait": 0.2,
+"do": "key",
+"keycode": 72
+},
+{
+"wait": 0.05,
+"do": "key",
+"keycode": 72,
+"down": false
+},
+{
+"wait": 1.0,
+"do": "state",
+"tag": "reload_via_rebound_key"
+},
+{
+"wait": 3.5,
+"do": "set",
+"key": "fov",
+"value": 80.0,
+"persist": true
+},
+{
+"wait": 0.1,
+"do": "set",
+"key": "master_volume",
+"value": 0.5,
+"persist": true
+},
+{
+"wait": 0.1,
+"do": "set",
+"key": "dynamic_range",
+"value": "headphones",
+"persist": true
+},
+{
+"wait": 0.3,
+"do": "settings_dump",
+"tag": "before_quit"
+},
+{
+"wait": 0.3,
+"do": "quit"
+}
+]

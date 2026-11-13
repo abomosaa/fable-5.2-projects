@@ -1,0 +1,350 @@
+[
+ {
+  "object_id": "dino_5",
+  "camera": {
+   "q": [
+    0.1916425675153732,
+    -0.9586533308029176,
+    0.0412393920123577,
+    -0.2062914371490478
+   ],
+   "t": [
+    -6.578006182790171,
+    -6.2602812933586485,
+    518.990721822891
+   ],
+   "focal_length": 1608.940601348877,
+   "camera_model": "canon_t4i"
+  },
+  "filename": "00_navi031_IMG_3424.jpg",
+  "filename_original": "IMG_3424",
+  "image_size": [
+   800,
+   1200
+  ],
+  "scene_name": "multiview-13-canon_t4i",
+  "split": "train",
+  "occluded": false,
+  "scene_name_original": "scene_014",
+  "source_filename": "031.jpg"
+ },
+ {
+  "object_id": "dino_5",
+  "camera": {
+   "q": [
+    0.0840273648500442,
+    -0.9859086871147156,
+    0.0577227957546711,
+    -0.1326329708099365
+   ],
+   "t": [
+    -16.32595443725586,
+    1.6902861410549963,
+    533.2872950181121
+   ],
+   "focal_length": 1608.940601348877,
+   "camera_model": "canon_t4i"
+  },
+  "filename": "01_navi039_IMG_3425.jpg",
+  "filename_original": "IMG_3425",
+  "image_size": [
+   800,
+   1200
+  ],
+  "scene_name": "multiview-13-canon_t4i",
+  "split": "val",
+  "occluded": false,
+  "scene_name_original": "scene_014",
+  "source_filename": "039.jpg"
+ },
+ {
+  "object_id": "dino_5",
+  "camera": {
+   "q": [
+    0.0281555373221635,
+    -0.9966848492622375,
+    0.0469082370400428,
+    -0.0602153539657592
+   ],
+   "t": [
+    -18.59875789873349,
+    -13.631269454956056,
+    526.809326171875
+   ],
+   "focal_length": 1608.940601348877,
+   "camera_model": "canon_t4i"
+  },
+  "filename": "02_navi030_IMG_3426.jpg",
+  "filename_original": "IMG_3426",
+  "image_size": [
+   800,
+   1200
+  ],
+  "scene_name": "multiview-13-canon_t4i",
+  "split": "train",
+  "occluded": false,
+  "scene_name_original": "scene_014",
+  "source_filename": "030.jpg"
+ },
+ {
+  "object_id": "dino_5",
+  "camera": {
+   "q": [
+    0.0084024891257286,
+    0.9983383417129515,
+    -0.0350445657968521,
+    -0.0449632406234741
+   ],
+   "t": [
+    -6.974359035491943,
+    -38.657958984375,
+    509.6520385742188
+   ],
+   "focal_length": 1608.940601348877,
+   "camera_model": "canon_t4i"
+  },
+  "filename": "03_navi041_IMG_3427.jpg",
+  "filename_original": "IMG_3427",
+  "image_size": [
+   800,
+   1200
+  ],
+  "scene_name": "multiview-13-canon_t4i",
+  "split": "val",
+  "occluded": false,
+  "scene_name_original": "scene_014",
+  "source_filename": "041.jpg"
+ },
+ {
+  "object_id": "dino_5",
+  "camera": {
+   "q": [
+    0.0057035516947507,
+    0.9773436188697816,
+    -0.0298332758247852,
+    -0.2094679474830627
+   ],
+   "t": [
+    7.592044830322266,
+    -6.373322292962348,
+    574.4079321865995
+   ],
+   "focal_length": 1608.940601348877,
+   "camera_model": "canon_t4i"
+  },
+  "filename": "04_navi016_IMG_3428.jpg",
+  "filename_original": "IMG_3428",
+  "image_size": [
+   800,
+   1200
+  ],
+  "scene_name": "multiview-13-canon_t4i",
+  "split": "train",
+  "occluded": false,
+  "scene_name_original": "scene_014",
+  "source_filename": "016.jpg"
+ },
+ {
+  "object_id": "dino_5",
+  "camera": {
+   "q": [
+    0.0004548913275357,
+    0.9636403322219848,
+    -0.0272095203399658,
+    -0.2658125162124634
+   ],
+   "t": [
+    -2.4055956843850423,
+    10.835961987731576,
+    581.0934184249293
+   ],
+   "focal_length": 1608.940601348877,
+   "camera_model": "canon_t4i"
+  },
+  "filename": "05_navi033_IMG_3429.jpg",
+  "filename_original": "IMG_3429",
+  "image_size": [
+   800,
+   1200
+  ],
+  "scene_name": "multiview-13-canon_t4i",
+  "split": "train",
+  "occluded": false,
+  "scene_name_original": "scene_014",
+  "source_filename": "033.jpg"
+ },
+ {
+  "object_id": "dino_5",
+  "camera": {
+   "q": [
+    0.0698669105768203,
+    -0.9622264504432678,
+    0.0204406362026929,
+    0.2623375654220581
+   ],
+   "t": [
+    -11.570352554321287,
+    10.932268794314194,
+    525.9270333008191
+   ],
+   "focal_length": 1608.940601348877,
+   "camera_model": "canon_t4i"
+  },
+  "filename": "06_navi015_IMG_3430.jpg",
+  "filename_original": "IMG_3430",
+  "image_size": [
+   800,
+   1200
+  ],
+  "scene_name": "multiview-13-canon_t4i",
+  "split": "train",
+  "occluded": false,
+  "scene_name_original": "scene_014",
+  "source_filename": "015.jpg"
+ },
+ {
+  "object_id": "dino_5",
+  "camera": {
+   "q": [
+    0.175458937883377,
+    -0.9522441625595092,
+    -0.0097178723663091,
+    0.2497019171714783
+   ],
+   "t": [
+    -16.962932586669922,
+    25.08923530578613,
+    527.0604248046875
+   ],
+   "focal_length": 1608.940601348877,
+   "camera_model": "canon_t4i"
+  },
+  "filename": "07_navi026_IMG_3431.jpg",
+  "filename_original": "IMG_3431",
+  "image_size": [
+   800,
+   1200
+  ],
+  "scene_name": "multiview-13-canon_t4i",
+  "split": "train",
+  "occluded": false,
+  "scene_name_original": "scene_014",
+  "source_filename": "026.jpg"
+ },
+ {
+  "object_id": "dino_5",
+  "camera": {
+   "q": [
+    0.2455397099256515,
+    -0.8773490786552429,
+    -0.1049131602048874,
+    0.3987001776695252
+   ],
+   "t": [
+    -13.416239738464355,
+    24.70178413391113,
+    544.8055419921875
+   ],
+   "focal_length": 1608.940601348877,
+   "camera_model": "canon_t4i"
+  },
+  "filename": "08_navi019_IMG_3432.jpg",
+  "filename_original": "IMG_3432",
+  "image_size": [
+   800,
+   1200
+  ],
+  "scene_name": "multiview-13-canon_t4i",
+  "split": "train",
+  "occluded": false,
+  "scene_name_original": "scene_014",
+  "source_filename": "019.jpg"
+ },
+ {
+  "object_id": "dino_5",
+  "camera": {
+   "q": [
+    0.2768276631832123,
+    -0.8503503203392029,
+    -0.1884326338768005,
+    0.4059113264083862
+   ],
+   "t": [
+    -17.024356842041016,
+    19.91133999296069,
+    462.5498962402344
+   ],
+   "focal_length": 1608.940601348877,
+   "camera_model": "canon_t4i"
+  },
+  "filename": "09_navi005_IMG_3433.jpg",
+  "filename_original": "IMG_3433",
+  "image_size": [
+   800,
+   1200
+  ],
+  "scene_name": "multiview-13-canon_t4i",
+  "split": "train",
+  "occluded": false,
+  "scene_name_original": "scene_014",
+  "source_filename": "005.jpg"
+ },
+ {
+  "object_id": "dino_5",
+  "camera": {
+   "q": [
+    0.2089746296405792,
+    -0.8183392882347107,
+    -0.1137381419539451,
+    0.5231769084930421
+   ],
+   "t": [
+    -24.95763969421387,
+    5.261943340301514,
+    508.1682739257813
+   ],
+   "focal_length": 1608.940601348877,
+   "camera_model": "canon_t4i"
+  },
+  "filename": "10_navi048_IMG_3434.jpg",
+  "filename_original": "IMG_3434",
+  "image_size": [
+   800,
+   1200
+  ],
+  "scene_name": "multiview-13-canon_t4i",
+  "split": "val",
+  "occluded": false,
+  "scene_name_original": "scene_014",
+  "source_filename": "048.jpg"
+ },
+ {
+  "object_id": "dino_5",
+  "camera": {
+   "q": [
+    0.1146064773201942,
+    -0.7885860204696655,
+    -0.0589186176657676,
+    0.6012700200080872
+   ],
+   "t": [
+    -1.410477007059873,
+    -2.5922286377361963,
+    524.5339370410368
+   ],
+   "focal_length": 1608.940601348877,
+   "camera_model": "canon_t4i"
+  },
+  "filename": "11_navi045_IMG_3435.jpg",
+  "filename_original": "IMG_3435",
+  "image_size": [
+   800,
+   1200
+  ],
+  "scene_name": "multiview-13-canon_t4i",
+  "split": "val",
+  "occluded": false,
+  "scene_name_original": "scene_014",
+  "source_filename": "045.jpg"
+ }
+]

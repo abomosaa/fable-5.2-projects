@@ -1,0 +1,12 @@
+cmake_minimum_required(VERSION 3.18)
+project(dcjni CXX)
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+set(CMAKE_BUILD_TYPE Release)
+# bound compile parallelism (memory): the core includes a large header-only JSON library
+set_property(GLOBAL PROPERTY JOB_POOLS dc_compile=4)
+set(CMAKE_JOB_POOL_COMPILE dc_compile)
+add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/../../../../../core ${CMAKE_CURRENT_BINARY_DIR}/dcore)
+add_library(dcjni SHARED jni.cpp)
+target_link_libraries(dcjni dcore log)
+target_link_options(dcjni PRIVATE "-Wl,-z,max-page-size=16384")

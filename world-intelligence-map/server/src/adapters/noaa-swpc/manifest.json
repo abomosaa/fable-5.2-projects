@@ -1,0 +1,68 @@
+{
+  "id": "noaa-swpc",
+  "provider": "NOAA Space Weather Prediction Center (SWPC)",
+  "dataset": "SWPC data services – OVATION aurora nowcast and space weather alerts, watches and warnings",
+  "description": "Short-term aurora probability forecast from the OVATION Prime model (1° global grid) and the text alerts, watches, warnings and summaries issued by the SWPC forecast office (geomagnetic storms, solar radiation storms, radio blackouts, radio bursts, electron flux).",
+  "homepageUrl": "https://www.spaceweather.gov/",
+  "documentationUrl": "https://www.spaceweather.gov/content/data-access",
+  "sourceUrls": [
+    "https://services.swpc.noaa.gov/json/ovation_aurora_latest.json",
+    "https://services.swpc.noaa.gov/products/alerts.json"
+  ],
+  "allowedHosts": ["services.swpc.noaa.gov"],
+  "coverage": {
+    "geographic": "Global (aurora grid 1° × 1°; alerts are planet-wide bulletins without a location).",
+    "temporal": "Aurora: the latest 30–90 minute forecast. Alerts: messages issued during the last 7 days (the file itself holds about a month)."
+  },
+  "updateCadence": { "upstream": "Aurora forecast about every 5 minutes; alerts as issued", "pollIntervalSec": 600, "staleAfterSec": 3600 },
+  "auth": { "type": "none", "envVars": [] },
+  "attribution": "NOAA Space Weather Prediction Center",
+  "license": {
+    "name": "U.S. Government work – public domain (NOAA/NWS)",
+    "url": "https://www.weather.gov/disclaimer",
+    "redistribution": "allowed",
+    "nonCommercialOnly": false,
+    "notes": "The SWPC data-access page lists services.swpc.noaa.gov/json and /products as the public data service and states no separate licence; the site links to the NOAA/NWS disclaimer, under which NWS web information is in the public domain unless noted otherwise and must not be presented as official material after modification."
+  },
+  "limitations": [
+    "The aurora layer is a model forecast (OVATION Prime driven by solar-wind measurements at L1), not an observation of visible aurora; visibility also depends on darkness, cloud and local viewing conditions.",
+    "To keep the layer light, only grid cells with a probability of at least 10 % are kept and the grid is thinned to every second degree of longitude and latitude, so the mapped oval is a 2° sample of the 1° product.",
+    "Alerts are global bulletins with no geographic footprint; they are listed, not mapped. Only the title line and a short excerpt are stored – consult SWPC for the authoritative text.",
+    "The JSON products are operational files without a formal schema or stability guarantee."
+  ],
+  "confidenceNotes": "Neither product carries a confidence value, so none is assigned. Alert severity is derived by this application from the NOAA Space Weather Scale level (G/S/R 1–5) when the message states one: level 1 (Minor) → 1, 2 (Moderate) → 2, 3 (Strong) → 3, 4 (Severe) → 3, 5 (Extreme) → 4; messages without a scale level have no severity. Aurora cells carry the model probability as their metric and no severity.",
+  "retention": { "note": "Aurora cells are updated in place and purged 1 day after their last forecast; alert bulletins are kept for 30 days." },
+  "snapshot": "full",
+  "http": { "minIntervalMs": 500 },
+  "enabledByDefault": true,
+  "layers": [
+    {
+      "id": "aurora-forecast",
+      "name": "Aurora forecast (OVATION)",
+      "description": "Probability of visible aurora in the next 30–90 minutes from NOAA's OVATION model, for grid cells with at least 10 % probability.",
+      "domain": "space",
+      "category": "aurora",
+      "geometry": "point",
+      "timeModel": "snapshot",
+      "render": { "type": "heatmap", "color": "green", "heatmapBelowZoom": 7 },
+      "metric": { "name": "Aurora probability", "unit": "%", "scale": "sequential", "higherIs": "neutral" },
+      "freshForSec": 1800,
+      "liveMaxAgeSec": 10800,
+      "retentionDays": 1,
+      "defaultOn": false
+    },
+    {
+      "id": "space-weather-alerts",
+      "name": "Space weather alerts (SWPC)",
+      "description": "Alerts, watches, warnings and summaries issued by the NOAA Space Weather Prediction Center during the last 7 days (global bulletins).",
+      "domain": "space",
+      "category": "space-weather",
+      "geometry": "global",
+      "timeModel": "event",
+      "render": { "type": "point", "color": "yellow", "shape": "diamond" },
+      "freshForSec": 21600,
+      "retentionDays": 30,
+      "defaultOn": true
+    }
+  ]
+}

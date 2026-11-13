@@ -1,0 +1,17 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    { "type": "Feature", "geometry": { "type": "Point", "coordinates": [123.685, 13.257] },
+      "properties": { "eventtype": "VO", "eventid": 9000010, "episodeid": 1, "eventname": "Testcano", "glide": "", "name": "Eruption  Testcano", "description": "Eruption  Testcano", "htmldescription": "Orange Eruption Testcano in Philippines at: 09 Nov 2026 18:05.", "url": { "report": "https://www.gdacs.org/report.aspx?eventid=9000010&episodeid=1&eventtype=VO" }, "alertlevel": "Orange", "alertscore": 2, "episodealertlevel": "Orange", "episodealertscore": 1.5, "istemporary": "false", "iscurrent": "false", "country": "Philippines", "fromdate": "2026-11-09T18:05:00", "todate": "2026-11-09T18:05:00", "datemodified": "2026-11-10T06:45:43", "iso3": "PHL", "source": "DARWIN", "affectedcountries": [{ "iso2": "PH", "iso3": "PHL", "countryname": "Philippines" }], "severitydata": { "severity": 0.0, "severitytext": "", "severityunit": "" } } },
+    { "type": "Feature", "geometry": { "type": "Point", "coordinates": [37.1, 36.2] },
+      "properties": { "eventtype": "EQ", "eventid": 9000001, "episodeid": 9100001, "name": "Earthquake in Testland (duplicate of the RSS item)", "alertlevel": "Red", "alertscore": 3, "iscurrent": "true", "istemporary": "true", "fromdate": "2026-11-10T09:30:00", "todate": "2026-11-10T09:30:00", "iso3": "SYR", "affectedcountries": [], "severitydata": { "severity": 7.4, "severitytext": "Magnitude 7.4M, Depth:12km", "severityunit": "M" } } },
+    { "type": "Feature", "geometry": null,
+      "properties": { "eventtype": "TC", "eventid": 9000011, "episodeid": 2, "name": "Tropical Cyclone NOGEOM-26", "alertlevel": "Green", "alertscore": 1, "iscurrent": "true", "fromdate": "2026-11-09T00:00:00", "todate": "2026-11-10T00:00:00", "affectedcountries": [], "severitydata": {} } },
+    { "type": "Feature", "geometry": { "type": "Point", "coordinates": [10.0, 20.0] },
+      "properties": { "eventtype": "DR", "eventid": "12; DROP TABLE", "episodeid": 2, "name": "Drought with a hostile id", "alertlevel": "Green", "iscurrent": "true", "fromdate": "2026-11-09T00:00:00", "todate": "2026-11-10T00:00:00" } },
+    { "type": "Feature", "geometry": { "type": "Point", "coordinates": [10.0, 20.0] },
+      "properties": { "eventtype": "FL", "eventid": 9000013, "episodeid": 2, "alertlevel": "Green", "iscurrent": "true", "fromdate": "2026-11-09T00:00:00", "todate": "2026-11-10T00:00:00" } },
+    { "type": "Feature", "geometry": { "type": "Point", "coordinates": [10.0, 20.0] }, "properties": null },
+    null
+  ]
+}

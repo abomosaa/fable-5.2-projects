@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="dev.pocket3d.data.FileProjectStoreTest" tests="21" skipped="0" failures="0" errors="0" timestamp="2026-11-12T10:55:57.274Z" hostname="h4-pc" time="0.102">
+  <properties/>
+  <testcase name="exportArchiveHasManifestRelativePathsStoredPhotosAndVerifiableChecksums" classname="dev.pocket3d.data.FileProjectStoreTest" time="0.031"/>
+  <testcase name="missingSessionJsonKeepsFramesFlaggedNoMetadata" classname="dev.pocket3d.data.FileProjectStoreTest" time="0.004"/>
+  <testcase name="frameWhoseFileVanishedIsDroppedFromMetadataNotInvented" classname="dev.pocket3d.data.FileProjectStoreTest" time="0.002"/>
+  <testcase name="editsPersistAndAreNeverReturnedForADifferentModel" classname="dev.pocket3d.data.FileProjectStoreTest" time="0.009"/>
+  <testcase name="activeModelChangesOnlyWhenAVerifiedResultIsRegistered" classname="dev.pocket3d.data.FileProjectStoreTest" time="0.01"/>
+  <testcase name="frameEditingOperations" classname="dev.pocket3d.data.FileProjectStoreTest" time="0.004"/>
+  <testcase name="duplicateProjectDeepCopiesPhotosModelsAndEditsButNotJobs" classname="dev.pocket3d.data.FileProjectStoreTest" time="0.005"/>
+  <testcase name="lowStorageGuardFailsWithTypedErrorAndChangesNothing" classname="dev.pocket3d.data.FileProjectStoreTest" time="0.006"/>
+  <testcase name="latestJobDrivesTheLibraryRow" classname="dev.pocket3d.data.FileProjectStoreTest" time="0.004"/>
+  <testcase name="commitFrameRejectsUnsafeIdsFormatsAndForeignFiles" classname="dev.pocket3d.data.FileProjectStoreTest" time="0.003"/>
+  <testcase name="jobRecordsAreDurableAndPhaseOnlyMovesThroughTheStateMachine" classname="dev.pocket3d.data.FileProjectStoreTest" time="0.004"/>
+  <testcase name="orphanTempFilesAreDeletedAndNeverReadAsValid" classname="dev.pocket3d.data.FileProjectStoreTest" time="0.002"/>
+  <testcase name="thumbnailIsStoredAndPublishedForTheActiveModel" classname="dev.pocket3d.data.FileProjectStoreTest" time="0.002"/>
+  <testcase name="summariesAreNewestFirstAndFollowMutations" classname="dev.pocket3d.data.FileProjectStoreTest" time="0.001"/>
+  <testcase name="projectSessionAndFramesSurviveRestart" classname="dev.pocket3d.data.FileProjectStoreTest" time="0.003"/>
+  <testcase name="tornSessionJsonFallsBackToPreviousVersionAndReadoptsThePhoto" classname="dev.pocket3d.data.FileProjectStoreTest" time="0.002"/>
+  <testcase name="crashInsideModelRegistrationIsResolvedOnRestart" classname="dev.pocket3d.data.FileProjectStoreTest" time="0.004"/>
+  <testcase name="corruptProjectJsonIsRestoredFromBackupOrRebuilt" classname="dev.pocket3d.data.FileProjectStoreTest" time="0.002"/>
+  <testcase name="commitFrameHashesMovesAndNamesTheFile" classname="dev.pocket3d.data.FileProjectStoreTest" time="0.001"/>
+  <testcase name="interruptedDeleteIsFinishedOnNextStart" classname="dev.pocket3d.data.FileProjectStoreTest" time="0.001"/>
+  <testcase name="deletionPlanCountsLocalDataAndDeleteRemovesEverything" classname="dev.pocket3d.data.FileProjectStoreTest" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

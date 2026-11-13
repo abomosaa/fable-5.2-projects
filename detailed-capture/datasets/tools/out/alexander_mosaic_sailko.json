@@ -1,0 +1,1188 @@
+{
+ "set": "alexander_mosaic_sailko",
+ "overview": {
+  "file": "overview.jpg",
+  "original_size": [
+   3188,
+   2332
+  ],
+  "exif": {
+   "size": [
+    3188,
+    2332
+   ],
+   "Make": "Canon",
+   "Model": "Canon PowerShot G12",
+   "DateTime": "2013:11:29 11:35:44",
+   "DateTimeOriginal": "2013:11:29 11:35:44",
+   "FocalLength": 6.1,
+   "ExposureTime": 0.03333333333333333,
+   "FNumber": 2.8,
+   "ISOSpeedRatings": 250
+  },
+  "work_scale": 1.0,
+  "keypoints": 60000
+ },
+ "params": {
+  "max_side": 4000,
+  "ratio": 0.75,
+  "ransac": "USAC_MAGSAC thr 3 px (work px)"
+ },
+ "closeups": [
+  {
+   "file": "closeup_01.jpg",
+   "exif": {
+    "size": [
+     3648,
+     2736
+    ],
+    "Make": "Canon",
+    "Model": "Canon PowerShot G12",
+    "DateTime": "2013:11:29 11:36:25",
+    "DateTimeOriginal": "2013:11:29 11:36:25",
+    "FocalLength": 6.1,
+    "ExposureTime": 0.03333333333333333,
+    "FNumber": 2.8,
+    "ISOSpeedRatings": 400
+   },
+   "original_size": [
+    3648,
+    2736
+   ],
+   "trials": [
+    {
+     "closeup_downscale": 1.0,
+     "keypoints": 12000,
+     "ratio_matches": 242,
+     "inliers": 113,
+     "rms_px_work": 1.945549488067627
+    },
+    {
+     "closeup_downscale": 0.5,
+     "keypoints": 12000,
+     "ratio_matches": 539,
+     "inliers": 345,
+     "rms_px_work": 1.775217056274414
+    },
+    {
+     "closeup_downscale": 0.25,
+     "keypoints": 4205,
+     "ratio_matches": 499,
+     "inliers": 431,
+     "rms_px_work": 1.2403450012207031
+    },
+    {
+     "closeup_downscale": 0.125,
+     "keypoints": 1238,
+     "ratio_matches": 304,
+     "inliers": 281,
+     "rms_px_work": 1.0039576292037964
+    }
+   ],
+   "fundamental_inliers": 484,
+   "h_over_f_inliers": 0.89,
+   "h_inlier_ratio": 0.864,
+   "inliers": 431,
+   "ratio_matches": 499,
+   "best_closeup_downscale": 0.25,
+   "rms_px_work": 1.2403450012207031,
+   "scale_factor": 3.684,
+   "scale_at_corners": [
+    2.906,
+    2.232,
+    4.521,
+    5.359
+   ],
+   "anisotropy": 1.133,
+   "footprint_overview_px": [
+    [
+     311.8,
+     375.6
+    ],
+    [
+     1511.9,
+     240.1
+    ],
+    [
+     1261.4,
+     1142.9
+    ],
+    [
+     490.3,
+     1136.2
+    ]
+   ],
+   "footprint_fraction_of_overview": 0.11,
+   "footprint_convex": true,
+   "ncc_vs_overview": 0.838,
+   "H_overview_to_closeup_original_px": [
+    [
+     3.0927233887138716,
+     -0.725557914372845,
+     -691.8743968560746
+    ],
+    [
+     0.23045562092644872,
+     2.041221178231185,
+     -838.4723018628981
+    ],
+    [
+     9.415813791061931e-05,
+     -0.00040804726133691633,
+     1.0
+    ]
+   ],
+   "registers": true
+  },
+  {
+   "file": "closeup_02.jpg",
+   "exif": {
+    "size": [
+     3648,
+     2736
+    ],
+    "Make": "Canon",
+    "Model": "Canon PowerShot G12",
+    "DateTime": "2013:11:29 11:36:17",
+    "DateTimeOriginal": "2013:11:29 11:36:17",
+    "FocalLength": 6.1,
+    "ExposureTime": 0.03333333333333333,
+    "FNumber": 2.8,
+    "ISOSpeedRatings": 320
+   },
+   "original_size": [
+    3648,
+    2736
+   ],
+   "trials": [
+    {
+     "closeup_downscale": 1.0,
+     "keypoints": 12000,
+     "ratio_matches": 376,
+     "inliers": 101,
+     "rms_px_work": 1.8056838512420654
+    },
+    {
+     "closeup_downscale": 0.5,
+     "keypoints": 12000,
+     "ratio_matches": 886,
+     "inliers": 475,
+     "rms_px_work": 1.8551008701324463
+    },
+    {
+     "closeup_downscale": 0.25,
+     "keypoints": 9042,
+     "ratio_matches": 1316,
+     "inliers": 952,
+     "rms_px_work": 1.475844383239746
+    },
+    {
+     "closeup_downscale": 0.125,
+     "keypoints": 2239,
+     "ratio_matches": 751,
+     "inliers": 712,
+     "rms_px_work": 1.239808440208435
+    }
+   ],
+   "fundamental_inliers": 1300,
+   "h_over_f_inliers": 0.732,
+   "h_inlier_ratio": 0.723,
+   "inliers": 952,
+   "ratio_matches": 1316,
+   "best_closeup_downscale": 0.25,
+   "rms_px_work": 1.475844383239746,
+   "scale_factor": 5.022,
+   "scale_at_corners": [
+    3.848,
+    3.982,
+    6.297,
+    6.14
+   ],
+   "anisotropy": 1.056,
+   "footprint_overview_px": [
+    [
+     941.0,
+     649.9
+    ],
+    [
+     1776.0,
+     655.1
+    ],
+    [
+     1672.4,
+     1222.6
+    ],
+    [
+     1059.2,
+     1228.5
+    ]
+   ],
+   "footprint_fraction_of_overview": 0.0558,
+   "footprint_convex": true,
+   "ncc_vs_overview": 0.782,
+   "H_overview_to_closeup_original_px": [
+    [
+     3.23785386187164,
+     -0.6611084759687352,
+     -2617.288127182068
+    ],
+    [
+     -0.016204486345502887,
+     2.6259269776846996,
+     -1691.425122046124
+    ],
+    [
+     -1.8415249994644105e-05,
+     -0.00034668394646140824,
+     1.0
+    ]
+   ],
+   "registers": true
+  },
+  {
+   "file": "closeup_03.jpg",
+   "exif": {
+    "size": [
+     3648,
+     2736
+    ],
+    "Make": "Canon",
+    "Model": "Canon PowerShot G12",
+    "DateTime": "2013:11:29 11:36:14",
+    "DateTimeOriginal": "2013:11:29 11:36:14",
+    "FocalLength": 6.1,
+    "ExposureTime": 0.03333333333333333,
+    "FNumber": 2.8,
+    "ISOSpeedRatings": 320
+   },
+   "original_size": [
+    3648,
+    2736
+   ],
+   "trials": [
+    {
+     "closeup_downscale": 1.0,
+     "keypoints": 12000,
+     "ratio_matches": 13,
+     "inliers": 6,
+     "rms_px_work": 0.001287055667489767
+    },
+    {
+     "closeup_downscale": 0.5,
+     "keypoints": 12000,
+     "ratio_matches": 313,
+     "inliers": 201,
+     "rms_px_work": 1.5827805995941162
+    },
+    {
+     "closeup_downscale": 0.25,
+     "keypoints": 6308,
+     "ratio_matches": 1011,
+     "inliers": 835,
+     "rms_px_work": 1.7194390296936035
+    },
+    {
+     "closeup_downscale": 0.125,
+     "keypoints": 1852,
+     "ratio_matches": 686,
+     "inliers": 644,
+     "rms_px_work": 1.217363953590393
+    }
+   ],
+   "fundamental_inliers": 991,
+   "h_over_f_inliers": 0.843,
+   "h_inlier_ratio": 0.826,
+   "inliers": 835,
+   "ratio_matches": 1011,
+   "best_closeup_downscale": 0.25,
+   "rms_px_work": 1.7194390296936035,
+   "scale_factor": 5.914,
+   "scale_at_corners": [
+    5.38,
+    5.318,
+    6.466,
+    6.532
+   ],
+   "anisotropy": 1.006,
+   "footprint_overview_px": [
+    [
+     1088.6,
+     1007.2
+    ],
+    [
+     1746.2,
+     1009.8
+    ],
+    [
+     1701.5,
+     1477.2
+    ],
+    [
+     1124.0,
+     1471.7
+    ]
+   ],
+   "footprint_fraction_of_overview": 0.0387,
+   "footprint_convex": true,
+   "ncc_vs_overview": 0.755,
+   "H_overview_to_closeup_original_px": [
+    [
+     4.472596169594775,
+     -0.3414519449892641,
+     -4524.753589748387
+    ],
+    [
+     -0.016388605874266295,
+     4.140652598106237,
+     -4152.7356204493835
+    ],
+    [
+     1.0257839719975366e-05,
+     -0.00020980971036662534,
+     1.0
+    ]
+   ],
+   "registers": true
+  },
+  {
+   "file": "closeup_04.jpg",
+   "exif": {
+    "size": [
+     3648,
+     2736
+    ],
+    "Make": "Canon",
+    "Model": "Canon PowerShot G12",
+    "DateTime": "2013:11:29 11:35:52",
+    "DateTimeOriginal": "2013:11:29 11:35:52",
+    "FocalLength": 6.1,
+    "ExposureTime": 0.03333333333333333,
+    "FNumber": 2.8,
+    "ISOSpeedRatings": 320
+   },
+   "original_size": [
+    3648,
+    2736
+   ],
+   "trials": [
+    {
+     "closeup_downscale": 1.0,
+     "keypoints": 12001,
+     "ratio_matches": 937,
+     "inliers": 429,
+     "rms_px_work": 1.715686321258545
+    },
+    {
+     "closeup_downscale": 0.5,
+     "keypoints": 12000,
+     "ratio_matches": 4029,
+     "inliers": 2333,
+     "rms_px_work": 1.6505721807479858
+    },
+    {
+     "closeup_downscale": 0.25,
+     "keypoints": 7905,
+     "ratio_matches": 3262,
+     "inliers": 2437,
+     "rms_px_work": 1.4789676666259766
+    },
+    {
+     "closeup_downscale": 0.125,
+     "keypoints": 2311,
+     "ratio_matches": 1188,
+     "inliers": 1172,
+     "rms_px_work": 1.2201850414276123
+    }
+   ],
+   "fundamental_inliers": 3239,
+   "h_over_f_inliers": 0.752,
+   "h_inlier_ratio": 0.747,
+   "inliers": 2437,
+   "ratio_matches": 3262,
+   "best_closeup_downscale": 0.25,
+   "rms_px_work": 1.4789676666259766,
+   "scale_factor": 2.426,
+   "scale_at_corners": [
+    2.264,
+    2.067,
+    2.592,
+    2.804
+   ],
+   "anisotropy": 1.018,
+   "footprint_overview_px": [
+    [
+     1174.0,
+     382.6
+    ],
+    [
+     2782.7,
+     324.7
+    ],
+    [
+     2684.8,
+     1503.4
+    ],
+    [
+     1294.9,
+     1493.5
+    ]
+   ],
+   "footprint_fraction_of_overview": 0.2309,
+   "footprint_convex": true,
+   "ncc_vs_overview": 0.77,
+   "H_overview_to_closeup_original_px": [
+    [
+     2.3840017261103164,
+     -0.25932357971553666,
+     -2699.63890608426
+    ],
+    [
+     0.07607387931436803,
+     2.113053010888651,
+     -897.8616411334585
+    ],
+    [
+     3.421182938133794e-05,
+     -0.000122547303829247,
+     1.0
+    ]
+   ],
+   "registers": true
+  },
+  {
+   "file": "closeup_05.jpg",
+   "exif": {
+    "size": [
+     3648,
+     2736
+    ],
+    "Make": "Canon",
+    "Model": "Canon PowerShot G12",
+    "DateTime": "2013:11:29 11:35:56",
+    "DateTimeOriginal": "2013:11:29 11:35:56",
+    "FocalLength": 6.1,
+    "ExposureTime": 0.03333333333333333,
+    "FNumber": 2.8,
+    "ISOSpeedRatings": 320
+   },
+   "original_size": [
+    3648,
+    2736
+   ],
+   "trials": [
+    {
+     "closeup_downscale": 1.0,
+     "keypoints": 12000,
+     "ratio_matches": 49,
+     "inliers": 23,
+     "rms_px_work": 1.4401555061340332
+    },
+    {
+     "closeup_downscale": 0.5,
+     "keypoints": 12000,
+     "ratio_matches": 2233,
+     "inliers": 1126,
+     "rms_px_work": 1.806488037109375
+    },
+    {
+     "closeup_downscale": 0.25,
+     "keypoints": 8006,
+     "ratio_matches": 2720,
+     "inliers": 1840,
+     "rms_px_work": 1.734075665473938
+    },
+    {
+     "closeup_downscale": 0.125,
+     "keypoints": 2454,
+     "ratio_matches": 1202,
+     "inliers": 1150,
+     "rms_px_work": 1.4019211530685425
+    }
+   ],
+   "fundamental_inliers": 2697,
+   "h_over_f_inliers": 0.682,
+   "h_inlier_ratio": 0.676,
+   "inliers": 1840,
+   "ratio_matches": 2720,
+   "best_closeup_downscale": 0.25,
+   "rms_px_work": 1.734075665473938,
+   "scale_factor": 3.254,
+   "scale_at_corners": [
+    2.873,
+    2.887,
+    3.652,
+    3.637
+   ],
+   "anisotropy": 1.035,
+   "footprint_overview_px": [
+    [
+     1842.9,
+     579.8
+    ],
+    [
+     3042.3,
+     584.0
+    ],
+    [
+     2970.9,
+     1440.3
+    ],
+    [
+     1945.8,
+     1439.1
+    ]
+   ],
+   "footprint_fraction_of_overview": 0.1283,
+   "footprint_convex": true,
+   "ncc_vs_overview": 0.798,
+   "H_overview_to_closeup_original_px": [
+    [
+     2.752392077158808,
+     -0.3295657326254247,
+     -4881.289856859541
+    ],
+    [
+     -0.008624976691749492,
+     2.470233260437776,
+     -1416.4007703671555
+    ],
+    [
+     -1.9128855681745376e-06,
+     -0.0001534299421179729,
+     1.0
+    ]
+   ],
+   "registers": true
+  },
+  {
+   "file": "closeup_06.jpg",
+   "exif": {
+    "size": [
+     3648,
+     2736
+    ],
+    "Make": "Canon",
+    "Model": "Canon PowerShot G12",
+    "DateTime": "2013:11:29 11:36:36",
+    "DateTimeOriginal": "2013:11:29 11:36:36",
+    "FocalLength": 7.407,
+    "ExposureTime": 0.025,
+    "FNumber": 2.8,
+    "ISOSpeedRatings": 400
+   },
+   "original_size": [
+    3648,
+    2736
+   ],
+   "trials": [
+    {
+     "closeup_downscale": 1.0,
+     "keypoints": 12001,
+     "ratio_matches": 103,
+     "inliers": 56,
+     "rms_px_work": 1.6478102207183838
+    },
+    {
+     "closeup_downscale": 0.5,
+     "keypoints": 12000,
+     "ratio_matches": 1425,
+     "inliers": 951,
+     "rms_px_work": 1.628217101097107
+    },
+    {
+     "closeup_downscale": 0.25,
+     "keypoints": 8410,
+     "ratio_matches": 2128,
+     "inliers": 1916,
+     "rms_px_work": 1.626844882965088
+    },
+    {
+     "closeup_downscale": 0.125,
+     "keypoints": 2441,
+     "ratio_matches": 976,
+     "inliers": 949,
+     "rms_px_work": 0.9574058055877686
+    }
+   ],
+   "fundamental_inliers": 2087,
+   "h_over_f_inliers": 0.918,
+   "h_inlier_ratio": 0.9,
+   "inliers": 1916,
+   "ratio_matches": 2128,
+   "best_closeup_downscale": 0.25,
+   "rms_px_work": 1.626844882965088,
+   "scale_factor": 4.147,
+   "scale_at_corners": [
+    3.37,
+    3.343,
+    4.975,
+    5.006
+   ],
+   "anisotropy": 1.062,
+   "footprint_overview_px": [
+    [
+     1449.9,
+     515.7
+    ],
+    [
+     2432.9,
+     514.4
+    ],
+    [
+     2321.4,
+     1207.9
+    ],
+    [
+     1566.8,
+     1206.0
+    ]
+   ],
+   "footprint_fraction_of_overview": 0.0809,
+   "footprint_convex": true,
+   "ncc_vs_overview": 0.791,
+   "H_overview_to_closeup_original_px": [
+    [
+     3.198304606045801,
+     -0.5414296397383888,
+     -4358.157072016499
+    ],
+    [
+     0.0035075106276267706,
+     2.609452317431818,
+     -1350.8108149695452
+    ],
+    [
+     4.334301092669473e-06,
+     -0.0002887672965870311,
+     1.0
+    ]
+   ],
+   "registers": true
+  },
+  {
+   "file": "closeup_07.jpg",
+   "exif": {
+    "size": [
+     3648,
+     2736
+    ],
+    "Make": "Canon",
+    "Model": "Canon PowerShot G12",
+    "DateTime": "2013:11:29 11:36:08",
+    "DateTimeOriginal": "2013:11:29 11:36:08",
+    "FocalLength": 6.1,
+    "ExposureTime": 0.03333333333333333,
+    "FNumber": 2.8,
+    "ISOSpeedRatings": 250
+   },
+   "original_size": [
+    3648,
+    2736
+   ],
+   "trials": [
+    {
+     "closeup_downscale": 1.0,
+     "keypoints": 12000,
+     "ratio_matches": 31,
+     "inliers": 7,
+     "rms_px_work": 0.7566762566566467
+    },
+    {
+     "closeup_downscale": 0.5,
+     "keypoints": 12001,
+     "ratio_matches": 166,
+     "inliers": 54,
+     "rms_px_work": 1.6313480138778687
+    },
+    {
+     "closeup_downscale": 0.25,
+     "keypoints": 6293,
+     "ratio_matches": 800,
+     "inliers": 532,
+     "rms_px_work": 1.7413088083267212
+    },
+    {
+     "closeup_downscale": 0.125,
+     "keypoints": 1645,
+     "ratio_matches": 583,
+     "inliers": 564,
+     "rms_px_work": 1.46836256980896
+    }
+   ],
+   "fundamental_inliers": 581,
+   "h_over_f_inliers": 0.971,
+   "h_inlier_ratio": 0.967,
+   "inliers": 564,
+   "ratio_matches": 583,
+   "best_closeup_downscale": 0.125,
+   "rms_px_work": 1.46836256980896,
+   "scale_factor": 6.48,
+   "scale_at_corners": [
+    5.83,
+    6.056,
+    7.153,
+    6.914
+   ],
+   "anisotropy": 1.017,
+   "footprint_overview_px": [
+    [
+     1846.8,
+     1036.9
+    ],
+    [
+     2438.7,
+     1031.0
+    ],
+    [
+     2419.4,
+     1453.2
+    ],
+    [
+     1890.6,
+     1468.1
+    ]
+   ],
+   "footprint_fraction_of_overview": 0.0322,
+   "footprint_convex": true,
+   "ncc_vs_overview": 0.738,
+   "H_overview_to_closeup_original_px": [
+    [
+     4.492316518178668,
+     -0.45668248915186044,
+     -7822.7625055621365
+    ],
+    [
+     0.04220344101621871,
+     4.233828089512178,
+     -4467.944469756809
+    ],
+    [
+     -3.3416294430224504e-05,
+     -0.00018311254378983142,
+     1.0
+    ]
+   ],
+   "registers": true
+  },
+  {
+   "file": "closeup_08.jpg",
+   "exif": {
+    "size": [
+     3648,
+     2736
+    ],
+    "Make": "Canon",
+    "Model": "Canon PowerShot G12",
+    "DateTime": "2013:11:29 11:36:58",
+    "DateTimeOriginal": "2013:11:29 11:36:58",
+    "FocalLength": 12.074,
+    "ExposureTime": 0.0125,
+    "FNumber": 3.5,
+    "ISOSpeedRatings": 800
+   },
+   "original_size": [
+    3648,
+    2736
+   ],
+   "trials": [
+    {
+     "closeup_downscale": 1.0,
+     "keypoints": 12000,
+     "ratio_matches": 57,
+     "inliers": 16,
+     "rms_px_work": 1.977529764175415
+    },
+    {
+     "closeup_downscale": 0.5,
+     "keypoints": 12000,
+     "ratio_matches": 76,
+     "inliers": 45,
+     "rms_px_work": 1.7557367086410522
+    },
+    {
+     "closeup_downscale": 0.25,
+     "keypoints": 12000,
+     "ratio_matches": 332,
+     "inliers": 293,
+     "rms_px_work": 1.383015751838684
+    },
+    {
+     "closeup_downscale": 0.125,
+     "keypoints": 1956,
+     "ratio_matches": 305,
+     "inliers": 301,
+     "rms_px_work": 0.8268396258354187
+    }
+   ],
+   "fundamental_inliers": 303,
+   "h_over_f_inliers": 0.993,
+   "h_inlier_ratio": 0.987,
+   "inliers": 301,
+   "ratio_matches": 305,
+   "best_closeup_downscale": 0.125,
+   "rms_px_work": 0.8268396258354187,
+   "scale_factor": 10.893,
+   "scale_at_corners": [
+    10.163,
+    10.525,
+    11.64,
+    11.266
+   ],
+   "anisotropy": 1.024,
+   "footprint_overview_px": [
+    [
+     1933.7,
+     1061.1
+    ],
+    [
+     2277.1,
+     1062.8
+    ],
+    [
+     2270.1,
+     1314.0
+    ],
+    [
+     1949.4,
+     1317.9
+    ]
+   ],
+   "footprint_fraction_of_overview": 0.0113,
+   "footprint_convex": true,
+   "ncc_vs_overview": 0.853,
+   "H_overview_to_closeup_original_px": [
+    [
+     7.430754573205842,
+     -0.4532876832163511,
+     -13888.200139830355
+    ],
+    [
+     -0.035873280470784245,
+     7.1201730368033695,
+     -7485.653910167034
+    ],
+    [
+     -4.7160321307824865e-05,
+     -0.0001820737381339477,
+     1.0
+    ]
+   ],
+   "registers": true
+  },
+  {
+   "file": "closeup_09.jpg",
+   "exif": {
+    "size": [
+     3648,
+     2736
+    ],
+    "Make": "Canon",
+    "Model": "Canon PowerShot G12",
+    "DateTime": "2013:11:29 11:36:44",
+    "DateTimeOriginal": "2013:11:29 11:36:44",
+    "FocalLength": 12.074,
+    "ExposureTime": 0.02,
+    "FNumber": 3.5,
+    "ISOSpeedRatings": 800
+   },
+   "original_size": [
+    3648,
+    2736
+   ],
+   "trials": [
+    {
+     "closeup_downscale": 1.0,
+     "keypoints": 12000,
+     "ratio_matches": 57,
+     "inliers": 12,
+     "rms_px_work": 1.121429443359375
+    },
+    {
+     "closeup_downscale": 0.5,
+     "keypoints": 12001,
+     "ratio_matches": 84,
+     "inliers": 57,
+     "rms_px_work": 1.8597787618637085
+    },
+    {
+     "closeup_downscale": 0.25,
+     "keypoints": 8747,
+     "ratio_matches": 521,
+     "inliers": 490,
+     "rms_px_work": 1.2468987703323364
+    },
+    {
+     "closeup_downscale": 0.125,
+     "keypoints": 2247,
+     "ratio_matches": 501,
+     "inliers": 497,
+     "rms_px_work": 0.7203339338302612
+    }
+   ],
+   "fundamental_inliers": 498,
+   "h_over_f_inliers": 0.998,
+   "h_inlier_ratio": 0.992,
+   "inliers": 497,
+   "ratio_matches": 501,
+   "best_closeup_downscale": 0.125,
+   "rms_px_work": 0.7203339338302612,
+   "scale_factor": 7.902,
+   "scale_at_corners": [
+    6.692,
+    6.738,
+    9.177,
+    9.126
+   ],
+   "anisotropy": 1.122,
+   "footprint_overview_px": [
+    [
+     2137.5,
+     662.1
+    ],
+    [
+     2623.8,
+     662.9
+    ],
+    [
+     2586.4,
+     1032.4
+    ],
+    [
+     2190.7,
+     1033.1
+    ]
+   ],
+   "footprint_fraction_of_overview": 0.022,
+   "footprint_convex": true,
+   "ncc_vs_overview": 0.834,
+   "H_overview_to_closeup_original_px": [
+    [
+     5.529679564055597,
+     -0.7935372508875718,
+     -11294.304337733782
+    ],
+    [
+     -0.0071694624112365775,
+     4.441080323673254,
+     -2924.9986865921965
+    ],
+    [
+     -6.277240283680374e-06,
+     -0.00037186025115585973,
+     1.0
+    ]
+   ],
+   "registers": true
+  },
+  {
+   "file": "closeup_10.jpg",
+   "exif": {
+    "size": [
+     3648,
+     2736
+    ],
+    "Make": "Canon",
+    "Model": "Canon PowerShot G12",
+    "DateTime": "2013:11:29 11:36:02",
+    "DateTimeOriginal": "2013:11:29 11:36:02",
+    "FocalLength": 6.1,
+    "ExposureTime": 0.03333333333333333,
+    "FNumber": 2.8,
+    "ISOSpeedRatings": 320
+   },
+   "original_size": [
+    3648,
+    2736
+   ],
+   "trials": [
+    {
+     "closeup_downscale": 1.0,
+     "keypoints": 12000,
+     "ratio_matches": 36,
+     "inliers": 11,
+     "rms_px_work": 0.9624103307723999
+    },
+    {
+     "closeup_downscale": 0.5,
+     "keypoints": 12000,
+     "ratio_matches": 302,
+     "inliers": 146,
+     "rms_px_work": 1.8038315773010254
+    },
+    {
+     "closeup_downscale": 0.25,
+     "keypoints": 8382,
+     "ratio_matches": 1381,
+     "inliers": 929,
+     "rms_px_work": 1.8663082122802734
+    },
+    {
+     "closeup_downscale": 0.125,
+     "keypoints": 2364,
+     "ratio_matches": 917,
+     "inliers": 876,
+     "rms_px_work": 1.4374260902404785
+    }
+   ],
+   "fundamental_inliers": 1365,
+   "h_over_f_inliers": 0.681,
+   "h_inlier_ratio": 0.673,
+   "inliers": 929,
+   "ratio_matches": 1381,
+   "best_closeup_downscale": 0.25,
+   "rms_px_work": 1.8663082122802734,
+   "scale_factor": 5.608,
+   "scale_at_corners": [
+    5.16,
+    5.071,
+    6.068,
+    6.162
+   ],
+   "anisotropy": 1.026,
+   "footprint_overview_px": [
+    [
+     2114.4,
+     840.2
+    ],
+    [
+     2797.8,
+     858.6
+    ],
+    [
+     2749.4,
+     1355.3
+    ],
+    [
+     2142.7,
+     1333.9
+    ]
+   ],
+   "footprint_fraction_of_overview": 0.043,
+   "footprint_convex": true,
+   "ncc_vs_overview": 0.758,
+   "H_overview_to_closeup_original_px": [
+    [
+     4.735988724632878,
+     -0.27115939061020206,
+     -9786.132219647847
+    ],
+    [
+     -0.1163672004522184,
+     4.3181040291432025,
+     -3381.909615413423
+    ],
+    [
+     2.0284197676801178e-05,
+     -0.00019903268401659508,
+     1.0
+    ]
+   ],
+   "registers": true
+  },
+  {
+   "file": "closeup_11.jpg",
+   "exif": {
+    "size": [
+     3648,
+     2736
+    ],
+    "Make": "Canon",
+    "Model": "Canon PowerShot G12",
+    "DateTime": "2013:11:29 11:36:51",
+    "DateTimeOriginal": "2013:11:29 11:36:51",
+    "FocalLength": 12.074,
+    "ExposureTime": 0.016666666666666666,
+    "FNumber": 3.5,
+    "ISOSpeedRatings": 800
+   },
+   "original_size": [
+    3648,
+    2736
+   ],
+   "trials": [
+    {
+     "closeup_downscale": 1.0,
+     "keypoints": 12001,
+     "ratio_matches": 31,
+     "inliers": 8,
+     "rms_px_work": 0.7169965505599976
+    },
+    {
+     "closeup_downscale": 0.5,
+     "keypoints": 12000,
+     "ratio_matches": 31,
+     "inliers": 10,
+     "rms_px_work": 0.7927985191345215
+    },
+    {
+     "closeup_downscale": 0.25,
+     "keypoints": 12000,
+     "ratio_matches": 121,
+     "inliers": 81,
+     "rms_px_work": 1.448059320449829
+    },
+    {
+     "closeup_downscale": 0.125,
+     "keypoints": 1038,
+     "ratio_matches": 101,
+     "inliers": 97,
+     "rms_px_work": 1.1056642532348633
+    }
+   ],
+   "fundamental_inliers": 100,
+   "h_over_f_inliers": 0.97,
+   "h_inlier_ratio": 0.96,
+   "inliers": 97,
+   "ratio_matches": 101,
+   "best_closeup_downscale": 0.125,
+   "rms_px_work": 1.1056642532348633,
+   "scale_factor": 14.187,
+   "scale_at_corners": [
+    13.542,
+    14.203,
+    14.841,
+    14.17
+   ],
+   "anisotropy": 1.039,
+   "footprint_overview_px": [
+    [
+     2528.5,
+     1195.4
+    ],
+    [
+     2785.0,
+     1191.9
+    ],
+    [
+     2788.8,
+     1385.2
+    ],
+    [
+     2540.0,
+     1394.6
+    ]
+   ],
+   "footprint_fraction_of_overview": 0.0067,
+   "footprint_convex": true,
+   "ncc_vs_overview": 0.812,
+   "H_overview_to_closeup_original_px": [
+    [
+     9.283502727524947,
+     -0.539785249124108,
+     -22827.732877561502
+    ],
+    [
+     0.12135590334272608,
+     8.977284199770995,
+     -11038.194931564934
+    ],
+    [
+     -8.348686766218539e-05,
+     -9.580906144098537e-05,
+     1.0
+    ]
+   ],
+   "registers": true
+  }
+ ]
+}

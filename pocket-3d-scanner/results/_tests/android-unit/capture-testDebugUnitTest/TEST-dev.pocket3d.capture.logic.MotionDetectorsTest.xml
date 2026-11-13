@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="dev.pocket3d.capture.logic.MotionDetectorsTest" tests="20" skipped="0" failures="0" errors="0" timestamp="2026-11-12T10:55:19.981Z" hostname="h4-pc" time="0.011">
+  <properties/>
+  <testcase name="onlyTheCurrentSegmentIsConsidered" classname="dev.pocket3d.capture.logic.MotionDetectorsTest" time="0.0"/>
+  <testcase name="raisingTheCameraOverTheObjectIsNotAPanorama" classname="dev.pocket3d.capture.logic.MotionDetectorsTest" time="0.001"/>
+  <testcase name="pureRotationOnTheSpotIsDetected" classname="dev.pocket3d.capture.logic.MotionDetectorsTest" time="0.0"/>
+  <testcase name="staticPoseWithChangingImageTriggers" classname="dev.pocket3d.capture.logic.MotionDetectorsTest" time="0.0"/>
+  <testcase name="parallelRaysHaveNoPivot" classname="dev.pocket3d.capture.logic.MotionDetectorsTest" time="0.0"/>
+  <testcase name="aPhotoConfirmedAfterARecoveryStaysInTheSegmentItWasTakenIn" classname="dev.pocket3d.capture.logic.MotionDetectorsTest" time="0.003"/>
+  <testcase name="handHeldJitterStillCountsAsStatic" classname="dev.pocket3d.capture.logic.MotionDetectorsTest" time="0.0"/>
+  <testcase name="missingHashesOrDifferentSegmentsNeverTrigger" classname="dev.pocket3d.capture.logic.MotionDetectorsTest" time="0.0"/>
+  <testcase name="normalOrbitDoesNotTriggerEvenThoughEveryImageDiffers" classname="dev.pocket3d.capture.logic.MotionDetectorsTest" time="0.0"/>
+  <testcase name="staticPoseWithTheSameImageDoesNotTrigger" classname="dev.pocket3d.capture.logic.MotionDetectorsTest" time="0.0"/>
+  <testcase name="aSingleChangedPairIsNotEnough" classname="dev.pocket3d.capture.logic.MotionDetectorsTest" time="0.001"/>
+  <testcase name="continuingAStoredSessionNeverReusesAnOldSegment" classname="dev.pocket3d.capture.logic.MotionDetectorsTest" time="0.0"/>
+  <testcase name="trackingRecoveryStartsANewSegment" classname="dev.pocket3d.capture.logic.MotionDetectorsTest" time="0.0"/>
+  <testcase name="smallRotationOrFewSamplesDoNotTrigger" classname="dev.pocket3d.capture.logic.MotionDetectorsTest" time="0.0"/>
+  <testcase name="removedFramesLeaveNoEmptySegments" classname="dev.pocket3d.capture.logic.MotionDetectorsTest" time="0.0"/>
+  <testcase name="panningAtArmsLengthIsDetected" classname="dev.pocket3d.capture.logic.MotionDetectorsTest" time="0.001"/>
+  <testcase name="normalOrbitIsNeverCalledTurningInPlace" classname="dev.pocket3d.capture.logic.MotionDetectorsTest" time="0.005"/>
+  <testcase name="repeatedLossesWithoutPhotosDoNotBurnSegmentIds" classname="dev.pocket3d.capture.logic.MotionDetectorsTest" time="0.0"/>
+  <testcase name="recreatedArSessionStartsANewSegment" classname="dev.pocket3d.capture.logic.MotionDetectorsTest" time="0.0"/>
+  <testcase name="pivotDistanceOfAnOrbitIsItsRadius" classname="dev.pocket3d.capture.logic.MotionDetectorsTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

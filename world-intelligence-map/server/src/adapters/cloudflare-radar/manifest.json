@@ -1,0 +1,63 @@
+{
+  "id": "cloudflare-radar",
+  "provider": "Cloudflare",
+  "dataset": "Cloudflare Radar Outage Center – outage annotations (Radar API)",
+  "description": "Internet outage annotations curated by the Cloudflare Radar team: where connectivity was disrupted, how broad the disruption was (nationwide, regional, single network or platform), its scope, the likely cause and the start and end time.",
+  "homepageUrl": "https://radar.cloudflare.com/outage-center",
+  "documentationUrl": "https://developers.cloudflare.com/api/resources/radar/subresources/annotations/subresources/outages/methods/get/",
+  "sourceUrls": ["https://api.cloudflare.com/client/v4/radar/annotations/outages?dateRange=7d&format=json&limit=200"],
+  "allowedHosts": ["api.cloudflare.com"],
+  "coverage": {
+    "geographic": "Worldwide; one entry per affected country (entries without a location, e.g. cloud-platform outages, are kept as non-geographic bulletins).",
+    "temporal": "Annotations of the last 7 days per fetch; the Outage Center archive starts in 2022."
+  },
+  "updateCadence": {
+    "upstream": "Entries are added and amended manually by Cloudflare, typically hours after a disruption begins; end times are filled in later.",
+    "pollIntervalSec": 1800,
+    "staleAfterSec": 21600
+  },
+  "auth": {
+    "type": "api_key",
+    "envVars": [
+      { "name": "CLOUDFLARE_API_TOKEN", "required": true, "description": "Cloudflare API token with the Account → Radar: Read permission, sent as \"Authorization: Bearer <token>\"." }
+    ],
+    "setup": "Sign in to a (free) Cloudflare account, open My Profile → API Tokens → Create Token → Create Custom Token, add the permission Account → Radar → Read, create the token and set it as CLOUDFLARE_API_TOKEN.",
+    "obtainUrl": "https://dash.cloudflare.com/profile/api-tokens"
+  },
+  "attribution": "Cloudflare Radar (CC BY-NC 4.0)",
+  "license": {
+    "name": "Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)",
+    "url": "https://creativecommons.org/licenses/by-nc/4.0/",
+    "redistribution": "allowed-with-attribution",
+    "nonCommercialOnly": true,
+    "notes": "Stated on https://developers.cloudflare.com/radar/ : \"Data available via Radar API endpoints is made available under the CC BY-NC 4.0 license.\" Non-commercial use only, attribution to Cloudflare Radar required. The linked reference URLs point to third-party pages with their own terms."
+  },
+  "limitations": [
+    "Annotations are curated by hand: coverage is selective (notable disruptions that Cloudflare observed and could corroborate), entries appear with a delay and may be amended or get an end time later.",
+    "The cause is Cloudflare's assessment of the likely cause based on publicly available information, not an official finding.",
+    "Location is the affected country (alpha-2); regional and network-level outages are drawn at the country label point, with the affected area or network only described in the scope text.",
+    "Only the last 7 days are requested; whether a still-ongoing annotation that began earlier is returned by the dateRange filter is not documented.",
+    "Requires a free Cloudflare account and API token; the Cloudflare API allows 1,200 requests per five minutes per user (this adapter makes 2 per hour)."
+  ],
+  "confidenceNotes": "These are human-curated outage annotations from the Cloudflare Radar Outage Center, based on Cloudflare's own traffic observations and public reporting, not automatic anomaly detections. Confidence (0.85 with a linked public reference, 0.75 without) and severity (from the outage type and duration) are assigned by this application and listed as derived; the upstream type and cause wording is kept verbatim.",
+  "retention": { "note": "Outage records are kept for 60 days after they ended, then purged." },
+  "snapshot": "incremental",
+  "http": { "timeoutMs": 30000, "minIntervalMs": 1000, "cacheTtlSec": 900 },
+  "enabledByDefault": true,
+  "layers": [
+    {
+      "id": "cloudflare-outages",
+      "name": "Internet outages (Cloudflare Radar)",
+      "description": "Curated Internet outage annotations from the Cloudflare Radar Outage Center, drawn at the affected country: outage type, scope, likely cause, affected networks and duration.",
+      "domain": "cyber",
+      "category": "internet-outage",
+      "geometry": "country",
+      "timeModel": "interval",
+      "render": { "type": "point", "color": "orange", "shape": "hexagon" },
+      "freshForSec": 86400,
+      "retentionDays": 60,
+      "defaultOn": false,
+      "correlationClass": "outage"
+    }
+  ]
+}

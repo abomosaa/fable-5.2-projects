@@ -1,0 +1,24 @@
+[
+ {
+  "name": "Inter (variable font, upright)",
+  "version": "4.1",
+  "author": "The Inter Project Authors (Rasmus Andersson et al.)",
+  "source_url": "https://github.com/rsms/inter",
+  "download_url": [
+   "https://github.com/rsms/inter/releases/download/v4.1/Inter-4.1.zip"
+  ],
+  "license": "SIL Open Font License 1.1",
+  "license_url": "https://openfontlicense.org/open-font-license-official-text/",
+  "license_file": "game/assets/ui/fonts/Inter-LICENSE.txt",
+  "local_paths": [
+   "game/assets/ui/fonts/InterVariable.ttf",
+   "game/assets/ui/fonts/Inter-LICENSE.txt"
+  ],
+  "sha256": {
+   "Inter-4.1.zip": "9883fdd4a49d4fb66bd8177ba6625ef9a64aa45899767dde3d36aa425756b11e",
+   "InterVariable.ttf": "4989b125924991b90d05b2d16e0e388c48f7d5bb8b30539bbf9c755278d0ccaf"
+  },
+  "modifications": "None. InterVariable.ttf and LICENSE.txt copied unmodified from the release archive (licence file renamed to Inter-LICENSE.txt).",
+  "used_for": "All HUD and menu text (weights 400/500/600 via the wght axis, tabular figures for numeric read-outs)"
+ }
+]

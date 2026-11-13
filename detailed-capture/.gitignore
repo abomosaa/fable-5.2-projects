@@ -1,0 +1,15 @@
+.venv/
+third_party/dl/
+third_party/opencv-android/
+third_party/opencv-src/
+third_party/build-host/
+third_party/opencv-host/
+build/
+.gradle/
+**/build/
+local.properties
+.avd/
+*.iml
+.idea/
+.cxx/
+eval/work/

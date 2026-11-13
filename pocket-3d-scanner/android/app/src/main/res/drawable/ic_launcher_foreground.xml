@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- An object (faceted gem) inside an orbit of camera viewpoints. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp" android:height="108dp" android:viewportWidth="108" android:viewportHeight="108">
+    <path android:pathData="M54,30 A24,24 0 1,1 53.9,30" android:strokeColor="#6FE3D0" android:strokeWidth="2.2"
+        android:strokeLineCap="round" android:fillColor="#00000000" android:strokeAlpha="0.55"/>
+    <path android:pathData="M54,40 L66,50 L61,66 L47,66 L42,50 Z" android:fillColor="#6FE3D0"/>
+    <path android:pathData="M54,40 L54,54 L66,50 Z" android:fillColor="#A8F5E7"/>
+    <path android:pathData="M54,54 L61,66 L47,66 Z" android:fillColor="#3BB8A6"/>
+    <path android:pathData="M54,54 L42,50 L47,66 Z" android:fillColor="#249383"/>
+    <path android:pathData="M54,27 m-3.4,0 a3.4,3.4 0 1,0 6.8,0 a3.4,3.4 0 1,0 -6.8,0" android:fillColor="#FFFFFF"/>
+    <path android:pathData="M77.4,42 m-2.6,0 a2.6,2.6 0 1,0 5.2,0 a2.6,2.6 0 1,0 -5.2,0" android:fillColor="#FFFFFF" android:fillAlpha="0.85"/>
+    <path android:pathData="M77.4,66 m-2.6,0 a2.6,2.6 0 1,0 5.2,0 a2.6,2.6 0 1,0 -5.2,0" android:fillColor="#FFFFFF" android:fillAlpha="0.7"/>
+    <path android:pathData="M54,81 m-2.6,0 a2.6,2.6 0 1,0 5.2,0 a2.6,2.6 0 1,0 -5.2,0" android:fillColor="#FFFFFF" android:fillAlpha="0.55"/>
+    <path android:pathData="M30.6,66 m-2.6,0 a2.6,2.6 0 1,0 5.2,0 a2.6,2.6 0 1,0 -5.2,0" android:fillColor="#FFFFFF" android:fillAlpha="0.4"/>
+    <path android:pathData="M30.6,42 m-2.6,0 a2.6,2.6 0 1,0 5.2,0 a2.6,2.6 0 1,0 -5.2,0" android:fillColor="#FFFFFF" android:fillAlpha="0.25"/>
+</vector>

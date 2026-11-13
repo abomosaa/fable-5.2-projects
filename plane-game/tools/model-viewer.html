@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Aircraft model viewer (dev)</title>
+<style>
+  html, body { margin: 0; height: 100%; background: #223; overflow: hidden; font: 12px/1.4 monospace; color: #fff; }
+  #info { position: fixed; left: 8px; top: 6px; text-shadow: 0 1px 2px #000; white-space: pre; pointer-events: none; }
+</style>
+<script type="importmap">{ "imports": { "three": "../vendor/three.module.js" } }</script>
+</head>
+<body>
+<div id="info"></div>
+<script type="module">
+// Dev-only viewer. URL parameters:
+//   ac=trainer|aerobat|fighter|airliner  az, el (deg)  dist (x model size)  gear, flap, spoiler (0..1)
+//   ail, elev, rud (rad)  rpm  n1, ab, rev (0..1)  comp (m)  steer (rad)  cockpit=1  look=yaw,pitch (deg)
+//   lights=1  t (s)  spin=1 (animate)  fov  tx,ty,tz (look-at target offset)
+import * as THREE from 'three';
+import { buildAircraftModel } from '../src/aircraft/models.js';
+
+const q = new URLSearchParams(location.search);
+const num = (k, d) => (q.has(k) ? parseFloat(q.get(k)) : d);
+const id = q.get('ac') || 'trainer';
+const def = (await import(`../src/aircraft/${id}.js`)).default;
+
+const renderer = new THREE.WebGLRenderer({ antialias: true, preserveDrawingBuffer: true });
+renderer.setPixelRatio(1);
+renderer.setSize(innerWidth, innerHeight);
+renderer.shadowMap.enabled = true;
+renderer.shadowMap.type = THREE.PCFShadowMap;
+renderer.toneMapping = THREE.ACESFilmicToneMapping;
+renderer.toneMappingExposure = 1.0;
+document.body.appendChild(renderer.domElement);
+
+const scene = new THREE.Scene();
+// sky gradient used both as background and (pre-filtered) as environment lighting
+const skyCanvas = document.createElement('canvas');
+skyCanvas.width = 512; skyCanvas.height = 256;
+{
+  const c = skyCanvas.getContext('2d');
+  const g = c.createLinearGradient(0, 0, 0, 256);
+  g.addColorStop(0, '#2f6fc4'); g.addColorStop(0.38, '#8fbfe8'); g.addColorStop(0.5, '#dfeaf2');
+  g.addColorStop(0.505, '#7c8a78'); g.addColorStop(1, '#4c5a48');
+  c.fillStyle = g; c.fillRect(0, 0, 512, 256);
+  const s = c.createRadialGradient(150, 60, 0, 150, 60, 70);
+  s.addColorStop(0, 'rgba(255,250,235,1)'); s.addColorStop(0.2, 'rgba(255,245,220,0.6)'); s.addColorStop(1, 'rgba(255,245,220,0)');
+  c.fillStyle = s; c.fillRect(0, 0, 512, 256);
+}
+const skyTex = new THREE.CanvasTexture(skyCanvas);
+skyTex.mapping = THREE.EquirectangularReflectionMapping;
+skyTex.colorSpace = THREE.SRGBColorSpace;
+scene.background = skyTex;
+const pmrem = new THREE.PMREMGenerator(renderer);
+scene.environment = pmrem.fromEquirectangular(skyTex).texture;
+
+const model = buildAircraftModel(def);
+scene.add(model.group);
+
+const groundY = Math.min(...def.gear.map((g) => g.pos[1]));
+const size = Math.max(def.ref?.b || 0, 2 * def.surfaces[0].semiSpan);
+const gc = document.createElement('canvas'); gc.width = gc.height = 256;
+{
+  const c = gc.getContext('2d'); c.fillStyle = '#6f7a70'; c.fillRect(0, 0, 256, 256);
+  c.strokeStyle = 'rgba(255,255,255,0.18)'; c.lineWidth = 2; c.strokeRect(0, 0, 256, 256);
+}
+const gt = new THREE.CanvasTexture(gc); gt.wrapS = gt.wrapT = THREE.RepeatWrapping; gt.repeat.set(200, 200); gt.colorSpace = THREE.SRGBColorSpace;
+const ground = new THREE.Mesh(new THREE.PlaneGeometry(1000, 1000), new THREE.MeshStandardMaterial({ map: gt, roughness: 1, metalness: 0 }));
+ground.rotation.x = -Math.PI / 2; ground.position.y = groundY; ground.receiveShadow = true;
+if (num('ground', 1)) scene.add(ground);
+
+const sun = new THREE.DirectionalLight(0xfff2dd, 3.0);
+sun.position.set(size * 0.6, size * 1.4, size * 0.9);
+sun.castShadow = true;
+sun.shadow.mapSize.set(4096, 4096);
+const sc = sun.shadow.camera; sc.left = -size; sc.right = size; sc.top = size; sc.bottom = -size; sc.near = 0.1; sc.far = size * 5;
+sun.shadow.bias = -0.0004; sun.shadow.normalBias = 0.02;
+scene.add(sun);
+scene.add(new THREE.HemisphereLight(0xbfd8ff, 0x55604c, 0.6));
+
+const camera = new THREE.PerspectiveCamera(num('fov', 40), innerWidth / innerHeight, 0.05, 4000);
+const cockpit = num('cockpit', 0) > 0;
+model.setCockpitView(cockpit);
+function placeCamera(tSec) {
+  if (cockpit) {
+    const [yaw, pitch] = (q.get('look') || '0,0').split(',').map(Number);
+    camera.position.copy(model.anchors.pilotEye);
+    const y = yaw * Math.PI / 180, p = pitch * Math.PI / 180;
+    camera.lookAt(camera.position.clone().add(new THREE.Vector3(Math.cos(y) * Math.cos(p), Math.sin(p), Math.sin(y) * Math.cos(p))));
+    camera.fov = num('fov', 70); camera.updateProjectionMatrix();
+    return;
+  }
+  const az = (num('az', 35) + (num('orbit', 0) ? tSec * 20 : 0)) * Math.PI / 180, el = num('el', 12) * Math.PI / 180;
+  const d = num('dist', 1.35) * size;
+  const target = new THREE.Vector3(num('tx', 0), num('ty', 0), num('tz', 0));
+  camera.position.set(Math.cos(az) * Math.cos(el) * d, Math.sin(el) * d, Math.sin(az) * Math.cos(el) * d).add(target);
+  camera.lookAt(target);
+}
+
+const state = {
+  surf: { elevator: num('elev', 0), aileron: num('ail', 0), rudder: num('rud', 0), flap: num('flap', 0), spoiler: num('spoiler', 0), gear: num('gear', 1) },
+  engines: def.engines.map((e) => ({ type: e.type, rpm: num('rpm', e.type === 'piston' ? 0 : 0), n1: num('n1', 0.3), ab: num('ab', 0), reverse: num('rev', 0), running: true })),
+  wheels: def.gear.map(() => ({ compression: num('comp', 0), steer: num('steer', 0), angle: num('wang', 0) })),
+  time: num('t', 0),
+  lights: { nav: !!num('lights', 0), strobe: !!num('lights', 0), beacon: !!num('lights', 0), landing: !!num('lights', 0) },
+};
+window.__model = model; window.__def = def; window.THREE = THREE; window.__state = state; window.__scene = scene;
+
+const spin = num('spin', 0) > 0;
+let frame = 0, last = performance.now();
+function loop(now) {
+  const dt = Math.min(0.05, (now - last) / 1000); last = now;
+  if (spin) { state.time += dt; for (const w of state.wheels) w.angle += dt * 3; }
+  model.update(state, spin ? dt : 1 / 60);
+  placeCamera(state.time);
+  renderer.info.reset();
+  renderer.render(scene, camera);
+  frame++;
+  if (frame === 3) {
+    window.__stats = { tris: renderer.info.render.triangles, calls: renderer.info.render.calls };
+    document.getElementById('info').textContent = `${def.name}  tris ${window.__stats.tris}  calls ${window.__stats.calls}`;
+    window.__ready = true;
+  }
+  requestAnimationFrame(loop);
+}
+addEventListener('resize', () => { renderer.setSize(innerWidth, innerHeight); camera.aspect = innerWidth / innerHeight; camera.updateProjectionMatrix(); });
+requestAnimationFrame(loop);
+</script>
+</body>
+</html>

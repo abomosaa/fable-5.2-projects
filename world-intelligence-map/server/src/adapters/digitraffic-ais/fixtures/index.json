@@ -1,0 +1,8 @@
+{
+  "capturedAt": "2026-11-10T17:54:17Z",
+  "notes": "Captured from the live Digitraffic Marine AIS API (locations and vessels, with a Digitraffic-User header) and trimmed: 600 vessels whose position was less than nine minutes old at capture, plus 12 vessels whose last position was more than an hour old (kept to exercise the 60-minute filter), and the metadata rows of exactly those vessels. RE-TIMED: every timestamp (dataUpdatedTime, timestampExternal, metadata timestamp) was shifted forward by exactly 366 minutes so that dataUpdatedTime is 2026-11-10T23:59:32Z and all current positions fall within the ten minutes before the fixture epoch; a whole-minute shift keeps the AIS 'UTC second' field consistent. Nothing else was changed. The malformed variants of both routes were authored by hand.",
+  "routes": [
+    { "match": "/api/ais/v1/locations", "file": "locations.json", "variants": { "malformed": "locations.malformed.json" } },
+    { "match": "/api/ais/v1/vessels", "file": "vessels.json", "variants": { "malformed": "vessels.malformed.json" } }
+  ]
+}

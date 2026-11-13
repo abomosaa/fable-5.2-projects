@@ -1,0 +1,7 @@
+{
+  "capturedAt": "2026-11-10T17:56:21Z",
+  "notes": "Captured from the live IODA API (GET /v2/outages/events?from=1793728579&until=1794333379&entityType=country&limit=2000&ignoreMethods=*.sarima) and kept in full: 196 country-level events of the preceding 7 days from the bgp, merit-nt and ping-slash24 data sources, four of them still active at the query time (their duration is clipped at `until`), a few for territories that are not in the gazetteer (GI, GP, RE, TK). The capture was made without an explicit page parameter; page=0 returns the same list. The malformed variant was authored by hand from the same schema (including a second data source overlapping a real Venezuelan event to exercise the source-agreement confidence).",
+  "routes": [
+    { "match": "/v2/outages/events?", "file": "events.json", "variants": { "malformed": "events.malformed.json" } }
+  ]
+}

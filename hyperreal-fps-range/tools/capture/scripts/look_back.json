@@ -1,0 +1,7 @@
+[
+ {"wait": 2.0, "do": "look", "yaw": 150, "pitch": 5, "dur": 0.4},
+ {"wait": 1.2, "do": "screenshot", "name": "back"},
+ {"wait": 0.2, "do": "look", "yaw": -150, "pitch": -5, "dur": 0.4},
+ {"wait": 1.2, "do": "screenshot", "name": "spawn"},
+ {"wait": 0.2, "do": "quit"}
+]

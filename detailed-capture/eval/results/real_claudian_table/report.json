@@ -1,0 +1,62 @@
+{
+ "set": "claudian_table",
+ "holdouts": [
+  {
+   "holdout": "closeup_01.jpg",
+   "frames_used": 4,
+   "summary": "file            status    reasons       warnings                           inl   scale  gain  zncc  resPx  pairs  via             mask  sigma\ncloseup_02.jpg  accepted                exposure_mismatch,lens_distortion  1582  5.38   2.0   0.97  4.07   2      overview        0.0   2.42 \ncloseup_03.jpg  accepted                exposure_mismatch,lens_distortion  243   10.44  1.55  0.98  0.0    0      overview        0.0   6.05 \ncloseup_04.jpg  accepted                exposure_mismatch,lens_distortion  369   9.89   2.28  0.97  2.86   1      overview        0.0   3.91 \ncloseup_05.jpg  accepted                partial_mask,lens_distortion       555   6.92   2.45  0.93  4.62   1      chain+overview  0.1   2.55 \ncloseup_06.jpg  rejected  bad_geometry                                     48    0      0     -1    0      None                   0     0.93 ",
+   "independent_inliers": 35,
+   "heldout_scale_vs_output": 3.0633098836812134,
+   "output_scale": 2.6,
+   "windows_supported": 2,
+   "quality_supported": {
+    "psnr_recon": 23.35660186849462,
+    "psnr_base": 23.826627726176884,
+    "ssim_recon": 0.8481146606902594,
+    "ssim_base": 0.5817170214282195,
+    "hfncc_recon": 0.6298151910305023,
+    "hfncc_base": 0.24302636086940765,
+    "f50_recon": 0.08395148246496281,
+    "f50_base": 0.08091237821926583,
+    "shift_med_px": 0.9454588381432267,
+    "shift_max_px": 3.5221753030732104
+   },
+   "windows": [
+    {
+     "psnr_recon": 23.301718135355,
+     "psnr_base": 23.652248503606323,
+     "ssim_recon": 0.8470343266803124,
+     "ssim_base": 0.5867415595144597,
+     "hfncc_recon": 0.6264632344245911,
+     "hfncc_base": 0.24838854372501373,
+     "f50_recon": 0.08192699127242917,
+     "f50_base": 0.0816633760379457,
+     "shift_med_px": 0.7530256871016593,
+     "shift_max_px": 3.739940284879932,
+     "x": 6904,
+     "y": 5244,
+     "closeup_frac": 1.0,
+     "kind": "supported",
+     "ref_shift_px": 3.9589292136546383
+    },
+    {
+     "psnr_recon": 23.411485601634247,
+     "psnr_base": 24.001006948747445,
+     "ssim_recon": 0.8491949947002063,
+     "ssim_base": 0.5766924833419791,
+     "hfncc_recon": 0.6331671476364136,
+     "hfncc_base": 0.23766417801380157,
+     "f50_recon": 0.08597597365749646,
+     "f50_base": 0.08016138040058599,
+     "shift_med_px": 1.1378919891847943,
+     "shift_max_px": 3.304410321266489,
+     "x": 7416,
+     "y": 5244,
+     "closeup_frac": 1.0,
+     "kind": "supported",
+     "ref_shift_px": 4.6977096450879445
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,23 @@
+[gd_resource type="ShaderMaterial" format=3]
+
+[ext_resource type="Shader" path="res://assets/env/shaders/foliage.gdshader" id="1_tanpm"]
+[ext_resource type="Texture2D" path="res://assets/env/veg/tree_small_02_leaves_albedo.png" id="2_ahiqx"]
+[ext_resource type="Texture2D" path="res://assets/env/veg/tree_small_02_leaves_normal.jpg" id="3_j2s68"]
+[ext_resource type="Texture2D" path="res://assets/env/veg/tree_small_02_leaves_orm.jpg" id="4_k64yl"]
+
+[resource]
+render_priority = 0
+shader = ExtResource("1_tanpm")
+shader_parameter/albedo_tex = ExtResource("2_ahiqx")
+shader_parameter/normal_tex = ExtResource("3_j2s68")
+shader_parameter/orm_tex = ExtResource("4_k64yl")
+shader_parameter/tint = Color(1, 1, 1, 1)
+shader_parameter/tint_dry = Color(1.15, 1, 0.7, 1)
+shader_parameter/brightness = 0.85
+shader_parameter/alpha_cut = 0.3
+shader_parameter/backlight = 0.3
+shader_parameter/wind_strength = 0.06
+shader_parameter/wind_speed = 0.9
+shader_parameter/sway_height = 9.0
+shader_parameter/roughness_add = 0.0
+shader_parameter/normal_strength = 1.0

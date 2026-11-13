@@ -1,0 +1,26 @@
+[ RUN  ] transform_composition
+[  OK  ] transform_composition (49 checks, 0 ms)
+[ RUN  ] exif_orientation
+[  OK  ] exif_orientation (57 checks, 20 ms)
+[ RUN  ] registration_outliers
+[  OK  ] registration_outliers (11 checks, 14 ms)
+[ RUN  ] end_to_end_coverage_provenance
+    close-up blur estimates: 1.22 1.28 1.35 1.41 px
+    worst registration error: 0.056 overview px
+    coverage at >=1.5x: 52.2 %
+    PSNR on detailed pixels vs scene: fused 35.19 dB, enlarged overview 30.98 dB
+[  OK  ] end_to_end_coverage_provenance (104 checks, 1578 ms)
+[ RUN  ] disconnected_graph_rejections_manual
+[  OK  ] disconnected_graph_rejections_manual (17 checks, 835 ms)
+[ RUN  ] tile_boundaries
+    512 vs 1024 block layout: max abs difference 0 grey levels
+[  OK  ] tile_boundaries (5 checks, 2597 ms)
+[ RUN  ] cancel_restart_resume
+[  OK  ] cancel_restart_resume (15 checks, 5240 ms)
+[ RUN  ] persistence_undo
+[  OK  ] persistence_undo (20 checks, 845 ms)
+[ RUN  ] export_formats_edits
+    streaming JPEG q95 PSNR vs lossless: 46.17 dB
+[  OK  ] export_formats_edits (60 checks, 2234 ms)
+
+9 tests, 338 checks, 0 failures

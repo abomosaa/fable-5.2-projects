@@ -1,0 +1,460 @@
+{
+ "format": "mechanism-workshop",
+ "version": 1,
+ "id": "example-cam",
+ "name": "Cam and spring-loaded follower",
+ "description": "A plate cam (base circle R20, 12 mm lift: cycloidal rise over 110°, dwell 50°, cycloidal return 110°, dwell 90°) drives a roller follower that slides in a guide channel. A compression spring holds the roller on the cam.\n\nThe follower is NOT given a prescribed motion. Cam and roller interact through a unilateral contact on the actual cam profile (the roller centre must stay outside the pitch curve, the cam surface being its inner offset by the roller radius). The spring, the follower mass and the cam speed decide whether contact is kept.\n\nEdit the motion program in the cam inspector (durations, lifts, motion laws) and the cam solid, the plots and the contact all change together. Try the 1200 rpm variant: the follower \"floats\" off the cam, which the diagnostics report with the time it happens.\n\nPlots: displacement and velocity are solver states of the guide joint; contact force is the contact multiplier; pressure angle is derived from the contact normal.",
+ "createdAt": "2026-01-01T00:00:00.000Z",
+ "modifiedAt": "2026-01-01T00:00:00.000Z",
+ "parts": [
+  {
+   "id": "p1",
+   "name": "Back plate",
+   "kind": "baseplate",
+   "params": {
+    "width": 90,
+    "height": 190,
+    "thickness": 4,
+    "cornerRadius": 6,
+    "holes": [
+     {
+      "x": 0,
+      "y": -55,
+      "d": 5
+     }
+    ]
+   },
+   "pose": {
+    "x": 0,
+    "y": 55,
+    "angle": 0,
+    "z": 0
+   },
+   "grounded": true,
+   "materialId": "aluminum"
+  },
+  {
+   "id": "p2",
+   "name": "Motor",
+   "kind": "motor",
+   "params": {
+    "shape": "square",
+    "size": 28,
+    "bodyLength": 30,
+    "shaftDiameter": 5,
+    "shaftLength": 10.3,
+    "mass": 0.11
+   },
+   "pose": {
+    "x": 0,
+    "y": 0,
+    "angle": 0,
+    "z": 0
+   },
+   "grounded": false,
+   "materialId": "motor"
+  },
+  {
+   "id": "p3",
+   "name": "Cam",
+   "kind": "cam",
+   "params": {
+    "profile": "segments",
+    "baseRadius": 20,
+    "segments": [
+     {
+      "duration": 1.9198621771937625,
+      "lift": 12,
+      "law": "cycloidal"
+     },
+     {
+      "duration": 0.8726646259971648,
+      "lift": 12,
+      "law": "dwell"
+     },
+     {
+      "duration": 1.9198621771937625,
+      "lift": 0,
+      "law": "cycloidal"
+     },
+     {
+      "duration": 1.5707963267948966,
+      "lift": 0,
+      "law": "dwell"
+     }
+    ],
+    "discRadius": 20,
+    "eccentricity": 5,
+    "rollerRadius": 6,
+    "thickness": 6,
+    "boreDiameter": 5
+   },
+   "pose": {
+    "x": 0,
+    "y": 0,
+    "angle": 1.0471975511965979,
+    "z": 4.5
+   },
+   "grounded": false,
+   "materialId": "pla",
+   "color": "#e8a33d"
+  },
+  {
+   "id": "p4",
+   "name": "Follower",
+   "kind": "follower",
+   "params": {
+    "rollerDiameter": 12,
+    "stemWidth": 10,
+    "stemLength": 95,
+    "thickness": 6
+   },
+   "pose": {
+    "x": 0,
+    "y": 26,
+    "angle": 0,
+    "z": 4.5
+   },
+   "grounded": false,
+   "materialId": "pla",
+   "color": "#4c9fd8"
+  },
+  {
+   "id": "p5",
+   "name": "Guide channel",
+   "kind": "rail",
+   "params": {
+    "length": 36,
+    "slotWidth": 10,
+    "width": 34,
+    "overtravel": 0,
+    "thickness": 6,
+    "openEnds": true
+   },
+   "pose": {
+    "x": 0,
+    "y": 62,
+    "angle": 1.5707963267948966,
+    "z": 4.5
+   },
+   "grounded": false,
+   "materialId": "pla",
+   "color": "#8a93a3"
+  }
+ ],
+ "joints": [
+  {
+   "type": "rigid",
+   "a": "p1",
+   "b": "p2",
+   "anchorA": {
+    "port": "H1"
+   },
+   "anchorB": {
+    "port": "shaft"
+   },
+   "angle": 0,
+   "id": "j1",
+   "name": "Motor mount"
+  },
+  {
+   "type": "rigid",
+   "a": "p1",
+   "b": "p5",
+   "anchorA": {
+    "x": 0,
+    "y": 7
+   },
+   "anchorB": {
+    "port": "start"
+   },
+   "angle": 1.5707963267948966,
+   "id": "j2",
+   "name": "Guide fixed to plate"
+  },
+  {
+   "type": "revolute",
+   "a": "p1",
+   "b": "p3",
+   "anchorA": {
+    "port": "H1"
+   },
+   "anchorB": {
+    "port": "center"
+   },
+   "id": "j3",
+   "name": "Cam shaft (motor)",
+   "pinDiameter": 5,
+   "motor": {
+    "enabled": true,
+    "type": "servo",
+    "speed": 12.566370614359172,
+    "maxTorque": null,
+    "rampTime": 0.3,
+    "profile": "constant"
+   }
+  },
+  {
+   "type": "prismatic",
+   "a": "p5",
+   "b": "p4",
+   "anchorA": {
+    "port": "start"
+   },
+   "anchorB": {
+    "port": "mid"
+   },
+   "axisAngle": 0,
+   "angle": -1.5707963267948966,
+   "id": "j4",
+   "name": "Follower guide",
+   "friction": 0
+  },
+  {
+   "type": "cam",
+   "a": "p3",
+   "b": "p4",
+   "anchorA": {
+    "port": "center"
+   },
+   "anchorB": {
+    "port": "roller"
+   },
+   "id": "j5",
+   "name": "Cam contact"
+  },
+  {
+   "type": "spring",
+   "a": "ground",
+   "b": "p4",
+   "anchorA": {
+    "x": 0,
+    "y": 160
+   },
+   "anchorB": {
+    "port": "top"
+   },
+   "stiffness": 60,
+   "freeLength": 62,
+   "springDamping": 0.3,
+   "coilDiameter": 9,
+   "wireDiameter": 0.9,
+   "coils": 9,
+   "id": "j6",
+   "name": "Return spring"
+  }
+ ],
+ "loads": [],
+ "probes": [
+  {
+   "id": "pr1",
+   "name": "Follower",
+   "target": {
+    "kind": "joint",
+    "joint": "j4"
+   },
+   "trace": false,
+   "color": "#f2b44a"
+  },
+  {
+   "id": "pr2",
+   "name": "Cam contact",
+   "target": {
+    "kind": "joint",
+    "joint": "j5"
+   },
+   "trace": false,
+   "color": "#4cc2ff"
+  },
+  {
+   "id": "pr3",
+   "name": "Return spring",
+   "target": {
+    "kind": "joint",
+    "joint": "j6"
+   },
+   "trace": false,
+   "color": "#7ee081"
+  },
+  {
+   "id": "pr4",
+   "name": "Cam motor",
+   "target": {
+    "kind": "joint",
+    "joint": "j3"
+   },
+   "trace": false,
+   "color": "#ff7b72"
+  }
+ ],
+ "plots": [
+  {
+   "id": "plot1",
+   "title": "Follower displacement",
+   "channels": [
+    {
+     "probe": "pr1",
+     "quantity": "coord"
+    }
+   ]
+  },
+  {
+   "id": "plot2",
+   "title": "Follower velocity",
+   "channels": [
+    {
+     "probe": "pr1",
+     "quantity": "rate"
+    }
+   ]
+  },
+  {
+   "id": "plot3",
+   "title": "Contact force & spring force",
+   "channels": [
+    {
+     "probe": "pr2",
+     "quantity": "contactForce"
+    },
+    {
+     "probe": "pr3",
+     "quantity": "force"
+    }
+   ]
+  },
+  {
+   "id": "plot4",
+   "title": "Pressure angle",
+   "channels": [
+    {
+     "probe": "pr2",
+     "quantity": "pressureAngle"
+    }
+   ]
+  },
+  {
+   "id": "plot5",
+   "title": "Motor torque",
+   "channels": [
+    {
+     "probe": "pr4",
+     "quantity": "torque"
+    }
+   ]
+  }
+ ],
+ "groups": [],
+ "sketches": [],
+ "variants": [
+  {
+   "id": "v1",
+   "name": "120 rpm (follows the cam)",
+   "note": "The spring keeps the roller on the profile for the whole revolution.",
+   "values": {
+    "joint:j6:stiffness": 60,
+    "joint:j6:freeLength": 62,
+    "joint:j3:motor.speed": 12.566370614359172
+   }
+  },
+  {
+   "id": "v2",
+   "name": "1200 rpm (follower floats)",
+   "note": "At this speed the profile decelerates the follower faster than the 0.06 N/mm spring can: the roller leaves the cam near the top of the rise and lands again later.",
+   "values": {
+    "joint:j6:stiffness": 60,
+    "joint:j6:freeLength": 62,
+    "joint:j3:motor.speed": 125.66370614359172
+   }
+  },
+  {
+   "id": "v3",
+   "name": "1200 rpm with a stiffer spring",
+   "note": "Spring rate 0.4 N/mm restores contact, at the price of higher contact force and motor torque.",
+   "values": {
+    "joint:j6:stiffness": 400,
+    "joint:j6:freeLength": 62,
+    "joint:j3:motor.speed": 125.66370614359172
+   }
+  }
+ ],
+ "views": [
+  {
+   "name": "Front",
+   "position": [
+    0,
+    60,
+    420
+   ],
+   "target": [
+    0,
+    60,
+    8
+   ],
+   "ortho": true,
+   "zoom": 2.9
+  },
+  {
+   "name": "Three-quarter",
+   "position": [
+    170,
+    140,
+    260
+   ],
+   "target": [
+    0,
+    55,
+    8
+   ],
+   "ortho": false
+  }
+ ],
+ "sim": {
+  "mode": "dynamic",
+  "dt": 0.00025,
+  "gravity": {
+   "x": 0,
+   "y": -9806.65
+  },
+  "gravityEnabled": true,
+  "floor": {
+   "enabled": false,
+   "y": 0,
+   "friction": 0.8
+  },
+  "stopOnInterference": false,
+  "sampleRate": 500
+ },
+ "clearances": {
+  "hole": 0.2,
+  "slide": 0.15,
+  "backlash": 0.1,
+  "minFeature": 0.8
+ },
+ "units": {
+  "length": "mm",
+  "angle": "deg",
+  "mass": "g",
+  "time": "s",
+  "force": "N",
+  "torque": "N·mm",
+  "speed": "mm/s",
+  "angularSpeed": "rpm",
+  "acceleration": "m/s²",
+  "angularAcceleration": "rad/s²",
+  "stiffness": "N/mm",
+  "torsionStiffness": "N·mm/rad",
+  "damping": "N·s/m",
+  "rotDamping": "N·mm·s/rad",
+  "density": "g/cm³",
+  "power": "W",
+  "energy": "mJ",
+  "inertia": "g·mm²",
+  "area": "mm²",
+  "volume": "cm³",
+  "frequency": "Hz",
+  "ratio": "",
+  "count": ""
+ },
+ "materials": [],
+ "activeVariant": "v1"
+}

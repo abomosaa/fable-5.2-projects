@@ -1,0 +1,13 @@
+{
+  "capturedAt": "2026-11-10T18:03:26Z",
+  "notes": "Captured from the live CISA feed (catalogVersion 2026.11.09, 1,773 entries, ETag and Last-Modified as sent by www.cisa.gov) and trimmed to the 150 most recently added entries plus the 5 oldest ones (2021-11-03), in upstream order. The envelope is kept as published, so `count` still says 1773. Entry contents are unmodified. 108 of the kept entries fall inside the 90-day window at the fixture epoch; the rest exercise the silent age skip. The malformed variant was authored by hand from CISA's published JSON schema (known_exploited_vulnerabilities_schema.json); its vendors and CVE numbers are invented.",
+  "routes": [
+    {
+      "match": "/feeds/known_exploited_vulnerabilities.json",
+      "file": "known_exploited_vulnerabilities.json",
+      "etag": "\"1c12cd-65fdd54ecdfc8\"",
+      "lastModified": "Mon, 09 Nov 2026 19:54:37 GMT",
+      "variants": { "malformed": "known_exploited_vulnerabilities.malformed.json" }
+    }
+  ]
+}

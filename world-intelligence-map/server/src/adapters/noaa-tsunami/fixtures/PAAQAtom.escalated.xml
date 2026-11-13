@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <feed xmlns="http://www.w3.org/2005/Atom" xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#" xmlns:georss="http://www.georss.org/georss">
+    <id>urn:uuid:11111111-0000-4000-8000-000000000001</id><title>Tsunami Warning Number 3</title>
+    <updated>2026-11-09T10:42:00Z</updated>
+    <author>
+      <name>NWS National Tsunami Warning Center Palmer AK</name>
+<uri>https://www.tsunami.gov/</uri>
+     <email>ntwc@noaa.gov</email>
+    </author>
+   <entry>
+    <title>55 miles SE of Test Bay, Alaska</title><updated>2026-11-09T10:42:00Z</updated>
+<geo:lat>55.100</geo:lat>
+<geo:long>-158.500</geo:long>
+<summary type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml">
+     <strong>Category:</strong> Warning<br/><strong>Bulletin Issue Time: </strong> 2026.11.09 10:42:00 UTC <br/><strong>Preliminary Magnitude: </strong>8.1(Mwp)<br/><strong>Lat/Lon: </strong>55.100 / -158.500<br/><strong>Affected Region: </strong>55 miles SE of Test Bay, Alaska<br/><b>Note:</b>  * Authored example: a tsunami warning is in effect for the test coast.<br/><strong>Definition: </strong>Authored test entry. <a href="https://www.tsunami.gov/events/PAAQ/2026/11/09/tst001/3/WEAK51/WEAK51.txt">View bulletin</a>  </div></summary>
+    <id>urn:uuid:aaaaaaaa-0000-4000-8000-000000000003</id><link rel="related" title="CapXML document" href="https://www.tsunami.gov/events/PAAQ/2026/11/09/tst001/3/WEAK51/WEAK51CAP.xml" type="application/cap+xml" />
+<link rel="alternate" title="Bulletin" href="https://www.tsunami.gov/events/PAAQ/2026/11/09/tst001/3/WEAK51/WEAK51.txt" type="application/xml" />
+</entry>
+   <entry>
+    <title>55 miles SE of Test Bay, Alaska</title><updated>2026-11-09T10:12:00Z</updated>
+<geo:lat>55.100</geo:lat>
+<geo:long>-158.500</geo:long>
+<summary type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml">
+     <strong>Category:</strong> Watch<br/><strong>Bulletin Issue Time: </strong> 2026.11.09 10:12:00 UTC <br/><strong>Preliminary Magnitude: </strong>7.9(Mwp)<br/><strong>Lat/Lon: </strong>55.100 / -158.500<br/><strong>Affected Region: </strong>55 miles SE of Test Bay, Alaska<br/><b>Note:</b>  * Authored example: superseded first message of the same event and product.<br/><strong>Definition: </strong>Authored test entry. <a href="https://www.tsunami.gov/events/PAAQ/2026/11/09/tst001/1/WEAK51/WEAK51.txt">View bulletin</a>  </div></summary>
+    <id>urn:uuid:aaaaaaaa-0000-4000-8000-000000000001</id><link rel="related" title="CapXML document" href="https://www.tsunami.gov/events/PAAQ/2026/11/09/tst001/1/WEAK51/WEAK51CAP.xml" type="application/cap+xml" />
+<link rel="alternate" title="Bulletin" href="https://www.tsunami.gov/events/PAAQ/2026/11/09/tst001/1/WEAK51/WEAK51.txt" type="application/xml" />
+</entry>
+   <entry>
+    <title>30 miles W of Example Point, California</title><updated>2026-11-08T22:05:00Z</updated>
+<geo:lat>40.300</geo:lat>
+<geo:long>-124.900</geo:long>
+<summary type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml">
+     <strong>Category:</strong> Advisory<br/><strong>Bulletin Issue Time: </strong> 2026.11.08 22:05:00 UTC <br/><strong>Preliminary Magnitude: </strong>7.0(Mw)<br/><strong>Lat/Lon: </strong>40.300 / -124.900<br/><strong>Affected Region: </strong>30 miles W of Example Point, California<br/><b>Note:</b>  * Authored example: strong currents possible.<br/><strong>Definition: </strong>Authored test entry. <a href="https://www.tsunami.gov/events/PAAQ/2026/11/08/tst002/2/WEAK53/WEAK53.txt">View bulletin</a>  </div></summary>
+    <id>urn:uuid:bbbbbbbb-0000-4000-8000-000000000001</id><link rel="related" title="CapXML document" href="https://www.tsunami.gov/events/PAAQ/2026/11/08/tst002/2/WEAK53/WEAK53CAP.xml" type="application/cap+xml" />
+<link rel="alternate" title="Bulletin" href="https://www.tsunami.gov/events/PAAQ/2026/11/08/tst002/2/WEAK53/WEAK53.txt" type="application/xml" />
+</entry>
+   <entry>
+    <title>Near the coast of Testland</title><updated>2026-11-08T03:00:00Z</updated>
+<geo:lat>-20.000</geo:lat>
+<geo:long>-70.500</geo:long>
+<summary type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml">
+     <strong>Category:</strong> Watch<br/><strong>Bulletin Issue Time: </strong> 2026.11.08 03:00:00 UTC <br/><strong>Preliminary Magnitude: </strong>8.4(Mwp)<br/><strong>Lat/Lon: </strong>-20.000 / -70.500<br/><strong>Affected Region: </strong>Near the coast of Testland<br/><b>Note:</b>  * Authored example: threat under evaluation.<br/><strong>Definition: </strong>Authored test entry. <a href="https://www.tsunami.gov/events/PAAQ/2026/11/08/tst003/1/WEAK51/WEAK51.txt">View bulletin</a>  </div></summary>
+    <id>urn:uuid:cccccccc-0000-4000-8000-000000000001</id><link rel="related" title="CapXML document" href="https://www.tsunami.gov/events/PAAQ/2026/11/08/tst003/1/WEAK51/WEAK51CAP.xml" type="application/cap+xml" />
+<link rel="alternate" title="Bulletin" href="https://www.tsunami.gov/events/PAAQ/2026/11/08/tst003/1/WEAK51/WEAK51.txt" type="application/xml" />
+</entry>
+</feed>

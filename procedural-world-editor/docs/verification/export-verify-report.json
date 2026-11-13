@@ -1,0 +1,3333 @@
+{
+ "exportDir": "/tmp/terraforge-ft-B8dy20/exports/proj-mwd2r34s0112/2026-11-12T04-56-19",
+ "started": "2026-11-12T04:57:29.826Z",
+ "mode": "browser",
+ "checks": [
+  {
+   "name": "export folder contains all required files",
+   "pass": true,
+   "summary": "9 files",
+   "missing": []
+  },
+  {
+   "name": "Khronos glTF validator reports no errors",
+   "pass": true,
+   "summary": "0 errors, 88 warnings, 359 infos, 0 hints (validator 2.0.0-dev.3.10)",
+   "errors": []
+  },
+  {
+   "name": "heightmap_float32.raw has width*height float32 samples",
+   "pass": true,
+   "summary": "4202500 bytes for 1025x1025"
+  },
+  {
+   "name": "raw heights are finite and span [minHeight, maxHeight] of heightmap.json",
+   "pass": true,
+   "summary": "raw 304.391 .. 464.588 m, json 304.391 .. 464.588 m"
+  },
+  {
+   "name": "heightmap.json is self-consistent (cell size, origin, axis)",
+   "pass": true,
+   "summary": "1025x1025, 2048 m, cell 2 m"
+  },
+  {
+   "name": "heightmap_16bit.png reproduces the raw heights within one quantisation step",
+   "pass": true,
+   "summary": "max error 1.222e-3 m, step 2.444e-3 m (1025x1025, 16-bit, 1 channel)",
+   "maxError": 0.0012222104936085998,
+   "step": 0.002444447530273661
+  },
+  {
+   "name": "every mask decodes at heightmap resolution and is documented in masks.json",
+   "pass": true,
+   "summary": "17 masks",
+   "bad": [],
+   "undocumented": []
+  },
+  {
+   "name": "all expected masks are present (water, flow, 9 materials, biome, moisture, road, sediment, exclusion)",
+   "pass": true,
+   "summary": "17 masks",
+   "absent": []
+  },
+  {
+   "name": "water type mask uses only 0/85/170/255 and agrees with the depth mask (wet <=> depth > 0)",
+   "pass": true,
+   "summary": "dry 1046178, river 4447, lake 0, ocean 0; 0 invalid values, 0 sign mismatches",
+   "histogram": {
+    "0": 1046178,
+    "85": 4447,
+    "170": 0,
+    "255": 0
+   }
+  },
+  {
+   "name": "wet cell count matches export_report.json",
+   "pass": true,
+   "summary": "4447 vs 4447"
+  },
+  {
+   "name": "material masks sum to 255 per pixel (within rounding)",
+   "pass": true,
+   "summary": "max deviation 1",
+   "maxDeviation": 1
+  },
+  {
+   "name": "biome index mask only uses indices from its legend",
+   "pass": true,
+   "summary": "max index 4, legend has 5 entries"
+  },
+  {
+   "name": "GLB container is structurally sound (chunk lengths, 4-byte alignment, accessors inside bufferViews)",
+   "pass": true,
+   "summary": "723 accessors, 875 bufferViews, 56.3 MB",
+   "problems": []
+  },
+  {
+   "name": "extensions are declared consistently (required is a subset of used; instancing required when present)",
+   "pass": true,
+   "summary": "used [EXT_mesh_gpu_instancing, EXT_texture_webp, KHR_materials_ior, KHR_materials_transmission, KHR_materials_volume], required [EXT_mesh_gpu_instancing, EXT_texture_webp]"
+  },
+  {
+   "name": "scene.extras carries generator / units / seed / terrainSize / waterLevels",
+   "pass": true,
+   "summary": "{\"generator\":\"Terraforge\",\"formatVersion\":1,\"units\":\"m\",\"upAxis\":\"+Y\",\"seed\":4242,\"terrainSize\":2048,\"waterLevels\":{\"sea\":null,\"lakes\":[]}}"
+  },
+  {
+   "name": "stock three.js GLTFLoader parses scene.glb (Node, no rendering)",
+   "pass": true,
+   "summary": "185 meshes, 121667 instances, 152 images requested"
+  },
+  {
+   "name": "scene.glb loads in the standalone three.js viewer (headless Chromium, stock GLTFLoader)",
+   "pass": true,
+   "summary": "GPU ANGLE (Intel, Vulkan 1.4.354 (Intel(R) Arc(tm) B580 Graphics (BMG G21) (0x0000E20B)), Intel open-source Mesa driver); 185 meshes, 121667 instances; display thinned 1/4"
+  },
+  {
+   "name": "viewer page logged no errors",
+   "pass": true,
+   "summary": "clean console",
+   "consoleErrors": []
+  },
+  {
+   "name": "three.js (Node) sees the same groups, meshes, triangles and instances as the raw file",
+   "pass": true,
+   "summary": "terrain: 1 meshes / 524288 tris, water: 2 meshes / 11482 tris, scatter: 175 meshes / 441651 tris / 121667 inst, structures: 6 meshes / 308 tris, roads: 1 meshes / 272 tris",
+   "diffs": []
+  },
+  {
+   "name": "three.js (Chromium) sees the same groups, meshes, triangles and instances as the raw file",
+   "pass": true,
+   "summary": "terrain: 1 meshes / 524288 tris, water: 2 meshes / 11482 tris, scatter: 175 meshes / 441651 tris / 121667 inst, structures: 6 meshes / 308 tris, roads: 1 meshes / 272 tris",
+   "diffs": []
+  },
+  {
+   "name": "terrain mesh exists",
+   "pass": true,
+   "summary": "263169 vertices, 524288 triangles"
+  },
+  {
+   "name": "terrain XZ extent equals sizeMeters (within one cell) and is centred on the origin",
+   "pass": true,
+   "summary": "2048.00 x 2048.00 m vs 2048 m",
+   "extent": [
+    2048,
+    2048
+   ]
+  },
+  {
+   "name": "terrain Y range lies within [minHeight, maxHeight]",
+   "pass": true,
+   "summary": "304.46 .. 464.59 m vs 304.39 .. 464.59 m"
+  },
+  {
+   "name": "terrain mesh vertices match the heightmap (bilinear raw within 2 cm; 16-bit PNG within one step)",
+   "pass": true,
+   "summary": "20000 sampled vertices: max |dy| raw 5.00e-5 m, png 1.27e-3 m (0 off-grid)",
+   "maxErrorRaw": 0.00004999999998744897,
+   "maxErrorPng": 0.0012721210852078002
+  },
+  {
+   "name": "terrain has normals, uvs and a baked base-colour texture (material terrain_baked)",
+   "pass": true,
+   "summary": "material \"terrain_baked\", map true, normals true, uv true"
+  },
+  {
+   "name": "terrain is a regular grid of counter-clockwise (up-facing) triangles",
+   "pass": true,
+   "summary": "513 x 513 vertices, 524288 triangles, 100.0 % face up"
+  },
+  {
+   "name": "every structure in placements.json has a node at the same position (+-1 cm) and yaw, standing on the terrain",
+   "pass": true,
+   "summary": "1 structures; max offset 4.12e-4 m, max yaw error 0.00e+0 deg, max |y - ground| 0.000 m",
+   "bad": []
+  },
+  {
+   "name": "parametric structures are upright with the documented height (roof up, plinth 3 m into the ground)",
+   "pass": true,
+   "summary": "1 buildings"
+  },
+  {
+   "name": "every object in placements.json has a node at the same position (+-1 cm)",
+   "pass": true,
+   "summary": "0 objects",
+   "bad": []
+  },
+  {
+   "name": "instance counts in scene.glb equal the counts in placements.json (per biome / layer / model)",
+   "pass": true,
+   "summary": "121667 instances in 118 instanced nodes; placements list 121667",
+   "bad": []
+  },
+  {
+   "name": "sampled instances sit on the terrain (|y - ground| < 0.6 m + layer sink)",
+   "pass": true,
+   "summary": "12790 samples, 0 off the ground, max |dy| 0.486 m",
+   "worst": {
+    "node": "riparian/river_boulders/boulder_01",
+    "x": 40.3688,
+    "y": 322.2926,
+    "z": -841.7153,
+    "ground": 322.779,
+    "allowed": 1.086
+   }
+  },
+  {
+   "name": "instances are upright (instance +Y within 60 deg of world up) with unit quaternions",
+   "pass": true,
+   "summary": "min up.y 0.834"
+  },
+  {
+   "name": "instanced model meshes have their base at the origin (no model floats above its placement point)",
+   "pass": true,
+   "summary": "118 instanced nodes"
+  },
+  {
+   "name": "water meshes exist exactly when the masks contain water",
+   "pass": true,
+   "summary": "2 meshes, 4447 wet cells"
+  },
+  {
+   "name": "water mesh water_river_river-mwd2rbwq02c2: wet vertices at/above the bed, shore skirt at/below the ground, agrees with the masks",
+   "pass": true,
+   "summary": "6000 sampled vertices: 3791 wet (0 below the bed, 3791 on river cells, max depth 1.41 m), 2209 skirt (0 above ground), 0 off-grid; 100.0 % of triangles face up; flow attr true (max 3.3139 m/s), transmission 0.85"
+  },
+  {
+   "name": "water mesh water_river_river-mwd2rjvd038p: wet vertices at/above the bed, shore skirt at/below the ground, agrees with the masks",
+   "pass": true,
+   "summary": "667 sampled vertices: 411 wet (0 below the bed, 411 on river cells, max depth 4.68 m), 256 skirt (0 above ground), 0 off-grid; 100.0 % of triangles face up; flow attr true (max 4.6973 m/s), transmission 0.85"
+  },
+  {
+   "name": "water meshes cover the wet area of the masks",
+   "pass": true,
+   "summary": "mesh area 22964 m2 vs wet cells 17788 m2 (ratio 1.291; skirts extend one cell past the waterline)",
+   "ratio": 1.2909826849561503
+  },
+  {
+   "name": "every flooded lake in placements.json has a water mesh at its level",
+   "pass": true,
+   "summary": "0 lakes"
+  },
+  {
+   "name": "road ribbons exist for every road and are draped 3 cm above the terrain surface",
+   "pass": true,
+   "summary": "1 ribbons, 0.030 .. 0.257 m above the bilinear heightmap, max deviation from (terrain surface + 3 cm) 6.70e-5 m (terrain mesh stride 2)"
+  },
+  {
+   "name": "materials carry base-colour textures where expected",
+   "pass": true,
+   "summary": "57 materials, 55 textured",
+   "untextured": []
+  },
+  {
+   "name": "water materials are transmissive / transparent with ior 1.333",
+   "pass": true,
+   "summary": "water_river: transmission 0.85, transparent true, ior 1.333"
+  },
+  {
+   "name": "alpha-tested foliage materials keep their textures",
+   "pass": true,
+   "summary": "26 alpha-tested materials"
+  },
+  {
+   "name": "parametric structures use wall / roof / stone materials",
+   "pass": true,
+   "summary": "structure_stone, structure_wall, structure_door, structure_trim, structure_glass, structure_roof"
+  },
+  {
+   "name": "scene bounding box matches the terrain extent",
+   "pass": true,
+   "summary": "x -1030.1 .. 1033.2, y 304.2 .. 479.0, z -1031.7 .. 1032.6 m",
+   "bounds": {
+    "min": [
+     -1030.113,
+     304.153,
+     -1031.707
+    ],
+    "max": [
+     1033.182,
+     479.02,
+     1032.554
+    ]
+   }
+  },
+  {
+   "name": "per-group counts agree with export_report.json",
+   "pass": true,
+   "summary": "terrain 1, water 2, scatter 175, structures 6, roads 1 meshes"
+  },
+  {
+   "name": "environment.json has a unit sun direction and wind / water settings",
+   "pass": true,
+   "summary": "sun [-0.8995, 0.203, 0.3869] (|v| = 1.0000), elevation 11.71 deg"
+  },
+  {
+   "name": "README_EXPORT.md documents what does not survive export",
+   "pass": true,
+   "summary": "8399 characters"
+  },
+  {
+   "name": "viewer screenshots were rendered",
+   "pass": true,
+   "summary": "aerial 1356 kB, top-down 1314 kB, structure 707 kB, shore 980 kB"
+  }
+ ],
+ "measurements": {
+  "heightmap": {
+   "width": 1025,
+   "height": 1025,
+   "min": 304.3910217285156,
+   "max": 464.587890625,
+   "pngMaxError": 0.0012222104936085998,
+   "quantisationStep": 0.002444447530273661
+  },
+  "water": {
+   "wetCells": 4447,
+   "histogram": {
+    "0": 1046178,
+    "85": 4447,
+    "170": 0,
+    "255": 0
+   },
+   "depthScale": 5,
+   "meshAreaM2": 22964,
+   "wetAreaM2": 17788
+  },
+  "scene": {
+   "source": "three.js r187 GLTFLoader",
+   "sceneBounds": {
+    "min": [
+     -1030.113,
+     304.153,
+     -1031.707
+    ],
+    "max": [
+     1033.182,
+     479.02,
+     1032.554
+    ]
+   },
+   "sceneExtras": {
+    "generator": "Terraforge",
+    "formatVersion": 1,
+    "units": "m",
+    "upAxis": "+Y",
+    "seed": 4242,
+    "terrainSize": 2048,
+    "waterLevels": {
+     "sea": null,
+     "lakes": []
+    }
+   },
+   "groups": {
+    "terrain": {
+     "meshes": 1,
+     "instancedMeshes": 0,
+     "instances": 0,
+     "triangles": 524288,
+     "instancedTriangles": 0
+    },
+    "water": {
+     "meshes": 2,
+     "instancedMeshes": 0,
+     "instances": 0,
+     "triangles": 11482,
+     "instancedTriangles": 0
+    },
+    "scatter": {
+     "meshes": 175,
+     "instancedMeshes": 175,
+     "instances": 121667,
+     "triangles": 441651,
+     "instancedTriangles": 764848592
+    },
+    "structures": {
+     "meshes": 6,
+     "instancedMeshes": 0,
+     "instances": 0,
+     "triangles": 308,
+     "instancedTriangles": 0
+    },
+    "roads": {
+     "meshes": 1,
+     "instancedMeshes": 0,
+     "instances": 0,
+     "triangles": 272,
+     "instancedTriangles": 0
+    }
+   },
+   "materials": [
+    {
+     "name": "terrain_baked",
+     "type": "MeshStandardMaterial",
+     "hasMap": true,
+     "hasNormalMap": false,
+     "transparent": false,
+     "alphaTest": 0,
+     "opacity": 1,
+     "transmission": 0,
+     "ior": null,
+     "doubleSided": false,
+     "color": [
+      1,
+      1,
+      1
+     ]
+    },
+    {
+     "name": "water_river",
+     "type": "MeshPhysicalMaterial",
+     "hasMap": false,
+     "hasNormalMap": false,
+     "transparent": true,
+     "alphaTest": 0,
+     "opacity": 0.72,
+     "transmission": 0.85,
+     "ior": 1.333,
+     "doubleSided": false,
+     "color": [
+      0.07,
+      0.2484,
+      0.16
+     ]
+    },
+    {
+     "name": "boulder_01",
+     "type": "MeshStandardMaterial",
+     "hasMap": true,
+     "hasNormalMap": true,
+     "transparent": false,
+     "alphaTest": 0,
+     "opacity": 1,
+     "transmission": 0,
+     "ior": null,
+     "doubleSided": false,
+     "color": [
+      1,
+      1,
+      1
+     ]
+    },
+    {
+     "name": "rock_moss_set_01",
+     "type": "MeshStandardMaterial",
+     "hasMap": true,
+     "hasNormalMap": true,
+     "transparent": false,
+     "alphaTest": 0,
+     "opacity": 1,
+     "transmission": 0,
+     "ior": null,
+     "doubleSided": false,
+     "color": [
+      1,
+      1,
+      1
+     ]
+    },
+    {
+     "name": "rock_moss_set_02",
+     "type": "MeshStandardMaterial",
+     "hasMap": true,
+     "hasNormalMap": true,
+     "transparent": false,
+     "alphaTest": 0,
+     "opacity": 1,
+     "transmission": 0,
+     "ior": null,
+     "doubleSided": false,
+     "color": [
+      1,
+      1,
+      1
+     ]
+    },
+    {
+     "name": "boulder_03",
+     "type": "MeshStandardMaterial",
+     "hasMap": true,
+     "hasNormalMap": true,
+     "transparent": false,
+     "alphaTest": 0,
+     "opacity": 1,
+     "transmission": 0,
+     "ior": null,
+     "doubleSided": false,
+     "color": [
+      1,
+      1,
+      1
+     ]
+    },
+    {
+     "name": "foliage_shrub_02",
+     "type": "MeshStandardMaterial",
+     "hasMap": true,
+     "hasNormalMap": true,
+     "transparent": false,
+     "alphaTest": 0.4,
+     "opacity": 1,
+     "transmission": 0,
+     "ior": null,
+     "doubleSided": true,
+     "color": [
+      1,
+      1,
+      1
+     ]
+    },
+    {
+     "name": "foliage_cards",
+     "type": "MeshStandardMaterial",
+     "hasMap": true,
+     "hasNormalMap": true,
+     "transparent": false,
+     "alphaTest": 0.4,
+     "opacity": 1,
+     "transmission": 0,
+     "ior": null,
+     "doubleSided": true,
+     "color": [
+      1,
+      1,
+      1
+     ]
+    },
+    {
+     "name": "foliage_cards",
+     "type": "MeshStandardMaterial",
+     "hasMap": true,
+     "hasNormalMap": true,
+     "transparent": false,
+     "alphaTest": 0.4,
+     "opacity": 1,
+     "transmission": 0,
+     "ior": null,
+     "doubleSided": true,
+     "color": [
+      1,
+      1,
+      1
+     ]
+    },
+    {
+     "name": "foliage_searsia_lucida",
+     "type": "MeshStandardMaterial",
+     "hasMap": true,
+     "hasNormalMap": true,
+     "transparent": false,
+     "alphaTest": 0.4,
+     "opacity": 1,
+     "transmission": 0,
+     "ior": null,
+     "doubleSided": true,
+     "color": [
+      1,
+      1,
+      1
+     ]
+    },
+    {
+     "name": "foliage_leaves",
+     "type": "MeshStandardMaterial",
+     "hasMap": true,
+     "hasNormalMap": true,
+     "transparent": false,
+     "alphaTest": 0.4,
+     "opacity": 1,
+     "transmission": 0,
+     "ior": null,
+     "doubleSided": true,
+     "color": [
+      1,
+      1,
+      1
+     ]
+    },
+    {
+     "name": "bark_branches",
+     "type": "MeshStandardMaterial",
+     "hasMap": true,
+     "hasNormalMap": true,
+     "transparent": false,
+     "alphaTest": 0,
+     "opacity": 1,
+     "transmission": 0,
+     "ior": null,
+     "doubleSided": false,
+     "color": [
+      1,
+      1,
+      1
+     ]
+    },
+    {
+     "name": "foliage_cards",
+     "type": "MeshStandardMaterial",
+     "hasMap": true,
+     "hasNormalMap": true,
+     "transparent": false,
+     "alphaTest": 0.4,
+     "opacity": 1,
+     "transmission": 0,
+     "ior": null,
+     "doubleSided": true,
+     "color": [
+      1,
+      1,
+      1
+     ]
+    },
+    {
+     "name": "foliage_cards",
+     "type": "MeshStandardMaterial",
+     "hasMap": true,
+     "hasNormalMap": true,
+     "transparent": false,
+     "alphaTest": 0.4,
+     "opacity": 1,
+     "transmission": 0,
+     "ior": null,
+     "doubleSided": true,
+     "color": [
+      1,
+      1,
+      1
+     ]
+    },
+    {
+     "name": "foliage_cards",
+     "type": "MeshStandardMaterial",
+     "hasMap": true,
+     "hasNormalMap": true,
+     "transparent": false,
+     "alphaTest": 0.4,
+     "opacity": 1,
+     "transmission": 0,
+     "ior": null,
+     "doubleSided": true,
+     "color": [
+      1,
+      1,
+      1
+     ]
+    },
+    {
+     "name": "bark_bark",
+     "type": "MeshStandardMaterial",
+     "hasMap": true,
+     "hasNormalMap": true,
+     "transparent": false,
+     "alphaTest": 0,
+     "opacity": 1,
+     "transmission": 0,
+     "ior": null,
+     "doubleSided": false,
+     "color": [
+      1,
+      1,
+      1
+     ]
+    },
+    {
+     "name": "foliage_cards",
+     "type": "MeshStandardMaterial",
+     "hasMap": true,
+     "hasNormalMap": true,
+     "transparent": false,
+     "alphaTest": 0.4,
+     "opacity": 1,
+     "transmission": 0,
+     "ior": null,
+     "doubleSided": true,
+     "color": [
+      1,
+      1,
+      1
+     ]
+    },
+    {
+     "name": "foliage_cards",
+     "type": "MeshStandardMaterial",
+     "hasMap": true,
+     "hasNormalMap": true,
+     "transparent": false,
+     "alphaTest": 0.4,
+     "opacity": 1,
+     "transmission": 0,
+     "ior": null,
+     "doubleSided": true,
+     "color": [
+      1,
+      1,
+      1
+     ]
+    },
+    {
+     "name": "foliage_cards",
+     "type": "MeshStandardMaterial",
+     "hasMap": true,
+     "hasNormalMap": true,
+     "transparent": false,
+     "alphaTest": 0.4,
+     "opacity": 1,
+     "transmission": 0,
+     "ior": null,
+     "doubleSided": true,
+     "color": [
+      1,
+      1,
+      1
+     ]
+    },
+    {
+     "name": "bark_branches",
+     "type": "MeshStandardMaterial",
+     "hasMap": true,
+     "hasNormalMap": true,
+     "transparent": false,
+     "alphaTest": 0,
+     "opacity": 1,
+     "transmission": 0,
+     "ior": null,
+     "doubleSided": false,
+     "color": [
+      1,
+      1,
+      1
+     ]
+    },
+    {
+     "name": "bark_trunk",
+     "type": "MeshStandardMaterial",
+     "hasMap": true,
+     "hasNormalMap": true,
+     "transparent": false,
+     "alphaTest": 0,
+     "opacity": 1,
+     "transmission": 0,
+     "ior": null,
+     "doubleSided": false,
+     "color": [
+      1,
+      1,
+      1
+     ]
+    },
+    {
+     "name": "foliage_cards",
+     "type": "MeshStandardMaterial",
+     "hasMap": true,
+     "hasNormalMap": true,
+     "transparent": false,
+     "alphaTest": 0.4,
+     "opacity": 1,
+     "transmission": 0,
+     "ior": null,
+     "doubleSided": true,
+     "color": [
+      1,
+      1,
+      1
+     ]
+    },
+    {
+     "name": "dead_tree_trunk",
+     "type": "MeshStandardMaterial",
+     "hasMap": true,
+     "hasNormalMap": true,
+     "transparent": false,
+     "alphaTest": 0,
+     "opacity": 1,
+     "transmission": 0,
+     "ior": null,
+     "doubleSided": false,
+     "color": [
+      1,
+      1,
+      1
+     ]
+    },
+    {
+     "name": "dry_branches_medium_01",
+     "type": "MeshStandardMaterial",
+     "hasMap": true,
+     "hasNormalMap": true,
+     "transparent": false,
+     "alphaTest": 0,
+     "opacity": 1,
+     "transmission": 0,
+     "ior": null,
+     "doubleSided": false,
+     "color": [
+      1,
+      1,
+      1
+     ]
+    },
+    {
+     "name": "bark_branches",
+     "type": "MeshStandardMaterial",
+     "hasMap": true,
+     "hasNormalMap": true,
+     "transparent": false,
+     "alphaTest": 0,
+     "opacity": 1,
+     "transmission": 0,
+     "ior": null,
+     "doubleSided": false,
+     "color": [
+      1,
+      1,
+      1
+     ]
+    },
+    {
+     "name": "bark_trunk",
+     "type": "MeshStandardMaterial",
+     "hasMap": true,
+     "hasNormalMap": true,
+     "transparent": false,
+     "alphaTest": 0,
+     "opacity": 1,
+     "transmission": 0,
+     "ior": null,
+     "doubleSided": false,
+     "color": [
+      1,
+      1,
+      1
+     ]
+    },
+    {
+     "name": "foliage_cards",
+     "type": "MeshStandardMaterial",
+     "hasMap": true,
+     "hasNormalMap": true,
+     "transparent": false,
+     "alphaTest": 0.4,
+     "opacity": 1,
+     "transmission": 0,
+     "ior": null,
+     "doubleSided": true,
+     "color": [
+      1,
+      1,
+      1
+     ]
+    },
+    {
+     "name": "bark_island_tree_01",
+     "type": "MeshStandardMaterial",
+     "hasMap": true,
+     "hasNormalMap": true,
+     "transparent": false,
+     "alphaTest": 0,
+     "opacity": 1,
+     "transmission": 0,
+     "ior": null,
+     "doubleSided": false,
+     "color": [
+      1,
+      1,
+      1
+     ]
+    },
+    {
+     "name": "bark_branches",
+     "type": "MeshStandardMaterial",
+     "hasMap": true,
+     "hasNormalMap": true,
+     "transparent": false,
+     "alphaTest": 0,
+     "opacity": 1,
+     "transmission": 0,
+     "ior": null,
+     "doubleSided": false,
+     "color": [
+      1,
+      1,
+      1
+     ]
+    },
+    {
+     "name": "foliage_cards",
+     "type": "MeshStandardMaterial",
+     "hasMap": true,
+     "hasNormalMap": true,
+     "transparent": false,
+     "alphaTest": 0.4,
+     "opacity": 1,
+     "transmission": 0,
+     "ior": null,
+     "doubleSided": true,
+     "color": [
+      1,
+      1,
+      1
+     ]
+    },
+    {
+     "name": "bark_island_tree_02",
+     "type": "MeshStandardMaterial",
+     "hasMap": true,
+     "hasNormalMap": true,
+     "transparent": false,
+     "alphaTest": 0,
+     "opacity": 1,
+     "transmission": 0,
+     "ior": null,
+     "doubleSided": false,
+     "color": [
+      1,
+      1,
+      1
+     ]
+    },
+    {
+     "name": "foliage_cards",
+     "type": "MeshStandardMaterial",
+     "hasMap": true,
+     "hasNormalMap": true,
+     "transparent": false,
+     "alphaTest": 0.4,
+     "opacity": 1,
+     "transmission": 0,
+     "ior": null,
+     "doubleSided": true,
+     "color": [
+      1,
+      1,
+      1
+     ]
+    },
+    {
+     "name": "bark_bark",
+     "type": "MeshStandardMaterial",
+     "hasMap": true,
+     "hasNormalMap": true,
+     "transparent": false,
+     "alphaTest": 0,
+     "opacity": 1,
+     "transmission": 0,
+     "ior": null,
+     "doubleSided": false,
+     "color": [
+      1,
+      1,
+      1
+     ]
+    },
+    {
+     "name": "bark_trunk_a",
+     "type": "MeshStandardMaterial",
+     "hasMap": true,
+     "hasNormalMap": true,
+     "transparent": false,
+     "alphaTest": 0,
+     "opacity": 1,
+     "transmission": 0,
+     "ior": null,
+     "doubleSided": false,
+     "color": [
+      1,
+      1,
+      1
+     ]
+    },
+    {
+     "name": "foliage_cards",
+     "type": "MeshStandardMaterial",
+     "hasMap": true,
+     "hasNormalMap": true,
+     "transparent": false,
+     "alphaTest": 0.4,
+     "opacity": 1,
+     "transmission": 0,
+     "ior": null,
+     "doubleSided": true,
+     "color": [
+      1,
+      1,
+      1
+     ]
+    },
+    {
+     "name": "bark_trunk_b",
+     "type": "MeshStandardMaterial",
+     "hasMap": true,
+     "hasNormalMap": true,
+     "transparent": false,
+     "alphaTest": 0,
+     "opacity": 1,
+     "transmission": 0,
+     "ior": null,
+     "doubleSided": false,
+     "color": [
+      1,
+      1,
+      1
+     ]
+    },
+    {
+     "name": "foliage_cards",
+     "type": "MeshStandardMaterial",
+     "hasMap": true,
+     "hasNormalMap": true,
+     "transparent": false,
+     "alphaTest": 0.4,
+     "opacity": 1,
+     "transmission": 0,
+     "ior": null,
+     "doubleSided": true,
+     "color": [
+      1,
+      1,
+      1
+     ]
+    },
+    {
+     "name": "foliage_cards",
+     "type": "MeshStandardMaterial",
+     "hasMap": true,
+     "hasNormalMap": true,
+     "transparent": false,
+     "alphaTest": 0.4,
+     "opacity": 1,
+     "transmission": 0,
+     "ior": null,
+     "doubleSided": true,
+     "color": [
+      1,
+      1,
+      1
+     ]
+    },
+    {
+     "name": "foliage_cards",
+     "type": "MeshStandardMaterial",
+     "hasMap": true,
+     "hasNormalMap": true,
+     "transparent": false,
+     "alphaTest": 0.4,
+     "opacity": 1,
+     "transmission": 0,
+     "ior": null,
+     "doubleSided": true,
+     "color": [
+      1,
+      1,
+      1
+     ]
+    },
+    {
+     "name": "foliage_cards",
+     "type": "MeshStandardMaterial",
+     "hasMap": true,
+     "hasNormalMap": true,
+     "transparent": false,
+     "alphaTest": 0.4,
+     "opacity": 1,
+     "transmission": 0,
+     "ior": null,
+     "doubleSided": true,
+     "color": [
+      1,
+      1,
+      1
+     ]
+    },
+    {
+     "name": "bark_branches",
+     "type": "MeshStandardMaterial",
+     "hasMap": true,
+     "hasNormalMap": true,
+     "transparent": false,
+     "alphaTest": 0,
+     "opacity": 1,
+     "transmission": 0,
+     "ior": null,
+     "doubleSided": false,
+     "color": [
+      1,
+      1,
+      1
+     ]
+    },
+    {
+     "name": "foliage_cards",
+     "type": "MeshStandardMaterial",
+     "hasMap": true,
+     "hasNormalMap": true,
+     "transparent": false,
+     "alphaTest": 0.4,
+     "opacity": 1,
+     "transmission": 0,
+     "ior": null,
+     "doubleSided": true,
+     "color": [
+      1,
+      1,
+      1
+     ]
+    },
+    {
+     "name": "foliage_cards",
+     "type": "MeshStandardMaterial",
+     "hasMap": true,
+     "hasNormalMap": true,
+     "transparent": false,
+     "alphaTest": 0.4,
+     "opacity": 1,
+     "transmission": 0,
+     "ior": null,
+     "doubleSided": true,
+     "color": [
+      1,
+      1,
+      1
+     ]
+    },
+    {
+     "name": "foliage_cards",
+     "type": "MeshStandardMaterial",
+     "hasMap": true,
+     "hasNormalMap": true,
+     "transparent": false,
+     "alphaTest": 0.4,
+     "opacity": 1,
+     "transmission": 0,
+     "ior": null,
+     "doubleSided": true,
+     "color": [
+      1,
+      1,
+      1
+     ]
+    },
+    {
+     "name": "foliage_cards",
+     "type": "MeshStandardMaterial",
+     "hasMap": true,
+     "hasNormalMap": true,
+     "transparent": false,
+     "alphaTest": 0.4,
+     "opacity": 1,
+     "transmission": 0,
+     "ior": null,
+     "doubleSided": true,
+     "color": [
+      1,
+      1,
+      1
+     ]
+    },
+    {
+     "name": "foliage_cards",
+     "type": "MeshStandardMaterial",
+     "hasMap": true,
+     "hasNormalMap": true,
+     "transparent": false,
+     "alphaTest": 0.4,
+     "opacity": 1,
+     "transmission": 0,
+     "ior": null,
+     "doubleSided": true,
+     "color": [
+      1,
+      1,
+      1
+     ]
+    },
+    {
+     "name": "foliage_cards",
+     "type": "MeshStandardMaterial",
+     "hasMap": true,
+     "hasNormalMap": true,
+     "transparent": false,
+     "alphaTest": 0.4,
+     "opacity": 1,
+     "transmission": 0,
+     "ior": null,
+     "doubleSided": true,
+     "color": [
+      1,
+      1,
+      1
+     ]
+    },
+    {
+     "name": "dead_tree_trunk_02",
+     "type": "MeshStandardMaterial",
+     "hasMap": true,
+     "hasNormalMap": true,
+     "transparent": false,
+     "alphaTest": 0,
+     "opacity": 1,
+     "transmission": 0,
+     "ior": null,
+     "doubleSided": false,
+     "color": [
+      1,
+      1,
+      1
+     ]
+    },
+    {
+     "name": "tree_stump_01",
+     "type": "MeshStandardMaterial",
+     "hasMap": true,
+     "hasNormalMap": true,
+     "transparent": false,
+     "alphaTest": 0,
+     "opacity": 1,
+     "transmission": 0,
+     "ior": null,
+     "doubleSided": false,
+     "color": [
+      1,
+      1,
+      1
+     ]
+    },
+    {
+     "name": "tree_stump_02",
+     "type": "MeshStandardMaterial",
+     "hasMap": true,
+     "hasNormalMap": true,
+     "transparent": false,
+     "alphaTest": 0,
+     "opacity": 1,
+     "transmission": 0,
+     "ior": null,
+     "doubleSided": false,
+     "color": [
+      1,
+      1,
+      1
+     ]
+    },
+    {
+     "name": "structure_stone",
+     "type": "MeshStandardMaterial",
+     "hasMap": true,
+     "hasNormalMap": true,
+     "transparent": false,
+     "alphaTest": 0,
+     "opacity": 1,
+     "transmission": 0,
+     "ior": null,
+     "doubleSided": true,
+     "color": [
+      1,
+      1,
+      1
+     ]
+    },
+    {
+     "name": "structure_wall",
+     "type": "MeshStandardMaterial",
+     "hasMap": true,
+     "hasNormalMap": true,
+     "transparent": false,
+     "alphaTest": 0,
+     "opacity": 1,
+     "transmission": 0,
+     "ior": null,
+     "doubleSided": true,
+     "color": [
+      1,
+      1,
+      1
+     ]
+    },
+    {
+     "name": "structure_door",
+     "type": "MeshStandardMaterial",
+     "hasMap": true,
+     "hasNormalMap": true,
+     "transparent": false,
+     "alphaTest": 0,
+     "opacity": 1,
+     "transmission": 0,
+     "ior": null,
+     "doubleSided": true,
+     "color": [
+      0.8,
+      0.8,
+      0.8
+     ]
+    },
+    {
+     "name": "structure_trim",
+     "type": "MeshStandardMaterial",
+     "hasMap": true,
+     "hasNormalMap": true,
+     "transparent": false,
+     "alphaTest": 0,
+     "opacity": 1,
+     "transmission": 0,
+     "ior": null,
+     "doubleSided": true,
+     "color": [
+      0.62,
+      0.58,
+      0.54
+     ]
+    },
+    {
+     "name": "structure_glass",
+     "type": "MeshStandardMaterial",
+     "hasMap": false,
+     "hasNormalMap": false,
+     "transparent": false,
+     "alphaTest": 0,
+     "opacity": 1,
+     "transmission": 0,
+     "ior": null,
+     "doubleSided": true,
+     "color": [
+      0.02,
+      0.028,
+      0.035
+     ]
+    },
+    {
+     "name": "structure_roof",
+     "type": "MeshStandardMaterial",
+     "hasMap": true,
+     "hasNormalMap": true,
+     "transparent": false,
+     "alphaTest": 0,
+     "opacity": 1,
+     "transmission": 0,
+     "ior": null,
+     "doubleSided": true,
+     "color": [
+      1,
+      1,
+      1
+     ]
+    },
+    {
+     "name": "path_surface",
+     "type": "MeshStandardMaterial",
+     "hasMap": true,
+     "hasNormalMap": true,
+     "transparent": false,
+     "alphaTest": 0,
+     "opacity": 1,
+     "transmission": 0,
+     "ior": null,
+     "doubleSided": false,
+     "color": [
+      0.8,
+      0.78,
+      0.74
+     ]
+    }
+   ],
+   "terrain": {
+    "bounds": {
+     "min": [
+      -1024,
+      304.463,
+      -1024
+     ],
+     "max": [
+      1024,
+      464.588,
+      1024
+     ]
+    },
+    "vertexCount": 263169,
+    "triangles": 524288,
+    "hasNormals": true,
+    "hasUv": true,
+    "upFacing": 1,
+    "material": "terrain_baked",
+    "materialHasMap": true,
+    "extras": {
+     "name": "terrain",
+     "kind": "terrain",
+     "vertsPerSide": 513,
+     "heightfieldStride": 2,
+     "cellMeters": 4,
+     "textureRes": 2048,
+     "quadDiagonal": "(i+1,j)-(i,j+1)"
+    },
+    "sampleCount": 20000
+   },
+   "water": [
+    {
+     "name": "water_river_river-mwd2rbwq02c2",
+     "body": "river",
+     "id": "river-mwd2rbwq02c2",
+     "level": null,
+     "vertexCount": 6378,
+     "triangles": 10406,
+     "bounds": {
+      "min": [
+       2,
+       305.408,
+       -1024
+      ],
+      "max": [
+       76,
+       323.875,
+       1024
+      ]
+     },
+     "areaXZ": 20812,
+     "upFacing": 1,
+     "hasFlowAttribute": true,
+     "maxFlow": 3.3139,
+     "material": "water_river",
+     "transmission": 0.85,
+     "transparent": true
+    },
+    {
+     "name": "water_river_river-mwd2rjvd038p",
+     "body": "river",
+     "id": "river-mwd2rjvd038p",
+     "level": null,
+     "vertexCount": 667,
+     "triangles": 1076,
+     "bounds": {
+      "min": [
+       -144,
+       316.315,
+       -270
+      ],
+      "max": [
+       40,
+       342.402,
+       -222
+      ]
+     },
+     "areaXZ": 2152,
+     "upFacing": 1,
+     "hasFlowAttribute": true,
+     "maxFlow": 4.6973,
+     "material": "water_river",
+     "transmission": 0.85,
+     "transparent": true
+    }
+   ],
+   "structures": [
+    {
+     "id": "struct-mwd2ry9w06m2",
+     "type": "cabin",
+     "model": null,
+     "position": [
+      -8.5072,
+      318.6903,
+      -206.5072
+     ],
+     "yawDeg": 0,
+     "quaternion": [
+      0,
+      0,
+      0,
+      1
+     ],
+     "scale": 1,
+     "meshes": 6,
+     "triangles": 308,
+     "bounds": {
+      "min": [
+       -12.962,
+       315.69,
+       -210.002
+      ],
+      "max": [
+       -4.052,
+       324.391,
+       -201.543
+      ]
+     }
+    }
+   ],
+   "objects": [],
+   "scatter": [
+    {
+     "biome": "riparian",
+     "layer": "river_boulders",
+     "model": "boulder_01",
+     "modelIndex": 0,
+     "count": 220,
+     "declaredCount": 220,
+     "primitives": 1,
+     "triangles": 3000,
+     "meshMinY": 0.002,
+     "meshMaxY": 0.998,
+     "minUpY": 0.9181
+    },
+    {
+     "biome": "riparian",
+     "layer": "river_boulders",
+     "model": "rock_moss_set_01__a",
+     "modelIndex": 1,
+     "count": 31,
+     "declaredCount": 31,
+     "primitives": 1,
+     "triangles": 3000,
+     "meshMinY": 0.002,
+     "meshMaxY": 1.473,
+     "minUpY": 0.9592
+    },
+    {
+     "biome": "riparian",
+     "layer": "river_boulders",
+     "model": "rock_moss_set_01__b",
+     "modelIndex": 2,
+     "count": 20,
+     "declaredCount": 20,
+     "primitives": 1,
+     "triangles": 2998,
+     "meshMinY": 0,
+     "meshMaxY": 1.262,
+     "minUpY": 0.9752
+    },
+    {
+     "biome": "riparian",
+     "layer": "river_boulders",
+     "model": "rock_moss_set_01__c",
+     "modelIndex": 3,
+     "count": 26,
+     "declaredCount": 26,
+     "primitives": 1,
+     "triangles": 3000,
+     "meshMinY": 0,
+     "meshMaxY": 1.1,
+     "minUpY": 0.9758
+    },
+    {
+     "biome": "riparian",
+     "layer": "river_boulders",
+     "model": "rock_moss_set_01__d",
+     "modelIndex": 4,
+     "count": 31,
+     "declaredCount": 31,
+     "primitives": 1,
+     "triangles": 3000,
+     "meshMinY": 0.005,
+     "meshMaxY": 1.763,
+     "minUpY": 0.9652
+    },
+    {
+     "biome": "riparian",
+     "layer": "river_boulders",
+     "model": "rock_moss_set_01__e",
+     "modelIndex": 5,
+     "count": 23,
+     "declaredCount": 23,
+     "primitives": 1,
+     "triangles": 3000,
+     "meshMinY": 0,
+     "meshMaxY": 1.203,
+     "minUpY": 0.9743
+    },
+    {
+     "biome": "riparian",
+     "layer": "river_boulders",
+     "model": "rock_moss_set_01__f",
+     "modelIndex": 6,
+     "count": 28,
+     "declaredCount": 28,
+     "primitives": 1,
+     "triangles": 3000,
+     "meshMinY": 0.008,
+     "meshMaxY": 1.262,
+     "minUpY": 0.9698
+    },
+    {
+     "biome": "riparian",
+     "layer": "river_boulders",
+     "model": "rock_moss_set_02__a",
+     "modelIndex": 7,
+     "count": 34,
+     "declaredCount": 34,
+     "primitives": 1,
+     "triangles": 3000,
+     "meshMinY": 0,
+     "meshMaxY": 0.745,
+     "minUpY": 0.974
+    },
+    {
+     "biome": "riparian",
+     "layer": "river_boulders",
+     "model": "rock_moss_set_02__b",
+     "modelIndex": 8,
+     "count": 30,
+     "declaredCount": 30,
+     "primitives": 1,
+     "triangles": 3000,
+     "meshMinY": 0,
+     "meshMaxY": 0.525,
+     "minUpY": 0.9682
+    },
+    {
+     "biome": "riparian",
+     "layer": "river_boulders",
+     "model": "rock_moss_set_02__c",
+     "modelIndex": 9,
+     "count": 24,
+     "declaredCount": 24,
+     "primitives": 1,
+     "triangles": 3000,
+     "meshMinY": 0.006,
+     "meshMaxY": 0.609,
+     "minUpY": 0.9487
+    },
+    {
+     "biome": "riparian",
+     "layer": "river_boulders",
+     "model": "rock_moss_set_02__d",
+     "modelIndex": 10,
+     "count": 32,
+     "declaredCount": 32,
+     "primitives": 1,
+     "triangles": 3000,
+     "meshMinY": 0,
+     "meshMaxY": 0.765,
+     "minUpY": 0.9547
+    },
+    {
+     "biome": "riparian",
+     "layer": "river_boulders",
+     "model": "rock_moss_set_02__e",
+     "modelIndex": 11,
+     "count": 30,
+     "declaredCount": 30,
+     "primitives": 1,
+     "triangles": 3000,
+     "meshMinY": 0,
+     "meshMaxY": 1.308,
+     "minUpY": 0.9695
+    },
+    {
+     "biome": "riparian",
+     "layer": "river_boulders",
+     "model": "rock_moss_set_02__f",
+     "modelIndex": 12,
+     "count": 30,
+     "declaredCount": 30,
+     "primitives": 1,
+     "triangles": 3000,
+     "meshMinY": 0,
+     "meshMaxY": 0.736,
+     "minUpY": 0.9652
+    },
+    {
+     "biome": "riparian",
+     "layer": "river_boulders",
+     "model": "rock_moss_set_02__g",
+     "modelIndex": 13,
+     "count": 23,
+     "declaredCount": 23,
+     "primitives": 1,
+     "triangles": 3000,
+     "meshMinY": 0,
+     "meshMaxY": 1.256,
+     "minUpY": 0.9707
+    },
+    {
+     "biome": "riparian",
+     "layer": "river_boulders",
+     "model": "namaqualand_boulder_03",
+     "modelIndex": 14,
+     "count": 76,
+     "declaredCount": 76,
+     "primitives": 1,
+     "triangles": 3000,
+     "meshMinY": 0.003,
+     "meshMaxY": 1.471,
+     "minUpY": 0.9679
+    },
+    {
+     "biome": "riparian",
+     "layer": "shrubs",
+     "model": "shrub_02__a",
+     "modelIndex": 0,
+     "count": 155,
+     "declaredCount": 155,
+     "primitives": 1,
+     "triangles": 1401,
+     "meshMinY": 0,
+     "meshMaxY": 1.691,
+     "minUpY": 0.9996
+    },
+    {
+     "biome": "riparian",
+     "layer": "shrubs",
+     "model": "shrub_02__b",
+     "modelIndex": 1,
+     "count": 169,
+     "declaredCount": 169,
+     "primitives": 1,
+     "triangles": 1455,
+     "meshMinY": 0,
+     "meshMaxY": 1.511,
+     "minUpY": 0.9996
+    },
+    {
+     "biome": "riparian",
+     "layer": "shrubs",
+     "model": "shrub_02__c",
+     "modelIndex": 2,
+     "count": 157,
+     "declaredCount": 157,
+     "primitives": 1,
+     "triangles": 1378,
+     "meshMinY": 0,
+     "meshMaxY": 1.341,
+     "minUpY": 0.9997
+    },
+    {
+     "biome": "riparian",
+     "layer": "shrubs",
+     "model": "shrub_02__d",
+     "modelIndex": 3,
+     "count": 147,
+     "declaredCount": 147,
+     "primitives": 1,
+     "triangles": 1453,
+     "meshMinY": 0,
+     "meshMaxY": 1.233,
+     "minUpY": 0.9996
+    },
+    {
+     "biome": "riparian",
+     "layer": "shrubs",
+     "model": "searsia_lucida__a",
+     "modelIndex": 4,
+     "count": 97,
+     "declaredCount": 97,
+     "primitives": 1,
+     "triangles": 1500,
+     "meshMinY": 0,
+     "meshMaxY": 2.357,
+     "minUpY": 0.9996
+    },
+    {
+     "biome": "riparian",
+     "layer": "shrubs",
+     "model": "searsia_lucida__b",
+     "modelIndex": 5,
+     "count": 99,
+     "declaredCount": 99,
+     "primitives": 1,
+     "triangles": 1500,
+     "meshMinY": 0.008,
+     "meshMaxY": 1.705,
+     "minUpY": 0.9996
+    },
+    {
+     "biome": "riparian",
+     "layer": "shrubs",
+     "model": "searsia_lucida__c",
+     "modelIndex": 6,
+     "count": 85,
+     "declaredCount": 85,
+     "primitives": 2,
+     "triangles": 1257,
+     "meshMinY": 0,
+     "meshMaxY": 1.073,
+     "minUpY": 0.9996
+    },
+    {
+     "biome": "riparian",
+     "layer": "shrubs",
+     "model": "searsia_lucida__d",
+     "modelIndex": 7,
+     "count": 113,
+     "declaredCount": 113,
+     "primitives": 2,
+     "triangles": 1314,
+     "meshMinY": 0,
+     "meshMaxY": 0.783,
+     "minUpY": 0.9996
+    },
+    {
+     "biome": "riparian",
+     "layer": "trees",
+     "model": "fir_sapling_medium__a",
+     "modelIndex": 0,
+     "count": 37,
+     "declaredCount": 37,
+     "primitives": 2,
+     "triangles": 7961,
+     "meshMinY": 0,
+     "meshMaxY": 8.906,
+     "minUpY": 0.9997
+    },
+    {
+     "biome": "riparian",
+     "layer": "trees",
+     "model": "fir_sapling_medium__b",
+     "modelIndex": 1,
+     "count": 30,
+     "declaredCount": 30,
+     "primitives": 2,
+     "triangles": 7999,
+     "meshMinY": 0,
+     "meshMaxY": 7.819,
+     "minUpY": 0.9997
+    },
+    {
+     "biome": "riparian",
+     "layer": "trees",
+     "model": "fir_sapling_medium__c",
+     "modelIndex": 2,
+     "count": 27,
+     "declaredCount": 27,
+     "primitives": 2,
+     "triangles": 7992,
+     "meshMinY": 0,
+     "meshMaxY": 5.924,
+     "minUpY": 0.9997
+    },
+    {
+     "biome": "riparian",
+     "layer": "trees",
+     "model": "pine_sapling_medium__a",
+     "modelIndex": 3,
+     "count": 11,
+     "declaredCount": 11,
+     "primitives": 2,
+     "triangles": 6278,
+     "meshMinY": 0,
+     "meshMaxY": 11.596,
+     "minUpY": 0.9998
+    },
+    {
+     "biome": "riparian",
+     "layer": "trees",
+     "model": "pine_sapling_medium__b",
+     "modelIndex": 4,
+     "count": 7,
+     "declaredCount": 7,
+     "primitives": 2,
+     "triangles": 6609,
+     "meshMinY": 0,
+     "meshMaxY": 9.208,
+     "minUpY": 0.9996
+    },
+    {
+     "biome": "riparian",
+     "layer": "trees",
+     "model": "pine_sapling_medium__c",
+     "modelIndex": 5,
+     "count": 21,
+     "declaredCount": 21,
+     "primitives": 2,
+     "triangles": 7722,
+     "meshMinY": 0,
+     "meshMaxY": 7.066,
+     "minUpY": 0.9996
+    },
+    {
+     "biome": "riparian",
+     "layer": "trees",
+     "model": "tree_small_02",
+     "modelIndex": 6,
+     "count": 61,
+     "declaredCount": 61,
+     "primitives": 3,
+     "triangles": 8806,
+     "meshMinY": 0.002,
+     "meshMaxY": 4.606,
+     "minUpY": 0.9997
+    },
+    {
+     "biome": "riparian",
+     "layer": "deadwood",
+     "model": "dead_tree_trunk",
+     "modelIndex": 0,
+     "count": 9,
+     "declaredCount": 9,
+     "primitives": 1,
+     "triangles": 2500,
+     "meshMinY": 0,
+     "meshMaxY": 0.287,
+     "minUpY": 0.9519
+    },
+    {
+     "biome": "riparian",
+     "layer": "deadwood",
+     "model": "dry_branches_medium_01__a",
+     "modelIndex": 1,
+     "count": 7,
+     "declaredCount": 7,
+     "primitives": 1,
+     "triangles": 600,
+     "meshMinY": 0.001,
+     "meshMaxY": 0.341,
+     "minUpY": 0.9653
+    },
+    {
+     "biome": "riparian",
+     "layer": "deadwood",
+     "model": "dry_branches_medium_01__b",
+     "modelIndex": 2,
+     "count": 5,
+     "declaredCount": 5,
+     "primitives": 1,
+     "triangles": 600,
+     "meshMinY": 0.002,
+     "meshMaxY": 0.141,
+     "minUpY": 0.9608
+    },
+    {
+     "biome": "riparian",
+     "layer": "deadwood",
+     "model": "dry_branches_medium_01__c",
+     "modelIndex": 3,
+     "count": 13,
+     "declaredCount": 13,
+     "primitives": 1,
+     "triangles": 600,
+     "meshMinY": 0,
+     "meshMaxY": 0.143,
+     "minUpY": 0.9489
+    },
+    {
+     "biome": "mixed_forest",
+     "layer": "trees",
+     "model": "tree_small_02",
+     "modelIndex": 0,
+     "count": 16806,
+     "declaredCount": 16806,
+     "primitives": 3,
+     "triangles": 8806,
+     "meshMinY": 0.002,
+     "meshMaxY": 4.606,
+     "minUpY": 0.9996
+    },
+    {
+     "biome": "mixed_forest",
+     "layer": "trees",
+     "model": "jacaranda_tree",
+     "modelIndex": 1,
+     "count": 5637,
+     "declaredCount": 5637,
+     "primitives": 3,
+     "triangles": 8855,
+     "meshMinY": 0.017,
+     "meshMaxY": 19.568,
+     "minUpY": 0.9996
+    },
+    {
+     "biome": "mixed_forest",
+     "layer": "trees",
+     "model": "island_tree_01",
+     "modelIndex": 2,
+     "count": 5714,
+     "declaredCount": 5714,
+     "primitives": 3,
+     "triangles": 8943,
+     "meshMinY": 0,
+     "meshMaxY": 5.027,
+     "minUpY": 0.9996
+    },
+    {
+     "biome": "mixed_forest",
+     "layer": "trees",
+     "model": "island_tree_02",
+     "modelIndex": 3,
+     "count": 4479,
+     "declaredCount": 4479,
+     "primitives": 3,
+     "triangles": 8822,
+     "meshMinY": 0,
+     "meshMaxY": 3.418,
+     "minUpY": 0.9996
+    },
+    {
+     "biome": "mixed_forest",
+     "layer": "trees",
+     "model": "fir_sapling_medium__a",
+     "modelIndex": 4,
+     "count": 7200,
+     "declaredCount": 7200,
+     "primitives": 2,
+     "triangles": 7961,
+     "meshMinY": 0,
+     "meshMaxY": 8.906,
+     "minUpY": 0.9996
+    },
+    {
+     "biome": "mixed_forest",
+     "layer": "trees",
+     "model": "fir_sapling_medium__b",
+     "modelIndex": 5,
+     "count": 6956,
+     "declaredCount": 6956,
+     "primitives": 2,
+     "triangles": 7999,
+     "meshMinY": 0,
+     "meshMaxY": 7.819,
+     "minUpY": 0.9997
+    },
+    {
+     "biome": "mixed_forest",
+     "layer": "trees",
+     "model": "fir_sapling_medium__c",
+     "modelIndex": 6,
+     "count": 7053,
+     "declaredCount": 7053,
+     "primitives": 2,
+     "triangles": 7992,
+     "meshMinY": 0,
+     "meshMaxY": 5.924,
+     "minUpY": 0.9997
+    },
+    {
+     "biome": "mixed_forest",
+     "layer": "trees",
+     "model": "pine_sapling_medium__a",
+     "modelIndex": 7,
+     "count": 2767,
+     "declaredCount": 2767,
+     "primitives": 2,
+     "triangles": 6278,
+     "meshMinY": 0,
+     "meshMaxY": 11.596,
+     "minUpY": 0.9996
+    },
+    {
+     "biome": "mixed_forest",
+     "layer": "trees",
+     "model": "pine_sapling_medium__b",
+     "modelIndex": 8,
+     "count": 2762,
+     "declaredCount": 2762,
+     "primitives": 2,
+     "triangles": 6609,
+     "meshMinY": 0,
+     "meshMaxY": 9.208,
+     "minUpY": 0.9996
+    },
+    {
+     "biome": "mixed_forest",
+     "layer": "trees",
+     "model": "pine_sapling_medium__c",
+     "modelIndex": 9,
+     "count": 2853,
+     "declaredCount": 2853,
+     "primitives": 2,
+     "triangles": 7722,
+     "meshMinY": 0,
+     "meshMaxY": 7.066,
+     "minUpY": 0.9997
+    },
+    {
+     "biome": "mixed_forest",
+     "layer": "trees",
+     "model": "fir_tree_01__a",
+     "modelIndex": 10,
+     "count": 4189,
+     "declaredCount": 4189,
+     "primitives": 3,
+     "triangles": 8911,
+     "meshMinY": 0.002,
+     "meshMaxY": 19.044,
+     "minUpY": 0.9997
+    },
+    {
+     "biome": "mixed_forest",
+     "layer": "trees",
+     "model": "fir_tree_01__b",
+     "modelIndex": 11,
+     "count": 4111,
+     "declaredCount": 4111,
+     "primitives": 3,
+     "triangles": 8999,
+     "meshMinY": 0,
+     "meshMaxY": 14.123,
+     "minUpY": 0.9996
+    },
+    {
+     "biome": "mixed_forest",
+     "layer": "trees",
+     "model": "pine_tree_01__b",
+     "modelIndex": 12,
+     "count": 2708,
+     "declaredCount": 2708,
+     "primitives": 3,
+     "triangles": 6982,
+     "meshMinY": 0.003,
+     "meshMaxY": 14.904,
+     "minUpY": 0.9996
+    },
+    {
+     "biome": "mixed_forest",
+     "layer": "trees",
+     "model": "pine_tree_01__a",
+     "modelIndex": 13,
+     "count": 1941,
+     "declaredCount": 1941,
+     "primitives": 3,
+     "triangles": 8058,
+     "meshMinY": 0,
+     "meshMaxY": 20.432,
+     "minUpY": 0.9996
+    },
+    {
+     "biome": "mixed_forest",
+     "layer": "trees",
+     "model": "fir_tree_01__c",
+     "modelIndex": 14,
+     "count": 750,
+     "declaredCount": 750,
+     "primitives": 2,
+     "triangles": 4538,
+     "meshMinY": 0.003,
+     "meshMaxY": 14.611,
+     "minUpY": 0.9996
+    },
+    {
+     "biome": "mixed_forest",
+     "layer": "saplings",
+     "model": "fir_sapling_medium__a",
+     "modelIndex": 0,
+     "count": 2458,
+     "declaredCount": 2458,
+     "primitives": 2,
+     "triangles": 7961,
+     "meshMinY": 0,
+     "meshMaxY": 8.906,
+     "minUpY": 0.9996
+    },
+    {
+     "biome": "mixed_forest",
+     "layer": "saplings",
+     "model": "fir_sapling_medium__b",
+     "modelIndex": 1,
+     "count": 2483,
+     "declaredCount": 2483,
+     "primitives": 2,
+     "triangles": 7999,
+     "meshMinY": 0,
+     "meshMaxY": 7.819,
+     "minUpY": 0.9996
+    },
+    {
+     "biome": "mixed_forest",
+     "layer": "saplings",
+     "model": "fir_sapling_medium__c",
+     "modelIndex": 2,
+     "count": 2494,
+     "declaredCount": 2494,
+     "primitives": 2,
+     "triangles": 7992,
+     "meshMinY": 0,
+     "meshMaxY": 5.924,
+     "minUpY": 0.9996
+    },
+    {
+     "biome": "mixed_forest",
+     "layer": "saplings",
+     "model": "pine_sapling_medium__a",
+     "modelIndex": 3,
+     "count": 845,
+     "declaredCount": 845,
+     "primitives": 2,
+     "triangles": 6278,
+     "meshMinY": 0,
+     "meshMaxY": 11.596,
+     "minUpY": 0.9996
+    },
+    {
+     "biome": "mixed_forest",
+     "layer": "saplings",
+     "model": "pine_sapling_medium__b",
+     "modelIndex": 4,
+     "count": 846,
+     "declaredCount": 846,
+     "primitives": 2,
+     "triangles": 6609,
+     "meshMinY": 0,
+     "meshMaxY": 9.208,
+     "minUpY": 0.9996
+    },
+    {
+     "biome": "mixed_forest",
+     "layer": "saplings",
+     "model": "pine_sapling_medium__c",
+     "modelIndex": 5,
+     "count": 874,
+     "declaredCount": 874,
+     "primitives": 2,
+     "triangles": 7722,
+     "meshMinY": 0,
+     "meshMaxY": 7.066,
+     "minUpY": 0.9997
+    },
+    {
+     "biome": "mixed_forest",
+     "layer": "saplings",
+     "model": "fir_sapling__a",
+     "modelIndex": 6,
+     "count": 1668,
+     "declaredCount": 1668,
+     "primitives": 2,
+     "triangles": 1058,
+     "meshMinY": 0,
+     "meshMaxY": 1.329,
+     "minUpY": 0.9996
+    },
+    {
+     "biome": "mixed_forest",
+     "layer": "saplings",
+     "model": "fir_sapling__b",
+     "modelIndex": 7,
+     "count": 1722,
+     "declaredCount": 1722,
+     "primitives": 2,
+     "triangles": 1190,
+     "meshMinY": 0,
+     "meshMaxY": 0.961,
+     "minUpY": 0.9996
+    },
+    {
+     "biome": "mixed_forest",
+     "layer": "saplings",
+     "model": "fir_sapling__c",
+     "modelIndex": 8,
+     "count": 1621,
+     "declaredCount": 1621,
+     "primitives": 2,
+     "triangles": 884,
+     "meshMinY": 0,
+     "meshMaxY": 0.745,
+     "minUpY": 0.9996
+    },
+    {
+     "biome": "mixed_forest",
+     "layer": "saplings",
+     "model": "pine_sapling_small__a",
+     "modelIndex": 9,
+     "count": 1615,
+     "declaredCount": 1615,
+     "primitives": 2,
+     "triangles": 958,
+     "meshMinY": 0,
+     "meshMaxY": 1.313,
+     "minUpY": 0.9997
+    },
+    {
+     "biome": "mixed_forest",
+     "layer": "saplings",
+     "model": "pine_sapling_small__b",
+     "modelIndex": 10,
+     "count": 1600,
+     "declaredCount": 1600,
+     "primitives": 2,
+     "triangles": 942,
+     "meshMinY": 0,
+     "meshMaxY": 1.056,
+     "minUpY": 0.9996
+    },
+    {
+     "biome": "mixed_forest",
+     "layer": "saplings",
+     "model": "pine_sapling_small__c",
+     "modelIndex": 11,
+     "count": 1710,
+     "declaredCount": 1710,
+     "primitives": 2,
+     "triangles": 930,
+     "meshMinY": 0,
+     "meshMaxY": 0.969,
+     "minUpY": 0.9996
+    },
+    {
+     "biome": "mixed_forest",
+     "layer": "saplings",
+     "model": "shrub_02__a",
+     "modelIndex": 12,
+     "count": 1902,
+     "declaredCount": 1902,
+     "primitives": 1,
+     "triangles": 1401,
+     "meshMinY": 0,
+     "meshMaxY": 1.691,
+     "minUpY": 0.9996
+    },
+    {
+     "biome": "mixed_forest",
+     "layer": "saplings",
+     "model": "shrub_02__b",
+     "modelIndex": 13,
+     "count": 1790,
+     "declaredCount": 1790,
+     "primitives": 1,
+     "triangles": 1455,
+     "meshMinY": 0,
+     "meshMaxY": 1.511,
+     "minUpY": 0.9996
+    },
+    {
+     "biome": "mixed_forest",
+     "layer": "saplings",
+     "model": "shrub_02__c",
+     "modelIndex": 14,
+     "count": 1823,
+     "declaredCount": 1823,
+     "primitives": 1,
+     "triangles": 1378,
+     "meshMinY": 0,
+     "meshMaxY": 1.341,
+     "minUpY": 0.9996
+    },
+    {
+     "biome": "mixed_forest",
+     "layer": "saplings",
+     "model": "shrub_02__d",
+     "modelIndex": 15,
+     "count": 1790,
+     "declaredCount": 1790,
+     "primitives": 1,
+     "triangles": 1453,
+     "meshMinY": 0,
+     "meshMaxY": 1.233,
+     "minUpY": 0.9997
+    },
+    {
+     "biome": "mixed_forest",
+     "layer": "saplings",
+     "model": "searsia_lucida__a",
+     "modelIndex": 16,
+     "count": 1252,
+     "declaredCount": 1252,
+     "primitives": 1,
+     "triangles": 1500,
+     "meshMinY": 0,
+     "meshMaxY": 2.357,
+     "minUpY": 0.9996
+    },
+    {
+     "biome": "mixed_forest",
+     "layer": "saplings",
+     "model": "searsia_lucida__b",
+     "modelIndex": 17,
+     "count": 1184,
+     "declaredCount": 1184,
+     "primitives": 1,
+     "triangles": 1500,
+     "meshMinY": 0.008,
+     "meshMaxY": 1.705,
+     "minUpY": 0.9996
+    },
+    {
+     "biome": "mixed_forest",
+     "layer": "saplings",
+     "model": "searsia_lucida__c",
+     "modelIndex": 18,
+     "count": 1241,
+     "declaredCount": 1241,
+     "primitives": 2,
+     "triangles": 1257,
+     "meshMinY": 0,
+     "meshMaxY": 1.073,
+     "minUpY": 0.9996
+    },
+    {
+     "biome": "mixed_forest",
+     "layer": "saplings",
+     "model": "searsia_lucida__d",
+     "modelIndex": 19,
+     "count": 1234,
+     "declaredCount": 1234,
+     "primitives": 2,
+     "triangles": 1314,
+     "meshMinY": 0,
+     "meshMaxY": 0.783,
+     "minUpY": 0.9996
+    },
+    {
+     "biome": "mixed_forest",
+     "layer": "deadwood",
+     "model": "dead_tree_trunk",
+     "modelIndex": 0,
+     "count": 650,
+     "declaredCount": 650,
+     "primitives": 1,
+     "triangles": 2500,
+     "meshMinY": 0,
+     "meshMaxY": 0.287,
+     "minUpY": 0.8737
+    },
+    {
+     "biome": "mixed_forest",
+     "layer": "deadwood",
+     "model": "dead_tree_trunk_02",
+     "modelIndex": 1,
+     "count": 396,
+     "declaredCount": 396,
+     "primitives": 1,
+     "triangles": 2498,
+     "meshMinY": 0,
+     "meshMaxY": 1.048,
+     "minUpY": 0.8577
+    },
+    {
+     "biome": "mixed_forest",
+     "layer": "deadwood",
+     "model": "tree_stump_01",
+     "modelIndex": 2,
+     "count": 660,
+     "declaredCount": 660,
+     "primitives": 1,
+     "triangles": 2497,
+     "meshMinY": 0,
+     "meshMaxY": 0.565,
+     "minUpY": 0.8526
+    },
+    {
+     "biome": "mixed_forest",
+     "layer": "deadwood",
+     "model": "tree_stump_02",
+     "modelIndex": 3,
+     "count": 672,
+     "declaredCount": 672,
+     "primitives": 1,
+     "triangles": 2497,
+     "meshMinY": 0.001,
+     "meshMaxY": 0.521,
+     "minUpY": 0.8614
+    },
+    {
+     "biome": "mixed_forest",
+     "layer": "deadwood",
+     "model": "dry_branches_medium_01__a",
+     "modelIndex": 4,
+     "count": 423,
+     "declaredCount": 423,
+     "primitives": 1,
+     "triangles": 600,
+     "meshMinY": 0.001,
+     "meshMaxY": 0.341,
+     "minUpY": 0.8604
+    },
+    {
+     "biome": "mixed_forest",
+     "layer": "deadwood",
+     "model": "dry_branches_medium_01__b",
+     "modelIndex": 5,
+     "count": 389,
+     "declaredCount": 389,
+     "primitives": 1,
+     "triangles": 600,
+     "meshMinY": 0.002,
+     "meshMaxY": 0.141,
+     "minUpY": 0.8498
+    },
+    {
+     "biome": "mixed_forest",
+     "layer": "deadwood",
+     "model": "dry_branches_medium_01__c",
+     "modelIndex": 6,
+     "count": 424,
+     "declaredCount": 424,
+     "primitives": 1,
+     "triangles": 600,
+     "meshMinY": 0,
+     "meshMaxY": 0.143,
+     "minUpY": 0.8474
+    },
+    {
+     "biome": "mixed_forest",
+     "layer": "rocks",
+     "model": "boulder_01",
+     "modelIndex": 0,
+     "count": 1017,
+     "declaredCount": 1017,
+     "primitives": 1,
+     "triangles": 3000,
+     "meshMinY": 0.002,
+     "meshMaxY": 0.998,
+     "minUpY": 0.9117
+    },
+    {
+     "biome": "mixed_forest",
+     "layer": "rocks",
+     "model": "rock_moss_set_01__a",
+     "modelIndex": 1,
+     "count": 125,
+     "declaredCount": 125,
+     "primitives": 1,
+     "triangles": 3000,
+     "meshMinY": 0.002,
+     "meshMaxY": 1.473,
+     "minUpY": 0.9006
+    },
+    {
+     "biome": "mixed_forest",
+     "layer": "rocks",
+     "model": "rock_moss_set_01__b",
+     "modelIndex": 2,
+     "count": 100,
+     "declaredCount": 100,
+     "primitives": 1,
+     "triangles": 2998,
+     "meshMinY": 0,
+     "meshMaxY": 1.262,
+     "minUpY": 0.9072
+    },
+    {
+     "biome": "mixed_forest",
+     "layer": "rocks",
+     "model": "rock_moss_set_01__c",
+     "modelIndex": 3,
+     "count": 127,
+     "declaredCount": 127,
+     "primitives": 1,
+     "triangles": 3000,
+     "meshMinY": 0,
+     "meshMaxY": 1.1,
+     "minUpY": 0.9105
+    },
+    {
+     "biome": "mixed_forest",
+     "layer": "rocks",
+     "model": "rock_moss_set_01__d",
+     "modelIndex": 4,
+     "count": 133,
+     "declaredCount": 133,
+     "primitives": 1,
+     "triangles": 3000,
+     "meshMinY": 0.005,
+     "meshMaxY": 1.763,
+     "minUpY": 0.9189
+    },
+    {
+     "biome": "mixed_forest",
+     "layer": "rocks",
+     "model": "rock_moss_set_01__e",
+     "modelIndex": 5,
+     "count": 121,
+     "declaredCount": 121,
+     "primitives": 1,
+     "triangles": 3000,
+     "meshMinY": 0,
+     "meshMaxY": 1.203,
+     "minUpY": 0.9059
+    },
+    {
+     "biome": "mixed_forest",
+     "layer": "rocks",
+     "model": "rock_moss_set_01__f",
+     "modelIndex": 6,
+     "count": 126,
+     "declaredCount": 126,
+     "primitives": 1,
+     "triangles": 3000,
+     "meshMinY": 0.008,
+     "meshMaxY": 1.262,
+     "minUpY": 0.8997
+    },
+    {
+     "biome": "mixed_forest",
+     "layer": "rocks",
+     "model": "rock_moss_set_02__a",
+     "modelIndex": 7,
+     "count": 142,
+     "declaredCount": 142,
+     "primitives": 1,
+     "triangles": 3000,
+     "meshMinY": 0,
+     "meshMaxY": 0.745,
+     "minUpY": 0.8947
+    },
+    {
+     "biome": "mixed_forest",
+     "layer": "rocks",
+     "model": "rock_moss_set_02__b",
+     "modelIndex": 8,
+     "count": 145,
+     "declaredCount": 145,
+     "primitives": 1,
+     "triangles": 3000,
+     "meshMinY": 0,
+     "meshMaxY": 0.525,
+     "minUpY": 0.9001
+    },
+    {
+     "biome": "mixed_forest",
+     "layer": "rocks",
+     "model": "rock_moss_set_02__c",
+     "modelIndex": 9,
+     "count": 108,
+     "declaredCount": 108,
+     "primitives": 1,
+     "triangles": 3000,
+     "meshMinY": 0.006,
+     "meshMaxY": 0.609,
+     "minUpY": 0.9138
+    },
+    {
+     "biome": "mixed_forest",
+     "layer": "rocks",
+     "model": "rock_moss_set_02__d",
+     "modelIndex": 10,
+     "count": 138,
+     "declaredCount": 138,
+     "primitives": 1,
+     "triangles": 3000,
+     "meshMinY": 0,
+     "meshMaxY": 0.765,
+     "minUpY": 0.9071
+    },
+    {
+     "biome": "mixed_forest",
+     "layer": "rocks",
+     "model": "rock_moss_set_02__e",
+     "modelIndex": 11,
+     "count": 118,
+     "declaredCount": 118,
+     "primitives": 1,
+     "triangles": 3000,
+     "meshMinY": 0,
+     "meshMaxY": 1.308,
+     "minUpY": 0.9124
+    },
+    {
+     "biome": "mixed_forest",
+     "layer": "rocks",
+     "model": "rock_moss_set_02__f",
+     "modelIndex": 12,
+     "count": 125,
+     "declaredCount": 125,
+     "primitives": 1,
+     "triangles": 3000,
+     "meshMinY": 0,
+     "meshMaxY": 0.736,
+     "minUpY": 0.9358
+    },
+    {
+     "biome": "mixed_forest",
+     "layer": "rocks",
+     "model": "rock_moss_set_02__g",
+     "modelIndex": 13,
+     "count": 125,
+     "declaredCount": 125,
+     "primitives": 1,
+     "triangles": 3000,
+     "meshMinY": 0,
+     "meshMaxY": 1.256,
+     "minUpY": 0.9004
+    },
+    {
+     "biome": "mixed_forest",
+     "layer": "rocks",
+     "model": "namaqualand_boulder_03",
+     "modelIndex": 14,
+     "count": 360,
+     "declaredCount": 360,
+     "primitives": 1,
+     "triangles": 3000,
+     "meshMinY": 0.003,
+     "meshMaxY": 1.471,
+     "minUpY": 0.8946
+    },
+    {
+     "biome": "meadow",
+     "layer": "trees",
+     "model": "tree_small_02",
+     "modelIndex": 0,
+     "count": 292,
+     "declaredCount": 292,
+     "primitives": 3,
+     "triangles": 8806,
+     "meshMinY": 0.002,
+     "meshMaxY": 4.606,
+     "minUpY": 0.9997
+    },
+    {
+     "biome": "meadow",
+     "layer": "trees",
+     "model": "jacaranda_tree",
+     "modelIndex": 1,
+     "count": 94,
+     "declaredCount": 94,
+     "primitives": 3,
+     "triangles": 8855,
+     "meshMinY": 0.017,
+     "meshMaxY": 19.568,
+     "minUpY": 0.9997
+    },
+    {
+     "biome": "meadow",
+     "layer": "trees",
+     "model": "island_tree_01",
+     "modelIndex": 2,
+     "count": 84,
+     "declaredCount": 84,
+     "primitives": 3,
+     "triangles": 8943,
+     "meshMinY": 0,
+     "meshMaxY": 5.027,
+     "minUpY": 0.9997
+    },
+    {
+     "biome": "meadow",
+     "layer": "trees",
+     "model": "island_tree_02",
+     "modelIndex": 3,
+     "count": 79,
+     "declaredCount": 79,
+     "primitives": 3,
+     "triangles": 8822,
+     "meshMinY": 0,
+     "meshMaxY": 3.418,
+     "minUpY": 0.9996
+    },
+    {
+     "biome": "meadow",
+     "layer": "shrubs",
+     "model": "shrub_02__a",
+     "modelIndex": 0,
+     "count": 565,
+     "declaredCount": 565,
+     "primitives": 1,
+     "triangles": 1401,
+     "meshMinY": 0,
+     "meshMaxY": 1.691,
+     "minUpY": 0.9996
+    },
+    {
+     "biome": "meadow",
+     "layer": "shrubs",
+     "model": "shrub_02__b",
+     "modelIndex": 1,
+     "count": 596,
+     "declaredCount": 596,
+     "primitives": 1,
+     "triangles": 1455,
+     "meshMinY": 0,
+     "meshMaxY": 1.511,
+     "minUpY": 0.9996
+    },
+    {
+     "biome": "meadow",
+     "layer": "shrubs",
+     "model": "shrub_02__c",
+     "modelIndex": 2,
+     "count": 594,
+     "declaredCount": 594,
+     "primitives": 1,
+     "triangles": 1378,
+     "meshMinY": 0,
+     "meshMaxY": 1.341,
+     "minUpY": 0.9997
+    },
+    {
+     "biome": "meadow",
+     "layer": "shrubs",
+     "model": "shrub_02__d",
+     "modelIndex": 3,
+     "count": 552,
+     "declaredCount": 552,
+     "primitives": 1,
+     "triangles": 1453,
+     "meshMinY": 0,
+     "meshMaxY": 1.233,
+     "minUpY": 0.9996
+    },
+    {
+     "biome": "meadow",
+     "layer": "shrubs",
+     "model": "searsia_lucida__a",
+     "modelIndex": 4,
+     "count": 393,
+     "declaredCount": 393,
+     "primitives": 1,
+     "triangles": 1500,
+     "meshMinY": 0,
+     "meshMaxY": 2.357,
+     "minUpY": 0.9996
+    },
+    {
+     "biome": "meadow",
+     "layer": "shrubs",
+     "model": "searsia_lucida__b",
+     "modelIndex": 5,
+     "count": 374,
+     "declaredCount": 374,
+     "primitives": 1,
+     "triangles": 1500,
+     "meshMinY": 0.008,
+     "meshMaxY": 1.705,
+     "minUpY": 0.9996
+    },
+    {
+     "biome": "meadow",
+     "layer": "shrubs",
+     "model": "searsia_lucida__c",
+     "modelIndex": 6,
+     "count": 368,
+     "declaredCount": 368,
+     "primitives": 2,
+     "triangles": 1257,
+     "meshMinY": 0,
+     "meshMaxY": 1.073,
+     "minUpY": 0.9996
+    },
+    {
+     "biome": "meadow",
+     "layer": "shrubs",
+     "model": "searsia_lucida__d",
+     "modelIndex": 7,
+     "count": 428,
+     "declaredCount": 428,
+     "primitives": 2,
+     "triangles": 1314,
+     "meshMinY": 0,
+     "meshMaxY": 0.783,
+     "minUpY": 0.9996
+    },
+    {
+     "biome": "meadow",
+     "layer": "rocks",
+     "model": "boulder_01",
+     "modelIndex": 0,
+     "count": 217,
+     "declaredCount": 217,
+     "primitives": 1,
+     "triangles": 3000,
+     "meshMinY": 0.002,
+     "meshMaxY": 0.998,
+     "minUpY": 0.8457
+    },
+    {
+     "biome": "meadow",
+     "layer": "rocks",
+     "model": "rock_moss_set_01__a",
+     "modelIndex": 1,
+     "count": 26,
+     "declaredCount": 26,
+     "primitives": 1,
+     "triangles": 3000,
+     "meshMinY": 0.002,
+     "meshMaxY": 1.473,
+     "minUpY": 0.8728
+    },
+    {
+     "biome": "meadow",
+     "layer": "rocks",
+     "model": "rock_moss_set_01__b",
+     "modelIndex": 2,
+     "count": 26,
+     "declaredCount": 26,
+     "primitives": 1,
+     "triangles": 2998,
+     "meshMinY": 0,
+     "meshMaxY": 1.262,
+     "minUpY": 0.853
+    },
+    {
+     "biome": "meadow",
+     "layer": "rocks",
+     "model": "rock_moss_set_01__c",
+     "modelIndex": 3,
+     "count": 25,
+     "declaredCount": 25,
+     "primitives": 1,
+     "triangles": 3000,
+     "meshMinY": 0,
+     "meshMaxY": 1.1,
+     "minUpY": 0.8463
+    },
+    {
+     "biome": "meadow",
+     "layer": "rocks",
+     "model": "rock_moss_set_01__d",
+     "modelIndex": 4,
+     "count": 21,
+     "declaredCount": 21,
+     "primitives": 1,
+     "triangles": 3000,
+     "meshMinY": 0.005,
+     "meshMaxY": 1.763,
+     "minUpY": 0.8592
+    },
+    {
+     "biome": "meadow",
+     "layer": "rocks",
+     "model": "rock_moss_set_01__e",
+     "modelIndex": 5,
+     "count": 31,
+     "declaredCount": 31,
+     "primitives": 1,
+     "triangles": 3000,
+     "meshMinY": 0,
+     "meshMaxY": 1.203,
+     "minUpY": 0.8336
+    },
+    {
+     "biome": "meadow",
+     "layer": "rocks",
+     "model": "rock_moss_set_01__f",
+     "modelIndex": 6,
+     "count": 28,
+     "declaredCount": 28,
+     "primitives": 1,
+     "triangles": 3000,
+     "meshMinY": 0.008,
+     "meshMaxY": 1.262,
+     "minUpY": 0.9161
+    },
+    {
+     "biome": "meadow",
+     "layer": "rocks",
+     "model": "rock_moss_set_02__a",
+     "modelIndex": 7,
+     "count": 27,
+     "declaredCount": 27,
+     "primitives": 1,
+     "triangles": 3000,
+     "meshMinY": 0,
+     "meshMaxY": 0.745,
+     "minUpY": 0.8783
+    },
+    {
+     "biome": "meadow",
+     "layer": "rocks",
+     "model": "rock_moss_set_02__b",
+     "modelIndex": 8,
+     "count": 24,
+     "declaredCount": 24,
+     "primitives": 1,
+     "triangles": 3000,
+     "meshMinY": 0,
+     "meshMaxY": 0.525,
+     "minUpY": 0.9093
+    },
+    {
+     "biome": "meadow",
+     "layer": "rocks",
+     "model": "rock_moss_set_02__c",
+     "modelIndex": 9,
+     "count": 24,
+     "declaredCount": 24,
+     "primitives": 1,
+     "triangles": 3000,
+     "meshMinY": 0.006,
+     "meshMaxY": 0.609,
+     "minUpY": 0.8812
+    },
+    {
+     "biome": "meadow",
+     "layer": "rocks",
+     "model": "rock_moss_set_02__d",
+     "modelIndex": 10,
+     "count": 23,
+     "declaredCount": 23,
+     "primitives": 1,
+     "triangles": 3000,
+     "meshMinY": 0,
+     "meshMaxY": 0.765,
+     "minUpY": 0.8902
+    },
+    {
+     "biome": "meadow",
+     "layer": "rocks",
+     "model": "rock_moss_set_02__e",
+     "modelIndex": 11,
+     "count": 20,
+     "declaredCount": 20,
+     "primitives": 1,
+     "triangles": 3000,
+     "meshMinY": 0,
+     "meshMaxY": 1.308,
+     "minUpY": 0.8747
+    },
+    {
+     "biome": "meadow",
+     "layer": "rocks",
+     "model": "rock_moss_set_02__f",
+     "modelIndex": 12,
+     "count": 25,
+     "declaredCount": 25,
+     "primitives": 1,
+     "triangles": 3000,
+     "meshMinY": 0,
+     "meshMaxY": 0.736,
+     "minUpY": 0.8868
+    },
+    {
+     "biome": "meadow",
+     "layer": "rocks",
+     "model": "rock_moss_set_02__g",
+     "modelIndex": 13,
+     "count": 31,
+     "declaredCount": 31,
+     "primitives": 1,
+     "triangles": 3000,
+     "meshMinY": 0,
+     "meshMaxY": 1.256,
+     "minUpY": 0.8766
+    },
+    {
+     "biome": "meadow",
+     "layer": "rocks",
+     "model": "namaqualand_boulder_03",
+     "modelIndex": 14,
+     "count": 90,
+     "declaredCount": 90,
+     "primitives": 1,
+     "triangles": 3000,
+     "meshMinY": 0.003,
+     "meshMaxY": 1.471,
+     "minUpY": 0.8685
+    }
+   ],
+   "roads": [
+    {
+     "id": "road-mwd2rw6b04cg",
+     "name": "road_road-mwd2rw6b04cg",
+     "vertexCount": 175,
+     "triangles": 272,
+     "upFacing": 1,
+     "bounds": {
+      "min": [
+       -30.694,
+       320.278,
+       -204.754
+      ],
+      "max": [
+       20.202,
+       327.16,
+       -152.176
+      ]
+     }
+    }
+   ],
+   "totals": {
+    "meshes": 185,
+    "instancedMeshes": 175,
+    "instances": 121667,
+    "triangles": 978001,
+    "instancedTriangles": 764848592
+   },
+   "gpu": "ANGLE (Intel, Vulkan 1.4.354 (Intel(R) Arc(tm) B580 Graphics (BMG G21) (0x0000E20B)), Intel open-source Mesa driver)",
+   "displayThinning": 4
+  },
+  "reader": {
+   "groups": {
+    "terrain": {
+     "meshes": 1,
+     "instancedMeshes": 0,
+     "instances": 0,
+     "triangles": 524288,
+     "instancedTriangles": 0
+    },
+    "water": {
+     "meshes": 2,
+     "instancedMeshes": 0,
+     "instances": 0,
+     "triangles": 11482,
+     "instancedTriangles": 0
+    },
+    "scatter": {
+     "meshes": 175,
+     "instancedMeshes": 175,
+     "instances": 121667,
+     "triangles": 441651,
+     "instancedTriangles": 764848592
+    },
+    "structures": {
+     "meshes": 6,
+     "instancedMeshes": 0,
+     "instances": 0,
+     "triangles": 308,
+     "instancedTriangles": 0
+    },
+    "roads": {
+     "meshes": 1,
+     "instancedMeshes": 0,
+     "instances": 0,
+     "triangles": 272,
+     "instancedTriangles": 0
+    }
+   },
+   "totals": {
+    "meshes": 185,
+    "instancedMeshes": 175,
+    "instances": 121667,
+    "triangles": 978001,
+    "instancedTriangles": 764848592
+   },
+   "sceneBounds": {
+    "min": [
+     -1042.393,
+     281.268,
+     -1043.075
+    ],
+    "max": [
+     1044.501,
+     480.393,
+     1043.291
+    ]
+   }
+  },
+  "threeNode": {
+   "groups": {
+    "terrain": {
+     "meshes": 1,
+     "instancedMeshes": 0,
+     "instances": 0,
+     "triangles": 524288,
+     "instancedTriangles": 0
+    },
+    "water": {
+     "meshes": 2,
+     "instancedMeshes": 0,
+     "instances": 0,
+     "triangles": 11482,
+     "instancedTriangles": 0
+    },
+    "scatter": {
+     "meshes": 175,
+     "instancedMeshes": 175,
+     "instances": 121667,
+     "triangles": 441651,
+     "instancedTriangles": 764848592
+    },
+    "structures": {
+     "meshes": 6,
+     "instancedMeshes": 0,
+     "instances": 0,
+     "triangles": 308,
+     "instancedTriangles": 0
+    },
+    "roads": {
+     "meshes": 1,
+     "instancedMeshes": 0,
+     "instances": 0,
+     "triangles": 272,
+     "instancedTriangles": 0
+    }
+   },
+   "totals": {
+    "meshes": 185,
+    "instancedMeshes": 175,
+    "instances": 121667,
+    "triangles": 978001,
+    "instancedTriangles": 764848592
+   },
+   "sceneBounds": {
+    "min": [
+     -1030.113,
+     304.153,
+     -1031.707
+    ],
+    "max": [
+     1033.182,
+     479.02,
+     1032.554
+    ]
+   }
+  },
+  "scatter": {
+   "nodes": 118,
+   "instances": 121667,
+   "placements": 121667,
+   "samplesChecked": 12790,
+   "maxGroundError": 0.48600001322506614,
+   "minUpY": 0.8336
+  }
+ },
+ "validator": {
+  "version": "2.0.0-dev.3.10",
+  "numErrors": 0,
+  "numWarnings": 88,
+  "numInfos": 359,
+  "numHints": 0,
+  "issues": {
+   "UNSUPPORTED_EXTENSION": {
+    "severity": "info",
+    "count": 1,
+    "example": "Cannot validate an extension as it is not supported by the validator: 'EXT_mesh_gpu_instancing'.",
+    "pointer": "/extensionsUsed/0"
+   },
+   "UNUSED_OBJECT": {
+    "severity": "info",
+    "count": 358,
+    "example": "This object may be unused.",
+    "pointer": "/meshes/1/primitives/0/attributes/TEXCOORD_0"
+   },
+   "MESH_PRIMITIVE_GENERATED_TANGENT_SPACE": {
+    "severity": "warning",
+    "count": 88,
+    "example": "Material requires a tangent space but the mesh primitive does not provide it. Runtime-generated tangent space may be non-portable across implementations.",
+    "pointer": "/meshes/3/primitives/0/material"
+   }
+  },
+  "info": {
+   "version": "2.0",
+   "generator": "Terraforge exporter",
+   "extensionsUsed": [
+    "EXT_mesh_gpu_instancing",
+    "EXT_texture_webp",
+    "KHR_materials_ior",
+    "KHR_materials_transmission",
+    "KHR_materials_volume"
+   ],
+   "extensionsRequired": [
+    "EXT_mesh_gpu_instancing",
+    "EXT_texture_webp"
+   ],
+   "animationCount": 0,
+   "materialCount": 57,
+   "hasMorphTargets": false,
+   "hasSkins": false,
+   "hasTextures": true,
+   "hasDefaultScene": true,
+   "drawCallCount": 92,
+   "totalVertexCount": 511484,
+   "totalTriangleCount": 727835,
+   "maxUVs": 2,
+   "maxInfluences": 0,
+   "maxAttributes": 4,
+   "resourceCount": 153
+  }
+ },
+ "viewer": {
+  "gpu": "ANGLE (Intel, Vulkan 1.4.354 (Intel(R) Arc(tm) B580 Graphics (BMG G21) (0x0000E20B)), Intel open-source Mesa driver)",
+  "displayThinning": 4,
+  "gltf": {
+   "extensionsUsed": [
+    "EXT_mesh_gpu_instancing",
+    "EXT_texture_webp",
+    "KHR_materials_ior",
+    "KHR_materials_transmission",
+    "KHR_materials_volume"
+   ],
+   "extensionsRequired": [
+    "EXT_mesh_gpu_instancing",
+    "EXT_texture_webp"
+   ],
+   "generator": "Terraforge exporter",
+   "sceneExtras": {
+    "generator": "Terraforge",
+    "formatVersion": 1,
+    "units": "m",
+    "upAxis": "+Y",
+    "seed": 4242,
+    "terrainSize": 2048,
+    "waterLevels": {
+     "sea": null,
+     "lakes": []
+    }
+   }
+  },
+  "consoleErrors": []
+ },
+ "measurementSource": "three.js r187 GLTFLoader",
+ "mapPreview": {
+  "file": "/home/h4ni0/benchmark/fable-5.2/procedural-world-editor/fable-5.2/.cache/functional/export-verify/map_preview.png",
+  "drawn": {
+   "water": 2,
+   "roads": 1,
+   "scatter": 121667,
+   "structures": 1,
+   "objects": 0
+  },
+  "note": "CPU-rasterised top-down map of scene.glb: baked terrain texture + relief shading, wet water triangles (blue), roads (pale), scatter instances (dots: dark green = tall foliage, green = low foliage, grey = rocks, brown = dead wood), structures (red, yellow line = front, red ring = locator), objects (yellow squares). North is up."
+ },
+ "screenshots": [
+  {
+   "file": "/home/h4ni0/benchmark/fable-5.2/procedural-world-editor/fable-5.2/.cache/functional/export-verify/aerial.png",
+   "view": "aerial",
+   "eye": [
+    204.8,
+    1590.99,
+    1679.36
+   ],
+   "target": [
+    0,
+    344.44,
+    -102.4
+   ],
+   "drawCalls": 368,
+   "triangles": 383154552
+  },
+  {
+   "file": "/home/h4ni0/benchmark/fable-5.2/procedural-world-editor/fable-5.2/.cache/functional/export-verify/topdown.png",
+   "view": "top-down",
+   "eye": [
+    0,
+    3024.59,
+    4.1
+   ],
+   "target": [
+    0,
+    384.49,
+    0
+   ],
+   "drawCalls": 368,
+   "triangles": 383154552
+  },
+  {
+   "file": "/home/h4ni0/benchmark/fable-5.2/procedural-world-editor/fable-5.2/.cache/functional/export-verify/eye_structure.png",
+   "view": "structure",
+   "eye": [
+    3.71,
+    323.04,
+    -191.95
+   ],
+   "target": [
+    -8.51,
+    320.89,
+    -206.51
+   ],
+   "drawCalls": 368,
+   "triangles": 383154552
+  },
+  {
+   "file": "/home/h4ni0/benchmark/fable-5.2/procedural-world-editor/fable-5.2/.cache/functional/export-verify/eye_water.png",
+   "view": "shore",
+   "eye": [
+    13.7,
+    318.74,
+    -217.05
+   ],
+   "target": [
+    47,
+    316.84,
+    -200.93
+   ],
+   "drawCalls": 356,
+   "triangles": 383153936
+  }
+ ],
+ "finished": "2026-11-12T04:57:35.234Z",
+ "passed": 48,
+ "failed": 0,
+ "ok": true
+}

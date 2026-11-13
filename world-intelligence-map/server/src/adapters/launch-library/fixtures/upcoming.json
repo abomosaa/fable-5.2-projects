@@ -1,0 +1,4912 @@
+{
+ "count": 476,
+ "next": null,
+ "previous": null,
+ "results": [
+  {
+   "id": "d66590ab-b273-47ff-b85a-608b62851b4b",
+   "url": "https://ll.thespacedevs.com/2.3.0/launches/d66590ab-b273-47ff-b85a-608b62851b4b/",
+   "name": "Long March 2D | Unknown Payload",
+   "response_mode": "normal",
+   "slug": "long-march-2d-unknown-payload",
+   "launch_designator": null,
+   "status": {
+    "id": 1,
+    "name": "Go for Launch",
+    "abbrev": "Go"
+   },
+   "last_updated": "2026-11-05T06:42:19Z",
+   "net": "2026-11-11T11:40:00Z",
+   "net_precision": {
+    "id": 2,
+    "name": "Hour",
+    "abbrev": "HR"
+   },
+   "window_end": "2026-11-11T12:05:00Z",
+   "window_start": "2026-11-11T11:32:00Z",
+   "probability": null,
+   "weather_concerns": null,
+   "failreason": "",
+   "hashtag": null,
+   "launch_service_provider": {
+    "response_mode": "list",
+    "id": 88,
+    "url": "https://ll.thespacedevs.com/2.3.0/agencies/88/",
+    "name": "China Aerospace Science and Technology Corporation",
+    "abbrev": "CASC",
+    "type": {
+     "id": 1,
+     "name": "Government"
+    }
+   },
+   "rocket": {
+    "id": 9295,
+    "configuration": {
+     "response_mode": "list",
+     "id": 17,
+     "url": "https://ll.thespacedevs.com/2.3.0/launcher_configurations/17/",
+     "name": "Long March 2D",
+     "full_name": "Long March 2D",
+     "variant": "D"
+    }
+   },
+   "mission": {
+    "id": 7894,
+    "name": "Unknown Payload",
+    "type": "Unknown",
+    "orbit": {
+     "id": 25,
+     "name": "Unknown",
+     "abbrev": "N/A"
+    },
+    "description": "Details TBD."
+   },
+   "pad": {
+    "id": 22,
+    "url": "https://ll.thespacedevs.com/2.3.0/pads/22/",
+    "active": true,
+    "name": "Launch Area 94 (SLS-2 / 603)",
+    "info_url": null,
+    "wiki_url": "https://en.wikipedia.org/wiki/Jiuquan_Launch_Area_4",
+    "map_url": "https://www.google.com/maps?q=40.960482,100.298059",
+    "latitude": 40.960482,
+    "longitude": 100.298059,
+    "country": {
+     "id": 6,
+     "name": "China",
+     "alpha_2_code": "CN",
+     "alpha_3_code": "CHN",
+     "nationality_name": "Chinese",
+     "nationality_name_composed": "Sino"
+    },
+    "total_launch_count": 139,
+    "orbital_launch_attempt_count": 139,
+    "fastest_turnaround": "P10DT18H22M",
+    "location": {
+     "response_mode": "normal",
+     "id": 17,
+     "url": "https://ll.thespacedevs.com/2.3.0/locations/17/",
+     "name": "Jiuquan Satellite Launch Center, People's Republic of China",
+     "active": true,
+     "country": {
+      "id": 6,
+      "name": "China",
+      "alpha_2_code": "CN",
+      "alpha_3_code": "CHN",
+      "nationality_name": "Chinese",
+      "nationality_name_composed": "Sino"
+     },
+     "longitude": 100.291111,
+     "latitude": 40.958056,
+     "total_launch_count": 302,
+     "total_landing_count": 3
+    }
+   },
+   "webcast_live": false,
+   "orbital_launch_attempt_count": 7437,
+   "location_launch_attempt_count": 303,
+   "pad_launch_attempt_count": 140,
+   "agency_launch_attempt_count": 624,
+   "orbital_launch_attempt_count_year": 264,
+   "location_launch_attempt_count_year": 30,
+   "pad_launch_attempt_count_year": 8,
+   "agency_launch_attempt_count_year": 54
+  },
+  {
+   "id": "6aa7b90b-e5ed-45d8-a52e-04fbf399d178",
+   "url": "https://ll.thespacedevs.com/2.3.0/launches/6aa7b90b-e5ed-45d8-a52e-04fbf399d178/",
+   "name": "Falcon 9 Block 5 | USSF-627",
+   "response_mode": "normal",
+   "slug": "falcon-9-block-5-ussf-627",
+   "launch_designator": null,
+   "status": {
+    "id": 1,
+    "name": "Go for Launch",
+    "abbrev": "Go"
+   },
+   "last_updated": "2026-11-10T16:25:24Z",
+   "net": "2026-11-12T02:35:00Z",
+   "net_precision": {
+    "id": 1,
+    "name": "Minute",
+    "abbrev": "MIN"
+   },
+   "window_end": "2026-11-12T06:35:00Z",
+   "window_start": "2026-11-12T02:35:00Z",
+   "probability": null,
+   "weather_concerns": null,
+   "failreason": "",
+   "hashtag": null,
+   "launch_service_provider": {
+    "response_mode": "list",
+    "id": 121,
+    "url": "https://ll.thespacedevs.com/2.3.0/agencies/121/",
+    "name": "SpaceX",
+    "abbrev": "SpX",
+    "type": {
+     "id": 3,
+     "name": "Commercial"
+    }
+   },
+   "rocket": {
+    "id": 9288,
+    "configuration": {
+     "response_mode": "list",
+     "id": 164,
+     "url": "https://ll.thespacedevs.com/2.3.0/launcher_configurations/164/",
+     "name": "Falcon 9",
+     "full_name": "Falcon 9 Block 5",
+     "variant": "Block 5"
+    }
+   },
+   "mission": {
+    "id": 7887,
+    "name": "USSF-627",
+    "type": "Government/Top Secret",
+    "orbit": {
+     "id": 8,
+     "name": "Low Earth Orbit",
+     "abbrev": "LEO"
+    },
+    "description": "A classified mission for the United States Space Force. It is possibly a batch of classified LEO satellites based on SpaceX\u2019s Starshield satellite bus, based on locations of rocket stage drop zones being exact fits with previous Starlink Group 15 launches."
+   },
+   "pad": {
+    "id": 16,
+    "url": "https://ll.thespacedevs.com/2.3.0/pads/16/",
+    "active": true,
+    "name": "Space Launch Complex 4E",
+    "info_url": null,
+    "wiki_url": "https://en.wikipedia.org/wiki/Vandenberg_Space_Launch_Complex_4#SLC-4E",
+    "map_url": "https://www.google.com/maps?q=34.632,-120.611",
+    "latitude": 34.632,
+    "longitude": -120.611,
+    "country": {
+     "id": 2,
+     "name": "United States of America",
+     "alpha_2_code": "US",
+     "alpha_3_code": "USA",
+     "nationality_name": "American",
+     "nationality_name_composed": "Americano"
+    },
+    "total_launch_count": 307,
+    "orbital_launch_attempt_count": 307,
+    "fastest_turnaround": "P2DT7H48M21S",
+    "location": {
+     "response_mode": "normal",
+     "id": 11,
+     "url": "https://ll.thespacedevs.com/2.3.0/locations/11/",
+     "name": "Vandenberg SFB, CA, USA",
+     "active": true,
+     "country": {
+      "id": 2,
+      "name": "United States of America",
+      "alpha_2_code": "US",
+      "alpha_3_code": "USA",
+      "nationality_name": "American",
+      "nationality_name_composed": "Americano"
+     },
+     "longitude": -120.52023,
+     "latitude": 34.75133,
+     "total_launch_count": 923,
+     "total_landing_count": 37
+    }
+   },
+   "webcast_live": false,
+   "orbital_launch_attempt_count": 7436,
+   "location_launch_attempt_count": 924,
+   "pad_launch_attempt_count": 308,
+   "agency_launch_attempt_count": 745,
+   "orbital_launch_attempt_count_year": 263,
+   "location_launch_attempt_count_year": 72,
+   "pad_launch_attempt_count_year": 70,
+   "agency_launch_attempt_count_year": 126
+  },
+  {
+   "id": "e2523821-9760-4cb4-ad1f-7ce2e30419bd",
+   "url": "https://ll.thespacedevs.com/2.3.0/launches/e2523821-9760-4cb4-ad1f-7ce2e30419bd/",
+   "name": "Kuaizhou 11 | Unknown Payload",
+   "response_mode": "normal",
+   "slug": "kuaizhou-11-unknown-payload",
+   "launch_designator": null,
+   "status": {
+    "id": 1,
+    "name": "Go for Launch",
+    "abbrev": "Go"
+   },
+   "last_updated": "2026-11-09T16:25:42Z",
+   "net": "2026-11-12T19:50:00Z",
+   "net_precision": {
+    "id": 2,
+    "name": "Hour",
+    "abbrev": "HR"
+   },
+   "window_end": "2026-11-12T20:29:00Z",
+   "window_start": "2026-11-12T19:44:00Z",
+   "probability": null,
+   "weather_concerns": null,
+   "failreason": "",
+   "hashtag": null,
+   "launch_service_provider": {
+    "response_mode": "list",
+    "id": 194,
+    "url": "https://ll.thespacedevs.com/2.3.0/agencies/194/",
+    "name": "ExPace",
+    "abbrev": "EP",
+    "type": {
+     "id": 3,
+     "name": "Commercial"
+    }
+   },
+   "rocket": {
+    "id": 9297,
+    "configuration": {
+     "response_mode": "list",
+     "id": 194,
+     "url": "https://ll.thespacedevs.com/2.3.0/launcher_configurations/194/",
+     "name": "Kuaizhou 11",
+     "full_name": "Kuaizhou 11",
+     "variant": "11"
+    }
+   },
+   "mission": {
+    "id": 7896,
+    "name": "Unknown Payload",
+    "type": "Unknown",
+    "orbit": {
+     "id": 25,
+     "name": "Unknown",
+     "abbrev": "N/A"
+    },
+    "description": "Details TBD."
+   },
+   "pad": {
+    "id": 21,
+    "url": "https://ll.thespacedevs.com/2.3.0/pads/21/",
+    "active": true,
+    "name": "Launch Area 95A",
+    "info_url": null,
+    "wiki_url": "https://en.wikipedia.org/wiki/Jiuquan_Satellite_Launch_Center",
+    "map_url": "https://www.google.com/maps?q=40.969117,100.343333",
+    "latitude": 40.969117,
+    "longitude": 100.343333,
+    "country": {
+     "id": 6,
+     "name": "China",
+     "alpha_2_code": "CN",
+     "alpha_3_code": "CHN",
+     "nationality_name": "Chinese",
+     "nationality_name_composed": "Sino"
+    },
+    "total_launch_count": 69,
+    "orbital_launch_attempt_count": 69,
+    "fastest_turnaround": "P2DT1H47M",
+    "location": {
+     "response_mode": "normal",
+     "id": 17,
+     "url": "https://ll.thespacedevs.com/2.3.0/locations/17/",
+     "name": "Jiuquan Satellite Launch Center, People's Republic of China",
+     "active": true,
+     "country": {
+      "id": 6,
+      "name": "China",
+      "alpha_2_code": "CN",
+      "alpha_3_code": "CHN",
+      "nationality_name": "Chinese",
+      "nationality_name_composed": "Sino"
+     },
+     "longitude": 100.291111,
+     "latitude": 40.958056,
+     "total_launch_count": 302,
+     "total_landing_count": 3
+    }
+   },
+   "webcast_live": false,
+   "orbital_launch_attempt_count": 7438,
+   "location_launch_attempt_count": 304,
+   "pad_launch_attempt_count": 70,
+   "agency_launch_attempt_count": 36,
+   "orbital_launch_attempt_count_year": 265,
+   "location_launch_attempt_count_year": 31,
+   "pad_launch_attempt_count_year": 6,
+   "agency_launch_attempt_count_year": 4
+  },
+  {
+   "id": "9e27a1ed-e81a-4918-b32b-0380cf3a9f8f",
+   "url": "https://ll.thespacedevs.com/2.3.0/launches/9e27a1ed-e81a-4918-b32b-0380cf3a9f8f/",
+   "name": "Mir | Demo Flight",
+   "response_mode": "normal",
+   "slug": "mir-demo-flight",
+   "launch_designator": null,
+   "status": {
+    "id": 1,
+    "name": "Go for Launch",
+    "abbrev": "Go"
+   },
+   "last_updated": "2026-11-10T14:07:18Z",
+   "net": "2026-11-13T05:00:00Z",
+   "net_precision": {
+    "id": 2,
+    "name": "Hour",
+    "abbrev": "HR"
+   },
+   "window_end": "2026-11-13T09:00:00Z",
+   "window_start": "2026-11-13T05:00:00Z",
+   "probability": null,
+   "weather_concerns": null,
+   "failreason": "",
+   "hashtag": null,
+   "launch_service_provider": {
+    "response_mode": "list",
+    "id": 1079,
+    "url": "https://ll.thespacedevs.com/2.3.0/agencies/1079/",
+    "name": "Agency for Defense Development",
+    "abbrev": "ADD",
+    "type": {
+     "id": 1,
+     "name": "Government"
+    }
+   },
+   "rocket": {
+    "id": 8972,
+    "configuration": {
+     "response_mode": "list",
+     "id": 502,
+     "url": "https://ll.thespacedevs.com/2.3.0/launcher_configurations/502/",
+     "name": "Mir",
+     "full_name": "Mir",
+     "variant": ""
+    }
+   },
+   "mission": {
+    "id": 7567,
+    "name": "Demo Flight",
+    "type": "Test Flight",
+    "orbit": {
+     "id": 8,
+     "name": "Low Earth Orbit",
+     "abbrev": "LEO"
+    },
+    "description": "Note: Launch vehicle name is provisional.\r\n\r\nFirst orbital full version launch of the South Korean military small satellite launch vehicle, after 2 sub-orbital tests of individual stages on 30 March and 30 December 2022, and 1 orbital test flight without the 2nd stage on 4 December 2023. Details TBD."
+   },
+   "pad": {
+    "id": 216,
+    "url": "https://ll.thespacedevs.com/2.3.0/pads/216/",
+    "active": true,
+    "name": "ADD Offshore launch platform",
+    "info_url": null,
+    "wiki_url": null,
+    "map_url": null,
+    "latitude": 33.216667,
+    "longitude": 126.366667,
+    "country": {
+     "id": 35,
+     "name": "South Korea",
+     "alpha_2_code": "KR",
+     "alpha_3_code": "KOR",
+     "nationality_name": "South Korean",
+     "nationality_name_composed": "South Korean"
+    },
+    "total_launch_count": 1,
+    "orbital_launch_attempt_count": 1,
+    "fastest_turnaround": null,
+    "location": {
+     "response_mode": "normal",
+     "id": 3,
+     "url": "https://ll.thespacedevs.com/2.3.0/locations/3/",
+     "name": "Sea Launch",
+     "active": true,
+     "country": {
+      "id": 17,
+      "name": "Unknown",
+      "alpha_2_code": "??",
+      "alpha_3_code": "???",
+      "nationality_name": "Earthling",
+      "nationality_name_composed": "Earthling"
+     },
+     "longitude": null,
+     "latitude": null,
+     "total_launch_count": 40,
+     "total_landing_count": 0
+    }
+   },
+   "webcast_live": false,
+   "orbital_launch_attempt_count": 7438,
+   "location_launch_attempt_count": 41,
+   "pad_launch_attempt_count": 2,
+   "agency_launch_attempt_count": 2,
+   "orbital_launch_attempt_count_year": 265,
+   "location_launch_attempt_count_year": 1,
+   "pad_launch_attempt_count_year": 1,
+   "agency_launch_attempt_count_year": 1
+  },
+  {
+   "id": "ef9850ad-1096-425b-9d27-f7bbd186e61a",
+   "url": "https://ll.thespacedevs.com/2.3.0/launches/ef9850ad-1096-425b-9d27-f7bbd186e61a/",
+   "name": "Vulcan VC6L | Amazon Leo (LV-01)",
+   "response_mode": "normal",
+   "slug": "vulcan-vc6l-amazon-leo-lv-01",
+   "launch_designator": null,
+   "status": {
+    "id": 1,
+    "name": "Go for Launch",
+    "abbrev": "Go"
+   },
+   "last_updated": "2026-11-06T14:36:43Z",
+   "net": "2026-11-13T17:54:00Z",
+   "net_precision": {
+    "id": 1,
+    "name": "Minute",
+    "abbrev": "MIN"
+   },
+   "window_end": "2026-11-13T18:24:00Z",
+   "window_start": "2026-11-13T17:54:00Z",
+   "probability": null,
+   "weather_concerns": null,
+   "failreason": "",
+   "hashtag": null,
+   "launch_service_provider": {
+    "response_mode": "list",
+    "id": 124,
+    "url": "https://ll.thespacedevs.com/2.3.0/agencies/124/",
+    "name": "United Launch Alliance",
+    "abbrev": "ULA",
+    "type": {
+     "id": 3,
+     "name": "Commercial"
+    }
+   },
+   "rocket": {
+    "id": 2836,
+    "configuration": {
+     "response_mode": "list",
+     "id": 479,
+     "url": "https://ll.thespacedevs.com/2.3.0/launcher_configurations/479/",
+     "name": "Vulcan VC6L",
+     "full_name": "Vulcan VC6L",
+     "variant": "VC6L"
+    }
+   },
+   "mission": {
+    "id": 6003,
+    "name": "Amazon Leo (LV-01)",
+    "type": "Communications",
+    "orbit": {
+     "id": 8,
+     "name": "Low Earth Orbit",
+     "abbrev": "LEO"
+    },
+    "description": "Amazon Leo, formerly known as Project Kuiper, is a mega constellation of satellites in Low Earth Orbit that will offer broadband internet access, this constellation will be managed by Kuiper Systems LLC, a subsidiary of Amazon. This constellation is planned to be composed of 3,276 satellites. The satellites are projected to be placed in 98 orbital planes in three orbital layers, one at 590 km, 610 km and 630 km altitude.\r\n\r\n45 satellites will be carried on each Vulcan launch."
+   },
+   "pad": {
+    "id": 29,
+    "url": "https://ll.thespacedevs.com/2.3.0/pads/29/",
+    "active": true,
+    "name": "Space Launch Complex 41",
+    "info_url": null,
+    "wiki_url": "https://en.wikipedia.org/wiki/Cape_Canaveral_Air_Force_Station_Space_Launch_Complex_41",
+    "map_url": "https://www.google.com/maps?q=28.58341025,-80.58303644",
+    "latitude": 28.58341025,
+    "longitude": -80.58303644,
+    "country": {
+     "id": 2,
+     "name": "United States of America",
+     "alpha_2_code": "US",
+     "alpha_3_code": "USA",
+     "nationality_name": "American",
+     "nationality_name_composed": "Americano"
+    },
+    "total_launch_count": 125,
+    "orbital_launch_attempt_count": 125,
+    "fastest_turnaround": "P15DT22H26M17S",
+    "location": {
+     "response_mode": "normal",
+     "id": 12,
+     "url": "https://ll.thespacedevs.com/2.3.0/locations/12/",
+     "name": "Cape Canaveral SFS, FL, USA",
+     "active": true,
+     "country": {
+      "id": 2,
+      "name": "United States of America",
+      "alpha_2_code": "US",
+      "alpha_3_code": "USA",
+      "nationality_name": "American",
+      "nationality_name_composed": "Americano"
+     },
+     "longitude": -80.577778,
+     "latitude": 28.488889,
+     "total_launch_count": 1132,
+     "total_landing_count": 83
+    }
+   },
+   "webcast_live": false,
+   "orbital_launch_attempt_count": 7439,
+   "location_launch_attempt_count": 1133,
+   "pad_launch_attempt_count": 126,
+   "agency_launch_attempt_count": 176,
+   "orbital_launch_attempt_count_year": 266,
+   "location_launch_attempt_count_year": 57,
+   "pad_launch_attempt_count_year": 6,
+   "agency_launch_attempt_count_year": 6
+  },
+  {
+   "id": "0f867f0c-5422-4d44-93b8-d7faaae7019b",
+   "url": "https://ll.thespacedevs.com/2.3.0/launches/0f867f0c-5422-4d44-93b8-d7faaae7019b/",
+   "name": "Starship | Starlink Group 31-2 (Starship Flight 15)",
+   "response_mode": "normal",
+   "slug": "starship-starlink-group-31-2-starship-flight-15",
+   "launch_designator": null,
+   "status": {
+    "id": 8,
+    "name": "To Be Confirmed",
+    "abbrev": "TBC"
+   },
+   "last_updated": "2026-11-09T23:06:16Z",
+   "net": "2026-11-13T22:45:00Z",
+   "net_precision": {
+    "id": 1,
+    "name": "Minute",
+    "abbrev": "MIN"
+   },
+   "window_end": "2026-11-14T00:00:00Z",
+   "window_start": "2026-11-13T22:45:00Z",
+   "probability": null,
+   "weather_concerns": null,
+   "failreason": "",
+   "hashtag": null,
+   "launch_service_provider": {
+    "response_mode": "list",
+    "id": 121,
+    "url": "https://ll.thespacedevs.com/2.3.0/agencies/121/",
+    "name": "SpaceX",
+    "abbrev": "SpX",
+    "type": {
+     "id": 3,
+     "name": "Commercial"
+    }
+   },
+   "rocket": {
+    "id": 9138,
+    "configuration": {
+     "response_mode": "list",
+     "id": 522,
+     "url": "https://ll.thespacedevs.com/2.3.0/launcher_configurations/522/",
+     "name": "Starship",
+     "full_name": "Starship V3",
+     "variant": "V3"
+    }
+   },
+   "mission": {
+    "id": 7737,
+    "name": "Starlink Group 31-2 (Starship Flight 15)",
+    "type": "Communications",
+    "orbit": {
+     "id": 8,
+     "name": "Low Earth Orbit",
+     "abbrev": "LEO"
+    },
+    "description": "15th test flight of the two-stage Starship launch vehicle and 4th flight of Starship V3. Second Starship flight to deploy satellites (a group of Starlink satellites known as Starlink Group 31-2) into stable Low Earth Orbit and first ever to attempt returning the Starship 2nd stage back to the launch site.\r\n\r\nThe ship is expected to fly at an altitude approximately 275 km above Earth and complete approximately 14 orbits around the planet for more than 22 hours, with the ship expected to attempt returning back to Starbase, Texas on its launch pad by pad arms catching.\r\n\r\nThe booster\u2019s primary test objective on Flight 15 will be executing a successful launch, ascent, stage separation, boostback burn, and landing by pad arms catching. This will also be the 1st Starship V3 booster to attempt returning to its launch site.\r\n\r\nStarship will deliver 26 Starlink V3 satellites to orbit for the second time, which aim to greatly expand the network's capacity and user speeds. Each Starlink V3 satellite will add 1 Tbps of capacity to the constellation. 3 of the satellites have been modified with a suite of cameras to scan Starship\u2019s heatshield and transmit imagery down to operators."
+   },
+   "pad": {
+    "id": 235,
+    "url": "https://ll.thespacedevs.com/2.3.0/pads/235/",
+    "active": true,
+    "name": "Orbital Launch Pad 2",
+    "info_url": null,
+    "wiki_url": "https://en.wikipedia.org/wiki/SpaceX_Starbase#Launch_site_(Orbital_Launch_Mount_(Pad_1_and_2))",
+    "map_url": "https://www.google.com/maps?q=25.996770,-97.157990",
+    "latitude": 25.99677,
+    "longitude": -97.15799,
+    "country": {
+     "id": 2,
+     "name": "United States of America",
+     "alpha_2_code": "US",
+     "alpha_3_code": "USA",
+     "nationality_name": "American",
+     "nationality_name_composed": "Americano"
+    },
+    "total_launch_count": 3,
+    "orbital_launch_attempt_count": 1,
+    "fastest_turnaround": "P63DT20M36S",
+    "location": {
+     "response_mode": "normal",
+     "id": 143,
+     "url": "https://ll.thespacedevs.com/2.3.0/locations/143/",
+     "name": "SpaceX Starbase, TX, USA",
+     "active": true,
+     "country": {
+      "id": 2,
+      "name": "United States of America",
+      "alpha_2_code": "US",
+      "alpha_3_code": "USA",
+      "nationality_name": "American",
+      "nationality_name_composed": "Americano"
+     },
+     "longitude": -97.157,
+     "latitude": 25.997,
+     "total_launch_count": 23,
+     "total_landing_count": 13
+    }
+   },
+   "webcast_live": false,
+   "orbital_launch_attempt_count": 7440,
+   "location_launch_attempt_count": 24,
+   "pad_launch_attempt_count": 4,
+   "agency_launch_attempt_count": 746,
+   "orbital_launch_attempt_count_year": 267,
+   "location_launch_attempt_count_year": 4,
+   "pad_launch_attempt_count_year": 4,
+   "agency_launch_attempt_count_year": 127
+  },
+  {
+   "id": "db3500ac-965b-4ad8-b417-cb8d8d005586",
+   "url": "https://ll.thespacedevs.com/2.3.0/launches/db3500ac-965b-4ad8-b417-cb8d8d005586/",
+   "name": "Electron | The Mountain God Rises (iQPS Launch 10)",
+   "response_mode": "normal",
+   "slug": "electron-the-mountain-god-rises-iqps-launch-10",
+   "launch_designator": null,
+   "status": {
+    "id": 1,
+    "name": "Go for Launch",
+    "abbrev": "Go"
+   },
+   "last_updated": "2026-11-06T01:54:25Z",
+   "net": "2026-11-14T05:30:00Z",
+   "net_precision": {
+    "id": 1,
+    "name": "Minute",
+    "abbrev": "MIN"
+   },
+   "window_end": "2026-11-14T05:30:00Z",
+   "window_start": "2026-11-14T05:30:00Z",
+   "probability": null,
+   "weather_concerns": null,
+   "failreason": "",
+   "hashtag": null,
+   "launch_service_provider": {
+    "response_mode": "list",
+    "id": 147,
+    "url": "https://ll.thespacedevs.com/2.3.0/agencies/147/",
+    "name": "Rocket Lab",
+    "abbrev": "RL",
+    "type": {
+     "id": 3,
+     "name": "Commercial"
+    }
+   },
+   "rocket": {
+    "id": 8762,
+    "configuration": {
+     "response_mode": "list",
+     "id": 26,
+     "url": "https://ll.thespacedevs.com/2.3.0/launcher_configurations/26/",
+     "name": "Electron",
+     "full_name": "Electron",
+     "variant": ""
+    }
+   },
+   "mission": {
+    "id": 7353,
+    "name": "The Mountain God Rises (iQPS Launch 10)",
+    "type": "Earth Science",
+    "orbit": {
+     "id": 8,
+     "name": "Low Earth Orbit",
+     "abbrev": "LEO"
+    },
+    "description": "Synthetic aperture radar Earth observation satellite for Japanese Earth imaging company iQPS."
+   },
+   "pad": {
+    "id": 210,
+    "url": "https://ll.thespacedevs.com/2.3.0/pads/210/",
+    "active": true,
+    "name": "Unknown Pad",
+    "info_url": null,
+    "wiki_url": null,
+    "map_url": null,
+    "latitude": -39.260881,
+    "longitude": 177.865826,
+    "country": {
+     "id": 51,
+     "name": "New Zealand",
+     "alpha_2_code": "NZ",
+     "alpha_3_code": "NZL",
+     "nationality_name": "Kiwi",
+     "nationality_name_composed": "Kiwi"
+    },
+    "total_launch_count": 0,
+    "orbital_launch_attempt_count": 0,
+    "fastest_turnaround": null,
+    "location": {
+     "response_mode": "normal",
+     "id": 10,
+     "url": "https://ll.thespacedevs.com/2.3.0/locations/10/",
+     "name": "Rocket Lab Launch Complex 1, Mahia Peninsula, New Zealand",
+     "active": true,
+     "country": {
+      "id": 51,
+      "name": "New Zealand",
+      "alpha_2_code": "NZ",
+      "alpha_3_code": "NZL",
+      "nationality_name": "Kiwi",
+      "nationality_name_composed": "Kiwi"
+     },
+     "longitude": 177.86586,
+     "latitude": -39.26085,
+     "total_launch_count": 86,
+     "total_landing_count": 17
+    }
+   },
+   "webcast_live": false,
+   "orbital_launch_attempt_count": 7442,
+   "location_launch_attempt_count": 87,
+   "pad_launch_attempt_count": 1,
+   "agency_launch_attempt_count": 100,
+   "orbital_launch_attempt_count_year": 269,
+   "location_launch_attempt_count_year": 18,
+   "pad_launch_attempt_count_year": 1,
+   "agency_launch_attempt_count_year": 21
+  },
+  {
+   "id": "76617033-4dc0-4448-b50c-e5b0d5a18539",
+   "url": "https://ll.thespacedevs.com/2.3.0/launches/76617033-4dc0-4448-b50c-e5b0d5a18539/",
+   "name": "Falcon 9 Block 5 | USSF-317",
+   "response_mode": "normal",
+   "slug": "falcon-9-block-5-ussf-317",
+   "launch_designator": null,
+   "status": {
+    "id": 1,
+    "name": "Go for Launch",
+    "abbrev": "Go"
+   },
+   "last_updated": "2026-11-10T16:25:25Z",
+   "net": "2026-11-15T03:55:00Z",
+   "net_precision": {
+    "id": 1,
+    "name": "Minute",
+    "abbrev": "MIN"
+   },
+   "window_end": "2026-11-15T07:55:00Z",
+   "window_start": "2026-11-15T03:55:00Z",
+   "probability": null,
+   "weather_concerns": null,
+   "failreason": "",
+   "hashtag": null,
+   "launch_service_provider": {
+    "response_mode": "list",
+    "id": 121,
+    "url": "https://ll.thespacedevs.com/2.3.0/agencies/121/",
+    "name": "SpaceX",
+    "abbrev": "SpX",
+    "type": {
+     "id": 3,
+     "name": "Commercial"
+    }
+   },
+   "rocket": {
+    "id": 9294,
+    "configuration": {
+     "response_mode": "list",
+     "id": 164,
+     "url": "https://ll.thespacedevs.com/2.3.0/launcher_configurations/164/",
+     "name": "Falcon 9",
+     "full_name": "Falcon 9 Block 5",
+     "variant": "Block 5"
+    }
+   },
+   "mission": {
+    "id": 7893,
+    "name": "USSF-317",
+    "type": "Government/Top Secret",
+    "orbit": {
+     "id": 8,
+     "name": "Low Earth Orbit",
+     "abbrev": "LEO"
+    },
+    "description": "A classified mission for the United States Space Force. It is possibly a batch of classified LEO satellites based on SpaceX\u2019s Starshield satellite bus, based on locations of rocket stage drop zones being exact fits with previous Starlink Group 15 launches."
+   },
+   "pad": {
+    "id": 16,
+    "url": "https://ll.thespacedevs.com/2.3.0/pads/16/",
+    "active": true,
+    "name": "Space Launch Complex 4E",
+    "info_url": null,
+    "wiki_url": "https://en.wikipedia.org/wiki/Vandenberg_Space_Launch_Complex_4#SLC-4E",
+    "map_url": "https://www.google.com/maps?q=34.632,-120.611",
+    "latitude": 34.632,
+    "longitude": -120.611,
+    "country": {
+     "id": 2,
+     "name": "United States of America",
+     "alpha_2_code": "US",
+     "alpha_3_code": "USA",
+     "nationality_name": "American",
+     "nationality_name_composed": "Americano"
+    },
+    "total_launch_count": 307,
+    "orbital_launch_attempt_count": 307,
+    "fastest_turnaround": "P2DT7H48M21S",
+    "location": {
+     "response_mode": "normal",
+     "id": 11,
+     "url": "https://ll.thespacedevs.com/2.3.0/locations/11/",
+     "name": "Vandenberg SFB, CA, USA",
+     "active": true,
+     "country": {
+      "id": 2,
+      "name": "United States of America",
+      "alpha_2_code": "US",
+      "alpha_3_code": "USA",
+      "nationality_name": "American",
+      "nationality_name_composed": "Americano"
+     },
+     "longitude": -120.52023,
+     "latitude": 34.75133,
+     "total_launch_count": 923,
+     "total_landing_count": 37
+    }
+   },
+   "webcast_live": false,
+   "orbital_launch_attempt_count": 7442,
+   "location_launch_attempt_count": 925,
+   "pad_launch_attempt_count": 309,
+   "agency_launch_attempt_count": 747,
+   "orbital_launch_attempt_count_year": 269,
+   "location_launch_attempt_count_year": 73,
+   "pad_launch_attempt_count_year": 71,
+   "agency_launch_attempt_count_year": 128
+  },
+  {
+   "id": "460d9db7-eaf6-4cd9-b095-cff433534c09",
+   "url": "https://ll.thespacedevs.com/2.3.0/launches/460d9db7-eaf6-4cd9-b095-cff433534c09/",
+   "name": "Falcon 9 Block 5 | USSF-266",
+   "response_mode": "normal",
+   "slug": "falcon-9-block-5-ussf-266",
+   "launch_designator": null,
+   "status": {
+    "id": 1,
+    "name": "Go for Launch",
+    "abbrev": "Go"
+   },
+   "last_updated": "2026-11-10T16:26:25Z",
+   "net": "2026-11-18T16:49:00Z",
+   "net_precision": {
+    "id": 1,
+    "name": "Minute",
+    "abbrev": "MIN"
+   },
+   "window_end": "2026-11-18T20:49:00Z",
+   "window_start": "2026-11-18T16:49:00Z",
+   "probability": null,
+   "weather_concerns": null,
+   "failreason": "",
+   "hashtag": null,
+   "launch_service_provider": {
+    "response_mode": "list",
+    "id": 121,
+    "url": "https://ll.thespacedevs.com/2.3.0/agencies/121/",
+    "name": "SpaceX",
+    "abbrev": "SpX",
+    "type": {
+     "id": 3,
+     "name": "Commercial"
+    }
+   },
+   "rocket": {
+    "id": 9298,
+    "configuration": {
+     "response_mode": "list",
+     "id": 164,
+     "url": "https://ll.thespacedevs.com/2.3.0/launcher_configurations/164/",
+     "name": "Falcon 9",
+     "full_name": "Falcon 9 Block 5",
+     "variant": "Block 5"
+    }
+   },
+   "mission": {
+    "id": 7897,
+    "name": "USSF-266",
+    "type": "Government/Top Secret",
+    "orbit": {
+     "id": 13,
+     "name": "Polar Orbit",
+     "abbrev": "PO"
+    },
+    "description": "A classified mission for the United States Space Force. It is possibly a batch of classified LEO satellites based on SpaceX\u2019s Starshield satellite bus, based on locations of ascent rocket stage drop zones being fits with previous SDA Transport Layer launches."
+   },
+   "pad": {
+    "id": 16,
+    "url": "https://ll.thespacedevs.com/2.3.0/pads/16/",
+    "active": true,
+    "name": "Space Launch Complex 4E",
+    "info_url": null,
+    "wiki_url": "https://en.wikipedia.org/wiki/Vandenberg_Space_Launch_Complex_4#SLC-4E",
+    "map_url": "https://www.google.com/maps?q=34.632,-120.611",
+    "latitude": 34.632,
+    "longitude": -120.611,
+    "country": {
+     "id": 2,
+     "name": "United States of America",
+     "alpha_2_code": "US",
+     "alpha_3_code": "USA",
+     "nationality_name": "American",
+     "nationality_name_composed": "Americano"
+    },
+    "total_launch_count": 307,
+    "orbital_launch_attempt_count": 307,
+    "fastest_turnaround": "P2DT7H48M21S",
+    "location": {
+     "response_mode": "normal",
+     "id": 11,
+     "url": "https://ll.thespacedevs.com/2.3.0/locations/11/",
+     "name": "Vandenberg SFB, CA, USA",
+     "active": true,
+     "country": {
+      "id": 2,
+      "name": "United States of America",
+      "alpha_2_code": "US",
+      "alpha_3_code": "USA",
+      "nationality_name": "American",
+      "nationality_name_composed": "Americano"
+     },
+     "longitude": -120.52023,
+     "latitude": 34.75133,
+     "total_launch_count": 923,
+     "total_landing_count": 37
+    }
+   },
+   "webcast_live": false,
+   "orbital_launch_attempt_count": 7443,
+   "location_launch_attempt_count": 926,
+   "pad_launch_attempt_count": 310,
+   "agency_launch_attempt_count": 748,
+   "orbital_launch_attempt_count_year": 270,
+   "location_launch_attempt_count_year": 74,
+   "pad_launch_attempt_count_year": 72,
+   "agency_launch_attempt_count_year": 129
+  },
+  {
+   "id": "a2975167-7c6f-4403-99e1-b40df17c8140",
+   "url": "https://ll.thespacedevs.com/2.3.0/launches/a2975167-7c6f-4403-99e1-b40df17c8140/",
+   "name": "Long March 8A | SatNet LEO Group TBD?",
+   "response_mode": "normal",
+   "slug": "long-march-8a-satnet-leo-group-tbd",
+   "launch_designator": null,
+   "status": {
+    "id": 8,
+    "name": "To Be Confirmed",
+    "abbrev": "TBC"
+   },
+   "last_updated": "2026-10-30T13:59:24Z",
+   "net": "2026-11-20T11:00:00Z",
+   "net_precision": {
+    "id": 2,
+    "name": "Hour",
+    "abbrev": "HR"
+   },
+   "window_end": "2026-11-20T14:00:00Z",
+   "window_start": "2026-11-20T11:00:00Z",
+   "probability": null,
+   "weather_concerns": null,
+   "failreason": "",
+   "hashtag": null,
+   "launch_service_provider": {
+    "response_mode": "list",
+    "id": 88,
+    "url": "https://ll.thespacedevs.com/2.3.0/agencies/88/",
+    "name": "China Aerospace Science and Technology Corporation",
+    "abbrev": "CASC",
+    "type": {
+     "id": 1,
+     "name": "Government"
+    }
+   },
+   "rocket": {
+    "id": 9292,
+    "configuration": {
+     "response_mode": "list",
+     "id": 518,
+     "url": "https://ll.thespacedevs.com/2.3.0/launcher_configurations/518/",
+     "name": "Long March 8A",
+     "full_name": "Long March 8A",
+     "variant": "A"
+    }
+   },
+   "mission": {
+    "id": 7891,
+    "name": "SatNet LEO Group TBD?",
+    "type": "Communications",
+    "orbit": {
+     "id": 8,
+     "name": "Low Earth Orbit",
+     "abbrev": "LEO"
+    },
+    "description": "A batch of 9 Low Earth Orbit communication satellites for the Chinese state owned SatNet constellation operated by the China Satellite Network Group.\r\n\r\nThe constellation will eventually consists of 13000 satellites."
+   },
+   "pad": {
+    "id": 218,
+    "url": "https://ll.thespacedevs.com/2.3.0/pads/218/",
+    "active": true,
+    "name": "Commercial LC-1",
+    "info_url": null,
+    "wiki_url": "https://en.wikipedia.org/wiki/Wenchang_Commercial_Space_Launch_Site",
+    "map_url": "https://www.google.com/maps?q=19.597275,110.930753",
+    "latitude": 19.597275,
+    "longitude": 110.930753,
+    "country": {
+     "id": 6,
+     "name": "China",
+     "alpha_2_code": "CN",
+     "alpha_3_code": "CHN",
+     "nationality_name": "Chinese",
+     "nationality_name_composed": "Sino"
+    },
+    "total_launch_count": 15,
+    "orbital_launch_attempt_count": 15,
+    "fastest_turnaround": "P18DT15H52M",
+    "location": {
+     "response_mode": "normal",
+     "id": 8,
+     "url": "https://ll.thespacedevs.com/2.3.0/locations/8/",
+     "name": "Wenchang Space Launch Site, People's Republic of China",
+     "active": true,
+     "country": {
+      "id": 6,
+      "name": "China",
+      "alpha_2_code": "CN",
+      "alpha_3_code": "CHN",
+      "nationality_name": "Chinese",
+      "nationality_name_composed": "Sino"
+     },
+     "longitude": 110.951133,
+     "latitude": 19.614492,
+     "total_launch_count": 77,
+     "total_landing_count": 0
+    }
+   },
+   "webcast_live": false,
+   "orbital_launch_attempt_count": 7444,
+   "location_launch_attempt_count": 78,
+   "pad_launch_attempt_count": 16,
+   "agency_launch_attempt_count": 625,
+   "orbital_launch_attempt_count_year": 271,
+   "location_launch_attempt_count_year": 23,
+   "pad_launch_attempt_count_year": 10,
+   "agency_launch_attempt_count_year": 55
+  },
+  {
+   "id": "7bdc412b-c965-4517-a131-f57a01189803",
+   "url": "https://ll.thespacedevs.com/2.3.0/launches/7bdc412b-c965-4517-a131-f57a01189803/",
+   "name": "Ariane 64 Block 2 | Amazon Leo (LE-04)",
+   "response_mode": "normal",
+   "slug": "ariane-64-block-2-amazon-leo-le-04",
+   "launch_designator": null,
+   "status": {
+    "id": 2,
+    "name": "To Be Determined",
+    "abbrev": "TBD"
+   },
+   "last_updated": "2026-10-15T05:35:18Z",
+   "net": "2026-11-23T00:00:00Z",
+   "net_precision": {
+    "id": 5,
+    "name": "Day",
+    "abbrev": "DAY"
+   },
+   "window_end": "2026-11-23T00:00:00Z",
+   "window_start": "2026-11-23T00:00:00Z",
+   "probability": null,
+   "weather_concerns": null,
+   "failreason": "",
+   "hashtag": "VA271",
+   "launch_service_provider": {
+    "response_mode": "list",
+    "id": 115,
+    "url": "https://ll.thespacedevs.com/2.3.0/agencies/115/",
+    "name": "Arianespace",
+    "abbrev": "ASA",
+    "type": {
+     "id": 3,
+     "name": "Commercial"
+    }
+   },
+   "rocket": {
+    "id": 8930,
+    "configuration": {
+     "response_mode": "list",
+     "id": 512,
+     "url": "https://ll.thespacedevs.com/2.3.0/launcher_configurations/512/",
+     "name": "Ariane 64",
+     "full_name": "Ariane 64 Block 2",
+     "variant": "64 Block 2"
+    }
+   },
+   "mission": {
+    "id": 7525,
+    "name": "Amazon Leo (LE-04)",
+    "type": "Communications",
+    "orbit": {
+     "id": 8,
+     "name": "Low Earth Orbit",
+     "abbrev": "LEO"
+    },
+    "description": "Amazon Leo, formerly known as Project Kuiper, is a mega constellation of satellites in Low Earth Orbit that will offer broadband internet access, this constellation will be managed by Kuiper Systems LLC, a subsidiary of Amazon. This constellation is planned to be composed of 3,276 satellites. The satellites are projected to be placed in 98 orbital planes in three orbital layers, one at 590 km, 610 km and 630 km altitude.\r\n\r\n35-40 satellites will be carried on each Ariane 6 launch."
+   },
+   "pad": {
+    "id": 67,
+    "url": "https://ll.thespacedevs.com/2.3.0/pads/67/",
+    "active": true,
+    "name": "Ariane Launch Area 4",
+    "info_url": null,
+    "wiki_url": "https://en.wikipedia.org/wiki/Guiana_Space_Centre",
+    "map_url": "https://www.google.com/maps?q=5.256319,-52.786838",
+    "latitude": 5.256319,
+    "longitude": -52.786838,
+    "country": {
+     "id": 50,
+     "name": "French Guiana",
+     "alpha_2_code": "GF",
+     "alpha_3_code": "GUF",
+     "nationality_name": "French Guianan",
+     "nationality_name_composed": "Franco-Guiano"
+    },
+    "total_launch_count": 9,
+    "orbital_launch_attempt_count": 9,
+    "fastest_turnaround": "P42DT7H59M41S",
+    "location": {
+     "response_mode": "normal",
+     "id": 13,
+     "url": "https://ll.thespacedevs.com/2.3.0/locations/13/",
+     "name": "Guiana Space Centre, French Guiana",
+     "active": true,
+     "country": {
+      "id": 50,
+      "name": "French Guiana",
+      "alpha_2_code": "GF",
+      "alpha_3_code": "GUF",
+      "nationality_name": "French Guianan",
+      "nationality_name_composed": "Franco-Guiano"
+     },
+     "longitude": -52.6903,
+     "latitude": 5.169,
+     "total_launch_count": 336,
+     "total_landing_count": 0
+    }
+   },
+   "webcast_live": false,
+   "orbital_launch_attempt_count": 7445,
+   "location_launch_attempt_count": 337,
+   "pad_launch_attempt_count": 10,
+   "agency_launch_attempt_count": 329,
+   "orbital_launch_attempt_count_year": 272,
+   "location_launch_attempt_count_year": 7,
+   "pad_launch_attempt_count_year": 5,
+   "agency_launch_attempt_count_year": 5
+  },
+  {
+   "id": "8dd5de11-831b-445f-86f0-bffefe0550d9",
+   "url": "https://ll.thespacedevs.com/2.3.0/launches/8dd5de11-831b-445f-86f0-bffefe0550d9/",
+   "name": "Soyuz 2.1b | Progress MS-36 (97P)",
+   "response_mode": "normal",
+   "slug": "soyuz-21b-progress-ms-36-97p",
+   "launch_designator": null,
+   "status": {
+    "id": 8,
+    "name": "To Be Confirmed",
+    "abbrev": "TBC"
+   },
+   "last_updated": "2026-06-08T21:46:36Z",
+   "net": "2026-11-24T05:03:00Z",
+   "net_precision": {
+    "id": 1,
+    "name": "Minute",
+    "abbrev": "MIN"
+   },
+   "window_end": "2026-11-24T05:03:00Z",
+   "window_start": "2026-11-24T05:03:00Z",
+   "probability": null,
+   "weather_concerns": null,
+   "failreason": "",
+   "hashtag": null,
+   "launch_service_provider": {
+    "response_mode": "list",
+    "id": 63,
+    "url": "https://ll.thespacedevs.com/2.3.0/agencies/63/",
+    "name": "Russian Federal Space Agency (ROSCOSMOS)",
+    "abbrev": "RFSA",
+    "type": {
+     "id": 1,
+     "name": "Government"
+    }
+   },
+   "rocket": {
+    "id": 9014,
+    "configuration": {
+     "response_mode": "list",
+     "id": 15,
+     "url": "https://ll.thespacedevs.com/2.3.0/launcher_configurations/15/",
+     "name": "Soyuz 2.1b",
+     "full_name": "Soyuz 2.1b",
+     "variant": ""
+    }
+   },
+   "mission": {
+    "id": 7609,
+    "name": "Progress MS-36 (97P)",
+    "type": "Resupply",
+    "orbit": {
+     "id": 8,
+     "name": "Low Earth Orbit",
+     "abbrev": "LEO"
+    },
+    "description": "Progress resupply mission to the International Space Station."
+   },
+   "pad": {
+    "id": 20,
+    "url": "https://ll.thespacedevs.com/2.3.0/pads/20/",
+    "active": true,
+    "name": "31/6",
+    "info_url": null,
+    "wiki_url": "https://en.wikipedia.org/wiki/Baikonur_Cosmodrome_Site_31",
+    "map_url": "https://www.google.com/maps?q=45.996034,63.564003",
+    "latitude": 45.996034,
+    "longitude": 63.564003,
+    "country": {
+     "id": 44,
+     "name": "Kazakhstan",
+     "alpha_2_code": "KZ",
+     "alpha_3_code": "KAZ",
+     "nationality_name": "Kazakh",
+     "nationality_name_composed": "Kazakhstani"
+    },
+    "total_launch_count": 430,
+    "orbital_launch_attempt_count": 430,
+    "fastest_turnaround": "P1DT23H9M9S",
+    "location": {
+     "response_mode": "normal",
+     "id": 15,
+     "url": "https://ll.thespacedevs.com/2.3.0/locations/15/",
+     "name": "Baikonur Cosmodrome, Republic of Kazakhstan",
+     "active": true,
+     "country": {
+      "id": 44,
+      "name": "Kazakhstan",
+      "alpha_2_code": "KZ",
+      "alpha_3_code": "KAZ",
+      "nationality_name": "Kazakh",
+      "nationality_name_composed": "Kazakhstani"
+     },
+     "longitude": 63.305,
+     "latitude": 45.965,
+     "total_launch_count": 1565,
+     "total_landing_count": 0
+    }
+   },
+   "webcast_live": false,
+   "orbital_launch_attempt_count": 7446,
+   "location_launch_attempt_count": 1566,
+   "pad_launch_attempt_count": 431,
+   "agency_launch_attempt_count": 345,
+   "orbital_launch_attempt_count_year": 273,
+   "location_launch_attempt_count_year": 7,
+   "pad_launch_attempt_count_year": 5,
+   "agency_launch_attempt_count_year": 7
+  },
+  {
+   "id": "5ce59e3a-c343-430f-ae4e-e608ba536754",
+   "url": "https://ll.thespacedevs.com/2.3.0/launches/5ce59e3a-c343-430f-ae4e-e608ba536754/",
+   "name": "Long March 12 | SatNet LEO Group TBD?",
+   "response_mode": "normal",
+   "slug": "long-march-12-satnet-leo-group-tbd",
+   "launch_designator": null,
+   "status": {
+    "id": 8,
+    "name": "To Be Confirmed",
+    "abbrev": "TBC"
+   },
+   "last_updated": "2026-10-30T13:59:29Z",
+   "net": "2026-11-24T07:00:00Z",
+   "net_precision": {
+    "id": 2,
+    "name": "Hour",
+    "abbrev": "HR"
+   },
+   "window_end": "2026-11-24T10:00:00Z",
+   "window_start": "2026-11-24T07:00:00Z",
+   "probability": null,
+   "weather_concerns": null,
+   "failreason": "",
+   "hashtag": null,
+   "launch_service_provider": {
+    "response_mode": "list",
+    "id": 88,
+    "url": "https://ll.thespacedevs.com/2.3.0/agencies/88/",
+    "name": "China Aerospace Science and Technology Corporation",
+    "abbrev": "CASC",
+    "type": {
+     "id": 1,
+     "name": "Government"
+    }
+   },
+   "rocket": {
+    "id": 9293,
+    "configuration": {
+     "response_mode": "list",
+     "id": 517,
+     "url": "https://ll.thespacedevs.com/2.3.0/launcher_configurations/517/",
+     "name": "Long March 12",
+     "full_name": "Long March 12",
+     "variant": ""
+    }
+   },
+   "mission": {
+    "id": 7892,
+    "name": "SatNet LEO Group TBD?",
+    "type": "Communications",
+    "orbit": {
+     "id": 8,
+     "name": "Low Earth Orbit",
+     "abbrev": "LEO"
+    },
+    "description": "A batch of 9 Low Earth Orbit communication satellites for the Chinese state owned SatNet constellation operated by the China Satellite Network Group.\r\n\r\nThe constellation will eventually consists of 13000 satellites."
+   },
+   "pad": {
+    "id": 219,
+    "url": "https://ll.thespacedevs.com/2.3.0/pads/219/",
+    "active": true,
+    "name": "Commercial LC-2",
+    "info_url": null,
+    "wiki_url": "https://en.wikipedia.org/wiki/Wenchang_Commercial_Space_Launch_Site",
+    "map_url": "https://www.google.com/maps?q=19.59755,110.936481",
+    "latitude": 19.59755,
+    "longitude": 110.936481,
+    "country": {
+     "id": 6,
+     "name": "China",
+     "alpha_2_code": "CN",
+     "alpha_3_code": "CHN",
+     "nationality_name": "Chinese",
+     "nationality_name_composed": "Sino"
+    },
+    "total_launch_count": 11,
+    "orbital_launch_attempt_count": 11,
+    "fastest_turnaround": "P22DT18H55M",
+    "location": {
+     "response_mode": "normal",
+     "id": 8,
+     "url": "https://ll.thespacedevs.com/2.3.0/locations/8/",
+     "name": "Wenchang Space Launch Site, People's Republic of China",
+     "active": true,
+     "country": {
+      "id": 6,
+      "name": "China",
+      "alpha_2_code": "CN",
+      "alpha_3_code": "CHN",
+      "nationality_name": "Chinese",
+      "nationality_name_composed": "Sino"
+     },
+     "longitude": 110.951133,
+     "latitude": 19.614492,
+     "total_launch_count": 77,
+     "total_landing_count": 0
+    }
+   },
+   "webcast_live": false,
+   "orbital_launch_attempt_count": 7447,
+   "location_launch_attempt_count": 79,
+   "pad_launch_attempt_count": 12,
+   "agency_launch_attempt_count": 626,
+   "orbital_launch_attempt_count_year": 274,
+   "location_launch_attempt_count_year": 24,
+   "pad_launch_attempt_count_year": 8,
+   "agency_launch_attempt_count_year": 56
+  },
+  {
+   "id": "c9605b67-8a53-4239-a8ae-577fe3b79799",
+   "url": "https://ll.thespacedevs.com/2.3.0/launches/c9605b67-8a53-4239-a8ae-577fe3b79799/",
+   "name": "Long March 2F/G | Shenzhou 24",
+   "response_mode": "normal",
+   "slug": "long-march-2fg-shenzhou-24",
+   "launch_designator": null,
+   "status": {
+    "id": 2,
+    "name": "To Be Determined",
+    "abbrev": "TBD"
+   },
+   "last_updated": "2026-10-24T14:00:00Z",
+   "net": "2026-11-25T00:00:00Z",
+   "net_precision": {
+    "id": 5,
+    "name": "Day",
+    "abbrev": "DAY"
+   },
+   "window_end": "2026-11-25T00:00:00Z",
+   "window_start": "2026-11-25T00:00:00Z",
+   "probability": null,
+   "weather_concerns": null,
+   "failreason": "",
+   "hashtag": null,
+   "launch_service_provider": {
+    "response_mode": "list",
+    "id": 88,
+    "url": "https://ll.thespacedevs.com/2.3.0/agencies/88/",
+    "name": "China Aerospace Science and Technology Corporation",
+    "abbrev": "CASC",
+    "type": {
+     "id": 1,
+     "name": "Government"
+    }
+   },
+   "rocket": {
+    "id": 8901,
+    "configuration": {
+     "response_mode": "list",
+     "id": 84,
+     "url": "https://ll.thespacedevs.com/2.3.0/launcher_configurations/84/",
+     "name": "Long March 2F/G",
+     "full_name": "Long March 2F/G",
+     "variant": "F/G"
+    }
+   },
+   "mission": {
+    "id": 7492,
+    "name": "Shenzhou 24",
+    "type": "Human Exploration",
+    "orbit": {
+     "id": 8,
+     "name": "Low Earth Orbit",
+     "abbrev": "LEO"
+    },
+    "description": "Shenzhou 24 will be the 24th flight of the Shenzhou program.\r\n\r\nThe first astronaut from Pakistan is expected to fly on this on a short duration mission, with another Chinese astronaut to undergo a year long expedition."
+   },
+   "pad": {
+    "id": 37,
+    "url": "https://ll.thespacedevs.com/2.3.0/pads/37/",
+    "active": true,
+    "name": "Launch Area 91 (SLS-1 / 921)",
+    "info_url": null,
+    "wiki_url": "https://en.wikipedia.org/wiki/Jiuquan_Launch_Area_4",
+    "map_url": "https://www.google.com/maps?q=40.957893,100.290944",
+    "latitude": 40.957893,
+    "longitude": 100.290944,
+    "country": {
+     "id": 6,
+     "name": "China",
+     "alpha_2_code": "CN",
+     "alpha_3_code": "CHN",
+     "nationality_name": "Chinese",
+     "nationality_name_composed": "Sino"
+    },
+    "total_launch_count": 29,
+    "orbital_launch_attempt_count": 29,
+    "fastest_turnaround": "P24DT12H26M59S",
+    "location": {
+     "response_mode": "normal",
+     "id": 17,
+     "url": "https://ll.thespacedevs.com/2.3.0/locations/17/",
+     "name": "Jiuquan Satellite Launch Center, People's Republic of China",
+     "active": true,
+     "country": {
+      "id": 6,
+      "name": "China",
+      "alpha_2_code": "CN",
+      "alpha_3_code": "CHN",
+      "nationality_name": "Chinese",
+      "nationality_name_composed": "Sino"
+     },
+     "longitude": 100.291111,
+     "latitude": 40.958056,
+     "total_launch_count": 302,
+     "total_landing_count": 3
+    }
+   },
+   "webcast_live": false,
+   "orbital_launch_attempt_count": 7448,
+   "location_launch_attempt_count": 305,
+   "pad_launch_attempt_count": 30,
+   "agency_launch_attempt_count": 627,
+   "orbital_launch_attempt_count_year": 275,
+   "location_launch_attempt_count_year": 32,
+   "pad_launch_attempt_count_year": 3,
+   "agency_launch_attempt_count_year": 57
+  },
+  {
+   "id": "dff42a2e-f047-48d7-b260-3888d3a4fe33",
+   "url": "https://ll.thespacedevs.com/2.3.0/launches/dff42a2e-f047-48d7-b260-3888d3a4fe33/",
+   "name": "Spectrum | AT-Astra and Others (Spectrum Flight 3)",
+   "response_mode": "normal",
+   "slug": "spectrum-at-astra-and-others-spectrum-flight-3",
+   "launch_designator": null,
+   "status": {
+    "id": 8,
+    "name": "To Be Confirmed",
+    "abbrev": "TBC"
+   },
+   "last_updated": "2026-10-29T21:51:22Z",
+   "net": "2026-11-26T20:00:00Z",
+   "net_precision": {
+    "id": 2,
+    "name": "Hour",
+    "abbrev": "HR"
+   },
+   "window_end": "2026-11-26T21:30:00Z",
+   "window_start": "2026-11-26T20:00:00Z",
+   "probability": null,
+   "weather_concerns": null,
+   "failreason": "",
+   "hashtag": null,
+   "launch_service_provider": {
+    "response_mode": "list",
+    "id": 1046,
+    "url": "https://ll.thespacedevs.com/2.3.0/agencies/1046/",
+    "name": "Isar Aerospace",
+    "abbrev": "ISAR",
+    "type": {
+     "id": 5,
+     "name": "Private"
+    }
+   },
+   "rocket": {
+    "id": 9076,
+    "configuration": {
+     "response_mode": "list",
+     "id": 491,
+     "url": "https://ll.thespacedevs.com/2.3.0/launcher_configurations/491/",
+     "name": "Spectrum",
+     "full_name": "Spectrum",
+     "variant": ""
+    }
+   },
+   "mission": {
+    "id": 7671,
+    "name": "AT-Astra and Others (Spectrum Flight 3)",
+    "type": "Technology",
+    "orbit": {
+     "id": 17,
+     "name": "Sun-Synchronous Orbit",
+     "abbrev": "SSO"
+    },
+    "description": "Third test flight of the Isar Spectrum launch vehicle. This launch will carry various satellites including R-Space\u2019s AT-Astra/IOD-01, which will perform in-orbit demonstrations for ENPULSION, SUNBOOSTER GmbH, and Synopsis Planet."
+   },
+   "pad": {
+    "id": 51,
+    "url": "https://ll.thespacedevs.com/2.3.0/pads/51/",
+    "active": true,
+    "name": "Orbital Launch Pad",
+    "info_url": null,
+    "wiki_url": "https://en.wikipedia.org/wiki/And%C3%B8ya_Space",
+    "map_url": "https://www.google.com/maps?q=69.1084,15.5895",
+    "latitude": 69.1084,
+    "longitude": 15.5895,
+    "country": {
+     "id": 49,
+     "name": "Norway",
+     "alpha_2_code": "NO",
+     "alpha_3_code": "NOR",
+     "nationality_name": "Norwegian",
+     "nationality_name_composed": "Norwegian"
+    },
+    "total_launch_count": 2,
+    "orbital_launch_attempt_count": 2,
+    "fastest_turnaround": "P524DT9H42M",
+    "location": {
+     "response_mode": "normal",
+     "id": 161,
+     "url": "https://ll.thespacedevs.com/2.3.0/locations/161/",
+     "name": "And\u00f8ya Spaceport",
+     "active": true,
+     "country": {
+      "id": 49,
+      "name": "Norway",
+      "alpha_2_code": "NO",
+      "alpha_3_code": "NOR",
+      "nationality_name": "Norwegian",
+      "nationality_name_composed": "Norwegian"
+     },
+     "longitude": 16.020833,
+     "latitude": 69.294167,
+     "total_launch_count": 2,
+     "total_landing_count": 0
+    }
+   },
+   "webcast_live": false,
+   "orbital_launch_attempt_count": 7449,
+   "location_launch_attempt_count": 3,
+   "pad_launch_attempt_count": 3,
+   "agency_launch_attempt_count": 3,
+   "orbital_launch_attempt_count_year": 276,
+   "location_launch_attempt_count_year": 2,
+   "pad_launch_attempt_count_year": 2,
+   "agency_launch_attempt_count_year": 2
+  },
+  {
+   "id": "d74afbc7-0de5-491c-be05-4e9c31f736ac",
+   "url": "https://ll.thespacedevs.com/2.3.0/launches/d74afbc7-0de5-491c-be05-4e9c31f736ac/",
+   "name": "Falcon 9 Block 5 | Cygnus CRS-2 NG-25",
+   "response_mode": "normal",
+   "slug": "falcon-9-block-5-cygnus-crs-2-ng-25",
+   "launch_designator": null,
+   "status": {
+    "id": 1,
+    "name": "Go for Launch",
+    "abbrev": "Go"
+   },
+   "last_updated": "2026-11-04T20:05:35Z",
+   "net": "2026-11-29T15:49:00Z",
+   "net_precision": {
+    "id": 1,
+    "name": "Minute",
+    "abbrev": "MIN"
+   },
+   "window_end": "2026-11-29T15:49:00Z",
+   "window_start": "2026-11-29T15:49:00Z",
+   "probability": null,
+   "weather_concerns": null,
+   "failreason": "",
+   "hashtag": null,
+   "launch_service_provider": {
+    "response_mode": "list",
+    "id": 121,
+    "url": "https://ll.thespacedevs.com/2.3.0/agencies/121/",
+    "name": "SpaceX",
+    "abbrev": "SpX",
+    "type": {
+     "id": 3,
+     "name": "Commercial"
+    }
+   },
+   "rocket": {
+    "id": 7754,
+    "configuration": {
+     "response_mode": "list",
+     "id": 164,
+     "url": "https://ll.thespacedevs.com/2.3.0/launcher_configurations/164/",
+     "name": "Falcon 9",
+     "full_name": "Falcon 9 Block 5",
+     "variant": "Block 5"
+    }
+   },
+   "mission": {
+    "id": 6272,
+    "name": "Cygnus CRS-2 NG-25",
+    "type": "Resupply",
+    "orbit": {
+     "id": 8,
+     "name": "Low Earth Orbit",
+     "abbrev": "LEO"
+    },
+    "description": "This is the 25th flight of the Orbital ATK's uncrewed resupply spacecraft Cygnus and its 24th flight to the International Space Station under the Commercial Resupply Services contract with NASA."
+   },
+   "pad": {
+    "id": 80,
+    "url": "https://ll.thespacedevs.com/2.3.0/pads/80/",
+    "active": true,
+    "name": "Space Launch Complex 40",
+    "info_url": null,
+    "wiki_url": "https://en.wikipedia.org/wiki/Cape_Canaveral_Air_Force_Station_Space_Launch_Complex_40",
+    "map_url": "https://www.google.com/maps?q=28.56194122,-80.57735736",
+    "latitude": 28.56194122,
+    "longitude": -80.57735736,
+    "country": {
+     "id": 2,
+     "name": "United States of America",
+     "alpha_2_code": "US",
+     "alpha_3_code": "USA",
+     "nationality_name": "American",
+     "nationality_name_composed": "Americano"
+    },
+    "total_launch_count": 404,
+    "orbital_launch_attempt_count": 404,
+    "fastest_turnaround": "P1DT21H",
+    "location": {
+     "response_mode": "normal",
+     "id": 12,
+     "url": "https://ll.thespacedevs.com/2.3.0/locations/12/",
+     "name": "Cape Canaveral SFS, FL, USA",
+     "active": true,
+     "country": {
+      "id": 2,
+      "name": "United States of America",
+      "alpha_2_code": "US",
+      "alpha_3_code": "USA",
+      "nationality_name": "American",
+      "nationality_name_composed": "Americano"
+     },
+     "longitude": -80.577778,
+     "latitude": 28.488889,
+     "total_launch_count": 1132,
+     "total_landing_count": 83
+    }
+   },
+   "webcast_live": false,
+   "orbital_launch_attempt_count": 7450,
+   "location_launch_attempt_count": 1134,
+   "pad_launch_attempt_count": 405,
+   "agency_launch_attempt_count": 749,
+   "orbital_launch_attempt_count_year": 277,
+   "location_launch_attempt_count_year": 58,
+   "pad_launch_attempt_count_year": 51,
+   "agency_launch_attempt_count_year": 130
+  },
+  {
+   "id": "56ca6058-7ccc-4ec0-b1b0-fb49f3bfee49",
+   "url": "https://ll.thespacedevs.com/2.3.0/launches/56ca6058-7ccc-4ec0-b1b0-fb49f3bfee49/",
+   "name": "Falcon 9 Block 5 | NROL-195",
+   "response_mode": "normal",
+   "slug": "falcon-9-block-5-nrol-195",
+   "launch_designator": null,
+   "status": {
+    "id": 2,
+    "name": "To Be Determined",
+    "abbrev": "TBD"
+   },
+   "last_updated": "2026-10-26T17:58:53Z",
+   "net": "2026-11-30T00:00:00Z",
+   "net_precision": {
+    "id": 7,
+    "name": "Month",
+    "abbrev": "M"
+   },
+   "window_end": "2026-11-30T00:00:00Z",
+   "window_start": "2026-11-30T00:00:00Z",
+   "probability": null,
+   "weather_concerns": null,
+   "failreason": "",
+   "hashtag": null,
+   "launch_service_provider": {
+    "response_mode": "list",
+    "id": 121,
+    "url": "https://ll.thespacedevs.com/2.3.0/agencies/121/",
+    "name": "SpaceX",
+    "abbrev": "SpX",
+    "type": {
+     "id": 3,
+     "name": "Commercial"
+    }
+   },
+   "rocket": {
+    "id": 9283,
+    "configuration": {
+     "response_mode": "list",
+     "id": 164,
+     "url": "https://ll.thespacedevs.com/2.3.0/launcher_configurations/164/",
+     "name": "Falcon 9",
+     "full_name": "Falcon 9 Block 5",
+     "variant": "Block 5"
+    }
+   },
+   "mission": {
+    "id": 7882,
+    "name": "NROL-195",
+    "type": "Government/Top Secret",
+    "orbit": {
+     "id": 8,
+     "name": "Low Earth Orbit",
+     "abbrev": "LEO"
+    },
+    "description": "Fifteenth batch of satellites for a reconnaissance satellite constellation built by SpaceX and Northrop Grumman for the National Reconnaissance Office to provide imaging and other reconnaissance capabilities."
+   },
+   "pad": {
+    "id": 16,
+    "url": "https://ll.thespacedevs.com/2.3.0/pads/16/",
+    "active": true,
+    "name": "Space Launch Complex 4E",
+    "info_url": null,
+    "wiki_url": "https://en.wikipedia.org/wiki/Vandenberg_Space_Launch_Complex_4#SLC-4E",
+    "map_url": "https://www.google.com/maps?q=34.632,-120.611",
+    "latitude": 34.632,
+    "longitude": -120.611,
+    "country": {
+     "id": 2,
+     "name": "United States of America",
+     "alpha_2_code": "US",
+     "alpha_3_code": "USA",
+     "nationality_name": "American",
+     "nationality_name_composed": "Americano"
+    },
+    "total_launch_count": 307,
+    "orbital_launch_attempt_count": 307,
+    "fastest_turnaround": "P2DT7H48M21S",
+    "location": {
+     "response_mode": "normal",
+     "id": 11,
+     "url": "https://ll.thespacedevs.com/2.3.0/locations/11/",
+     "name": "Vandenberg SFB, CA, USA",
+     "active": true,
+     "country": {
+      "id": 2,
+      "name": "United States of America",
+      "alpha_2_code": "US",
+      "alpha_3_code": "USA",
+      "nationality_name": "American",
+      "nationality_name_composed": "Americano"
+     },
+     "longitude": -120.52023,
+     "latitude": 34.75133,
+     "total_launch_count": 923,
+     "total_landing_count": 37
+    }
+   },
+   "webcast_live": false,
+   "orbital_launch_attempt_count": 7455,
+   "location_launch_attempt_count": 929,
+   "pad_launch_attempt_count": 313,
+   "agency_launch_attempt_count": 752,
+   "orbital_launch_attempt_count_year": 282,
+   "location_launch_attempt_count_year": 77,
+   "pad_launch_attempt_count_year": 75,
+   "agency_launch_attempt_count_year": 133
+  },
+  {
+   "id": "b0dc988c-ea4a-423f-81b6-6b0fbe7cc17c",
+   "url": "https://ll.thespacedevs.com/2.3.0/launches/b0dc988c-ea4a-423f-81b6-6b0fbe7cc17c/",
+   "name": "Falcon 9 Block 5 | OneWeb 21",
+   "response_mode": "normal",
+   "slug": "falcon-9-block-5-oneweb-21",
+   "launch_designator": null,
+   "status": {
+    "id": 2,
+    "name": "To Be Determined",
+    "abbrev": "TBD"
+   },
+   "last_updated": "2026-10-29T06:09:06Z",
+   "net": "2026-11-30T00:00:00Z",
+   "net_precision": {
+    "id": 7,
+    "name": "Month",
+    "abbrev": "M"
+   },
+   "window_end": "2026-11-30T00:00:00Z",
+   "window_start": "2026-11-30T00:00:00Z",
+   "probability": null,
+   "weather_concerns": null,
+   "failreason": "",
+   "hashtag": null,
+   "launch_service_provider": {
+    "response_mode": "list",
+    "id": 121,
+    "url": "https://ll.thespacedevs.com/2.3.0/agencies/121/",
+    "name": "SpaceX",
+    "abbrev": "SpX",
+    "type": {
+     "id": 3,
+     "name": "Commercial"
+    }
+   },
+   "rocket": {
+    "id": 9266,
+    "configuration": {
+     "response_mode": "list",
+     "id": 164,
+     "url": "https://ll.thespacedevs.com/2.3.0/launcher_configurations/164/",
+     "name": "Falcon 9",
+     "full_name": "Falcon 9 Block 5",
+     "variant": "Block 5"
+    }
+   },
+   "mission": {
+    "id": 7865,
+    "name": "OneWeb 21",
+    "type": "Communications",
+    "orbit": {
+     "id": 13,
+     "name": "Polar Orbit",
+     "abbrev": "PO"
+    },
+    "description": "A batch of 32 satellites for the OneWeb satellite constellation, which is intended to provide global Internet broadband service for individual consumers. The constellation is planned to have around 648 microsatellites (of which 60 are spares), around 150 kg each, operating in Ku-band from low Earth orbit."
+   },
+   "pad": {
+    "id": 16,
+    "url": "https://ll.thespacedevs.com/2.3.0/pads/16/",
+    "active": true,
+    "name": "Space Launch Complex 4E",
+    "info_url": null,
+    "wiki_url": "https://en.wikipedia.org/wiki/Vandenberg_Space_Launch_Complex_4#SLC-4E",
+    "map_url": "https://www.google.com/maps?q=34.632,-120.611",
+    "latitude": 34.632,
+    "longitude": -120.611,
+    "country": {
+     "id": 2,
+     "name": "United States of America",
+     "alpha_2_code": "US",
+     "alpha_3_code": "USA",
+     "nationality_name": "American",
+     "nationality_name_composed": "Americano"
+    },
+    "total_launch_count": 307,
+    "orbital_launch_attempt_count": 307,
+    "fastest_turnaround": "P2DT7H48M21S",
+    "location": {
+     "response_mode": "normal",
+     "id": 11,
+     "url": "https://ll.thespacedevs.com/2.3.0/locations/11/",
+     "name": "Vandenberg SFB, CA, USA",
+     "active": true,
+     "country": {
+      "id": 2,
+      "name": "United States of America",
+      "alpha_2_code": "US",
+      "alpha_3_code": "USA",
+      "nationality_name": "American",
+      "nationality_name_composed": "Americano"
+     },
+     "longitude": -120.52023,
+     "latitude": 34.75133,
+     "total_launch_count": 923,
+     "total_landing_count": 37
+    }
+   },
+   "webcast_live": false,
+   "orbital_launch_attempt_count": 7455,
+   "location_launch_attempt_count": 929,
+   "pad_launch_attempt_count": 313,
+   "agency_launch_attempt_count": 752,
+   "orbital_launch_attempt_count_year": 282,
+   "location_launch_attempt_count_year": 77,
+   "pad_launch_attempt_count_year": 75,
+   "agency_launch_attempt_count_year": 133
+  },
+  {
+   "id": "3cdb9dee-b5cb-406c-bbd1-06a219930fb7",
+   "url": "https://ll.thespacedevs.com/2.3.0/launches/3cdb9dee-b5cb-406c-bbd1-06a219930fb7/",
+   "name": "Falcon 9 Block 5 | Starlink Group 15-21",
+   "response_mode": "normal",
+   "slug": "falcon-9-block-5-starlink-group-15-21",
+   "launch_designator": null,
+   "status": {
+    "id": 2,
+    "name": "To Be Determined",
+    "abbrev": "TBD"
+   },
+   "last_updated": "2026-11-03T21:40:38Z",
+   "net": "2026-11-30T00:00:00Z",
+   "net_precision": {
+    "id": 7,
+    "name": "Month",
+    "abbrev": "M"
+   },
+   "window_end": "2026-11-30T00:00:00Z",
+   "window_start": "2026-11-30T00:00:00Z",
+   "probability": null,
+   "weather_concerns": null,
+   "failreason": "",
+   "hashtag": null,
+   "launch_service_provider": {
+    "response_mode": "list",
+    "id": 121,
+    "url": "https://ll.thespacedevs.com/2.3.0/agencies/121/",
+    "name": "SpaceX",
+    "abbrev": "SpX",
+    "type": {
+     "id": 3,
+     "name": "Commercial"
+    }
+   },
+   "rocket": {
+    "id": 9282,
+    "configuration": {
+     "response_mode": "list",
+     "id": 164,
+     "url": "https://ll.thespacedevs.com/2.3.0/launcher_configurations/164/",
+     "name": "Falcon 9",
+     "full_name": "Falcon 9 Block 5",
+     "variant": "Block 5"
+    }
+   },
+   "mission": {
+    "id": 7881,
+    "name": "Starlink Group 15-21",
+    "type": "Communications",
+    "orbit": {
+     "id": 8,
+     "name": "Low Earth Orbit",
+     "abbrev": "LEO"
+    },
+    "description": "A batch of 27 satellites for the Starlink mega-constellation - SpaceX's project for space-based Internet communication system."
+   },
+   "pad": {
+    "id": 16,
+    "url": "https://ll.thespacedevs.com/2.3.0/pads/16/",
+    "active": true,
+    "name": "Space Launch Complex 4E",
+    "info_url": null,
+    "wiki_url": "https://en.wikipedia.org/wiki/Vandenberg_Space_Launch_Complex_4#SLC-4E",
+    "map_url": "https://www.google.com/maps?q=34.632,-120.611",
+    "latitude": 34.632,
+    "longitude": -120.611,
+    "country": {
+     "id": 2,
+     "name": "United States of America",
+     "alpha_2_code": "US",
+     "alpha_3_code": "USA",
+     "nationality_name": "American",
+     "nationality_name_composed": "Americano"
+    },
+    "total_launch_count": 307,
+    "orbital_launch_attempt_count": 307,
+    "fastest_turnaround": "P2DT7H48M21S",
+    "location": {
+     "response_mode": "normal",
+     "id": 11,
+     "url": "https://ll.thespacedevs.com/2.3.0/locations/11/",
+     "name": "Vandenberg SFB, CA, USA",
+     "active": true,
+     "country": {
+      "id": 2,
+      "name": "United States of America",
+      "alpha_2_code": "US",
+      "alpha_3_code": "USA",
+      "nationality_name": "American",
+      "nationality_name_composed": "Americano"
+     },
+     "longitude": -120.52023,
+     "latitude": 34.75133,
+     "total_launch_count": 923,
+     "total_landing_count": 37
+    }
+   },
+   "webcast_live": false,
+   "orbital_launch_attempt_count": 7455,
+   "location_launch_attempt_count": 929,
+   "pad_launch_attempt_count": 313,
+   "agency_launch_attempt_count": 752,
+   "orbital_launch_attempt_count_year": 282,
+   "location_launch_attempt_count_year": 77,
+   "pad_launch_attempt_count_year": 75,
+   "agency_launch_attempt_count_year": 133
+  },
+  {
+   "id": "dfac5ab7-7017-454f-b6cf-eeed277a97b5",
+   "url": "https://ll.thespacedevs.com/2.3.0/launches/dfac5ab7-7017-454f-b6cf-eeed277a97b5/",
+   "name": "LVM-3 | Gaganyaan-1",
+   "response_mode": "normal",
+   "slug": "lvm-3-gaganyaan-1",
+   "launch_designator": null,
+   "status": {
+    "id": 2,
+    "name": "To Be Determined",
+    "abbrev": "TBD"
+   },
+   "last_updated": "2026-09-26T12:24:36Z",
+   "net": "2026-11-30T00:00:00Z",
+   "net_precision": {
+    "id": 7,
+    "name": "Month",
+    "abbrev": "M"
+   },
+   "window_end": "2026-11-30T00:00:00Z",
+   "window_start": "2026-11-30T00:00:00Z",
+   "probability": null,
+   "weather_concerns": null,
+   "failreason": "",
+   "hashtag": null,
+   "launch_service_provider": {
+    "response_mode": "list",
+    "id": 31,
+    "url": "https://ll.thespacedevs.com/2.3.0/agencies/31/",
+    "name": "Indian Space Research Organization",
+    "abbrev": "ISRO",
+    "type": {
+     "id": 1,
+     "name": "Government"
+    }
+   },
+   "rocket": {
+    "id": 7522,
+    "configuration": {
+     "response_mode": "list",
+     "id": 172,
+     "url": "https://ll.thespacedevs.com/2.3.0/launcher_configurations/172/",
+     "name": "LVM-3 (GSLV Mk III)",
+     "full_name": "Launch Vehicle Mark-3 (GSLV Mk III)",
+     "variant": ""
+    }
+   },
+   "mission": {
+    "id": 5940,
+    "name": "Gaganyaan-1",
+    "type": "Test Flight",
+    "orbit": {
+     "id": 8,
+     "name": "Low Earth Orbit",
+     "abbrev": "LEO"
+    },
+    "description": "First uncrewed orbital test flight of the Gaganyaan capsule."
+   },
+   "pad": {
+    "id": 82,
+    "url": "https://ll.thespacedevs.com/2.3.0/pads/82/",
+    "active": true,
+    "name": "Satish Dhawan Space Centre Second Launch Pad",
+    "info_url": null,
+    "wiki_url": "https://en.wikipedia.org/wiki/Satish_Dhawan_Space_Centre_Second_Launch_Pad",
+    "map_url": "https://www.google.com/maps?q=13.7199,80.2304",
+    "latitude": 13.7199,
+    "longitude": 80.2304,
+    "country": {
+     "id": 9,
+     "name": "India",
+     "alpha_2_code": "IN",
+     "alpha_3_code": "IND",
+     "nationality_name": "Indian",
+     "nationality_name_composed": "Indo"
+    },
+    "total_launch_count": 34,
+    "orbital_launch_attempt_count": 33,
+    "fastest_turnaround": "P31DT31M",
+    "location": {
+     "response_mode": "normal",
+     "id": 14,
+     "url": "https://ll.thespacedevs.com/2.3.0/locations/14/",
+     "name": "Satish Dhawan Space Centre, India",
+     "active": true,
+     "country": {
+      "id": 9,
+      "name": "India",
+      "alpha_2_code": "IN",
+      "alpha_3_code": "IND",
+      "nationality_name": "Indian",
+      "nationality_name_composed": "Indo"
+     },
+     "longitude": 80.23,
+     "latitude": 13.72,
+     "total_launch_count": 106,
+     "total_landing_count": 0
+    }
+   },
+   "webcast_live": false,
+   "orbital_launch_attempt_count": 7455,
+   "location_launch_attempt_count": 108,
+   "pad_launch_attempt_count": 35,
+   "agency_launch_attempt_count": 103,
+   "orbital_launch_attempt_count_year": 282,
+   "location_launch_attempt_count_year": 6,
+   "pad_launch_attempt_count_year": 3,
+   "agency_launch_attempt_count_year": 5
+  },
+  {
+   "id": "b5a9bccb-30d7-4af6-8ad1-fabb563be53c",
+   "url": "https://ll.thespacedevs.com/2.3.0/launches/b5a9bccb-30d7-4af6-8ad1-fabb563be53c/",
+   "name": "PSLV-XL | TDS-01",
+   "response_mode": "normal",
+   "slug": "pslv-xl-tds-01",
+   "launch_designator": null,
+   "status": {
+    "id": 2,
+    "name": "To Be Determined",
+    "abbrev": "TBD"
+   },
+   "last_updated": "2026-09-26T12:26:06Z",
+   "net": "2026-11-30T00:00:00Z",
+   "net_precision": {
+    "id": 7,
+    "name": "Month",
+    "abbrev": "M"
+   },
+   "window_end": "2026-11-30T00:00:00Z",
+   "window_start": "2026-11-30T00:00:00Z",
+   "probability": null,
+   "weather_concerns": null,
+   "failreason": "",
+   "hashtag": null,
+   "launch_service_provider": {
+    "response_mode": "list",
+    "id": 31,
+    "url": "https://ll.thespacedevs.com/2.3.0/agencies/31/",
+    "name": "Indian Space Research Organization",
+    "abbrev": "ISRO",
+    "type": {
+     "id": 1,
+     "name": "Government"
+    }
+   },
+   "rocket": {
+    "id": 7595,
+    "configuration": {
+     "response_mode": "list",
+     "id": 38,
+     "url": "https://ll.thespacedevs.com/2.3.0/launcher_configurations/38/",
+     "name": "PSLV-XL",
+     "full_name": "PSLV XL",
+     "variant": "XL"
+    }
+   },
+   "mission": {
+    "id": 6037,
+    "name": "TDS-01",
+    "type": "Technology",
+    "orbit": {
+     "id": 2,
+     "name": "Geostationary Transfer Orbit",
+     "abbrev": "GTO"
+    },
+    "description": "TDS-01 (Technology Demonstration Satellite-01) is an Indian geostationary orbit technology demonstration satellite carrying payloads for the Indian Space Research Organisation (ISRO)\u2019s Institute of Plasma Research, Gandhinagar and the CSIR-CEERI, Pilani. \r\n\r\nPayloads to be tested included an internally developed 300 mN electric powered thrusters, atomic clocks, travelling wave tube amplifiers (TWTA) & a quantum communication suite (QuTDS)."
+   },
+   "pad": {
+    "id": 50,
+    "url": "https://ll.thespacedevs.com/2.3.0/pads/50/",
+    "active": true,
+    "name": "Satish Dhawan Space Centre First Launch Pad",
+    "info_url": null,
+    "wiki_url": "https://en.wikipedia.org/wiki/Satish_Dhawan_Space_Centre_First_Launch_Pad",
+    "map_url": "https://www.google.com/maps?q=13.733,80.235",
+    "latitude": 13.733,
+    "longitude": 80.235,
+    "country": {
+     "id": 9,
+     "name": "India",
+     "alpha_2_code": "IN",
+     "alpha_3_code": "IND",
+     "nationality_name": "Indian",
+     "nationality_name_composed": "Indo"
+    },
+    "total_launch_count": 64,
+    "orbital_launch_attempt_count": 63,
+    "fastest_turnaround": "P25DT5H56M15S",
+    "location": {
+     "response_mode": "normal",
+     "id": 14,
+     "url": "https://ll.thespacedevs.com/2.3.0/locations/14/",
+     "name": "Satish Dhawan Space Centre, India",
+     "active": true,
+     "country": {
+      "id": 9,
+      "name": "India",
+      "alpha_2_code": "IN",
+      "alpha_3_code": "IND",
+      "nationality_name": "Indian",
+      "nationality_name_composed": "Indo"
+     },
+     "longitude": 80.23,
+     "latitude": 13.72,
+     "total_launch_count": 106,
+     "total_landing_count": 0
+    }
+   },
+   "webcast_live": false,
+   "orbital_launch_attempt_count": 7455,
+   "location_launch_attempt_count": 108,
+   "pad_launch_attempt_count": 65,
+   "agency_launch_attempt_count": 103,
+   "orbital_launch_attempt_count_year": 282,
+   "location_launch_attempt_count_year": 6,
+   "pad_launch_attempt_count_year": 3,
+   "agency_launch_attempt_count_year": 5
+  },
+  {
+   "id": "22e117bf-041c-49d5-9d09-7b180036e143",
+   "url": "https://ll.thespacedevs.com/2.3.0/launches/22e117bf-041c-49d5-9d09-7b180036e143/",
+   "name": "Ariane 62 | Metop-SG B1",
+   "response_mode": "normal",
+   "slug": "ariane-62-metop-sg-b1",
+   "launch_designator": null,
+   "status": {
+    "id": 2,
+    "name": "To Be Determined",
+    "abbrev": "TBD"
+   },
+   "last_updated": "2026-10-13T18:57:50Z",
+   "net": "2026-12-31T00:00:00Z",
+   "net_precision": {
+    "id": 7,
+    "name": "Month",
+    "abbrev": "M"
+   },
+   "window_end": "2026-12-31T00:00:00Z",
+   "window_start": "2026-12-31T00:00:00Z",
+   "probability": null,
+   "weather_concerns": null,
+   "failreason": "",
+   "hashtag": null,
+   "launch_service_provider": {
+    "response_mode": "list",
+    "id": 115,
+    "url": "https://ll.thespacedevs.com/2.3.0/agencies/115/",
+    "name": "Arianespace",
+    "abbrev": "ASA",
+    "type": {
+     "id": 3,
+     "name": "Commercial"
+    }
+   },
+   "rocket": {
+    "id": 170,
+    "configuration": {
+     "response_mode": "list",
+     "id": 121,
+     "url": "https://ll.thespacedevs.com/2.3.0/launcher_configurations/121/",
+     "name": "Ariane 62",
+     "full_name": "Ariane 62",
+     "variant": "62"
+    }
+   },
+   "mission": {
+    "id": 5921,
+    "name": "Metop-SG B1",
+    "type": "Earth Science",
+    "orbit": {
+     "id": 17,
+     "name": "Sun-Synchronous Orbit",
+     "abbrev": "SSO"
+    },
+    "description": "Second of EUMETSAT's second generation of Metop weather satellites."
+   },
+   "pad": {
+    "id": 67,
+    "url": "https://ll.thespacedevs.com/2.3.0/pads/67/",
+    "active": true,
+    "name": "Ariane Launch Area 4",
+    "info_url": null,
+    "wiki_url": "https://en.wikipedia.org/wiki/Guiana_Space_Centre",
+    "map_url": "https://www.google.com/maps?q=5.256319,-52.786838",
+    "latitude": 5.256319,
+    "longitude": -52.786838,
+    "country": {
+     "id": 50,
+     "name": "French Guiana",
+     "alpha_2_code": "GF",
+     "alpha_3_code": "GUF",
+     "nationality_name": "French Guianan",
+     "nationality_name_composed": "Franco-Guiano"
+    },
+    "total_launch_count": 9,
+    "orbital_launch_attempt_count": 9,
+    "fastest_turnaround": "P42DT7H59M41S",
+    "location": {
+     "response_mode": "normal",
+     "id": 13,
+     "url": "https://ll.thespacedevs.com/2.3.0/locations/13/",
+     "name": "Guiana Space Centre, French Guiana",
+     "active": true,
+     "country": {
+      "id": 50,
+      "name": "French Guiana",
+      "alpha_2_code": "GF",
+      "alpha_3_code": "GUF",
+      "nationality_name": "French Guianan",
+      "nationality_name_composed": "Franco-Guiano"
+     },
+     "longitude": -52.6903,
+     "latitude": 5.169,
+     "total_launch_count": 336,
+     "total_landing_count": 0
+    }
+   },
+   "webcast_live": false,
+   "orbital_launch_attempt_count": 7529,
+   "location_launch_attempt_count": 340,
+   "pad_launch_attempt_count": 11,
+   "agency_launch_attempt_count": 330,
+   "orbital_launch_attempt_count_year": 356,
+   "location_launch_attempt_count_year": 10,
+   "pad_launch_attempt_count_year": 6,
+   "agency_launch_attempt_count_year": 6
+  },
+  {
+   "id": "8bf5f61e-a7e1-41e6-aede-7b87e4beebab",
+   "url": "https://ll.thespacedevs.com/2.3.0/launches/8bf5f61e-a7e1-41e6-aede-7b87e4beebab/",
+   "name": "Falcon 9 Block 5 | CHORUS",
+   "response_mode": "normal",
+   "slug": "falcon-9-block-5-chorus",
+   "launch_designator": null,
+   "status": {
+    "id": 2,
+    "name": "To Be Determined",
+    "abbrev": "TBD"
+   },
+   "last_updated": "2026-11-05T18:00:50Z",
+   "net": "2026-12-31T00:00:00Z",
+   "net_precision": {
+    "id": 7,
+    "name": "Month",
+    "abbrev": "M"
+   },
+   "window_end": "2026-12-31T00:00:00Z",
+   "window_start": "2026-12-31T00:00:00Z",
+   "probability": null,
+   "weather_concerns": null,
+   "failreason": "",
+   "hashtag": null,
+   "launch_service_provider": {
+    "response_mode": "list",
+    "id": 121,
+    "url": "https://ll.thespacedevs.com/2.3.0/agencies/121/",
+    "name": "SpaceX",
+    "abbrev": "SpX",
+    "type": {
+     "id": 3,
+     "name": "Commercial"
+    }
+   },
+   "rocket": {
+    "id": 8100,
+    "configuration": {
+     "response_mode": "list",
+     "id": 164,
+     "url": "https://ll.thespacedevs.com/2.3.0/launcher_configurations/164/",
+     "name": "Falcon 9",
+     "full_name": "Falcon 9 Block 5",
+     "variant": "Block 5"
+    }
+   },
+   "mission": {
+    "id": 6657,
+    "name": "CHORUS",
+    "type": "Earth Science",
+    "orbit": {
+     "id": 8,
+     "name": "Low Earth Orbit",
+     "abbrev": "LEO"
+    },
+    "description": "CHORUS is MDA's next generation Earth observation constellation, consisting of 2 radar satellites (C-band SAR and X-band SAR), in a 53.5 degree 600 km altitude LEO, with the X-band trailing the C-band by 60 minutes. A collaborative multi-sensor constellation, CHORUS will bring together diverse and unique imagery and data sources and provide a new level of near real-time insight and innovative Earth observation services. Operating in a unique mid-inclination orbit, CHORUS will be able to image day or night, regardless of weather conditions, with daily access of up to 95% of the coverage area. From an industry-leading 700km-wide imaging swath down to sub-metre high resolution, CHORUS will provide the most extensive and unrivalled Earth observation radar imaging capacity available on the market in a single mission."
+   },
+   "pad": {
+    "id": 72,
+    "url": "https://ll.thespacedevs.com/2.3.0/pads/72/",
+    "active": true,
+    "name": "Unknown Pad",
+    "info_url": null,
+    "wiki_url": "",
+    "map_url": "https://www.google.com/maps?q=28.458,-80.528",
+    "latitude": 28.458,
+    "longitude": -80.528,
+    "country": {
+     "id": 2,
+     "name": "United States of America",
+     "alpha_2_code": "US",
+     "alpha_3_code": "USA",
+     "nationality_name": "American",
+     "nationality_name_composed": "Americano"
+    },
+    "total_launch_count": 0,
+    "orbital_launch_attempt_count": 0,
+    "fastest_turnaround": null,
+    "location": {
+     "response_mode": "normal",
+     "id": 12,
+     "url": "https://ll.thespacedevs.com/2.3.0/locations/12/",
+     "name": "Cape Canaveral SFS, FL, USA",
+     "active": true,
+     "country": {
+      "id": 2,
+      "name": "United States of America",
+      "alpha_2_code": "US",
+      "alpha_3_code": "USA",
+      "nationality_name": "American",
+      "nationality_name_composed": "Americano"
+     },
+     "longitude": -80.577778,
+     "latitude": 28.488889,
+     "total_launch_count": 1132,
+     "total_landing_count": 83
+    }
+   },
+   "webcast_live": false,
+   "orbital_launch_attempt_count": 7529,
+   "location_launch_attempt_count": 1157,
+   "pad_launch_attempt_count": 8,
+   "agency_launch_attempt_count": 780,
+   "orbital_launch_attempt_count_year": 356,
+   "location_launch_attempt_count_year": 81,
+   "pad_launch_attempt_count_year": 8,
+   "agency_launch_attempt_count_year": 161
+  },
+  {
+   "id": "e61d353c-db55-4a57-8184-0fab187231e6",
+   "url": "https://ll.thespacedevs.com/2.3.0/launches/e61d353c-db55-4a57-8184-0fab187231e6/",
+   "name": "Falcon 9 Block 5 | Globalstar 2-R Mission 2 (x 9)",
+   "response_mode": "normal",
+   "slug": "falcon-9-block-5-globalstar-2-r-mission-2-x-9",
+   "launch_designator": null,
+   "status": {
+    "id": 2,
+    "name": "To Be Determined",
+    "abbrev": "TBD"
+   },
+   "last_updated": "2026-11-05T18:03:47Z",
+   "net": "2026-12-31T00:00:00Z",
+   "net_precision": {
+    "id": 7,
+    "name": "Month",
+    "abbrev": "M"
+   },
+   "window_end": "2026-12-31T00:00:00Z",
+   "window_start": "2026-12-31T00:00:00Z",
+   "probability": null,
+   "weather_concerns": null,
+   "failreason": "",
+   "hashtag": null,
+   "launch_service_provider": {
+    "response_mode": "list",
+    "id": 121,
+    "url": "https://ll.thespacedevs.com/2.3.0/agencies/121/",
+    "name": "SpaceX",
+    "abbrev": "SpX",
+    "type": {
+     "id": 3,
+     "name": "Commercial"
+    }
+   },
+   "rocket": {
+    "id": 8655,
+    "configuration": {
+     "response_mode": "list",
+     "id": 164,
+     "url": "https://ll.thespacedevs.com/2.3.0/launcher_configurations/164/",
+     "name": "Falcon 9",
+     "full_name": "Falcon 9 Block 5",
+     "variant": "Block 5"
+    }
+   },
+   "mission": {
+    "id": 7247,
+    "name": "Globalstar 2-R Mission 2 (x 9)",
+    "type": "Communications",
+    "orbit": {
+     "id": 8,
+     "name": "Low Earth Orbit",
+     "abbrev": "LEO"
+    },
+    "description": "The Globalstar global mobile communications network offers global, digital real time voice, data and fax services via its Low Earth Orbit satellite constellation. The constellation operates in a 1410 km orbit inclined at 52 degrees.\r\n\r\nIn early 2022, Globalstar contracted with MDA for the construction of 17 new 2nd generation refresh satellites to replenish the existing constellation. Rocket Lab is sub-contracted to build the satellites' buses and the launch dispensers."
+   },
+   "pad": {
+    "id": 80,
+    "url": "https://ll.thespacedevs.com/2.3.0/pads/80/",
+    "active": true,
+    "name": "Space Launch Complex 40",
+    "info_url": null,
+    "wiki_url": "https://en.wikipedia.org/wiki/Cape_Canaveral_Air_Force_Station_Space_Launch_Complex_40",
+    "map_url": "https://www.google.com/maps?q=28.56194122,-80.57735736",
+    "latitude": 28.56194122,
+    "longitude": -80.57735736,
+    "country": {
+     "id": 2,
+     "name": "United States of America",
+     "alpha_2_code": "US",
+     "alpha_3_code": "USA",
+     "nationality_name": "American",
+     "nationality_name_composed": "Americano"
+    },
+    "total_launch_count": 404,
+    "orbital_launch_attempt_count": 404,
+    "fastest_turnaround": "P1DT21H",
+    "location": {
+     "response_mode": "normal",
+     "id": 12,
+     "url": "https://ll.thespacedevs.com/2.3.0/locations/12/",
+     "name": "Cape Canaveral SFS, FL, USA",
+     "active": true,
+     "country": {
+      "id": 2,
+      "name": "United States of America",
+      "alpha_2_code": "US",
+      "alpha_3_code": "USA",
+      "nationality_name": "American",
+      "nationality_name_composed": "Americano"
+     },
+     "longitude": -80.577778,
+     "latitude": 28.488889,
+     "total_launch_count": 1132,
+     "total_landing_count": 83
+    }
+   },
+   "webcast_live": false,
+   "orbital_launch_attempt_count": 7529,
+   "location_launch_attempt_count": 1157,
+   "pad_launch_attempt_count": 407,
+   "agency_launch_attempt_count": 780,
+   "orbital_launch_attempt_count_year": 356,
+   "location_launch_attempt_count_year": 81,
+   "pad_launch_attempt_count_year": 53,
+   "agency_launch_attempt_count_year": 161
+  },
+  {
+   "id": "71df1dd0-d658-4762-b0bc-0fca6886aea7",
+   "url": "https://ll.thespacedevs.com/2.3.0/launches/71df1dd0-d658-4762-b0bc-0fca6886aea7/",
+   "name": "Falcon 9 Block 5 | SDA Tranche 2 Transport Layer D",
+   "response_mode": "normal",
+   "slug": "falcon-9-block-5-sda-tranche-2-transport-layer-d",
+   "launch_designator": null,
+   "status": {
+    "id": 2,
+    "name": "To Be Determined",
+    "abbrev": "TBD"
+   },
+   "last_updated": "2026-10-17T08:28:07Z",
+   "net": "2026-12-31T00:00:00Z",
+   "net_precision": {
+    "id": 7,
+    "name": "Month",
+    "abbrev": "M"
+   },
+   "window_end": "2026-12-31T00:00:00Z",
+   "window_start": "2026-12-31T00:00:00Z",
+   "probability": null,
+   "weather_concerns": null,
+   "failreason": "",
+   "hashtag": null,
+   "launch_service_provider": {
+    "response_mode": "list",
+    "id": 121,
+    "url": "https://ll.thespacedevs.com/2.3.0/agencies/121/",
+    "name": "SpaceX",
+    "abbrev": "SpX",
+    "type": {
+     "id": 3,
+     "name": "Commercial"
+    }
+   },
+   "rocket": {
+    "id": 8582,
+    "configuration": {
+     "response_mode": "list",
+     "id": 164,
+     "url": "https://ll.thespacedevs.com/2.3.0/launcher_configurations/164/",
+     "name": "Falcon 9",
+     "full_name": "Falcon 9 Block 5",
+     "variant": "Block 5"
+    }
+   },
+   "mission": {
+    "id": 7174,
+    "name": "SDA Tranche 2 Transport Layer D",
+    "type": "Government/Top Secret",
+    "orbit": {
+     "id": 13,
+     "name": "Polar Orbit",
+     "abbrev": "PO"
+    },
+    "description": "Classified mission launched by the Space Development Agency (SDA) for Tranche 2 Transport Layer."
+   },
+   "pad": {
+    "id": 72,
+    "url": "https://ll.thespacedevs.com/2.3.0/pads/72/",
+    "active": true,
+    "name": "Unknown Pad",
+    "info_url": null,
+    "wiki_url": "",
+    "map_url": "https://www.google.com/maps?q=28.458,-80.528",
+    "latitude": 28.458,
+    "longitude": -80.528,
+    "country": {
+     "id": 2,
+     "name": "United States of America",
+     "alpha_2_code": "US",
+     "alpha_3_code": "USA",
+     "nationality_name": "American",
+     "nationality_name_composed": "Americano"
+    },
+    "total_launch_count": 0,
+    "orbital_launch_attempt_count": 0,
+    "fastest_turnaround": null,
+    "location": {
+     "response_mode": "normal",
+     "id": 12,
+     "url": "https://ll.thespacedevs.com/2.3.0/locations/12/",
+     "name": "Cape Canaveral SFS, FL, USA",
+     "active": true,
+     "country": {
+      "id": 2,
+      "name": "United States of America",
+      "alpha_2_code": "US",
+      "alpha_3_code": "USA",
+      "nationality_name": "American",
+      "nationality_name_composed": "Americano"
+     },
+     "longitude": -80.577778,
+     "latitude": 28.488889,
+     "total_launch_count": 1132,
+     "total_landing_count": 83
+    }
+   },
+   "webcast_live": false,
+   "orbital_launch_attempt_count": 7529,
+   "location_launch_attempt_count": 1157,
+   "pad_launch_attempt_count": 8,
+   "agency_launch_attempt_count": 780,
+   "orbital_launch_attempt_count_year": 356,
+   "location_launch_attempt_count_year": 81,
+   "pad_launch_attempt_count_year": 8,
+   "agency_launch_attempt_count_year": 161
+  },
+  {
+   "id": "71ed4649-8d71-42e8-8548-d42ffa2c5a6e",
+   "url": "https://ll.thespacedevs.com/2.3.0/launches/71ed4649-8d71-42e8-8548-d42ffa2c5a6e/",
+   "name": "Falcon 9 Block 5 | SDA Tranche 2 Transport Layer E",
+   "response_mode": "normal",
+   "slug": "falcon-9-block-5-sda-tranche-2-transport-layer-e",
+   "launch_designator": null,
+   "status": {
+    "id": 2,
+    "name": "To Be Determined",
+    "abbrev": "TBD"
+   },
+   "last_updated": "2026-10-17T08:28:47Z",
+   "net": "2026-12-31T00:00:00Z",
+   "net_precision": {
+    "id": 7,
+    "name": "Month",
+    "abbrev": "M"
+   },
+   "window_end": "2026-12-31T00:00:00Z",
+   "window_start": "2026-12-31T00:00:00Z",
+   "probability": null,
+   "weather_concerns": null,
+   "failreason": "",
+   "hashtag": null,
+   "launch_service_provider": {
+    "response_mode": "list",
+    "id": 121,
+    "url": "https://ll.thespacedevs.com/2.3.0/agencies/121/",
+    "name": "SpaceX",
+    "abbrev": "SpX",
+    "type": {
+     "id": 3,
+     "name": "Commercial"
+    }
+   },
+   "rocket": {
+    "id": 8583,
+    "configuration": {
+     "response_mode": "list",
+     "id": 164,
+     "url": "https://ll.thespacedevs.com/2.3.0/launcher_configurations/164/",
+     "name": "Falcon 9",
+     "full_name": "Falcon 9 Block 5",
+     "variant": "Block 5"
+    }
+   },
+   "mission": {
+    "id": 7175,
+    "name": "SDA Tranche 2 Transport Layer E",
+    "type": "Government/Top Secret",
+    "orbit": {
+     "id": 13,
+     "name": "Polar Orbit",
+     "abbrev": "PO"
+    },
+    "description": "Classified mission launched by the Space Development Agency (SDA) for Tranche 2 Transport Layer."
+   },
+   "pad": {
+    "id": 16,
+    "url": "https://ll.thespacedevs.com/2.3.0/pads/16/",
+    "active": true,
+    "name": "Space Launch Complex 4E",
+    "info_url": null,
+    "wiki_url": "https://en.wikipedia.org/wiki/Vandenberg_Space_Launch_Complex_4#SLC-4E",
+    "map_url": "https://www.google.com/maps?q=34.632,-120.611",
+    "latitude": 34.632,
+    "longitude": -120.611,
+    "country": {
+     "id": 2,
+     "name": "United States of America",
+     "alpha_2_code": "US",
+     "alpha_3_code": "USA",
+     "nationality_name": "American",
+     "nationality_name_composed": "Americano"
+    },
+    "total_launch_count": 307,
+    "orbital_launch_attempt_count": 307,
+    "fastest_turnaround": "P2DT7H48M21S",
+    "location": {
+     "response_mode": "normal",
+     "id": 11,
+     "url": "https://ll.thespacedevs.com/2.3.0/locations/11/",
+     "name": "Vandenberg SFB, CA, USA",
+     "active": true,
+     "country": {
+      "id": 2,
+      "name": "United States of America",
+      "alpha_2_code": "US",
+      "alpha_3_code": "USA",
+      "nationality_name": "American",
+      "nationality_name_composed": "Americano"
+     },
+     "longitude": -120.52023,
+     "latitude": 34.75133,
+     "total_launch_count": 923,
+     "total_landing_count": 37
+    }
+   },
+   "webcast_live": false,
+   "orbital_launch_attempt_count": 7529,
+   "location_launch_attempt_count": 958,
+   "pad_launch_attempt_count": 332,
+   "agency_launch_attempt_count": 780,
+   "orbital_launch_attempt_count_year": 356,
+   "location_launch_attempt_count_year": 106,
+   "pad_launch_attempt_count_year": 94,
+   "agency_launch_attempt_count_year": 161
+  },
+  {
+   "id": "0cf92611-82a8-4095-a0b4-dda2e74b1fff",
+   "url": "https://ll.thespacedevs.com/2.3.0/launches/0cf92611-82a8-4095-a0b4-dda2e74b1fff/",
+   "name": "LVM-3 | GSAT-32 (GSAT-N3)",
+   "response_mode": "normal",
+   "slug": "lvm-3-gsat-32-gsat-n3",
+   "launch_designator": null,
+   "status": {
+    "id": 2,
+    "name": "To Be Determined",
+    "abbrev": "TBD"
+   },
+   "last_updated": "2026-09-26T12:27:56Z",
+   "net": "2026-12-31T00:00:00Z",
+   "net_precision": {
+    "id": 7,
+    "name": "Month",
+    "abbrev": "M"
+   },
+   "window_end": "2026-12-31T00:00:00Z",
+   "window_start": "2026-12-31T00:00:00Z",
+   "probability": null,
+   "weather_concerns": null,
+   "failreason": "",
+   "hashtag": null,
+   "launch_service_provider": {
+    "response_mode": "list",
+    "id": 31,
+    "url": "https://ll.thespacedevs.com/2.3.0/agencies/31/",
+    "name": "Indian Space Research Organization",
+    "abbrev": "ISRO",
+    "type": {
+     "id": 1,
+     "name": "Government"
+    }
+   },
+   "rocket": {
+    "id": 2660,
+    "configuration": {
+     "response_mode": "list",
+     "id": 172,
+     "url": "https://ll.thespacedevs.com/2.3.0/launcher_configurations/172/",
+     "name": "LVM-3 (GSLV Mk III)",
+     "full_name": "Launch Vehicle Mark-3 (GSLV Mk III)",
+     "variant": ""
+    }
+   },
+   "mission": {
+    "id": 7725,
+    "name": "GSAT-32 (GSAT-N3)",
+    "type": "Communications",
+    "orbit": {
+     "id": 2,
+     "name": "Geostationary Transfer Orbit",
+     "abbrev": "GTO"
+    },
+    "description": "GSAT-32 is a geostationary communications satellite for the Indian Space Research Organization (ISRO). The spacecraft is a replacement for GSAT-6A that failed before reaching geostationary orbit after launch in 2018."
+   },
+   "pad": {
+    "id": 82,
+    "url": "https://ll.thespacedevs.com/2.3.0/pads/82/",
+    "active": true,
+    "name": "Satish Dhawan Space Centre Second Launch Pad",
+    "info_url": null,
+    "wiki_url": "https://en.wikipedia.org/wiki/Satish_Dhawan_Space_Centre_Second_Launch_Pad",
+    "map_url": "https://www.google.com/maps?q=13.7199,80.2304",
+    "latitude": 13.7199,
+    "longitude": 80.2304,
+    "country": {
+     "id": 9,
+     "name": "India",
+     "alpha_2_code": "IN",
+     "alpha_3_code": "IND",
+     "nationality_name": "Indian",
+     "nationality_name_composed": "Indo"
+    },
+    "total_launch_count": 34,
+    "orbital_launch_attempt_count": 33,
+    "fastest_turnaround": "P31DT31M",
+    "location": {
+     "response_mode": "normal",
+     "id": 14,
+     "url": "https://ll.thespacedevs.com/2.3.0/locations/14/",
+     "name": "Satish Dhawan Space Centre, India",
+     "active": true,
+     "country": {
+      "id": 9,
+      "name": "India",
+      "alpha_2_code": "IN",
+      "alpha_3_code": "IND",
+      "nationality_name": "Indian",
+      "nationality_name_composed": "Indo"
+     },
+     "longitude": 80.23,
+     "latitude": 13.72,
+     "total_launch_count": 106,
+     "total_landing_count": 0
+    }
+   },
+   "webcast_live": false,
+   "orbital_launch_attempt_count": 7529,
+   "location_launch_attempt_count": 111,
+   "pad_launch_attempt_count": 36,
+   "agency_launch_attempt_count": 106,
+   "orbital_launch_attempt_count_year": 356,
+   "location_launch_attempt_count_year": 9,
+   "pad_launch_attempt_count_year": 4,
+   "agency_launch_attempt_count_year": 8
+  },
+  {
+   "id": "548df42c-ae26-4cc9-921a-f0042941911a",
+   "url": "https://ll.thespacedevs.com/2.3.0/launches/548df42c-ae26-4cc9-921a-f0042941911a/",
+   "name": "Electron | BlackSky Gen-3 6",
+   "response_mode": "normal",
+   "slug": "electron-blacksky-gen-3-6",
+   "launch_designator": null,
+   "status": {
+    "id": 2,
+    "name": "To Be Determined",
+    "abbrev": "TBD"
+   },
+   "last_updated": "2026-11-05T21:45:30Z",
+   "net": "2026-12-31T00:00:00Z",
+   "net_precision": {
+    "id": 11,
+    "name": "Quarter 4",
+    "abbrev": "Q4"
+   },
+   "window_end": "2026-12-31T00:00:00Z",
+   "window_start": "2026-12-31T00:00:00Z",
+   "probability": null,
+   "weather_concerns": null,
+   "failreason": "",
+   "hashtag": null,
+   "launch_service_provider": {
+    "response_mode": "list",
+    "id": 147,
+    "url": "https://ll.thespacedevs.com/2.3.0/agencies/147/",
+    "name": "Rocket Lab",
+    "abbrev": "RL",
+    "type": {
+     "id": 3,
+     "name": "Commercial"
+    }
+   },
+   "rocket": {
+    "id": 8923,
+    "configuration": {
+     "response_mode": "list",
+     "id": 26,
+     "url": "https://ll.thespacedevs.com/2.3.0/launcher_configurations/26/",
+     "name": "Electron",
+     "full_name": "Electron",
+     "variant": ""
+    }
+   },
+   "mission": {
+    "id": 7515,
+    "name": "BlackSky Gen-3 6",
+    "type": "Earth Science",
+    "orbit": {
+     "id": 8,
+     "name": "Low Earth Orbit",
+     "abbrev": "LEO"
+    },
+    "description": "BlackSky Gen-3 Earth-imaging satellites"
+   },
+   "pad": {
+    "id": 210,
+    "url": "https://ll.thespacedevs.com/2.3.0/pads/210/",
+    "active": true,
+    "name": "Unknown Pad",
+    "info_url": null,
+    "wiki_url": null,
+    "map_url": null,
+    "latitude": -39.260881,
+    "longitude": 177.865826,
+    "country": {
+     "id": 51,
+     "name": "New Zealand",
+     "alpha_2_code": "NZ",
+     "alpha_3_code": "NZL",
+     "nationality_name": "Kiwi",
+     "nationality_name_composed": "Kiwi"
+    },
+    "total_launch_count": 0,
+    "orbital_launch_attempt_count": 0,
+    "fastest_turnaround": null,
+    "location": {
+     "response_mode": "normal",
+     "id": 10,
+     "url": "https://ll.thespacedevs.com/2.3.0/locations/10/",
+     "name": "Rocket Lab Launch Complex 1, Mahia Peninsula, New Zealand",
+     "active": true,
+     "country": {
+      "id": 51,
+      "name": "New Zealand",
+      "alpha_2_code": "NZ",
+      "alpha_3_code": "NZL",
+      "nationality_name": "Kiwi",
+      "nationality_name_composed": "Kiwi"
+     },
+     "longitude": 177.86586,
+     "latitude": -39.26085,
+     "total_launch_count": 86,
+     "total_landing_count": 17
+    }
+   },
+   "webcast_live": false,
+   "orbital_launch_attempt_count": 7529,
+   "location_launch_attempt_count": 91,
+   "pad_launch_attempt_count": 5,
+   "agency_launch_attempt_count": 107,
+   "orbital_launch_attempt_count_year": 356,
+   "location_launch_attempt_count_year": 22,
+   "pad_launch_attempt_count_year": 5,
+   "agency_launch_attempt_count_year": 28
+  },
+  {
+   "id": "5aa3575e-f3ff-48ec-969f-e7e4c669f866",
+   "url": "https://ll.thespacedevs.com/2.3.0/launches/5aa3575e-f3ff-48ec-969f-e7e4c669f866/",
+   "name": "Electron | BlackSky Gen-3 7",
+   "response_mode": "normal",
+   "slug": "electron-blacksky-gen-3-7",
+   "launch_designator": null,
+   "status": {
+    "id": 2,
+    "name": "To Be Determined",
+    "abbrev": "TBD"
+   },
+   "last_updated": "2026-11-05T21:45:56Z",
+   "net": "2026-12-31T00:00:00Z",
+   "net_precision": {
+    "id": 11,
+    "name": "Quarter 4",
+    "abbrev": "Q4"
+   },
+   "window_end": "2026-12-31T00:00:00Z",
+   "window_start": "2026-12-31T00:00:00Z",
+   "probability": null,
+   "weather_concerns": null,
+   "failreason": "",
+   "hashtag": null,
+   "launch_service_provider": {
+    "response_mode": "list",
+    "id": 147,
+    "url": "https://ll.thespacedevs.com/2.3.0/agencies/147/",
+    "name": "Rocket Lab",
+    "abbrev": "RL",
+    "type": {
+     "id": 3,
+     "name": "Commercial"
+    }
+   },
+   "rocket": {
+    "id": 8924,
+    "configuration": {
+     "response_mode": "list",
+     "id": 26,
+     "url": "https://ll.thespacedevs.com/2.3.0/launcher_configurations/26/",
+     "name": "Electron",
+     "full_name": "Electron",
+     "variant": ""
+    }
+   },
+   "mission": {
+    "id": 7516,
+    "name": "BlackSky Gen-3 7",
+    "type": "Earth Science",
+    "orbit": {
+     "id": 8,
+     "name": "Low Earth Orbit",
+     "abbrev": "LEO"
+    },
+    "description": "BlackSky Gen-3 Earth-imaging satellites"
+   },
+   "pad": {
+    "id": 210,
+    "url": "https://ll.thespacedevs.com/2.3.0/pads/210/",
+    "active": true,
+    "name": "Unknown Pad",
+    "info_url": null,
+    "wiki_url": null,
+    "map_url": null,
+    "latitude": -39.260881,
+    "longitude": 177.865826,
+    "country": {
+     "id": 51,
+     "name": "New Zealand",
+     "alpha_2_code": "NZ",
+     "alpha_3_code": "NZL",
+     "nationality_name": "Kiwi",
+     "nationality_name_composed": "Kiwi"
+    },
+    "total_launch_count": 0,
+    "orbital_launch_attempt_count": 0,
+    "fastest_turnaround": null,
+    "location": {
+     "response_mode": "normal",
+     "id": 10,
+     "url": "https://ll.thespacedevs.com/2.3.0/locations/10/",
+     "name": "Rocket Lab Launch Complex 1, Mahia Peninsula, New Zealand",
+     "active": true,
+     "country": {
+      "id": 51,
+      "name": "New Zealand",
+      "alpha_2_code": "NZ",
+      "alpha_3_code": "NZL",
+      "nationality_name": "Kiwi",
+      "nationality_name_composed": "Kiwi"
+     },
+     "longitude": 177.86586,
+     "latitude": -39.26085,
+     "total_launch_count": 86,
+     "total_landing_count": 17
+    }
+   },
+   "webcast_live": false,
+   "orbital_launch_attempt_count": 7529,
+   "location_launch_attempt_count": 91,
+   "pad_launch_attempt_count": 5,
+   "agency_launch_attempt_count": 107,
+   "orbital_launch_attempt_count_year": 356,
+   "location_launch_attempt_count_year": 22,
+   "pad_launch_attempt_count_year": 5,
+   "agency_launch_attempt_count_year": 28
+  },
+  {
+   "id": "11b218b1-5e40-4b9d-854e-50320299239d",
+   "url": "https://ll.thespacedevs.com/2.3.0/launches/11b218b1-5e40-4b9d-854e-50320299239d/",
+   "name": "Falcon 9 Block 5 | BlueBird 14-16 (Block 2 #9-11)",
+   "response_mode": "normal",
+   "slug": "falcon-9-block-5-bluebird-14-16-block-2-9-11",
+   "launch_designator": null,
+   "status": {
+    "id": 2,
+    "name": "To Be Determined",
+    "abbrev": "TBD"
+   },
+   "last_updated": "2026-10-15T12:12:53Z",
+   "net": "2026-12-31T00:00:00Z",
+   "net_precision": {
+    "id": 11,
+    "name": "Quarter 4",
+    "abbrev": "Q4"
+   },
+   "window_end": "2026-12-31T00:00:00Z",
+   "window_start": "2026-12-31T00:00:00Z",
+   "probability": null,
+   "weather_concerns": null,
+   "failreason": "",
+   "hashtag": null,
+   "launch_service_provider": {
+    "response_mode": "list",
+    "id": 121,
+    "url": "https://ll.thespacedevs.com/2.3.0/agencies/121/",
+    "name": "SpaceX",
+    "abbrev": "SpX",
+    "type": {
+     "id": 3,
+     "name": "Commercial"
+    }
+   },
+   "rocket": {
+    "id": 9275,
+    "configuration": {
+     "response_mode": "list",
+     "id": 164,
+     "url": "https://ll.thespacedevs.com/2.3.0/launcher_configurations/164/",
+     "name": "Falcon 9",
+     "full_name": "Falcon 9 Block 5",
+     "variant": "Block 5"
+    }
+   },
+   "mission": {
+    "id": 7874,
+    "name": "BlueBird 14-16 (Block 2 #9-11)",
+    "type": "Communications",
+    "orbit": {
+     "id": 8,
+     "name": "Low Earth Orbit",
+     "abbrev": "LEO"
+    },
+    "description": "AST SpaceMobile\u2019s Block 2 BlueBird satellites are designed to deliver up to 10 times the bandwidth capacity of the BlueBird Block 1 satellites, required to achieve 24/7 continuous cellular broadband service coverage in the United States, with beams designed to support a capacity of up to 40 MHz, enabling peak data transmission speeds up to 120 Mbps, supporting voice, full data and video applications. The Block 2 BlueBirds, featuring as large as 2400 square foot communications arrays, will be the largest satellites ever commercially deployed in Low Earth orbit once launched.\r\n\r\nThis launch will feature 3 satellites."
+   },
+   "pad": {
+    "id": 80,
+    "url": "https://ll.thespacedevs.com/2.3.0/pads/80/",
+    "active": true,
+    "name": "Space Launch Complex 40",
+    "info_url": null,
+    "wiki_url": "https://en.wikipedia.org/wiki/Cape_Canaveral_Air_Force_Station_Space_Launch_Complex_40",
+    "map_url": "https://www.google.com/maps?q=28.56194122,-80.57735736",
+    "latitude": 28.56194122,
+    "longitude": -80.57735736,
+    "country": {
+     "id": 2,
+     "name": "United States of America",
+     "alpha_2_code": "US",
+     "alpha_3_code": "USA",
+     "nationality_name": "American",
+     "nationality_name_composed": "Americano"
+    },
+    "total_launch_count": 404,
+    "orbital_launch_attempt_count": 404,
+    "fastest_turnaround": "P1DT21H",
+    "location": {
+     "response_mode": "normal",
+     "id": 12,
+     "url": "https://ll.thespacedevs.com/2.3.0/locations/12/",
+     "name": "Cape Canaveral SFS, FL, USA",
+     "active": true,
+     "country": {
+      "id": 2,
+      "name": "United States of America",
+      "alpha_2_code": "US",
+      "alpha_3_code": "USA",
+      "nationality_name": "American",
+      "nationality_name_composed": "Americano"
+     },
+     "longitude": -80.577778,
+     "latitude": 28.488889,
+     "total_launch_count": 1132,
+     "total_landing_count": 83
+    }
+   },
+   "webcast_live": false,
+   "orbital_launch_attempt_count": 7529,
+   "location_launch_attempt_count": 1157,
+   "pad_launch_attempt_count": 407,
+   "agency_launch_attempt_count": 780,
+   "orbital_launch_attempt_count_year": 356,
+   "location_launch_attempt_count_year": 81,
+   "pad_launch_attempt_count_year": 53,
+   "agency_launch_attempt_count_year": 161
+  },
+  {
+   "id": "2d0472b9-463d-49c8-afb1-7925e49a3368",
+   "url": "https://ll.thespacedevs.com/2.3.0/launches/2d0472b9-463d-49c8-afb1-7925e49a3368/",
+   "name": "Falcon 9 Block 5 | SDA Tranche 1 Tracking Layer A",
+   "response_mode": "normal",
+   "slug": "falcon-9-block-5-sda-tranche-1-tracking-layer-a",
+   "launch_designator": null,
+   "status": {
+    "id": 2,
+    "name": "To Be Determined",
+    "abbrev": "TBD"
+   },
+   "last_updated": "2026-08-27T15:58:58Z",
+   "net": "2026-12-31T00:00:00Z",
+   "net_precision": {
+    "id": 11,
+    "name": "Quarter 4",
+    "abbrev": "Q4"
+   },
+   "window_end": "2026-12-31T00:00:00Z",
+   "window_start": "2026-12-31T00:00:00Z",
+   "probability": null,
+   "weather_concerns": null,
+   "failreason": "",
+   "hashtag": null,
+   "launch_service_provider": {
+    "response_mode": "list",
+    "id": 121,
+    "url": "https://ll.thespacedevs.com/2.3.0/agencies/121/",
+    "name": "SpaceX",
+    "abbrev": "SpX",
+    "type": {
+     "id": 3,
+     "name": "Commercial"
+    }
+   },
+   "rocket": {
+    "id": 8072,
+    "configuration": {
+     "response_mode": "list",
+     "id": 164,
+     "url": "https://ll.thespacedevs.com/2.3.0/launcher_configurations/164/",
+     "name": "Falcon 9",
+     "full_name": "Falcon 9 Block 5",
+     "variant": "Block 5"
+    }
+   },
+   "mission": {
+    "id": 6625,
+    "name": "SDA Tranche 1 Tracking Layer A",
+    "type": "Government/Top Secret",
+    "orbit": {
+     "id": 13,
+     "name": "Polar Orbit",
+     "abbrev": "PO"
+    },
+    "description": "Tranche 1 Tracking Layer A is one of five missions by the United States Space Force Space Development Agency (SDA) for the Proliferated Warfighter Space Architecture (PWSA) Tranche 1 Tracking Layer constellation, which will provide global indications, warning, tracking, and targeting of advanced missile threats, including hypersonic missile systems."
+   },
+   "pad": {
+    "id": 16,
+    "url": "https://ll.thespacedevs.com/2.3.0/pads/16/",
+    "active": true,
+    "name": "Space Launch Complex 4E",
+    "info_url": null,
+    "wiki_url": "https://en.wikipedia.org/wiki/Vandenberg_Space_Launch_Complex_4#SLC-4E",
+    "map_url": "https://www.google.com/maps?q=34.632,-120.611",
+    "latitude": 34.632,
+    "longitude": -120.611,
+    "country": {
+     "id": 2,
+     "name": "United States of America",
+     "alpha_2_code": "US",
+     "alpha_3_code": "USA",
+     "nationality_name": "American",
+     "nationality_name_composed": "Americano"
+    },
+    "total_launch_count": 307,
+    "orbital_launch_attempt_count": 307,
+    "fastest_turnaround": "P2DT7H48M21S",
+    "location": {
+     "response_mode": "normal",
+     "id": 11,
+     "url": "https://ll.thespacedevs.com/2.3.0/locations/11/",
+     "name": "Vandenberg SFB, CA, USA",
+     "active": true,
+     "country": {
+      "id": 2,
+      "name": "United States of America",
+      "alpha_2_code": "US",
+      "alpha_3_code": "USA",
+      "nationality_name": "American",
+      "nationality_name_composed": "Americano"
+     },
+     "longitude": -120.52023,
+     "latitude": 34.75133,
+     "total_launch_count": 923,
+     "total_landing_count": 37
+    }
+   },
+   "webcast_live": false,
+   "orbital_launch_attempt_count": 7529,
+   "location_launch_attempt_count": 958,
+   "pad_launch_attempt_count": 332,
+   "agency_launch_attempt_count": 780,
+   "orbital_launch_attempt_count_year": 356,
+   "location_launch_attempt_count_year": 106,
+   "pad_launch_attempt_count_year": 94,
+   "agency_launch_attempt_count_year": 161
+  },
+  {
+   "id": "dca8749f-1552-485a-8061-f1ad79055b8d",
+   "url": "https://ll.thespacedevs.com/2.3.0/launches/dca8749f-1552-485a-8061-f1ad79055b8d/",
+   "name": "Falcon 9 Block 5 | SDA Tranche 1 Tracking Layer C",
+   "response_mode": "normal",
+   "slug": "falcon-9-block-5-sda-tranche-1-tracking-layer-c",
+   "launch_designator": null,
+   "status": {
+    "id": 2,
+    "name": "To Be Determined",
+    "abbrev": "TBD"
+   },
+   "last_updated": "2026-08-27T16:02:56Z",
+   "net": "2026-12-31T00:00:00Z",
+   "net_precision": {
+    "id": 11,
+    "name": "Quarter 4",
+    "abbrev": "Q4"
+   },
+   "window_end": "2026-12-31T00:00:00Z",
+   "window_start": "2026-12-31T00:00:00Z",
+   "probability": null,
+   "weather_concerns": null,
+   "failreason": "",
+   "hashtag": null,
+   "launch_service_provider": {
+    "response_mode": "list",
+    "id": 121,
+    "url": "https://ll.thespacedevs.com/2.3.0/agencies/121/",
+    "name": "SpaceX",
+    "abbrev": "SpX",
+    "type": {
+     "id": 3,
+     "name": "Commercial"
+    }
+   },
+   "rocket": {
+    "id": 7896,
+    "configuration": {
+     "response_mode": "list",
+     "id": 164,
+     "url": "https://ll.thespacedevs.com/2.3.0/launcher_configurations/164/",
+     "name": "Falcon 9",
+     "full_name": "Falcon 9 Block 5",
+     "variant": "Block 5"
+    }
+   },
+   "mission": {
+    "id": 6405,
+    "name": "SDA Tranche 1 Tracking Layer C",
+    "type": "Government/Top Secret",
+    "orbit": {
+     "id": 13,
+     "name": "Polar Orbit",
+     "abbrev": "PO"
+    },
+    "description": "Tranche 1 Tracking Layer C is one of five missions by the United States Space Force Space Development Agency (SDA) for the Proliferated Warfighter Space Architecture (PWSA) Tranche 1 Tracking Layer constellation, which will provide global indications, warning, tracking, and targeting of advanced missile threats, including hypersonic missile systems."
+   },
+   "pad": {
+    "id": 16,
+    "url": "https://ll.thespacedevs.com/2.3.0/pads/16/",
+    "active": true,
+    "name": "Space Launch Complex 4E",
+    "info_url": null,
+    "wiki_url": "https://en.wikipedia.org/wiki/Vandenberg_Space_Launch_Complex_4#SLC-4E",
+    "map_url": "https://www.google.com/maps?q=34.632,-120.611",
+    "latitude": 34.632,
+    "longitude": -120.611,
+    "country": {
+     "id": 2,
+     "name": "United States of America",
+     "alpha_2_code": "US",
+     "alpha_3_code": "USA",
+     "nationality_name": "American",
+     "nationality_name_composed": "Americano"
+    },
+    "total_launch_count": 307,
+    "orbital_launch_attempt_count": 307,
+    "fastest_turnaround": "P2DT7H48M21S",
+    "location": {
+     "response_mode": "normal",
+     "id": 11,
+     "url": "https://ll.thespacedevs.com/2.3.0/locations/11/",
+     "name": "Vandenberg SFB, CA, USA",
+     "active": true,
+     "country": {
+      "id": 2,
+      "name": "United States of America",
+      "alpha_2_code": "US",
+      "alpha_3_code": "USA",
+      "nationality_name": "American",
+      "nationality_name_composed": "Americano"
+     },
+     "longitude": -120.52023,
+     "latitude": 34.75133,
+     "total_launch_count": 923,
+     "total_landing_count": 37
+    }
+   },
+   "webcast_live": false,
+   "orbital_launch_attempt_count": 7529,
+   "location_launch_attempt_count": 958,
+   "pad_launch_attempt_count": 332,
+   "agency_launch_attempt_count": 780,
+   "orbital_launch_attempt_count_year": 356,
+   "location_launch_attempt_count_year": 106,
+   "pad_launch_attempt_count_year": 94,
+   "agency_launch_attempt_count_year": 161
+  },
+  {
+   "id": "a9ee8337-127d-4f17-9e3a-a07999f80099",
+   "url": "https://ll.thespacedevs.com/2.3.0/launches/a9ee8337-127d-4f17-9e3a-a07999f80099/",
+   "name": "Falcon 9 Block 5 | SDA Tranche 1 Tracking Layer D",
+   "response_mode": "normal",
+   "slug": "falcon-9-block-5-sda-tranche-1-tracking-layer-d",
+   "launch_designator": null,
+   "status": {
+    "id": 2,
+    "name": "To Be Determined",
+    "abbrev": "TBD"
+   },
+   "last_updated": "2026-10-25T04:56:36Z",
+   "net": "2026-12-31T00:00:00Z",
+   "net_precision": {
+    "id": 11,
+    "name": "Quarter 4",
+    "abbrev": "Q4"
+   },
+   "window_end": "2026-12-31T00:00:00Z",
+   "window_start": "2026-12-31T00:00:00Z",
+   "probability": null,
+   "weather_concerns": null,
+   "failreason": "",
+   "hashtag": null,
+   "launch_service_provider": {
+    "response_mode": "list",
+    "id": 121,
+    "url": "https://ll.thespacedevs.com/2.3.0/agencies/121/",
+    "name": "SpaceX",
+    "abbrev": "SpX",
+    "type": {
+     "id": 3,
+     "name": "Commercial"
+    }
+   },
+   "rocket": {
+    "id": 7901,
+    "configuration": {
+     "response_mode": "list",
+     "id": 164,
+     "url": "https://ll.thespacedevs.com/2.3.0/launcher_configurations/164/",
+     "name": "Falcon 9",
+     "full_name": "Falcon 9 Block 5",
+     "variant": "Block 5"
+    }
+   },
+   "mission": {
+    "id": 6410,
+    "name": "SDA Tranche 1 Tracking Layer D",
+    "type": "Government/Top Secret",
+    "orbit": {
+     "id": 13,
+     "name": "Polar Orbit",
+     "abbrev": "PO"
+    },
+    "description": "Tranche 1 Tracking Layer D is one of five missions by the United States Space Force Space Development Agency (SDA) for the Proliferated Warfighter Space Architecture (PWSA) Tranche 1 Tracking Layer constellation, which will provide global indications, warning, tracking, and targeting of advanced missile threats, including hypersonic missile systems."
+   },
+   "pad": {
+    "id": 16,
+    "url": "https://ll.thespacedevs.com/2.3.0/pads/16/",
+    "active": true,
+    "name": "Space Launch Complex 4E",
+    "info_url": null,
+    "wiki_url": "https://en.wikipedia.org/wiki/Vandenberg_Space_Launch_Complex_4#SLC-4E",
+    "map_url": "https://www.google.com/maps?q=34.632,-120.611",
+    "latitude": 34.632,
+    "longitude": -120.611,
+    "country": {
+     "id": 2,
+     "name": "United States of America",
+     "alpha_2_code": "US",
+     "alpha_3_code": "USA",
+     "nationality_name": "American",
+     "nationality_name_composed": "Americano"
+    },
+    "total_launch_count": 307,
+    "orbital_launch_attempt_count": 307,
+    "fastest_turnaround": "P2DT7H48M21S",
+    "location": {
+     "response_mode": "normal",
+     "id": 11,
+     "url": "https://ll.thespacedevs.com/2.3.0/locations/11/",
+     "name": "Vandenberg SFB, CA, USA",
+     "active": true,
+     "country": {
+      "id": 2,
+      "name": "United States of America",
+      "alpha_2_code": "US",
+      "alpha_3_code": "USA",
+      "nationality_name": "American",
+      "nationality_name_composed": "Americano"
+     },
+     "longitude": -120.52023,
+     "latitude": 34.75133,
+     "total_launch_count": 923,
+     "total_landing_count": 37
+    }
+   },
+   "webcast_live": false,
+   "orbital_launch_attempt_count": 7529,
+   "location_launch_attempt_count": 958,
+   "pad_launch_attempt_count": 332,
+   "agency_launch_attempt_count": 780,
+   "orbital_launch_attempt_count_year": 356,
+   "location_launch_attempt_count_year": 106,
+   "pad_launch_attempt_count_year": 94,
+   "agency_launch_attempt_count_year": 161
+  },
+  {
+   "id": "4541ce85-0e38-42ac-a9a0-20474bb5f2cd",
+   "url": "https://ll.thespacedevs.com/2.3.0/launches/4541ce85-0e38-42ac-a9a0-20474bb5f2cd/",
+   "name": "Falcon 9 Block 5 | SDA Tranche 1 Transport Layer D",
+   "response_mode": "normal",
+   "slug": "falcon-9-block-5-sda-tranche-1-transport-layer-d",
+   "launch_designator": null,
+   "status": {
+    "id": 2,
+    "name": "To Be Determined",
+    "abbrev": "TBD"
+   },
+   "last_updated": "2026-08-27T16:00:47Z",
+   "net": "2026-12-31T00:00:00Z",
+   "net_precision": {
+    "id": 11,
+    "name": "Quarter 4",
+    "abbrev": "Q4"
+   },
+   "window_end": "2026-12-31T00:00:00Z",
+   "window_start": "2026-12-31T00:00:00Z",
+   "probability": null,
+   "weather_concerns": null,
+   "failreason": "",
+   "hashtag": null,
+   "launch_service_provider": {
+    "response_mode": "list",
+    "id": 121,
+    "url": "https://ll.thespacedevs.com/2.3.0/agencies/121/",
+    "name": "SpaceX",
+    "abbrev": "SpX",
+    "type": {
+     "id": 3,
+     "name": "Commercial"
+    }
+   },
+   "rocket": {
+    "id": 7894,
+    "configuration": {
+     "response_mode": "list",
+     "id": 164,
+     "url": "https://ll.thespacedevs.com/2.3.0/launcher_configurations/164/",
+     "name": "Falcon 9",
+     "full_name": "Falcon 9 Block 5",
+     "variant": "Block 5"
+    }
+   },
+   "mission": {
+    "id": 6403,
+    "name": "SDA Tranche 1 Transport Layer D",
+    "type": "Government/Top Secret",
+    "orbit": {
+     "id": 13,
+     "name": "Polar Orbit",
+     "abbrev": "PO"
+    },
+    "description": "Tranche 1 Transport Layer D is one of six missions by the United States Space Force Space Development Agency (SDA) for the Proliferated Warfighter Space Architecture (PWSA) Tranche 1 Transport Layer constellation, which will provide assured, resilient, low-latency military data and connectivity worldwide to the full range of warfighter platforms from Low Earth Orbit satellites.\r\n\r\nThe constellation will be interconnected with Optical Inter-Satellite Links (OISLs) which have significantly increased performance over existing radio frequency crosslinks. It is expected to operate over Ka band, have stereo coverage and be dynamically networked for simpler hand-offs, greater bandwidth and fault tolerance."
+   },
+   "pad": {
+    "id": 16,
+    "url": "https://ll.thespacedevs.com/2.3.0/pads/16/",
+    "active": true,
+    "name": "Space Launch Complex 4E",
+    "info_url": null,
+    "wiki_url": "https://en.wikipedia.org/wiki/Vandenberg_Space_Launch_Complex_4#SLC-4E",
+    "map_url": "https://www.google.com/maps?q=34.632,-120.611",
+    "latitude": 34.632,
+    "longitude": -120.611,
+    "country": {
+     "id": 2,
+     "name": "United States of America",
+     "alpha_2_code": "US",
+     "alpha_3_code": "USA",
+     "nationality_name": "American",
+     "nationality_name_composed": "Americano"
+    },
+    "total_launch_count": 307,
+    "orbital_launch_attempt_count": 307,
+    "fastest_turnaround": "P2DT7H48M21S",
+    "location": {
+     "response_mode": "normal",
+     "id": 11,
+     "url": "https://ll.thespacedevs.com/2.3.0/locations/11/",
+     "name": "Vandenberg SFB, CA, USA",
+     "active": true,
+     "country": {
+      "id": 2,
+      "name": "United States of America",
+      "alpha_2_code": "US",
+      "alpha_3_code": "USA",
+      "nationality_name": "American",
+      "nationality_name_composed": "Americano"
+     },
+     "longitude": -120.52023,
+     "latitude": 34.75133,
+     "total_launch_count": 923,
+     "total_landing_count": 37
+    }
+   },
+   "webcast_live": false,
+   "orbital_launch_attempt_count": 7529,
+   "location_launch_attempt_count": 958,
+   "pad_launch_attempt_count": 332,
+   "agency_launch_attempt_count": 780,
+   "orbital_launch_attempt_count_year": 356,
+   "location_launch_attempt_count_year": 106,
+   "pad_launch_attempt_count_year": 94,
+   "agency_launch_attempt_count_year": 161
+  },
+  {
+   "id": "c5783e2b-d458-4b99-9936-4043c236190b",
+   "url": "https://ll.thespacedevs.com/2.3.0/launches/c5783e2b-d458-4b99-9936-4043c236190b/",
+   "name": "Falcon 9 Block 5 | SDA Tranche 1 Transport Layer F",
+   "response_mode": "normal",
+   "slug": "falcon-9-block-5-sda-tranche-1-transport-layer-f",
+   "launch_designator": null,
+   "status": {
+    "id": 2,
+    "name": "To Be Determined",
+    "abbrev": "TBD"
+   },
+   "last_updated": "2026-08-27T16:01:25Z",
+   "net": "2026-12-31T00:00:00Z",
+   "net_precision": {
+    "id": 11,
+    "name": "Quarter 4",
+    "abbrev": "Q4"
+   },
+   "window_end": "2026-12-31T00:00:00Z",
+   "window_start": "2026-12-31T00:00:00Z",
+   "probability": null,
+   "weather_concerns": null,
+   "failreason": "",
+   "hashtag": null,
+   "launch_service_provider": {
+    "response_mode": "list",
+    "id": 121,
+    "url": "https://ll.thespacedevs.com/2.3.0/agencies/121/",
+    "name": "SpaceX",
+    "abbrev": "SpX",
+    "type": {
+     "id": 3,
+     "name": "Commercial"
+    }
+   },
+   "rocket": {
+    "id": 8071,
+    "configuration": {
+     "response_mode": "list",
+     "id": 164,
+     "url": "https://ll.thespacedevs.com/2.3.0/launcher_configurations/164/",
+     "name": "Falcon 9",
+     "full_name": "Falcon 9 Block 5",
+     "variant": "Block 5"
+    }
+   },
+   "mission": {
+    "id": 6624,
+    "name": "SDA Tranche 1 Transport Layer F",
+    "type": "Government/Top Secret",
+    "orbit": {
+     "id": 13,
+     "name": "Polar Orbit",
+     "abbrev": "PO"
+    },
+    "description": "Tranche 1 Transport Layer F is one of six missions by the United States Space Force Space Development Agency (SDA) for the Proliferated Warfighter Space Architecture (PWSA) Tranche 1 Transport Layer constellation, which will provide assured, resilient, low-latency military data and connectivity worldwide to the full range of warfighter platforms from Low Earth Orbit satellites.\r\n\r\nThe constellation will be interconnected with Optical Inter-Satellite Links (OISLs) which have significantly increased performance over existing radio frequency crosslinks. It is expected to operate over Ka band, have stereo coverage and be dynamically networked for simpler hand-offs, greater bandwidth and fault tolerance."
+   },
+   "pad": {
+    "id": 16,
+    "url": "https://ll.thespacedevs.com/2.3.0/pads/16/",
+    "active": true,
+    "name": "Space Launch Complex 4E",
+    "info_url": null,
+    "wiki_url": "https://en.wikipedia.org/wiki/Vandenberg_Space_Launch_Complex_4#SLC-4E",
+    "map_url": "https://www.google.com/maps?q=34.632,-120.611",
+    "latitude": 34.632,
+    "longitude": -120.611,
+    "country": {
+     "id": 2,
+     "name": "United States of America",
+     "alpha_2_code": "US",
+     "alpha_3_code": "USA",
+     "nationality_name": "American",
+     "nationality_name_composed": "Americano"
+    },
+    "total_launch_count": 307,
+    "orbital_launch_attempt_count": 307,
+    "fastest_turnaround": "P2DT7H48M21S",
+    "location": {
+     "response_mode": "normal",
+     "id": 11,
+     "url": "https://ll.thespacedevs.com/2.3.0/locations/11/",
+     "name": "Vandenberg SFB, CA, USA",
+     "active": true,
+     "country": {
+      "id": 2,
+      "name": "United States of America",
+      "alpha_2_code": "US",
+      "alpha_3_code": "USA",
+      "nationality_name": "American",
+      "nationality_name_composed": "Americano"
+     },
+     "longitude": -120.52023,
+     "latitude": 34.75133,
+     "total_launch_count": 923,
+     "total_landing_count": 37
+    }
+   },
+   "webcast_live": false,
+   "orbital_launch_attempt_count": 7529,
+   "location_launch_attempt_count": 958,
+   "pad_launch_attempt_count": 332,
+   "agency_launch_attempt_count": 780,
+   "orbital_launch_attempt_count_year": 356,
+   "location_launch_attempt_count_year": 106,
+   "pad_launch_attempt_count_year": 94,
+   "agency_launch_attempt_count_year": 161
+  },
+  {
+   "id": "875ba957-be5f-42bd-8a6e-ed98254f572a",
+   "url": "https://ll.thespacedevs.com/2.3.0/launches/875ba957-be5f-42bd-8a6e-ed98254f572a/",
+   "name": "Firefly Alpha Block 2 | ConnectedCosmos Launch 1",
+   "response_mode": "normal",
+   "slug": "firefly-alpha-block-2-connectedcosmos-launch-1",
+   "launch_designator": null,
+   "status": {
+    "id": 2,
+    "name": "To Be Determined",
+    "abbrev": "TBD"
+   },
+   "last_updated": "2026-08-11T22:32:15Z",
+   "net": "2026-12-31T00:00:00Z",
+   "net_precision": {
+    "id": 11,
+    "name": "Quarter 4",
+    "abbrev": "Q4"
+   },
+   "window_end": "2026-12-31T00:00:00Z",
+   "window_start": "2026-12-31T00:00:00Z",
+   "probability": null,
+   "weather_concerns": null,
+   "failreason": "",
+   "hashtag": null,
+   "launch_service_provider": {
+    "response_mode": "list",
+    "id": 265,
+    "url": "https://ll.thespacedevs.com/2.3.0/agencies/265/",
+    "name": "Firefly Aerospace",
+    "abbrev": "FA",
+    "type": {
+     "id": 3,
+     "name": "Commercial"
+    }
+   },
+   "rocket": {
+    "id": 8383,
+    "configuration": {
+     "response_mode": "list",
+     "id": 551,
+     "url": "https://ll.thespacedevs.com/2.3.0/launcher_configurations/551/",
+     "name": "Firefly Alpha Block 2",
+     "full_name": "Firefly Alpha Block 2",
+     "variant": "Block 2"
+    }
+   },
+   "mission": {
+    "id": 6964,
+    "name": "ConnectedCosmos Launch 1",
+    "type": "Communications",
+    "orbit": {
+     "id": 13,
+     "name": "Polar Orbit",
+     "abbrev": "PO"
+    },
+    "description": "First of at least four missions carrying 6 satellites for Open Cosmos' secure LEO broadband constellation, designed to provide independent and resilient connectivity infrastructure for Europe and the world using high-priority Ka-band spectrum filings by the Principality of Liechtenstein."
+   },
+   "pad": {
+    "id": 39,
+    "url": "https://ll.thespacedevs.com/2.3.0/pads/39/",
+    "active": true,
+    "name": "Space Launch Complex 2W",
+    "info_url": null,
+    "wiki_url": "https://en.wikipedia.org/wiki/Vandenberg_Space_Launch_Complex_2",
+    "map_url": "https://www.google.com/maps?q=34.7556,-120.6224",
+    "latitude": 34.7556,
+    "longitude": -120.6224,
+    "country": {
+     "id": 2,
+     "name": "United States of America",
+     "alpha_2_code": "US",
+     "alpha_3_code": "USA",
+     "nationality_name": "American",
+     "nationality_name_composed": "Americano"
+    },
+    "total_launch_count": 99,
+    "orbital_launch_attempt_count": 99,
+    "fastest_turnaround": "P26DT16H39M49S",
+    "location": {
+     "response_mode": "normal",
+     "id": 11,
+     "url": "https://ll.thespacedevs.com/2.3.0/locations/11/",
+     "name": "Vandenberg SFB, CA, USA",
+     "active": true,
+     "country": {
+      "id": 2,
+      "name": "United States of America",
+      "alpha_2_code": "US",
+      "alpha_3_code": "USA",
+      "nationality_name": "American",
+      "nationality_name_composed": "Americano"
+     },
+     "longitude": -120.52023,
+     "latitude": 34.75133,
+     "total_launch_count": 923,
+     "total_landing_count": 37
+    }
+   },
+   "webcast_live": false,
+   "orbital_launch_attempt_count": 7529,
+   "location_launch_attempt_count": 958,
+   "pad_launch_attempt_count": 102,
+   "agency_launch_attempt_count": 10,
+   "orbital_launch_attempt_count_year": 356,
+   "location_launch_attempt_count_year": 106,
+   "pad_launch_attempt_count_year": 4,
+   "agency_launch_attempt_count_year": 4
+  },
+  {
+   "id": "d47cbca4-48c1-455a-b357-f156833b189e",
+   "url": "https://ll.thespacedevs.com/2.3.0/launches/d47cbca4-48c1-455a-b357-f156833b189e/",
+   "name": "Firefly Alpha Block 2 | ConnectedCosmos Launch 2",
+   "response_mode": "normal",
+   "slug": "firefly-alpha-block-2-connectedcosmos-launch-2",
+   "launch_designator": null,
+   "status": {
+    "id": 2,
+    "name": "To Be Determined",
+    "abbrev": "TBD"
+   },
+   "last_updated": "2026-08-11T22:32:41Z",
+   "net": "2026-12-31T00:00:00Z",
+   "net_precision": {
+    "id": 11,
+    "name": "Quarter 4",
+    "abbrev": "Q4"
+   },
+   "window_end": "2026-12-31T00:00:00Z",
+   "window_start": "2026-12-31T00:00:00Z",
+   "probability": null,
+   "weather_concerns": null,
+   "failreason": "",
+   "hashtag": null,
+   "launch_service_provider": {
+    "response_mode": "list",
+    "id": 265,
+    "url": "https://ll.thespacedevs.com/2.3.0/agencies/265/",
+    "name": "Firefly Aerospace",
+    "abbrev": "FA",
+    "type": {
+     "id": 3,
+     "name": "Commercial"
+    }
+   },
+   "rocket": {
+    "id": 9071,
+    "configuration": {
+     "response_mode": "list",
+     "id": 551,
+     "url": "https://ll.thespacedevs.com/2.3.0/launcher_configurations/551/",
+     "name": "Firefly Alpha Block 2",
+     "full_name": "Firefly Alpha Block 2",
+     "variant": "Block 2"
+    }
+   },
+   "mission": {
+    "id": 7666,
+    "name": "ConnectedCosmos Launch 2",
+    "type": "Communications",
+    "orbit": {
+     "id": 13,
+     "name": "Polar Orbit",
+     "abbrev": "PO"
+    },
+    "description": "Second of at least four missions carrying 6 satellites for Open Cosmos' secure LEO broadband constellation, designed to provide independent and resilient connectivity infrastructure for Europe and the world using high-priority Ka-band spectrum filings by the Principality of Liechtenstein."
+   },
+   "pad": {
+    "id": 39,
+    "url": "https://ll.thespacedevs.com/2.3.0/pads/39/",
+    "active": true,
+    "name": "Space Launch Complex 2W",
+    "info_url": null,
+    "wiki_url": "https://en.wikipedia.org/wiki/Vandenberg_Space_Launch_Complex_2",
+    "map_url": "https://www.google.com/maps?q=34.7556,-120.6224",
+    "latitude": 34.7556,
+    "longitude": -120.6224,
+    "country": {
+     "id": 2,
+     "name": "United States of America",
+     "alpha_2_code": "US",
+     "alpha_3_code": "USA",
+     "nationality_name": "American",
+     "nationality_name_composed": "Americano"
+    },
+    "total_launch_count": 99,
+    "orbital_launch_attempt_count": 99,
+    "fastest_turnaround": "P26DT16H39M49S",
+    "location": {
+     "response_mode": "normal",
+     "id": 11,
+     "url": "https://ll.thespacedevs.com/2.3.0/locations/11/",
+     "name": "Vandenberg SFB, CA, USA",
+     "active": true,
+     "country": {
+      "id": 2,
+      "name": "United States of America",
+      "alpha_2_code": "US",
+      "alpha_3_code": "USA",
+      "nationality_name": "American",
+      "nationality_name_composed": "Americano"
+     },
+     "longitude": -120.52023,
+     "latitude": 34.75133,
+     "total_launch_count": 923,
+     "total_landing_count": 37
+    }
+   },
+   "webcast_live": false,
+   "orbital_launch_attempt_count": 7529,
+   "location_launch_attempt_count": 958,
+   "pad_launch_attempt_count": 102,
+   "agency_launch_attempt_count": 10,
+   "orbital_launch_attempt_count_year": 356,
+   "location_launch_attempt_count_year": 106,
+   "pad_launch_attempt_count_year": 4,
+   "agency_launch_attempt_count_year": 4
+  },
+  {
+   "id": "60f4ba6c-4201-4727-94aa-0015a5a0023f",
+   "url": "https://ll.thespacedevs.com/2.3.0/launches/60f4ba6c-4201-4727-94aa-0015a5a0023f/",
+   "name": "Spectrum | 1 x Pelican satellite",
+   "response_mode": "normal",
+   "slug": "spectrum-1-x-pelican-satellite",
+   "launch_designator": null,
+   "status": {
+    "id": 2,
+    "name": "To Be Determined",
+    "abbrev": "TBD"
+   },
+   "last_updated": "2026-07-03T07:13:16Z",
+   "net": "2026-12-31T00:00:00Z",
+   "net_precision": {
+    "id": 11,
+    "name": "Quarter 4",
+    "abbrev": "Q4"
+   },
+   "window_end": "2026-12-31T00:00:00Z",
+   "window_start": "2026-12-31T00:00:00Z",
+   "probability": null,
+   "weather_concerns": null,
+   "failreason": "",
+   "hashtag": null,
+   "launch_service_provider": {
+    "response_mode": "list",
+    "id": 1046,
+    "url": "https://ll.thespacedevs.com/2.3.0/agencies/1046/",
+    "name": "Isar Aerospace",
+    "abbrev": "ISAR",
+    "type": {
+     "id": 5,
+     "name": "Private"
+    }
+   },
+   "rocket": {
+    "id": 9081,
+    "configuration": {
+     "response_mode": "list",
+     "id": 491,
+     "url": "https://ll.thespacedevs.com/2.3.0/launcher_configurations/491/",
+     "name": "Spectrum",
+     "full_name": "Spectrum",
+     "variant": ""
+    }
+   },
+   "mission": {
+    "id": 7676,
+    "name": "1 x Pelican satellite",
+    "type": "Earth Science",
+    "orbit": {
+     "id": 17,
+     "name": "Sun-Synchronous Orbit",
+     "abbrev": "SSO"
+    },
+    "description": "Payload consists of a single Pelican high-resolution imaging satellite for Planet Labs Germany."
+   },
+   "pad": {
+    "id": 51,
+    "url": "https://ll.thespacedevs.com/2.3.0/pads/51/",
+    "active": true,
+    "name": "Orbital Launch Pad",
+    "info_url": null,
+    "wiki_url": "https://en.wikipedia.org/wiki/And%C3%B8ya_Space",
+    "map_url": "https://www.google.com/maps?q=69.1084,15.5895",
+    "latitude": 69.1084,
+    "longitude": 15.5895,
+    "country": {
+     "id": 49,
+     "name": "Norway",
+     "alpha_2_code": "NO",
+     "alpha_3_code": "NOR",
+     "nationality_name": "Norwegian",
+     "nationality_name_composed": "Norwegian"
+    },
+    "total_launch_count": 2,
+    "orbital_launch_attempt_count": 2,
+    "fastest_turnaround": "P524DT9H42M",
+    "location": {
+     "response_mode": "normal",
+     "id": 161,
+     "url": "https://ll.thespacedevs.com/2.3.0/locations/161/",
+     "name": "And\u00f8ya Spaceport",
+     "active": true,
+     "country": {
+      "id": 49,
+      "name": "Norway",
+      "alpha_2_code": "NO",
+      "alpha_3_code": "NOR",
+      "nationality_name": "Norwegian",
+      "nationality_name_composed": "Norwegian"
+     },
+     "longitude": 16.020833,
+     "latitude": 69.294167,
+     "total_launch_count": 2,
+     "total_landing_count": 0
+    }
+   },
+   "webcast_live": false,
+   "orbital_launch_attempt_count": 7529,
+   "location_launch_attempt_count": 6,
+   "pad_launch_attempt_count": 6,
+   "agency_launch_attempt_count": 6,
+   "orbital_launch_attempt_count_year": 356,
+   "location_launch_attempt_count_year": 5,
+   "pad_launch_attempt_count_year": 5,
+   "agency_launch_attempt_count_year": 5
+  },
+  {
+   "id": "b48e32c5-3776-4684-a956-5ea4df032e90",
+   "url": "https://ll.thespacedevs.com/2.3.0/launches/b48e32c5-3776-4684-a956-5ea4df032e90/",
+   "name": "Spectrum | \u03a3YNDEO-3",
+   "response_mode": "normal",
+   "slug": "spectrum-yndeo-3",
+   "launch_designator": null,
+   "status": {
+    "id": 2,
+    "name": "To Be Determined",
+    "abbrev": "TBD"
+   },
+   "last_updated": "2025-12-01T15:19:05Z",
+   "net": "2026-12-31T00:00:00Z",
+   "net_precision": {
+    "id": 11,
+    "name": "Quarter 4",
+    "abbrev": "Q4"
+   },
+   "window_end": "2026-12-31T00:00:00Z",
+   "window_start": "2026-12-31T00:00:00Z",
+   "probability": null,
+   "weather_concerns": null,
+   "failreason": "",
+   "hashtag": null,
+   "launch_service_provider": {
+    "response_mode": "list",
+    "id": 1046,
+    "url": "https://ll.thespacedevs.com/2.3.0/agencies/1046/",
+    "name": "Isar Aerospace",
+    "abbrev": "ISAR",
+    "type": {
+     "id": 5,
+     "name": "Private"
+    }
+   },
+   "rocket": {
+    "id": 8817,
+    "configuration": {
+     "response_mode": "list",
+     "id": 491,
+     "url": "https://ll.thespacedevs.com/2.3.0/launcher_configurations/491/",
+     "name": "Spectrum",
+     "full_name": "Spectrum",
+     "variant": ""
+    }
+   },
+   "mission": {
+    "id": 7408,
+    "name": "\u03a3YNDEO-3",
+    "type": "Technology",
+    "orbit": {
+     "id": 8,
+     "name": "Low Earth Orbit",
+     "abbrev": "LEO"
+    },
+    "description": "\u03a3YNDEO-3 is a satellite built by Redwire Corporation for the European Union/European Space Agency (ESA)\u2019s In-Orbit Demonstration and In-Orbit Validation Programme (IOD/IOV), which will carry 10 different technological demonstration payload from institutions of Spain, France, Germany, Italy, Luxembourg and the European Commission. The satellite is built on Redwire's Hammerhead spacecraft platform."
+   },
+   "pad": {
+    "id": 51,
+    "url": "https://ll.thespacedevs.com/2.3.0/pads/51/",
+    "active": true,
+    "name": "Orbital Launch Pad",
+    "info_url": null,
+    "wiki_url": "https://en.wikipedia.org/wiki/And%C3%B8ya_Space",
+    "map_url": "https://www.google.com/maps?q=69.1084,15.5895",
+    "latitude": 69.1084,
+    "longitude": 15.5895,
+    "country": {
+     "id": 49,
+     "name": "Norway",
+     "alpha_2_code": "NO",
+     "alpha_3_code": "NOR",
+     "nationality_name": "Norwegian",
+     "nationality_name_composed": "Norwegian"
+    },
+    "total_launch_count": 2,
+    "orbital_launch_attempt_count": 2,
+    "fastest_turnaround": "P524DT9H42M",
+    "location": {
+     "response_mode": "normal",
+     "id": 161,
+     "url": "https://ll.thespacedevs.com/2.3.0/locations/161/",
+     "name": "And\u00f8ya Spaceport",
+     "active": true,
+     "country": {
+      "id": 49,
+      "name": "Norway",
+      "alpha_2_code": "NO",
+      "alpha_3_code": "NOR",
+      "nationality_name": "Norwegian",
+      "nationality_name_composed": "Norwegian"
+     },
+     "longitude": 16.020833,
+     "latitude": 69.294167,
+     "total_launch_count": 2,
+     "total_landing_count": 0
+    }
+   },
+   "webcast_live": false,
+   "orbital_launch_attempt_count": 7529,
+   "location_launch_attempt_count": 6,
+   "pad_launch_attempt_count": 6,
+   "agency_launch_attempt_count": 6,
+   "orbital_launch_attempt_count_year": 356,
+   "location_launch_attempt_count_year": 5,
+   "pad_launch_attempt_count_year": 5,
+   "agency_launch_attempt_count_year": 5
+  },
+  {
+   "id": "3b94ad50-3505-496e-8a95-b0bc4c0dadc6",
+   "url": "https://ll.thespacedevs.com/2.3.0/launches/3b94ad50-3505-496e-8a95-b0bc4c0dadc6/",
+   "name": "Themis Demonstrator | T1H-1",
+   "response_mode": "normal",
+   "slug": "themis-demonstrator-t1h-1",
+   "launch_designator": null,
+   "status": {
+    "id": 2,
+    "name": "To Be Determined",
+    "abbrev": "TBD"
+   },
+   "last_updated": "2026-10-06T14:33:41Z",
+   "net": "2026-12-31T00:00:00Z",
+   "net_precision": {
+    "id": 11,
+    "name": "Quarter 4",
+    "abbrev": "Q4"
+   },
+   "window_end": "2026-12-31T00:00:00Z",
+   "window_start": "2026-12-31T00:00:00Z",
+   "probability": null,
+   "weather_concerns": null,
+   "failreason": "",
+   "hashtag": null,
+   "launch_service_provider": {
+    "response_mode": "list",
+    "id": 27,
+    "url": "https://ll.thespacedevs.com/2.3.0/agencies/27/",
+    "name": "European Space Agency",
+    "abbrev": "ESA",
+    "type": {
+     "id": 2,
+     "name": "Multinational"
+    }
+   },
+   "rocket": {
+    "id": 8717,
+    "configuration": {
+     "response_mode": "list",
+     "id": 523,
+     "url": "https://ll.thespacedevs.com/2.3.0/launcher_configurations/523/",
+     "name": "Themis Demonstrator",
+     "full_name": "Themis Demonstrator",
+     "variant": ""
+    }
+   },
+   "mission": {
+    "id": 7310,
+    "name": "T1H-1",
+    "type": "Test Flight",
+    "orbit": {
+     "id": 15,
+     "name": "Suborbital",
+     "abbrev": "Sub"
+    },
+    "description": "First low-altitude hop test of a Themis demonstrator, with a targeted altitude up to 100 m."
+   },
+   "pad": {
+    "id": 239,
+    "url": "https://ll.thespacedevs.com/2.3.0/pads/239/",
+    "active": true,
+    "name": "Launch Complex 3B",
+    "info_url": null,
+    "wiki_url": "https://en.wikipedia.org/wiki/Esrange#Reusable_Rocket_Testing",
+    "map_url": "https://www.google.com/maps?q=67.877368,21.165001",
+    "latitude": 67.877368,
+    "longitude": 21.165001,
+    "country": {
+     "id": 15,
+     "name": "Sweden",
+     "alpha_2_code": "SE",
+     "alpha_3_code": "SWE",
+     "nationality_name": "Swedish",
+     "nationality_name_composed": "Swedo"
+    },
+    "total_launch_count": 0,
+    "orbital_launch_attempt_count": 0,
+    "fastest_turnaround": null,
+    "location": {
+     "response_mode": "normal",
+     "id": 178,
+     "url": "https://ll.thespacedevs.com/2.3.0/locations/178/",
+     "name": "Esrange Space Center",
+     "active": true,
+     "country": {
+      "id": 15,
+      "name": "Sweden",
+      "alpha_2_code": "SE",
+      "alpha_3_code": "SWE",
+      "nationality_name": "Swedish",
+      "nationality_name_composed": "Swedo"
+     },
+     "longitude": 21.106944,
+     "latitude": 67.893889,
+     "total_launch_count": 0,
+     "total_landing_count": 0
+    }
+   },
+   "webcast_live": false,
+   "orbital_launch_attempt_count": null,
+   "location_launch_attempt_count": 1,
+   "pad_launch_attempt_count": 1,
+   "agency_launch_attempt_count": 8,
+   "orbital_launch_attempt_count_year": null,
+   "location_launch_attempt_count_year": 1,
+   "pad_launch_attempt_count_year": 1,
+   "agency_launch_attempt_count_year": 1
+  },
+  {
+   "id": "f9a8c9f6-5dc4-4e83-9876-2a51140ec806",
+   "url": "https://ll.thespacedevs.com/2.3.0/launches/f9a8c9f6-5dc4-4e83-9876-2a51140ec806/",
+   "name": "Electron | iQPS Launch 11",
+   "response_mode": "normal",
+   "slug": "electron-iqps-launch-11",
+   "launch_designator": null,
+   "status": {
+    "id": 2,
+    "name": "To Be Determined",
+    "abbrev": "TBD"
+   },
+   "last_updated": "2025-10-08T03:26:48Z",
+   "net": "2026-12-31T00:00:00Z",
+   "net_precision": {
+    "id": 14,
+    "name": "Year",
+    "abbrev": "Y"
+   },
+   "window_end": "2026-12-31T00:00:00Z",
+   "window_start": "2026-12-31T00:00:00Z",
+   "probability": null,
+   "weather_concerns": null,
+   "failreason": "",
+   "hashtag": null,
+   "launch_service_provider": {
+    "response_mode": "list",
+    "id": 147,
+    "url": "https://ll.thespacedevs.com/2.3.0/agencies/147/",
+    "name": "Rocket Lab",
+    "abbrev": "RL",
+    "type": {
+     "id": 3,
+     "name": "Commercial"
+    }
+   },
+   "rocket": {
+    "id": 8763,
+    "configuration": {
+     "response_mode": "list",
+     "id": 26,
+     "url": "https://ll.thespacedevs.com/2.3.0/launcher_configurations/26/",
+     "name": "Electron",
+     "full_name": "Electron",
+     "variant": ""
+    }
+   },
+   "mission": {
+    "id": 7354,
+    "name": "iQPS Launch 11",
+    "type": "Earth Science",
+    "orbit": {
+     "id": 8,
+     "name": "Low Earth Orbit",
+     "abbrev": "LEO"
+    },
+    "description": "Synthetic aperture radar Earth observation satellite for Japanese Earth imaging company iQPS."
+   },
+   "pad": {
+    "id": 210,
+    "url": "https://ll.thespacedevs.com/2.3.0/pads/210/",
+    "active": true,
+    "name": "Unknown Pad",
+    "info_url": null,
+    "wiki_url": null,
+    "map_url": null,
+    "latitude": -39.260881,
+    "longitude": 177.865826,
+    "country": {
+     "id": 51,
+     "name": "New Zealand",
+     "alpha_2_code": "NZ",
+     "alpha_3_code": "NZL",
+     "nationality_name": "Kiwi",
+     "nationality_name_composed": "Kiwi"
+    },
+    "total_launch_count": 0,
+    "orbital_launch_attempt_count": 0,
+    "fastest_turnaround": null,
+    "location": {
+     "response_mode": "normal",
+     "id": 10,
+     "url": "https://ll.thespacedevs.com/2.3.0/locations/10/",
+     "name": "Rocket Lab Launch Complex 1, Mahia Peninsula, New Zealand",
+     "active": true,
+     "country": {
+      "id": 51,
+      "name": "New Zealand",
+      "alpha_2_code": "NZ",
+      "alpha_3_code": "NZL",
+      "nationality_name": "Kiwi",
+      "nationality_name_composed": "Kiwi"
+     },
+     "longitude": 177.86586,
+     "latitude": -39.26085,
+     "total_launch_count": 86,
+     "total_landing_count": 17
+    }
+   },
+   "webcast_live": false,
+   "orbital_launch_attempt_count": 7529,
+   "location_launch_attempt_count": 91,
+   "pad_launch_attempt_count": 5,
+   "agency_launch_attempt_count": 107,
+   "orbital_launch_attempt_count_year": 356,
+   "location_launch_attempt_count_year": 22,
+   "pad_launch_attempt_count_year": 5,
+   "agency_launch_attempt_count_year": 28
+  },
+  {
+   "id": "599ba2df-7483-4b2f-a083-2b5ddc06e069",
+   "url": "https://ll.thespacedevs.com/2.3.0/launches/599ba2df-7483-4b2f-a083-2b5ddc06e069/",
+   "name": "Electron | LOXSAT 1",
+   "response_mode": "normal",
+   "slug": "electron-loxsat-1",
+   "launch_designator": null,
+   "status": {
+    "id": 2,
+    "name": "To Be Determined",
+    "abbrev": "TBD"
+   },
+   "last_updated": "2026-09-19T04:23:05Z",
+   "net": "2026-12-31T00:00:00Z",
+   "net_precision": {
+    "id": 14,
+    "name": "Year",
+    "abbrev": "Y"
+   },
+   "window_end": "2026-12-31T00:00:00Z",
+   "window_start": "2026-12-31T00:00:00Z",
+   "probability": null,
+   "weather_concerns": null,
+   "failreason": "",
+   "hashtag": null,
+   "launch_service_provider": {
+    "response_mode": "list",
+    "id": 147,
+    "url": "https://ll.thespacedevs.com/2.3.0/agencies/147/",
+    "name": "Rocket Lab",
+    "abbrev": "RL",
+    "type": {
+     "id": 3,
+     "name": "Commercial"
+    }
+   },
+   "rocket": {
+    "id": 8764,
+    "configuration": {
+     "response_mode": "list",
+     "id": 26,
+     "url": "https://ll.thespacedevs.com/2.3.0/launcher_configurations/26/",
+     "name": "Electron",
+     "full_name": "Electron",
+     "variant": ""
+    }
+   },
+   "mission": {
+    "id": 7355,
+    "name": "LOXSAT 1",
+    "type": "Technology",
+    "orbit": {
+     "id": 8,
+     "name": "Low Earth Orbit",
+     "abbrev": "LEO"
+    },
+    "description": "LOXSAT 1 is a demonstration satellite of a complete cryogenic oxygen fluid management system in orbit, developed by Eta Space and sponsored by NASA's Tipping Point program.\r\n\r\nThe system will be integrated on a Rocket Lab Photon-LEO satellite bus and collect critical cryogenic fluid management data in orbit for 9 months, demonstrating capabilities of in-space cryogenic storage and transferal. Eta Space plans to use technology developed for this mission to develop a truly commercial depot intended to serve multiple customers in the future."
+   },
+   "pad": {
+    "id": 210,
+    "url": "https://ll.thespacedevs.com/2.3.0/pads/210/",
+    "active": true,
+    "name": "Unknown Pad",
+    "info_url": null,
+    "wiki_url": null,
+    "map_url": null,
+    "latitude": -39.260881,
+    "longitude": 177.865826,
+    "country": {
+     "id": 51,
+     "name": "New Zealand",
+     "alpha_2_code": "NZ",
+     "alpha_3_code": "NZL",
+     "nationality_name": "Kiwi",
+     "nationality_name_composed": "Kiwi"
+    },
+    "total_launch_count": 0,
+    "orbital_launch_attempt_count": 0,
+    "fastest_turnaround": null,
+    "location": {
+     "response_mode": "normal",
+     "id": 10,
+     "url": "https://ll.thespacedevs.com/2.3.0/locations/10/",
+     "name": "Rocket Lab Launch Complex 1, Mahia Peninsula, New Zealand",
+     "active": true,
+     "country": {
+      "id": 51,
+      "name": "New Zealand",
+      "alpha_2_code": "NZ",
+      "alpha_3_code": "NZL",
+      "nationality_name": "Kiwi",
+      "nationality_name_composed": "Kiwi"
+     },
+     "longitude": 177.86586,
+     "latitude": -39.26085,
+     "total_launch_count": 86,
+     "total_landing_count": 17
+    }
+   },
+   "webcast_live": false,
+   "orbital_launch_attempt_count": 7529,
+   "location_launch_attempt_count": 91,
+   "pad_launch_attempt_count": 5,
+   "agency_launch_attempt_count": 107,
+   "orbital_launch_attempt_count_year": 356,
+   "location_launch_attempt_count_year": 22,
+   "pad_launch_attempt_count_year": 5,
+   "agency_launch_attempt_count_year": 28
+  },
+  {
+   "id": "dfd444f9-ddda-4b35-8f51-cda7cd801809",
+   "url": "https://ll.thespacedevs.com/2.3.0/launches/dfd444f9-ddda-4b35-8f51-cda7cd801809/",
+   "name": "Falcon 9 Block 5 | Rivada 1",
+   "response_mode": "normal",
+   "slug": "falcon-9-block-5-rivada-1",
+   "launch_designator": null,
+   "status": {
+    "id": 2,
+    "name": "To Be Determined",
+    "abbrev": "TBD"
+   },
+   "last_updated": "2025-11-14T13:55:36Z",
+   "net": "2026-12-31T00:00:00Z",
+   "net_precision": {
+    "id": 14,
+    "name": "Year",
+    "abbrev": "Y"
+   },
+   "window_end": "2026-12-31T00:00:00Z",
+   "window_start": "2026-12-31T00:00:00Z",
+   "probability": null,
+   "weather_concerns": null,
+   "failreason": "",
+   "hashtag": null,
+   "launch_service_provider": {
+    "response_mode": "list",
+    "id": 121,
+    "url": "https://ll.thespacedevs.com/2.3.0/agencies/121/",
+    "name": "SpaceX",
+    "abbrev": "SpX",
+    "type": {
+     "id": 3,
+     "name": "Commercial"
+    }
+   },
+   "rocket": {
+    "id": 7799,
+    "configuration": {
+     "response_mode": "list",
+     "id": 164,
+     "url": "https://ll.thespacedevs.com/2.3.0/launcher_configurations/164/",
+     "name": "Falcon 9",
+     "full_name": "Falcon 9 Block 5",
+     "variant": "Block 5"
+    }
+   },
+   "mission": {
+    "id": 6567,
+    "name": "Rivada 1",
+    "type": "Communications",
+    "orbit": {
+     "id": 13,
+     "name": "Polar Orbit",
+     "abbrev": "PO"
+    },
+    "description": "24 satellites for Rivada's internet constellation."
+   },
+   "pad": {
+    "id": 16,
+    "url": "https://ll.thespacedevs.com/2.3.0/pads/16/",
+    "active": true,
+    "name": "Space Launch Complex 4E",
+    "info_url": null,
+    "wiki_url": "https://en.wikipedia.org/wiki/Vandenberg_Space_Launch_Complex_4#SLC-4E",
+    "map_url": "https://www.google.com/maps?q=34.632,-120.611",
+    "latitude": 34.632,
+    "longitude": -120.611,
+    "country": {
+     "id": 2,
+     "name": "United States of America",
+     "alpha_2_code": "US",
+     "alpha_3_code": "USA",
+     "nationality_name": "American",
+     "nationality_name_composed": "Americano"
+    },
+    "total_launch_count": 307,
+    "orbital_launch_attempt_count": 307,
+    "fastest_turnaround": "P2DT7H48M21S",
+    "location": {
+     "response_mode": "normal",
+     "id": 11,
+     "url": "https://ll.thespacedevs.com/2.3.0/locations/11/",
+     "name": "Vandenberg SFB, CA, USA",
+     "active": true,
+     "country": {
+      "id": 2,
+      "name": "United States of America",
+      "alpha_2_code": "US",
+      "alpha_3_code": "USA",
+      "nationality_name": "American",
+      "nationality_name_composed": "Americano"
+     },
+     "longitude": -120.52023,
+     "latitude": 34.75133,
+     "total_launch_count": 923,
+     "total_landing_count": 37
+    }
+   },
+   "webcast_live": false,
+   "orbital_launch_attempt_count": 7529,
+   "location_launch_attempt_count": 958,
+   "pad_launch_attempt_count": 332,
+   "agency_launch_attempt_count": 780,
+   "orbital_launch_attempt_count_year": 356,
+   "location_launch_attempt_count_year": 106,
+   "pad_launch_attempt_count_year": 94,
+   "agency_launch_attempt_count_year": 161
+  },
+  {
+   "id": "511a3ef8-799e-4723-9293-b954d9d2eb83",
+   "url": "https://ll.thespacedevs.com/2.3.0/launches/511a3ef8-799e-4723-9293-b954d9d2eb83/",
+   "name": "Falcon 9 Block 5 | Rivada 10",
+   "response_mode": "normal",
+   "slug": "falcon-9-block-5-rivada-10",
+   "launch_designator": null,
+   "status": {
+    "id": 2,
+    "name": "To Be Determined",
+    "abbrev": "TBD"
+   },
+   "last_updated": "2026-05-06T23:21:39Z",
+   "net": "2026-12-31T00:00:00Z",
+   "net_precision": {
+    "id": 14,
+    "name": "Year",
+    "abbrev": "Y"
+   },
+   "window_end": "2026-12-31T00:00:00Z",
+   "window_start": "2026-12-31T00:00:00Z",
+   "probability": null,
+   "weather_concerns": null,
+   "failreason": "",
+   "hashtag": null,
+   "launch_service_provider": {
+    "response_mode": "list",
+    "id": 121,
+    "url": "https://ll.thespacedevs.com/2.3.0/agencies/121/",
+    "name": "SpaceX",
+    "abbrev": "SpX",
+    "type": {
+     "id": 3,
+     "name": "Commercial"
+    }
+   },
+   "rocket": {
+    "id": 7808,
+    "configuration": {
+     "response_mode": "list",
+     "id": 164,
+     "url": "https://ll.thespacedevs.com/2.3.0/launcher_configurations/164/",
+     "name": "Falcon 9",
+     "full_name": "Falcon 9 Block 5",
+     "variant": "Block 5"
+    }
+   },
+   "mission": {
+    "id": 6576,
+    "name": "Rivada 10",
+    "type": "Communications",
+    "orbit": {
+     "id": 13,
+     "name": "Polar Orbit",
+     "abbrev": "PO"
+    },
+    "description": "24 satellites for Rivada's internet constellation."
+   },
+   "pad": {
+    "id": 16,
+    "url": "https://ll.thespacedevs.com/2.3.0/pads/16/",
+    "active": true,
+    "name": "Space Launch Complex 4E",
+    "info_url": null,
+    "wiki_url": "https://en.wikipedia.org/wiki/Vandenberg_Space_Launch_Complex_4#SLC-4E",
+    "map_url": "https://www.google.com/maps?q=34.632,-120.611",
+    "latitude": 34.632,
+    "longitude": -120.611,
+    "country": {
+     "id": 2,
+     "name": "United States of America",
+     "alpha_2_code": "US",
+     "alpha_3_code": "USA",
+     "nationality_name": "American",
+     "nationality_name_composed": "Americano"
+    },
+    "total_launch_count": 307,
+    "orbital_launch_attempt_count": 307,
+    "fastest_turnaround": "P2DT7H48M21S",
+    "location": {
+     "response_mode": "normal",
+     "id": 11,
+     "url": "https://ll.thespacedevs.com/2.3.0/locations/11/",
+     "name": "Vandenberg SFB, CA, USA",
+     "active": true,
+     "country": {
+      "id": 2,
+      "name": "United States of America",
+      "alpha_2_code": "US",
+      "alpha_3_code": "USA",
+      "nationality_name": "American",
+      "nationality_name_composed": "Americano"
+     },
+     "longitude": -120.52023,
+     "latitude": 34.75133,
+     "total_launch_count": 923,
+     "total_landing_count": 37
+    }
+   },
+   "webcast_live": false,
+   "orbital_launch_attempt_count": 7529,
+   "location_launch_attempt_count": 958,
+   "pad_launch_attempt_count": 332,
+   "agency_launch_attempt_count": 780,
+   "orbital_launch_attempt_count_year": 356,
+   "location_launch_attempt_count_year": 106,
+   "pad_launch_attempt_count_year": 94,
+   "agency_launch_attempt_count_year": 161
+  },
+  {
+   "id": "d08d8b46-353b-4eee-ab5e-e1385b329008",
+   "url": "https://ll.thespacedevs.com/2.3.0/launches/d08d8b46-353b-4eee-ab5e-e1385b329008/",
+   "name": "Falcon 9 Block 5 | Rivada 11",
+   "response_mode": "normal",
+   "slug": "falcon-9-block-5-rivada-11",
+   "launch_designator": null,
+   "status": {
+    "id": 2,
+    "name": "To Be Determined",
+    "abbrev": "TBD"
+   },
+   "last_updated": "2026-05-06T23:21:54Z",
+   "net": "2026-12-31T00:00:00Z",
+   "net_precision": {
+    "id": 14,
+    "name": "Year",
+    "abbrev": "Y"
+   },
+   "window_end": "2026-12-31T00:00:00Z",
+   "window_start": "2026-12-31T00:00:00Z",
+   "probability": null,
+   "weather_concerns": null,
+   "failreason": "",
+   "hashtag": null,
+   "launch_service_provider": {
+    "response_mode": "list",
+    "id": 121,
+    "url": "https://ll.thespacedevs.com/2.3.0/agencies/121/",
+    "name": "SpaceX",
+    "abbrev": "SpX",
+    "type": {
+     "id": 3,
+     "name": "Commercial"
+    }
+   },
+   "rocket": {
+    "id": 7809,
+    "configuration": {
+     "response_mode": "list",
+     "id": 164,
+     "url": "https://ll.thespacedevs.com/2.3.0/launcher_configurations/164/",
+     "name": "Falcon 9",
+     "full_name": "Falcon 9 Block 5",
+     "variant": "Block 5"
+    }
+   },
+   "mission": {
+    "id": 6577,
+    "name": "Rivada 11",
+    "type": "Communications",
+    "orbit": {
+     "id": 13,
+     "name": "Polar Orbit",
+     "abbrev": "PO"
+    },
+    "description": "24 satellites for Rivada's internet constellation."
+   },
+   "pad": {
+    "id": 16,
+    "url": "https://ll.thespacedevs.com/2.3.0/pads/16/",
+    "active": true,
+    "name": "Space Launch Complex 4E",
+    "info_url": null,
+    "wiki_url": "https://en.wikipedia.org/wiki/Vandenberg_Space_Launch_Complex_4#SLC-4E",
+    "map_url": "https://www.google.com/maps?q=34.632,-120.611",
+    "latitude": 34.632,
+    "longitude": -120.611,
+    "country": {
+     "id": 2,
+     "name": "United States of America",
+     "alpha_2_code": "US",
+     "alpha_3_code": "USA",
+     "nationality_name": "American",
+     "nationality_name_composed": "Americano"
+    },
+    "total_launch_count": 307,
+    "orbital_launch_attempt_count": 307,
+    "fastest_turnaround": "P2DT7H48M21S",
+    "location": {
+     "response_mode": "normal",
+     "id": 11,
+     "url": "https://ll.thespacedevs.com/2.3.0/locations/11/",
+     "name": "Vandenberg SFB, CA, USA",
+     "active": true,
+     "country": {
+      "id": 2,
+      "name": "United States of America",
+      "alpha_2_code": "US",
+      "alpha_3_code": "USA",
+      "nationality_name": "American",
+      "nationality_name_composed": "Americano"
+     },
+     "longitude": -120.52023,
+     "latitude": 34.75133,
+     "total_launch_count": 923,
+     "total_landing_count": 37
+    }
+   },
+   "webcast_live": false,
+   "orbital_launch_attempt_count": 7529,
+   "location_launch_attempt_count": 958,
+   "pad_launch_attempt_count": 332,
+   "agency_launch_attempt_count": 780,
+   "orbital_launch_attempt_count_year": 356,
+   "location_launch_attempt_count_year": 106,
+   "pad_launch_attempt_count_year": 94,
+   "agency_launch_attempt_count_year": 161
+  }
+ ]
+}

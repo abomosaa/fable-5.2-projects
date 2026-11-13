@@ -1,0 +1,30 @@
+[gd_resource type="ShaderMaterial" format=3]
+
+[ext_resource type="Shader" path="res://assets/env/shaders/env_pbr.gdshader" id="1_ierun"]
+[ext_resource type="Texture2D" path="res://assets/env/tex/block_concrete_albedo.jpg" id="2_yxc6j"]
+[ext_resource type="Texture2D" path="res://assets/env/tex/macro_noise.png" id="3_ikefe"]
+[ext_resource type="Texture2D" path="res://assets/env/tex/block_concrete_normal.jpg" id="4_i0ugo"]
+[ext_resource type="Texture2D" path="res://assets/env/tex/block_concrete_orm.jpg" id="5_p3vgm"]
+
+[resource]
+render_priority = 0
+shader = ExtResource("1_ierun")
+shader_parameter/albedo_tex = ExtResource("2_yxc6j")
+shader_parameter/normal_tex = ExtResource("4_i0ugo")
+shader_parameter/orm_tex = ExtResource("5_p3vgm")
+shader_parameter/macro_tex = ExtResource("3_ikefe")
+shader_parameter/tint = Color(0.93, 0.95, 0.97, 1)
+shader_parameter/brightness = 1.85
+shader_parameter/saturation = 1.0
+shader_parameter/normal_strength = 1.3
+shader_parameter/roughness_mul = 1.0
+shader_parameter/roughness_add = 0.0
+shader_parameter/metallic_mul = 1.0
+shader_parameter/ao_strength = 1.0
+shader_parameter/piece_variation = 0.16
+shader_parameter/macro_variation = 0.16
+shader_parameter/dirt_color = Color(0.17, 0.13, 0.095, 1)
+shader_parameter/dirt_strength = 0.75
+shader_parameter/bleach_strength = 0.12
+shader_parameter/use_wear = 0.0
+shader_parameter/specular_level = 0.5

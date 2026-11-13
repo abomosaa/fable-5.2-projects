@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="dev.pocket3d.data.SyncEngineTest" tests="16" skipped="0" failures="0" errors="0" timestamp="2026-11-12T10:55:57.384Z" hostname="h4-pc" time="8.348">
+  <properties/>
+  <testcase name="remoteJobMissingBecomesInterruptedNotFailedNorComplete" classname="dev.pocket3d.data.SyncEngineTest" time="0.231"/>
+  <testcase name="onlySelectedFramesAreUploaded" classname="dev.pocket3d.data.SyncEngineTest" time="0.593"/>
+  <testcase name="damagedDownloadIsRefetchedAndAModelIsOnlyRegisteredWhenChecksumsMatch" classname="dev.pocket3d.data.SyncEngineTest" time="1.279"/>
+  <testcase name="startJobValidatesItsInput" classname="dev.pocket3d.data.SyncEngineTest" time="0.001"/>
+  <testcase name="interruptedJobCanBeRetriedAndReusesTheRemoteJob" classname="dev.pocket3d.data.SyncEngineTest" time="0.803"/>
+  <testcase name="restartWhileRunningContinuesPollingWithoutResubmitting" classname="dev.pocket3d.data.SyncEngineTest" time="0.612"/>
+  <testcase name="jobOfAnotherCompanionIsNeverPolledOnTheNewOne" classname="dev.pocket3d.data.SyncEngineTest" time="0.211"/>
+  <testcase name="notPairedFailsImmediatelyWithGuidance" classname="dev.pocket3d.data.SyncEngineTest" time="0.002"/>
+  <testcase name="happyPathGoesThroughEveryPhaseAndRegistersTheModelOnlyAfterVerification" classname="dev.pocket3d.data.SyncEngineTest" time="0.576"/>
+  <testcase name="restartMidUploadResumesFromTheOffsetsTheCompanionHas" classname="dev.pocket3d.data.SyncEngineTest" time="0.696"/>
+  <testcase name="remoteFailureCopiesDiagnosisAndGuidanceAndKeepsThePreviousModel" classname="dev.pocket3d.data.SyncEngineTest" time="0.815"/>
+  <testcase name="cancelDuringUploadStopsUploadingAndTellsTheCompanion" classname="dev.pocket3d.data.SyncEngineTest" time="0.206"/>
+  <testcase name="unreachableCompanionNeverFailsTheJobAndRecovers" classname="dev.pocket3d.data.SyncEngineTest" time="0.883"/>
+  <testcase name="connectionLossWhileRunningKeepsThePhaseAndContinuesFromLastEvent" classname="dev.pocket3d.data.SyncEngineTest" time="1.023"/>
+  <testcase name="permanentUploadRejectionFailsWithASpecificMessage" classname="dev.pocket3d.data.SyncEngineTest" time="0.058"/>
+  <testcase name="cancelWhileRunningIsDeliveredEvenIfTheCompanionWasUnreachableAtThatMoment" classname="dev.pocket3d.data.SyncEngineTest" time="0.359"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

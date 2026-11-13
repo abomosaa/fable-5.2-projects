@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Untitled mechanism — assembly guide</title>
+<style>*{box-sizing:border-box}
+body{font-family:system-ui,-apple-system,"Segoe UI",Helvetica,Arial,sans-serif;color:#111827;background:#fff;margin:0;padding:24px;line-height:1.45;font-size:14px}
+main{max-width:960px;margin:0 auto}
+h1{font-size:26px;margin:0 0 4px}
+h2{font-size:18px;margin:32px 0 10px;padding-bottom:4px;border-bottom:2px solid #111827}
+h3{font-size:15px;margin:18px 0 6px}
+p{margin:6px 0}
+.sub{color:#4b5563;margin:0 0 12px}
+.disclaimer{border:1px solid #b45309;background:#fffbeb;padding:10px 12px;border-radius:4px;font-size:13px}
+.desc{white-space:pre-wrap;color:#374151}
+table{border-collapse:collapse;width:100%;font-size:12.5px;margin:6px 0 14px}
+th,td{border:1px solid #9ca3af;padding:4px 6px;text-align:left;vertical-align:top}
+th{background:#f3f4f6}
+td.num,th.num{text-align:right;white-space:nowrap}
+figure{margin:8px 0;text-align:center}
+figure svg{max-width:100%;height:auto}
+figcaption{font-size:12px;color:#4b5563}
+.step{border:1px solid #d1d5db;border-radius:4px;padding:10px 14px;margin:12px 0;break-inside:avoid;page-break-inside:avoid}
+.step h3{margin-top:0}
+.step ol,.step ul{margin:4px 0 4px 20px;padding:0}
+.hw{font-size:13px;color:#374151}
+.pn{font-weight:700;white-space:nowrap}
+.muted{color:#6b7280}
+footer{margin-top:28px;font-size:12px;color:#6b7280;border-top:1px solid #d1d5db;padding-top:8px}
+@media print{body{padding:0;font-size:11.5px}h2{break-after:avoid}table,figure{break-inside:avoid}.disclaimer{background:none}}</style>
+</head>
+<body>
+<main>
+<h1>Untitled mechanism</h1>
+<p class="sub">Assembly guide · 1 part · 1 joint · all dimensions in mm</p>
+<p class="disclaimer"><strong>Read first.</strong> This guide is generated automatically from the design model. Dimensions are in millimetres. Simulation results and generated geometry are an aid to design, not a guarantee: fits, material, manufacturing process, fasteners and real-world load capacity must be checked by a competent person before the mechanism is built or used.</p>
+<h2>1. Exploded view</h2>
+<figure><svg xmlns="http://www.w3.org/2000/svg" class="exploded-view" width="900" height="274" viewBox="-36.88 -13.15 74.51 22.64" role="img" font-family="sans-serif"><title>Exploded view — Untitled mechanism</title><g class="parts"><g class="part-layer" data-part="P1"><path d="M-31 9L29 9L29 -11L-31 -11ZM-18.97 -0.46L-19.18 0.05L-19.52 0.48L-19.95 0.82L-20.46 1.03L-21 1.1L-21.54 1.03L-22.05 0.82L-22.48 0.48L-22.82 0.05L-23.03 -0.46L-23.1 -1L-23.03 -1.54L-22.82 -2.05L-22.48 -2.48L-22.05 -2.82L-21.54 -3.03L-21 -3.1L-20.46 -3.03L-19.95 -2.82L-19.52 -2.48L-19.18 -2.05L-18.97 -1.54L-18.9 -1ZM21.03 -0.46L20.82 0.05L20.48 0.48L20.05 0.82L19.54 1.03L19 1.1L18.46 1.03L17.95 0.82L17.52 0.48L17.18 0.05L16.97 -0.46L16.9 -1L16.97 -1.54L17.18 -2.05L17.52 -2.48L17.95 -2.82L18.46 -3.03L19 -3.1L19.54 -3.03L20.05 -2.82L20.48 -2.48L20.82 -2.05L21.03 -1.54L21.1 -1Z" fill="#a3a6a8" fill-rule="evenodd" stroke="#1f2937" stroke-width="0.05" stroke-linejoin="round"/><path d="M-28.25 7.35L31.75 7.35L29 9L-31 9ZM29 9L29 -11L31.75 -12.65L31.75 7.35ZM29 -11L-31 -11L-28.25 -12.65L31.75 -12.65ZM-28.25 -12.65L-28.25 7.35L-31 9L-31 -11ZM-16.22 -2.11L-16.43 -1.6L-19.18 0.05L-18.97 -0.46ZM-16.43 -1.6L-16.77 -1.17L-19.52 0.48L-19.18 0.05ZM-16.77 -1.17L-17.2 -0.83L-19.95 0.82L-19.52 0.48ZM-19.95 0.82L-20.46 1.03L-17.71 -0.62L-17.2 -0.83ZM-20.46 1.03L-21 1.1L-18.25 -0.55L-17.71 -0.62ZM-21 1.1L-21.54 1.03L-18.79 -0.62L-18.25 -0.55ZM-21.54 1.03L-22.05 0.82L-19.3 -0.83L-18.79 -0.62ZM-22.05 0.82L-22.48 0.48L-19.73 -1.17L-19.3 -0.83ZM-22.48 0.48L-22.82 0.05L-20.07 -1.6L-19.73 -1.17ZM-22.82 0.05L-23.03 -0.46L-20.28 -2.11L-20.07 -1.6ZM-23.03 -0.46L-23.1 -1L-20.35 -2.65L-20.28 -2.11ZM-23.1 -1L-23.03 -1.54L-20.28 -3.19L-20.35 -2.65ZM-23.03 -1.54L-22.82 -2.05L-20.07 -3.7L-20.28 -3.19ZM-22.82 -2.05L-22.48 -2.48L-19.73 -4.13L-20.07 -3.7ZM-22.48 -2.48L-22.05 -2.82L-19.3 -4.47L-19.73 -4.13ZM-19.3 -4.47L-18.79 -4.68L-21.54 -3.03L-22.05 -2.82ZM-18.79 -4.68L-18.25 -4.75L-21 -3.1L-21.54 -3.03ZM-18.25 -4.75L-17.71 -4.68L-20.46 -3.03L-21 -3.1ZM-17.71 -4.68L-17.2 -4.47L-19.95 -2.82L-20.46 -3.03ZM-17.2 -4.47L-16.77 -4.13L-19.52 -2.48L-19.95 -2.82ZM-16.77 -4.13L-16.43 -3.7L-19.18 -2.05L-19.52 -2.48ZM-16.43 -3.7L-16.22 -3.19L-18.97 -1.54L-19.18 -2.05ZM-16.22 -3.19L-16.15 -2.65L-18.9 -1L-18.97 -1.54ZM-16.15 -2.65L-16.22 -2.11L-18.97 -0.46L-18.9 -1ZM23.78 -2.11L23.57 -1.6L20.82 0.05L21.03 -0.46ZM23.57 -1.6L23.23 -1.17L20.48 0.48L20.82 0.05ZM23.23 -1.17L22.8 -0.83L20.05 0.82L20.48 0.48ZM20.05 0.82L19.54 1.03L22.29 -0.62L22.8 -0.83ZM19.54 1.03L19 1.1L21.75 -0.55L22.29 -0.62ZM19 1.1L18.46 1.03L21.21 -0.62L21.75 -0.55ZM18.46 1.03L17.95 0.82L20.7 -0.83L21.21 -0.62ZM17.95 0.82L17.52 0.48L20.27 -1.17L20.7 -0.83ZM17.52 0.48L17.18 0.05L19.93 -1.6L20.27 -1.17ZM17.18 0.05L16.97 -0.46L19.72 -2.11L19.93 -1.6ZM16.97 -0.46L16.9 -1L19.65 -2.65L19.72 -2.11ZM16.9 -1L16.97 -1.54L19.72 -3.19L19.65 -2.65ZM16.97 -1.54L17.18 -2.05L19.93 -3.7L19.72 -3.19ZM17.18 -2.05L17.52 -2.48L20.27 -4.13L19.93 -3.7ZM17.52 -2.48L17.95 -2.82L20.7 -4.47L20.27 -4.13ZM20.7 -4.47L21.21 -4.68L18.46 -3.03L17.95 -2.82ZM21.21 -4.68L21.75 -4.75L19 -3.1L18.46 -3.03ZM21.75 -4.75L22.29 -4.68L19.54 -3.03L19 -3.1ZM22.29 -4.68L22.8 -4.47L20.05 -2.82L19.54 -3.03ZM22.8 -4.47L23.23 -4.13L20.48 -2.48L20.05 -2.82ZM23.23 -4.13L23.57 -3.7L20.82 -2.05L20.48 -2.48ZM23.57 -3.7L23.78 -3.19L21.03 -1.54L20.82 -2.05ZM23.78 -3.19L23.85 -2.65L21.1 -1L21.03 -1.54ZM23.85 -2.65L23.78 -2.11L21.03 -0.46L21.1 -1Z" fill="#a3a6a8" fill-rule="nonzero" stroke="none"/><path d="M-28.25 7.35L31.75 7.35L31.75 -12.65L-28.25 -12.65ZM-16.22 -2.11L-16.43 -1.6L-16.77 -1.17L-17.2 -0.83L-17.71 -0.62L-18.25 -0.55L-18.79 -0.62L-19.3 -0.83L-19.73 -1.17L-20.07 -1.6L-20.28 -2.11L-20.35 -2.65L-20.28 -3.19L-20.07 -3.7L-19.73 -4.13L-19.3 -4.47L-18.79 -4.68L-18.25 -4.75L-17.71 -4.68L-17.2 -4.47L-16.77 -4.13L-16.43 -3.7L-16.22 -3.19L-16.15 -2.65ZM23.78 -2.11L23.57 -1.6L23.23 -1.17L22.8 -0.83L22.29 -0.62L21.75 -0.55L21.21 -0.62L20.7 -0.83L20.27 -1.17L19.93 -1.6L19.72 -2.11L19.65 -2.65L19.72 -3.19L19.93 -3.7L20.27 -4.13L20.7 -4.47L21.21 -4.68L21.75 -4.75L22.29 -4.68L22.8 -4.47L23.23 -4.13L23.57 -3.7L23.78 -3.19L23.85 -2.65Z" fill="#e3e6ea" fill-rule="evenodd" stroke="#1f2937" stroke-width="0.07" stroke-linejoin="round"/></g></g><g class="connectors" fill="none" stroke="#475569" stroke-width="0.07" stroke-dasharray="0.33 0.25" opacity="0.75"></g><g class="balloons"><g class="balloon" data-part="P1"><line x1="34.98" y1="-2.65" x2="1.75" y2="-2.65" stroke="#111827" stroke-width="0.07"/><circle cx="1.75" cy="-2.65" r="0.15" fill="#111827"/><circle cx="36.05" cy="-2.65" r="1.08" fill="#ffffff" stroke="#111827" stroke-width="0.09"/><text x="36.05" y="-2.32" font-size="0.91" text-anchor="middle" font-weight="bold" fill="#111827">P1</text></g></g></svg><figcaption>Parts are spread along the stacking axis Z (drawn up and to the right). Dashed lines join mating pin / fastening points. Balloons show part numbers.</figcaption></figure>
+<table class="legend"><thead><tr><th>Part No.</th><th>Name</th><th>Type</th><th>Material</th><th class="num">Stack z (mm)</th></tr></thead><tbody>
+<tr><td class="pn">P1</td><td>Sketched part</td><td>Sketched part</td><td>PLA (printed)</td><td class="num">0 … 5</td></tr>
+</tbody></table>
+<h2>2. Bill of materials</h2>
+<h3>Custom parts (to manufacture)</h3>
+<table class="bom">
+<thead><tr><th class="num">Item</th><th>Part No.</th><th>Name</th><th class="num">Qty</th><th>Specification</th><th>Material</th><th>Process</th><th class="num">Mass each (g)</th><th>Note</th></tr></thead>
+<tbody>
+<tr><td class="num">1</td><td class="pn">P1</td><td>Sketched part</td><td class="num">1</td><td>Sketched part &quot;Sketch 1&quot; 60 × 20 × 5 mm</td><td>PLA (printed)</td><td>3D print (FDM)</td><td class="num">7.27</td><td></td></tr>
+</tbody>
+</table>
+<h3>Purchased parts and hardware</h3>
+<table class="bom">
+<thead><tr><th class="num">Item</th><th>Part No.</th><th>Name</th><th class="num">Qty</th><th>Specification</th><th>Material</th><th>Process</th><th class="num">Mass each (g)</th><th>Note</th></tr></thead>
+<tbody>
+<tr><td class="num">2</td><td class="pn">—</td><td>Dowel pin / shoulder screw</td><td class="num">1</td><td>Dowel pin / shoulder screw ⌀4.2 × 9 mm</td><td>Steel</td><td>Purchased</td><td class="num">0.98</td><td>For joint: &quot;Pivot&quot;. Length = stack height of the joined parts; pick the next standard length and add axial retention.</td></tr>
+</tbody>
+</table>
+<h2>3. Mating table</h2>
+<table class="mates"><thead><tr><th>Joint</th><th>Type</th><th>Part A</th><th>Anchor A</th><th>Part B</th><th>Anchor B</th><th>Key parameter</th></tr></thead><tbody>
+<tr><td>Pivot</td><td>Revolute</td><td><span class="muted">Ground (fixed frame)</span></td><td>(-21, 1) mm</td><td><span class="pn">P1</span> Sketched part</td><td>Hole H1 (⌀4.2)</td><td>pin ⌀4.2 × 9 mm</td></tr>
+</tbody></table>
+<h2>4. Assembly steps</h2>
+<section class="step" id="step-1">
+<h3>Step 1 of 1 — add <span class="pn">P1</span> Sketched part</h3>
+<figure><svg xmlns="http://www.w3.org/2000/svg" class="exploded-view" width="620" height="177" viewBox="-40.32 -13.44 81.39 23.23" role="img" font-family="sans-serif"><title>Exploded view — Untitled mechanism</title><g class="parts"><g class="part-layer highlight" data-part="P1"><path d="M-31 9L29 9L29 -11L-31 -11ZM-18.97 -0.46L-19.18 0.05L-19.52 0.48L-19.95 0.82L-20.46 1.03L-21 1.1L-21.54 1.03L-22.05 0.82L-22.48 0.48L-22.82 0.05L-23.03 -0.46L-23.1 -1L-23.03 -1.54L-22.82 -2.05L-22.48 -2.48L-22.05 -2.82L-21.54 -3.03L-21 -3.1L-20.46 -3.03L-19.95 -2.82L-19.52 -2.48L-19.18 -2.05L-18.97 -1.54L-18.9 -1ZM21.03 -0.46L20.82 0.05L20.48 0.48L20.05 0.82L19.54 1.03L19 1.1L18.46 1.03L17.95 0.82L17.52 0.48L17.18 0.05L16.97 -0.46L16.9 -1L16.97 -1.54L17.18 -2.05L17.52 -2.48L17.95 -2.82L18.46 -3.03L19 -3.1L19.54 -3.03L20.05 -2.82L20.48 -2.48L20.82 -2.05L21.03 -1.54L21.1 -1Z" fill="#b07208" fill-rule="evenodd" stroke="#1f2937" stroke-width="0.08" stroke-linejoin="round"/><path d="M-28.25 7.35L31.75 7.35L29 9L-31 9ZM29 9L29 -11L31.75 -12.65L31.75 7.35ZM29 -11L-31 -11L-28.25 -12.65L31.75 -12.65ZM-28.25 -12.65L-28.25 7.35L-31 9L-31 -11ZM-16.22 -2.11L-16.43 -1.6L-19.18 0.05L-18.97 -0.46ZM-16.43 -1.6L-16.77 -1.17L-19.52 0.48L-19.18 0.05ZM-16.77 -1.17L-17.2 -0.83L-19.95 0.82L-19.52 0.48ZM-19.95 0.82L-20.46 1.03L-17.71 -0.62L-17.2 -0.83ZM-20.46 1.03L-21 1.1L-18.25 -0.55L-17.71 -0.62ZM-21 1.1L-21.54 1.03L-18.79 -0.62L-18.25 -0.55ZM-21.54 1.03L-22.05 0.82L-19.3 -0.83L-18.79 -0.62ZM-22.05 0.82L-22.48 0.48L-19.73 -1.17L-19.3 -0.83ZM-22.48 0.48L-22.82 0.05L-20.07 -1.6L-19.73 -1.17ZM-22.82 0.05L-23.03 -0.46L-20.28 -2.11L-20.07 -1.6ZM-23.03 -0.46L-23.1 -1L-20.35 -2.65L-20.28 -2.11ZM-23.1 -1L-23.03 -1.54L-20.28 -3.19L-20.35 -2.65ZM-23.03 -1.54L-22.82 -2.05L-20.07 -3.7L-20.28 -3.19ZM-22.82 -2.05L-22.48 -2.48L-19.73 -4.13L-20.07 -3.7ZM-22.48 -2.48L-22.05 -2.82L-19.3 -4.47L-19.73 -4.13ZM-19.3 -4.47L-18.79 -4.68L-21.54 -3.03L-22.05 -2.82ZM-18.79 -4.68L-18.25 -4.75L-21 -3.1L-21.54 -3.03ZM-18.25 -4.75L-17.71 -4.68L-20.46 -3.03L-21 -3.1ZM-17.71 -4.68L-17.2 -4.47L-19.95 -2.82L-20.46 -3.03ZM-17.2 -4.47L-16.77 -4.13L-19.52 -2.48L-19.95 -2.82ZM-16.77 -4.13L-16.43 -3.7L-19.18 -2.05L-19.52 -2.48ZM-16.43 -3.7L-16.22 -3.19L-18.97 -1.54L-19.18 -2.05ZM-16.22 -3.19L-16.15 -2.65L-18.9 -1L-18.97 -1.54ZM-16.15 -2.65L-16.22 -2.11L-18.97 -0.46L-18.9 -1ZM23.78 -2.11L23.57 -1.6L20.82 0.05L21.03 -0.46ZM23.57 -1.6L23.23 -1.17L20.48 0.48L20.82 0.05ZM23.23 -1.17L22.8 -0.83L20.05 0.82L20.48 0.48ZM20.05 0.82L19.54 1.03L22.29 -0.62L22.8 -0.83ZM19.54 1.03L19 1.1L21.75 -0.55L22.29 -0.62ZM19 1.1L18.46 1.03L21.21 -0.62L21.75 -0.55ZM18.46 1.03L17.95 0.82L20.7 -0.83L21.21 -0.62ZM17.95 0.82L17.52 0.48L20.27 -1.17L20.7 -0.83ZM17.52 0.48L17.18 0.05L19.93 -1.6L20.27 -1.17ZM17.18 0.05L16.97 -0.46L19.72 -2.11L19.93 -1.6ZM16.97 -0.46L16.9 -1L19.65 -2.65L19.72 -2.11ZM16.9 -1L16.97 -1.54L19.72 -3.19L19.65 -2.65ZM16.97 -1.54L17.18 -2.05L19.93 -3.7L19.72 -3.19ZM17.18 -2.05L17.52 -2.48L20.27 -4.13L19.93 -3.7ZM17.52 -2.48L17.95 -2.82L20.7 -4.47L20.27 -4.13ZM20.7 -4.47L21.21 -4.68L18.46 -3.03L17.95 -2.82ZM21.21 -4.68L21.75 -4.75L19 -3.1L18.46 -3.03ZM21.75 -4.75L22.29 -4.68L19.54 -3.03L19 -3.1ZM22.29 -4.68L22.8 -4.47L20.05 -2.82L19.54 -3.03ZM22.8 -4.47L23.23 -4.13L20.48 -2.48L20.05 -2.82ZM23.23 -4.13L23.57 -3.7L20.82 -2.05L20.48 -2.48ZM23.57 -3.7L23.78 -3.19L21.03 -1.54L20.82 -2.05ZM23.78 -3.19L23.85 -2.65L21.1 -1L21.03 -1.54ZM23.85 -2.65L23.78 -2.11L21.03 -0.46L21.1 -1Z" fill="#b07208" fill-rule="nonzero" stroke="none"/><path d="M-28.25 7.35L31.75 7.35L31.75 -12.65L-28.25 -12.65ZM-16.22 -2.11L-16.43 -1.6L-16.77 -1.17L-17.2 -0.83L-17.71 -0.62L-18.25 -0.55L-18.79 -0.62L-19.3 -0.83L-19.73 -1.17L-20.07 -1.6L-20.28 -2.11L-20.35 -2.65L-20.28 -3.19L-20.07 -3.7L-19.73 -4.13L-19.3 -4.47L-18.79 -4.68L-18.25 -4.75L-17.71 -4.68L-17.2 -4.47L-16.77 -4.13L-16.43 -3.7L-16.22 -3.19L-16.15 -2.65ZM23.78 -2.11L23.57 -1.6L23.23 -1.17L22.8 -0.83L22.29 -0.62L21.75 -0.55L21.21 -0.62L20.7 -0.83L20.27 -1.17L19.93 -1.6L19.72 -2.11L19.65 -2.65L19.72 -3.19L19.93 -3.7L20.27 -4.13L20.7 -4.47L21.21 -4.68L21.75 -4.75L22.29 -4.68L22.8 -4.47L23.23 -4.13L23.57 -3.7L23.78 -3.19L23.85 -2.65Z" fill="#f59e0b" fill-rule="evenodd" stroke="#1f2937" stroke-width="0.12" stroke-linejoin="round"/></g></g><g class="connectors" fill="none" stroke="#475569" stroke-width="0.11" stroke-dasharray="0.53 0.39" opacity="0.75"></g><g class="balloons"><g class="balloon highlight" data-part="P1"><line x1="36.87" y1="-2.65" x2="1.75" y2="-2.65" stroke="#111827" stroke-width="0.11"/><circle cx="1.75" cy="-2.65" r="0.24" fill="#111827"/><circle cx="38.58" cy="-2.65" r="1.71" fill="#fde68a" stroke="#111827" stroke-width="0.24"/><text x="38.58" y="-2.13" font-size="1.44" text-anchor="middle" font-weight="bold" fill="#111827">P1</text></g></g></svg></figure>
+<ol><li>Take P1 &#39;Sketched part&#39; (Sketched part); it sits at z = 0 … 5 mm in the stack.</li><li>Pin P1 &#39;Sketched part&#39; (Hole H1 (⌀4.2)) to the fixed frame at (-21, 1) mm so that it turns freely — revolute joint &#39;Pivot&#39;.</li></ol>
+<p class="hw"><strong>Hardware used:</strong> 1 × Dowel pin / shoulder screw ⌀4.2 × 9 mm</p>
+</section>
+<footer>Generated by Mechanism Workshop. Dimensions in mm. Generated geometry — verify fits, material and loads before manufacture.</footer>
+</main>
+</body>
+</html>

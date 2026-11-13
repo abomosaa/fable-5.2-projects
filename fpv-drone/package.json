@@ -1,0 +1,28 @@
+{
+  "name": "fpv-sim",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Physically based FPV drone flight simulator",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "start": "vite build && vite preview --open",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "bench": "tsx tools/bench.ts",
+    "dynamics": "tsx tools/dynamics.ts"
+  },
+  "dependencies": {
+    "three": "^0.187.0"
+  },
+  "devDependencies": {
+    "@types/three": "^0.187.0",
+    "puppeteer-core": "^25.16.0",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.7",
+    "vitest": "^5.1.0"
+  }
+}

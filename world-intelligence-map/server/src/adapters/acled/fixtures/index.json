@@ -1,0 +1,8 @@
+{
+  "capturedAt": "2026-11-10T18:40:00Z",
+  "notes": "AUTHORED, not captured: ACLED requires a myACLED account and its EULA does not permit redistributing event data. token.json follows the documented OAuth response; read.page1.json follows the documented response envelope and field names of /api/acled/read (all values are strings, as the API returns them) with 126 invented events at real city locations in the 30 days before the fixture epoch. Actors are generic placeholders and every `notes` text says that the event is synthetic. Nothing here describes a real event. The malformed variant is hand-authored.",
+  "routes": [
+    { "match": "/oauth/token", "file": "token.json" },
+    { "match": "/api/acled/read", "file": "read.page1.json", "variants": { "malformed": "read.malformed.json" } }
+  ]
+}

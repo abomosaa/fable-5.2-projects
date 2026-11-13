@@ -1,0 +1,6 @@
+tools/vendor/
+assets_src/
+game/.godot/
+build/
+*.import.bak
+evidence/**/*.avi

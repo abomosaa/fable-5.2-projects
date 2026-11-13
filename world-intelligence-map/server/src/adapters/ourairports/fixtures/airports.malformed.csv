@@ -1,0 +1,14 @@
+"id","ident","type","name","latitude_deg","longitude_deg","elevation_ft","continent","iso_country","iso_region","municipality","scheduled_service","icao_code","iata_code","gps_code","local_code","home_link","wikipedia_link","keywords"
+900001,"ZZOK","large_airport","Valid Test International Airport",10.5,20.25,1234,"AF","TD","TD-BA","Testville","yes","ZZOK","ZOK","ZZOK",,,,
+900002,"ZZHT","medium_airport","<script>alert(1)</script>Sanitised ""Regional"" Airport, North",-33.9,151.2,,"OC","AU","AU-NSW","Sydney","yes",,,"ZZHT",,"javascript:alert(1)",,"multi
+line keywords"
+900003,"ZZB1","large_airport","Bad Latitude Airport",95.1,20,10,"AF","TD","TD-BA","Nowhere","yes","ZZB1",,,,,,
+900004,"ZZB2","large_airport","Text Coordinates Airport","north","east",10,"AF","TD","TD-BA","Nowhere","yes","ZZB2",,,,,,
+900005,"ZZB3","large_airport","Missing Longitude Airport",12.0,,10,"AF","TD","TD-BA","Nowhere","yes","ZZB3",,,,,,
+900006,,"large_airport","No Ident Airport",12.0,21.0,10,"AF","TD","TD-BA","Nowhere","yes",,,,,,,
+900001,"ZZDP","large_airport","Duplicate Id Airport",11.0,21.0,10,"AF","TD","TD-BA","Nowhere","yes","ZZDP",,,,,,
+900008,"ZZB4","large_airport","Longitude Out Of Range Airport",12.0,200.0,10,"AF","TD","TD-BA","Nowhere","yes","ZZB4",,,,,,
+900009,"ZZTR"
+900010,"ZZCL","closed","Closed Airport",12.0,21.0,10,"AF","TD","TD-BA","Nowhere","no",,,,,,,
+900011,"ZZSM","small_airport","Small Strip",12.0,21.0,10,"AF","TD","TD-BA","Nowhere","no",,,,,,,
+900012,"ZZMN","medium_airport","Medium Without Scheduled Service",12.0,21.0,10,"AF","TD","TD-BA","Nowhere","no",,,,,,,

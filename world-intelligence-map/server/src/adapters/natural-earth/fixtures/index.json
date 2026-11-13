@@ -1,0 +1,16 @@
+{
+  "capturedAt": "2026-11-10T17:52:00Z",
+  "notes": "Captured from the official Natural Earth GitHub repository (nvkelso/natural-earth-vector, master, VERSION 5.2.0-pre). ne_50m_admin_0_breakaway_disputed_areas.geojson is the complete, unmodified file (28 areas, 142 KB; no vertex decimation was needed). ne_50m_populated_places_simple.geojson was trimmed from 1,251 to 450 features: every national capital and regional capital class (243), 6 Antarctic scientific stations, the one historic place and the most populous remaining cities; kept features are byte-for-byte value-identical but the file was re-serialised one feature per line with the envelope (name, crs, bbox) intact. Together about 450 KB, above the usual 400 KB budget and within the per-file sizes requested for this adapter. Reference data without timestamps. The malformed variants were authored by hand.",
+  "routes": [
+    {
+      "match": "/geojson/ne_50m_populated_places_simple.geojson",
+      "file": "ne_50m_populated_places_simple.geojson",
+      "variants": { "malformed": "ne_50m_populated_places_simple.malformed.geojson" }
+    },
+    {
+      "match": "/geojson/ne_50m_admin_0_breakaway_disputed_areas.geojson",
+      "file": "ne_50m_admin_0_breakaway_disputed_areas.geojson",
+      "variants": { "malformed": "ne_50m_admin_0_breakaway_disputed_areas.malformed.geojson" }
+    }
+  ]
+}

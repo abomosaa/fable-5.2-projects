@@ -1,0 +1,173 @@
+[
+{
+"wait": 2.5,
+"do": "press",
+"action": "aim"
+},
+{
+"wait": 0.5,
+"do": "aim_node",
+"path": "Gong0/Plate",
+"dur": 0.4
+},
+{
+"wait": 1.0,
+"do": "bench_begin",
+"tag": "first_magazine_from_cold"
+},
+{
+"wait": 0.5,
+"do": "tap",
+"action": "fire",
+"hold": 0.2
+},
+{
+"wait": 0.4,
+"do": "tap",
+"action": "fire",
+"hold": 0.06
+},
+{
+"wait": 0.4,
+"do": "tap",
+"action": "fire",
+"hold": 0.06
+},
+{
+"wait": 0.4,
+"do": "tap",
+"action": "fire",
+"hold": 0.06
+},
+{
+"wait": 0.4,
+"do": "tap",
+"action": "fire",
+"hold": 0.06
+},
+{
+"wait": 0.4,
+"do": "tap",
+"action": "fire",
+"hold": 0.06
+},
+{
+"wait": 0.4,
+"do": "tap",
+"action": "fire",
+"hold": 0.06
+},
+{
+"wait": 0.4,
+"do": "tap",
+"action": "fire",
+"hold": 0.06
+},
+{
+"wait": 0.4,
+"do": "tap",
+"action": "fire",
+"hold": 0.06
+},
+{
+"wait": 1.0,
+"do": "bench_end"
+},
+{
+"wait": 0.2,
+"do": "release",
+"action": "aim"
+},
+{
+"wait": 0.2,
+"do": "tap",
+"action": "reload",
+"hold": 0.06
+},
+{
+"wait": 4.3,
+"do": "press",
+"action": "aim"
+},
+{
+"wait": 0.5,
+"do": "aim_node",
+"path": "Paper2/Paper",
+"dur": 0.4
+},
+{
+"wait": 0.5,
+"do": "bench_begin",
+"tag": "rapid_string"
+},
+{
+"wait": 0.22,
+"do": "tap",
+"action": "fire",
+"hold": 0.06
+},
+{
+"wait": 0.22,
+"do": "tap",
+"action": "fire",
+"hold": 0.06
+},
+{
+"wait": 0.22,
+"do": "tap",
+"action": "fire",
+"hold": 0.06
+},
+{
+"wait": 0.22,
+"do": "tap",
+"action": "fire",
+"hold": 0.06
+},
+{
+"wait": 0.22,
+"do": "tap",
+"action": "fire",
+"hold": 0.06
+},
+{
+"wait": 0.22,
+"do": "tap",
+"action": "fire",
+"hold": 0.06
+},
+{
+"wait": 0.22,
+"do": "tap",
+"action": "fire",
+"hold": 0.06
+},
+{
+"wait": 0.22,
+"do": "tap",
+"action": "fire",
+"hold": 0.06
+},
+{
+"wait": 1.5,
+"do": "bench_end"
+},
+{
+"wait": 0.2,
+"do": "release",
+"action": "aim"
+},
+{
+"wait": 0.5,
+"do": "bench_begin",
+"tag": "idle_spawn"
+},
+{
+"wait": 5.0,
+"do": "bench_end"
+},
+{
+"wait": 0.2,
+"do": "quit"
+}
+]

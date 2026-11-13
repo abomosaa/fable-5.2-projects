@@ -1,0 +1,67 @@
+{
+  "id": "peeringdb",
+  "provider": "PeeringDB",
+  "dataset": "PeeringDB facilities (interconnection / colocation facilities, REST API)",
+  "description": "User-maintained registry of interconnection facilities (colocation data centres, carrier hotels, cable landing stations) with their location and the number of networks, internet exchanges and carriers present.",
+  "homepageUrl": "https://www.peeringdb.com/",
+  "documentationUrl": "https://docs.peeringdb.com/api_specs/",
+  "sourceUrls": [
+    "https://www.peeringdb.com/api/fac?status=ok&depth=0&fields=id,name,aka,org_id,org_name,campus_id,city,state,country,region_continent,latitude,longitude,net_count,ix_count,carrier_count,clli,status,created,updated"
+  ],
+  "allowedHosts": ["www.peeringdb.com"],
+  "coverage": {
+    "geographic": "Worldwide (about 5,900 facilities in roughly 170 countries); densest in Europe and North America. Only facilities that someone registered in PeeringDB are present.",
+    "temporal": "Current state of the registry; no history."
+  },
+  "updateCadence": {
+    "upstream": "Edited continuously by facility operators and PeeringDB admins; individual records change rarely",
+    "pollIntervalSec": 604800,
+    "staleAfterSec": 1814400
+  },
+  "auth": {
+    "type": "none",
+    "envVars": [
+      {
+        "name": "PEERINGDB_API_KEY",
+        "required": false,
+        "description": "Optional PeeringDB API key (user- or organisation-level, read-only is enough). Sent as \"Authorization: Api-Key <key>\"; raises the query limit from 20 to 40 requests per minute and lifts the anonymous duplicate-query limits."
+      }
+    ],
+    "setup": "No credential is needed: PeeringDB answers guest (anonymous) API requests. PeeringDB asks automated clients to use an API key: create a free account, then create a read-only key under Profile → API Keys and set PEERINGDB_API_KEY.",
+    "obtainUrl": "https://docs.peeringdb.com/howto/api_keys/"
+  },
+  "attribution": "PeeringDB (peeringdb.com), used under the PeeringDB Acceptable Use Policy",
+  "license": {
+    "name": "PeeringDB Acceptable Use Policy (all rights reserved; not an open licence)",
+    "url": "https://www.peeringdb.com/aup",
+    "redistribution": "restricted",
+    "nonCommercialOnly": true,
+    "notes": "The AUP states: \"Except for Internet operational purposes approved by PeeringDB, no part of the PeeringDB data may be reproduced, stored in a retrieval system, or transmitted, in any form or by any means [...] without prior permission of PeeringDB\" and \"The PeeringDB data may not be passed on in bulk to any other person or organization unless approved by PeeringDB.\" \"Internet operational issues\" is defined to \"include network trouble-shooting, abuse reporting, and Internet research and analysis\" and to exclude \"compiling marketing lists, demographic mapping, or any other commercial application\"; use \"to target advertising or similar activities is explicitly forbidden\". This adapter therefore fetches facility location and presence counts only (no contact e-mail addresses or phone numbers, no street addresses) for Internet research and analysis. In plain terms: the PeeringDB terms prohibit redistribution of the data. The fixtures bundled with this adapter are therefore synthetic (fictitious facilities authored from the documented response schema, no captured PeeringDB data), and operating a public or commercial instance that serves the live layer needs PeeringDB's prior permission."
+  },
+  "limitations": [
+    "Self-reported by facility operators and network engineers; entries can be outdated, duplicated or incomplete, and PeeringDB does not verify every field.",
+    "Roughly one facility in ten has no coordinates in PeeringDB and is therefore not shown; coordinates are geocoded from the registered street address and can be off by a block or, occasionally, by much more.",
+    "Presence counts (networks, exchanges, carriers) only cover organisations that registered their presence in PeeringDB; they are not capacity, size or importance measurements.",
+    "Not a complete inventory of the world's data centres: enterprise, hyperscale and government facilities without public interconnection are largely absent.",
+    "Use is governed by the PeeringDB Acceptable Use Policy (Internet operational purposes, research and analysis; no commercial use, no bulk pass-on without approval)."
+  ],
+  "confidenceNotes": "PeeringDB publishes no per-record confidence and this application does not invent one. Records are community-maintained registry entries, not measurements; treat the location as approximate and the counts as lower bounds.",
+  "retention": { "note": "Reference data: a facility is kept while PeeringDB lists it with status \"ok\" and is ended when it disappears from a successful full fetch." },
+  "snapshot": "full",
+  "http": { "timeoutMs": 60000, "maxRetries": 1, "minIntervalMs": 2500, "cacheTtlSec": 518400, "userAgentRequired": true },
+  "enabledByDefault": true,
+  "layers": [
+    {
+      "id": "data-centers",
+      "name": "Data centres & interconnection (PeeringDB)",
+      "description": "Colocation and interconnection facilities registered in PeeringDB, with the number of networks, internet exchanges and carriers that report a presence there.",
+      "domain": "infrastructure",
+      "category": "data-center",
+      "geometry": "point",
+      "timeModel": "reference",
+      "render": { "type": "point", "color": "teal", "shape": "square", "minZoom": 3 },
+      "retentionDays": null,
+      "defaultOn": false
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "id": "gvp-weekly-report",
+  "provider": "Smithsonian Institution Global Volcanism Program / U.S. Geological Survey Volcano Hazards Program",
+  "dataset": "Smithsonian / USGS Weekly Volcanic Activity Report (RSS)",
+  "description": "Weekly summary of volcanoes with new or continuing eruptive activity worldwide, compiled from volcano observatories, VAACs and other reports; one item per volcano and report week.",
+  "homepageUrl": "https://volcano.si.edu/reports_weekly.cfm",
+  "documentationUrl": "https://volcano.si.edu/reports_weekly.cfm",
+  "sourceUrls": ["https://volcano.si.edu/news/WeeklyVolcanoRSS.xml"],
+  "allowedHosts": ["volcano.si.edu"],
+  "coverage": {
+    "geographic": "Global.",
+    "temporal": "The most recent report week (Wednesday to Tuesday); earlier weeks persist locally until retention expires."
+  },
+  "updateCadence": { "upstream": "Weekly, by 2300 UTC every Thursday (publication is occasionally paused)", "pollIntervalSec": 21600, "staleAfterSec": 172800 },
+  "auth": { "type": "none", "envVars": [] },
+  "attribution": "Global Volcanism Program, Smithsonian Institution / U.S. Geological Survey – Weekly Volcanic Activity Report",
+  "license": {
+    "name": "© Smithsonian Institution – Smithsonian Terms of Use (usage conditions apply; non-commercial use)",
+    "url": "https://www.si.edu/termsofuse",
+    "redistribution": "restricted",
+    "nonCommercialOnly": true,
+    "notes": "The feed declares <copyright>Smithsonian Institution</copyright>. Smithsonian content not marked CC0 may be used for personal, educational and other non-commercial purposes; commercial use needs permission. The Smithsonian terms page is behind a browser verification challenge and could not be read directly when this adapter was written (finding based on search-engine excerpts) – re-check before commercial use. This application therefore shows only the item title, an excerpt of at most 500 characters and a link to the full report at volcano.si.edu; report texts are not stored or redistributed in full."
+  },
+  "limitations": [
+    "Not a comprehensive list of eruptions: only activity that meets the report's criteria in a given week is included.",
+    "Notices are preliminary and subject to change; they summarise reports of other agencies, which are named in each item.",
+    "Published once a week, so activity can be up to a week old when it appears, and publication is sometimes paused (when captured on 2026-11-10 the feed still carried the report for 8–14 October 2026).",
+    "Only a short excerpt is shown; alert levels mentioned in the text are those of the national observatories and are not normalised."
+  ],
+  "confidenceNotes": "The report gives no confidence or severity value, so records carry neither. The report section ('New Eruptive Activity' or 'Continuing Eruptive Activity') is kept as the sub-category.",
+  "retention": { "note": "Weekly items are kept for 60 days after the end of their report week." },
+  "snapshot": "incremental",
+  "http": { "minIntervalMs": 5000, "cacheTtlSec": 3600 },
+  "enabledByDefault": true,
+  "layers": [
+    {
+      "id": "volcanic-activity",
+      "name": "Weekly volcanic activity (GVP/USGS)",
+      "description": "Volcanoes with new or continuing eruptive activity in the latest Smithsonian / USGS Weekly Volcanic Activity Report, with a short excerpt and a link to the report.",
+      "domain": "hazards",
+      "category": "volcano",
+      "geometry": "point",
+      "timeModel": "interval",
+      "render": { "type": "point", "color": "red", "shape": "triangle" },
+      "freshForSec": 777600,
+      "retentionDays": 60,
+      "defaultOn": true,
+      "correlationClass": "volcano"
+    }
+  ]
+}

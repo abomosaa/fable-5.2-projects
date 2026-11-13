@@ -1,0 +1,322 @@
+{
+ "date": "2026-11-12T04:57:35.258Z",
+ "command": "npm start -- --port 5190",
+ "passed": 36,
+ "failed": 0,
+ "checks": [
+  {
+   "name": "server starts from `npm start`",
+   "ok": true,
+   "detail": "Installed showcase projects: showcase-coast, showcase-lake, showcase-valley | Terraforge running at http://127.0.0.1:5190/"
+  },
+  {
+   "name": "three showcase projects are installed",
+   "ok": true,
+   "detail": [
+    "showcase-valley",
+    "showcase-lake",
+    "showcase-coast"
+   ]
+  },
+  {
+   "name": "editor opens directly on a finished showcase (no assembly needed)",
+   "ok": true,
+   "detail": {
+    "id": "showcase-valley",
+    "showcase": "1-valley"
+   }
+  },
+  {
+   "name": "showcase showcase-valley opens, renders and animates",
+   "ok": true,
+   "detail": {
+    "fps": 42.147163065935175,
+    "errors": 0,
+    "tris": 27551187,
+    "water": true
+   }
+  },
+  {
+   "name": "showcase showcase-lake opens, renders and animates",
+   "ok": true,
+   "detail": {
+    "fps": 45.7168972214838,
+    "errors": 0,
+    "tris": 21108230,
+    "water": true
+   }
+  },
+  {
+   "name": "showcase showcase-coast opens, renders and animates",
+   "ok": true,
+   "detail": {
+    "fps": 51.24591501366402,
+    "errors": 0,
+    "tris": 10136282,
+    "water": true
+   }
+  },
+  {
+   "name": "new seeded world is generated from the dialog",
+   "ok": true,
+   "detail": {
+    "id": "proj-mwd2r34s0112",
+    "seconds": 14.12,
+    "seed": 4242
+   }
+  },
+  {
+   "name": "sculpt tool selected by keyboard",
+   "ok": true
+  },
+  {
+   "name": "sculpting changes the terrain and derived data",
+   "ok": true,
+   "detail": {
+    "brushLatencyMs": 3.6000000089406967
+   }
+  },
+  {
+   "name": "undo restores the sculpted terrain exactly",
+   "ok": true,
+   "detail": {
+    "hUser": 958355060,
+    "hFinal": 431409195,
+    "weights": 3120478013,
+    "biome": 904241517,
+    "instances": 121608,
+    "wet": 4125
+   }
+  },
+  {
+   "name": "redo re-applies the stroke exactly",
+   "ok": true
+  },
+  {
+   "name": "river drawn by clicking is carved into the terrain with flowing water",
+   "ok": true,
+   "detail": {
+    "id": "river-mwd2rjvd038p",
+    "n": 2,
+    "nodes": 4,
+    "cutMid": 0.020303692805441642,
+    "cutMean": 1.1377956441695594,
+    "cutMax": 4.351178027395122,
+    "wetFraction": 1,
+    "depth": 0.7253971251982989,
+    "speed": 0.9064945758958075,
+    "descending": true,
+    "mid": {
+     "x": -50.35257339477539,
+     "z": -230.0701904296875
+    }
+   }
+  },
+  {
+   "name": "editing the river moves the channel and its flow",
+   "ok": true,
+   "detail": {
+    "oldSpotHealed": 0,
+    "oldSpotType": 0,
+    "newSpeed": 1.7397376406616685
+   }
+  },
+  {
+   "name": "undo of river edits restores channel and water",
+   "ok": true
+  },
+  {
+   "name": "painting a biome changes ground materials and scatter",
+   "ok": true,
+   "detail": {
+    "instancesBefore": 121864,
+    "instancesAfter": 121671
+   }
+  },
+  {
+   "name": "road drawn by clicking conforms to terrain and clears vegetation",
+   "ok": true,
+   "detail": {
+    "n": 1,
+    "kind": "road",
+    "maxGrade": 0.17004218886509814,
+    "gradeLimit": 0.1,
+    "groundMaxGrade": 0.976078158263111,
+    "maxEarthwork": 4,
+    "maxDeviationFromGround": 4.1024169921875,
+    "surfaceVsProfile": 0.06400737504742438,
+    "steepestReported": 0.17235013041116215,
+    "onRoad": 18,
+    "samples": 18,
+    "treesOnRoad": 0
+   }
+  },
+  {
+   "name": "structure placed by clicking sits on a levelled foundation on dry ground",
+   "ok": true,
+   "detail": {
+    "type": "cabin",
+    "padDeviation": 0.000011538699482116499,
+    "meshY": 318.69032659606614,
+    "level": 318.69032659606614,
+    "depth": -1
+   }
+  },
+  {
+   "name": "structure placement rejects sites in water",
+   "ok": true,
+   "detail": "site is under water"
+  },
+  {
+   "name": "time of day changed in the Sky & light panel moves the sun",
+   "ok": true,
+   "detail": {
+    "dir": [
+     -0.8995096355141907,
+     0.20295379601582705,
+     0.38690072667274
+    ],
+    "time": 18.5
+   }
+  },
+  {
+   "name": "project saves (Ctrl+S) and is marked clean",
+   "ok": true,
+   "detail": [
+    "assets.lock.json",
+    "heights.q.gz",
+    "paint.bin.gz",
+    "project.json",
+    "ring.u16.gz",
+    "sediment.u8.gz",
+    "thumb.jpg"
+   ]
+  },
+  {
+   "name": "document survives save → close → reopen",
+   "ok": true
+  },
+  {
+   "name": "terrain, painted biome, derived water and scatter are identical after reopening",
+   "ok": true,
+   "detail": {
+    "before": {
+     "hUser": 2703382422,
+     "hFinal": 2946299724,
+     "weights": 2139066388,
+     "biome": 1760800837,
+     "instances": 121667,
+     "wet": 4447
+    },
+    "after": {
+     "hUser": 2703382422,
+     "hFinal": 2946299724,
+     "weights": 2139066388,
+     "biome": 1760800837,
+     "instances": 121667,
+     "wet": 4447
+    }
+   }
+  },
+  {
+   "name": "project can be duplicated",
+   "ok": true
+  },
+  {
+   "name": "autosave writes to a separate slot without touching the saved project",
+   "ok": true
+  },
+  {
+   "name": "export writes heightmap, masks, GLB and placement data",
+   "ok": true,
+   "detail": "26 files"
+  },
+  {
+   "name": "raising the lake level floods the shore and re-derives vegetation (nothing grows under water)",
+   "ok": true,
+   "detail": {
+    "before": {
+     "wet": 208821,
+     "level": 440.7802465438843,
+     "reeds": 90686
+    },
+    "after": {
+     "wet": 251286,
+     "reeds": 98012,
+     "underwaterTrees": 0
+    }
+   }
+  },
+  {
+   "name": "lake level edit is undoable",
+   "ok": true
+  },
+  {
+   "name": "wind speed changes the wave spectrum",
+   "ok": true,
+   "detail": {
+    "HsBefore": 0.09222262775120577,
+    "HsAfter": 0.27743233474984064
+   }
+  },
+  {
+   "name": "floating object: dropped barrel plunges, bobs and settles back to its rest draught",
+   "ok": true,
+   "detail": {
+    "rest": -0.048026649530666536,
+    "end": -0.044252941935318785,
+    "firstSecond": 1.2746130485504636,
+    "lastSecond": 0.0015631131198006187,
+    "min": -0.3121756785857883
+   }
+  },
+  {
+   "name": "interaction ripples propagate and decay",
+   "ok": true,
+   "detail": {
+    "e0": 0.015370089695569078,
+    "e1": 0.07467790252128026,
+    "e2": 0.0016258272265936569
+   }
+  },
+  {
+   "name": "camera transitions between above-water and underwater states",
+   "ok": true,
+   "detail": {
+    "above": false,
+    "below": true,
+    "depth": 10.542938232421875
+   }
+  },
+  {
+   "name": "lowering the sea level exposes the shore (and is undoable); swell breaks in shallow water",
+   "ok": true,
+   "detail": {
+    "o0": 1858944,
+    "o1": 1828773,
+    "o2": 1858944,
+    "brk": 14686
+   }
+  },
+  {
+   "name": "no page errors during the session",
+   "ok": true,
+   "detail": []
+  },
+  {
+   "name": "no application errors reported",
+   "ok": true,
+   "detail": []
+  },
+  {
+   "name": "application ran fully offline (no request left 127.0.0.1)",
+   "ok": true,
+   "detail": []
+  },
+  {
+   "name": "exported scene verified by the independent loader (validator + stock GLTFLoader viewer)",
+   "ok": true,
+   "detail": " | PASS: 48 checks passed, 0 failed (browser mode, measurements from three.js r187 GLTFLoader) | report: /home/h4ni0/benchmark/fable-5.2/procedural-world-editor/fable-5.2/.cache/functional/export-verify/verify_report.json"
+  }
+ ]
+}

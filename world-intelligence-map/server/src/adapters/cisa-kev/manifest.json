@@ -1,0 +1,56 @@
+{
+  "id": "cisa-kev",
+  "provider": "Cybersecurity and Infrastructure Security Agency (CISA)",
+  "dataset": "Known Exploited Vulnerabilities (KEV) Catalog",
+  "description": "CISA's authoritative catalog of vulnerabilities (CVEs) with reliable evidence of active exploitation in the wild, with remediation due dates for US federal agencies and a ransomware-use flag.",
+  "homepageUrl": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+  "documentationUrl": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+  "sourceUrls": ["https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json"],
+  "allowedHosts": ["www.cisa.gov"],
+  "coverage": {
+    "geographic": "Not geographic: global security bulletins about software and hardware products.",
+    "temporal": "Catalog entries since 2021-11-03; this application keeps entries added during the last 90 days."
+  },
+  "updateCadence": {
+    "upstream": "Republished whenever CISA adds or amends entries, typically several times per week on US business days.",
+    "pollIntervalSec": 3600,
+    "staleAfterSec": 21600
+  },
+  "auth": { "type": "none", "envVars": [] },
+  "attribution": "CISA Known Exploited Vulnerabilities Catalog",
+  "license": {
+    "name": "Creative Commons CC0 1.0 Universal",
+    "url": "https://www.cisa.gov/sites/default/files/licenses/kev/license.txt",
+    "redistribution": "allowed",
+    "nonCommercialOnly": false,
+    "notes": "CISA's licence file states: \"The KEV database is distributed under the Creative Commons 0 1.0 License. You may use this data in any legal manner but note that information provided at any 3rd party links included in the KEV database are bound by the policies and licenses of those 3rd party websites. Use of the information does not authorize you to use the CISA Logo or DHS Seal, nor should such use be interpreted as an endorsement by CISA or DHS.\""
+  },
+  "limitations": [
+    "The catalog is not a list of all exploited vulnerabilities: an entry requires an assigned CVE ID, reliable evidence of active exploitation and clear remediation guidance, so inclusion can lag first exploitation by days to years.",
+    "Entries are not geographic and say nothing about who is being attacked or where; they are shown as global bulletins.",
+    "dateAdded is a calendar date without a time; it is placed at 00:00 UTC of that day. It is the date CISA added the entry, not the date of first exploitation or disclosure.",
+    "Due dates and required actions are binding only for US Federal Civilian Executive Branch agencies (BOD 26-04, formerly BOD 22-01).",
+    "knownRansomwareCampaignUse 'Unknown' means CISA lacks confirmation, not that ransomware use has been ruled out.",
+    "Only entries added in the last 90 days are ingested; entries that CISA removes from the catalog (rare) remain visible here until retention expires."
+  ],
+  "confidenceNotes": "CISA publishes no per-entry confidence, so confidence is left empty. Inclusion itself reflects CISA's assessment that there is reliable evidence of active exploitation. Severity is derived by this application, not published by CISA: 4 (extreme) when knownRansomwareCampaignUse is 'Known', otherwise 3 (severe) because every catalog entry is actively exploited; it is not a CVSS score.",
+  "retention": { "note": "Entries are ingested while they are at most 90 days old (by dateAdded) and purged 120 days after dateAdded." },
+  "snapshot": "incremental",
+  "http": { "cacheTtlSec": 3000, "minIntervalMs": 1000, "timeoutMs": 45000 },
+  "enabledByDefault": true,
+  "layers": [
+    {
+      "id": "cisa-kev",
+      "name": "Known exploited vulnerabilities",
+      "description": "Vulnerabilities added to CISA's Known Exploited Vulnerabilities catalog in the last 90 days (global, non-geographic bulletins).",
+      "domain": "cyber",
+      "category": "vulnerability",
+      "geometry": "global",
+      "timeModel": "event",
+      "render": { "type": "point", "color": "yellow", "shape": "triangle" },
+      "freshForSec": 604800,
+      "retentionDays": 120,
+      "defaultOn": false
+    }
+  ]
+}

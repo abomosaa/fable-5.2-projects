@@ -1,0 +1,11 @@
+{"status": 200, "success": true, "count": 9, "data": [
+ {"event_id_cnty": "FIX40490001", "event_date": "2026-11-08", "time_precision": "1", "disorder_type": "Demonstrations", "event_type": "Protests", "sub_event_type": "Peaceful protest", "actor1": "Protesters (Kenya)", "actor2": "", "iso": "404", "country": "Kenya", "admin1": "Nairobi", "location": "Nairobi", "latitude": "-1.2864", "longitude": "36.8172", "geo_precision": "1", "source_scale": "National", "notes": "[SYNTHETIC FIXTURE] <b>Valid</b> row.<script>alert(1)</script>", "fatalities": "0", "timestamp": "1794182400"},
+ {"event_id_cnty": "FIX40490002", "event_date": "08/11/2026", "event_type": "Protests", "country": "Kenya", "latitude": "-1.29", "longitude": "36.82", "fatalities": "0"},
+ {"event_id_cnty": "FIX40490003", "event_date": "2026-11-08", "event_type": "Interpretive dance", "country": "Kenya", "latitude": "-1.29", "longitude": "36.82", "fatalities": "0"},
+ {"event_id_cnty": "FIX40490004", "event_date": "2026-11-08", "event_type": "Battles", "country": "Kenya", "latitude": "", "longitude": "", "fatalities": "3"},
+ {"event_id_cnty": "FIX40490005", "event_date": "2026-11-08", "event_type": "Battles", "country": "Kenya", "latitude": "-91.5", "longitude": "36.82", "fatalities": "3"},
+ {"event_date": "2026-11-08", "event_type": "Battles", "country": "Kenya", "latitude": "-1.29", "longitude": "36.82"},
+ "not an object",
+ {"event_id_cnty": "FIX40490001", "event_date": "2026-11-08", "event_type": "Protests", "country": "Kenya", "latitude": "-1.2864", "longitude": "36.8172", "fatalities": "0"},
+ {"event_id_cnty": "FIX72990006", "event_date": "2026-11-07", "event_type": "Battles", "sub_event_type": "Armed clash", "country": "Sudan", "admin1": "North Darfur", "location": "El Fasher", "latitude": "13.6289", "longitude": "25.3494", "geo_precision": "7", "notes": "", "fatalities": "many", "timestamp": "not-a-number"}
+]}

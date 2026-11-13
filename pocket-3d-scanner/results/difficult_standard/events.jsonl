@@ -1,0 +1,212 @@
+{"seq":1,"t":1794492830.469,"type":"stage_start","stage":"ingest","progress":0.0,"overall":0.0,"message":"Checking photos","data":{"index":0,"count":9}}
+{"seq":2,"t":1794492830.676,"type":"stage_progress","stage":"ingest","progress":0.05,"overall":0.001,"message":"Checked 1/20 photos"}
+{"seq":3,"t":1794492830.677,"type":"stage_progress","stage":"ingest","progress":0.1,"overall":0.002,"message":"Checked 2/20 photos"}
+{"seq":4,"t":1794492830.677,"type":"stage_progress","stage":"ingest","progress":0.15,"overall":0.003,"message":"Checked 3/20 photos"}
+{"seq":5,"t":1794492830.677,"type":"stage_progress","stage":"ingest","progress":0.2,"overall":0.004,"message":"Checked 4/20 photos"}
+{"seq":6,"t":1794492830.678,"type":"stage_progress","stage":"ingest","progress":0.25,"overall":0.005,"message":"Checked 5/20 photos"}
+{"seq":7,"t":1794492830.687,"type":"stage_progress","stage":"ingest","progress":0.3,"overall":0.006,"message":"Checked 6/20 photos"}
+{"seq":8,"t":1794492830.687,"type":"stage_progress","stage":"ingest","progress":0.35,"overall":0.007,"message":"Checked 7/20 photos"}
+{"seq":9,"t":1794492830.687,"type":"stage_progress","stage":"ingest","progress":0.4,"overall":0.008,"message":"Checked 8/20 photos"}
+{"seq":10,"t":1794492830.85,"type":"stage_progress","stage":"ingest","progress":0.45,"overall":0.009,"message":"Checked 9/20 photos"}
+{"seq":11,"t":1794492830.854,"type":"stage_progress","stage":"ingest","progress":0.5,"overall":0.01,"message":"Checked 10/20 photos"}
+{"seq":12,"t":1794492830.884,"type":"stage_progress","stage":"ingest","progress":0.55,"overall":0.011,"message":"Checked 11/20 photos"}
+{"seq":13,"t":1794492830.884,"type":"stage_progress","stage":"ingest","progress":0.6,"overall":0.012,"message":"Checked 12/20 photos"}
+{"seq":14,"t":1794492830.884,"type":"stage_progress","stage":"ingest","progress":0.65,"overall":0.013,"message":"Checked 13/20 photos"}
+{"seq":15,"t":1794492830.884,"type":"stage_progress","stage":"ingest","progress":0.7,"overall":0.014,"message":"Checked 14/20 photos"}
+{"seq":16,"t":1794492830.884,"type":"stage_progress","stage":"ingest","progress":0.75,"overall":0.015,"message":"Checked 15/20 photos"}
+{"seq":17,"t":1794492830.884,"type":"stage_progress","stage":"ingest","progress":0.8,"overall":0.016,"message":"Checked 16/20 photos"}
+{"seq":18,"t":1794492831.005,"type":"stage_progress","stage":"ingest","progress":0.85,"overall":0.017,"message":"Checked 17/20 photos"}
+{"seq":19,"t":1794492831.005,"type":"stage_progress","stage":"ingest","progress":0.9,"overall":0.018,"message":"Checked 18/20 photos"}
+{"seq":20,"t":1794492831.005,"type":"stage_progress","stage":"ingest","progress":0.95,"overall":0.019,"message":"Checked 19/20 photos"}
+{"seq":21,"t":1794492831.005,"type":"stage_progress","stage":"ingest","progress":1.0,"overall":0.02,"message":"Checked 20/20 photos"}
+{"seq":22,"t":1794492831.021,"type":"stage_end","stage":"ingest","progress":1.0,"overall":0.02,"message":"","data":{"reused":false,"seconds":0.55,"skipped":false}}
+{"seq":23,"t":1794492831.021,"type":"diagnostics","stage":"ingest","progress":0.0,"overall":0.02,"message":"","data":{"input":{"frames":20,"usable":20,"rejected":[],"capture_source":"import","tracking_mode":null,"camera_groups":[{"frames":20,"width":2400,"height":1807,"focal_px_prior":1666.45,"focal_source":"exif35"}],"recompressed_working_copies":20,"frames_with_ar_pose":0}}}
+{"seq":24,"t":1794492831.021,"type":"stage_start","stage":"features","progress":0.0,"overall":0.02,"message":"Finding image features","data":{"index":1,"count":9}}
+{"seq":25,"t":1794492840.196,"type":"stage_progress","stage":"features","progress":0.2,"overall":0.032,"message":"Features 4/20 photos"}
+{"seq":26,"t":1794492849.317,"type":"stage_progress","stage":"features","progress":0.4,"overall":0.044,"message":"Features 8/20 photos"}
+{"seq":27,"t":1794492860.247,"type":"stage_progress","stage":"features","progress":0.6,"overall":0.056,"message":"Features 12/20 photos"}
+{"seq":28,"t":1794492868.113,"type":"stage_progress","stage":"features","progress":0.8,"overall":0.068,"message":"Features 16/20 photos"}
+{"seq":29,"t":1794492877.335,"type":"stage_progress","stage":"features","progress":1.0,"overall":0.08,"message":"Features 20/20 photos"}
+{"seq":30,"t":1794492877.348,"type":"stage_end","stage":"features","progress":1.0,"overall":0.08,"message":"","data":{"reused":false,"seconds":46.33,"skipped":false}}
+{"seq":31,"t":1794492877.349,"type":"stage_start","stage":"matching","progress":0.0,"overall":0.08,"message":"Matching photos","data":{"index":2,"count":9}}
+{"seq":32,"t":1794492879.126,"type":"stage_progress","stage":"matching","progress":0.3158,"overall":0.0989,"message":"Matched 60/190 photo pairs"}
+{"seq":33,"t":1794492880.736,"type":"stage_progress","stage":"matching","progress":0.6316,"overall":0.1179,"message":"Matched 120/190 photo pairs"}
+{"seq":34,"t":1794492882.344,"type":"stage_progress","stage":"matching","progress":0.9474,"overall":0.1368,"message":"Matched 180/190 photo pairs"}
+{"seq":35,"t":1794492882.798,"type":"stage_progress","stage":"matching","progress":1.0,"overall":0.14,"message":"Matched 190/190 photo pairs"}
+{"seq":36,"t":1794492882.812,"type":"stage_end","stage":"matching","progress":1.0,"overall":0.14,"message":"","data":{"reused":false,"seconds":5.46,"skipped":false}}
+{"seq":37,"t":1794492882.812,"type":"diagnostics","stage":"matching","progress":0.0,"overall":0.14,"message":"","data":{"features":{"median_per_image":12828,"extract_threads":2},"matching":{"mode":"exhaustive","pairs_tested":190,"pairs_verified":190,"inlier_matches":150539,"pairs_possible":190,"pair_configurations":{"CALIBRATED":51,"PLANAR_OR_PANORAMIC":90,"UNCALIBRATED":12},"pairs_without_3d_evidence":90,"pairs_classified":153}}}
+{"seq":38,"t":1794492882.812,"type":"stage_start","stage":"sfm","progress":0.0,"overall":0.14,"message":"Solving camera positions","data":{"index":3,"count":9}}
+{"seq":39,"t":1794492883.027,"type":"stage_progress","stage":"sfm","progress":0.1,"overall":0.148,"message":"Registered 2/20 cameras"}
+{"seq":40,"t":1794492883.319,"type":"stage_progress","stage":"sfm","progress":0.15,"overall":0.152,"message":"Registered 3/20 cameras"}
+{"seq":41,"t":1794492883.929,"type":"stage_progress","stage":"sfm","progress":0.2,"overall":0.156,"message":"Registered 4/20 cameras"}
+{"seq":42,"t":1794492884.408,"type":"stage_progress","stage":"sfm","progress":0.25,"overall":0.16,"message":"Registered 5/20 cameras"}
+{"seq":43,"t":1794492885.074,"type":"stage_progress","stage":"sfm","progress":0.3,"overall":0.164,"message":"Registered 6/20 cameras"}
+{"seq":44,"t":1794492885.418,"type":"stage_progress","stage":"sfm","progress":0.35,"overall":0.168,"message":"Registered 7/20 cameras"}
+{"seq":45,"t":1794492885.963,"type":"stage_progress","stage":"sfm","progress":0.4,"overall":0.172,"message":"Registered 8/20 cameras"}
+{"seq":46,"t":1794492886.592,"type":"stage_progress","stage":"sfm","progress":0.45,"overall":0.176,"message":"Registered 9/20 cameras"}
+{"seq":47,"t":1794492886.962,"type":"stage_progress","stage":"sfm","progress":0.5,"overall":0.18,"message":"Registered 10/20 cameras"}
+{"seq":48,"t":1794492887.393,"type":"stage_progress","stage":"sfm","progress":0.55,"overall":0.184,"message":"Registered 11/20 cameras"}
+{"seq":49,"t":1794492887.851,"type":"stage_progress","stage":"sfm","progress":0.6,"overall":0.188,"message":"Registered 12/20 cameras"}
+{"seq":50,"t":1794492888.404,"type":"stage_progress","stage":"sfm","progress":0.65,"overall":0.192,"message":"Registered 13/20 cameras"}
+{"seq":51,"t":1794492888.739,"type":"stage_progress","stage":"sfm","progress":0.7,"overall":0.196,"message":"Registered 14/20 cameras"}
+{"seq":52,"t":1794492889.518,"type":"stage_progress","stage":"sfm","progress":0.75,"overall":0.2,"message":"Registered 15/20 cameras"}
+{"seq":53,"t":1794492889.853,"type":"stage_progress","stage":"sfm","progress":0.8,"overall":0.204,"message":"Registered 16/20 cameras"}
+{"seq":54,"t":1794492891.254,"type":"stage_progress","stage":"sfm","progress":0.85,"overall":0.208,"message":"Registered 17/20 cameras"}
+{"seq":55,"t":1794492891.487,"type":"stage_progress","stage":"sfm","progress":0.9,"overall":0.212,"message":"Registered 18/20 cameras"}
+{"seq":56,"t":1794492892.995,"type":"stage_progress","stage":"sfm","progress":0.95,"overall":0.216,"message":"Registered 19/20 cameras"}
+{"seq":57,"t":1794492893.219,"type":"stage_progress","stage":"sfm","progress":0.98,"overall":0.2184,"message":"Registered 20/20 cameras"}
+{"seq":58,"t":1794492894.38,"type":"stage_end","stage":"sfm","progress":1.0,"overall":0.22,"message":"","data":{"reused":false,"seconds":11.57,"skipped":false}}
+{"seq":59,"t":1794492894.47,"type":"warning","stage":"sfm","progress":0.0,"overall":0.22,"message":"The focal length solved from the photos differs from the camera's metadata by 6%. With few photos or little parallax, focal length and camera distance are hard to tell apart: the shape is not affected, but sizes derived from camera positions are uncertain by about that much. Calibrate the scale with a known distance.","data":{"code":"focal_length_drift"}}
+{"seq":60,"t":1794492894.47,"type":"warning","stage":"sfm","progress":0.0,"overall":0.22,"message":"Only 20 photos are registered. Small sets leave gaps and make the camera solution fragile; 30\u201380 overlapping photos are recommended.","data":{"code":"few_photos"}}
+{"seq":61,"t":1794492894.47,"type":"warning","stage":"sfm","progress":0.0,"overall":0.22,"message":"The camera solution fits the photos poorly (mean reprojection error 1.10 px). This is typical for glossy or plain objects, moving highlights or blur. Expect noisier surface and texture patches from mismatched views; check the model against the object before relying on it.","data":{"code":"inconsistent_camera_solution"}}
+{"seq":62,"t":1794492894.47,"type":"warning","stage":"sfm","progress":0.0,"overall":0.22,"message":"No registered photo covers a 77\u00b0 sector around the object; the surface facing that side is likely missing.","data":{"code":"coverage_gap"}}
+{"seq":63,"t":1794492894.474,"type":"artifact","stage":"sfm","progress":0.0,"overall":0.22,"message":"sparse_preview.json","data":{"name":"sparse_preview.json","size":432956,"sha256":"1c062bc27bf9be4f767cef6ad8eacaab09c62731b4d22ba336d6cf8d08dacc06","kind":"preview"}}
+{"seq":64,"t":1794492894.474,"type":"diagnostics","stage":"sfm","progress":0.0,"overall":0.22,"message":"","data":{"sfm":{"input_frames":20,"registered":20,"unregistered":[],"other_models":[],"sparse_points":21299,"mean_reprojection_error_px":1.0997,"mean_track_length":4.239,"mean_observations_per_image":4514.2,"cameras":[{"camera_id":1,"model":"SIMPLE_RADIAL","width":2400,"height":1807,"params":[1763.659812,1200.0,903.5,-0.013081],"has_prior_focal_length":true}],"focal_length_fixed_from_device_calibration":false},"scale":{"units":"arbitrary","source":"none","meters_per_unit":null,"relative_uncertainty":null,"note":"Photographs alone do not determine real-world size. Units are arbitrary (median camera-to-object distance = 1). Calibrate with a known distance to get real measurements."},"viewpoint_coverage":{"azimuth_bins":12,"elevation_edges_deg":[-90.0,20.0,50.0,90.0],"counts":[[0,0,0,0,0,0,0,0,0,0,0,0],[1,1,1,0,3,1,1,1,0,0,0,1],[1,1,1,0,0,1,2,1,0,0,1,2]],"azimuth_bins_covered":9,"bands_covered":2,"largest_azimuth_gap_deg":77.0,"azimuth_deg":[180.0,39.4,39.2,168.2,142.6,189.4,204.7,347.4,236.6,63.0,12.4,226.9,132.0,340.7,313.7,160.2,64.0,341.3,14.1,133.0],"elevation_deg":[57.1,39.4,51.9,37.8,35.8,38.6,59.0,29.4,56.4,42.4,37.2,39.9,48.9,51.9,50.9,55.6,54.9,69.5,52.0,29.1],"kind":"registered_viewpoints","note":"Where registered photos were taken from, around the object. This is viewpoint coverage \u2014 it does not prove the facing surface was reconstructed."}}}
+{"seq":65,"t":1794492894.474,"type":"stage_start","stage":"undistort","progress":0.0,"overall":0.22,"message":"Removing lens distortion","data":{"index":4,"count":9}}
+{"seq":66,"t":1794492894.474,"type":"stage_progress","stage":"undistort","progress":0.02,"overall":0.2204,"message":"Undistorting photos"}
+{"seq":67,"t":1794492895.323,"type":"stage_progress","stage":"undistort","progress":0.8,"overall":0.236,"message":"Building multi-view scene"}
+{"seq":68,"t":1794492895.399,"type":"stage_end","stage":"undistort","progress":1.0,"overall":0.24,"message":"","data":{"reused":false,"seconds":0.93,"skipped":false}}
+{"seq":69,"t":1794492895.4,"type":"stage_start","stage":"dense","progress":0.0,"overall":0.24,"message":"Starting dense depth maps","data":{"index":5,"count":9}}
+{"seq":70,"t":1794492904.839,"type":"stage_progress","stage":"dense","progress":0.015,"overall":0.246,"message":"Depth maps: first pass 1/20"}
+{"seq":71,"t":1794492909.446,"type":"stage_progress","stage":"dense","progress":0.03,"overall":0.252,"message":"Depth maps: first pass 2/20"}
+{"seq":72,"t":1794492913.557,"type":"stage_progress","stage":"dense","progress":0.045,"overall":0.258,"message":"Depth maps: first pass 3/20"}
+{"seq":73,"t":1794492920.112,"type":"stage_progress","stage":"dense","progress":0.06,"overall":0.264,"message":"Depth maps: first pass 4/20"}
+{"seq":74,"t":1794492925.659,"type":"stage_progress","stage":"dense","progress":0.075,"overall":0.27,"message":"Depth maps: first pass 5/20"}
+{"seq":75,"t":1794492930.947,"type":"stage_progress","stage":"dense","progress":0.09,"overall":0.276,"message":"Depth maps: first pass 6/20"}
+{"seq":76,"t":1794492935.818,"type":"stage_progress","stage":"dense","progress":0.105,"overall":0.282,"message":"Depth maps: first pass 7/20"}
+{"seq":77,"t":1794492940.417,"type":"stage_progress","stage":"dense","progress":0.12,"overall":0.288,"message":"Depth maps: first pass 8/20"}
+{"seq":78,"t":1794492944.631,"type":"stage_progress","stage":"dense","progress":0.135,"overall":0.294,"message":"Depth maps: first pass 9/20"}
+{"seq":79,"t":1794492949.476,"type":"stage_progress","stage":"dense","progress":0.15,"overall":0.3,"message":"Depth maps: first pass 10/20"}
+{"seq":80,"t":1794492954.252,"type":"stage_progress","stage":"dense","progress":0.165,"overall":0.306,"message":"Depth maps: first pass 11/20"}
+{"seq":81,"t":1794492959.304,"type":"stage_progress","stage":"dense","progress":0.18,"overall":0.312,"message":"Depth maps: first pass 12/20"}
+{"seq":82,"t":1794492963.93,"type":"stage_progress","stage":"dense","progress":0.195,"overall":0.318,"message":"Depth maps: first pass 13/20"}
+{"seq":83,"t":1794492968.269,"type":"stage_progress","stage":"dense","progress":0.21,"overall":0.324,"message":"Depth maps: first pass 14/20"}
+{"seq":84,"t":1794492973.169,"type":"stage_progress","stage":"dense","progress":0.225,"overall":0.33,"message":"Depth maps: first pass 15/20"}
+{"seq":85,"t":1794492978.175,"type":"stage_progress","stage":"dense","progress":0.24,"overall":0.336,"message":"Depth maps: first pass 16/20"}
+{"seq":86,"t":1794492983.24,"type":"stage_progress","stage":"dense","progress":0.255,"overall":0.342,"message":"Depth maps: first pass 17/20"}
+{"seq":87,"t":1794492987.12,"type":"stage_progress","stage":"dense","progress":0.27,"overall":0.348,"message":"Depth maps: first pass 18/20"}
+{"seq":88,"t":1794492992.044,"type":"stage_progress","stage":"dense","progress":0.285,"overall":0.354,"message":"Depth maps: first pass 19/20"}
+{"seq":89,"t":1794492993.485,"type":"stage_progress","stage":"dense","progress":0.3,"overall":0.36,"message":"Depth maps: first pass 20/20"}
+{"seq":90,"t":1794492994.88,"type":"stage_progress","stage":"dense","progress":0.314,"overall":0.3656,"message":"Depth maps: consistency pass 1/2, 1/20"}
+{"seq":91,"t":1794492996.448,"type":"stage_progress","stage":"dense","progress":0.328,"overall":0.3712,"message":"Depth maps: consistency pass 1/2, 2/20"}
+{"seq":92,"t":1794492997.62,"type":"stage_progress","stage":"dense","progress":0.342,"overall":0.3768,"message":"Depth maps: consistency pass 1/2, 3/20"}
+{"seq":93,"t":1794492999.035,"type":"stage_progress","stage":"dense","progress":0.356,"overall":0.3824,"message":"Depth maps: consistency pass 1/2, 4/20"}
+{"seq":94,"t":1794493000.522,"type":"stage_progress","stage":"dense","progress":0.37,"overall":0.388,"message":"Depth maps: consistency pass 1/2, 5/20"}
+{"seq":95,"t":1794493001.906,"type":"stage_progress","stage":"dense","progress":0.384,"overall":0.3936,"message":"Depth maps: consistency pass 1/2, 6/20"}
+{"seq":96,"t":1794493003.45,"type":"stage_progress","stage":"dense","progress":0.398,"overall":0.3992,"message":"Depth maps: consistency pass 1/2, 7/20"}
+{"seq":97,"t":1794493004.915,"type":"stage_progress","stage":"dense","progress":0.412,"overall":0.4048,"message":"Depth maps: consistency pass 1/2, 8/20"}
+{"seq":98,"t":1794493006.102,"type":"stage_progress","stage":"dense","progress":0.426,"overall":0.4104,"message":"Depth maps: consistency pass 1/2, 9/20"}
+{"seq":99,"t":1794493007.438,"type":"stage_progress","stage":"dense","progress":0.44,"overall":0.416,"message":"Depth maps: consistency pass 1/2, 10/20"}
+{"seq":100,"t":1794493008.765,"type":"stage_progress","stage":"dense","progress":0.454,"overall":0.4216,"message":"Depth maps: consistency pass 1/2, 11/20"}
+{"seq":101,"t":1794493010.43,"type":"stage_progress","stage":"dense","progress":0.468,"overall":0.4272,"message":"Depth maps: consistency pass 1/2, 12/20"}
+{"seq":102,"t":1794493011.903,"type":"stage_progress","stage":"dense","progress":0.482,"overall":0.4328,"message":"Depth maps: consistency pass 1/2, 13/20"}
+{"seq":103,"t":1794493013.269,"type":"stage_progress","stage":"dense","progress":0.496,"overall":0.4384,"message":"Depth maps: consistency pass 1/2, 14/20"}
+{"seq":104,"t":1794493014.656,"type":"stage_progress","stage":"dense","progress":0.51,"overall":0.444,"message":"Depth maps: consistency pass 1/2, 15/20"}
+{"seq":105,"t":1794493016.025,"type":"stage_progress","stage":"dense","progress":0.524,"overall":0.4496,"message":"Depth maps: consistency pass 1/2, 16/20"}
+{"seq":106,"t":1794493017.672,"type":"stage_progress","stage":"dense","progress":0.538,"overall":0.4552,"message":"Depth maps: consistency pass 1/2, 17/20"}
+{"seq":107,"t":1794493018.777,"type":"stage_progress","stage":"dense","progress":0.552,"overall":0.4608,"message":"Depth maps: consistency pass 1/2, 18/20"}
+{"seq":108,"t":1794493020.165,"type":"stage_progress","stage":"dense","progress":0.566,"overall":0.4664,"message":"Depth maps: consistency pass 1/2, 19/20"}
+{"seq":109,"t":1794493021.587,"type":"stage_progress","stage":"dense","progress":0.58,"overall":0.472,"message":"Depth maps: consistency pass 1/2, 20/20"}
+{"seq":110,"t":1794493022.95,"type":"stage_progress","stage":"dense","progress":0.594,"overall":0.4776,"message":"Depth maps: consistency pass 2/2, 1/20"}
+{"seq":111,"t":1794493024.402,"type":"stage_progress","stage":"dense","progress":0.608,"overall":0.4832,"message":"Depth maps: consistency pass 2/2, 2/20"}
+{"seq":112,"t":1794493025.618,"type":"stage_progress","stage":"dense","progress":0.622,"overall":0.4888,"message":"Depth maps: consistency pass 2/2, 3/20"}
+{"seq":113,"t":1794493027.059,"type":"stage_progress","stage":"dense","progress":0.636,"overall":0.4944,"message":"Depth maps: consistency pass 2/2, 4/20"}
+{"seq":114,"t":1794493028.508,"type":"stage_progress","stage":"dense","progress":0.65,"overall":0.5,"message":"Depth maps: consistency pass 2/2, 5/20"}
+{"seq":115,"t":1794493030.036,"type":"stage_progress","stage":"dense","progress":0.664,"overall":0.5056,"message":"Depth maps: consistency pass 2/2, 6/20"}
+{"seq":116,"t":1794493031.467,"type":"stage_progress","stage":"dense","progress":0.678,"overall":0.5112,"message":"Depth maps: consistency pass 2/2, 7/20"}
+{"seq":117,"t":1794493032.883,"type":"stage_progress","stage":"dense","progress":0.692,"overall":0.5168,"message":"Depth maps: consistency pass 2/2, 8/20"}
+{"seq":118,"t":1794493034.055,"type":"stage_progress","stage":"dense","progress":0.706,"overall":0.5224,"message":"Depth maps: consistency pass 2/2, 9/20"}
+{"seq":119,"t":1794493035.795,"type":"stage_progress","stage":"dense","progress":0.72,"overall":0.528,"message":"Depth maps: consistency pass 2/2, 10/20"}
+{"seq":120,"t":1794493037.127,"type":"stage_progress","stage":"dense","progress":0.734,"overall":0.5336,"message":"Depth maps: consistency pass 2/2, 11/20"}
+{"seq":121,"t":1794493038.609,"type":"stage_progress","stage":"dense","progress":0.748,"overall":0.5392,"message":"Depth maps: consistency pass 2/2, 12/20"}
+{"seq":122,"t":1794493040.068,"type":"stage_progress","stage":"dense","progress":0.762,"overall":0.5448,"message":"Depth maps: consistency pass 2/2, 13/20"}
+{"seq":123,"t":1794493041.388,"type":"stage_progress","stage":"dense","progress":0.776,"overall":0.5504,"message":"Depth maps: consistency pass 2/2, 14/20"}
+{"seq":124,"t":1794493042.689,"type":"stage_progress","stage":"dense","progress":0.79,"overall":0.556,"message":"Depth maps: consistency pass 2/2, 15/20"}
+{"seq":125,"t":1794493044.133,"type":"stage_progress","stage":"dense","progress":0.804,"overall":0.5616,"message":"Depth maps: consistency pass 2/2, 16/20"}
+{"seq":126,"t":1794493045.747,"type":"stage_progress","stage":"dense","progress":0.818,"overall":0.5672,"message":"Depth maps: consistency pass 2/2, 17/20"}
+{"seq":127,"t":1794493046.863,"type":"stage_progress","stage":"dense","progress":0.832,"overall":0.5728,"message":"Depth maps: consistency pass 2/2, 18/20"}
+{"seq":128,"t":1794493048.262,"type":"stage_progress","stage":"dense","progress":0.846,"overall":0.5784,"message":"Depth maps: consistency pass 2/2, 19/20"}
+{"seq":129,"t":1794493049.041,"type":"stage_progress","stage":"dense","progress":0.86,"overall":0.584,"message":"Depth maps: consistency pass 2/2, 20/20"}
+{"seq":130,"t":1794493049.547,"type":"stage_progress","stage":"dense","progress":0.9,"overall":0.6,"message":"Filtering depth maps"}
+{"seq":131,"t":1794493050.047,"type":"stage_progress","stage":"dense","progress":0.904,"overall":0.6016,"message":"Fusing depth maps into points"}
+{"seq":132,"t":1794493050.553,"type":"stage_progress","stage":"dense","progress":0.92,"overall":0.608,"message":"Fusing depth maps into points"}
+{"seq":133,"t":1794493050.921,"type":"stage_progress","stage":"dense","progress":0.944,"overall":0.6176,"message":"Fusing depth maps into points"}
+{"seq":134,"t":1794493051.159,"type":"stage_progress","stage":"dense","progress":0.964,"overall":0.6256,"message":"Fusing depth maps into points"}
+{"seq":135,"t":1794493051.159,"type":"stage_progress","stage":"dense","progress":0.99,"overall":0.636,"message":"Fused 2,785,309 dense points"}
+{"seq":136,"t":1794493051.895,"type":"stage_end","stage":"dense","progress":1.0,"overall":0.64,"message":"","data":{"reused":false,"seconds":156.5,"skipped":false}}
+{"seq":137,"t":1794493051.895,"type":"diagnostics","stage":"dense","progress":0.0,"overall":0.64,"message":"","data":{"dense":{"dense_points":2785309,"depth_maps":20,"depth_map_max_side":1200}}}
+{"seq":138,"t":1794493051.895,"type":"stage_start","stage":"mesh","progress":0.0,"overall":0.64,"message":"Building surface","data":{"index":6,"count":9}}
+{"seq":139,"t":1794493051.971,"type":"stage_progress","stage":"mesh","progress":0.0375,"overall":0.6438,"message":"Dense points loaded"}
+{"seq":140,"t":1794493052.52,"type":"stage_progress","stage":"mesh","progress":0.0375,"overall":0.6438,"message":"Dense points loaded"}
+{"seq":141,"t":1794493053.289,"type":"stage_progress","stage":"mesh","progress":0.0392,"overall":0.6439,"message":"Tetrahedralising dense points"}
+{"seq":142,"t":1794493053.789,"type":"stage_progress","stage":"mesh","progress":0.0503,"overall":0.645,"message":"Tetrahedralising dense points"}
+{"seq":143,"t":1794493054.189,"type":"stage_progress","stage":"mesh","progress":0.0594,"overall":0.6459,"message":"Tetrahedralising dense points"}
+{"seq":144,"t":1794493054.689,"type":"stage_progress","stage":"mesh","progress":0.0757,"overall":0.6476,"message":"Tetrahedralising dense points"}
+{"seq":145,"t":1794493055.189,"type":"stage_progress","stage":"mesh","progress":0.0922,"overall":0.6492,"message":"Tetrahedralising dense points"}
+{"seq":146,"t":1794493055.589,"type":"stage_progress","stage":"mesh","progress":0.1047,"overall":0.6505,"message":"Tetrahedralising dense points"}
+{"seq":147,"t":1794493055.989,"type":"stage_progress","stage":"mesh","progress":0.1201,"overall":0.652,"message":"Tetrahedralising dense points"}
+{"seq":148,"t":1794493056.389,"type":"stage_progress","stage":"mesh","progress":0.1332,"overall":0.6533,"message":"Tetrahedralising dense points"}
+{"seq":149,"t":1794493056.889,"type":"stage_progress","stage":"mesh","progress":0.1499,"overall":0.655,"message":"Tetrahedralising dense points"}
+{"seq":150,"t":1794493057.289,"type":"stage_progress","stage":"mesh","progress":0.1628,"overall":0.6563,"message":"Tetrahedralising dense points"}
+{"seq":151,"t":1794493057.689,"type":"stage_progress","stage":"mesh","progress":0.1761,"overall":0.6576,"message":"Tetrahedralising dense points"}
+{"seq":152,"t":1794493058.089,"type":"stage_progress","stage":"mesh","progress":0.1915,"overall":0.6592,"message":"Tetrahedralising dense points"}
+{"seq":153,"t":1794493058.589,"type":"stage_progress","stage":"mesh","progress":0.2073,"overall":0.6607,"message":"Tetrahedralising dense points"}
+{"seq":154,"t":1794493059.273,"type":"stage_progress","stage":"mesh","progress":0.225,"overall":0.6625,"message":"Tetrahedralising dense points"}
+{"seq":155,"t":1794493062.446,"type":"stage_progress","stage":"mesh","progress":0.2268,"overall":0.6627,"message":"Weighting visibility"}
+{"seq":156,"t":1794493062.846,"type":"stage_progress","stage":"mesh","progress":0.235,"overall":0.6635,"message":"Weighting visibility"}
+{"seq":157,"t":1794493063.246,"type":"stage_progress","stage":"mesh","progress":0.2442,"overall":0.6644,"message":"Weighting visibility"}
+{"seq":158,"t":1794493063.646,"type":"stage_progress","stage":"mesh","progress":0.2503,"overall":0.665,"message":"Weighting visibility"}
+{"seq":159,"t":1794493064.046,"type":"stage_progress","stage":"mesh","progress":0.2579,"overall":0.6658,"message":"Weighting visibility"}
+{"seq":160,"t":1794493064.446,"type":"stage_progress","stage":"mesh","progress":0.2692,"overall":0.6669,"message":"Weighting visibility"}
+{"seq":161,"t":1794493064.846,"type":"stage_progress","stage":"mesh","progress":0.2777,"overall":0.6678,"message":"Weighting visibility"}
+{"seq":162,"t":1794493065.246,"type":"stage_progress","stage":"mesh","progress":0.2868,"overall":0.6687,"message":"Weighting visibility"}
+{"seq":163,"t":1794493065.746,"type":"stage_progress","stage":"mesh","progress":0.2991,"overall":0.6699,"message":"Weighting visibility"}
+{"seq":164,"t":1794493066.146,"type":"stage_progress","stage":"mesh","progress":0.3057,"overall":0.6706,"message":"Weighting visibility"}
+{"seq":165,"t":1794493066.546,"type":"stage_progress","stage":"mesh","progress":0.3268,"overall":0.6727,"message":"Weighting visibility"}
+{"seq":166,"t":1794493066.946,"type":"stage_progress","stage":"mesh","progress":0.3372,"overall":0.6737,"message":"Weighting visibility"}
+{"seq":167,"t":1794493067.346,"type":"stage_progress","stage":"mesh","progress":0.3454,"overall":0.6745,"message":"Weighting visibility"}
+{"seq":168,"t":1794493067.746,"type":"stage_progress","stage":"mesh","progress":0.351,"overall":0.6751,"message":"Weighting visibility"}
+{"seq":169,"t":1794493068.146,"type":"stage_progress","stage":"mesh","progress":0.3581,"overall":0.6758,"message":"Weighting visibility"}
+{"seq":170,"t":1794493068.546,"type":"stage_progress","stage":"mesh","progress":0.3765,"overall":0.6777,"message":"Weighting visibility"}
+{"seq":171,"t":1794493068.946,"type":"stage_progress","stage":"mesh","progress":0.3934,"overall":0.6793,"message":"Weighting visibility"}
+{"seq":172,"t":1794493069.346,"type":"stage_progress","stage":"mesh","progress":0.4058,"overall":0.6806,"message":"Weighting visibility"}
+{"seq":173,"t":1794493069.746,"type":"stage_progress","stage":"mesh","progress":0.4202,"overall":0.682,"message":"Weighting visibility"}
+{"seq":174,"t":1794493070.146,"type":"stage_progress","stage":"mesh","progress":0.4327,"overall":0.6833,"message":"Weighting visibility"}
+{"seq":175,"t":1794493070.546,"type":"stage_progress","stage":"mesh","progress":0.4411,"overall":0.6841,"message":"Weighting visibility"}
+{"seq":176,"t":1794493070.946,"type":"stage_progress","stage":"mesh","progress":0.4524,"overall":0.6852,"message":"Weighting visibility"}
+{"seq":177,"t":1794493071.346,"type":"stage_progress","stage":"mesh","progress":0.4676,"overall":0.6868,"message":"Weighting visibility"}
+{"seq":178,"t":1794493071.746,"type":"stage_progress","stage":"mesh","progress":0.4771,"overall":0.6877,"message":"Weighting visibility"}
+{"seq":179,"t":1794493072.146,"type":"stage_progress","stage":"mesh","progress":0.4853,"overall":0.6885,"message":"Weighting visibility"}
+{"seq":180,"t":1794493080.527,"type":"stage_progress","stage":"mesh","progress":0.615,"overall":0.7015,"message":"Surface extracted"}
+{"seq":181,"t":1794493081.021,"type":"stage_progress","stage":"mesh","progress":0.63,"overall":0.703,"message":"Cleaning mesh"}
+{"seq":182,"t":1794493084.079,"type":"stage_progress","stage":"mesh","progress":0.69,"overall":0.709,"message":"Cleaning mesh"}
+{"seq":183,"t":1794493086.906,"type":"stage_progress","stage":"mesh","progress":0.69,"overall":0.709,"message":"Cleaning mesh"}
+{"seq":184,"t":1794493088.679,"type":"stage_progress","stage":"mesh","progress":0.69,"overall":0.709,"message":"Cleaning mesh"}
+{"seq":185,"t":1794493088.771,"type":"stage_progress","stage":"mesh","progress":0.7425,"overall":0.7142,"message":"Mesh saved"}
+{"seq":186,"t":1794493089.568,"type":"stage_progress","stage":"mesh","progress":0.775,"overall":0.7175,"message":"Analysing dense points"}
+{"seq":187,"t":1794493089.852,"type":"stage_progress","stage":"mesh","progress":0.825,"overall":0.7225,"message":"Separating object from surroundings"}
+{"seq":188,"t":1794493090.39,"type":"stage_progress","stage":"mesh","progress":0.875,"overall":0.7275,"message":"Checking photographic support"}
+{"seq":189,"t":1794493090.631,"type":"stage_progress","stage":"mesh","progress":0.925,"overall":0.7325,"message":"Simplifying to triangle budget"}
+{"seq":190,"t":1794493091.271,"type":"stage_progress","stage":"mesh","progress":1.0,"overall":0.74,"message":"Mesh cleaned"}
+{"seq":191,"t":1794493091.292,"type":"stage_end","stage":"mesh","progress":1.0,"overall":0.74,"message":"","data":{"reused":false,"seconds":39.4,"skipped":false}}
+{"seq":192,"t":1794493091.292,"type":"stage_start","stage":"texture","progress":0.0,"overall":0.74,"message":"Texturing","data":{"index":7,"count":9}}
+{"seq":193,"t":1794493091.292,"type":"stage_progress","stage":"texture","progress":0.01,"overall":0.7422,"message":"Texturing"}
+{"seq":194,"t":1794493091.646,"type":"stage_progress","stage":"texture","progress":0.041,"overall":0.749,"message":"Projecting photos onto the surface"}
+{"seq":195,"t":1794493091.756,"type":"stage_progress","stage":"texture","progress":0.129,"overall":0.7684,"message":"Projecting photos onto the surface"}
+{"seq":196,"t":1794493091.822,"type":"stage_progress","stage":"texture","progress":0.217,"overall":0.7877,"message":"Projecting photos onto the surface"}
+{"seq":197,"t":1794493098.321,"type":"stage_progress","stage":"texture","progress":0.25,"overall":0.795,"message":"Projecting photos onto the surface"}
+{"seq":198,"t":1794493098.321,"type":"stage_progress","stage":"texture","progress":0.8,"overall":0.916,"message":"Building texture atlas"}
+{"seq":199,"t":1794493098.926,"type":"stage_progress","stage":"texture","progress":0.95,"overall":0.949,"message":"Texture atlas built"}
+{"seq":200,"t":1794493098.929,"type":"stage_progress","stage":"texture","progress":0.97,"overall":0.9534,"message":"Texture done"}
+{"seq":201,"t":1794493099.168,"type":"stage_progress","stage":"texture","progress":0.99,"overall":0.9578,"message":"Textured mesh saved"}
+{"seq":202,"t":1794493099.224,"type":"stage_end","stage":"texture","progress":1.0,"overall":0.96,"message":"","data":{"reused":false,"seconds":7.93,"skipped":false}}
+{"seq":203,"t":1794493099.224,"type":"stage_start","stage":"package","progress":0.0,"overall":0.96,"message":"Packaging model","data":{"index":8,"count":9}}
+{"seq":204,"t":1794493099.225,"type":"stage_progress","stage":"package","progress":0.05,"overall":0.962,"message":"Reading textured mesh"}
+{"seq":205,"t":1794493099.755,"type":"stage_progress","stage":"package","progress":0.2,"overall":0.968,"message":"Measuring photographic support"}
+{"seq":206,"t":1794493100.056,"type":"stage_progress","stage":"package","progress":0.6,"overall":0.984,"message":"Writing model"}
+{"seq":207,"t":1794493100.448,"type":"stage_progress","stage":"package","progress":0.95,"overall":0.998,"message":"Model written"}
+{"seq":208,"t":1794493100.45,"type":"stage_end","stage":"package","progress":1.0,"overall":1.0,"message":"","data":{"seconds":1.23,"skipped":false}}
+{"seq":209,"t":1794493100.454,"type":"artifact","stage":"package","progress":0.0,"overall":1.0,"message":"model.glb","data":{"name":"model.glb","size":8488380,"sha256":"5da95a1684b283e1df59aa6b3b119f6266aceefd6a87a8a73b95482588c5374c","kind":"model"}}
+{"seq":210,"t":1794493100.454,"type":"artifact","stage":"package","progress":0.0,"overall":1.0,"message":"cameras.json","data":{"name":"cameras.json","size":6533,"sha256":"08e076a01e5634f6a980a1f851098aaeca57a39139990b2f59457a98c34922e3","kind":"cameras"}}
+{"seq":211,"t":1794493100.454,"type":"artifact","stage":"package","progress":0.0,"overall":1.0,"message":"diagnostics.json","data":{"name":"diagnostics.json","size":7212,"sha256":"badae6415e2802c1f47bf804624b2013f89bf24a03f31382dcdfce817d509eb7","kind":"diagnostics"}}
+{"seq":212,"t":1794493100.454,"type":"diagnostics","stage":"package","progress":0.0,"overall":1.0,"message":"","data":{"mesh":{"vertices":117959,"welded_vertices":100923,"faces":199999,"surface_area":0.651202,"bbox_min":[-0.256593,-0.298877,-0.284556],"bbox_max":[0.280878,0.265899,0.26345],"boundary":{"boundary_edges":1883,"boundary_loops":24,"boundary_length":8.74002},"winding_flipped_for_consistency":false,"object_region":{"faces":101341,"surface_area":0.394638,"well_supported_area_fraction":0.8814,"weak_area_fraction":0.0787,"unsupported_area_fraction":0.0399,"boundary":{"boundary_edges":496,"boundary_loops":23,"boundary_length":5.96253,"cut_edges_excluded":783},"size":[0.31458,0.584144,0.320792]},"views_per_vertex_median":13.0,"untextured_area_fraction":0.0},"texture":{"pages":[{"width":4096,"height":4096,"bytes":1838591,"format":"jpeg"}]},"surface_coverage":{"azimuth_bins":12,"bands":["facing_down","sideways","facing_up"],"supported_area_fraction":[[0.0,0.0,2e-05,0.00022,2e-05,1e-05,0.00011,0.0,0.0,0.0,0.0,0.0],[0.0218,0.06049,0.06963,0.08284,0.08619,0.06901,0.10601,0.06959,0.09777,0.07247,0.04525,0.00689],[0.00392,0.00421,0.00416,0.00424,0.00795,0.00871,0.01219,0.01361,0.01246,0.00897,0.00774,0.00494]],"weak_area_fraction":[[3e-05,5e-05,6e-05,0.00016,0.0,0.00018,0.0,0.0,0.0,1e-05,0.0,2e-05],[0.01108,0.01434,0.01203,0.0049,0.00347,0.0104,0.00372,0.0001,0.00124,0.00744,0.01233,0.02038],[0.00098,0.0002,8e-05,0.00015,2e-05,0.00026,0.00187,0.00289,0.00274,0.00183,0.00301,0.00265]],"sideways_bins_supported":11,"kind":"verified_surface","note":"Share of the object-region surface area with photographic support, by the direction the surface faces. Derived from the reconstructed mesh and its evidence."},"timings_s":{"ingest":0.55,"features":46.33,"matching":5.46,"sfm":11.57,"undistort":0.93,"dense":156.5,"mesh":39.4,"texture":7.93,"package":1.22,"total":269.89},"peak_rss_mb_by_stage":{"ingest":1019.6,"features":2961.0,"matching":727.8,"sfm":701.3,"undistort":728.5,"dense":2406.8,"mesh":3585.3,"texture":2008.6,"package":1217.8},"mesh_cleanup":{"raw_faces":2163868,"faces_in_region":295674,"unsupported_faces_removed":477,"unsupported_area_fraction":0.1136,"stray_components_removed":1,"stray_faces_removed":19,"decimated":true,"nonmanifold_vertices_split":28,"faces":199999,"vertices":100923,"min_point_distance_px":2.5},"warnings":[{"code":"focal_length_drift","message":"The focal length solved from the photos differs from the camera's metadata by 6%. With few photos or little parallax, focal length and camera distance are hard to tell apart: the shape is not affected, but sizes derived from camera positions are uncertain by about that much. Calibrate the scale with a known distance."},{"code":"few_photos","message":"Only 20 photos are registered. Small sets leave gaps and make the camera solution fragile; 30\u201380 overlapping photos are recommended."},{"code":"inconsistent_camera_solution","message":"The camera solution fits the photos poorly (mean reprojection error 1.10 px). This is typical for glossy or plain objects, moving highlights or blur. Expect noisier surface and texture patches from mismatched views; check the model against the object before relying on it."},{"code":"coverage_gap","message":"No registered photo covers a 77\u00b0 sector around the object; the surface facing that side is likely missing."}]}}

@@ -1,0 +1,23 @@
+# One-command start:
+#   docker compose up --build                 → live mode on http://localhost:8787
+#   WIM_MODE=fixture docker compose up --build → fixture/demo mode (no network needed at run time)
+services:
+  map:
+    build: .
+    image: world-intelligence-map:local
+    ports:
+      - "${PORT:-8787}:8787"
+    environment:
+      WIM_MODE: ${WIM_MODE:-live}
+      HOST: 0.0.0.0
+      PORT: 8787
+      WIM_DB_FILE: /data/live.sqlite
+    # Optional credentials and switches; the file may be absent.
+    env_file:
+      - path: .env
+        required: false
+    volumes:
+      - wim-data:/data
+    restart: unless-stopped
+volumes:
+  wim-data:

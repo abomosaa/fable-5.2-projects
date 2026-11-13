@@ -1,0 +1,42 @@
+{
+  "id": "worldbank-indicators",
+  "provider": "World Bank",
+  "dataset": "World Development Indicators (Indicators API v2)",
+  "description": "Annual country-level development indicators: population, income, health, connectivity, energy access, prices and labour market.",
+  "homepageUrl": "https://data.worldbank.org/",
+  "documentationUrl": "https://datahelpdesk.worldbank.org/knowledgebase/articles/889392-about-the-indicators-api-documentation",
+  "sourceUrls": ["https://api.worldbank.org/v2/country/all/indicator/{INDICATOR}?format=json&date={YEAR-6}:{YEAR}&per_page=20000"],
+  "allowedHosts": ["api.worldbank.org"],
+  "coverage": { "geographic": "217 economies worldwide (aggregates are skipped)", "temporal": "Annual values of the current and the six preceding years (as far as published)" },
+  "updateCadence": { "upstream": "Quarterly WDI releases with ad-hoc revisions", "pollIntervalSec": 86400, "staleAfterSec": 259200 },
+  "auth": { "type": "none", "envVars": [] },
+  "attribution": "World Bank, World Development Indicators",
+  "license": {
+    "name": "Creative Commons Attribution 4.0 (CC BY 4.0)",
+    "url": "https://datacatalog.worldbank.org/public-licenses",
+    "redistribution": "allowed-with-attribution",
+    "nonCommercialOnly": false,
+    "notes": "A small number of WDI series carry third-party restrictions; the indicators used here are CC BY 4.0."
+  },
+  "limitations": [
+    "Annual statistics published with a lag of one to three years; the most recent year is frequently missing for some countries.",
+    "Values are national aggregates and hide sub-national variation.",
+    "Several series are modelled estimates (e.g. ILO unemployment, UN IGME mortality) rather than direct measurements.",
+    "The API intermittently answers individual indicator requests with HTTP 502 or stalls; a failed indicator is retried and the source is shown as delayed (partially refreshed) meanwhile."
+  ],
+  "confidenceNotes": "No per-value confidence is published. Official statistics compiled by the World Bank from national and international sources; treat the latest year as provisional.",
+  "retention": { "note": "Annual values of the last seven years are requested; values are purged 8 years after their reference year." },
+  "snapshot": "incremental",
+  "http": { "cacheTtlSec": 43200, "minIntervalMs": 1200, "timeoutMs": 45000, "maxRetries": 3 },
+  "enabledByDefault": true,
+  "layers": [
+    { "id": "wb-population", "name": "Population", "description": "Total population (mid-year estimate).", "domain": "society", "category": "population", "geometry": "country", "timeModel": "indicator", "render": { "type": "choropleth", "color": "purple" }, "metric": { "name": "Population, total", "unit": "people", "scale": "sequential", "higherIs": "neutral", "transform": "log" }, "retentionDays": 2920, "defaultOn": false },
+    { "id": "wb-gdp-per-capita", "name": "GDP per capita", "description": "Gross domestic product per person, current US dollars.", "domain": "society", "category": "economy", "geometry": "country", "timeModel": "indicator", "render": { "type": "choropleth", "color": "green" }, "metric": { "name": "GDP per capita (current US$)", "unit": "US$", "scale": "sequential", "higherIs": "better", "transform": "log" }, "retentionDays": 2920, "defaultOn": false },
+    { "id": "wb-life-expectancy", "name": "Life expectancy", "description": "Life expectancy at birth, total (years).", "domain": "society", "category": "health", "geometry": "country", "timeModel": "indicator", "render": { "type": "choropleth", "color": "teal" }, "metric": { "name": "Life expectancy at birth", "unit": "years", "scale": "sequential", "higherIs": "better", "transform": "linear" }, "retentionDays": 2920, "defaultOn": false },
+    { "id": "wb-under5-mortality", "name": "Under-5 mortality", "description": "Deaths of children under five per 1,000 live births (UN IGME estimate).", "domain": "society", "category": "health", "geometry": "country", "timeModel": "indicator", "render": { "type": "choropleth", "color": "red" }, "metric": { "name": "Mortality rate, under-5", "unit": "per 1,000 live births", "scale": "sequential", "higherIs": "worse", "transform": "linear" }, "retentionDays": 2920, "defaultOn": false },
+    { "id": "wb-internet-users", "name": "Internet users", "description": "Individuals using the Internet as a share of the population (ITU).", "domain": "society", "category": "connectivity", "geometry": "country", "timeModel": "indicator", "render": { "type": "choropleth", "color": "blue" }, "metric": { "name": "Individuals using the Internet", "unit": "% of population", "scale": "sequential", "higherIs": "better", "transform": "linear" }, "retentionDays": 2920, "defaultOn": false },
+    { "id": "wb-electricity-access", "name": "Access to electricity", "description": "Share of the population with access to electricity.", "domain": "society", "category": "energy", "geometry": "country", "timeModel": "indicator", "render": { "type": "choropleth", "color": "yellow" }, "metric": { "name": "Access to electricity", "unit": "% of population", "scale": "sequential", "higherIs": "better", "transform": "linear" }, "retentionDays": 2920, "defaultOn": false },
+    { "id": "wb-inflation", "name": "Inflation (CPI)", "description": "Annual change in consumer prices.", "domain": "society", "category": "economy", "geometry": "country", "timeModel": "indicator", "render": { "type": "choropleth", "color": "orange" }, "metric": { "name": "Inflation, consumer prices", "unit": "annual %", "scale": "sequential", "higherIs": "worse", "transform": "linear" }, "retentionDays": 2920, "defaultOn": false },
+    { "id": "wb-unemployment", "name": "Unemployment", "description": "Unemployment as a share of the labour force (modelled ILO estimate).", "domain": "society", "category": "economy", "geometry": "country", "timeModel": "indicator", "render": { "type": "choropleth", "color": "brown" }, "metric": { "name": "Unemployment, total", "unit": "% of labour force", "scale": "sequential", "higherIs": "worse", "transform": "linear" }, "retentionDays": 2920, "defaultOn": false }
+  ]
+}

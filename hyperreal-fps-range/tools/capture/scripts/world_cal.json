@@ -1,0 +1,108 @@
+[
+{
+"wait": 0.5,
+"do": "set",
+"key": "ambience_volume",
+"value": 0.0
+},
+{
+"wait": 0.1,
+"do": "set",
+"key": "distant_range",
+"value": false
+},
+{
+"wait": 2.0,
+"do": "teleport",
+"x": 6.4,
+"z": 0.6,
+"yaw": 0
+},
+{
+"wait": 1.5,
+"do": "play_world",
+"group": "impact_steel",
+"z": -8.0
+},
+{
+"wait": 3.0,
+"do": "play_world",
+"group": "impact_steel",
+"z": -8.0
+},
+{
+"wait": 3.0,
+"do": "play_world",
+"group": "impact_steel",
+"z": -25.0
+},
+{
+"wait": 3.0,
+"do": "play_world",
+"group": "impact_steel",
+"z": -50.0
+},
+{
+"wait": 3.0,
+"do": "play_world",
+"group": "impact_steel_small",
+"z": -10.0
+},
+{
+"wait": 2.0,
+"do": "play_world",
+"group": "impact_steel_small",
+"x": 10.0,
+"z": 0.0
+},
+{
+"wait": 2.0,
+"do": "play_world",
+"group": "impact_steel_small",
+"x": -10.0,
+"z": 0.0
+},
+{
+"wait": 2.0,
+"do": "play_world",
+"group": "break_glass_bottle",
+"z": -9.0
+},
+{
+"wait": 3.0,
+"do": "play_world",
+"group": "impact_dirt",
+"z": -25.0
+},
+{
+"wait": 2.0,
+"do": "play_world",
+"group": "casing_concrete_hit",
+"x": -0.8,
+"y": -1.6,
+"z": 0.2
+},
+{
+"wait": 1.5,
+"do": "set",
+"key": "spatial_mode",
+"value": "stereo"
+},
+{
+"wait": 0.5,
+"do": "play_world",
+"group": "impact_steel",
+"z": -8.0
+},
+{
+"wait": 3.0,
+"do": "play_world",
+"group": "impact_steel_small",
+"x": 10.0,
+"z": 0.0
+},
+{
+"wait": 2.0,
+"do": "quit"
+}
+]

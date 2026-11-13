@@ -1,0 +1,29 @@
+{
+ "timing": {
+  "export_png_s": 7.9,
+  "tile_package_s": 4.9,
+  "project_archive_s": 4.9
+ },
+ "log": [
+  "[19:51:43] viewer: 4672 \u00d7 3504 px",
+  "[19:51:56] zoom label: 347% of output pixels",
+  "[19:52:14] inspect: From Close-up 10 (134.jpg) | Sampled at 3.0\u00d7 the overview \u00b7 source pixel (1093, 111)",
+  "[19:52:25] source view: 100% of source pixels | Original pixels \u00b7 1600 \u00d7 1200 \u00b7 134.jpg",
+  "[19:52:38] details: Result details | Output grid | 4672 \u00d7 3504 (16.4 MP) | Overview | 1600 \u00d7 1200 (1.9 MP) | Estimated genuine detail | \u2248 9.2 MP | Area from close-ups | 88% | Result area at \u22651.5\u00d7 / \u22652\u00d7 / \u22653\u00d7 / \u22654\u00d7 (after seam selection) | 77% / 52% / 0% / 0% | Close-ups used | 12 | Colour / depth | sRGB \u00b7 8-bit | Fusion time | 5.7 s (0 tiles reused) | The pixel count of the grid is not a measure of detail. The estima",
+  "[19:53:17] rotate/undo/redo dims: 3504 \u00d7 4672 px -> 4672 \u00d7 3504 px -> 3504 \u00d7 4672 px",
+  "[19:53:45] crop: top-left drag -> 3270 \u00d7 2533 px; then bottom-right drag -> 2075 \u00d7 1719 px; after moving the rectangle -> 2075 \u00d7 1719 px",
+  "[19:53:55] after two undos (bottom-right + move): 3270 \u00d7 2533 px",
+  "[19:54:05] after undo of crop dims: 4672 \u00d7 3504 px",
+  "[19:54:22] export: Capture_Nov_12_19_46-mwdsfdbs.png | 4672 \u00d7 3504 px \u00b7 19.6 MB \u00b7 8-bit sRGB",
+  "[19:54:30] share sheet: Sharing image | No recommended people to share with | Quick Share | Detailed Capture | Print | Drive | Maps | Add to Maps",
+  "[19:54:36] exports dir:\ntotal 20088\ndrwxrws--- 2 u0_a216 ext_data_rw     4096 2026-11-12 19:54 .\ndrwxrws--- 4 u0_a216 ext_data_rw     4096 2026-11-12 19:54 ..\n-rw-rw---- 1 u0_a216 ext_data_rw 20546525 2026-11-12 19:54 Capture_Nov_12_19_46-mwdsfdbs.png\n",
+  "[19:54:36] pulled Capture_Nov_12_19_46-mwdsfdbs.png (20546525 bytes)",
+  "[19:54:51] tile package: Capture_Nov_12_19_46-tiles-mwdsg23m.zip | 4672 \u00d7 3504 px pyramid \u00b7 112 files \u00b7 29.6 MB",
+  "[19:55:08] project archive: Capture_Nov_12_19_46-mwdsgfjw.dcap.zip | Project archive \u00b7 8.1 MB \u00b7 originals + transforms",
+  "[19:55:11] exports dir:\ntotal 58716\ndrwxrws--- 2 u0_a216 ext_data_rw     4096 2026-11-12 19:55 .\ndrwxrws--- 4 u0_a216 ext_data_rw     4096 2026-11-12 19:54 ..\n-rw-rw---- 1 u0_a216 ext_data_rw 20546525 2026-11-12 19:54 Capture_Nov_12_19_46-mwdsfdbs.png\n-rw-rw---- 1 u0_a216 ext_data_rw  8520603 2026-11-12 19:55 Capture_Nov_12_19_46-mwdsgfjw.dcap.zip\n-rw-rw---- 1 u0_a216 ext_data_rw 31020593 2026-11-12 19:54 Capture_Nov_12_19_46-tiles-mwdsg23m.zip\n",
+  "[19:55:22] camera guidance: Highlights are clipping (glare?) \u2014 change angle or lower exposure",
+  "[19:55:34] camera flash text: None",
+  "[19:55:46] after camera shot: 78% verified at \u22651.5\u00d7 detail | 12 verified | 4 rejected",
+  "[19:56:10] denied screen: Camera access is needed to take photos | Detailed Capture uses the camera only to take the overview and close-up photos you ask for. Photos stay on this device. You can also work entirely with imported photos. | Open settings / try again | Go back and import photos instead"
+ ]
+}

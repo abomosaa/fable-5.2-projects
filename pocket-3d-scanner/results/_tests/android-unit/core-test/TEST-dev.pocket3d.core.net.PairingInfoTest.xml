@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="dev.pocket3d.core.net.PairingInfoTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2026-11-12T10:55:44.527Z" hostname="h4-pc" time="0.015">
+  <properties/>
+  <testcase name="toleratesWhitespaceCaseAndFingerprintGrouping" classname="dev.pocket3d.core.net.PairingInfoTest" time="0.003"/>
+  <testcase name="parsesCompanionUri" classname="dev.pocket3d.core.net.PairingInfoTest" time="0.001"/>
+  <testcase name="rejectsMalformedOrHostileInput" classname="dev.pocket3d.core.net.PairingInfoTest" time="0.001"/>
+  <testcase name="protocolJsonIgnoresUnknownFieldsFromNewerCompanions" classname="dev.pocket3d.core.net.PairingInfoTest" time="0.01"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

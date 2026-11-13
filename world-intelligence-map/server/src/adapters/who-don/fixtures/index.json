@@ -1,0 +1,7 @@
+{
+  "capturedAt": "2026-11-10T18:06:00Z",
+  "notes": "Captured from the live WHO Disease Outbreak News OData endpoint with the adapter's own query ($orderby=PublicationDateAndTime desc, $top=60, $select of the eleven fields used). All 60 items and the envelope are real and complete except that each Summary longer than 600 characters was cut at a word boundary at or below 600 characters (the adapter stores at most a 400-character excerpt; WHO text is CC BY-NC-SA 3.0 IGO, so the fixture keeps no more of it than the tests need). The malformed variant was authored by hand from the same schema.",
+  "routes": [
+    { "match": "/api/news/diseaseoutbreaknews", "file": "diseaseoutbreaknews.json", "variants": { "malformed": "diseaseoutbreaknews.malformed.json" } }
+  ]
+}

@@ -1,0 +1,331 @@
+/* Monitor: preview stage, transform gizmo, transport bar. */
+.monitor {
+  container-type: inline-size;
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  min-height: 0;
+  background: var(--bg-0);
+}
+
+.monitor-stage {
+  position: relative;
+  flex: 1 1 auto;
+  min-height: 0;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  /* subtle surround so the frame edge is always readable, even for black footage */
+  background:
+    radial-gradient(ellipse at center, rgba(255, 255, 255, 0.035), transparent 70%),
+    var(--bg-0);
+}
+.monitor-stage:fullscreen {
+  background: #000;
+}
+
+.monitor-frame {
+  position: relative;
+  flex: none;
+  background: #000;
+  box-shadow:
+    0 0 0 1px var(--line-strong),
+    0 10px 36px rgba(0, 0, 0, 0.55);
+  touch-action: none;
+  user-select: none;
+}
+.monitor-canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/* ---- overlays */
+.monitor-overlay {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  padding: 16px;
+  pointer-events: none;
+}
+.monitor-overlay > * {
+  pointer-events: auto;
+}
+.monitor-overlay .empty {
+  max-width: 380px;
+  border-radius: var(--radius-l);
+  background: rgba(11, 13, 16, 0.72);
+}
+.monitor-overlay .empty .kbd {
+  vertical-align: 1px;
+}
+.monitor-card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: min(380px, 100%);
+  padding: 14px 16px;
+  border: 1px solid var(--line-strong);
+  border-radius: var(--radius-l);
+  background: var(--bg-2);
+  box-shadow: var(--shadow-pop);
+  font-size: var(--fs-s);
+  line-height: 1.5;
+}
+.monitor-card strong {
+  font-weight: 650;
+  overflow-wrap: anywhere;
+}
+.monitor-card.error {
+  border-color: rgba(255, 107, 110, 0.45);
+}
+.monitor-card.error .icon {
+  color: var(--danger);
+}
+.monitor-card.error p {
+  color: var(--text-2);
+  overflow-wrap: anywhere;
+}
+.monitor-buffering {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 5px 10px 5px 8px;
+  border: 1px solid var(--line-strong);
+  border-radius: 14px;
+  background: rgba(11, 13, 16, 0.82);
+  color: var(--text-2);
+  font-size: var(--fs-xs);
+  pointer-events: none;
+}
+.monitor-buffering .spinner {
+  width: 12px;
+  height: 12px;
+}
+
+/* ---- transform gizmo */
+.gizmo {
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform-origin: 50% 50%;
+  border: 1.5px solid var(--accent);
+  box-shadow: 0 0 0 1px rgba(5, 8, 20, 0.55);
+  cursor: move;
+  touch-action: none;
+}
+/* a solid two-tone ring: the soft accent tint disappeared on bright footage */
+.gizmo:focus-visible {
+  box-shadow:
+    0 0 0 1.5px rgba(5, 8, 20, 0.8),
+    0 0 0 3.5px #fff,
+    0 0 0 5px rgba(5, 8, 20, 0.8);
+  border-radius: 0;
+}
+.gizmo.locked {
+  border-style: dashed;
+  border-color: var(--text-3);
+  cursor: not-allowed;
+}
+.gz-handle {
+  position: absolute;
+  width: 11px;
+  height: 11px;
+  margin: -6px;
+  border: 1.5px solid var(--accent);
+  border-radius: 2px;
+  background: #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+  touch-action: none;
+}
+/* generous invisible hit area around each handle */
+.gz-handle::after,
+.gz-rotate::after {
+  content: "";
+  position: absolute;
+  inset: -8px;
+}
+.gz-handle.nw {
+  left: 0;
+  top: 0;
+  cursor: nwse-resize;
+}
+.gz-handle.ne {
+  left: 100%;
+  top: 0;
+  cursor: nesw-resize;
+}
+.gz-handle.sw {
+  left: 0;
+  top: 100%;
+  cursor: nesw-resize;
+}
+.gz-handle.se {
+  left: 100%;
+  top: 100%;
+  cursor: nwse-resize;
+}
+.gz-stem {
+  position: absolute;
+  left: 50%;
+  bottom: 100%;
+  width: 1.5px;
+  height: 22px;
+  margin-left: -0.75px;
+  background: var(--accent);
+  pointer-events: none;
+}
+.gz-rotate {
+  position: absolute;
+  left: 50%;
+  bottom: calc(100% + 22px);
+  width: 13px;
+  height: 13px;
+  margin-left: -6.5px;
+  border: 1.5px solid var(--accent);
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+  cursor: grab;
+  touch-action: none;
+}
+.gizmo.dragging .gz-rotate {
+  cursor: grabbing;
+}
+.gz-guide {
+  position: absolute;
+  background: var(--playhead);
+  pointer-events: none;
+  z-index: 2;
+}
+.gz-guide.v {
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+}
+.gz-guide.h {
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 1px;
+}
+
+/* ---- transport bar */
+.monitor-bar {
+  flex: none;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+  align-items: center;
+  gap: 8px;
+  height: 44px;
+  padding: 0 10px;
+  border-top: 1px solid var(--line);
+  background: var(--bg-1);
+}
+.monitor-bar-side {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  min-width: 0;
+}
+.monitor-bar-side.end {
+  justify-content: flex-end;
+}
+.monitor-bar-center {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+.monitor-tc {
+  height: 28px;
+  padding: 0 8px;
+  border: 1px solid transparent;
+  border-radius: var(--radius-m);
+  background: transparent;
+  color: var(--text);
+  font-size: var(--fs-l);
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  white-space: nowrap;
+}
+.monitor-tc:hover {
+  background: var(--bg-3);
+  border-color: var(--line-strong);
+}
+.monitor-tc-input {
+  width: 118px;
+  font-size: var(--fs-l);
+  font-weight: 600;
+  text-align: center;
+}
+.monitor-dur {
+  font-size: var(--fs-s);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.monitor-play {
+  display: inline-grid;
+  place-items: center;
+  width: 36px;
+  height: 32px;
+  margin: 0 4px;
+  border: 0;
+  border-radius: var(--radius-m);
+  background: var(--text);
+  color: var(--bg-0);
+  transition: background var(--dur-fast) var(--ease);
+}
+.monitor-play .icon {
+  stroke: none;
+}
+.monitor-play:hover {
+  background: #fff;
+}
+.monitor-play:active {
+  background: var(--text-2);
+}
+.monitor-play[disabled] {
+  background: var(--bg-4);
+  color: var(--text-disabled);
+  cursor: not-allowed;
+}
+.monitor-volume {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.monitor-volume .slider {
+  width: 76px;
+}
+
+/* tooltips of the right-most controls must not leave the viewport */
+.monitor-bar-side.end > [data-tip]:last-child::after {
+  left: auto;
+  right: 0;
+  transform: none;
+}
+
+@media (max-width: 1180px) {
+  .monitor-volume .slider {
+    width: 52px;
+  }
+}
+@container (max-width: 560px) {
+  .monitor-dur,
+  .monitor-volume .slider {
+    display: none;
+  }
+}
+@container (max-width: 400px) {
+  .monitor-bar {
+    grid-template-columns: auto 1fr auto;
+    padding: 0 6px;
+  }
+}

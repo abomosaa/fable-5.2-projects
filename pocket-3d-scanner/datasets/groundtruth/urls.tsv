@@ -1,0 +1,4 @@
+# path	url   (license/documentation proofs; google/navi pinned to commit 3fcfd406aba3dbd43760ad100afb04a6320b7d1c)
+upstream/NAVI_github_README.md	https://raw.githubusercontent.com/google/navi/3fcfd406aba3dbd43760ad100afb04a6320b7d1c/README.md
+upstream/NAVI_github_LICENSE_Apache-2.0.txt	https://raw.githubusercontent.com/google/navi/3fcfd406aba3dbd43760ad100afb04a6320b7d1c/LICENSE
+upstream/NAVI_project_page_LICENSE.txt	https://navidataset.github.io/navidataset_files/LICENSE.txt

@@ -1,0 +1,24 @@
+{
+  "v": 0,
+  "dimension_count": 2,
+  "db_stats": { "row_count": 1200, "bytes": 10800, "total_row_count": 1200, "elapsed_seconds": 0.01 },
+  "result": [
+    { "anomaly_count": 2967, "confirmed_count": 4124, "failure_count": 912, "ok_count": 10568, "measurement_count": 18571, "measurement_start_day": "2026-11-09", "probe_cc": "IR" },
+    { "anomaly_count": 10, "confirmed_count": 0, "failure_count": 2, "ok_count": 88, "measurement_count": 100, "measurement_start_day": "2026-11-08T03:00:00Z", "probe_cc": "KE" },
+    { "anomaly_count": 5, "confirmed_count": 1, "failure_count": 0, "ok_count": 94, "measurement_count": 100, "measurement_start_day": "2026-11-08T04:00:00Z", "probe_cc": "KE" },
+    { "anomaly_count": 3, "confirmed_count": 0, "failure_count": 0, "ok_count": 9, "measurement_count": 12, "measurement_start_day": "2026-11-09", "probe_cc": "FJ" },
+    { "anomaly_count": 40, "confirmed_count": 0, "failure_count": 0, "ok_count": 160, "measurement_count": 200, "measurement_start_day": "2026-11-09", "probe_cc": "ZZ" },
+    { "anomaly_count": 0, "confirmed_count": 0, "failure_count": 0, "ok_count": 0, "measurement_count": 0, "measurement_start_day": "2026-11-09", "probe_cc": "NO" },
+    { "anomaly_count": 7, "confirmed_count": 0, "failure_count": 1, "ok_count": 92, "measurement_count": 100, "measurement_start_day": "2026-11-09", "probe_cc": null },
+    { "anomaly_count": 7, "confirmed_count": 0, "failure_count": 1, "ok_count": 92, "measurement_count": 100, "measurement_start_day": "2026-11-09", "probe_cc": "<script>alert(1)</script>" },
+    { "anomaly_count": 7, "confirmed_count": 0, "failure_count": 1, "ok_count": 92, "measurement_count": 100, "measurement_start_day": "yesterday", "probe_cc": "DE" },
+    { "anomaly_count": 7, "confirmed_count": 0, "failure_count": 1, "ok_count": 92, "measurement_count": 100, "measurement_start_day": "2026-13-45", "probe_cc": "DE" },
+    { "anomaly_count": 7, "confirmed_count": 0, "failure_count": 1, "ok_count": 92, "measurement_count": 100, "measurement_start_day": "2027-01-01", "probe_cc": "DE" },
+    { "anomaly_count": 7, "confirmed_count": 0, "failure_count": 1, "ok_count": 92, "measurement_count": "many", "measurement_start_day": "2026-11-09", "probe_cc": "FR" },
+    { "anomaly_count": -4, "confirmed_count": 0, "failure_count": 1, "ok_count": 92, "measurement_count": 100, "measurement_start_day": "2026-11-09", "probe_cc": "FR" },
+    { "confirmed_count": 0, "failure_count": 1, "ok_count": 92, "measurement_count": 100, "measurement_start_day": "2026-11-09", "probe_cc": "FR" },
+    { "anomaly_count": 950, "confirmed_count": 0, "failure_count": 1, "ok_count": 92, "measurement_count": 100, "measurement_start_day": "2026-11-09", "probe_cc": "BR" },
+    "not a row",
+    null
+  ]
+}

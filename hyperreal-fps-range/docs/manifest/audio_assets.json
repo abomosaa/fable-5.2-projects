@@ -1,0 +1,2113 @@
+{
+ "title": "Audio asset provenance - every source recording actually used for game/assets/audio",
+ "IMPORTANT": "Sonniss #GameAudioGDC licence (v2.0): royalty-free; the sounds may be used and modified in a game and shipped embedded in it, but the RAW LIBRARY FILES MUST NOT BE REDISTRIBUTED (no publishing of assets_src/audio/sonniss-gdc, no asset/sample packs). The files under game/assets/audio derived from them are edited/derived game assets for use inside the shipped game only. The licence also prohibits using the sounds for AI training.",
+ "licenses": {
+  "Sonniss GDC Royalty-Free v2.0": {
+   "url": "https://sonniss.com/gdc-bundle-license/",
+   "attribution": "not required",
+   "redistribution_of_raw_files": "FORBIDDEN"
+  },
+  "CC0 1.0": {
+   "url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "attribution": "not required"
+  },
+  "CC BY 4.0": {
+   "url": "https://creativecommons.org/licenses/by/4.0/",
+   "attribution": "REQUIRED: 'Impulse responses from the OpenAIR library (www.openairlib.net), AudioLab, University of York, CC BY 4.0' - Trollers Gill"
+  },
+  "project-generated": {
+   "note": "ir/bay_late_ir.wav is synthesised by tools/build/audio/g01_p38.py (no third-party material)"
+  }
+ },
+ "counts": {
+  "source_files_used": 122,
+  "output_files": 326
+ },
+ "sources": [
+  {
+   "path": "assets_src/audio/free-firearm-sound-library/FreeFirearmsSFXLibrary-main/Master Tracks/1911/A_10.wav",
+   "sha256": "a93451ad0d347bbfaf7f87243bd025fbed45048c85450ca7aaa7f2758014c87b",
+   "author": "Ben Jaszczak, Brian Nelson, Kevin Heras, Matthew Nanney (Still North Media)",
+   "library": "The Free Firearm Sound Library - Master Tracks (1911)",
+   "source_url": "https://github.com/buddingmonkey/FreeFirearmsSFXLibrary (mirror, commit beb2f4041f3d6740fa0aeaf0e71159bd65a78c1b); original: http://freefirearmsfx.com/ (dead; Wayback 2014-11-10); also https://opengameart.org/content/the-free-firearm-sound-library",
+   "download_url": "https://codeload.github.com/buddingmonkey/FreeFirearmsSFXLibrary/tar.gz/refs/heads/main",
+   "license": "CC0 1.0",
+   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "outputs": [
+    "mech/mech_slide_forward_07.wav"
+   ]
+  },
+  {
+   "path": "assets_src/audio/free-firearm-sound-library/FreeFirearmsSFXLibrary-main/Master Tracks/1911/A_11.wav",
+   "sha256": "0f6b0416ec21d451d3c7d7fd9e34880d7e01a6ee2c3bbf7eadbb47d9a4543fb9",
+   "author": "Ben Jaszczak, Brian Nelson, Kevin Heras, Matthew Nanney (Still North Media)",
+   "library": "The Free Firearm Sound Library - Master Tracks (1911)",
+   "source_url": "https://github.com/buddingmonkey/FreeFirearmsSFXLibrary (mirror, commit beb2f4041f3d6740fa0aeaf0e71159bd65a78c1b); original: http://freefirearmsfx.com/ (dead; Wayback 2014-11-10); also https://opengameart.org/content/the-free-firearm-sound-library",
+   "download_url": "https://codeload.github.com/buddingmonkey/FreeFirearmsSFXLibrary/tar.gz/refs/heads/main",
+   "license": "CC0 1.0",
+   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "outputs": [
+    "mech/mech_slide_forward_08.wav",
+    "mech/mech_slide_forward_09.wav"
+   ]
+  },
+  {
+   "path": "assets_src/audio/free-firearm-sound-library/FreeFirearmsSFXLibrary-main/Master Tracks/1911/A_12.wav",
+   "sha256": "189a8042af0ca57b04fc2527082e7cdc75ff48c7a298158509035ecc1e3cf66a",
+   "author": "Ben Jaszczak, Brian Nelson, Kevin Heras, Matthew Nanney (Still North Media)",
+   "library": "The Free Firearm Sound Library - Master Tracks (1911)",
+   "source_url": "https://github.com/buddingmonkey/FreeFirearmsSFXLibrary (mirror, commit beb2f4041f3d6740fa0aeaf0e71159bd65a78c1b); original: http://freefirearmsfx.com/ (dead; Wayback 2014-11-10); also https://opengameart.org/content/the-free-firearm-sound-library",
+   "download_url": "https://codeload.github.com/buddingmonkey/FreeFirearmsSFXLibrary/tar.gz/refs/heads/main",
+   "license": "CC0 1.0",
+   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "outputs": [
+    "mech/mech_slide_lock_05.wav"
+   ]
+  },
+  {
+   "path": "assets_src/audio/free-firearm-sound-library/FreeFirearmsSFXLibrary-main/Master Tracks/1911/A_13.wav",
+   "sha256": "557c8c806a27d37243e173920eb0634a6e4b877663e2b169e5beddfa3bf17ea3",
+   "author": "Ben Jaszczak, Brian Nelson, Kevin Heras, Matthew Nanney (Still North Media)",
+   "library": "The Free Firearm Sound Library - Master Tracks (1911)",
+   "source_url": "https://github.com/buddingmonkey/FreeFirearmsSFXLibrary (mirror, commit beb2f4041f3d6740fa0aeaf0e71159bd65a78c1b); original: http://freefirearmsfx.com/ (dead; Wayback 2014-11-10); also https://opengameart.org/content/the-free-firearm-sound-library",
+   "download_url": "https://codeload.github.com/buddingmonkey/FreeFirearmsSFXLibrary/tar.gz/refs/heads/main",
+   "license": "CC0 1.0",
+   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "outputs": [
+    "mech/mech_slide_lock_06.wav"
+   ]
+  },
+  {
+   "path": "assets_src/audio/free-firearm-sound-library/FreeFirearmsSFXLibrary-main/Master Tracks/1911/A_14.wav",
+   "sha256": "cf90980ee980f5468c735cecce710bc39d363456859abbed109b6d27a5eb2d39",
+   "author": "Ben Jaszczak, Brian Nelson, Kevin Heras, Matthew Nanney (Still North Media)",
+   "library": "The Free Firearm Sound Library - Master Tracks (1911)",
+   "source_url": "https://github.com/buddingmonkey/FreeFirearmsSFXLibrary (mirror, commit beb2f4041f3d6740fa0aeaf0e71159bd65a78c1b); original: http://freefirearmsfx.com/ (dead; Wayback 2014-11-10); also https://opengameart.org/content/the-free-firearm-sound-library",
+   "download_url": "https://codeload.github.com/buddingmonkey/FreeFirearmsSFXLibrary/tar.gz/refs/heads/main",
+   "license": "CC0 1.0",
+   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "outputs": [
+    "mech/mech_slide_lock_07.wav"
+   ]
+  },
+  {
+   "path": "assets_src/audio/free-firearm-sound-library/FreeFirearmsSFXLibrary-main/Master Tracks/1911/A_15.wav",
+   "sha256": "ce489e1d1498c305af735944f7ec81fdd7c1f9f4c53de7d32c0dc0add9297521",
+   "author": "Ben Jaszczak, Brian Nelson, Kevin Heras, Matthew Nanney (Still North Media)",
+   "library": "The Free Firearm Sound Library - Master Tracks (1911)",
+   "source_url": "https://github.com/buddingmonkey/FreeFirearmsSFXLibrary (mirror, commit beb2f4041f3d6740fa0aeaf0e71159bd65a78c1b); original: http://freefirearmsfx.com/ (dead; Wayback 2014-11-10); also https://opengameart.org/content/the-free-firearm-sound-library",
+   "download_url": "https://codeload.github.com/buddingmonkey/FreeFirearmsSFXLibrary/tar.gz/refs/heads/main",
+   "license": "CC0 1.0",
+   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "outputs": [
+    "mech/mech_slide_release_04.wav"
+   ]
+  },
+  {
+   "path": "assets_src/audio/free-firearm-sound-library/FreeFirearmsSFXLibrary-main/Master Tracks/1911/A_16.wav",
+   "sha256": "2d035ebdd1168a81fec45ec49dac8061d2111a97677a1424b17650207d0a3e50",
+   "author": "Ben Jaszczak, Brian Nelson, Kevin Heras, Matthew Nanney (Still North Media)",
+   "library": "The Free Firearm Sound Library - Master Tracks (1911)",
+   "source_url": "https://github.com/buddingmonkey/FreeFirearmsSFXLibrary (mirror, commit beb2f4041f3d6740fa0aeaf0e71159bd65a78c1b); original: http://freefirearmsfx.com/ (dead; Wayback 2014-11-10); also https://opengameart.org/content/the-free-firearm-sound-library",
+   "download_url": "https://codeload.github.com/buddingmonkey/FreeFirearmsSFXLibrary/tar.gz/refs/heads/main",
+   "license": "CC0 1.0",
+   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "outputs": [
+    "mech/mech_slide_release_05.wav"
+   ]
+  },
+  {
+   "path": "assets_src/audio/free-firearm-sound-library/FreeFirearmsSFXLibrary-main/Master Tracks/1911/A_17.wav",
+   "sha256": "f8efeaa34db613c101e8f9c45b3c5532900bd71b6fd9b960906f90dd935535cd",
+   "author": "Ben Jaszczak, Brian Nelson, Kevin Heras, Matthew Nanney (Still North Media)",
+   "library": "The Free Firearm Sound Library - Master Tracks (1911)",
+   "source_url": "https://github.com/buddingmonkey/FreeFirearmsSFXLibrary (mirror, commit beb2f4041f3d6740fa0aeaf0e71159bd65a78c1b); original: http://freefirearmsfx.com/ (dead; Wayback 2014-11-10); also https://opengameart.org/content/the-free-firearm-sound-library",
+   "download_url": "https://codeload.github.com/buddingmonkey/FreeFirearmsSFXLibrary/tar.gz/refs/heads/main",
+   "license": "CC0 1.0",
+   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "outputs": [
+    "mech/mech_slide_release_06.wav"
+   ]
+  },
+  {
+   "path": "assets_src/audio/free-firearm-sound-library/FreeFirearmsSFXLibrary-main/Master Tracks/1911/A_18.wav",
+   "sha256": "531146a23638eefbe2b67c52a7210140ff973b81f3aaa9a967237bcd53f5faf5",
+   "author": "Ben Jaszczak, Brian Nelson, Kevin Heras, Matthew Nanney (Still North Media)",
+   "library": "The Free Firearm Sound Library - Master Tracks (1911)",
+   "source_url": "https://github.com/buddingmonkey/FreeFirearmsSFXLibrary (mirror, commit beb2f4041f3d6740fa0aeaf0e71159bd65a78c1b); original: http://freefirearmsfx.com/ (dead; Wayback 2014-11-10); also https://opengameart.org/content/the-free-firearm-sound-library",
+   "download_url": "https://codeload.github.com/buddingmonkey/FreeFirearmsSFXLibrary/tar.gz/refs/heads/main",
+   "license": "CC0 1.0",
+   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "outputs": [
+    "mech/mech_slide_release_07.wav"
+   ]
+  },
+  {
+   "path": "assets_src/audio/free-firearm-sound-library/FreeFirearmsSFXLibrary-main/Master Tracks/1911/A_19.wav",
+   "sha256": "3a276d14b59758719a080267139219e7e129a48fc9896c6b6fc116dcb5a11341",
+   "author": "Ben Jaszczak, Brian Nelson, Kevin Heras, Matthew Nanney (Still North Media)",
+   "library": "The Free Firearm Sound Library - Master Tracks (1911)",
+   "source_url": "https://github.com/buddingmonkey/FreeFirearmsSFXLibrary (mirror, commit beb2f4041f3d6740fa0aeaf0e71159bd65a78c1b); original: http://freefirearmsfx.com/ (dead; Wayback 2014-11-10); also https://opengameart.org/content/the-free-firearm-sound-library",
+   "download_url": "https://codeload.github.com/buddingmonkey/FreeFirearmsSFXLibrary/tar.gz/refs/heads/main",
+   "license": "CC0 1.0",
+   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "outputs": [
+    "mech/mech_hammer_fall_03.wav"
+   ]
+  },
+  {
+   "path": "assets_src/audio/free-firearm-sound-library/FreeFirearmsSFXLibrary-main/Master Tracks/1911/A_2.wav",
+   "sha256": "c7cd68b66f6c6505a802b0329f7c4450f766738166da873b0c39301b5011311a",
+   "author": "Ben Jaszczak, Brian Nelson, Kevin Heras, Matthew Nanney (Still North Media)",
+   "library": "The Free Firearm Sound Library - Master Tracks (1911)",
+   "source_url": "https://github.com/buddingmonkey/FreeFirearmsSFXLibrary (mirror, commit beb2f4041f3d6740fa0aeaf0e71159bd65a78c1b); original: http://freefirearmsfx.com/ (dead; Wayback 2014-11-10); also https://opengameart.org/content/the-free-firearm-sound-library",
+   "download_url": "https://codeload.github.com/buddingmonkey/FreeFirearmsSFXLibrary/tar.gz/refs/heads/main",
+   "license": "CC0 1.0",
+   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "outputs": [
+    "mech/mech_mag_in_03.wav",
+    "mech/mech_mag_in_04.wav"
+   ]
+  },
+  {
+   "path": "assets_src/audio/free-firearm-sound-library/FreeFirearmsSFXLibrary-main/Master Tracks/1911/A_24.wav",
+   "sha256": "71c917c01a7c6b92eea79f5216be01773131fa5978a7d2553e49da9eba2cd78d",
+   "author": "Ben Jaszczak, Brian Nelson, Kevin Heras, Matthew Nanney (Still North Media)",
+   "library": "The Free Firearm Sound Library - Master Tracks (1911)",
+   "source_url": "https://github.com/buddingmonkey/FreeFirearmsSFXLibrary (mirror, commit beb2f4041f3d6740fa0aeaf0e71159bd65a78c1b); original: http://freefirearmsfx.com/ (dead; Wayback 2014-11-10); also https://opengameart.org/content/the-free-firearm-sound-library",
+   "download_url": "https://codeload.github.com/buddingmonkey/FreeFirearmsSFXLibrary/tar.gz/refs/heads/main",
+   "license": "CC0 1.0",
+   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "outputs": [
+    "mech/mech_slide_rack_08.wav"
+   ]
+  },
+  {
+   "path": "assets_src/audio/free-firearm-sound-library/FreeFirearmsSFXLibrary-main/Master Tracks/1911/A_25.wav",
+   "sha256": "de3c7c6458d7e10072996185124d3fbf4e178bd56315a3a594a03509b4b45a70",
+   "author": "Ben Jaszczak, Brian Nelson, Kevin Heras, Matthew Nanney (Still North Media)",
+   "library": "The Free Firearm Sound Library - Master Tracks (1911)",
+   "source_url": "https://github.com/buddingmonkey/FreeFirearmsSFXLibrary (mirror, commit beb2f4041f3d6740fa0aeaf0e71159bd65a78c1b); original: http://freefirearmsfx.com/ (dead; Wayback 2014-11-10); also https://opengameart.org/content/the-free-firearm-sound-library",
+   "download_url": "https://codeload.github.com/buddingmonkey/FreeFirearmsSFXLibrary/tar.gz/refs/heads/main",
+   "license": "CC0 1.0",
+   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "outputs": [
+    "mech/mech_slide_rack_09.wav"
+   ]
+  },
+  {
+   "path": "assets_src/audio/free-firearm-sound-library/FreeFirearmsSFXLibrary-main/Master Tracks/1911/A_26.wav",
+   "sha256": "5726134b15d3241977396018ab87cdc38628be4363ec7b1265d9755df6f6dcdc",
+   "author": "Ben Jaszczak, Brian Nelson, Kevin Heras, Matthew Nanney (Still North Media)",
+   "library": "The Free Firearm Sound Library - Master Tracks (1911)",
+   "source_url": "https://github.com/buddingmonkey/FreeFirearmsSFXLibrary (mirror, commit beb2f4041f3d6740fa0aeaf0e71159bd65a78c1b); original: http://freefirearmsfx.com/ (dead; Wayback 2014-11-10); also https://opengameart.org/content/the-free-firearm-sound-library",
+   "download_url": "https://codeload.github.com/buddingmonkey/FreeFirearmsSFXLibrary/tar.gz/refs/heads/main",
+   "license": "CC0 1.0",
+   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "outputs": [
+    "mech/mech_slide_rack_10.wav"
+   ]
+  },
+  {
+   "path": "assets_src/audio/free-firearm-sound-library/FreeFirearmsSFXLibrary-main/Master Tracks/1911/A_27.wav",
+   "sha256": "cacdf2211c34378d77fd4c9e5e83cf691aba26b244fa97ed0d8171562cb9e4c7",
+   "author": "Ben Jaszczak, Brian Nelson, Kevin Heras, Matthew Nanney (Still North Media)",
+   "library": "The Free Firearm Sound Library - Master Tracks (1911)",
+   "source_url": "https://github.com/buddingmonkey/FreeFirearmsSFXLibrary (mirror, commit beb2f4041f3d6740fa0aeaf0e71159bd65a78c1b); original: http://freefirearmsfx.com/ (dead; Wayback 2014-11-10); also https://opengameart.org/content/the-free-firearm-sound-library",
+   "download_url": "https://codeload.github.com/buddingmonkey/FreeFirearmsSFXLibrary/tar.gz/refs/heads/main",
+   "license": "CC0 1.0",
+   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "outputs": [
+    "mech/mech_hammer_cock_08.wav"
+   ]
+  },
+  {
+   "path": "assets_src/audio/free-firearm-sound-library/FreeFirearmsSFXLibrary-main/Master Tracks/1911/A_28.wav",
+   "sha256": "d390845d876f907ba2481e67b54eb66a270448d2daa8f077cd41c9177b81fe1c",
+   "author": "Ben Jaszczak, Brian Nelson, Kevin Heras, Matthew Nanney (Still North Media)",
+   "library": "The Free Firearm Sound Library - Master Tracks (1911)",
+   "source_url": "https://github.com/buddingmonkey/FreeFirearmsSFXLibrary (mirror, commit beb2f4041f3d6740fa0aeaf0e71159bd65a78c1b); original: http://freefirearmsfx.com/ (dead; Wayback 2014-11-10); also https://opengameart.org/content/the-free-firearm-sound-library",
+   "download_url": "https://codeload.github.com/buddingmonkey/FreeFirearmsSFXLibrary/tar.gz/refs/heads/main",
+   "license": "CC0 1.0",
+   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "outputs": [
+    "mech/mech_hammer_cock_07.wav"
+   ]
+  },
+  {
+   "path": "assets_src/audio/free-firearm-sound-library/FreeFirearmsSFXLibrary-main/Master Tracks/1911/A_29.wav",
+   "sha256": "76ca8b491c0073675e66212399b573bd0e2d5d8bd7f478175bc541e6b402c5b9",
+   "author": "Ben Jaszczak, Brian Nelson, Kevin Heras, Matthew Nanney (Still North Media)",
+   "library": "The Free Firearm Sound Library - Master Tracks (1911)",
+   "source_url": "https://github.com/buddingmonkey/FreeFirearmsSFXLibrary (mirror, commit beb2f4041f3d6740fa0aeaf0e71159bd65a78c1b); original: http://freefirearmsfx.com/ (dead; Wayback 2014-11-10); also https://opengameart.org/content/the-free-firearm-sound-library",
+   "download_url": "https://codeload.github.com/buddingmonkey/FreeFirearmsSFXLibrary/tar.gz/refs/heads/main",
+   "license": "CC0 1.0",
+   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "outputs": [
+    "mech/mech_hammer_cock_06.wav"
+   ]
+  },
+  {
+   "path": "assets_src/audio/free-firearm-sound-library/FreeFirearmsSFXLibrary-main/Master Tracks/1911/A_3.wav",
+   "sha256": "5ebf1cda0505b028eb476abba459abb89001410e8a840e769f0218494c6951d9",
+   "author": "Ben Jaszczak, Brian Nelson, Kevin Heras, Matthew Nanney (Still North Media)",
+   "library": "The Free Firearm Sound Library - Master Tracks (1911)",
+   "source_url": "https://github.com/buddingmonkey/FreeFirearmsSFXLibrary (mirror, commit beb2f4041f3d6740fa0aeaf0e71159bd65a78c1b); original: http://freefirearmsfx.com/ (dead; Wayback 2014-11-10); also https://opengameart.org/content/the-free-firearm-sound-library",
+   "download_url": "https://codeload.github.com/buddingmonkey/FreeFirearmsSFXLibrary/tar.gz/refs/heads/main",
+   "license": "CC0 1.0",
+   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "outputs": [
+    "mech/mech_mag_out_05.wav",
+    "mech/mech_mag_release_05.wav"
+   ]
+  },
+  {
+   "path": "assets_src/audio/free-firearm-sound-library/FreeFirearmsSFXLibrary-main/Master Tracks/1911/A_30.wav",
+   "sha256": "d726d2a1c858f81ee94ddbeff511fd0bcf0ce49c59f734e71d4dc96c74ea2603",
+   "author": "Ben Jaszczak, Brian Nelson, Kevin Heras, Matthew Nanney (Still North Media)",
+   "library": "The Free Firearm Sound Library - Master Tracks (1911)",
+   "source_url": "https://github.com/buddingmonkey/FreeFirearmsSFXLibrary (mirror, commit beb2f4041f3d6740fa0aeaf0e71159bd65a78c1b); original: http://freefirearmsfx.com/ (dead; Wayback 2014-11-10); also https://opengameart.org/content/the-free-firearm-sound-library",
+   "download_url": "https://codeload.github.com/buddingmonkey/FreeFirearmsSFXLibrary/tar.gz/refs/heads/main",
+   "license": "CC0 1.0",
+   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "outputs": [
+    "mech/mech_safety_on_01.wav"
+   ]
+  },
+  {
+   "path": "assets_src/audio/free-firearm-sound-library/FreeFirearmsSFXLibrary-main/Master Tracks/1911/A_31.wav",
+   "sha256": "9adff6e38d98053ba11da0b197c61e78eb750d58a5de6c672f0fa34b24a16dcc",
+   "author": "Ben Jaszczak, Brian Nelson, Kevin Heras, Matthew Nanney (Still North Media)",
+   "library": "The Free Firearm Sound Library - Master Tracks (1911)",
+   "source_url": "https://github.com/buddingmonkey/FreeFirearmsSFXLibrary (mirror, commit beb2f4041f3d6740fa0aeaf0e71159bd65a78c1b); original: http://freefirearmsfx.com/ (dead; Wayback 2014-11-10); also https://opengameart.org/content/the-free-firearm-sound-library",
+   "download_url": "https://codeload.github.com/buddingmonkey/FreeFirearmsSFXLibrary/tar.gz/refs/heads/main",
+   "license": "CC0 1.0",
+   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "outputs": [
+    "mech/mech_safety_off_02.wav"
+   ]
+  },
+  {
+   "path": "assets_src/audio/free-firearm-sound-library/FreeFirearmsSFXLibrary-main/Master Tracks/1911/A_4.wav",
+   "sha256": "ca37fc9d4d3287f04c54d78494e91b6152a7f699905a8ad258c6041f6d86e805",
+   "author": "Ben Jaszczak, Brian Nelson, Kevin Heras, Matthew Nanney (Still North Media)",
+   "library": "The Free Firearm Sound Library - Master Tracks (1911)",
+   "source_url": "https://github.com/buddingmonkey/FreeFirearmsSFXLibrary (mirror, commit beb2f4041f3d6740fa0aeaf0e71159bd65a78c1b); original: http://freefirearmsfx.com/ (dead; Wayback 2014-11-10); also https://opengameart.org/content/the-free-firearm-sound-library",
+   "download_url": "https://codeload.github.com/buddingmonkey/FreeFirearmsSFXLibrary/tar.gz/refs/heads/main",
+   "license": "CC0 1.0",
+   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "outputs": [
+    "mech/mech_mag_in_05.wav",
+    "mech/mech_mag_in_06.wav"
+   ]
+  },
+  {
+   "path": "assets_src/audio/free-firearm-sound-library/FreeFirearmsSFXLibrary-main/Master Tracks/1911/A_5.wav",
+   "sha256": "fedb6a77f9a8498e3fe2700520d19e63c6d370a4a413469d93584937d140586e",
+   "author": "Ben Jaszczak, Brian Nelson, Kevin Heras, Matthew Nanney (Still North Media)",
+   "library": "The Free Firearm Sound Library - Master Tracks (1911)",
+   "source_url": "https://github.com/buddingmonkey/FreeFirearmsSFXLibrary (mirror, commit beb2f4041f3d6740fa0aeaf0e71159bd65a78c1b); original: http://freefirearmsfx.com/ (dead; Wayback 2014-11-10); also https://opengameart.org/content/the-free-firearm-sound-library",
+   "download_url": "https://codeload.github.com/buddingmonkey/FreeFirearmsSFXLibrary/tar.gz/refs/heads/main",
+   "license": "CC0 1.0",
+   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "outputs": [
+    "mech/mech_mag_out_06.wav",
+    "mech/mech_mag_release_06.wav"
+   ]
+  },
+  {
+   "path": "assets_src/audio/free-firearm-sound-library/FreeFirearmsSFXLibrary-main/Master Tracks/1911/A_6.wav",
+   "sha256": "dfc7d4169c74992f1c66ed959d1d574585caa23aea58977c688e04f1489449be",
+   "author": "Ben Jaszczak, Brian Nelson, Kevin Heras, Matthew Nanney (Still North Media)",
+   "library": "The Free Firearm Sound Library - Master Tracks (1911)",
+   "source_url": "https://github.com/buddingmonkey/FreeFirearmsSFXLibrary (mirror, commit beb2f4041f3d6740fa0aeaf0e71159bd65a78c1b); original: http://freefirearmsfx.com/ (dead; Wayback 2014-11-10); also https://opengameart.org/content/the-free-firearm-sound-library",
+   "download_url": "https://codeload.github.com/buddingmonkey/FreeFirearmsSFXLibrary/tar.gz/refs/heads/main",
+   "license": "CC0 1.0",
+   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "outputs": [
+    "mech/mech_slide_back_04.wav",
+    "mech/mech_slide_back_05.wav"
+   ]
+  },
+  {
+   "path": "assets_src/audio/free-firearm-sound-library/FreeFirearmsSFXLibrary-main/Master Tracks/1911/A_7.wav",
+   "sha256": "d3c22dbb86870503757746fc0610f66ed0cc86c35bb97dee5e1d720a827fe193",
+   "author": "Ben Jaszczak, Brian Nelson, Kevin Heras, Matthew Nanney (Still North Media)",
+   "library": "The Free Firearm Sound Library - Master Tracks (1911)",
+   "source_url": "https://github.com/buddingmonkey/FreeFirearmsSFXLibrary (mirror, commit beb2f4041f3d6740fa0aeaf0e71159bd65a78c1b); original: http://freefirearmsfx.com/ (dead; Wayback 2014-11-10); also https://opengameart.org/content/the-free-firearm-sound-library",
+   "download_url": "https://codeload.github.com/buddingmonkey/FreeFirearmsSFXLibrary/tar.gz/refs/heads/main",
+   "license": "CC0 1.0",
+   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "outputs": [
+    "mech/mech_slide_back_06.wav",
+    "mech/mech_slide_back_07.wav"
+   ]
+  },
+  {
+   "path": "assets_src/audio/free-firearm-sound-library/FreeFirearmsSFXLibrary-main/Master Tracks/1911/A_8.wav",
+   "sha256": "7585c41ca157294a5a38a702ad5e0b93f15bf8da17ee585f345a0fac0d119b8c",
+   "author": "Ben Jaszczak, Brian Nelson, Kevin Heras, Matthew Nanney (Still North Media)",
+   "library": "The Free Firearm Sound Library - Master Tracks (1911)",
+   "source_url": "https://github.com/buddingmonkey/FreeFirearmsSFXLibrary (mirror, commit beb2f4041f3d6740fa0aeaf0e71159bd65a78c1b); original: http://freefirearmsfx.com/ (dead; Wayback 2014-11-10); also https://opengameart.org/content/the-free-firearm-sound-library",
+   "download_url": "https://codeload.github.com/buddingmonkey/FreeFirearmsSFXLibrary/tar.gz/refs/heads/main",
+   "license": "CC0 1.0",
+   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "outputs": [
+    "mech/mech_slide_back_08.wav"
+   ]
+  },
+  {
+   "path": "assets_src/audio/free-firearm-sound-library/FreeFirearmsSFXLibrary-main/Master Tracks/1911/A_9.wav",
+   "sha256": "a858093234c8b105ec6504d1ed3c286a14a91fcf0ab285ac1967a504ff22ad14",
+   "author": "Ben Jaszczak, Brian Nelson, Kevin Heras, Matthew Nanney (Still North Media)",
+   "library": "The Free Firearm Sound Library - Master Tracks (1911)",
+   "source_url": "https://github.com/buddingmonkey/FreeFirearmsSFXLibrary (mirror, commit beb2f4041f3d6740fa0aeaf0e71159bd65a78c1b); original: http://freefirearmsfx.com/ (dead; Wayback 2014-11-10); also https://opengameart.org/content/the-free-firearm-sound-library",
+   "download_url": "https://codeload.github.com/buddingmonkey/FreeFirearmsSFXLibrary/tar.gz/refs/heads/main",
+   "license": "CC0 1.0",
+   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "outputs": [
+    "mech/mech_slide_forward_06.wav"
+   ]
+  },
+  {
+   "path": "assets_src/audio/free-firearm-sound-library/FreeFirearmsSFXLibrary-main/Master Tracks/Bersa/F_10.wav",
+   "sha256": "e6edf9108d4b738f42d9bcc5dadfcc2cc52a2e9539ddc5f2f26bd820d513c338",
+   "author": "Ben Jaszczak, Brian Nelson, Kevin Heras, Matthew Nanney (Still North Media)",
+   "library": "The Free Firearm Sound Library - Master Tracks (Bersa)",
+   "source_url": "https://github.com/buddingmonkey/FreeFirearmsSFXLibrary (mirror, commit beb2f4041f3d6740fa0aeaf0e71159bd65a78c1b); original: http://freefirearmsfx.com/ (dead; Wayback 2014-11-10); also https://opengameart.org/content/the-free-firearm-sound-library",
+   "download_url": "https://codeload.github.com/buddingmonkey/FreeFirearmsSFXLibrary/tar.gz/refs/heads/main",
+   "license": "CC0 1.0",
+   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "outputs": [
+    "mech/mech_slide_forward_03.wav"
+   ]
+  },
+  {
+   "path": "assets_src/audio/free-firearm-sound-library/FreeFirearmsSFXLibrary-main/Master Tracks/Bersa/F_11.wav",
+   "sha256": "d8bb7b0d51cef9ce3ff1d1eb1487a6588278f69e4df13d25054eaad6162f97d0",
+   "author": "Ben Jaszczak, Brian Nelson, Kevin Heras, Matthew Nanney (Still North Media)",
+   "library": "The Free Firearm Sound Library - Master Tracks (Bersa)",
+   "source_url": "https://github.com/buddingmonkey/FreeFirearmsSFXLibrary (mirror, commit beb2f4041f3d6740fa0aeaf0e71159bd65a78c1b); original: http://freefirearmsfx.com/ (dead; Wayback 2014-11-10); also https://opengameart.org/content/the-free-firearm-sound-library",
+   "download_url": "https://codeload.github.com/buddingmonkey/FreeFirearmsSFXLibrary/tar.gz/refs/heads/main",
+   "license": "CC0 1.0",
+   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "outputs": [
+    "mech/mech_slide_forward_04.wav",
+    "mech/mech_slide_forward_05.wav"
+   ]
+  },
+  {
+   "path": "assets_src/audio/free-firearm-sound-library/FreeFirearmsSFXLibrary-main/Master Tracks/Bersa/F_12.wav",
+   "sha256": "17027ec8a00f4ffb5083bbb0afaf539ababe31fb1eb9f974a8961f2c28d28cf4",
+   "author": "Ben Jaszczak, Brian Nelson, Kevin Heras, Matthew Nanney (Still North Media)",
+   "library": "The Free Firearm Sound Library - Master Tracks (Bersa)",
+   "source_url": "https://github.com/buddingmonkey/FreeFirearmsSFXLibrary (mirror, commit beb2f4041f3d6740fa0aeaf0e71159bd65a78c1b); original: http://freefirearmsfx.com/ (dead; Wayback 2014-11-10); also https://opengameart.org/content/the-free-firearm-sound-library",
+   "download_url": "https://codeload.github.com/buddingmonkey/FreeFirearmsSFXLibrary/tar.gz/refs/heads/main",
+   "license": "CC0 1.0",
+   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "outputs": [
+    "mech/mech_slide_lock_01.wav"
+   ]
+  },
+  {
+   "path": "assets_src/audio/free-firearm-sound-library/FreeFirearmsSFXLibrary-main/Master Tracks/Bersa/F_13.wav",
+   "sha256": "3153f74c098fdffefbe61923c2726fce00c2657166fb7413470c85784f719713",
+   "author": "Ben Jaszczak, Brian Nelson, Kevin Heras, Matthew Nanney (Still North Media)",
+   "library": "The Free Firearm Sound Library - Master Tracks (Bersa)",
+   "source_url": "https://github.com/buddingmonkey/FreeFirearmsSFXLibrary (mirror, commit beb2f4041f3d6740fa0aeaf0e71159bd65a78c1b); original: http://freefirearmsfx.com/ (dead; Wayback 2014-11-10); also https://opengameart.org/content/the-free-firearm-sound-library",
+   "download_url": "https://codeload.github.com/buddingmonkey/FreeFirearmsSFXLibrary/tar.gz/refs/heads/main",
+   "license": "CC0 1.0",
+   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "outputs": [
+    "mech/mech_slide_lock_02.wav",
+    "mech/mech_slide_lock_03.wav"
+   ]
+  },
+  {
+   "path": "assets_src/audio/free-firearm-sound-library/FreeFirearmsSFXLibrary-main/Master Tracks/Bersa/F_14.wav",
+   "sha256": "c2a01ca838204890a3fa392bd5c053360350db948dcdc04e13d0d92c8d4c3f61",
+   "author": "Ben Jaszczak, Brian Nelson, Kevin Heras, Matthew Nanney (Still North Media)",
+   "library": "The Free Firearm Sound Library - Master Tracks (Bersa)",
+   "source_url": "https://github.com/buddingmonkey/FreeFirearmsSFXLibrary (mirror, commit beb2f4041f3d6740fa0aeaf0e71159bd65a78c1b); original: http://freefirearmsfx.com/ (dead; Wayback 2014-11-10); also https://opengameart.org/content/the-free-firearm-sound-library",
+   "download_url": "https://codeload.github.com/buddingmonkey/FreeFirearmsSFXLibrary/tar.gz/refs/heads/main",
+   "license": "CC0 1.0",
+   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "outputs": [
+    "mech/mech_slide_lock_04.wav"
+   ]
+  },
+  {
+   "path": "assets_src/audio/free-firearm-sound-library/FreeFirearmsSFXLibrary-main/Master Tracks/Bersa/F_15.wav",
+   "sha256": "49e243b34fe32007c403dad88e6fe4b93e46bc671e5dd664b5f3685a9325081a",
+   "author": "Ben Jaszczak, Brian Nelson, Kevin Heras, Matthew Nanney (Still North Media)",
+   "library": "The Free Firearm Sound Library - Master Tracks (Bersa)",
+   "source_url": "https://github.com/buddingmonkey/FreeFirearmsSFXLibrary (mirror, commit beb2f4041f3d6740fa0aeaf0e71159bd65a78c1b); original: http://freefirearmsfx.com/ (dead; Wayback 2014-11-10); also https://opengameart.org/content/the-free-firearm-sound-library",
+   "download_url": "https://codeload.github.com/buddingmonkey/FreeFirearmsSFXLibrary/tar.gz/refs/heads/main",
+   "license": "CC0 1.0",
+   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "outputs": [
+    "mech/mech_slide_release_01.wav"
+   ]
+  },
+  {
+   "path": "assets_src/audio/free-firearm-sound-library/FreeFirearmsSFXLibrary-main/Master Tracks/Bersa/F_16.wav",
+   "sha256": "71c5a7ebac416d8a7c4344d187010964e081099f4f042645e1eced30e01b463f",
+   "author": "Ben Jaszczak, Brian Nelson, Kevin Heras, Matthew Nanney (Still North Media)",
+   "library": "The Free Firearm Sound Library - Master Tracks (Bersa)",
+   "source_url": "https://github.com/buddingmonkey/FreeFirearmsSFXLibrary (mirror, commit beb2f4041f3d6740fa0aeaf0e71159bd65a78c1b); original: http://freefirearmsfx.com/ (dead; Wayback 2014-11-10); also https://opengameart.org/content/the-free-firearm-sound-library",
+   "download_url": "https://codeload.github.com/buddingmonkey/FreeFirearmsSFXLibrary/tar.gz/refs/heads/main",
+   "license": "CC0 1.0",
+   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "outputs": [
+    "mech/mech_slide_release_02.wav"
+   ]
+  },
+  {
+   "path": "assets_src/audio/free-firearm-sound-library/FreeFirearmsSFXLibrary-main/Master Tracks/Bersa/F_17.wav",
+   "sha256": "d10431560cd2ef998d9603c8f26e1afb105ca3fc231a356bd46c854e6dca5ff5",
+   "author": "Ben Jaszczak, Brian Nelson, Kevin Heras, Matthew Nanney (Still North Media)",
+   "library": "The Free Firearm Sound Library - Master Tracks (Bersa)",
+   "source_url": "https://github.com/buddingmonkey/FreeFirearmsSFXLibrary (mirror, commit beb2f4041f3d6740fa0aeaf0e71159bd65a78c1b); original: http://freefirearmsfx.com/ (dead; Wayback 2014-11-10); also https://opengameart.org/content/the-free-firearm-sound-library",
+   "download_url": "https://codeload.github.com/buddingmonkey/FreeFirearmsSFXLibrary/tar.gz/refs/heads/main",
+   "license": "CC0 1.0",
+   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "outputs": [
+    "mech/mech_slide_release_03.wav"
+   ]
+  },
+  {
+   "path": "assets_src/audio/free-firearm-sound-library/FreeFirearmsSFXLibrary-main/Master Tracks/Bersa/F_18.wav",
+   "sha256": "46230c9a8724735d48ea1a039d1e246d76e70deba5cb87d8edb7747c256168dd",
+   "author": "Ben Jaszczak, Brian Nelson, Kevin Heras, Matthew Nanney (Still North Media)",
+   "library": "The Free Firearm Sound Library - Master Tracks (Bersa)",
+   "source_url": "https://github.com/buddingmonkey/FreeFirearmsSFXLibrary (mirror, commit beb2f4041f3d6740fa0aeaf0e71159bd65a78c1b); original: http://freefirearmsfx.com/ (dead; Wayback 2014-11-10); also https://opengameart.org/content/the-free-firearm-sound-library",
+   "download_url": "https://codeload.github.com/buddingmonkey/FreeFirearmsSFXLibrary/tar.gz/refs/heads/main",
+   "license": "CC0 1.0",
+   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "outputs": [
+    "mech/mech_hammer_cock_05.wav"
+   ]
+  },
+  {
+   "path": "assets_src/audio/free-firearm-sound-library/FreeFirearmsSFXLibrary-main/Master Tracks/Bersa/F_19.wav",
+   "sha256": "0ffdabd688eaab8eb51a98f20440452b89f8731a689a84379fee004d98ea19b3",
+   "author": "Ben Jaszczak, Brian Nelson, Kevin Heras, Matthew Nanney (Still North Media)",
+   "library": "The Free Firearm Sound Library - Master Tracks (Bersa)",
+   "source_url": "https://github.com/buddingmonkey/FreeFirearmsSFXLibrary (mirror, commit beb2f4041f3d6740fa0aeaf0e71159bd65a78c1b); original: http://freefirearmsfx.com/ (dead; Wayback 2014-11-10); also https://opengameart.org/content/the-free-firearm-sound-library",
+   "download_url": "https://codeload.github.com/buddingmonkey/FreeFirearmsSFXLibrary/tar.gz/refs/heads/main",
+   "license": "CC0 1.0",
+   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "outputs": [
+    "mech/mech_hammer_cock_04.wav"
+   ]
+  },
+  {
+   "path": "assets_src/audio/free-firearm-sound-library/FreeFirearmsSFXLibrary-main/Master Tracks/Bersa/F_2.wav",
+   "sha256": "24df4e2daff4edaa689d63c3e7108cc691c98341a8d47b93fbdf47db8e9eb7b6",
+   "author": "Ben Jaszczak, Brian Nelson, Kevin Heras, Matthew Nanney (Still North Media)",
+   "library": "The Free Firearm Sound Library - Master Tracks (Bersa)",
+   "source_url": "https://github.com/buddingmonkey/FreeFirearmsSFXLibrary (mirror, commit beb2f4041f3d6740fa0aeaf0e71159bd65a78c1b); original: http://freefirearmsfx.com/ (dead; Wayback 2014-11-10); also https://opengameart.org/content/the-free-firearm-sound-library",
+   "download_url": "https://codeload.github.com/buddingmonkey/FreeFirearmsSFXLibrary/tar.gz/refs/heads/main",
+   "license": "CC0 1.0",
+   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "outputs": [
+    "mech/mech_mag_in_01.wav"
+   ]
+  },
+  {
+   "path": "assets_src/audio/free-firearm-sound-library/FreeFirearmsSFXLibrary-main/Master Tracks/Bersa/F_20.wav",
+   "sha256": "0a3b6008a80a5d74d433b44fbd6038fb962ebc84d05b3cadcbf0683c90100383",
+   "author": "Ben Jaszczak, Brian Nelson, Kevin Heras, Matthew Nanney (Still North Media)",
+   "library": "The Free Firearm Sound Library - Master Tracks (Bersa)",
+   "source_url": "https://github.com/buddingmonkey/FreeFirearmsSFXLibrary (mirror, commit beb2f4041f3d6740fa0aeaf0e71159bd65a78c1b); original: http://freefirearmsfx.com/ (dead; Wayback 2014-11-10); also https://opengameart.org/content/the-free-firearm-sound-library",
+   "download_url": "https://codeload.github.com/buddingmonkey/FreeFirearmsSFXLibrary/tar.gz/refs/heads/main",
+   "license": "CC0 1.0",
+   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "outputs": [
+    "mech/mech_hammer_cock_01.wav",
+    "mech/mech_hammer_cock_02.wav"
+   ]
+  },
+  {
+   "path": "assets_src/audio/free-firearm-sound-library/FreeFirearmsSFXLibrary-main/Master Tracks/Bersa/F_21.wav",
+   "sha256": "1dde2719a7634e54403ac3700858947fa0d67687c6323ea73ee7fdc4432b3205",
+   "author": "Ben Jaszczak, Brian Nelson, Kevin Heras, Matthew Nanney (Still North Media)",
+   "library": "The Free Firearm Sound Library - Master Tracks (Bersa)",
+   "source_url": "https://github.com/buddingmonkey/FreeFirearmsSFXLibrary (mirror, commit beb2f4041f3d6740fa0aeaf0e71159bd65a78c1b); original: http://freefirearmsfx.com/ (dead; Wayback 2014-11-10); also https://opengameart.org/content/the-free-firearm-sound-library",
+   "download_url": "https://codeload.github.com/buddingmonkey/FreeFirearmsSFXLibrary/tar.gz/refs/heads/main",
+   "license": "CC0 1.0",
+   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "outputs": [
+    "mech/mech_decock_01.wav"
+   ]
+  },
+  {
+   "path": "assets_src/audio/free-firearm-sound-library/FreeFirearmsSFXLibrary-main/Master Tracks/Bersa/F_22.wav",
+   "sha256": "cd3e2a69b1f965d66931cb488cd8019d91bf629b616bb029b17f7a29c698136c",
+   "author": "Ben Jaszczak, Brian Nelson, Kevin Heras, Matthew Nanney (Still North Media)",
+   "library": "The Free Firearm Sound Library - Master Tracks (Bersa)",
+   "source_url": "https://github.com/buddingmonkey/FreeFirearmsSFXLibrary (mirror, commit beb2f4041f3d6740fa0aeaf0e71159bd65a78c1b); original: http://freefirearmsfx.com/ (dead; Wayback 2014-11-10); also https://opengameart.org/content/the-free-firearm-sound-library",
+   "download_url": "https://codeload.github.com/buddingmonkey/FreeFirearmsSFXLibrary/tar.gz/refs/heads/main",
+   "license": "CC0 1.0",
+   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "outputs": [
+    "mech/mech_safety_off_01.wav"
+   ]
+  },
+  {
+   "path": "assets_src/audio/free-firearm-sound-library/FreeFirearmsSFXLibrary-main/Master Tracks/Bersa/F_23.wav",
+   "sha256": "70c0e5dd0d655b917e9916233aec369841dc059afcb81e54157e8de703dad6ec",
+   "author": "Ben Jaszczak, Brian Nelson, Kevin Heras, Matthew Nanney (Still North Media)",
+   "library": "The Free Firearm Sound Library - Master Tracks (Bersa)",
+   "source_url": "https://github.com/buddingmonkey/FreeFirearmsSFXLibrary (mirror, commit beb2f4041f3d6740fa0aeaf0e71159bd65a78c1b); original: http://freefirearmsfx.com/ (dead; Wayback 2014-11-10); also https://opengameart.org/content/the-free-firearm-sound-library",
+   "download_url": "https://codeload.github.com/buddingmonkey/FreeFirearmsSFXLibrary/tar.gz/refs/heads/main",
+   "license": "CC0 1.0",
+   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "outputs": [
+    "mech/mech_hammer_fall_01.wav"
+   ]
+  },
+  {
+   "path": "assets_src/audio/free-firearm-sound-library/FreeFirearmsSFXLibrary-main/Master Tracks/Bersa/F_24.wav",
+   "sha256": "4125634df821ee10437f681c4c472269696ba854097ad9ab59b43feacc914e09",
+   "author": "Ben Jaszczak, Brian Nelson, Kevin Heras, Matthew Nanney (Still North Media)",
+   "library": "The Free Firearm Sound Library - Master Tracks (Bersa)",
+   "source_url": "https://github.com/buddingmonkey/FreeFirearmsSFXLibrary (mirror, commit beb2f4041f3d6740fa0aeaf0e71159bd65a78c1b); original: http://freefirearmsfx.com/ (dead; Wayback 2014-11-10); also https://opengameart.org/content/the-free-firearm-sound-library",
+   "download_url": "https://codeload.github.com/buddingmonkey/FreeFirearmsSFXLibrary/tar.gz/refs/heads/main",
+   "license": "CC0 1.0",
+   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "outputs": [
+    "mech/mech_dry_fire_da_01.wav"
+   ]
+  },
+  {
+   "path": "assets_src/audio/free-firearm-sound-library/FreeFirearmsSFXLibrary-main/Master Tracks/Bersa/F_25.wav",
+   "sha256": "254d1397932f8f906d5efb9a2301aa66563c314586665b083c61b5f7e99b90a6",
+   "author": "Ben Jaszczak, Brian Nelson, Kevin Heras, Matthew Nanney (Still North Media)",
+   "library": "The Free Firearm Sound Library - Master Tracks (Bersa)",
+   "source_url": "https://github.com/buddingmonkey/FreeFirearmsSFXLibrary (mirror, commit beb2f4041f3d6740fa0aeaf0e71159bd65a78c1b); original: http://freefirearmsfx.com/ (dead; Wayback 2014-11-10); also https://opengameart.org/content/the-free-firearm-sound-library",
+   "download_url": "https://codeload.github.com/buddingmonkey/FreeFirearmsSFXLibrary/tar.gz/refs/heads/main",
+   "license": "CC0 1.0",
+   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "outputs": [
+    "mech/mech_hammer_fall_02.wav"
+   ]
+  },
+  {
+   "path": "assets_src/audio/free-firearm-sound-library/FreeFirearmsSFXLibrary-main/Master Tracks/Bersa/F_27.wav",
+   "sha256": "7d0aea3ca9393e0778f114940f3496e15f0297e9654a37d73df22c2bedab15f2",
+   "author": "Ben Jaszczak, Brian Nelson, Kevin Heras, Matthew Nanney (Still North Media)",
+   "library": "The Free Firearm Sound Library - Master Tracks (Bersa)",
+   "source_url": "https://github.com/buddingmonkey/FreeFirearmsSFXLibrary (mirror, commit beb2f4041f3d6740fa0aeaf0e71159bd65a78c1b); original: http://freefirearmsfx.com/ (dead; Wayback 2014-11-10); also https://opengameart.org/content/the-free-firearm-sound-library",
+   "download_url": "https://codeload.github.com/buddingmonkey/FreeFirearmsSFXLibrary/tar.gz/refs/heads/main",
+   "license": "CC0 1.0",
+   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "outputs": [
+    "mech/mech_trigger_reset_01.wav"
+   ]
+  },
+  {
+   "path": "assets_src/audio/free-firearm-sound-library/FreeFirearmsSFXLibrary-main/Master Tracks/Bersa/F_28.wav",
+   "sha256": "191b3d132ddf645700d119b28f21364792337bc1073f2fd5a748978c68c129fb",
+   "author": "Ben Jaszczak, Brian Nelson, Kevin Heras, Matthew Nanney (Still North Media)",
+   "library": "The Free Firearm Sound Library - Master Tracks (Bersa)",
+   "source_url": "https://github.com/buddingmonkey/FreeFirearmsSFXLibrary (mirror, commit beb2f4041f3d6740fa0aeaf0e71159bd65a78c1b); original: http://freefirearmsfx.com/ (dead; Wayback 2014-11-10); also https://opengameart.org/content/the-free-firearm-sound-library",
+   "download_url": "https://codeload.github.com/buddingmonkey/FreeFirearmsSFXLibrary/tar.gz/refs/heads/main",
+   "license": "CC0 1.0",
+   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "outputs": [
+    "mech/mech_trigger_reset_02.wav"
+   ]
+  },
+  {
+   "path": "assets_src/audio/free-firearm-sound-library/FreeFirearmsSFXLibrary-main/Master Tracks/Bersa/F_3.wav",
+   "sha256": "ff76ee7766c6686d711a3086444da8c8db6f07f2222e68c91b8c0bc7c823b4b4",
+   "author": "Ben Jaszczak, Brian Nelson, Kevin Heras, Matthew Nanney (Still North Media)",
+   "library": "The Free Firearm Sound Library - Master Tracks (Bersa)",
+   "source_url": "https://github.com/buddingmonkey/FreeFirearmsSFXLibrary (mirror, commit beb2f4041f3d6740fa0aeaf0e71159bd65a78c1b); original: http://freefirearmsfx.com/ (dead; Wayback 2014-11-10); also https://opengameart.org/content/the-free-firearm-sound-library",
+   "download_url": "https://codeload.github.com/buddingmonkey/FreeFirearmsSFXLibrary/tar.gz/refs/heads/main",
+   "license": "CC0 1.0",
+   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "outputs": [
+    "mech/mech_mag_out_03.wav",
+    "mech/mech_mag_release_03.wav"
+   ]
+  },
+  {
+   "path": "assets_src/audio/free-firearm-sound-library/FreeFirearmsSFXLibrary-main/Master Tracks/Bersa/F_31.wav",
+   "sha256": "17c36e1b3482f7fd887cab8bb147da33044a536cea02521c13d3bfc94c497d9c",
+   "author": "Ben Jaszczak, Brian Nelson, Kevin Heras, Matthew Nanney (Still North Media)",
+   "library": "The Free Firearm Sound Library - Master Tracks (Bersa)",
+   "source_url": "https://github.com/buddingmonkey/FreeFirearmsSFXLibrary (mirror, commit beb2f4041f3d6740fa0aeaf0e71159bd65a78c1b); original: http://freefirearmsfx.com/ (dead; Wayback 2014-11-10); also https://opengameart.org/content/the-free-firearm-sound-library",
+   "download_url": "https://codeload.github.com/buddingmonkey/FreeFirearmsSFXLibrary/tar.gz/refs/heads/main",
+   "license": "CC0 1.0",
+   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "outputs": [
+    "mech/mech_slide_rack_01.wav",
+    "mech/mech_slide_rack_02.wav",
+    "mech/mech_slide_rack_03.wav",
+    "mech/mech_slide_rack_04.wav",
+    "mech/mech_slide_rack_05.wav"
+   ]
+  },
+  {
+   "path": "assets_src/audio/free-firearm-sound-library/FreeFirearmsSFXLibrary-main/Master Tracks/Bersa/F_32.wav",
+   "sha256": "097a0037996027a678c788f09da9f4ee3fdcc3f39cdc5363b5202bfb4aa117a8",
+   "author": "Ben Jaszczak, Brian Nelson, Kevin Heras, Matthew Nanney (Still North Media)",
+   "library": "The Free Firearm Sound Library - Master Tracks (Bersa)",
+   "source_url": "https://github.com/buddingmonkey/FreeFirearmsSFXLibrary (mirror, commit beb2f4041f3d6740fa0aeaf0e71159bd65a78c1b); original: http://freefirearmsfx.com/ (dead; Wayback 2014-11-10); also https://opengameart.org/content/the-free-firearm-sound-library",
+   "download_url": "https://codeload.github.com/buddingmonkey/FreeFirearmsSFXLibrary/tar.gz/refs/heads/main",
+   "license": "CC0 1.0",
+   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "outputs": [
+    "mech/mech_slide_rack_06.wav"
+   ]
+  },
+  {
+   "path": "assets_src/audio/free-firearm-sound-library/FreeFirearmsSFXLibrary-main/Master Tracks/Bersa/F_33.wav",
+   "sha256": "93236cfc06200cb3c03f145c5bae6e41e1a954f11c6d3ea83136aa5f57a904ca",
+   "author": "Ben Jaszczak, Brian Nelson, Kevin Heras, Matthew Nanney (Still North Media)",
+   "library": "The Free Firearm Sound Library - Master Tracks (Bersa)",
+   "source_url": "https://github.com/buddingmonkey/FreeFirearmsSFXLibrary (mirror, commit beb2f4041f3d6740fa0aeaf0e71159bd65a78c1b); original: http://freefirearmsfx.com/ (dead; Wayback 2014-11-10); also https://opengameart.org/content/the-free-firearm-sound-library",
+   "download_url": "https://codeload.github.com/buddingmonkey/FreeFirearmsSFXLibrary/tar.gz/refs/heads/main",
+   "license": "CC0 1.0",
+   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "outputs": [
+    "mech/mech_slide_rack_07.wav"
+   ]
+  },
+  {
+   "path": "assets_src/audio/free-firearm-sound-library/FreeFirearmsSFXLibrary-main/Master Tracks/Bersa/F_37.wav",
+   "sha256": "52816b9f1dd0418a78c11972d8da2ea691f7359ee122e68ef72f03f82e428120",
+   "author": "Ben Jaszczak, Brian Nelson, Kevin Heras, Matthew Nanney (Still North Media)",
+   "library": "The Free Firearm Sound Library - Master Tracks (Bersa)",
+   "source_url": "https://github.com/buddingmonkey/FreeFirearmsSFXLibrary (mirror, commit beb2f4041f3d6740fa0aeaf0e71159bd65a78c1b); original: http://freefirearmsfx.com/ (dead; Wayback 2014-11-10); also https://opengameart.org/content/the-free-firearm-sound-library",
+   "download_url": "https://codeload.github.com/buddingmonkey/FreeFirearmsSFXLibrary/tar.gz/refs/heads/main",
+   "license": "CC0 1.0",
+   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "outputs": [
+    "mech/mech_hammer_cock_03.wav"
+   ]
+  },
+  {
+   "path": "assets_src/audio/free-firearm-sound-library/FreeFirearmsSFXLibrary-main/Master Tracks/Bersa/F_39.wav",
+   "sha256": "883174d9074d2485a7e38404d0f50ba0308d7207ee2ff86581bf4c5310c9f4eb",
+   "author": "Ben Jaszczak, Brian Nelson, Kevin Heras, Matthew Nanney (Still North Media)",
+   "library": "The Free Firearm Sound Library - Master Tracks (Bersa)",
+   "source_url": "https://github.com/buddingmonkey/FreeFirearmsSFXLibrary (mirror, commit beb2f4041f3d6740fa0aeaf0e71159bd65a78c1b); original: http://freefirearmsfx.com/ (dead; Wayback 2014-11-10); also https://opengameart.org/content/the-free-firearm-sound-library",
+   "download_url": "https://codeload.github.com/buddingmonkey/FreeFirearmsSFXLibrary/tar.gz/refs/heads/main",
+   "license": "CC0 1.0",
+   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "outputs": [
+    "mech/mech_trigger_reset_03.wav"
+   ]
+  },
+  {
+   "path": "assets_src/audio/free-firearm-sound-library/FreeFirearmsSFXLibrary-main/Master Tracks/Bersa/F_4.wav",
+   "sha256": "5ceacc81eda8c6d84f54894a0944a5a02601978d43f70246fbc7ec8f71a9f341",
+   "author": "Ben Jaszczak, Brian Nelson, Kevin Heras, Matthew Nanney (Still North Media)",
+   "library": "The Free Firearm Sound Library - Master Tracks (Bersa)",
+   "source_url": "https://github.com/buddingmonkey/FreeFirearmsSFXLibrary (mirror, commit beb2f4041f3d6740fa0aeaf0e71159bd65a78c1b); original: http://freefirearmsfx.com/ (dead; Wayback 2014-11-10); also https://opengameart.org/content/the-free-firearm-sound-library",
+   "download_url": "https://codeload.github.com/buddingmonkey/FreeFirearmsSFXLibrary/tar.gz/refs/heads/main",
+   "license": "CC0 1.0",
+   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "outputs": [
+    "mech/mech_mag_in_02.wav"
+   ]
+  },
+  {
+   "path": "assets_src/audio/free-firearm-sound-library/FreeFirearmsSFXLibrary-main/Master Tracks/Bersa/F_5.wav",
+   "sha256": "a28a6eedfb6f514d47ad66d7fd99f11def05926844515cdd4b77696834516273",
+   "author": "Ben Jaszczak, Brian Nelson, Kevin Heras, Matthew Nanney (Still North Media)",
+   "library": "The Free Firearm Sound Library - Master Tracks (Bersa)",
+   "source_url": "https://github.com/buddingmonkey/FreeFirearmsSFXLibrary (mirror, commit beb2f4041f3d6740fa0aeaf0e71159bd65a78c1b); original: http://freefirearmsfx.com/ (dead; Wayback 2014-11-10); also https://opengameart.org/content/the-free-firearm-sound-library",
+   "download_url": "https://codeload.github.com/buddingmonkey/FreeFirearmsSFXLibrary/tar.gz/refs/heads/main",
+   "license": "CC0 1.0",
+   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "outputs": [
+    "mech/mech_mag_out_04.wav",
+    "mech/mech_mag_release_04.wav"
+   ]
+  },
+  {
+   "path": "assets_src/audio/free-firearm-sound-library/FreeFirearmsSFXLibrary-main/Master Tracks/Bersa/F_6.wav",
+   "sha256": "c03b6a4b58f18cddeae80561b62866d8c95df1ea9bedd1be9debdd61e122ba1c",
+   "author": "Ben Jaszczak, Brian Nelson, Kevin Heras, Matthew Nanney (Still North Media)",
+   "library": "The Free Firearm Sound Library - Master Tracks (Bersa)",
+   "source_url": "https://github.com/buddingmonkey/FreeFirearmsSFXLibrary (mirror, commit beb2f4041f3d6740fa0aeaf0e71159bd65a78c1b); original: http://freefirearmsfx.com/ (dead; Wayback 2014-11-10); also https://opengameart.org/content/the-free-firearm-sound-library",
+   "download_url": "https://codeload.github.com/buddingmonkey/FreeFirearmsSFXLibrary/tar.gz/refs/heads/main",
+   "license": "CC0 1.0",
+   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "outputs": [
+    "mech/mech_slide_back_01.wav"
+   ]
+  },
+  {
+   "path": "assets_src/audio/free-firearm-sound-library/FreeFirearmsSFXLibrary-main/Master Tracks/Bersa/F_7.wav",
+   "sha256": "c53e8668b92acde9a3d0fb2fbd7b9b4d2ea3e11abd05a1cd6076d4588327d18a",
+   "author": "Ben Jaszczak, Brian Nelson, Kevin Heras, Matthew Nanney (Still North Media)",
+   "library": "The Free Firearm Sound Library - Master Tracks (Bersa)",
+   "source_url": "https://github.com/buddingmonkey/FreeFirearmsSFXLibrary (mirror, commit beb2f4041f3d6740fa0aeaf0e71159bd65a78c1b); original: http://freefirearmsfx.com/ (dead; Wayback 2014-11-10); also https://opengameart.org/content/the-free-firearm-sound-library",
+   "download_url": "https://codeload.github.com/buddingmonkey/FreeFirearmsSFXLibrary/tar.gz/refs/heads/main",
+   "license": "CC0 1.0",
+   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "outputs": [
+    "mech/mech_slide_back_02.wav"
+   ]
+  },
+  {
+   "path": "assets_src/audio/free-firearm-sound-library/FreeFirearmsSFXLibrary-main/Master Tracks/Bersa/F_8.wav",
+   "sha256": "dc7152f9cf1d6a6e431710d74c69afcf66806e58c048bd822298a9f7109cd86d",
+   "author": "Ben Jaszczak, Brian Nelson, Kevin Heras, Matthew Nanney (Still North Media)",
+   "library": "The Free Firearm Sound Library - Master Tracks (Bersa)",
+   "source_url": "https://github.com/buddingmonkey/FreeFirearmsSFXLibrary (mirror, commit beb2f4041f3d6740fa0aeaf0e71159bd65a78c1b); original: http://freefirearmsfx.com/ (dead; Wayback 2014-11-10); also https://opengameart.org/content/the-free-firearm-sound-library",
+   "download_url": "https://codeload.github.com/buddingmonkey/FreeFirearmsSFXLibrary/tar.gz/refs/heads/main",
+   "license": "CC0 1.0",
+   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "outputs": [
+    "mech/mech_slide_back_03.wav"
+   ]
+  },
+  {
+   "path": "assets_src/audio/free-firearm-sound-library/FreeFirearmsSFXLibrary-main/Master Tracks/Bersa/F_9.wav",
+   "sha256": "fe75fb9ef5d69f060d859a3c20608ccded06f9f3693c1c8b2d914ff50456e4fe",
+   "author": "Ben Jaszczak, Brian Nelson, Kevin Heras, Matthew Nanney (Still North Media)",
+   "library": "The Free Firearm Sound Library - Master Tracks (Bersa)",
+   "source_url": "https://github.com/buddingmonkey/FreeFirearmsSFXLibrary (mirror, commit beb2f4041f3d6740fa0aeaf0e71159bd65a78c1b); original: http://freefirearmsfx.com/ (dead; Wayback 2014-11-10); also https://opengameart.org/content/the-free-firearm-sound-library",
+   "download_url": "https://codeload.github.com/buddingmonkey/FreeFirearmsSFXLibrary/tar.gz/refs/heads/main",
+   "license": "CC0 1.0",
+   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "outputs": [
+    "mech/mech_slide_forward_01.wav",
+    "mech/mech_slide_forward_02.wav"
+   ]
+  },
+  {
+   "path": "assets_src/audio/free-firearm-sound-library/FreeFirearmsSFXLibrary-main/Master Tracks/Walther PPQ/X_38.wav",
+   "sha256": "175029b8bce507c67ee2d1f9a2ffd0bbd1316e3069e4cc884b7cb785ce525ddd",
+   "author": "Ben Jaszczak, Brian Nelson, Kevin Heras, Matthew Nanney (Still North Media)",
+   "library": "The Free Firearm Sound Library - Master Tracks (Walther PPQ)",
+   "source_url": "https://github.com/buddingmonkey/FreeFirearmsSFXLibrary (mirror, commit beb2f4041f3d6740fa0aeaf0e71159bd65a78c1b); original: http://freefirearmsfx.com/ (dead; Wayback 2014-11-10); also https://opengameart.org/content/the-free-firearm-sound-library",
+   "download_url": "https://codeload.github.com/buddingmonkey/FreeFirearmsSFXLibrary/tar.gz/refs/heads/main",
+   "license": "CC0 1.0",
+   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "outputs": [
+    "shot/close_09.wav",
+    "shot/close_10.wav",
+    "shot/close_11.wav",
+    "shot/close_12.wav"
+   ]
+  },
+  {
+   "path": "assets_src/audio/free-firearm-sound-library/FreeFirearmsSFXLibrary-main/Master Tracks/Walther PPQ/X_39.wav",
+   "sha256": "5d13e71a119f9836d3f2492d36653eb3b555130c239f65a5e25acb911b0e0c0b",
+   "author": "Ben Jaszczak, Brian Nelson, Kevin Heras, Matthew Nanney (Still North Media)",
+   "library": "The Free Firearm Sound Library - Master Tracks (Walther PPQ)",
+   "source_url": "https://github.com/buddingmonkey/FreeFirearmsSFXLibrary (mirror, commit beb2f4041f3d6740fa0aeaf0e71159bd65a78c1b); original: http://freefirearmsfx.com/ (dead; Wayback 2014-11-10); also https://opengameart.org/content/the-free-firearm-sound-library",
+   "download_url": "https://codeload.github.com/buddingmonkey/FreeFirearmsSFXLibrary/tar.gz/refs/heads/main",
+   "license": "CC0 1.0",
+   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "outputs": [
+    "shot/close_13.wav"
+   ]
+  },
+  {
+   "path": "assets_src/audio/freesound-previews/319222__worthahep88__Single_Rock_hit_Dirt.ogg",
+   "sha256": "361db5c2f3ccee0a1bd3ac2b21bbb0e34edb56207f49c48dbc7b78d5d807f744",
+   "author": "worthahep88",
+   "library": "Freesound: Single Rock hit Dirt.wav (lossy HQ preview)",
+   "source_url": "https://freesound.org/people/worthahep88/sounds/319222/",
+   "download_url": "https://cdn.freesound.org/previews/319/319222_3443504-hq.ogg",
+   "license": "CC0 1.0",
+   "license_url": "http://creativecommons.org/publicdomain/zero/1.0/",
+   "outputs": [
+    "impact/impact_dirt_02.wav"
+   ]
+  },
+  {
+   "path": "assets_src/audio/freesound-previews/319228__worthahep88__Single_Rock_hitting_wood_2.ogg",
+   "sha256": "309ad3640f0c662989fcfac2773e38f5718b869ba4ee8e374f7dd0dc9409f4fc",
+   "author": "worthahep88",
+   "library": "Freesound: Single Rock hitting wood 2.wav (lossy HQ preview)",
+   "source_url": "https://freesound.org/people/worthahep88/sounds/319228/",
+   "download_url": "https://cdn.freesound.org/previews/319/319228_3443504-hq.ogg",
+   "license": "CC0 1.0",
+   "license_url": "http://creativecommons.org/publicdomain/zero/1.0/",
+   "outputs": [
+    "impact/impact_wood_01.wav"
+   ]
+  },
+  {
+   "path": "assets_src/audio/freesound-previews/319229__worthahep88__Single_Rock_hit_dirt_2.ogg",
+   "sha256": "9b9615593ef4e31b18222ff2b0f156c310bd98e507121e36f01d302c203d62b8",
+   "author": "worthahep88",
+   "library": "Freesound: Single Rock hit dirt 2.wav (lossy HQ preview)",
+   "source_url": "https://freesound.org/people/worthahep88/sounds/319229/",
+   "download_url": "https://cdn.freesound.org/previews/319/319229_3443504-hq.ogg",
+   "license": "CC0 1.0",
+   "license_url": "http://creativecommons.org/publicdomain/zero/1.0/",
+   "outputs": [
+    "impact/impact_dirt_03.wav"
+   ]
+  },
+  {
+   "path": "assets_src/audio/freesound-previews/329515__LPA134__Big_stereo_metal_hit.ogg",
+   "sha256": "d4b35b355edc318a91edfa8c2c92462511d65bd4442add4c0a41fb7f28618458",
+   "author": "LPA134",
+   "library": "Freesound: Big stereo metal hit (lossy HQ preview)",
+   "source_url": "https://freesound.org/people/LPA134/sounds/329515/",
+   "download_url": "https://cdn.freesound.org/previews/329/329515_424694-hq.ogg",
+   "license": "CC0 1.0",
+   "license_url": "http://creativecommons.org/publicdomain/zero/1.0/",
+   "outputs": [
+    "impact/impact_sheet_metal_01.wav"
+   ]
+  },
+  {
+   "path": "assets_src/audio/freesound-previews/383338__deleted_user_7146007__Bell_Spittoon_Metal_Target_Being_Hit_Sound_Effect_Free_High.ogg",
+   "sha256": "ce6228b73558bcb33d9fd6fc2b760e2e29ef9933b2e36f054aa2b06cddcbe01f",
+   "author": "deleted_user_7146007",
+   "library": "Freesound: Bell Spittoon Metal Target Being Hit Sound Effect Free High Quality Sound FX (lossy HQ preview)",
+   "source_url": "https://freesound.org/people/deleted_user_7146007/sounds/383338/",
+   "download_url": "https://cdn.freesound.org/previews/383/383338_7146007-hq.ogg",
+   "license": "CC0 1.0",
+   "license_url": "http://creativecommons.org/publicdomain/zero/1.0/",
+   "outputs": [
+    "impact/impact_steel_small_01.wav",
+    "impact/impact_steel_small_02.wav",
+    "impact/impact_steel_small_03.wav",
+    "impact/impact_steel_small_04.wav",
+    "impact/impact_steel_small_05.wav"
+   ]
+  },
+  {
+   "path": "assets_src/audio/freesound-previews/387896__bajko__sfx_swing_hojdacka.ogg",
+   "sha256": "d214a84641b7542bcadfb5e282ace547a015b4c4fca2440a8ae95cdd89edacdf",
+   "author": "bajko",
+   "library": "Freesound: sfx_swing_hojdacka.wav (lossy HQ preview)",
+   "source_url": "https://freesound.org/people/bajko/sounds/387896/",
+   "download_url": "https://cdn.freesound.org/previews/387/387896_2341984-hq.ogg",
+   "license": "CC0 1.0",
+   "license_url": "http://creativecommons.org/publicdomain/zero/1.0/",
+   "outputs": [
+    "foley/metal_creak_01.wav",
+    "foley/metal_creak_02.wav",
+    "foley/metal_creak_03.wav",
+    "foley/metal_creak_04.wav",
+    "foley/metal_creak_05.wav"
+   ]
+  },
+  {
+   "path": "assets_src/audio/freesound-previews/399080__Kinoton__Clay_Pottery_Drop_n_Break.ogg",
+   "sha256": "b93f0513c178fc0db195427ae4b3de338db73f17b869b218a71161299599fd23",
+   "author": "Kinoton",
+   "library": "Freesound: Clay Pottery Drop \u2019n\u2019 Break (lossy HQ preview)",
+   "source_url": "https://freesound.org/people/Kinoton/sounds/399080/",
+   "download_url": "https://cdn.freesound.org/previews/399/399080_2247456-hq.ogg",
+   "license": "CC0 1.0",
+   "license_url": "http://creativecommons.org/publicdomain/zero/1.0/",
+   "outputs": [
+    "break/break_ceramic_04.wav",
+    "break/break_ceramic_05.wav",
+    "break/break_ceramic_06.wav"
+   ]
+  },
+  {
+   "path": "assets_src/audio/freesound-previews/444402__MootMcnoodles__Magazine_Hitting_Surface.ogg",
+   "sha256": "2213ea862587fdaadec7db134a84613d4c28c14d01f3a86f81ed2ed91754428f",
+   "author": "MootMcnoodles",
+   "library": "Freesound: Magazine Hitting Surface.wav (lossy HQ preview)",
+   "source_url": "https://freesound.org/people/MootMcnoodles/sounds/444402/",
+   "download_url": "https://cdn.freesound.org/previews/444/444402_7231443-hq.ogg",
+   "license": "CC0 1.0",
+   "license_url": "http://creativecommons.org/publicdomain/zero/1.0/",
+   "outputs": [
+    "mech/mech_mag_handle_01.wav"
+   ]
+  },
+  {
+   "path": "assets_src/audio/freesound-previews/500029__danlucaz__Hitting_a_Metal_Can.ogg",
+   "sha256": "0ff9804bfe0e7e9085f843807a42cf034f25552e5be9a70ce002c18074f8197d",
+   "author": "danlucaz",
+   "library": "Freesound: Hitting a Metal Can (lossy HQ preview)",
+   "source_url": "https://freesound.org/people/danlucaz/sounds/500029/",
+   "download_url": "https://cdn.freesound.org/previews/500/500029_9996727-hq.ogg",
+   "license": "CC0 1.0",
+   "license_url": "http://creativecommons.org/publicdomain/zero/1.0/",
+   "outputs": [
+    "impact/impact_can_01.wav",
+    "impact/impact_can_02.wav",
+    "impact/impact_can_03.wav",
+    "impact/impact_can_04.wav",
+    "impact/impact_can_05.wav",
+    "impact/impact_can_06.wav",
+    "impact/impact_can_07.wav",
+    "impact/impact_can_08.wav",
+    "impact/impact_can_09.wav"
+   ]
+  },
+  {
+   "path": "assets_src/audio/freesound-previews/556002__Nox_Sound__Footsteps_Mountain_Boots_Gravel_Mono.ogg",
+   "sha256": "af2145d67b8427b4cc394a69ba54fe15cf8dd3bd638d6fcf9f310c2e0b6eb766",
+   "author": "Nox_Sound",
+   "library": "Freesound: Footsteps_Mountain_Boots_Gravel_Mono.wav (lossy HQ preview)",
+   "source_url": "https://freesound.org/people/Nox_Sound/sounds/556002/",
+   "download_url": "https://cdn.freesound.org/previews/556/556002_9250976-hq.ogg",
+   "license": "CC0 1.0",
+   "license_url": "http://creativecommons.org/publicdomain/zero/1.0/",
+   "outputs": [
+    "step/step_gravel_10.wav",
+    "step/step_gravel_11.wav",
+    "step/step_gravel_12.wav",
+    "step/step_gravel_13.wav",
+    "step/step_gravel_14.wav",
+    "step/step_gravel_15.wav"
+   ]
+  },
+  {
+   "path": "assets_src/audio/freesound-previews/565642__jc.sg__Plate_Break_1.ogg",
+   "sha256": "005ef7a93d35421c8b12c12ea7065f9d223ae91752d95100d281db48240a5dca",
+   "author": "jc.sg",
+   "library": "Freesound: Plate Break 1.wav (lossy HQ preview)",
+   "source_url": "https://freesound.org/people/jc.sg/sounds/565642/",
+   "download_url": "https://cdn.freesound.org/previews/565/565642_12718478-hq.ogg",
+   "license": "CC0 1.0",
+   "license_url": "http://creativecommons.org/publicdomain/zero/1.0/",
+   "outputs": [
+    "break/break_ceramic_03.wav"
+   ]
+  },
+  {
+   "path": "assets_src/audio/freesound-previews/583310__Fission9__Tile_Breaking.ogg",
+   "sha256": "09cc586fa747e2a30ccaf07e6042dd72eac3992b48545f693ad0a99ff14be0c3",
+   "author": "Fission9",
+   "library": "Freesound: Tile Breaking (lossy HQ preview)",
+   "source_url": "https://freesound.org/people/Fission9/sounds/583310/",
+   "download_url": "https://cdn.freesound.org/previews/583/583310_9395330-hq.ogg",
+   "license": "CC0 1.0",
+   "license_url": "http://creativecommons.org/publicdomain/zero/1.0/",
+   "outputs": [
+    "break/break_ceramic_02.wav"
+   ]
+  },
+  {
+   "path": "assets_src/audio/freesound-previews/707791__TheGreenEyedGhost__Pulling_pistol_from_holster_and_securing_it_back_again_1.ogg",
+   "sha256": "81e152c71c2cfce6939fd4ec7467afd069bb76dd471b505d00780e106a1b106c",
+   "author": "TheGreenEyedGhost",
+   "library": "Freesound: Pulling_pistol_from_holster_and_securing_it_back_again_1 (lossy HQ preview)",
+   "source_url": "https://freesound.org/people/TheGreenEyedGhost/sounds/707791/",
+   "download_url": "https://cdn.freesound.org/previews/707/707791_14713637-hq.ogg",
+   "license": "CC0 1.0",
+   "license_url": "http://creativecommons.org/publicdomain/zero/1.0/",
+   "outputs": [
+    "foley/gear_holster_01.wav",
+    "foley/gear_holster_02.wav"
+   ]
+  },
+  {
+   "path": "assets_src/audio/freesound-previews/736383__mosszaaa__EQUIPTact_DumpPouch_DropMagazine_06.ogg",
+   "sha256": "b5cf67d9c3fca1363af4682275708c44322dfa1eeadd745861d6008604331bc2",
+   "author": "mosszaaa",
+   "library": "Freesound: EQUIPTact_DumpPouch_DropMagazine_06 (lossy HQ preview)",
+   "source_url": "https://freesound.org/people/mosszaaa/sounds/736383/",
+   "download_url": "https://cdn.freesound.org/previews/736/736383_7126825-hq.ogg",
+   "license": "CC0 1.0",
+   "license_url": "http://creativecommons.org/publicdomain/zero/1.0/",
+   "outputs": [
+    "mech/mech_mag_handle_02.wav"
+   ]
+  },
+  {
+   "path": "assets_src/audio/freesound-previews/844190__qubodup__G17_Handling_07.ogg",
+   "sha256": "f599f5db413b0a28a293a73381e6a0caa5f1b86855ebfe079ab5074039c85b72",
+   "author": "qubodup",
+   "library": "Freesound: G17 Handling 07 (lossy HQ preview)",
+   "source_url": "https://freesound.org/people/qubodup/sounds/844190/",
+   "download_url": "https://cdn.freesound.org/previews/844/844190_71257-hq.ogg",
+   "license": "CC0 1.0",
+   "license_url": "http://creativecommons.org/publicdomain/zero/1.0/",
+   "outputs": [
+    "mech/mech_grip_01.wav"
+   ]
+  },
+  {
+   "path": "assets_src/audio/freesound-previews/855035__pushkin__Paper_impacts_indoor.ogg",
+   "sha256": "b3bbe71dae478a4820f024541ced9ce0eeb3cf4a2ff308f77f4b604bf3a11850",
+   "author": "pushkin",
+   "library": "Freesound: Paper impacts indoor (lossy HQ preview)",
+   "source_url": "https://freesound.org/people/pushkin/sounds/855035/",
+   "download_url": "https://cdn.freesound.org/previews/855/855035_336074-hq.ogg",
+   "license": "CC0 1.0",
+   "license_url": "http://creativecommons.org/publicdomain/zero/1.0/",
+   "outputs": [
+    "impact/impact_paper_01.wav",
+    "impact/impact_paper_02.wav",
+    "impact/impact_paper_03.wav",
+    "impact/impact_paper_04.wav",
+    "impact/impact_paper_05.wav",
+    "impact/impact_paper_06.wav",
+    "impact/impact_paper_07.wav"
+   ]
+  },
+  {
+   "path": "assets_src/audio/openair-ir/x_trollers-gill/trollers-gill/b-format/dales_site2_4way_bformat.wav",
+   "sha256": "32b7960e98e3ae5f7f67f29e2e493029374b94da77fc8e6100570c9fa7157de0",
+   "author": "AudioLab, University of York (OpenAIR)",
+   "library": "OpenAIR - Trollers Gill (limestone gorge, Yorkshire Dales)",
+   "source_url": "https://www.openair.hosted.york.ac.uk/?page_id=745",
+   "download_url": "https://webfiles.york.ac.uk/OPENAIR/IRs/trollers-gill/trollers-gill.zip",
+   "license": "CC BY 4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0/",
+   "attribution_required": "www.openairlib.net",
+   "outputs": [
+    "ir/far_echo_ir_trollers_gill.wav",
+    "shot/far_echo_01.wav",
+    "shot/far_echo_02.wav",
+    "shot/far_echo_03.wav",
+    "shot/far_echo_04.wav",
+    "shot/far_echo_05.wav",
+    "shot/far_echo_06.wav"
+   ]
+  },
+  {
+   "path": "assets_src/audio/sonniss-gdc/GDC2015/Coll Anderson - Metal Plate/EFX SD Metal plate bang 01 B.M.wav",
+   "sha256": "916ade17163abb3438e3de432cde962f4613ecde51a9207b055bc82af91504db",
+   "author": "Coll Anderson",
+   "library": "Coll Anderson - Metal Plate",
+   "source_url": "https://sonniss.com/gameaudiogdc/",
+   "download_url": "https://ftpmirror.your.org/pub/misc/sonniss/sonniss.zip",
+   "license": "Sonniss GDC Royalty-Free v2.0",
+   "license_url": "https://sonniss.com/gdc-bundle-license/",
+   "redistribution": "raw file must NOT be redistributed",
+   "outputs": [
+    "impact/impact_steel_01.wav"
+   ]
+  },
+  {
+   "path": "assets_src/audio/sonniss-gdc/GDC2015/Soundopolis - Glass Smash Full/Glass_Break_BeerBottle_702T_Fienup_002.wav",
+   "sha256": "427dd3a8bf2b7797422686b48de86e5b2e496bde564fc98290f096d772ed3f07",
+   "author": "Soundopolis",
+   "library": "Soundopolis - Glass Smash Full",
+   "source_url": "https://sonniss.com/gameaudiogdc/",
+   "download_url": "https://ftpmirror.your.org/pub/misc/sonniss/sonniss.zip",
+   "license": "Sonniss GDC Royalty-Free v2.0",
+   "license_url": "https://sonniss.com/gdc-bundle-license/",
+   "redistribution": "raw file must NOT be redistributed",
+   "outputs": [
+    "break/break_glass_bottle_01.wav",
+    "debris/debris_glass_02.wav"
+   ]
+  },
+  {
+   "path": "assets_src/audio/sonniss-gdc/GDC2015/Soundopolis - Glass Smash Full/Glass_Break_ChampagneBottle_D50_Fienup_003.wav",
+   "sha256": "0342de1d9619ceab7f229e8c0921be13ae5c85f57634d5251f3a2620842960d1",
+   "author": "Soundopolis",
+   "library": "Soundopolis - Glass Smash Full",
+   "source_url": "https://sonniss.com/gameaudiogdc/",
+   "download_url": "https://ftpmirror.your.org/pub/misc/sonniss/sonniss.zip",
+   "license": "Sonniss GDC Royalty-Free v2.0",
+   "license_url": "https://sonniss.com/gdc-bundle-license/",
+   "redistribution": "raw file must NOT be redistributed",
+   "outputs": [
+    "break/break_glass_bottle_02.wav",
+    "debris/debris_glass_03.wav"
+   ]
+  },
+  {
+   "path": "assets_src/audio/sonniss-gdc/GDC2015/Soundopolis - Glass Smash Full/Glass_Break_Vase_D50_Fienup_003.wav",
+   "sha256": "e704ca8a8f6a0d195d4798b1bb1c4d1f8626c063f62fbc48b72b6466037cbe40",
+   "author": "Soundopolis",
+   "library": "Soundopolis - Glass Smash Full",
+   "source_url": "https://sonniss.com/gameaudiogdc/",
+   "download_url": "https://ftpmirror.your.org/pub/misc/sonniss/sonniss.zip",
+   "license": "Sonniss GDC Royalty-Free v2.0",
+   "license_url": "https://sonniss.com/gdc-bundle-license/",
+   "redistribution": "raw file must NOT be redistributed",
+   "outputs": [
+    "debris/debris_glass_01.wav"
+   ]
+  },
+  {
+   "path": "assets_src/audio/sonniss-gdc/GDC2016/Levan Nadashvili - Civilian Footsteps/FS Ground Civilian Walk N03.wav",
+   "sha256": "cb85f4dd3bc5491be6e8cf9d2a6f172324968ca36a3c42dc519993b46e1f2ff3",
+   "author": "Levan Nadashvili",
+   "library": "Levan Nadashvili - Civilian Footsteps",
+   "source_url": "https://sonniss.com/gameaudiogdc/",
+   "download_url": "https://downloads.sonniss.com/Sonniss.com%20-%20GDC%202016-%20Game%20Audio%20Bundle%20Part%202of6.zip",
+   "license": "Sonniss GDC Royalty-Free v2.0",
+   "license_url": "https://sonniss.com/gdc-bundle-license/",
+   "redistribution": "raw file must NOT be redistributed",
+   "outputs": [
+    "step/step_dirt_03.wav"
+   ]
+  },
+  {
+   "path": "assets_src/audio/sonniss-gdc/GDC2016/Levan Nadashvili - Civilian Footsteps/FS Ground Civilian Walk N05.wav",
+   "sha256": "363aea1849741d7ee6bcab2d002c1225768f50fc9a2abfa8215683425f8fe820",
+   "author": "Levan Nadashvili",
+   "library": "Levan Nadashvili - Civilian Footsteps",
+   "source_url": "https://sonniss.com/gameaudiogdc/",
+   "download_url": "https://downloads.sonniss.com/Sonniss.com%20-%20GDC%202016-%20Game%20Audio%20Bundle%20Part%202of6.zip",
+   "license": "Sonniss GDC Royalty-Free v2.0",
+   "license_url": "https://sonniss.com/gdc-bundle-license/",
+   "redistribution": "raw file must NOT be redistributed",
+   "outputs": [
+    "step/step_dirt_04.wav"
+   ]
+  },
+  {
+   "path": "assets_src/audio/sonniss-gdc/GDC2016/Levan Nadashvili - Civilian Footsteps/FS Wood Civilian Crouch N03.wav",
+   "sha256": "281b56f55ae557250597a9d127e3bf046c6827083c7ad757cd2aeb826e23e56a",
+   "author": "Levan Nadashvili",
+   "library": "Levan Nadashvili - Civilian Footsteps",
+   "source_url": "https://sonniss.com/gameaudiogdc/",
+   "download_url": "https://downloads.sonniss.com/Sonniss.com%20-%20GDC%202016-%20Game%20Audio%20Bundle%20Part%202of6.zip",
+   "license": "Sonniss GDC Royalty-Free v2.0",
+   "license_url": "https://sonniss.com/gdc-bundle-license/",
+   "redistribution": "raw file must NOT be redistributed",
+   "outputs": [
+    "step/step_wood_01.wav"
+   ]
+  },
+  {
+   "path": "assets_src/audio/sonniss-gdc/GDC2016/Levan Nadashvili - Civilian Footsteps/FS Wood Civilian Crouch N05.wav",
+   "sha256": "c672601e39b717bdb389c23da0ca2dffe0fcd740066bf9e004a1a233a6bdec11",
+   "author": "Levan Nadashvili",
+   "library": "Levan Nadashvili - Civilian Footsteps",
+   "source_url": "https://sonniss.com/gameaudiogdc/",
+   "download_url": "https://downloads.sonniss.com/Sonniss.com%20-%20GDC%202016-%20Game%20Audio%20Bundle%20Part%202of6.zip",
+   "license": "Sonniss GDC Royalty-Free v2.0",
+   "license_url": "https://sonniss.com/gdc-bundle-license/",
+   "redistribution": "raw file must NOT be redistributed",
+   "outputs": [
+    "step/step_wood_02.wav"
+   ]
+  },
+  {
+   "path": "assets_src/audio/sonniss-gdc/GDC2016/Levan Nadashvili - Soldier Footsteps/FS Concrete Soldier Crouch N02.wav",
+   "sha256": "e18c77548ab475ef0963188705c2e93b9ef8b54014311d9e704cde6e027c949c",
+   "author": "Levan Nadashvili",
+   "library": "Levan Nadashvili - Soldier Footsteps",
+   "source_url": "https://sonniss.com/gameaudiogdc/",
+   "download_url": "https://downloads.sonniss.com/Sonniss.com%20-%20GDC%202016-%20Game%20Audio%20Bundle%20Part%202of6.zip",
+   "license": "Sonniss GDC Royalty-Free v2.0",
+   "license_url": "https://sonniss.com/gdc-bundle-license/",
+   "redistribution": "raw file must NOT be redistributed",
+   "outputs": [
+    "step/step_concrete_01.wav"
+   ]
+  },
+  {
+   "path": "assets_src/audio/sonniss-gdc/GDC2016/Levan Nadashvili - Soldier Footsteps/FS Concrete Soldier Crouch N05.wav",
+   "sha256": "6fd280fb758a3d6343b8956cb683b146411d287f182f6fb6df33415aa7ea9827",
+   "author": "Levan Nadashvili",
+   "library": "Levan Nadashvili - Soldier Footsteps",
+   "source_url": "https://sonniss.com/gameaudiogdc/",
+   "download_url": "https://downloads.sonniss.com/Sonniss.com%20-%20GDC%202016-%20Game%20Audio%20Bundle%20Part%202of6.zip",
+   "license": "Sonniss GDC Royalty-Free v2.0",
+   "license_url": "https://sonniss.com/gdc-bundle-license/",
+   "redistribution": "raw file must NOT be redistributed",
+   "outputs": [
+    "step/step_concrete_02.wav"
+   ]
+  },
+  {
+   "path": "assets_src/audio/sonniss-gdc/GDC2016/Pole Position Production -  Heckler & Koch VP70 9mm/HK_VP70_9mm_1m_in_front_RE20_clean_Double_shots_x_1.wav",
+   "sha256": "aa9c2c66ac936536b93be89e6ee74ab69f79c1b8a616513553ae7f436e58c2fa",
+   "author": "Pole Position Production",
+   "library": "Pole Position Production -  Heckler & Koch VP70 9mm",
+   "source_url": "https://sonniss.com/gameaudiogdc/",
+   "download_url": "https://downloads.sonniss.com/Sonniss.com%20-%20GDC%202016-%20Game%20Audio%20Bundle%20Part%203of6.zip",
+   "license": "Sonniss GDC Royalty-Free v2.0",
+   "license_url": "https://sonniss.com/gdc-bundle-license/",
+   "redistribution": "raw file must NOT be redistributed",
+   "outputs": [
+    "shot/close_07.wav",
+    "shot/close_08.wav"
+   ]
+  },
+  {
+   "path": "assets_src/audio/sonniss-gdc/GDC2016/Pole Position Production - Sig P229 9mm/SIG_P229_9mm_1m_left_on_ground_DPA4062_clean_Triple_shots_x_2.wav",
+   "sha256": "73c2c2fc1097f05dbf6b71ac26b5103c1976bebb73c832a9a27b923f97dd77b1",
+   "author": "Pole Position Production",
+   "library": "Pole Position Production - Sig P229 9mm",
+   "source_url": "https://sonniss.com/gameaudiogdc/",
+   "download_url": "https://downloads.sonniss.com/Sonniss.com%20-%20GDC%202016-%20Game%20Audio%20Bundle%20Part%204of6.zip",
+   "license": "Sonniss GDC Royalty-Free v2.0",
+   "license_url": "https://sonniss.com/gdc-bundle-license/",
+   "redistribution": "raw file must NOT be redistributed",
+   "outputs": [
+    "shot/close_01.wav",
+    "shot/close_02.wav",
+    "shot/close_03.wav",
+    "shot/close_04.wav",
+    "shot/close_05.wav",
+    "shot/close_06.wav"
+   ]
+  },
+  {
+   "path": "assets_src/audio/sonniss-gdc/GDC2016/Stuart Duffield - Bullet SFX/Bullet_Drop_Leaves_03.wav",
+   "sha256": "deff8b43b875cabecbd9f98275d6be3d923587b941c99c150581a8cc3bb5e4be",
+   "author": "Stuart Duffield",
+   "library": "Stuart Duffield - Bullet SFX",
+   "source_url": "https://sonniss.com/gameaudiogdc/",
+   "download_url": "https://downloads.sonniss.com/Sonniss.com%20-%20GDC%202016-%20Game%20Audio%20Bundle%20Part%206of6.zip",
+   "license": "Sonniss GDC Royalty-Free v2.0",
+   "license_url": "https://sonniss.com/gdc-bundle-license/",
+   "redistribution": "raw file must NOT be redistributed",
+   "outputs": [
+    "casing/casing_dirt_seq_11.wav"
+   ]
+  },
+  {
+   "path": "assets_src/audio/sonniss-gdc/GDC2016/Stuart Duffield - Bullet SFX/Bullet_Drop_Wood_04.wav",
+   "sha256": "5e586500cb16b5ead802bf89a11743364dcc0ddd2f82d349918a5c4f59f0d952",
+   "author": "Stuart Duffield",
+   "library": "Stuart Duffield - Bullet SFX",
+   "source_url": "https://sonniss.com/gameaudiogdc/",
+   "download_url": "https://downloads.sonniss.com/Sonniss.com%20-%20GDC%202016-%20Game%20Audio%20Bundle%20Part%206of6.zip",
+   "license": "Sonniss GDC Royalty-Free v2.0",
+   "license_url": "https://sonniss.com/gdc-bundle-license/",
+   "redistribution": "raw file must NOT be redistributed",
+   "outputs": [
+    "casing/casing_wood_seq_06.wav"
+   ]
+  },
+  {
+   "path": "assets_src/audio/sonniss-gdc/GDC2017/Sonniss.com - GDC 2017 - Game Audio Bundle Part 3of9/Double Trouble Audio - Junk and Debris/Cans and Small Containers - Aluminum Cans, Rustle, Drop 03.wav",
+   "sha256": "5d6116f47cc5f2f4acb99fe9141d8254b470980bafad899b628d18e50f5f9eee",
+   "author": "Double Trouble Audio",
+   "library": "Double Trouble Audio - Junk and Debris",
+   "source_url": "https://sonniss.com/gameaudiogdc/",
+   "download_url": "https://downloads.sonniss.com/Sonniss.com%20-%20GDC%202017%20-%20Game%20Audio%20Bundle%20Part%203of9.zip",
+   "license": "Sonniss GDC Royalty-Free v2.0",
+   "license_url": "https://sonniss.com/gdc-bundle-license/",
+   "redistribution": "raw file must NOT be redistributed",
+   "outputs": [
+    "impact/impact_can_clatter_01.wav"
+   ]
+  },
+  {
+   "path": "assets_src/audio/sonniss-gdc/GDC2017/Sonniss.com - GDC 2017 - Game Audio Bundle Part 4of9/Gamemaster Audio -  Bullet Impact Sounds/bullet_impact_concrete_brick_01.wav",
+   "sha256": "fbc7e89171251ae1595cc5aaf9389fa02e3af1c54b93cfc9e341221ee2b35169",
+   "author": "Gamemaster Audio",
+   "library": "Gamemaster Audio -  Bullet Impact Sounds",
+   "source_url": "https://sonniss.com/gameaudiogdc/",
+   "download_url": "https://downloads.sonniss.com/Sonniss.com%20-%20GDC%202017%20-%20Game%20Audio%20Bundle%20Part%204of9.zip",
+   "license": "Sonniss GDC Royalty-Free v2.0",
+   "license_url": "https://sonniss.com/gdc-bundle-license/",
+   "redistribution": "raw file must NOT be redistributed",
+   "outputs": [
+    "impact/impact_concrete_01.wav"
+   ]
+  },
+  {
+   "path": "assets_src/audio/sonniss-gdc/GDC2017/Sonniss.com - GDC 2017 - Game Audio Bundle Part 4of9/Hzandbits - Wind In Trees/Wind,Ext,Breeze,Grass,Tall,Rustle,Buffeting.wav",
+   "sha256": "bb3b549fb31d53fabb84b7517574a5a6c33c6217c071a3419816f4069328e715",
+   "author": "Hzandbits",
+   "library": "Hzandbits - Wind In Trees",
+   "source_url": "https://sonniss.com/gameaudiogdc/",
+   "download_url": "https://downloads.sonniss.com/Sonniss.com%20-%20GDC%202017%20-%20Game%20Audio%20Bundle%20Part%204of9.zip",
+   "license": "Sonniss GDC Royalty-Free v2.0",
+   "license_url": "https://sonniss.com/gdc-bundle-license/",
+   "redistribution": "raw file must NOT be redistributed",
+   "outputs": [
+    "amb/amb_wind_trees_01.ogg"
+   ]
+  },
+  {
+   "path": "assets_src/audio/sonniss-gdc/GDC2017/Sonniss.com - GDC 2017 - Game Audio Bundle Part 5of9/Joshua Reinhardt - Ultimate Cloth and Prop Collection/PR ARMY GEAR ROOM_WALK_C414.wav",
+   "sha256": "3954dff36780732dbc44895aadc8e382b0ea75fb5cf89e214af0c461ddc42496",
+   "author": "Joshua Reinhardt",
+   "library": "Joshua Reinhardt - Ultimate Cloth and Prop Collection",
+   "source_url": "https://sonniss.com/gameaudiogdc/",
+   "download_url": "https://downloads.sonniss.com/Sonniss.com%20-%20GDC%202017%20-%20Game%20Audio%20Bundle%20Part%205of9.zip",
+   "license": "Sonniss GDC Royalty-Free v2.0",
+   "license_url": "https://sonniss.com/gdc-bundle-license/",
+   "redistribution": "raw file must NOT be redistributed",
+   "outputs": [
+    "foley/gear_move_03.wav",
+    "foley/gear_move_04.wav",
+    "foley/gear_move_05.wav",
+    "foley/gear_move_06.wav",
+    "foley/gear_move_07.wav",
+    "foley/gear_move_08.wav"
+   ]
+  },
+  {
+   "path": "assets_src/audio/sonniss-gdc/GDC2017/Sonniss.com - GDC 2017 - Game Audio Bundle Part 6of9/Raconteur Sound - Spring in the Pacific Northwest- Ambiences/Amb, Field, Birds, Wind, MS_01.wav",
+   "sha256": "bfc4add58a0a2f56eef3f69dc82f7aa01eb0f2ccea0192a7f320427667acc330",
+   "author": "Raconteur Sound",
+   "library": "Raconteur Sound - Spring in the Pacific Northwest- Ambiences",
+   "source_url": "https://sonniss.com/gameaudiogdc/",
+   "download_url": "https://downloads.sonniss.com/Sonniss.com%20-%20GDC%202017%20-%20Game%20Audio%20Bundle%20Part%206of9.zip",
+   "license": "Sonniss GDC Royalty-Free v2.0",
+   "license_url": "https://sonniss.com/gdc-bundle-license/",
+   "redistribution": "raw file must NOT be redistributed",
+   "outputs": [
+    "amb/amb_field_day_01.ogg"
+   ]
+  },
+  {
+   "path": "assets_src/audio/sonniss-gdc/GDC2017/Sonniss.com - GDC 2017 - Game Audio Bundle Part 8of9/SoundBits - The Blacksmith/Metal_Plate_Hit_02_06.wav",
+   "sha256": "b143a627193322d19376a40dd7abad73a89fbd8e1f36a9a28555980c8939ce00",
+   "author": "SoundBits",
+   "library": "SoundBits - The Blacksmith",
+   "source_url": "https://sonniss.com/gameaudiogdc/",
+   "download_url": "https://downloads.sonniss.com/Sonniss.com%20-%20GDC%202017%20-%20Game%20Audio%20Bundle%20Part%208of9.zip",
+   "license": "Sonniss GDC Royalty-Free v2.0",
+   "license_url": "https://sonniss.com/gdc-bundle-license/",
+   "redistribution": "raw file must NOT be redistributed",
+   "outputs": [
+    "impact/impact_steel_02.wav"
+   ]
+  },
+  {
+   "path": "assets_src/audio/sonniss-gdc/GDC2017/Sonniss.com - GDC 2017 - Game Audio Bundle Part 8of9/Tovusound - Edward \u2013 Foleyart Collection Add-On Extended Footsteps/015_Foley_Footsteps_Asphalt_Boot_Walk_Fast_Run_Jog_Close.wav",
+   "sha256": "a4e71651caf6514681e00dd855688c2eee75384fc93be5433dfda5c8e7230d6e",
+   "author": "Tovusound",
+   "library": "Tovusound - Edward \u2013 Foleyart Collection Add-On Extended Footsteps",
+   "source_url": "https://sonniss.com/gameaudiogdc/",
+   "download_url": "https://downloads.sonniss.com/Sonniss.com%20-%20GDC%202017%20-%20Game%20Audio%20Bundle%20Part%208of9.zip",
+   "license": "Sonniss GDC Royalty-Free v2.0",
+   "license_url": "https://sonniss.com/gdc-bundle-license/",
+   "redistribution": "raw file must NOT be redistributed",
+   "outputs": [
+    "step/step_concrete_03.wav",
+    "step/step_concrete_04.wav",
+    "step/step_concrete_05.wav",
+    "step/step_concrete_06.wav",
+    "step/step_concrete_07.wav",
+    "step/step_concrete_08.wav",
+    "step/step_concrete_09.wav",
+    "step/step_concrete_10.wav"
+   ]
+  },
+  {
+   "path": "assets_src/audio/sonniss-gdc/GDC2017/Sonniss.com - GDC 2017 - Game Audio Bundle Part 8of9/Tovusound - Edward \u2013 Foleyart Collection Add-On Extended Footsteps/169_Foley_Footsteps_Grass_Sneaker_Walk_Fast_Run_Jog_Close.wav",
+   "sha256": "122a30f286df4ecd9997092d7c427aaf702886f2327261412954108ba83b50fc",
+   "author": "Tovusound",
+   "library": "Tovusound - Edward \u2013 Foleyart Collection Add-On Extended Footsteps",
+   "source_url": "https://sonniss.com/gameaudiogdc/",
+   "download_url": "https://downloads.sonniss.com/Sonniss.com%20-%20GDC%202017%20-%20Game%20Audio%20Bundle%20Part%208of9.zip",
+   "license": "Sonniss GDC Royalty-Free v2.0",
+   "license_url": "https://sonniss.com/gdc-bundle-license/",
+   "redistribution": "raw file must NOT be redistributed",
+   "outputs": [
+    "step/step_grass_03.wav",
+    "step/step_grass_04.wav",
+    "step/step_grass_05.wav",
+    "step/step_grass_06.wav",
+    "step/step_grass_07.wav",
+    "step/step_grass_08.wav",
+    "step/step_grass_09.wav",
+    "step/step_grass_10.wav"
+   ]
+  },
+  {
+   "path": "assets_src/audio/sonniss-gdc/GDC2018/Sonniss.com - GDC 2018 - Game Audio Bundle Part 3of8/Fox Audio Post-Production - Countryside \u2013 Nature & Field/Amb_Countryside_Day_Flying_Insects_Birds_LP.wav",
+   "sha256": "6312b92219ef013382610ac9ee4280358fc29e9a0ed79aa4ecb19c17ef3bb6b1",
+   "author": "Fox Audio Post-Production",
+   "library": "Fox Audio Post-Production - Countryside \u2013 Nature & Field",
+   "source_url": "https://sonniss.com/gameaudiogdc/",
+   "download_url": "https://downloads.sonniss.com/Sonniss.com%20-%20GDC%202018%20-%20Game%20Audio%20Bundle%20Part%203of8.zip",
+   "license": "Sonniss GDC Royalty-Free v2.0",
+   "license_url": "https://sonniss.com/gdc-bundle-license/",
+   "redistribution": "raw file must NOT be redistributed",
+   "outputs": [
+    "amb/amb_field_day_02.ogg"
+   ]
+  },
+  {
+   "path": "assets_src/audio/sonniss-gdc/GDC2018/Sonniss.com - GDC 2018 - Game Audio Bundle Part 3of8/Gamemaster Audio - Footstep and Foley Sounds/foley_soldier_gear_equipment_metal_cloth_heavy_movement_light_08.wav",
+   "sha256": "fcea0d3bb242ab3e9ff240b8adfbdff9678cb86a58795af1765c014d16c87d0d",
+   "author": "Gamemaster Audio",
+   "library": "Gamemaster Audio - Footstep and Foley Sounds",
+   "source_url": "https://sonniss.com/gameaudiogdc/",
+   "download_url": "https://downloads.sonniss.com/Sonniss.com%20-%20GDC%202018%20-%20Game%20Audio%20Bundle%20Part%203of8.zip",
+   "license": "Sonniss GDC Royalty-Free v2.0",
+   "license_url": "https://sonniss.com/gdc-bundle-license/",
+   "redistribution": "raw file must NOT be redistributed",
+   "outputs": [
+    "foley/gear_move_01.wav",
+    "foley/gear_move_02.wav"
+   ]
+  },
+  {
+   "path": "assets_src/audio/sonniss-gdc/GDC2018/Sonniss.com - GDC 2018 - Game Audio Bundle Part 3of8/Gamemaster Audio - Silenced Gun Sounds/bullet_shell_bounce_wood2_05.wav",
+   "sha256": "c243fefc857f6d4c19d4e7e8f20587ad1524d311960f95c21676745cff3d3baa",
+   "author": "Gamemaster Audio",
+   "library": "Gamemaster Audio - Silenced Gun Sounds",
+   "source_url": "https://sonniss.com/gameaudiogdc/",
+   "download_url": "https://downloads.sonniss.com/Sonniss.com%20-%20GDC%202018%20-%20Game%20Audio%20Bundle%20Part%203of8.zip",
+   "license": "Sonniss GDC Royalty-Free v2.0",
+   "license_url": "https://sonniss.com/gdc-bundle-license/",
+   "redistribution": "raw file must NOT be redistributed",
+   "outputs": [
+    "casing/casing_wood_seq_07.wav"
+   ]
+  },
+  {
+   "path": "assets_src/audio/sonniss-gdc/GDC2018/Sonniss.com - GDC 2018 - Game Audio Bundle Part 8of8/Watson Wu - Battle Rifles & Pistols/Casing 50BMG Dirt.wav",
+   "sha256": "d9ec6836b1f6b2984bdbbb6fb02f9655b18877840563b53755a5388bb2395ce9",
+   "author": "Watson Wu",
+   "library": "Watson Wu - Battle Rifles & Pistols",
+   "source_url": "https://sonniss.com/gameaudiogdc/",
+   "download_url": "https://downloads.sonniss.com/Sonniss.com%20-%20GDC%202018%20-%20Game%20Audio%20Bundle%20Part%208of8.zip",
+   "license": "Sonniss GDC Royalty-Free v2.0",
+   "license_url": "https://sonniss.com/gdc-bundle-license/",
+   "redistribution": "raw file must NOT be redistributed",
+   "outputs": [
+    "casing/casing_dirt_seq_01.wav",
+    "casing/casing_dirt_seq_02.wav",
+    "casing/casing_dirt_seq_03.wav",
+    "casing/casing_dirt_seq_04.wav",
+    "casing/casing_dirt_seq_05.wav",
+    "casing/casing_dirt_seq_06.wav",
+    "casing/casing_dirt_seq_07.wav",
+    "casing/casing_dirt_seq_08.wav",
+    "casing/casing_dirt_seq_09.wav",
+    "casing/casing_dirt_seq_10.wav"
+   ]
+  },
+  {
+   "path": "assets_src/audio/sonniss-gdc/GDC2019/Sonniss.com - GDC 2019 - Game Audio Bundle Part 3of8/PMSFX - STEPS Dirt & Gravel/PM_SDNG_Single_Step_Footstep_19.wav",
+   "sha256": "451966d993b323235118cc65e93cacd443ee8f3e05c47e743a0e8017ebf13e95",
+   "author": "PMSFX",
+   "library": "PMSFX - STEPS Dirt & Gravel",
+   "source_url": "https://sonniss.com/gameaudiogdc/",
+   "download_url": "https://downloads.sonniss.com/Sonniss.com%20-%20GDC%202019%20-%20Game%20Audio%20Bundle%20Part%203of8.zip",
+   "license": "Sonniss GDC Royalty-Free v2.0",
+   "license_url": "https://sonniss.com/gdc-bundle-license/",
+   "redistribution": "raw file must NOT be redistributed",
+   "outputs": [
+    "step/step_dirt_01.wav"
+   ]
+  },
+  {
+   "path": "assets_src/audio/sonniss-gdc/GDC2019/Sonniss.com - GDC 2019 - Game Audio Bundle Part 3of8/PMSFX - STEPS Dirt & Gravel/PM_SDNG_Single_Step_Footstep_46.wav",
+   "sha256": "49d344b77f015ef1f37bbdafae6cabd9087b55f8fb6cb9cfca6861a1e1b43f70",
+   "author": "PMSFX",
+   "library": "PMSFX - STEPS Dirt & Gravel",
+   "source_url": "https://sonniss.com/gameaudiogdc/",
+   "download_url": "https://downloads.sonniss.com/Sonniss.com%20-%20GDC%202019%20-%20Game%20Audio%20Bundle%20Part%203of8.zip",
+   "license": "Sonniss GDC Royalty-Free v2.0",
+   "license_url": "https://sonniss.com/gdc-bundle-license/",
+   "redistribution": "raw file must NOT be redistributed",
+   "outputs": [
+    "step/step_dirt_02.wav"
+   ]
+  },
+  {
+   "path": "assets_src/audio/sonniss-gdc/GDC2019/Sonniss.com - GDC 2019 - Game Audio Bundle Part 3of8/PMSFX - STEPS Dirt & Gravel/PM_SDNG_Stereo_Walk_Seamless_Loop_1.wav",
+   "sha256": "dd86a640f1a91a433b1d874f31145466b5c99f4f928c0131a3b816d718fb909c",
+   "author": "PMSFX",
+   "library": "PMSFX - STEPS Dirt & Gravel",
+   "source_url": "https://sonniss.com/gameaudiogdc/",
+   "download_url": "https://downloads.sonniss.com/Sonniss.com%20-%20GDC%202019%20-%20Game%20Audio%20Bundle%20Part%203of8.zip",
+   "license": "Sonniss GDC Royalty-Free v2.0",
+   "license_url": "https://sonniss.com/gdc-bundle-license/",
+   "redistribution": "raw file must NOT be redistributed",
+   "outputs": [
+    "step/step_dirt_05.wav",
+    "step/step_dirt_06.wav",
+    "step/step_dirt_07.wav",
+    "step/step_dirt_08.wav",
+    "step/step_dirt_09.wav",
+    "step/step_dirt_10.wav"
+   ]
+  },
+  {
+   "path": "assets_src/audio/sonniss-gdc/GDC2019/Sonniss.com - GDC 2019 - Game Audio Bundle Part 6of8/Studio 23 - Ultimate Footstep Collection/S23_SFX_Footsteps_Gravel_Loafers_Loops_Walk_Normal.wav",
+   "sha256": "e1761e27212b86cb95c9add63b9295c18879e966f32baaab4660a557a320517a",
+   "author": "Studio 23",
+   "library": "Studio 23 - Ultimate Footstep Collection",
+   "source_url": "https://sonniss.com/gameaudiogdc/",
+   "download_url": "https://downloads.sonniss.com/Sonniss.com%20-%20GDC%202019%20-%20Game%20Audio%20Bundle%20Part%206of8.zip",
+   "license": "Sonniss GDC Royalty-Free v2.0",
+   "license_url": "https://sonniss.com/gdc-bundle-license/",
+   "redistribution": "raw file must NOT be redistributed",
+   "outputs": [
+    "step/step_gravel_01.wav",
+    "step/step_gravel_02.wav",
+    "step/step_gravel_03.wav",
+    "step/step_gravel_04.wav",
+    "step/step_gravel_05.wav",
+    "step/step_gravel_06.wav",
+    "step/step_gravel_07.wav",
+    "step/step_gravel_08.wav",
+    "step/step_gravel_09.wav"
+   ]
+  },
+  {
+   "path": "assets_src/audio/sonniss-gdc/GDC2020/Conor Bradley - Metal Chains/Dog_Chain-Hits.wav",
+   "sha256": "1cca662639f95e2b8880534a3b19e66ba71c34db3e3014ea756892d8eaf48c1d",
+   "author": "Conor Bradley",
+   "library": "Conor Bradley - Metal Chains",
+   "source_url": "https://sonniss.com/gameaudiogdc/",
+   "download_url": "https://downloads.sonniss.com/Sonniss.com%20-%20GDC%202020%20-%20Game%20Audio%20Bundle%20Part3of14.zip",
+   "license": "Sonniss GDC Royalty-Free v2.0",
+   "license_url": "https://sonniss.com/gdc-bundle-license/",
+   "redistribution": "raw file must NOT be redistributed",
+   "outputs": [
+    "foley/chain_rattle_01.wav",
+    "foley/chain_rattle_02.wav",
+    "foley/chain_rattle_03.wav",
+    "foley/chain_rattle_04.wav",
+    "foley/chain_rattle_05.wav",
+    "foley/chain_rattle_06.wav",
+    "foley/chain_rattle_07.wav",
+    "foley/chain_rattle_08.wav"
+   ]
+  },
+  {
+   "path": "assets_src/audio/sonniss-gdc/GDC2020/PMSFX - Bullet Bys &Impacts/PM_BBI_Bullet_Impact_Dirt_3.wav",
+   "sha256": "ecaa352573b7233ca8a167b4f24ee96ec068be8b106374a40d27d18e29121b63",
+   "author": "PMSFX",
+   "library": "PMSFX - Bullet Bys &Impacts",
+   "source_url": "https://sonniss.com/gameaudiogdc/",
+   "download_url": "https://downloads.sonniss.com/Sonniss.com%20-%20GDC%202020%20-%20Game%20Audio%20Bundle%20Part5of14.zip",
+   "license": "Sonniss GDC Royalty-Free v2.0",
+   "license_url": "https://sonniss.com/gdc-bundle-license/",
+   "redistribution": "raw file must NOT be redistributed",
+   "outputs": [
+    "impact/impact_dirt_01.wav"
+   ]
+  },
+  {
+   "path": "assets_src/audio/sonniss-gdc/GDC2020/PMSFX - STEPS Dry Grass & Shrubs/PM_SDGS_113 Footstep Step Dry Grass Shrubs Pine Needles Meadow .wav",
+   "sha256": "97d3ce7f5b8435313c82f68f49d2b6258cda0ecb1617458afb0de6689553a519",
+   "author": "PMSFX",
+   "library": "PMSFX - STEPS Dry Grass & Shrubs",
+   "source_url": "https://sonniss.com/gameaudiogdc/",
+   "download_url": "https://downloads.sonniss.com/Sonniss.com%20-%20GDC%202020%20-%20Game%20Audio%20Bundle%20Part5of14.zip",
+   "license": "Sonniss GDC Royalty-Free v2.0",
+   "license_url": "https://sonniss.com/gdc-bundle-license/",
+   "redistribution": "raw file must NOT be redistributed",
+   "outputs": [
+    "step/step_grass_01.wav"
+   ]
+  },
+  {
+   "path": "assets_src/audio/sonniss-gdc/GDC2020/PMSFX - STEPS Dry Grass & Shrubs/PM_SDGS_186 Footstep Step Dry Grass Shrubs Pine Needles Meadow .wav",
+   "sha256": "00560b1e3c322cb4628fca8a57519a3e2e5390d6ede214b6ffbf03827e77d31c",
+   "author": "PMSFX",
+   "library": "PMSFX - STEPS Dry Grass & Shrubs",
+   "source_url": "https://sonniss.com/gameaudiogdc/",
+   "download_url": "https://downloads.sonniss.com/Sonniss.com%20-%20GDC%202020%20-%20Game%20Audio%20Bundle%20Part5of14.zip",
+   "license": "Sonniss GDC Royalty-Free v2.0",
+   "license_url": "https://sonniss.com/gdc-bundle-license/",
+   "redistribution": "raw file must NOT be redistributed",
+   "outputs": [
+    "step/step_grass_02.wav"
+   ]
+  },
+  {
+   "path": "assets_src/audio/sonniss-gdc/GDC2020/Pole Position - Walther P38 semi automatic pistol/P38, Firing, t1, 2m, Behind, LS5.wav",
+   "sha256": "a1228d48854fe39254e22f02663a25a69c15687e0e5783533a3ba430270e608d",
+   "author": "Pole Position",
+   "library": "Pole Position - Walther P38 semi automatic pistol",
+   "source_url": "https://sonniss.com/gameaudiogdc/",
+   "download_url": "https://downloads.sonniss.com/Sonniss.com%20-%20GDC%202020%20-%20Game%20Audio%20Bundle%20Part9of14.zip",
+   "license": "Sonniss GDC Royalty-Free v2.0",
+   "license_url": "https://sonniss.com/gdc-bundle-license/",
+   "redistribution": "raw file must NOT be redistributed",
+   "outputs": [
+    "shot/bay_late_01.wav",
+    "shot/bay_late_02.wav",
+    "shot/bay_late_03.wav",
+    "shot/bay_late_04.wav",
+    "shot/bay_late_05.wav",
+    "shot/bay_late_06.wav",
+    "shot/far_echo_01.wav",
+    "shot/far_echo_02.wav",
+    "shot/far_echo_03.wav",
+    "shot/far_echo_04.wav",
+    "shot/far_echo_05.wav",
+    "shot/far_echo_06.wav",
+    "shot/p38_full_01.wav",
+    "shot/p38_full_02.wav",
+    "shot/p38_full_03.wav",
+    "shot/p38_full_04.wav",
+    "shot/p38_full_05.wav",
+    "shot/p38_full_06.wav",
+    "shot/p38_onset_01.wav",
+    "shot/p38_onset_02.wav",
+    "shot/p38_onset_03.wav",
+    "shot/p38_onset_04.wav",
+    "shot/p38_onset_05.wav",
+    "shot/p38_onset_06.wav",
+    "shot/p38_tail_01.wav",
+    "shot/p38_tail_02.wav",
+    "shot/p38_tail_03.wav",
+    "shot/p38_tail_04.wav",
+    "shot/p38_tail_05.wav",
+    "shot/p38_tail_06.wav"
+   ]
+  },
+  {
+   "path": "assets_src/audio/sonniss-gdc/GDC2020/Pole Position - Walther P38 semi automatic pistol/P38, Handling, Removing Magazine, 1m, Right, MKH8060.wav",
+   "sha256": "83a50b031a981baa8ebc44ff05739f1caa602f60af167d084243c732fc2126d9",
+   "author": "Pole Position",
+   "library": "Pole Position - Walther P38 semi automatic pistol",
+   "source_url": "https://sonniss.com/gameaudiogdc/",
+   "download_url": "https://downloads.sonniss.com/Sonniss.com%20-%20GDC%202020%20-%20Game%20Audio%20Bundle%20Part9of14.zip",
+   "license": "Sonniss GDC Royalty-Free v2.0",
+   "license_url": "https://sonniss.com/gdc-bundle-license/",
+   "redistribution": "raw file must NOT be redistributed",
+   "outputs": [
+    "mech/mech_mag_out_01.wav",
+    "mech/mech_mag_out_02.wav",
+    "mech/mech_mag_release_01.wav",
+    "mech/mech_mag_release_02.wav"
+   ]
+  },
+  {
+   "path": "assets_src/audio/sonniss-gdc/GDC2020/SculpTunes \u2013 Cartridges & Casings Shell/6 35 GFL - Casings Shell & Cartridges - Drop bounce and roll on Wooden Floor - Outdoor.wav",
+   "sha256": "fb6ed1a7e6539bf55f23a7f4539066dc9bb8bf69670f04fb65c1f4e57e39f7b2",
+   "author": "SculpTunes \u2013 Cartridges & Casings Shell",
+   "library": "SculpTunes \u2013 Cartridges & Casings Shell",
+   "source_url": "https://sonniss.com/gameaudiogdc/",
+   "download_url": "https://downloads.sonniss.com/Sonniss.com%20-%20GDC%202020%20-%20Game%20Audio%20Bundle%20Part9of14.zip",
+   "license": "Sonniss GDC Royalty-Free v2.0",
+   "license_url": "https://sonniss.com/gdc-bundle-license/",
+   "redistribution": "raw file must NOT be redistributed",
+   "outputs": [
+    "casing/casing_wood_hit_01.wav",
+    "casing/casing_wood_hit_02.wav",
+    "casing/casing_wood_hit_03.wav",
+    "casing/casing_wood_hit_04.wav",
+    "casing/casing_wood_hit_05.wav",
+    "casing/casing_wood_seq_01.wav",
+    "casing/casing_wood_seq_02.wav",
+    "casing/casing_wood_seq_03.wav",
+    "casing/casing_wood_seq_04.wav",
+    "casing/casing_wood_seq_05.wav"
+   ]
+  },
+  {
+   "path": "assets_src/audio/sonniss-gdc/GDC2020/SculpTunes \u2013 Cartridges & Casings Shell/9 mm x 21  - Casings Shell & Cartdridges - Roll on Concrete Floor - Outdoor.wav",
+   "sha256": "c6919ce7d303bd1b84ce160470b26c1743fb2722e4175e5ff2ca1bd06fbdc4d4",
+   "author": "SculpTunes \u2013 Cartridges & Casings Shell",
+   "library": "SculpTunes \u2013 Cartridges & Casings Shell",
+   "source_url": "https://sonniss.com/gameaudiogdc/",
+   "download_url": "https://downloads.sonniss.com/Sonniss.com%20-%20GDC%202020%20-%20Game%20Audio%20Bundle%20Part9of14.zip",
+   "license": "Sonniss GDC Royalty-Free v2.0",
+   "license_url": "https://sonniss.com/gdc-bundle-license/",
+   "redistribution": "raw file must NOT be redistributed",
+   "outputs": [
+    "casing/casing_concrete_hit_01.wav",
+    "casing/casing_concrete_hit_02.wav",
+    "casing/casing_concrete_hit_03.wav",
+    "casing/casing_concrete_hit_04.wav",
+    "casing/casing_concrete_hit_05.wav",
+    "casing/casing_concrete_hit_06.wav",
+    "casing/casing_concrete_hit_07.wav",
+    "casing/casing_concrete_hit_08.wav",
+    "casing/casing_concrete_hit_09.wav",
+    "casing/casing_concrete_hit_10.wav",
+    "casing/casing_concrete_hit_11.wav",
+    "casing/casing_concrete_hit_12.wav",
+    "casing/casing_concrete_hit_13.wav",
+    "casing/casing_concrete_hit_14.wav",
+    "casing/casing_concrete_hit_15.wav",
+    "casing/casing_concrete_hit_16.wav",
+    "casing/casing_concrete_hit_17.wav",
+    "casing/casing_concrete_hit_18.wav",
+    "casing/casing_concrete_hit_19.wav",
+    "casing/casing_concrete_hit_20.wav",
+    "casing/casing_concrete_seq_01.wav",
+    "casing/casing_concrete_seq_02.wav",
+    "casing/casing_concrete_seq_03.wav",
+    "casing/casing_concrete_seq_04.wav",
+    "casing/casing_concrete_seq_05.wav",
+    "casing/casing_concrete_seq_06.wav",
+    "casing/casing_concrete_seq_07.wav",
+    "casing/casing_concrete_seq_08.wav",
+    "casing/casing_concrete_seq_09.wav"
+   ]
+  },
+  {
+   "path": "assets_src/audio/sonniss-gdc/GDC2020/Systematic-Sound - Sound Themes - Modern Cloth Foley 01/SFX CLOTH Foley Jacket Leather Rough Movement Slow Rustle.wav",
+   "sha256": "93ef476d1d27e942e51e86e6271298650a414be59c33a39505afdf3a35d5f2e8",
+   "author": "Systematic-Sound",
+   "library": "Systematic-Sound - Sound Themes - Modern Cloth Foley 01",
+   "source_url": "https://sonniss.com/gameaudiogdc/",
+   "download_url": "https://downloads.sonniss.com/Sonniss.com%20-%20GDC%202020%20-%20Game%20Audio%20Bundle%20Part13of14.zip",
+   "license": "Sonniss GDC Royalty-Free v2.0",
+   "license_url": "https://sonniss.com/gdc-bundle-license/",
+   "redistribution": "raw file must NOT be redistributed",
+   "outputs": [
+    "foley/cloth_move_01.wav",
+    "foley/cloth_move_02.wav",
+    "foley/cloth_move_03.wav",
+    "foley/cloth_move_04.wav",
+    "foley/cloth_move_05.wav",
+    "foley/cloth_move_06.wav",
+    "foley/cloth_move_07.wav",
+    "foley/cloth_move_08.wav",
+    "foley/cloth_move_09.wav",
+    "foley/cloth_move_10.wav",
+    "foley/cloth_move_11.wav",
+    "foley/cloth_move_12.wav"
+   ]
+  },
+  {
+   "path": "assets_src/audio/sonniss-gdc/GDC2023/Eneas Mentzel - Debris & Rubble/DESTRCrsh_Smashing a ceramics tile on concrete  exterior_Eneas Mentzel_Debris & Rubble_04.wav",
+   "sha256": "d131718a27a829c020fc6924dc88310d7c204f4496f1dd53c8637c64914eed63",
+   "author": "Eneas Mentzel",
+   "library": "Eneas Mentzel - Debris & Rubble",
+   "source_url": "https://sonniss.com/gameaudiogdc/",
+   "download_url": "https://downloads.sonniss.com/Sonniss.com-GDC2023-GameAudioBundle2of14.zip",
+   "license": "Sonniss GDC Royalty-Free v2.0",
+   "license_url": "https://sonniss.com/gdc-bundle-license/",
+   "redistribution": "raw file must NOT be redistributed",
+   "outputs": [
+    "break/break_ceramic_01.wav",
+    "debris/debris_ceramic_01.wav"
+   ]
+  },
+  {
+   "path": "assets_src/audio/sonniss-gdc/GDC2023/InspectorJ - Essentials 04 Chains/CHAINMvmt_InsJ_Chains_Metal_Movement_Distant_Moderate_02-01.wav",
+   "sha256": "d975db8e4f1b67fbd7880744fdf4b2f54693b26db63df5b7a1b9afec7f76007d",
+   "author": "InspectorJ",
+   "library": "InspectorJ - Essentials 04 Chains",
+   "source_url": "https://sonniss.com/gameaudiogdc/",
+   "download_url": "https://downloads.sonniss.com/Sonniss.com-GDC2023-GameAudioBundle2of14.zip",
+   "license": "Sonniss GDC Royalty-Free v2.0",
+   "license_url": "https://sonniss.com/gdc-bundle-license/",
+   "redistribution": "raw file must NOT be redistributed",
+   "outputs": [
+    "foley/chain_rattle_11.wav"
+   ]
+  },
+  {
+   "path": "assets_src/audio/sonniss-gdc/GDC2023/InspectorJ - Essentials 04 Chains/CHAINMvmt_InsJ_Chains_Metal_Movement_Distant_Short_01-02.wav",
+   "sha256": "bb54c194af47dc8aae1a198c8708a3924565abd2eb2bf8121205c424eeca3554",
+   "author": "InspectorJ",
+   "library": "InspectorJ - Essentials 04 Chains",
+   "source_url": "https://sonniss.com/gameaudiogdc/",
+   "download_url": "https://downloads.sonniss.com/Sonniss.com-GDC2023-GameAudioBundle2of14.zip",
+   "license": "Sonniss GDC Royalty-Free v2.0",
+   "license_url": "https://sonniss.com/gdc-bundle-license/",
+   "redistribution": "raw file must NOT be redistributed",
+   "outputs": [
+    "foley/chain_rattle_10.wav"
+   ]
+  },
+  {
+   "path": "assets_src/audio/sonniss-gdc/GDC2023/InspectorJ - Essentials 04 Chains/CHAINMvmt_InsJ_Chains_Metal_Movement_Distant_Very-Short_03-01.wav",
+   "sha256": "68849c2b59ed389f9791b37bf2f4fadeb647af0efd139782e448a84868f6ffb7",
+   "author": "InspectorJ",
+   "library": "InspectorJ - Essentials 04 Chains",
+   "source_url": "https://sonniss.com/gameaudiogdc/",
+   "download_url": "https://downloads.sonniss.com/Sonniss.com-GDC2023-GameAudioBundle2of14.zip",
+   "license": "Sonniss GDC Royalty-Free v2.0",
+   "license_url": "https://sonniss.com/gdc-bundle-license/",
+   "redistribution": "raw file must NOT be redistributed",
+   "outputs": [
+    "foley/chain_rattle_09.wav"
+   ]
+  },
+  {
+   "path": "assets_src/audio/sonniss-gdc/GDC2023/Pole Position Production - Glock 17/Glock 17 - FIRING - Take 1 - 20m In Front - AB - MKH8020.wav",
+   "sha256": "3ca69f3c31f78ac5e8b6f89335413346b4b9bbee35eb4fad3662452cee9613e3",
+   "author": "Pole Position Production",
+   "library": "Pole Position Production - Glock 17",
+   "source_url": "https://sonniss.com/gameaudiogdc/",
+   "download_url": "https://downloads.sonniss.com/Sonniss.com-GDC2023-GameAudioBundle5of14.zip",
+   "license": "Sonniss GDC Royalty-Free v2.0",
+   "license_url": "https://sonniss.com/gdc-bundle-license/",
+   "redistribution": "raw file must NOT be redistributed",
+   "outputs": [
+    "shot/distant_20m_01.wav",
+    "shot/distant_20m_02.wav",
+    "shot/distant_20m_03.wav",
+    "shot/distant_20m_04.wav",
+    "shot/distant_20m_05.wav",
+    "shot/distant_20m_06.wav",
+    "shot/distant_20m_07.wav",
+    "shot/distant_20m_08.wav"
+   ]
+  },
+  {
+   "path": "assets_src/audio/sonniss-gdc/GDC2023/Pole Position Production - Glock 17/Glock 17 - FIRING - Take 3 - 100m In Front Off Axis - ORTF - MKH8040.wav",
+   "sha256": "38fc0e2ca7d79f24e27b223a869e475b8cf061358719d31e1b5085e456e8f458",
+   "author": "Pole Position Production",
+   "library": "Pole Position Production - Glock 17",
+   "source_url": "https://sonniss.com/gameaudiogdc/",
+   "download_url": "https://downloads.sonniss.com/Sonniss.com-GDC2023-GameAudioBundle5of14.zip",
+   "license": "Sonniss GDC Royalty-Free v2.0",
+   "license_url": "https://sonniss.com/gdc-bundle-license/",
+   "redistribution": "raw file must NOT be redistributed",
+   "outputs": [
+    "shot/distant_100m_01.wav",
+    "shot/distant_100m_02.wav",
+    "shot/distant_100m_03.wav",
+    "shot/distant_100m_04.wav",
+    "shot/distant_100m_05.wav",
+    "shot/distant_100m_06.wav",
+    "shot/distant_100m_07.wav",
+    "shot/distant_100m_08.wav"
+   ]
+  },
+  {
+   "path": "assets_src/audio/sonniss-gdc/GDC2024/Mechanical Wave - Cardboard and Paper/OBJPack_Big Cardboard Box Impact_ 02_MWSFX_CDAP.wav",
+   "sha256": "e945950071aea49927b753b45b90e1c7b08ffbd063352dbeb2b922cdbc95c683",
+   "author": "Mechanical Wave",
+   "library": "Mechanical Wave - Cardboard and Paper",
+   "source_url": "https://sonniss.com/gameaudiogdc/",
+   "download_url": "https://downloads.sonniss.com/Sonniss.com-GDC2024-GameAudioBundle2of9.zip",
+   "license": "Sonniss GDC Royalty-Free v2.0",
+   "license_url": "https://sonniss.com/gdc-bundle-license/",
+   "redistribution": "raw file must NOT be redistributed",
+   "outputs": [
+    "impact/impact_cardboard_01.wav",
+    "impact/impact_cardboard_02.wav"
+   ]
+  }
+ ],
+ "rejected_or_unused": [
+  {
+   "group": "amb_field_day",
+   "what": "freesound 586438 'Quiet Day at Countryside'",
+   "why": "lossy preview, L/R correlation -0.30 with strong low-frequency rumble in the first 20 s"
+  },
+  {
+   "group": "casing_concrete",
+   "what": "9 mm x 21  - Casings Shell & Cartdridges - Roll on Concrete Floor - Outdoor.wav [0.008-1.970s]",
+   "why": "clipped (1 full-scale runs >= 3 samples, 1 flat runs >= 3 samples)"
+  },
+  {
+   "group": "casing_concrete",
+   "what": "9 mm x 21  - Casings Shell & Cartdridges - Roll on Concrete Floor - Outdoor.wav [10.603-12.923s]",
+   "why": "clipped (3 full-scale runs >= 3 samples, 3 flat runs >= 3 samples)"
+  },
+  {
+   "group": "casing_concrete",
+   "what": "9 mm x 21  - Casings Shell & Cartdridges - Roll on Concrete Floor - Outdoor.wav [10.702-11.054s]",
+   "why": "clipped (3 full-scale runs >= 3 samples, 3 flat runs >= 3 samples)"
+  },
+  {
+   "group": "casing_concrete",
+   "what": "9 mm x 21  - Casings Shell & Cartdridges - Roll on Concrete Floor - Outdoor.wav [22.531-24.602s]",
+   "why": "clipped (1 full-scale runs >= 3 samples, 1 flat runs >= 3 samples)"
+  },
+  {
+   "group": "cloth_move",
+   "what": "Systematic Sound 'Jacket Synthetic Soft Shell Whoosh Flutter' (7 takes)",
+   "why": "every take clipped (4-48 full-scale samples, flat runs)"
+  },
+  {
+   "group": "cloth_move",
+   "what": "Systematic Sound 'Jacket Synthetic ... Zip Unzip'",
+   "why": "zip sounds, not rustles"
+  },
+  {
+   "group": "gear_move",
+   "what": "Joshua Reinhardt 'PR LEATHER BACKPACK_JOG'",
+   "why": "noise floor -49 dBFS, continuous jogging without isolated events"
+  },
+  {
+   "group": "chain_rattle",
+   "what": "Conor Bradley 'Heavy_Chain-Foley_On_Wood' / 'Jingle_Chain-Sustained_Foley', Mechanical Wave 'Chain Metal Drop On Floor', InspectorJ 'Dropping Close'",
+   "why": "chain dragged on wood / sustained jingling / chain dropped on a floor: not a hanging-chain movement"
+  },
+  {
+   "group": "metal_creak",
+   "what": "387896__bajko__sfx_swing_hojdacka.ogg [13.004-13.606s]",
+   "why": "no sharp onset: the 10-percent-of-peak onset cannot be placed exactly at the contract position (slow attack / cut inside ongoing sound)"
+  },
+  {
+   "group": "gear_move",
+   "what": "388819__nioczkus__Holster_Pistol.ogg take 0 [0.000-1.307s]",
+   "why": "no sharp onset: the 10-percent-of-peak onset cannot be placed exactly at the contract position (slow attack / cut inside ongoing sound)"
+  },
+  {
+   "group": "impact_steel",
+   "what": "freesound 148837 '.45 targetside metal' (3 real .45 hits on steel)",
+   "why": "heavily clipped (617 full-scale samples, 68 runs >= 3) - the only real bullet-on-steel recording"
+  },
+  {
+   "group": "impact_steel",
+   "what": "Pole Position 'Ak 5 - Hit Metal Armor Plate - handheld near shooter' (10 shots)",
+   "why": "rifle shot recorded at the shooter masks the plate hit completely; no separable plate sound, no ring visible"
+  },
+  {
+   "group": "impact_steel",
+   "what": "freesound 675951 'Shooting gallery; hitting metal targets'",
+   "why": "gallery gunshot and target ring overlap in every event (inseparable); band-limited lossy source"
+  },
+  {
+   "group": "impact_steel",
+   "what": "freesound 784157 'Metal Plate Hit 6'",
+   "why": "preview clipped (run >= 3 samples at full scale)"
+  },
+  {
+   "group": "impact_steel",
+   "what": "freesound 43403 'rifle_steel plate_multiple ricochettes'",
+   "why": "processed/panned multi-ricochet effect, not a plate hit"
+  },
+  {
+   "group": "impact_dirt",
+   "what": "Olivier Girardot 'Bullet rock Impact 4'",
+   "why": "clipped (128 samples, 5 runs >= 3)"
+  },
+  {
+   "group": "impact_paper",
+   "what": "freesound 625305 'Paper Impacts'",
+   "why": "clipped (649 samples, 59 runs >= 3)"
+  },
+  {
+   "group": "impact_cardboard",
+   "what": "freesound 625306 'Paper-covered Cardboard Impacts'",
+   "why": "clipped (1319 samples, 139 runs >= 3)"
+  },
+  {
+   "group": "impact_concrete",
+   "what": "Olivier Girardot 'Bullet Impact 16 - Light Version'",
+   "why": "clipped (168 samples, 22 runs >= 3)"
+  },
+  {
+   "group": "impact_can",
+   "what": "freesound 17010 'can bang ring (spittoonish)'",
+   "why": "noise floor -45 dBFS (ambient recording) and preview decodes 3 dB over full scale"
+  },
+  {
+   "group": "break_glass_bottle",
+   "what": "Chris Skyes 'Glass,Bottle,Break,Smash,Messy'",
+   "why": "tail cut by the file end (still -40 dB at the last sample), noise floor -52 dBFS"
+  },
+  {
+   "group": "break_glass_bottle",
+   "what": "3maze 'glass_bottle_smash_005'",
+   "why": "heavily limited (inter-sample peaks +1.9 dBFS) and tail chopped by a 50 ms vendor fade at -40 dB"
+  },
+  {
+   "group": "break_glass_bottle",
+   "what": "Soundopolis 'Glass_Break_Pane' / PMSFX 'Bullet_Impact_Glass_1'",
+   "why": "window pane / designed glass impact, not a bottle"
+  },
+  {
+   "group": "break_ceramic",
+   "what": "freesound 524999 'ceramic cup shatters on tile floor'",
+   "why": "strong indoor (kitchen) room reverberation, wrong for an outdoor range"
+  },
+  {
+   "group": "break_ceramic",
+   "what": "freesound 399080 take 3 of 4",
+   "why": "level plateau then abrupt denoiser gate - tail visibly cut"
+  },
+  {
+   "group": "break_ceramic",
+   "what": "freesound 452156 'Clay Trap'",
+   "why": "is the trap machine throwing a disc, not a break"
+  },
+  {
+   "group": "impact_paper",
+   "what": "freesound 855035 takes 6, 7, 8 of 10",
+   "why": "several slaps / long paper rustle inside one take (two events in one file)"
+  },
+  {
+   "group": "impact_steel",
+   "what": "bullet_impact_metal_heavy_08.wav take 0 [0.000-0.503s]",
+   "why": "clipped (0 full-scale runs >= 3 samples, 14 flat runs >= 3 samples)"
+  },
+  {
+   "group": "break_glass_bottle",
+   "what": "Glass_Break_WineBottle_702T_Fienup_004.wav take 0 [0.020-1.859s]",
+   "why": "clipped (0 full-scale runs >= 3 samples, 1 flat runs >= 3 samples)"
+  },
+  {
+   "group": "debris_glass",
+   "what": "Glass_Break_WineBottle_702T_Fienup_004.wav [1.050-1.860s]",
+   "why": "no sharp onset: the 10-percent-of-peak onset cannot be placed exactly at the contract position (slow attack / cut inside ongoing sound)"
+  },
+  {
+   "group": "shot_close",
+   "what": "X_38.wav shot 2 @ 6.293s",
+   "why": "clipped: ch0 peak 0.0 dBFS, 13 samples at full scale, 2 FS runs>=3, 0 flat runs>=3; ch1 peak -0.0 dBFS, 6 samples at full scale, 0 FS runs>=3, 0 flat runs>=3"
+  },
+  {
+   "group": "shot_close",
+   "what": "X_38.wav shot 3 @ 10.509s",
+   "why": "clipped: ch0 peak -0.0 dBFS, 10 samples at full scale, 2 FS runs>=3, 0 flat runs>=3; ch1 peak -0.0 dBFS, 5 samples at full scale, 0 FS runs>=3, 0 flat runs>=3"
+  },
+  {
+   "group": "shot_close",
+   "what": "X_40.wav shot 1 @ 1.756s",
+   "why": "clipped: ch0 peak 0.0 dBFS, 85 samples at full scale, 8 FS runs>=3, 0 flat runs>=3; ch1 peak 0.0 dBFS, 43 samples at full scale, 1 FS runs>=3, 0 flat runs>=3"
+  },
+  {
+   "group": "shot_close",
+   "what": "X_40.wav shot 2 @ 5.657s",
+   "why": "clipped: ch0 peak 0.0 dBFS, 47 samples at full scale, 4 FS runs>=3, 0 flat runs>=3; ch1 peak 0.0 dBFS, 23 samples at full scale, 0 FS runs>=3, 0 flat runs>=3"
+  },
+  {
+   "group": "shot_close",
+   "what": "X_40.wav shot 3 @ 10.093s",
+   "why": "clipped: ch0 peak 0.0 dBFS, 66 samples at full scale, 2 FS runs>=3, 0 flat runs>=3; ch1 peak 0.0 dBFS, 42 samples at full scale, 0 FS runs>=3, 0 flat runs>=3"
+  },
+  {
+   "group": "shot_close",
+   "what": "X_39.wav shot 2 @ 6.444s",
+   "why": "clipped: ch0 peak -0.0 dBFS, 3 samples at full scale, 0 FS runs>=3, 0 flat runs>=3; ch1 peak -0.0 dBFS, 10 samples at full scale, 1 FS runs>=3, 0 flat runs>=3"
+  },
+  {
+   "group": "shot_close",
+   "what": "X_39.wav shot 3 @ 10.660s",
+   "why": "clipped: ch0 peak -0.0 dBFS, 4 samples at full scale, 0 FS runs>=3, 0 flat runs>=3; ch1 peak -0.0 dBFS, 9 samples at full scale, 0 FS runs>=3, 0 flat runs>=3"
+  },
+  {
+   "group": "shot_close",
+   "what": "X_41.wav shot 1 @ 1.008s",
+   "why": "clipped: ch0 peak 0.0 dBFS, 33 samples at full scale, 0 FS runs>=3, 0 flat runs>=3; ch1 peak -0.0 dBFS, 25 samples at full scale, 0 FS runs>=3, 0 flat runs>=3"
+  },
+  {
+   "group": "shot_close",
+   "what": "X_41.wav shot 2 @ 4.908s",
+   "why": "clipped: ch0 peak 0.0 dBFS, 26 samples at full scale, 0 FS runs>=3, 0 flat runs>=3; ch1 peak -0.0 dBFS, 30 samples at full scale, 1 FS runs>=3, 1 flat runs>=3"
+  },
+  {
+   "group": "shot_close",
+   "what": "X_41.wav shot 3 @ 9.003s",
+   "why": "clipped: ch0 peak 0.0 dBFS, 50 samples at full scale, 2 FS runs>=3, 0 flat runs>=3; ch1 peak 0.0 dBFS, 45 samples at full scale, 7 FS runs>=3, 0 flat runs>=3"
+  },
+  {
+   "group": "shot_distant_20m",
+   "what": "Glock 17 - FIRING - Take 1 - 20m In Front - AB - MKH8020.wav shot 2 @ 8.511s",
+   "why": "noisy take: ambient floor after the shot -76.6 dBFS vs. file median -83.7 dBFS (wind/rumble)"
+  },
+  {
+   "group": "shot_distant_100m",
+   "what": "Glock 17 - FIRING - Take 3 - 100m In Front Off Axis - ORTF - MKH8040.wav shot 8 @ 56.141s",
+   "why": "noisy take: ambient floor after the shot -81.2 dBFS vs. file median -91.5 dBFS (wind/rumble)"
+  },
+  {
+   "group": "step_concrete",
+   "what": "freesound 465299 'Concrete Footsteps' / 456428 'surfaced road in boots' / 778502",
+   "why": "noise floor -46..-57 dBFS with traffic/breathing/ambience under every step (lossy previews)"
+  },
+  {
+   "group": "step_dirt",
+   "what": "freesound 591534 'stony path' / 452628 'boots gravel dirt'",
+   "why": "denoised/ambient lossy previews; enough lossless steps available"
+  },
+  {
+   "group": "step_grass",
+   "what": "freesound 521587 'Hiking Boot Footsteps on Grass'",
+   "why": "composite made by the uploader (thud layered with grass movement), lossy"
+  },
+  {
+   "group": "step_grass",
+   "what": "PMSFX PM_SDGS_14 / PM_SDGS_213",
+   "why": "several crunches / a skid-drag inside one file, not a single step"
+  },
+  {
+   "group": "step_gravel",
+   "what": "S23_SFX_Footsteps_Gravel_Loafers_Loops_Walk_Normal.wav [1.693-2.147s]",
+   "why": "clipped (0 full-scale runs >= 3 samples, 2 flat runs >= 3 samples)"
+  }
+ ],
+ "build": "tools/build/audio/build_all.sh"
+}

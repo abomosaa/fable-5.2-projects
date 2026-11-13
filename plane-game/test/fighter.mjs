@@ -1,0 +1,16 @@
+import def from '../src/aircraft/fighter.js';
+import * as T from './lib.mjs';
+T.groundStatic(def);
+console.log('ref', JSON.stringify(def.ref, (k, v) => typeof v === 'number' ? +v.toFixed(3) : v), 'vs kt', T.kt(def.ref.vs));
+T.takeoff(def, { pitch: 12, time: 40, holdPitch: true });
+T.cruise(def, 450, 3000);
+T.cruise(def, 250, 3000);
+T.cruise(def, 160, 600);
+for (const k of [200, 300, 450, 600]) T.pullUp(def, k, 3000, 1, 5);
+T.pullUp(def, 450, 3000, 0.3, 5);
+T.pullUp(def, 450, 3000, -1, 4);
+T.rollRate(def, 400, 3000);
+T.rollRate(def, 200, 3000);
+T.maxSpeed(def, 200, 500);
+T.maxSpeed(def, 11000, 300);
+T.handsOff(def, 400, 3000, 40);

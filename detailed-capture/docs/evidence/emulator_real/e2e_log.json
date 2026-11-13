@@ -1,0 +1,6 @@
+{
+ "timing": {},
+ "log": [
+  "[14:52:03] denied screen: Camera access is needed to take photos | Detailed Capture uses the camera only to take the overview and close-up photos you ask for. Photos stay on this device. You can also work entirely with imported photos. | Open settings / try again | Go back and import photos instead"
+ ]
+}

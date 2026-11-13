@@ -1,0 +1,46 @@
+{
+  "id": "tectonic-plates",
+  "provider": "Peter Bird (UCLA) / Hugo Ahlenius, Nordpil",
+  "dataset": "PB2002 plate boundary model (Bird, 2003) – GeoJSON conversion (fraxen/tectonicplates)",
+  "description": "Boundaries between the 52 tectonic plates of Peter Bird's PB2002 digital model, as line segments labelled with the two adjoining plates and whether the segment is a subduction zone.",
+  "homepageUrl": "https://github.com/fraxen/tectonicplates",
+  "documentationUrl": "https://github.com/fraxen/tectonicplates/blob/master/README.md",
+  "sourceUrls": ["https://raw.githubusercontent.com/fraxen/tectonicplates/master/GeoJSON/PB2002_boundaries.json"],
+  "allowedHosts": ["raw.githubusercontent.com"],
+  "coverage": { "geographic": "Global", "temporal": "Static scientific model published in 2003 (boundaries digitised 1987–2002); converted to GeoJSON in 2014" },
+  "updateCadence": { "upstream": "Static; the repository changes very rarely", "pollIntervalSec": 2592000, "staleAfterSec": 31536000 },
+  "auth": { "type": "none", "envVars": [] },
+  "attribution": "Plate boundaries: Bird, P. (2003), An updated digital model of plate boundaries, Geochem. Geophys. Geosyst., 4(3), 1027, doi:10.1029/2001GC000252. GeoJSON conversion by Hugo Ahlenius, Nordpil (github.com/fraxen/tectonicplates), ODC-By 1.0",
+  "license": {
+    "name": "Open Data Commons Attribution License (ODC-By) v1.0",
+    "url": "https://opendatacommons.org/licenses/by/1-0/",
+    "redistribution": "allowed-with-attribution",
+    "nonCommercialOnly": false,
+    "notes": "The repository README and LICENSE.md state: \"This collection is made available under the Open Data Commons Attribution License\" and ask that Hugo Ahlenius, Nordpil and Peter Bird be credited. (It is ODC-By, not the public-domain ODC PDDL.) The underlying model is from Bird (2003), G-cubed, doi:10.1029/2001GC000252."
+  },
+  "limitations": [
+    "A scientific model from 2003, not an observation: boundary positions are interpretations, many plate boundaries are in reality broad deformation zones (Bird's 'orogens') rather than sharp lines, and offshore segments are accurate to tens of kilometres at best.",
+    "Only the boundary type 'subduction' is flagged in this conversion; ridges, transforms and other classes of the original model are not distinguished.",
+    "Segments that cross the 180° meridian were split by the converter; a few segments are duplicated in the file.",
+    "Proximity to a plate boundary says nothing by itself about current seismic or volcanic hazard."
+  ],
+  "confidenceNotes": "No per-record confidence is published. Peer-reviewed global model (Bird 2003); each segment carries the name of the publication or digitisation it was taken from.",
+  "retention": { "note": "Reference data: a segment is kept for as long as the published file lists it." },
+  "snapshot": "full",
+  "http": { "cacheTtlSec": 604800, "timeoutMs": 45000 },
+  "enabledByDefault": true,
+  "layers": [
+    {
+      "id": "plate-boundaries",
+      "name": "Tectonic plate boundaries",
+      "description": "Plate boundary segments of the PB2002 model (Bird 2003), labelled with the adjoining plates; subduction zones are marked.",
+      "domain": "reference",
+      "category": "plate-boundary",
+      "geometry": "line",
+      "timeModel": "reference",
+      "render": { "type": "line", "color": "brown" },
+      "retentionDays": null,
+      "defaultOn": false
+    }
+  ]
+}

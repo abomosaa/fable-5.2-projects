@@ -1,0 +1,53 @@
+{
+  "id": "who-don",
+  "provider": "World Health Organization (WHO)",
+  "dataset": "Disease Outbreak News (DON)",
+  "description": "WHO's official notices about confirmed or potential public health events of international concern: title, publication time, a short excerpt of the summary and a link to the full notice.",
+  "homepageUrl": "https://www.who.int/emergencies/disease-outbreak-news",
+  "documentationUrl": "https://www.who.int/api/news/sfhelp",
+  "sourceUrls": [
+    "https://www.who.int/api/news/diseaseoutbreaknews?$orderby=PublicationDateAndTime%20desc&$top=60&$select=Id,DonId,Title,OverrideTitle,UseOverrideTitle,PublicationDate,PublicationDateAndTime,LastModified,UrlName,ItemDefaultUrl,Summary"
+  ],
+  "allowedHosts": ["www.who.int"],
+  "coverage": {
+    "geographic": "Global; individual notices concern one country, several countries, a WHO region or the global situation.",
+    "temporal": "The 60 most recent notices (roughly the last 18 months at the current publication rate)."
+  },
+  "updateCadence": { "upstream": "Irregular: a few notices per month, more during large outbreaks", "pollIntervalSec": 10800, "staleAfterSec": 172800 },
+  "auth": { "type": "none", "envVars": [] },
+  "attribution": "World Health Organization, Disease Outbreak News",
+  "license": {
+    "name": "WHO copyright – Creative Commons Attribution-NonCommercial-ShareAlike 3.0 IGO (CC BY-NC-SA 3.0 IGO)",
+    "url": "https://www.who.int/about/policies/publishing/copyright",
+    "redistribution": "restricted",
+    "nonCommercialOnly": true,
+    "notes": "WHO publishes its material under CC BY-NC-SA 3.0 IGO: reuse is limited to non-commercial purposes, requires acknowledgement of WHO as the source and share-alike for adaptations, and must not suggest WHO endorsement or use the WHO logo. This application therefore stores only the title, publication metadata, an excerpt of at most 400 characters of the summary and a deep link to the notice on who.int – never the full text."
+  },
+  "limitations": [
+    "The feed carries no coordinates or country codes. The country is inferred by this application from the location part of the title (\"Disease - Country\"); the marker is placed at the country's label point, not at the outbreak location.",
+    "Notices about several countries are attached to every country named in the title; notices about a WHO region, 'multi-country' or the global situation, and titles whose location cannot be resolved, are kept as non-geographic bulletins.",
+    "Disease Outbreak News is selective: it covers events WHO chooses to publish, not all outbreaks, and one outbreak is often covered by a series of notices.",
+    "The time shown is the publication time of the notice, not the onset of the outbreak.",
+    "There is no formal developer documentation or versioning for this endpoint (it is the OData service of WHO's website content system); field names were confirmed from the live service metadata and may change without notice."
+  ],
+  "confidenceNotes": "Official WHO notices; no per-item confidence is published and none is assigned. The only inference made by this application is the location (country derived from the title), which is flagged as derived on every record.",
+  "retention": { "note": "Notices are kept for 400 days after publication, then purged." },
+  "snapshot": "incremental",
+  "http": { "cacheTtlSec": 3600, "minIntervalMs": 1000, "timeoutMs": 40000 },
+  "enabledByDefault": true,
+  "layers": [
+    {
+      "id": "disease-outbreaks",
+      "name": "Disease outbreak news (WHO)",
+      "description": "WHO Disease Outbreak News notices, placed on the country named in the title (inferred); regional and global notices are listed as bulletins.",
+      "domain": "society",
+      "category": "health",
+      "geometry": "country",
+      "timeModel": "event",
+      "render": { "type": "point", "color": "green", "shape": "cross" },
+      "freshForSec": 1209600,
+      "retentionDays": 400,
+      "defaultOn": true
+    }
+  ]
+}

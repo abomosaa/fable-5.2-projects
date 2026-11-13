@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="dev.pocket3d.core.scale.ScaleTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2026-11-12T10:55:44.550Z" hostname="h4-pc" time="0.003">
+  <properties/>
+  <testcase name="rejectsMeaninglessReferences" classname="dev.pocket3d.core.scale.ScaleTest" time="0.0"/>
+  <testcase name="noCalibrationClaimsToBeBetterThanTheShapeAccuracyOfPhotogrammetry" classname="dev.pocket3d.core.scale.ScaleTest" time="0.001"/>
+  <testcase name="formattingNeverShowsMoreDigitsThanTheUncertaintySupports" classname="dev.pocket3d.core.scale.ScaleTest" time="0.001"/>
+  <testcase name="measuredLengthCarriesScaleAndPickingUncertainty" classname="dev.pocket3d.core.scale.ScaleTest" time="0.0"/>
+  <testcase name="uncalibratedLengthsAreNeverPresentedAsMeasurements" classname="dev.pocket3d.core.scale.ScaleTest" time="0.0"/>
+  <testcase name="formattingDoesNotDependOnTheDeviceLocale" classname="dev.pocket3d.core.scale.ScaleTest" time="0.001"/>
+  <testcase name="longerReferenceGivesTighterScale" classname="dev.pocket3d.core.scale.ScaleTest" time="0.0"/>
+  <testcase name="referenceCalibrationGivesMetersPerUnitAndCombinedUncertainty" classname="dev.pocket3d.core.scale.ScaleTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

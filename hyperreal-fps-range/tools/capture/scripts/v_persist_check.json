@@ -1,0 +1,16 @@
+[
+{
+"wait": 2.0,
+"do": "settings_dump",
+"tag": "after_relaunch"
+},
+{
+"wait": 0.2,
+"do": "state",
+"tag": "relaunch"
+},
+{
+"wait": 0.3,
+"do": "quit"
+}
+]

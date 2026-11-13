@@ -1,0 +1,16 @@
+import def from '../src/aircraft/airliner.js';
+import * as T from './lib.mjs';
+T.groundStatic(def);
+console.log('ref', JSON.stringify(def.ref, (k, v) => typeof v === 'number' ? +v.toFixed(3) : v), 'vs kt', T.kt(def.ref.vs), T.kt(def.ref.vs0));
+T.takeoff(def, { pitch: 14, time: 70, flapIndex: 2, holdPitch: true });
+T.cruise(def, 250, 3000);
+T.cruise(def, 270, 10600);
+let ac = T.airStart(def, 140, 600, { flapIndex: 4, gearDown: true, gamma: -3 }); T.report('approach 140kt full flaps -3deg', ac);
+ac = T.airStart(def, 180, 900, { flapIndex: 2, gearDown: false }); T.report('180kt flaps 2', ac);
+T.stall(def, 3000, 0, 230);
+T.stall(def, 1500, 4, 150);
+T.rollRate(def, 250, 3000);
+T.maxSpeed(def, 10600, 260);
+T.pullUp(def, 250, 3000, 1, 6);
+T.pullUp(def, 250, 3000, -1, 6);
+T.handsOff(def, 250, 3000, 60);

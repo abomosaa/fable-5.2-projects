@@ -1,0 +1,4046 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://scripts/range/range_env.gd" id="1_bfc2a"]
+[ext_resource type="ArrayMesh" path="res://assets/env/meshes/arch_bay_slab.res" id="2_klaxd"]
+[ext_resource type="ArrayMesh" path="res://assets/env/meshes/arch_bay_blockwall.res" id="3_vmavt"]
+[ext_resource type="ArrayMesh" path="res://assets/env/meshes/arch_bay_frame.res" id="4_5laab"]
+[ext_resource type="ArrayMesh" path="res://assets/env/meshes/arch_bay_roof.res" id="5_7ouhk"]
+[ext_resource type="ArrayMesh" path="res://assets/env/meshes/arch_bay_backwall.res" id="6_jfaop"]
+[ext_resource type="ArrayMesh" path="res://assets/env/meshes/arch_bay_siding.res" id="7_4ppxm"]
+[ext_resource type="ArrayMesh" path="res://assets/env/meshes/arch_bay_dividers.res" id="8_klvli"]
+[ext_resource type="ArrayMesh" path="res://assets/env/meshes/arch_bay_benches.res" id="9_lqasx"]
+[ext_resource type="ArrayMesh" path="res://assets/env/meshes/arch_bay_mats.res" id="10_5efb6"]
+[ext_resource type="ArrayMesh" path="res://assets/env/meshes/arch_pad_table.res" id="11_duv4a"]
+[ext_resource type="ArrayMesh" path="res://assets/env/meshes/arch_pad_edging.res" id="12_udaoe"]
+[ext_resource type="ArrayMesh" path="res://assets/env/meshes/arch_bay_signs.res" id="13_kjygm"]
+[ext_resource type="ArrayMesh" path="res://assets/env/meshes/arch_bay_props.res" id="14_hjg74"]
+[ext_resource type="ArrayMesh" path="res://assets/env/meshes/arch_site_fence.res" id="15_wrxjw"]
+[ext_resource type="ArrayMesh" path="res://assets/env/meshes/arch_site_gate.res" id="16_68nrb"]
+[ext_resource type="ArrayMesh" path="res://assets/env/meshes/arch_site_markers.res" id="17_r51ud"]
+[ext_resource type="ArrayMesh" path="res://assets/env/meshes/arch_clutter.res" id="18_hx2vd"]
+[ext_resource type="ArrayMesh" path="res://assets/env/meshes/arch_site_storage.res" id="19_k83b7"]
+[ext_resource type="Shape3D" path="res://assets/env/meshes/terrain_col_dirt.res" id="20_86tk3"]
+[ext_resource type="Shape3D" path="res://assets/env/meshes/terrain_col_grass.res" id="21_rihs5"]
+[ext_resource type="Shape3D" path="res://assets/env/meshes/terrain_col_gravel.res" id="22_vvlxm"]
+[ext_resource type="ArrayMesh" path="res://assets/env/meshes/terrain_00.res" id="23_em3hk"]
+[ext_resource type="ArrayMesh" path="res://assets/env/meshes/terrain_01.res" id="24_1hlh3"]
+[ext_resource type="ArrayMesh" path="res://assets/env/meshes/terrain_02.res" id="25_n4okj"]
+[ext_resource type="ArrayMesh" path="res://assets/env/meshes/terrain_03.res" id="26_j47ob"]
+[ext_resource type="ArrayMesh" path="res://assets/env/meshes/terrain_04.res" id="27_wtt42"]
+[ext_resource type="ArrayMesh" path="res://assets/env/meshes/terrain_05.res" id="28_5ucgw"]
+[ext_resource type="ArrayMesh" path="res://assets/env/meshes/terrain_06.res" id="29_4wenh"]
+[ext_resource type="ArrayMesh" path="res://assets/env/meshes/terrain_07.res" id="30_p437b"]
+[ext_resource type="ArrayMesh" path="res://assets/env/meshes/terrain_08.res" id="31_o3pol"]
+[ext_resource type="ArrayMesh" path="res://assets/env/meshes/terrain_09.res" id="32_5fmun"]
+[ext_resource type="ArrayMesh" path="res://assets/env/meshes/terrain_10.res" id="33_x4yh2"]
+[ext_resource type="ArrayMesh" path="res://assets/env/meshes/terrain_11.res" id="34_4egqk"]
+[ext_resource type="ArrayMesh" path="res://assets/env/meshes/terrain_12.res" id="35_x787d"]
+[ext_resource type="ArrayMesh" path="res://assets/env/meshes/terrain_13.res" id="36_jfdib"]
+[ext_resource type="ArrayMesh" path="res://assets/env/meshes/terrain_14.res" id="37_3m134"]
+[ext_resource type="ArrayMesh" path="res://assets/env/meshes/terrain_15.res" id="38_iikam"]
+[ext_resource type="ArrayMesh" path="res://assets/env/meshes/terrain_16.res" id="39_xo7be"]
+[ext_resource type="ArrayMesh" path="res://assets/env/meshes/terrain_17.res" id="40_iyr4k"]
+[ext_resource type="ArrayMesh" path="res://assets/env/meshes/terrain_18.res" id="41_lu5xn"]
+[ext_resource type="ArrayMesh" path="res://assets/env/meshes/terrain_19.res" id="42_l0vfq"]
+[ext_resource type="ArrayMesh" path="res://assets/env/meshes/terrain_20.res" id="43_g2d14"]
+[ext_resource type="ArrayMesh" path="res://assets/env/meshes/terrain_21.res" id="44_87mcj"]
+[ext_resource type="ArrayMesh" path="res://assets/env/meshes/terrain_22.res" id="45_icdmp"]
+[ext_resource type="ArrayMesh" path="res://assets/env/meshes/terrain_23.res" id="46_ebksb"]
+[ext_resource type="MultiMesh" path="res://assets/env/meshes/mm_turf0_0_-3.res" id="47_spyg6"]
+[ext_resource type="MultiMesh" path="res://assets/env/meshes/mm_turf0_0_-2.res" id="48_0ljpf"]
+[ext_resource type="MultiMesh" path="res://assets/env/meshes/mm_turf0_-1_-2.res" id="49_t8tda"]
+[ext_resource type="MultiMesh" path="res://assets/env/meshes/mm_turf0_0_-1.res" id="50_kh7l4"]
+[ext_resource type="MultiMesh" path="res://assets/env/meshes/mm_turf0_-1_-1.res" id="51_h23wq"]
+[ext_resource type="MultiMesh" path="res://assets/env/meshes/mm_turf0_-1_-3.res" id="52_2yw4n"]
+[ext_resource type="MultiMesh" path="res://assets/env/meshes/mm_turf0_0_0.res" id="53_05t5u"]
+[ext_resource type="MultiMesh" path="res://assets/env/meshes/mm_turf0_-1_0.res" id="54_fndig"]
+[ext_resource type="MultiMesh" path="res://assets/env/meshes/mm_turf1_-1_-3.res" id="55_303k1"]
+[ext_resource type="MultiMesh" path="res://assets/env/meshes/mm_turf1_0_-1.res" id="56_qhyxd"]
+[ext_resource type="MultiMesh" path="res://assets/env/meshes/mm_turf1_-1_-1.res" id="57_fifts"]
+[ext_resource type="MultiMesh" path="res://assets/env/meshes/mm_turf1_-1_0.res" id="58_ou724"]
+[ext_resource type="MultiMesh" path="res://assets/env/meshes/mm_turf1_0_-2.res" id="59_xrt0h"]
+[ext_resource type="MultiMesh" path="res://assets/env/meshes/mm_turf1_-1_-2.res" id="60_0u58n"]
+[ext_resource type="MultiMesh" path="res://assets/env/meshes/mm_turf1_0_-3.res" id="61_lrsl3"]
+[ext_resource type="MultiMesh" path="res://assets/env/meshes/mm_turf1_0_0.res" id="62_sbjbt"]
+[ext_resource type="MultiMesh" path="res://assets/env/meshes/mm_grass0_0_-1.res" id="63_lcarf"]
+[ext_resource type="MultiMesh" path="res://assets/env/meshes/mm_grass0_0_0.res" id="64_kdobs"]
+[ext_resource type="MultiMesh" path="res://assets/env/meshes/mm_grass0_-1_0.res" id="65_vkcpl"]
+[ext_resource type="MultiMesh" path="res://assets/env/meshes/mm_grass0_-1_-3.res" id="66_awwpg"]
+[ext_resource type="MultiMesh" path="res://assets/env/meshes/mm_grass0_0_-3.res" id="67_2qajd"]
+[ext_resource type="MultiMesh" path="res://assets/env/meshes/mm_grass0_-1_-2.res" id="68_btqnb"]
+[ext_resource type="MultiMesh" path="res://assets/env/meshes/mm_grass0_0_-2.res" id="69_v61sb"]
+[ext_resource type="MultiMesh" path="res://assets/env/meshes/mm_grass0_-1_-1.res" id="70_wrx4v"]
+[ext_resource type="MultiMesh" path="res://assets/env/meshes/mm_grass0_1_0.res" id="71_tp4te"]
+[ext_resource type="MultiMesh" path="res://assets/env/meshes/mm_grass0_1_-2.res" id="72_n3hoq"]
+[ext_resource type="MultiMesh" path="res://assets/env/meshes/mm_grass0_1_-3.res" id="73_vgtil"]
+[ext_resource type="MultiMesh" path="res://assets/env/meshes/mm_grass1_0_-2.res" id="74_6cwa4"]
+[ext_resource type="MultiMesh" path="res://assets/env/meshes/mm_grass1_-1_-3.res" id="75_ofe0n"]
+[ext_resource type="MultiMesh" path="res://assets/env/meshes/mm_grass1_0_-3.res" id="76_kei45"]
+[ext_resource type="MultiMesh" path="res://assets/env/meshes/mm_grass1_0_0.res" id="77_mybqu"]
+[ext_resource type="MultiMesh" path="res://assets/env/meshes/mm_grass1_-1_0.res" id="78_g3cna"]
+[ext_resource type="MultiMesh" path="res://assets/env/meshes/mm_grass1_0_-1.res" id="79_wk3v3"]
+[ext_resource type="MultiMesh" path="res://assets/env/meshes/mm_grass1_-1_-2.res" id="80_at2c5"]
+[ext_resource type="MultiMesh" path="res://assets/env/meshes/mm_grass1_-1_-1.res" id="81_t60ww"]
+[ext_resource type="MultiMesh" path="res://assets/env/meshes/mm_grass1_1_0.res" id="82_vsnbf"]
+[ext_resource type="MultiMesh" path="res://assets/env/meshes/mm_clump_-1_-1.res" id="83_c3fuf"]
+[ext_resource type="MultiMesh" path="res://assets/env/meshes/mm_clump_0_0.res" id="84_tsu81"]
+[ext_resource type="MultiMesh" path="res://assets/env/meshes/mm_clump_0_-2.res" id="85_crwk3"]
+[ext_resource type="MultiMesh" path="res://assets/env/meshes/mm_clump_-1_-2.res" id="86_8bgsc"]
+[ext_resource type="MultiMesh" path="res://assets/env/meshes/mm_clump_0_-1.res" id="87_tgi7j"]
+[ext_resource type="MultiMesh" path="res://assets/env/meshes/mm_clump_-1_0.res" id="88_d4ul3"]
+[ext_resource type="MultiMesh" path="res://assets/env/meshes/mm_weed0_-1_0.res" id="89_yjomo"]
+[ext_resource type="MultiMesh" path="res://assets/env/meshes/mm_weed0_-1_-1.res" id="90_gfr0l"]
+[ext_resource type="MultiMesh" path="res://assets/env/meshes/mm_weed0_0_-1.res" id="91_b42ug"]
+[ext_resource type="MultiMesh" path="res://assets/env/meshes/mm_weed0_0_0.res" id="92_sev0j"]
+[ext_resource type="MultiMesh" path="res://assets/env/meshes/mm_weed2_0_0.res" id="93_4u3kb"]
+[ext_resource type="MultiMesh" path="res://assets/env/meshes/mm_weed2_0_-1.res" id="94_3e0nr"]
+[ext_resource type="MultiMesh" path="res://assets/env/meshes/mm_weed2_-1_0.res" id="95_uj18q"]
+[ext_resource type="MultiMesh" path="res://assets/env/meshes/mm_weed2_-1_-1.res" id="96_8q3vo"]
+[ext_resource type="MultiMesh" path="res://assets/env/meshes/mm_weed3_-1_0.res" id="97_w18jp"]
+[ext_resource type="MultiMesh" path="res://assets/env/meshes/mm_weed3_-1_-1.res" id="98_jft3o"]
+[ext_resource type="MultiMesh" path="res://assets/env/meshes/mm_weed3_0_0.res" id="99_cectd"]
+[ext_resource type="MultiMesh" path="res://assets/env/meshes/mm_weed3_0_-1.res" id="100_3yh5l"]
+[ext_resource type="ArrayMesh" path="res://assets/env/meshes/veg_searsia_burchellii_small_bush.res" id="101_gsby2"]
+[ext_resource type="ArrayMesh" path="res://assets/env/meshes/veg_shrub_02_c_bush.res" id="102_h6xey"]
+[ext_resource type="ArrayMesh" path="res://assets/env/meshes/veg_shrub_02_a_bush.res" id="103_q3a08"]
+[ext_resource type="ArrayMesh" path="res://assets/env/meshes/veg_shrub_02_b_bush.res" id="104_4hgr8"]
+[ext_resource type="ArrayMesh" path="res://assets/env/meshes/veg_shrub_02_d_bush.res" id="105_1tv8c"]
+[ext_resource type="ArrayMesh" path="res://assets/env/meshes/veg_jacaranda_tree_far_tree.res" id="106_dk1no"]
+[ext_resource type="ArrayMesh" path="res://assets/env/meshes/veg_tree_small_02_tree.res" id="107_6644m"]
+[ext_resource type="ArrayMesh" path="res://assets/env/meshes/veg_tree_small_02_far_tree.res" id="108_ivr01"]
+[ext_resource type="ArrayMesh" path="res://assets/env/meshes/veg_jacaranda_tree_tree.res" id="109_b8o0d"]
+[ext_resource type="PackedScene" path="res://assets/env/props/barrel_03/model.gltf" id="110_ect2r"]
+[ext_resource type="PackedScene" path="res://assets/env/props/barrel_01/model.gltf" id="111_0wwi4"]
+[ext_resource type="PackedScene" path="res://assets/env/props/metal_trash_can/model.gltf" id="112_o4ukl"]
+[ext_resource type="PackedScene" path="res://assets/env/props/plastic_monobloc_chair_01/model.gltf" id="113_sleqy"]
+[ext_resource type="PackedScene" path="res://assets/env/props/wooden_picnic_table/model.gltf" id="114_mdfeo"]
+[ext_resource type="PackedScene" path="res://assets/env/props/wooden_crate_01/model.gltf" id="115_y43gg"]
+[ext_resource type="PackedScene" path="res://assets/env/props/plastic_crate_02/model.gltf" id="116_rrtcr"]
+[ext_resource type="PackedScene" path="res://assets/env/props/ammo_box/model.gltf" id="117_4o1t5"]
+[ext_resource type="PackedScene" path="res://assets/env/props/cement_bag/model.gltf" id="118_g4yba"]
+[ext_resource type="PackedScene" path="res://assets/env/props/metal_jerrycan/model.gltf" id="119_coe7d"]
+[ext_resource type="PackedScene" path="res://assets/env/props/old_tyre/model.gltf" id="120_xnl6h"]
+[ext_resource type="PackedScene" path="res://assets/env/props/concrete_road_barrier_02/model.gltf" id="121_27w33"]
+[ext_resource type="PackedScene" path="res://assets/env/props/wooden_broom/model.gltf" id="122_5qt46"]
+[ext_resource type="MultiMesh" path="res://assets/env/meshes/mm_rocks0_-1_0.res" id="123_5dnvh"]
+[ext_resource type="MultiMesh" path="res://assets/env/meshes/mm_rocks0_0_-1.res" id="124_420le"]
+[ext_resource type="MultiMesh" path="res://assets/env/meshes/mm_rocks0_-1_-2.res" id="125_d4te6"]
+[ext_resource type="MultiMesh" path="res://assets/env/meshes/mm_rocks0_-1_-1.res" id="126_ema0y"]
+[ext_resource type="MultiMesh" path="res://assets/env/meshes/mm_rocks0_0_0.res" id="127_43lc0"]
+[ext_resource type="MultiMesh" path="res://assets/env/meshes/mm_rocks0_0_-2.res" id="128_35rf3"]
+[ext_resource type="MultiMesh" path="res://assets/env/meshes/mm_rocks1_0_-1.res" id="129_aqc25"]
+[ext_resource type="MultiMesh" path="res://assets/env/meshes/mm_rocks1_-1_0.res" id="130_j6p3m"]
+[ext_resource type="MultiMesh" path="res://assets/env/meshes/mm_rocks1_0_-2.res" id="131_0txwq"]
+[ext_resource type="MultiMesh" path="res://assets/env/meshes/mm_rocks1_-1_-1.res" id="132_oxtns"]
+[ext_resource type="MultiMesh" path="res://assets/env/meshes/mm_rocks1_-1_-2.res" id="133_x43d7"]
+[ext_resource type="MultiMesh" path="res://assets/env/meshes/mm_rocks1_0_0.res" id="134_eauf0"]
+[ext_resource type="MultiMesh" path="res://assets/env/meshes/mm_brass.res" id="135_q8dsf"]
+[ext_resource type="Environment" path="res://assets/env/range_environment.tres" id="136_3p2qy"]
+[ext_resource type="VoxelGIData" path="res://assets/env/voxelgi_bay.res" id="137_anvad"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ux6hi"]
+size = Vector3(8.7, 0.15, 5.75)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_gdi4l"]
+size = Vector3(0.19, 2.2, 5.69)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_acrq6"]
+size = Vector3(0.19, 0.045, 5.69)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_a2evr"]
+size = Vector3(0.07, 0.55784065, 0.045)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_o7faw"]
+size = Vector3(0.07, 0.44874975, 0.045)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_lxoas"]
+size = Vector3(0.07, 0.33056796, 0.045)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_aqyhf"]
+size = Vector3(0.07, 0.21238613, 0.045)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_7kq87"]
+size = Vector3(0.07, 0.11238612, 0.045)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_gp48c"]
+size = Vector3(0.19, 0.39502248, 0.09)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_qq6k5"]
+size = Vector3(4.0425, 0.19, 0.045)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_x2ds6"]
+size = Vector3(4.4045, 0.19, 0.045)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_2aqbq"]
+size = Vector3(5.6425, 0.19, 0.045)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_yv4cm"]
+size = Vector3(2.8045, 0.19, 0.045)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_qsncc"]
+size = Vector3(0.045, 0.17, 6.5669694)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_k05vj"]
+size = Vector3(0.045, 0.17, 6.5669694)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_scv6h"]
+size = Vector3(0.045, 0.17, 6.5669694)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_y621n"]
+size = Vector3(0.045, 0.17, 6.5669694)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_rwap2"]
+size = Vector3(0.045, 0.17, 6.5669694)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_3s0m2"]
+size = Vector3(0.045, 0.17, 6.5669694)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_kv2kt"]
+size = Vector3(0.045, 0.17, 6.5669694)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_qweaw"]
+size = Vector3(4.172, 0.045, 0.07)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_lo3pc"]
+size = Vector3(4.664, 0.045, 0.07)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_lqcjm"]
+size = Vector3(5.772, 0.045, 0.07)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_5ovwi"]
+size = Vector3(3.064, 0.045, 0.07)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_fnu0b"]
+size = Vector3(2.572, 0.045, 0.07)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_nuxb5"]
+size = Vector3(6.264, 0.045, 0.07)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_v7le3"]
+size = Vector3(4.172, 0.045, 0.07)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_4pbah"]
+size = Vector3(4.664, 0.045, 0.07)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_26h7b"]
+size = Vector3(5.772, 0.045, 0.07)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_bkonb"]
+size = Vector3(3.064, 0.045, 0.07)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_j76dq"]
+size = Vector3(2.572, 0.045, 0.07)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_k6t8n"]
+size = Vector3(6.264, 0.045, 0.07)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_eqohm"]
+size = Vector3(4.172, 0.045, 0.07)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_uutiq"]
+size = Vector3(4.664, 0.045, 0.07)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_d74h2"]
+size = Vector3(5.772, 0.045, 0.07)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_xoi8b"]
+size = Vector3(3.064, 0.045, 0.07)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_aiinp"]
+size = Vector3(2.572, 0.045, 0.07)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_y0bcv"]
+size = Vector3(6.264, 0.045, 0.07)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_5cosf"]
+size = Vector3(0.09, 2.6340225, 0.09)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_pnxqt"]
+size = Vector3(0.09, 2.6340225, 0.09)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ybpll"]
+size = Vector3(0.09, 2.6340225, 0.09)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_t4tx4"]
+size = Vector3(0.12, 2.6340225, 0.12)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_lv0cs"]
+size = Vector3(0.12, 2.569568, 0.12)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_1lgfu"]
+size = Vector3(0.12, 2.329568, 0.12)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_xj0r5"]
+size = Vector3(0.045, 0.62, 0.07)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_benae"]
+size = Vector3(0.045, 0.62, 0.07)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_0l4nl"]
+size = Vector3(0.045, 0.62, 0.07)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_0gpnq"]
+size = Vector3(8.96, 0.0215, 6.928454)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_wsuka"]
+size = Vector3(8.26, 2.3290224, 0.101)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_a0b75"]
+points = PackedVector3Array(-6.301, 2.245, -0.9, -6.301, 2.245, 4.79, -6.301, 2.3188407, 4.79, -6.301, 2.8361135, -0.9, -6.289, 2.245, -0.9, -6.289, 2.245, 4.79, -6.289, 2.3188407, 4.79, -6.289, 2.8361135, -0.9)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_fv5vw"]
+size = Vector3(8.26, 2.43, 0.0215)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_7v6eh"]
+size = Vector3(0.018, 1.15, 1.4)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_28url"]
+size = Vector3(0.018, 1.15, 1.4)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_y822r"]
+size = Vector3(0.018, 1.15, 1.4)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_fkhfy"]
+size = Vector3(0.045, 2.7039316, 0.09)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ieug0"]
+size = Vector3(0.045, 0.07, 1.218)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_rcdup"]
+size = Vector3(0.045, 0.07, 1.218)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_dx0v4"]
+size = Vector3(0.045, 2.7039316, 0.09)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_k3hn5"]
+size = Vector3(0.045, 0.07, 1.218)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_v3fxi"]
+size = Vector3(0.045, 0.07, 1.218)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_tfj1t"]
+size = Vector3(0.045, 2.7039316, 0.09)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_a63el"]
+size = Vector3(0.045, 0.07, 1.218)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_afxhp"]
+size = Vector3(0.045, 0.07, 1.218)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_8f6jg"]
+size = Vector3(2.06094, 0.038, 0.147)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_5xiql"]
+size = Vector3(2.0622802, 0.038, 0.147)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_1de48"]
+size = Vector3(2.0606909, 0.038, 0.147)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_s40jl"]
+size = Vector3(2.0616, 0.038, 0.147)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_6v7ku"]
+size = Vector3(0.089, 0.879, 0.089)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_e2h8m"]
+size = Vector3(0.089, 0.879, 0.089)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_r0ni2"]
+size = Vector3(0.038, 0.089, 0.362)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_qbsuy"]
+size = Vector3(0.038, 0.089, 0.362)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_yj1lo"]
+size = Vector3(0.089, 0.879, 0.089)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_dldgi"]
+size = Vector3(0.089, 0.879, 0.089)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_wauuv"]
+size = Vector3(0.038, 0.089, 0.362)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_tcae3"]
+size = Vector3(0.038, 0.089, 0.362)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_a5udw"]
+size = Vector3(1.822, 0.089, 0.038)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_uyrvq"]
+size = Vector3(1.822, 0.089, 0.038)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_u05fq"]
+size = Vector3(1.822, 0.089, 0.038)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_k6nhk"]
+size = Vector3(1.4379097, 0.038, 0.147)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_30u07"]
+size = Vector3(1.4388294, 0.038, 0.147)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_3jiey"]
+size = Vector3(1.4377655, 0.038, 0.147)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ouwoh"]
+size = Vector3(1.4425437, 0.038, 0.147)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_lntc0"]
+size = Vector3(0.089, 0.879, 0.089)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ax5ib"]
+size = Vector3(0.089, 0.879, 0.089)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_b3d4d"]
+size = Vector3(0.038, 0.089, 0.362)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_d5fcv"]
+size = Vector3(0.038, 0.089, 0.362)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_a0w2u"]
+size = Vector3(0.089, 0.879, 0.089)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_vnoo5"]
+size = Vector3(0.089, 0.879, 0.089)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_8quth"]
+size = Vector3(0.038, 0.089, 0.362)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_r0pew"]
+size = Vector3(0.038, 0.089, 0.362)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_pns0p"]
+size = Vector3(1.202, 0.089, 0.038)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_50veu"]
+size = Vector3(1.202, 0.089, 0.038)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_i57gx"]
+size = Vector3(1.202, 0.089, 0.038)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_vs1br"]
+size = Vector3(1.438645, 0.038, 0.147)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_xa16r"]
+size = Vector3(1.4343569, 0.038, 0.147)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_5j634"]
+size = Vector3(1.4407214, 0.038, 0.147)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_uierv"]
+size = Vector3(1.4434038, 0.038, 0.147)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_u7coy"]
+size = Vector3(0.089, 0.879, 0.089)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_0j603"]
+size = Vector3(0.089, 0.879, 0.089)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_cbkgg"]
+size = Vector3(0.038, 0.089, 0.362)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_gwrmd"]
+size = Vector3(0.038, 0.089, 0.362)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_s6ngv"]
+size = Vector3(0.089, 0.879, 0.089)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_tfwij"]
+size = Vector3(0.089, 0.879, 0.089)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_0jcds"]
+size = Vector3(0.038, 0.089, 0.362)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_37h1f"]
+size = Vector3(0.038, 0.089, 0.362)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_6qjek"]
+size = Vector3(1.202, 0.089, 0.038)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_jftbq"]
+size = Vector3(1.202, 0.089, 0.038)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_vvb2i"]
+size = Vector3(1.202, 0.089, 0.038)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_mdrg7"]
+size = Vector3(1.4451283, 0.038, 0.147)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_p2b71"]
+size = Vector3(1.4426814, 0.038, 0.147)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_urp2s"]
+size = Vector3(1.4402162, 0.038, 0.147)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_sc8hf"]
+size = Vector3(1.4362382, 0.038, 0.147)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_hpcvx"]
+size = Vector3(0.089, 0.879, 0.089)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_6pfwn"]
+size = Vector3(0.089, 0.879, 0.089)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_wuk53"]
+size = Vector3(0.038, 0.089, 0.362)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_lyf0s"]
+size = Vector3(0.038, 0.089, 0.362)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_kb1wu"]
+size = Vector3(0.089, 0.879, 0.089)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_663ha"]
+size = Vector3(0.089, 0.879, 0.089)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_kapem"]
+size = Vector3(0.038, 0.089, 0.362)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ydym3"]
+size = Vector3(0.038, 0.089, 0.362)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_g53yw"]
+size = Vector3(1.202, 0.089, 0.038)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_c2pcd"]
+size = Vector3(1.202, 0.089, 0.038)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_0ppqw"]
+size = Vector3(1.202, 0.089, 0.038)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_uit55"]
+size = Vector3(0.74, 0.008, 0.5)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_0w247"]
+size = Vector3(0.9, 0.006, 0.46)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_qcr5v"]
+size = Vector3(0.9, 0.006, 0.46)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_6bqy2"]
+size = Vector3(0.7, 0.008, 0.48)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_dvgdm"]
+size = Vector3(2.801895, 0.038, 0.147)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_dn7dr"]
+size = Vector3(2.802761, 0.038, 0.147)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_qfmu1"]
+size = Vector3(2.8010108, 0.038, 0.147)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_xpaew"]
+size = Vector3(2.79997, 0.038, 0.147)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_xb0kw"]
+size = Vector3(0.089, 0.879, 0.089)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_5iy88"]
+size = Vector3(0.089, 0.879, 0.089)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_f450j"]
+size = Vector3(0.038, 0.089, 0.362)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_8etov"]
+size = Vector3(0.038, 0.089, 0.362)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_kvyqn"]
+size = Vector3(0.089, 0.879, 0.089)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_n7fob"]
+size = Vector3(0.089, 0.879, 0.089)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_2vncy"]
+size = Vector3(0.038, 0.089, 0.362)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_0llv8"]
+size = Vector3(0.038, 0.089, 0.362)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_o6l4a"]
+size = Vector3(0.089, 0.879, 0.089)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_xrdad"]
+size = Vector3(0.089, 0.879, 0.089)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_t5dup"]
+size = Vector3(0.038, 0.089, 0.362)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_y0a3q"]
+size = Vector3(0.038, 0.089, 0.362)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_r4mda"]
+size = Vector3(1.2365, 0.089, 0.038)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_27ewq"]
+size = Vector3(1.2365, 0.089, 0.038)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_gdvxm"]
+size = Vector3(1.2365, 0.089, 0.038)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_vxkmi"]
+size = Vector3(1.2365, 0.089, 0.038)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_n6ibn"]
+size = Vector3(1.2365, 0.089, 0.038)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_forkt"]
+size = Vector3(1.2365, 0.089, 0.038)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ek1wb"]
+size = Vector3(0.3, 0.38, 0.115)
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_vyv58"]
+height = 0.27
+radius = 0.148
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_p1jg1"]
+height = 0.27
+radius = 0.148
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_7vfar"]
+size = Vector3(18, 1.8, 0.09)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_jab6s"]
+size = Vector3(4.1, 1.5, 0.05)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_e02bm"]
+size = Vector3(0.09, 2.9, 0.09)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_4yxj1"]
+size = Vector3(0.09, 2.9, 0.09)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_0v41j"]
+size = Vector3(0.09, 2.9, 0.09)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_rmisn"]
+size = Vector3(0.09, 2.9, 0.09)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_1wqqp"]
+size = Vector3(0.09, 2.9, 0.09)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_pjmau"]
+size = Vector3(0.3864, 0.1075, 0.216)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_wc8gs"]
+size = Vector3(0.4048, 0.1118, 0.225)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_rhxw5"]
+size = Vector3(0.4232, 0.1118, 0.225)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_0hsvg"]
+size = Vector3(0.3864, 0.0989, 0.216)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_h1clx"]
+size = Vector3(0.46, 0.1118, 0.243)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_fas2l"]
+size = Vector3(0.46, 0.1118, 0.243)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_nwihk"]
+size = Vector3(0.46, 0.1118, 0.243)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_cfpiw"]
+size = Vector3(0.46, 0.1118, 0.243)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_td8pr"]
+size = Vector3(0.09, 1.65, 0.09)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_igcvx"]
+size = Vector3(0.09, 1.65, 0.09)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_5sema"]
+size = Vector3(2.1, 0.09, 0.04)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_3jo5f"]
+size = Vector3(2.1, 0.09, 0.04)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_g8ec2"]
+size = Vector3(1.9, 1.7, 0.5)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_jmfoc"]
+size = Vector3(0.63394344, 0.9304736, 0.63859946)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ead6t"]
+size = Vector3(0.5630351, 0.88, 0.5630352)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_l2j4a"]
+size = Vector3(1.8469353, 0.9061697, 0.5562898)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_bektd"]
+size = Vector3(0.64186114, 0.8798412, 0.6275919)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_kt37p"]
+size = Vector3(2.2409759, 0.74598694, 3.0223296)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_1v3m2"]
+size = Vector3(0.82527286, 0.3496183, 0.4089537)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_bus45"]
+size = Vector3(0.8252729, 0.3496183, 0.40895373)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_4ol4y"]
+size = Vector3(0.5055014, 0.25408918, 0.4055014)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ncosr"]
+size = Vector3(0.08656344, 0.17747706, 0.25787836)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_obkdj"]
+size = Vector3(0.08656343, 0.17747706, 0.25787833)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_acmv0"]
+size = Vector3(0.08656344, 0.17747706, 0.25787836)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_q5f7x"]
+size = Vector3(0.4624738, 0.17990987, 0.6995841)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_avjon"]
+size = Vector3(0.46247378, 0.17990987, 0.69958407)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_f0mhv"]
+size = Vector3(0.35032988, 0.45515996, 0.1717439)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_xm0ow"]
+size = Vector3(0.6, 0.6, 0.16499999)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_bsusa"]
+size = Vector3(0.59999996, 0.59999996, 0.16499999)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_vccbv"]
+size = Vector3(0.6, 0.59999996, 0.16499999)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_3adi3"]
+size = Vector3(1.5654093, 1.1119529, 0.44214195)
+
+[node name="RangeEnv" type="Node3D" unique_id=1715191328]
+script = ExtResource("1_bfc2a")
+
+[node name="Architecture" type="Node3D" parent="." unique_id=1842611631]
+
+[node name="bay_slab" type="MeshInstance3D" parent="Architecture" unique_id=2010971373 groups=["acoustic_geometry"]]
+mesh = ExtResource("2_klaxd")
+metadata/acoustic_material = "concrete"
+
+[node name="bay_blockwall" type="MeshInstance3D" parent="Architecture" unique_id=528467532 groups=["acoustic_geometry"]]
+mesh = ExtResource("3_vmavt")
+metadata/acoustic_material = "concrete"
+
+[node name="bay_frame" type="MeshInstance3D" parent="Architecture" unique_id=139792134 groups=["acoustic_geometry"]]
+mesh = ExtResource("4_5laab")
+metadata/acoustic_material = "wood"
+
+[node name="bay_roof" type="MeshInstance3D" parent="Architecture" unique_id=349031919 groups=["acoustic_geometry"]]
+mesh = ExtResource("5_7ouhk")
+metadata/acoustic_material = "metal"
+
+[node name="bay_backwall" type="MeshInstance3D" parent="Architecture" unique_id=286478435 groups=["acoustic_geometry"]]
+mesh = ExtResource("6_jfaop")
+metadata/acoustic_material = "wood"
+
+[node name="bay_siding" type="MeshInstance3D" parent="Architecture" unique_id=363000315 groups=["acoustic_geometry"]]
+mesh = ExtResource("7_4ppxm")
+metadata/acoustic_material = "metal"
+
+[node name="bay_dividers" type="MeshInstance3D" parent="Architecture" unique_id=386866810 groups=["acoustic_geometry"]]
+mesh = ExtResource("8_klvli")
+metadata/acoustic_material = "wood"
+
+[node name="bay_benches" type="MeshInstance3D" parent="Architecture" unique_id=591013359 groups=["acoustic_geometry"]]
+mesh = ExtResource("9_lqasx")
+metadata/acoustic_material = "wood"
+
+[node name="bay_mats" type="MeshInstance3D" parent="Architecture" unique_id=1163038989]
+mesh = ExtResource("10_5efb6")
+
+[node name="pad_table" type="MeshInstance3D" parent="Architecture" unique_id=702780542 groups=["acoustic_geometry"]]
+mesh = ExtResource("11_duv4a")
+metadata/acoustic_material = "wood"
+
+[node name="pad_edging" type="MeshInstance3D" parent="Architecture" unique_id=2029388652]
+gi_mode = 0
+mesh = ExtResource("12_udaoe")
+
+[node name="bay_signs" type="MeshInstance3D" parent="Architecture" unique_id=918631406]
+gi_mode = 0
+mesh = ExtResource("13_kjygm")
+
+[node name="bay_props" type="MeshInstance3D" parent="Architecture" unique_id=1180434497]
+gi_mode = 0
+mesh = ExtResource("14_hjg74")
+
+[node name="site_fence" type="MeshInstance3D" parent="Architecture" unique_id=1319244764 groups=["acoustic_geometry"]]
+mesh = ExtResource("15_wrxjw")
+metadata/acoustic_material = "wood"
+
+[node name="site_gate" type="MeshInstance3D" parent="Architecture" unique_id=481255515]
+gi_mode = 0
+mesh = ExtResource("16_68nrb")
+
+[node name="site_markers" type="MeshInstance3D" parent="Architecture" unique_id=593579550]
+gi_mode = 0
+mesh = ExtResource("17_r51ud")
+
+[node name="clutter" type="MeshInstance3D" parent="Architecture" unique_id=686785570]
+gi_mode = 0
+mesh = ExtResource("18_hx2vd")
+
+[node name="site_storage" type="MeshInstance3D" parent="Architecture" unique_id=885209731 groups=["acoustic_geometry"]]
+gi_mode = 0
+mesh = ExtResource("19_k83b7")
+metadata/acoustic_material = "wood"
+
+[node name="Collision" type="Node3D" parent="." unique_id=465166025]
+
+[node name="Col_bay_slab_concrete" type="StaticBody3D" parent="Collision" unique_id=2122085834]
+collision_mask = 0
+metadata/surface = "concrete"
+
+[node name="Shape0" type="CollisionShape3D" parent="Collision/Col_bay_slab_concrete" unique_id=1015145713]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.1, -0.075, 1.975)
+shape = SubResource("BoxShape3D_ux6hi")
+
+[node name="Col_bay_blockwall_block" type="StaticBody3D" parent="Collision" unique_id=798157327]
+collision_mask = 0
+metadata/surface = "block"
+
+[node name="Shape0" type="CollisionShape3D" parent="Collision/Col_bay_blockwall_block" unique_id=855941899]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.295, 1.1, 1.945)
+shape = SubResource("BoxShape3D_gdi4l")
+
+[node name="Col_bay_frame_wood" type="StaticBody3D" parent="Collision" unique_id=262806327]
+collision_mask = 0
+metadata/surface = "wood"
+
+[node name="Shape0" type="CollisionShape3D" parent="Collision/Col_bay_frame_wood" unique_id=1095889931]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.295, 2.2225, 1.945)
+shape = SubResource("BoxShape3D_acrq6")
+
+[node name="Shape1" type="CollisionShape3D" parent="Collision/Col_bay_frame_wood" unique_id=327005154]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.253, 2.5239203, -0.6)
+shape = SubResource("BoxShape3D_a2evr")
+
+[node name="Shape2" type="CollisionShape3D" parent="Collision/Col_bay_frame_wood" unique_id=1407265427]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.253, 2.469375, 0.6)
+shape = SubResource("BoxShape3D_o7faw")
+
+[node name="Shape3" type="CollisionShape3D" parent="Collision/Col_bay_frame_wood" unique_id=722496157]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.253, 2.410284, 1.9)
+shape = SubResource("BoxShape3D_lxoas")
+
+[node name="Shape4" type="CollisionShape3D" parent="Collision/Col_bay_frame_wood" unique_id=912710103]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.253, 2.351193, 3.2)
+shape = SubResource("BoxShape3D_aqyhf")
+
+[node name="Shape5" type="CollisionShape3D" parent="Collision/Col_bay_frame_wood" unique_id=624295862]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.253, 2.301193, 4.3)
+shape = SubResource("BoxShape3D_7kq87")
+
+[node name="Shape6" type="CollisionShape3D" parent="Collision/Col_bay_frame_wood" unique_id=1663454128]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.295, 2.4425113, -0.855)
+shape = SubResource("BoxShape3D_gp48c")
+
+[node name="Shape7" type="CollisionShape3D" parent="Collision/Col_bay_frame_wood" unique_id=728165134]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.36875, 2.7350225, -0.8775)
+shape = SubResource("BoxShape3D_qq6k5")
+
+[node name="Shape8" type="CollisionShape3D" parent="Collision/Col_bay_frame_wood" unique_id=515247623]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.14225, 2.7350225, -0.8775)
+shape = SubResource("BoxShape3D_x2ds6")
+
+[node name="Shape9" type="CollisionShape3D" parent="Collision/Col_bay_frame_wood" unique_id=798700510]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.56875, 2.7350225, -0.8325)
+shape = SubResource("BoxShape3D_2aqbq")
+
+[node name="Shape10" type="CollisionShape3D" parent="Collision/Col_bay_frame_wood" unique_id=1811249030]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.65775, 2.7350225, -0.8325)
+shape = SubResource("BoxShape3D_yv4cm")
+
+[node name="Shape11" type="CollisionShape3D" parent="Collision/Col_bay_frame_wood" unique_id=251187923]
+transform = Transform3D(1, 0, 0, 0, 0.9958932, -0.090535745, 0, 0.090535745, 0.9958932, -6.295, 2.6996248, 1.5182303)
+shape = SubResource("BoxShape3D_qsncc")
+
+[node name="Shape12" type="CollisionShape3D" parent="Collision/Col_bay_frame_wood" unique_id=1594058095]
+transform = Transform3D(1, 0, 0, 0, 0.9958932, -0.090535745, 0, 0.090535745, 0.9958932, -3.946, 2.6996248, 1.5182303)
+shape = SubResource("BoxShape3D_k05vj")
+
+[node name="Shape13" type="CollisionShape3D" parent="Collision/Col_bay_frame_wood" unique_id=1697636352]
+transform = Transform3D(1, 0, 0, 0, 0.9958932, -0.090535745, 0, 0.090535745, 0.9958932, -2.346, 2.6996248, 1.5182303)
+shape = SubResource("BoxShape3D_scv6h")
+
+[node name="Shape14" type="CollisionShape3D" parent="Collision/Col_bay_frame_wood" unique_id=43592237]
+transform = Transform3D(1, 0, 0, 0, 0.9958932, -0.090535745, 0, 0.090535745, 0.9958932, -0.746, 2.6996248, 1.5182303)
+shape = SubResource("BoxShape3D_y621n")
+
+[node name="Shape15" type="CollisionShape3D" parent="Collision/Col_bay_frame_wood" unique_id=1163982765]
+transform = Transform3D(1, 0, 0, 0, 0.9958932, -0.090535745, 0, 0.090535745, 0.9958932, 0.62, 2.6996248, 1.5182303)
+shape = SubResource("BoxShape3D_rwap2")
+
+[node name="Shape16" type="CollisionShape3D" parent="Collision/Col_bay_frame_wood" unique_id=116897293]
+transform = Transform3D(1, 0, 0, 0, 0.9958932, -0.090535745, 0, 0.090535745, 0.9958932, 1.9765, 2.6996248, 1.5182303)
+shape = SubResource("BoxShape3D_3s0m2")
+
+[node name="Shape17" type="CollisionShape3D" parent="Collision/Col_bay_frame_wood" unique_id=257332210]
+transform = Transform3D(1, 0, 0, 0, 0.9958932, -0.090535745, 0, 0.090535745, 0.9958932, 2.0235, 2.6996248, 1.5182303)
+shape = SubResource("BoxShape3D_kv2kt")
+
+[node name="Shape18" type="CollisionShape3D" parent="Collision/Col_bay_frame_wood" unique_id=957755442]
+transform = Transform3D(1, 0, 0, 0, 0.9958932, -0.090535745, 0, 0.090535745, 0.9958932, -4.434, 2.493956, 4.9679627)
+shape = SubResource("BoxShape3D_qweaw")
+
+[node name="Shape19" type="CollisionShape3D" parent="Collision/Col_bay_frame_wood" unique_id=638258839]
+transform = Transform3D(1, 0, 0, 0, 0.9958932, -0.090535745, 0, 0.090535745, 0.9958932, -0.012, 2.493956, 4.9679627)
+shape = SubResource("BoxShape3D_lo3pc")
+
+[node name="Shape20" type="CollisionShape3D" parent="Collision/Col_bay_frame_wood" unique_id=1830287572]
+transform = Transform3D(1, 0, 0, 0, 0.9958932, -0.090535745, 0, 0.090535745, 0.9958932, -3.634, 2.5685015, 4.147963)
+shape = SubResource("BoxShape3D_lqcjm")
+
+[node name="Shape21" type="CollisionShape3D" parent="Collision/Col_bay_frame_wood" unique_id=1115077569]
+transform = Transform3D(1, 0, 0, 0, 0.9958932, -0.090535745, 0, 0.090535745, 0.9958932, 0.788, 2.5685015, 4.147963)
+shape = SubResource("BoxShape3D_5ovwi")
+
+[node name="Shape22" type="CollisionShape3D" parent="Collision/Col_bay_frame_wood" unique_id=1010542046]
+transform = Transform3D(1, 0, 0, 0, 0.9958932, -0.090535745, 0, 0.090535745, 0.9958932, -5.234, 2.6457741, 3.297963)
+shape = SubResource("BoxShape3D_fnu0b")
+
+[node name="Shape23" type="CollisionShape3D" parent="Collision/Col_bay_frame_wood" unique_id=2096949473]
+transform = Transform3D(1, 0, 0, 0, 0.9958932, -0.090535745, 0, 0.090535745, 0.9958932, -0.812, 2.6457741, 3.297963)
+shape = SubResource("BoxShape3D_nuxb5")
+
+[node name="Shape24" type="CollisionShape3D" parent="Collision/Col_bay_frame_wood" unique_id=1452586483]
+transform = Transform3D(1, 0, 0, 0, 0.9958932, -0.090535745, 0, 0.090535745, 0.9958932, -4.434, 2.723047, 2.447963)
+shape = SubResource("BoxShape3D_v7le3")
+
+[node name="Shape25" type="CollisionShape3D" parent="Collision/Col_bay_frame_wood" unique_id=786766365]
+transform = Transform3D(1, 0, 0, 0, 0.9958932, -0.090535745, 0, 0.090535745, 0.9958932, -0.012, 2.723047, 2.447963)
+shape = SubResource("BoxShape3D_4pbah")
+
+[node name="Shape26" type="CollisionShape3D" parent="Collision/Col_bay_frame_wood" unique_id=1411583219]
+transform = Transform3D(1, 0, 0, 0, 0.9958932, -0.090535745, 0, 0.090535745, 0.9958932, -3.634, 2.8003197, 1.597963)
+shape = SubResource("BoxShape3D_26h7b")
+
+[node name="Shape27" type="CollisionShape3D" parent="Collision/Col_bay_frame_wood" unique_id=1534759934]
+transform = Transform3D(1, 0, 0, 0, 0.9958932, -0.090535745, 0, 0.090535745, 0.9958932, 0.788, 2.8003197, 1.597963)
+shape = SubResource("BoxShape3D_bkonb")
+
+[node name="Shape28" type="CollisionShape3D" parent="Collision/Col_bay_frame_wood" unique_id=1277493002]
+transform = Transform3D(1, 0, 0, 0, 0.9958932, -0.090535745, 0, 0.090535745, 0.9958932, -5.234, 2.8775923, 0.74796295)
+shape = SubResource("BoxShape3D_j76dq")
+
+[node name="Shape29" type="CollisionShape3D" parent="Collision/Col_bay_frame_wood" unique_id=946545191]
+transform = Transform3D(1, 0, 0, 0, 0.9958932, -0.090535745, 0, 0.090535745, 0.9958932, -0.812, 2.8775923, 0.74796295)
+shape = SubResource("BoxShape3D_k6t8n")
+
+[node name="Shape30" type="CollisionShape3D" parent="Collision/Col_bay_frame_wood" unique_id=750733248]
+transform = Transform3D(1, 0, 0, 0, 0.9958932, -0.090535745, 0, 0.090535745, 0.9958932, -4.434, 2.9548652, -0.10203706)
+shape = SubResource("BoxShape3D_eqohm")
+
+[node name="Shape31" type="CollisionShape3D" parent="Collision/Col_bay_frame_wood" unique_id=695736037]
+transform = Transform3D(1, 0, 0, 0, 0.9958932, -0.090535745, 0, 0.090535745, 0.9958932, -0.012, 2.9548652, -0.10203706)
+shape = SubResource("BoxShape3D_uutiq")
+
+[node name="Shape32" type="CollisionShape3D" parent="Collision/Col_bay_frame_wood" unique_id=852298489]
+transform = Transform3D(1, 0, 0, 0, 0.9958932, -0.090535745, 0, 0.090535745, 0.9958932, -3.634, 3.0321379, -0.95203704)
+shape = SubResource("BoxShape3D_d74h2")
+
+[node name="Shape33" type="CollisionShape3D" parent="Collision/Col_bay_frame_wood" unique_id=709937166]
+transform = Transform3D(1, 0, 0, 0, 0.9958932, -0.090535745, 0, 0.090535745, 0.9958932, 0.788, 3.0321379, -0.95203704)
+shape = SubResource("BoxShape3D_xoi8b")
+
+[node name="Shape34" type="CollisionShape3D" parent="Collision/Col_bay_frame_wood" unique_id=228526568]
+transform = Transform3D(1, 0, 0, 0, 0.9958932, -0.090535745, 0, 0.090535745, 0.9958932, -5.234, 3.1021378, -1.7220371)
+shape = SubResource("BoxShape3D_aiinp")
+
+[node name="Shape35" type="CollisionShape3D" parent="Collision/Col_bay_frame_wood" unique_id=702477097]
+transform = Transform3D(1, 0, 0, 0, 0.9958932, -0.090535745, 0, 0.090535745, 0.9958932, -0.812, 3.1021378, -1.7220371)
+shape = SubResource("BoxShape3D_y0bcv")
+
+[node name="Shape36" type="CollisionShape3D" parent="Collision/Col_bay_frame_wood" unique_id=832174284]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.946, 1.3230113, -0.855)
+shape = SubResource("BoxShape3D_5cosf")
+
+[node name="Shape37" type="CollisionShape3D" parent="Collision/Col_bay_frame_wood" unique_id=788906773]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.346, 1.3230113, -0.855)
+shape = SubResource("BoxShape3D_pnxqt")
+
+[node name="Shape38" type="CollisionShape3D" parent="Collision/Col_bay_frame_wood" unique_id=447667468]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.746, 1.3230113, -0.855)
+shape = SubResource("BoxShape3D_ybpll")
+
+[node name="Shape39" type="CollisionShape3D" parent="Collision/Col_bay_frame_wood" unique_id=697835679]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 1.3230113, -0.84)
+shape = SubResource("BoxShape3D_t4tx4")
+
+[node name="Shape40" type="CollisionShape3D" parent="Collision/Col_bay_frame_wood" unique_id=1547902582]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 1.290784, 1.9)
+shape = SubResource("BoxShape3D_lv0cs")
+
+[node name="Shape41" type="CollisionShape3D" parent="Collision/Col_bay_frame_wood" unique_id=956547756]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 1.170784, 4.54)
+shape = SubResource("BoxShape3D_1lgfu")
+
+[node name="Shape42" type="CollisionShape3D" parent="Collision/Col_bay_frame_wood" unique_id=250891326]
+transform = Transform3D(1, 0, 0, 0, 0.70710677, -0.70710677, 0, 0.70710677, 0.70710677, 2, 2.3657207, 1.620768)
+shape = SubResource("BoxShape3D_xj0r5")
+
+[node name="Shape43" type="CollisionShape3D" parent="Collision/Col_bay_frame_wood" unique_id=1604905691]
+transform = Transform3D(1, 0, 0, 0, 0.70710677, 0.70710677, 0, -0.70710677, 0.70710677, 2, 2.3149512, 2.179232)
+shape = SubResource("BoxShape3D_benae")
+
+[node name="Shape44" type="CollisionShape3D" parent="Collision/Col_bay_frame_wood" unique_id=1678603939]
+transform = Transform3D(1, 0, 0, 0, 0.70710677, -0.70710677, 0, 0.70710677, 0.70710677, 2, 2.1257207, 4.260768)
+shape = SubResource("BoxShape3D_0l4nl")
+
+[node name="Col_bay_roof_sheet_metal" type="StaticBody3D" parent="Collision" unique_id=453638885]
+collision_mask = 0
+metadata/surface = "sheet_metal"
+
+[node name="Shape0" type="CollisionShape3D" parent="Collision/Col_bay_roof_sheet_metal" unique_id=694301260]
+transform = Transform3D(1, 0, 0, 0, 0.9958932, -0.090535745, 0, 0.090535745, 0.9958932, -2.08, 2.826896, 1.6507922)
+shape = SubResource("BoxShape3D_0gpnq")
+
+[node name="Col_bay_backwall_plywood" type="StaticBody3D" parent="Collision" unique_id=1036992514]
+collision_mask = 0
+metadata/surface = "plywood"
+
+[node name="Shape0" type="CollisionShape3D" parent="Collision/Col_bay_backwall_plywood" unique_id=1026245899]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.07, 1.1645112, 4.6505)
+shape = SubResource("BoxShape3D_wsuka")
+
+[node name="Shape1" type="CollisionShape3D" parent="Collision/Col_bay_backwall_plywood" unique_id=1533542316]
+shape = SubResource("ConvexPolygonShape3D_a0b75")
+
+[node name="Col_bay_siding_sheet_metal" type="StaticBody3D" parent="Collision" unique_id=1626999246]
+collision_mask = 0
+metadata/surface = "sheet_metal"
+
+[node name="Shape0" type="CollisionShape3D" parent="Collision/Col_bay_siding_sheet_metal" unique_id=808480084]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.07, 1.255, 4.71075)
+shape = SubResource("BoxShape3D_fv5vw")
+
+[node name="Col_bay_dividers_plywood" type="StaticBody3D" parent="Collision" unique_id=878841342]
+collision_mask = 0
+metadata/surface = "plywood"
+
+[node name="Shape0" type="CollisionShape3D" parent="Collision/Col_bay_dividers_plywood" unique_id=1053702466]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 1.525, -0.2)
+shape = SubResource("BoxShape3D_7v6eh")
+
+[node name="Shape1" type="CollisionShape3D" parent="Collision/Col_bay_dividers_plywood" unique_id=810215562]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.4, 1.525, -0.2)
+shape = SubResource("BoxShape3D_28url")
+
+[node name="Shape2" type="CollisionShape3D" parent="Collision/Col_bay_dividers_plywood" unique_id=797460216]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.8, 1.525, -0.2)
+shape = SubResource("BoxShape3D_y822r")
+
+[node name="Col_bay_dividers_wood" type="StaticBody3D" parent="Collision" unique_id=254555222]
+collision_mask = 0
+metadata/surface = "wood"
+
+[node name="Shape0" type="CollisionShape3D" parent="Collision/Col_bay_dividers_wood" unique_id=1160124759]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.9685, 1.3559657, 0.455)
+shape = SubResource("BoxShape3D_fkhfy")
+
+[node name="Shape1" type="CollisionShape3D" parent="Collision/Col_bay_dividers_wood" unique_id=1895148176]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.9685, 2.065, -0.2)
+shape = SubResource("BoxShape3D_ieug0")
+
+[node name="Shape2" type="CollisionShape3D" parent="Collision/Col_bay_dividers_wood" unique_id=1852584290]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.9685, 0.99, -0.2)
+shape = SubResource("BoxShape3D_rcdup")
+
+[node name="Shape3" type="CollisionShape3D" parent="Collision/Col_bay_dividers_wood" unique_id=1808306112]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.3685, 1.3559657, 0.455)
+shape = SubResource("BoxShape3D_dx0v4")
+
+[node name="Shape4" type="CollisionShape3D" parent="Collision/Col_bay_dividers_wood" unique_id=30472146]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.3685, 2.065, -0.2)
+shape = SubResource("BoxShape3D_k3hn5")
+
+[node name="Shape5" type="CollisionShape3D" parent="Collision/Col_bay_dividers_wood" unique_id=1270736123]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.3685, 0.99, -0.2)
+shape = SubResource("BoxShape3D_v3fxi")
+
+[node name="Shape6" type="CollisionShape3D" parent="Collision/Col_bay_dividers_wood" unique_id=898675500]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.7685, 1.3559657, 0.455)
+shape = SubResource("BoxShape3D_tfj1t")
+
+[node name="Shape7" type="CollisionShape3D" parent="Collision/Col_bay_dividers_wood" unique_id=142574822]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.7685, 2.065, -0.2)
+shape = SubResource("BoxShape3D_a63el")
+
+[node name="Shape8" type="CollisionShape3D" parent="Collision/Col_bay_dividers_wood" unique_id=278372146]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.7685, 0.99, -0.2)
+shape = SubResource("BoxShape3D_afxhp")
+
+[node name="Col_bay_benches_wood" type="StaticBody3D" parent="Collision" unique_id=2021963529]
+collision_mask = 0
+metadata/surface = "wood"
+
+[node name="Shape0" type="CollisionShape3D" parent="Collision/Col_bay_benches_wood" unique_id=1997068528]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.1114273, 0.901, -0.6765)
+shape = SubResource("BoxShape3D_8f6jg")
+
+[node name="Shape1" type="CollisionShape3D" parent="Collision/Col_bay_benches_wood" unique_id=294136257]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.111437, 0.901, -0.5255)
+shape = SubResource("BoxShape3D_5xiql")
+
+[node name="Shape2" type="CollisionShape3D" parent="Collision/Col_bay_benches_wood" unique_id=95990826]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.108863, 0.901, -0.3745)
+shape = SubResource("BoxShape3D_1de48")
+
+[node name="Shape3" type="CollisionShape3D" parent="Collision/Col_bay_benches_wood" unique_id=397445181]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.111155, 0.901, -0.2235)
+shape = SubResource("BoxShape3D_s40jl")
+
+[node name="Shape4" type="CollisionShape3D" parent="Collision/Col_bay_benches_wood" unique_id=845109118]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.0655, 0.4425, -0.6755)
+shape = SubResource("BoxShape3D_6v7ku")
+
+[node name="Shape5" type="CollisionShape3D" parent="Collision/Col_bay_benches_wood" unique_id=528878615]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.0655, 0.4425, -0.2245)
+shape = SubResource("BoxShape3D_e2h8m")
+
+[node name="Shape6" type="CollisionShape3D" parent="Collision/Col_bay_benches_wood" unique_id=1846157376]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.066, 0.8375, -0.45)
+shape = SubResource("BoxShape3D_r0ni2")
+
+[node name="Shape7" type="CollisionShape3D" parent="Collision/Col_bay_benches_wood" unique_id=40617659]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.066, 0.2445, -0.45)
+shape = SubResource("BoxShape3D_qbsuy")
+
+[node name="Shape8" type="CollisionShape3D" parent="Collision/Col_bay_benches_wood" unique_id=789996417]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.1545, 0.4425, -0.6755)
+shape = SubResource("BoxShape3D_yj1lo")
+
+[node name="Shape9" type="CollisionShape3D" parent="Collision/Col_bay_benches_wood" unique_id=1435702910]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.1545, 0.4425, -0.2245)
+shape = SubResource("BoxShape3D_dldgi")
+
+[node name="Shape10" type="CollisionShape3D" parent="Collision/Col_bay_benches_wood" unique_id=88353622]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.155, 0.8375, -0.45)
+shape = SubResource("BoxShape3D_wauuv")
+
+[node name="Shape11" type="CollisionShape3D" parent="Collision/Col_bay_benches_wood" unique_id=2036449928]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.155, 0.2445, -0.45)
+shape = SubResource("BoxShape3D_tcae3")
+
+[node name="Shape12" type="CollisionShape3D" parent="Collision/Col_bay_benches_wood" unique_id=535418081]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.11, 0.8375, -0.701)
+shape = SubResource("BoxShape3D_a5udw")
+
+[node name="Shape13" type="CollisionShape3D" parent="Collision/Col_bay_benches_wood" unique_id=1804214928]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.11, 0.8375, -0.199)
+shape = SubResource("BoxShape3D_uyrvq")
+
+[node name="Shape14" type="CollisionShape3D" parent="Collision/Col_bay_benches_wood" unique_id=2100563538]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.11, 0.2445, -0.199)
+shape = SubResource("BoxShape3D_u05fq")
+
+[node name="Shape15" type="CollisionShape3D" parent="Collision/Col_bay_benches_wood" unique_id=597583339]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.2020185, 0.901, -0.6765)
+shape = SubResource("BoxShape3D_k6nhk")
+
+[node name="Shape16" type="CollisionShape3D" parent="Collision/Col_bay_benches_wood" unique_id=429921668]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.201189, 0.901, -0.5255)
+shape = SubResource("BoxShape3D_30u07")
+
+[node name="Shape17" type="CollisionShape3D" parent="Collision/Col_bay_benches_wood" unique_id=879977792]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.2003279, 0.901, -0.3745)
+shape = SubResource("BoxShape3D_3jiey")
+
+[node name="Shape18" type="CollisionShape3D" parent="Collision/Col_bay_benches_wood" unique_id=981537312]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.2019875, 0.901, -0.2235)
+shape = SubResource("BoxShape3D_ouwoh")
+
+[node name="Shape19" type="CollisionShape3D" parent="Collision/Col_bay_benches_wood" unique_id=280247115]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.8455, 0.4425, -0.6755)
+shape = SubResource("BoxShape3D_lntc0")
+
+[node name="Shape20" type="CollisionShape3D" parent="Collision/Col_bay_benches_wood" unique_id=1147642499]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.8455, 0.4425, -0.2245)
+shape = SubResource("BoxShape3D_ax5ib")
+
+[node name="Shape21" type="CollisionShape3D" parent="Collision/Col_bay_benches_wood" unique_id=146797603]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.846, 0.8375, -0.45)
+shape = SubResource("BoxShape3D_b3d4d")
+
+[node name="Shape22" type="CollisionShape3D" parent="Collision/Col_bay_benches_wood" unique_id=984327202]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.846, 0.2445, -0.45)
+shape = SubResource("BoxShape3D_d5fcv")
+
+[node name="Shape23" type="CollisionShape3D" parent="Collision/Col_bay_benches_wood" unique_id=1060452747]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.5545, 0.4425, -0.6755)
+shape = SubResource("BoxShape3D_a0w2u")
+
+[node name="Shape24" type="CollisionShape3D" parent="Collision/Col_bay_benches_wood" unique_id=858960217]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.5545, 0.4425, -0.2245)
+shape = SubResource("BoxShape3D_vnoo5")
+
+[node name="Shape25" type="CollisionShape3D" parent="Collision/Col_bay_benches_wood" unique_id=903259658]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.555, 0.8375, -0.45)
+shape = SubResource("BoxShape3D_8quth")
+
+[node name="Shape26" type="CollisionShape3D" parent="Collision/Col_bay_benches_wood" unique_id=2011856545]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.555, 0.2445, -0.45)
+shape = SubResource("BoxShape3D_r0pew")
+
+[node name="Shape27" type="CollisionShape3D" parent="Collision/Col_bay_benches_wood" unique_id=39156385]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.2, 0.8375, -0.701)
+shape = SubResource("BoxShape3D_pns0p")
+
+[node name="Shape28" type="CollisionShape3D" parent="Collision/Col_bay_benches_wood" unique_id=2103622983]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.2, 0.8375, -0.199)
+shape = SubResource("BoxShape3D_50veu")
+
+[node name="Shape29" type="CollisionShape3D" parent="Collision/Col_bay_benches_wood" unique_id=195146016]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.2, 0.2445, -0.199)
+shape = SubResource("BoxShape3D_i57gx")
+
+[node name="Shape30" type="CollisionShape3D" parent="Collision/Col_bay_benches_wood" unique_id=1760712154]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.6003696, 0.901, -0.6765)
+shape = SubResource("BoxShape3D_vs1br")
+
+[node name="Shape31" type="CollisionShape3D" parent="Collision/Col_bay_benches_wood" unique_id=1464938123]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.6009504, 0.901, -0.5255)
+shape = SubResource("BoxShape3D_xa16r")
+
+[node name="Shape32" type="CollisionShape3D" parent="Collision/Col_bay_benches_wood" unique_id=77736913]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.5980592, 0.901, -0.3745)
+shape = SubResource("BoxShape3D_5j634")
+
+[node name="Shape33" type="CollisionShape3D" parent="Collision/Col_bay_benches_wood" unique_id=1965415022]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.6019014, 0.901, -0.2235)
+shape = SubResource("BoxShape3D_uierv")
+
+[node name="Shape34" type="CollisionShape3D" parent="Collision/Col_bay_benches_wood" unique_id=1997989149]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.2455, 0.4425, -0.6755)
+shape = SubResource("BoxShape3D_u7coy")
+
+[node name="Shape35" type="CollisionShape3D" parent="Collision/Col_bay_benches_wood" unique_id=158327409]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.2455, 0.4425, -0.2245)
+shape = SubResource("BoxShape3D_0j603")
+
+[node name="Shape36" type="CollisionShape3D" parent="Collision/Col_bay_benches_wood" unique_id=1724346479]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.246, 0.8375, -0.45)
+shape = SubResource("BoxShape3D_cbkgg")
+
+[node name="Shape37" type="CollisionShape3D" parent="Collision/Col_bay_benches_wood" unique_id=845585412]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.246, 0.2445, -0.45)
+shape = SubResource("BoxShape3D_gwrmd")
+
+[node name="Shape38" type="CollisionShape3D" parent="Collision/Col_bay_benches_wood" unique_id=893737726]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.9545, 0.4425, -0.6755)
+shape = SubResource("BoxShape3D_s6ngv")
+
+[node name="Shape39" type="CollisionShape3D" parent="Collision/Col_bay_benches_wood" unique_id=235438372]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.9545, 0.4425, -0.2245)
+shape = SubResource("BoxShape3D_tfwij")
+
+[node name="Shape40" type="CollisionShape3D" parent="Collision/Col_bay_benches_wood" unique_id=544915204]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.955, 0.8375, -0.45)
+shape = SubResource("BoxShape3D_0jcds")
+
+[node name="Shape41" type="CollisionShape3D" parent="Collision/Col_bay_benches_wood" unique_id=1157074883]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.955, 0.2445, -0.45)
+shape = SubResource("BoxShape3D_37h1f")
+
+[node name="Shape42" type="CollisionShape3D" parent="Collision/Col_bay_benches_wood" unique_id=671137924]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.6, 0.8375, -0.701)
+shape = SubResource("BoxShape3D_6qjek")
+
+[node name="Shape43" type="CollisionShape3D" parent="Collision/Col_bay_benches_wood" unique_id=85964421]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.6, 0.8375, -0.199)
+shape = SubResource("BoxShape3D_jftbq")
+
+[node name="Shape44" type="CollisionShape3D" parent="Collision/Col_bay_benches_wood" unique_id=1544585600]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.6, 0.2445, -0.199)
+shape = SubResource("BoxShape3D_vvb2i")
+
+[node name="Shape45" type="CollisionShape3D" parent="Collision/Col_bay_benches_wood" unique_id=1525418132]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0013744766, 0.901, -0.6765)
+shape = SubResource("BoxShape3D_mdrg7")
+
+[node name="Shape46" type="CollisionShape3D" parent="Collision/Col_bay_benches_wood" unique_id=2015540230]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0010941994, 0.901, -0.5255)
+shape = SubResource("BoxShape3D_p2b71")
+
+[node name="Shape47" type="CollisionShape3D" parent="Collision/Col_bay_benches_wood" unique_id=1732619957]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0023157762, 0.901, -0.3745)
+shape = SubResource("BoxShape3D_urp2s")
+
+[node name="Shape48" type="CollisionShape3D" parent="Collision/Col_bay_benches_wood" unique_id=41226987]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0010434794, 0.901, -0.2235)
+shape = SubResource("BoxShape3D_sc8hf")
+
+[node name="Shape49" type="CollisionShape3D" parent="Collision/Col_bay_benches_wood" unique_id=1534261678]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.6455, 0.4425, -0.6755)
+shape = SubResource("BoxShape3D_hpcvx")
+
+[node name="Shape50" type="CollisionShape3D" parent="Collision/Col_bay_benches_wood" unique_id=458345736]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.6455, 0.4425, -0.2245)
+shape = SubResource("BoxShape3D_6pfwn")
+
+[node name="Shape51" type="CollisionShape3D" parent="Collision/Col_bay_benches_wood" unique_id=1506627501]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.646, 0.8375, -0.45)
+shape = SubResource("BoxShape3D_wuk53")
+
+[node name="Shape52" type="CollisionShape3D" parent="Collision/Col_bay_benches_wood" unique_id=396998622]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.646, 0.2445, -0.45)
+shape = SubResource("BoxShape3D_lyf0s")
+
+[node name="Shape53" type="CollisionShape3D" parent="Collision/Col_bay_benches_wood" unique_id=2086480373]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.6455, 0.4425, -0.6755)
+shape = SubResource("BoxShape3D_kb1wu")
+
+[node name="Shape54" type="CollisionShape3D" parent="Collision/Col_bay_benches_wood" unique_id=1430695986]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.6455, 0.4425, -0.2245)
+shape = SubResource("BoxShape3D_663ha")
+
+[node name="Shape55" type="CollisionShape3D" parent="Collision/Col_bay_benches_wood" unique_id=1946367267]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.645, 0.8375, -0.45)
+shape = SubResource("BoxShape3D_kapem")
+
+[node name="Shape56" type="CollisionShape3D" parent="Collision/Col_bay_benches_wood" unique_id=984804406]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.645, 0.2445, -0.45)
+shape = SubResource("BoxShape3D_ydym3")
+
+[node name="Shape57" type="CollisionShape3D" parent="Collision/Col_bay_benches_wood" unique_id=994487802]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.8375, -0.701)
+shape = SubResource("BoxShape3D_g53yw")
+
+[node name="Shape58" type="CollisionShape3D" parent="Collision/Col_bay_benches_wood" unique_id=106973799]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.8375, -0.199)
+shape = SubResource("BoxShape3D_c2pcd")
+
+[node name="Shape59" type="CollisionShape3D" parent="Collision/Col_bay_benches_wood" unique_id=1908998292]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.2445, -0.199)
+shape = SubResource("BoxShape3D_0ppqw")
+
+[node name="Col_bay_mats_rubber" type="StaticBody3D" parent="Collision" unique_id=216883678]
+collision_mask = 0
+metadata/surface = "rubber"
+
+[node name="Shape0" type="CollisionShape3D" parent="Collision/Col_bay_mats_rubber" unique_id=1681165595]
+transform = Transform3D(0.9986295, 0, 0.052335955, 0, 1, 0, -0.052335955, 0, 0.9986295, -4.88, 0.924, -0.46)
+shape = SubResource("BoxShape3D_uit55")
+
+[node name="Shape1" type="CollisionShape3D" parent="Collision/Col_bay_mats_rubber" unique_id=131712356]
+transform = Transform3D(0.99978065, 0, -0.02094242, 0, 1, 0, 0.02094242, 0, 0.99978065, -3.18, 0.923, -0.45)
+shape = SubResource("BoxShape3D_0w247")
+
+[node name="Shape2" type="CollisionShape3D" parent="Collision/Col_bay_mats_rubber" unique_id=661698713]
+transform = Transform3D(0.99990255, 0, 0.01396218, 0, 1, 0, -0.01396218, 0, 0.99990255, -1.63, 0.923, -0.44)
+shape = SubResource("BoxShape3D_qcr5v")
+
+[node name="Shape3" type="CollisionShape3D" parent="Collision/Col_bay_mats_rubber" unique_id=790334239]
+transform = Transform3D(0.99904823, 0, -0.043619387, 0, 1, 0, 0.043619387, 0, 0.99904823, 0.06, 0.924, -0.45)
+shape = SubResource("BoxShape3D_6bqy2")
+
+[node name="Col_pad_table_wood" type="StaticBody3D" parent="Collision" unique_id=542177826]
+collision_mask = 0
+metadata/surface = "wood"
+
+[node name="Shape0" type="CollisionShape3D" parent="Collision/Col_pad_table_wood" unique_id=1079766273]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.4008904, 0.901, -0.6765)
+shape = SubResource("BoxShape3D_dvgdm")
+
+[node name="Shape1" type="CollisionShape3D" parent="Collision/Col_pad_table_wood" unique_id=774616093]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.399554, 0.901, -0.5255)
+shape = SubResource("BoxShape3D_dn7dr")
+
+[node name="Shape2" type="CollisionShape3D" parent="Collision/Col_pad_table_wood" unique_id=730906406]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.3995323, 0.901, -0.3745)
+shape = SubResource("BoxShape3D_qfmu1")
+
+[node name="Shape3" type="CollisionShape3D" parent="Collision/Col_pad_table_wood" unique_id=731197784]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.3966026, 0.901, -0.2235)
+shape = SubResource("BoxShape3D_xpaew")
+
+[node name="Shape4" type="CollisionShape3D" parent="Collision/Col_pad_table_wood" unique_id=1976355035]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.0745, 0.4425, -0.6755)
+shape = SubResource("BoxShape3D_xb0kw")
+
+[node name="Shape5" type="CollisionShape3D" parent="Collision/Col_pad_table_wood" unique_id=712682422]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.0745, 0.4425, -0.2245)
+shape = SubResource("BoxShape3D_5iy88")
+
+[node name="Shape6" type="CollisionShape3D" parent="Collision/Col_pad_table_wood" unique_id=483308666]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.074, 0.8375, -0.45)
+shape = SubResource("BoxShape3D_f450j")
+
+[node name="Shape7" type="CollisionShape3D" parent="Collision/Col_pad_table_wood" unique_id=1563308381]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.074, 0.2445, -0.45)
+shape = SubResource("BoxShape3D_8etov")
+
+[node name="Shape8" type="CollisionShape3D" parent="Collision/Col_pad_table_wood" unique_id=151916334]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.4, 0.4425, -0.6755)
+shape = SubResource("BoxShape3D_kvyqn")
+
+[node name="Shape9" type="CollisionShape3D" parent="Collision/Col_pad_table_wood" unique_id=953902455]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.4, 0.4425, -0.2245)
+shape = SubResource("BoxShape3D_n7fob")
+
+[node name="Shape10" type="CollisionShape3D" parent="Collision/Col_pad_table_wood" unique_id=1165166651]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.3995, 0.8375, -0.45)
+shape = SubResource("BoxShape3D_2vncy")
+
+[node name="Shape11" type="CollisionShape3D" parent="Collision/Col_pad_table_wood" unique_id=1780464920]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.3995, 0.2445, -0.45)
+shape = SubResource("BoxShape3D_0llv8")
+
+[node name="Shape12" type="CollisionShape3D" parent="Collision/Col_pad_table_wood" unique_id=1623680545]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.7255, 0.4425, -0.6755)
+shape = SubResource("BoxShape3D_o6l4a")
+
+[node name="Shape13" type="CollisionShape3D" parent="Collision/Col_pad_table_wood" unique_id=95812591]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.7255, 0.4425, -0.2245)
+shape = SubResource("BoxShape3D_xrdad")
+
+[node name="Shape14" type="CollisionShape3D" parent="Collision/Col_pad_table_wood" unique_id=2065604832]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.725, 0.8375, -0.45)
+shape = SubResource("BoxShape3D_t5dup")
+
+[node name="Shape15" type="CollisionShape3D" parent="Collision/Col_pad_table_wood" unique_id=1843893411]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.725, 0.2445, -0.45)
+shape = SubResource("BoxShape3D_y0a3q")
+
+[node name="Shape16" type="CollisionShape3D" parent="Collision/Col_pad_table_wood" unique_id=12232835]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.73725, 0.8375, -0.701)
+shape = SubResource("BoxShape3D_r4mda")
+
+[node name="Shape17" type="CollisionShape3D" parent="Collision/Col_pad_table_wood" unique_id=1999661528]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.73725, 0.8375, -0.199)
+shape = SubResource("BoxShape3D_27ewq")
+
+[node name="Shape18" type="CollisionShape3D" parent="Collision/Col_pad_table_wood" unique_id=336099352]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.73725, 0.2445, -0.199)
+shape = SubResource("BoxShape3D_gdvxm")
+
+[node name="Shape19" type="CollisionShape3D" parent="Collision/Col_pad_table_wood" unique_id=518002563]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.06275, 0.8375, -0.701)
+shape = SubResource("BoxShape3D_vxkmi")
+
+[node name="Shape20" type="CollisionShape3D" parent="Collision/Col_pad_table_wood" unique_id=1728178871]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.06275, 0.8375, -0.199)
+shape = SubResource("BoxShape3D_n6ibn")
+
+[node name="Shape21" type="CollisionShape3D" parent="Collision/Col_pad_table_wood" unique_id=197440778]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.06275, 0.2445, -0.199)
+shape = SubResource("BoxShape3D_forkt")
+
+[node name="Col_bay_signs_steel" type="StaticBody3D" parent="Collision" unique_id=1845995888]
+collision_mask = 0
+metadata/surface = "steel"
+
+[node name="Shape0" type="CollisionShape3D" parent="Collision/Col_bay_signs_steel" unique_id=1743948180]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.43, 1.55, 4.5425)
+shape = SubResource("BoxShape3D_ek1wb")
+
+[node name="Col_bay_props_steel" type="StaticBody3D" parent="Collision" unique_id=881023473]
+collision_mask = 0
+metadata/surface = "steel"
+
+[node name="Shape0" type="CollisionShape3D" parent="Collision/Col_bay_props_steel" unique_id=915211228]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.84, 0.135, -0.22)
+shape = SubResource("CylinderShape3D_vyv58")
+
+[node name="Shape1" type="CollisionShape3D" parent="Collision/Col_bay_props_steel" unique_id=361841038]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.42, 0.135, -0.47)
+shape = SubResource("CylinderShape3D_p1jg1")
+
+[node name="Col_site_fence_wood" type="StaticBody3D" parent="Collision" unique_id=1916471090]
+collision_mask = 0
+metadata/surface = "wood"
+
+[node name="Shape0" type="CollisionShape3D" parent="Collision/Col_site_fence_wood" unique_id=702526789]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.45, 0.9, 8.55)
+shape = SubResource("BoxShape3D_7vfar")
+
+[node name="Col_site_gate_steel" type="StaticBody3D" parent="Collision" unique_id=1575590994]
+collision_mask = 0
+metadata/surface = "steel"
+
+[node name="Shape0" type="CollisionShape3D" parent="Collision/Col_site_gate_steel" unique_id=1673631767]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.55, 0.75, 8.55)
+shape = SubResource("BoxShape3D_jab6s")
+
+[node name="Col_site_markers_wood" type="StaticBody3D" parent="Collision" unique_id=334820102]
+collision_mask = 0
+metadata/surface = "wood"
+
+[node name="Shape0" type="CollisionShape3D" parent="Collision/Col_site_markers_wood" unique_id=706764121]
+transform = Transform3D(0.9999853, 0.0054309997, 0, -0.0054309997, 0.9999853, 0, 0, 0, 1, 10.75, 0.85, -7)
+shape = SubResource("BoxShape3D_e02bm")
+
+[node name="Shape1" type="CollisionShape3D" parent="Collision/Col_site_markers_wood" unique_id=267940174]
+transform = Transform3D(0.99982756, -0.018569192, 0, 0.018569192, 0.99982756, 0, 0, 0, 1, 10.75, 0.85, -10)
+shape = SubResource("BoxShape3D_4yxj1")
+
+[node name="Shape2" type="CollisionShape3D" parent="Collision/Col_site_markers_wood" unique_id=1840087670]
+transform = Transform3D(0.9999221, -0.012483025, 0, 0.012483025, 0.9999221, 0, 0, 0, 1, 10.75, 0.85, -15)
+shape = SubResource("BoxShape3D_0v41j")
+
+[node name="Shape3" type="CollisionShape3D" parent="Collision/Col_site_markers_wood" unique_id=759191844]
+transform = Transform3D(0.99998695, 0.0051136324, 0, -0.0051136324, 0.99998695, 0, 0, 0, 1, 10.75, 0.85, -25)
+shape = SubResource("BoxShape3D_rmisn")
+
+[node name="Shape4" type="CollisionShape3D" parent="Collision/Col_site_markers_wood" unique_id=771440986]
+transform = Transform3D(0.99991804, 0.012800861, 0, -0.012800861, 0.99991804, 0, 0, 0, 1, 10.75, 0.85, -50)
+shape = SubResource("BoxShape3D_1wqqp")
+
+[node name="Col_clutter_sandbag" type="StaticBody3D" parent="Collision" unique_id=1315896527]
+collision_mask = 0
+metadata/surface = "sandbag"
+
+[node name="Shape0" type="CollisionShape3D" parent="Collision/Col_clutter_sandbag" unique_id=634692280]
+transform = Transform3D(0.9945219, 0, 0.104528464, 0, 1, 0, -0.104528464, 0, 0.9945219, -0.38, 0.983, -0.5)
+shape = SubResource("BoxShape3D_pjmau")
+
+[node name="Shape1" type="CollisionShape3D" parent="Collision/Col_clutter_sandbag" unique_id=1197291206]
+transform = Transform3D(0.17364818, 0, -0.9848077, 0, 1, 0, 0.9848077, 0, 0.17364818, -5.75, 0.978, -0.47)
+shape = SubResource("BoxShape3D_wc8gs")
+
+[node name="Shape2" type="CollisionShape3D" parent="Collision/Col_clutter_sandbag" unique_id=334668642]
+transform = Transform3D(0.9975641, 0, 0.06975647, 0, 1, 0, -0.06975647, 0, 0.9975641, 7.25, 0.978, -0.47)
+shape = SubResource("BoxShape3D_rhxw5")
+
+[node name="Shape3" type="CollisionShape3D" parent="Collision/Col_clutter_sandbag" unique_id=658211024]
+transform = Transform3D(0.99254614, 0, -0.12186934, 0, 1, 0, 0.12186934, 0, 0.99254614, 7.23, 1.092, -0.46)
+shape = SubResource("BoxShape3D_0hsvg")
+
+[node name="Shape4" type="CollisionShape3D" parent="Collision/Col_clutter_sandbag" unique_id=1049469490]
+transform = Transform3D(0.034899496, 0, 0.99939084, 0, 1, 0, -0.99939084, 0, 0.034899496, 4.55, 0.058, -0.62)
+shape = SubResource("BoxShape3D_h1clx")
+
+[node name="Shape5" type="CollisionShape3D" parent="Collision/Col_clutter_sandbag" unique_id=1763647786]
+transform = Transform3D(-0.06975647, 0, 0.9975641, 0, 1, 0, -0.9975641, 0, -0.06975647, 4.57, 0.058, -0.32)
+shape = SubResource("BoxShape3D_fas2l")
+
+[node name="Shape6" type="CollisionShape3D" parent="Collision/Col_clutter_sandbag" unique_id=1806014615]
+transform = Transform3D(0.99939084, 0, 0.034899496, 0, 1, 0, -0.034899496, 0, 0.99939084, 4.54, 0.172, -0.48)
+shape = SubResource("BoxShape3D_nwihk")
+
+[node name="Shape7" type="CollisionShape3D" parent="Collision/Col_clutter_sandbag" unique_id=721995009]
+transform = Transform3D(0.17364818, 0, 0.9848077, 0, 1, 0, -0.9848077, 0, 0.17364818, 4.85, 0.058, -0.5)
+shape = SubResource("BoxShape3D_cfpiw")
+
+[node name="Col_site_storage_wood" type="StaticBody3D" parent="Collision" unique_id=1375311619]
+collision_mask = 0
+metadata/surface = "wood"
+
+[node name="Shape0" type="CollisionShape3D" parent="Collision/Col_site_storage_wood" unique_id=180590593]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.45, 0.425, 4.25)
+shape = SubResource("BoxShape3D_td8pr")
+
+[node name="Shape1" type="CollisionShape3D" parent="Collision/Col_site_storage_wood" unique_id=1584455077]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.35, 0.425, 4.25)
+shape = SubResource("BoxShape3D_igcvx")
+
+[node name="Shape2" type="CollisionShape3D" parent="Collision/Col_site_storage_wood" unique_id=448364869]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.4, 1.115, 4.185)
+shape = SubResource("BoxShape3D_5sema")
+
+[node name="Shape3" type="CollisionShape3D" parent="Collision/Col_site_storage_wood" unique_id=376614484]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.4, 0.295, 4.185)
+shape = SubResource("BoxShape3D_3jo5f")
+
+[node name="Shape4" type="CollisionShape3D" parent="Collision/Col_site_storage_wood" unique_id=780526752]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.4, 0.85, 3.97)
+shape = SubResource("BoxShape3D_g8ec2")
+
+[node name="Col_terrain_dirt" type="StaticBody3D" parent="Collision" unique_id=528145551]
+collision_mask = 0
+metadata/surface = "dirt"
+
+[node name="Shape0" type="CollisionShape3D" parent="Collision/Col_terrain_dirt" unique_id=1664291110]
+shape = ExtResource("20_86tk3")
+
+[node name="Col_terrain_grass" type="StaticBody3D" parent="Collision" unique_id=284870752]
+collision_mask = 0
+metadata/surface = "grass"
+
+[node name="Shape0" type="CollisionShape3D" parent="Collision/Col_terrain_grass" unique_id=702957909]
+shape = ExtResource("21_rihs5")
+
+[node name="Col_terrain_gravel" type="StaticBody3D" parent="Collision" unique_id=2029363710]
+collision_mask = 0
+metadata/surface = "gravel"
+
+[node name="Shape0" type="CollisionShape3D" parent="Collision/Col_terrain_gravel" unique_id=1844089275]
+shape = ExtResource("22_vvlxm")
+
+[node name="Col_prop_trash_drum" type="StaticBody3D" parent="Collision" unique_id=200001345]
+collision_mask = 0
+metadata/surface = "steel"
+
+[node name="Shape0" type="CollisionShape3D" parent="Collision/Col_prop_trash_drum" unique_id=1650283578]
+transform = Transform3D(0.7660445, 0, 0.64278764, 0, 1, 0, -0.64278764, 0, 0.7660445, 2.8500001, 0.4552367, 4.55)
+shape = SubResource("BoxShape3D_jmfoc")
+
+[node name="Col_prop_drum_left" type="StaticBody3D" parent="Collision" unique_id=744641800]
+collision_mask = 0
+metadata/surface = "steel"
+
+[node name="Shape0" type="CollisionShape3D" parent="Collision/Col_prop_drum_left" unique_id=1260550709]
+transform = Transform3D(-0.34202015, 0, 0.9396927, 0, 1, 0, -0.9396927, 0, -0.34202015, -6.95, 0.42338574, 5.35)
+shape = SubResource("BoxShape3D_ead6t")
+
+[node name="Col_prop_bins" type="StaticBody3D" parent="Collision" unique_id=781354097]
+collision_mask = 0
+metadata/surface = "steel"
+
+[node name="Shape0" type="CollisionShape3D" parent="Collision/Col_prop_bins" unique_id=1770619674]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -3.5036485, 0.44314662, 5.35)
+shape = SubResource("BoxShape3D_l2j4a")
+
+[node name="Col_prop_chair" type="StaticBody3D" parent="Collision" unique_id=1080993609]
+collision_mask = 0
+metadata/surface = "rubber"
+
+[node name="Shape0" type="CollisionShape3D" parent="Collision/Col_prop_chair" unique_id=271334164]
+transform = Transform3D(-0.90630776, 0, 0.42261833, 0, 1, 0, -0.42261833, 0, -0.90630776, 3.540637, 0.43990105, 4.620079)
+shape = SubResource("BoxShape3D_bektd")
+
+[node name="Col_prop_picnic_table" type="StaticBody3D" parent="Collision" unique_id=717210493]
+collision_mask = 0
+metadata/surface = "wood"
+
+[node name="Shape0" type="CollisionShape3D" parent="Collision/Col_prop_picnic_table" unique_id=721810163]
+transform = Transform3D(0.034899496, 0, 0.99939084, 0, 1, 0, -0.99939084, 0, 0.034899496, -4.590388, 0.36273465, 6.951097)
+shape = SubResource("BoxShape3D_kt37p")
+
+[node name="Col_prop_crate_a" type="StaticBody3D" parent="Collision" unique_id=1309675090]
+collision_mask = 0
+metadata/surface = "wood"
+
+[node name="Shape0" type="CollisionShape3D" parent="Collision/Col_prop_crate_a" unique_id=366531765]
+transform = Transform3D(0.9063078, 0, 0.4226183, 0, 1, 0, -0.4226183, 0, 0.9063078, -2.0964763, 0.1668758, 7.507556)
+shape = SubResource("BoxShape3D_1v3m2")
+
+[node name="Col_prop_crate_b" type="StaticBody3D" parent="Collision" unique_id=101295218]
+collision_mask = 0
+metadata/surface = "wood"
+
+[node name="Shape0" type="CollisionShape3D" parent="Collision/Col_prop_crate_b" unique_id=1021005326]
+transform = Transform3D(0.34202015, 0, -0.9396926, 0, 1, 0, 0.9396926, 0, 0.34202015, 6.8421655, 0.1668758, 4.1528516)
+shape = SubResource("BoxShape3D_bus45")
+
+[node name="Col_prop_crate_plastic" type="StaticBody3D" parent="Collision" unique_id=574585670]
+collision_mask = 0
+metadata/surface = "rubber"
+
+[node name="Shape0" type="CollisionShape3D" parent="Collision/Col_prop_crate_plastic" unique_id=1348264606]
+transform = Transform3D(0.9781476, 0, 0.2079117, 0, 1, 0, -0.2079117, 0, 0.9781476, 7.55, 0.12702863, 4.2)
+shape = SubResource("BoxShape3D_4ol4y")
+
+[node name="Col_prop_ammo_can_bench1" type="StaticBody3D" parent="Collision" unique_id=1175512404]
+collision_mask = 0
+metadata/surface = "steel"
+
+[node name="Shape0" type="CollisionShape3D" parent="Collision/Col_prop_ammo_can_bench1" unique_id=1497080280]
+transform = Transform3D(0.34202015, 0, 0.9396926, 0, 1, 0, -0.9396926, 0, 0.34202015, -5.0498343, 1.0097386, -0.51993966)
+shape = SubResource("BoxShape3D_ncosr")
+
+[node name="Col_prop_ammo_can_table" type="StaticBody3D" parent="Collision" unique_id=437387122]
+collision_mask = 0
+metadata/surface = "steel"
+
+[node name="Shape0" type="CollisionShape3D" parent="Collision/Col_prop_ammo_can_table" unique_id=1533831260]
+transform = Transform3D(0.9396927, 0, -0.34202015, 0, 1, 0, 0.34202015, 0, 0.9396927, 7.4499397, 1.0097386, -0.49983418)
+shape = SubResource("BoxShape3D_obkdj")
+
+[node name="Col_prop_ammo_can_floor" type="StaticBody3D" parent="Collision" unique_id=138223038]
+collision_mask = 0
+metadata/surface = "steel"
+
+[node name="Shape0" type="CollisionShape3D" parent="Collision/Col_prop_ammo_can_floor" unique_id=1796545054]
+transform = Transform3D(-0.08715577, 0, 0.9961947, 0, 1, 0, -0.9961947, 0, -0.08715577, -0.61982423, 0.08873853, -0.4200154)
+shape = SubResource("BoxShape3D_acmv0")
+
+[node name="Col_prop_bag_a" type="StaticBody3D" parent="Collision" unique_id=715993799]
+collision_mask = 0
+metadata/surface = "sandbag"
+
+[node name="Shape0" type="CollisionShape3D" parent="Collision/Col_prop_bag_a" unique_id=254775496]
+transform = Transform3D(0.9961947, 0, 0.08715574, 0, 1, 0, -0.08715574, 0, 0.9961947, -6.947488, 0.09124028, 3.2013786)
+shape = SubResource("BoxShape3D_q5f7x")
+
+[node name="Col_prop_bag_b" type="StaticBody3D" parent="Collision" unique_id=1199412663]
+collision_mask = 0
+metadata/surface = "sandbag"
+
+[node name="Shape0" type="CollisionShape3D" parent="Collision/Col_prop_bag_b" unique_id=1765898082]
+transform = Transform3D(0.9902681, 0, -0.13917312, 0, 1, 0, 0.13917312, 0, 0.9902681, -6.927862, 0.26124027, 3.2519083)
+shape = SubResource("BoxShape3D_avjon")
+
+[node name="Col_prop_jerrycan" type="StaticBody3D" parent="Collision" unique_id=42918131]
+collision_mask = 0
+metadata/surface = "steel"
+
+[node name="Shape0" type="CollisionShape3D" parent="Collision/Col_prop_jerrycan" unique_id=1336248146]
+transform = Transform3D(0.49999997, 0, 0.86602545, 0, 1, 0, -0.86602545, 0, 0.49999997, 2.550128, 0.22759385, 4.994297)
+shape = SubResource("BoxShape3D_f0mhv")
+
+[node name="Col_prop_tyre_a" type="StaticBody3D" parent="Collision" unique_id=286402371]
+collision_mask = 0
+metadata/surface = "rubber"
+
+[node name="Shape0" type="CollisionShape3D" parent="Collision/Col_prop_tyre_a" unique_id=107436336]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 9.55, 0.08526333, 2.4)
+shape = SubResource("BoxShape3D_xm0ow")
+
+[node name="Col_prop_tyre_b" type="StaticBody3D" parent="Collision" unique_id=445492632]
+collision_mask = 0
+metadata/surface = "rubber"
+
+[node name="Shape0" type="CollisionShape3D" parent="Collision/Col_prop_tyre_b" unique_id=1618127975]
+transform = Transform3D(0.7660445, 0.64278764, -2.8097139e-08, 0, -4.3711392e-08, -1, -0.64278764, 0.7660445, -3.3484866e-08, 9.6, 0.25026333, 2.45)
+shape = SubResource("BoxShape3D_bsusa")
+
+[node name="Col_prop_tyre_c" type="StaticBody3D" parent="Collision" unique_id=1298476640]
+collision_mask = 0
+metadata/surface = "rubber"
+
+[node name="Shape0" type="CollisionShape3D" parent="Collision/Col_prop_tyre_c" unique_id=2134734340]
+transform = Transform3D(0.25881907, 0.23367862, 0.9372337, 0, 0.9702958, -0.2419219, -0.9659258, 0.06261401, 0.25113103, 9.949753, 0.33006373, 1.6999339)
+shape = SubResource("BoxShape3D_vccbv")
+
+[node name="Col_prop_barrier" type="StaticBody3D" parent="Collision" unique_id=40057481]
+collision_mask = 0
+metadata/surface = "concrete"
+
+[node name="Shape0" type="CollisionShape3D" parent="Collision/Col_prop_barrier" unique_id=358163210]
+transform = Transform3D(0.13917312, 0, 0.9902681, 0, 1, 0, -0.9902681, 0, 0.13917312, 12.918251, 0.553182, 6.888946)
+shape = SubResource("BoxShape3D_3adi3")
+
+[node name="Terrain" type="Node3D" parent="." unique_id=2145700718]
+
+[node name="terrain_00" type="MeshInstance3D" parent="Terrain" unique_id=391391575 groups=["acoustic_geometry"]]
+mesh = ExtResource("23_em3hk")
+metadata/acoustic_material = "soil"
+
+[node name="terrain_01" type="MeshInstance3D" parent="Terrain" unique_id=1076991356 groups=["acoustic_geometry"]]
+mesh = ExtResource("24_1hlh3")
+metadata/acoustic_material = "soil"
+
+[node name="terrain_02" type="MeshInstance3D" parent="Terrain" unique_id=1799277972 groups=["acoustic_geometry"]]
+mesh = ExtResource("25_n4okj")
+metadata/acoustic_material = "soil"
+
+[node name="terrain_03" type="MeshInstance3D" parent="Terrain" unique_id=1351701387 groups=["acoustic_geometry"]]
+mesh = ExtResource("26_j47ob")
+metadata/acoustic_material = "soil"
+
+[node name="terrain_04" type="MeshInstance3D" parent="Terrain" unique_id=1967033468 groups=["acoustic_geometry"]]
+mesh = ExtResource("27_wtt42")
+metadata/acoustic_material = "soil"
+
+[node name="terrain_05" type="MeshInstance3D" parent="Terrain" unique_id=448491259 groups=["acoustic_geometry"]]
+mesh = ExtResource("28_5ucgw")
+metadata/acoustic_material = "soil"
+
+[node name="terrain_06" type="MeshInstance3D" parent="Terrain" unique_id=202734919 groups=["acoustic_geometry"]]
+mesh = ExtResource("29_4wenh")
+metadata/acoustic_material = "soil"
+
+[node name="terrain_07" type="MeshInstance3D" parent="Terrain" unique_id=1626551956 groups=["acoustic_geometry"]]
+mesh = ExtResource("30_p437b")
+metadata/acoustic_material = "soil"
+
+[node name="terrain_08" type="MeshInstance3D" parent="Terrain" unique_id=47055409 groups=["acoustic_geometry"]]
+mesh = ExtResource("31_o3pol")
+metadata/acoustic_material = "soil"
+
+[node name="terrain_09" type="MeshInstance3D" parent="Terrain" unique_id=1326314662 groups=["acoustic_geometry"]]
+mesh = ExtResource("32_5fmun")
+metadata/acoustic_material = "soil"
+
+[node name="terrain_10" type="MeshInstance3D" parent="Terrain" unique_id=1560768543 groups=["acoustic_geometry"]]
+mesh = ExtResource("33_x4yh2")
+metadata/acoustic_material = "soil"
+
+[node name="terrain_11" type="MeshInstance3D" parent="Terrain" unique_id=1847905355 groups=["acoustic_geometry"]]
+mesh = ExtResource("34_4egqk")
+metadata/acoustic_material = "soil"
+
+[node name="terrain_12" type="MeshInstance3D" parent="Terrain" unique_id=1950249140 groups=["acoustic_geometry"]]
+mesh = ExtResource("35_x787d")
+metadata/acoustic_material = "soil"
+
+[node name="terrain_13" type="MeshInstance3D" parent="Terrain" unique_id=531232428 groups=["acoustic_geometry"]]
+mesh = ExtResource("36_jfdib")
+metadata/acoustic_material = "soil"
+
+[node name="terrain_14" type="MeshInstance3D" parent="Terrain" unique_id=1184599154 groups=["acoustic_geometry"]]
+mesh = ExtResource("37_3m134")
+metadata/acoustic_material = "soil"
+
+[node name="terrain_15" type="MeshInstance3D" parent="Terrain" unique_id=789270375 groups=["acoustic_geometry"]]
+mesh = ExtResource("38_iikam")
+metadata/acoustic_material = "soil"
+
+[node name="terrain_16" type="MeshInstance3D" parent="Terrain" unique_id=584931711 groups=["acoustic_geometry"]]
+mesh = ExtResource("39_xo7be")
+metadata/acoustic_material = "soil"
+
+[node name="terrain_17" type="MeshInstance3D" parent="Terrain" unique_id=71318517 groups=["acoustic_geometry"]]
+mesh = ExtResource("40_iyr4k")
+metadata/acoustic_material = "soil"
+
+[node name="terrain_18" type="MeshInstance3D" parent="Terrain" unique_id=2016784857 groups=["acoustic_geometry"]]
+mesh = ExtResource("41_lu5xn")
+metadata/acoustic_material = "soil"
+
+[node name="terrain_19" type="MeshInstance3D" parent="Terrain" unique_id=828498856 groups=["acoustic_geometry"]]
+mesh = ExtResource("42_l0vfq")
+metadata/acoustic_material = "soil"
+
+[node name="terrain_20" type="MeshInstance3D" parent="Terrain" unique_id=109037345 groups=["acoustic_geometry"]]
+mesh = ExtResource("43_g2d14")
+metadata/acoustic_material = "soil"
+
+[node name="terrain_21" type="MeshInstance3D" parent="Terrain" unique_id=1966658898 groups=["acoustic_geometry"]]
+mesh = ExtResource("44_87mcj")
+metadata/acoustic_material = "soil"
+
+[node name="terrain_22" type="MeshInstance3D" parent="Terrain" unique_id=2113766671 groups=["acoustic_geometry"]]
+mesh = ExtResource("45_icdmp")
+metadata/acoustic_material = "soil"
+
+[node name="terrain_23" type="MeshInstance3D" parent="Terrain" unique_id=142302037 groups=["acoustic_geometry"]]
+mesh = ExtResource("46_ebksb")
+metadata/acoustic_material = "soil"
+
+[node name="Vegetation" type="Node3D" parent="." unique_id=548833167]
+
+[node name="turf0_0_-3" type="MultiMeshInstance3D" parent="Vegetation" unique_id=1260803892 groups=["env_vegetation"]]
+cast_shadow = 0
+gi_mode = 0
+visibility_range_end = 26.0
+visibility_range_end_margin = 6.0
+multimesh = ExtResource("47_spyg6")
+metadata/veg_class = "turf"
+
+[node name="turf0_0_-2" type="MultiMeshInstance3D" parent="Vegetation" unique_id=172715146 groups=["env_vegetation"]]
+cast_shadow = 0
+gi_mode = 0
+visibility_range_end = 26.0
+visibility_range_end_margin = 6.0
+multimesh = ExtResource("48_0ljpf")
+metadata/veg_class = "turf"
+
+[node name="turf0_-1_-2" type="MultiMeshInstance3D" parent="Vegetation" unique_id=1633220773 groups=["env_vegetation"]]
+cast_shadow = 0
+gi_mode = 0
+visibility_range_end = 26.0
+visibility_range_end_margin = 6.0
+multimesh = ExtResource("49_t8tda")
+metadata/veg_class = "turf"
+
+[node name="turf0_0_-1" type="MultiMeshInstance3D" parent="Vegetation" unique_id=74786493 groups=["env_vegetation"]]
+cast_shadow = 0
+gi_mode = 0
+visibility_range_end = 26.0
+visibility_range_end_margin = 6.0
+multimesh = ExtResource("50_kh7l4")
+metadata/veg_class = "turf"
+
+[node name="turf0_-1_-1" type="MultiMeshInstance3D" parent="Vegetation" unique_id=1081708313 groups=["env_vegetation"]]
+cast_shadow = 0
+gi_mode = 0
+visibility_range_end = 26.0
+visibility_range_end_margin = 6.0
+multimesh = ExtResource("51_h23wq")
+metadata/veg_class = "turf"
+
+[node name="turf0_-1_-3" type="MultiMeshInstance3D" parent="Vegetation" unique_id=1870101384 groups=["env_vegetation"]]
+cast_shadow = 0
+gi_mode = 0
+visibility_range_end = 26.0
+visibility_range_end_margin = 6.0
+multimesh = ExtResource("52_2yw4n")
+metadata/veg_class = "turf"
+
+[node name="turf0_0_0" type="MultiMeshInstance3D" parent="Vegetation" unique_id=843280974 groups=["env_vegetation"]]
+cast_shadow = 0
+gi_mode = 0
+visibility_range_end = 26.0
+visibility_range_end_margin = 6.0
+multimesh = ExtResource("53_05t5u")
+metadata/veg_class = "turf"
+
+[node name="turf0_-1_0" type="MultiMeshInstance3D" parent="Vegetation" unique_id=357835353 groups=["env_vegetation"]]
+cast_shadow = 0
+gi_mode = 0
+visibility_range_end = 26.0
+visibility_range_end_margin = 6.0
+multimesh = ExtResource("54_fndig")
+metadata/veg_class = "turf"
+
+[node name="turf1_-1_-3" type="MultiMeshInstance3D" parent="Vegetation" unique_id=1268335227 groups=["env_vegetation"]]
+cast_shadow = 0
+gi_mode = 0
+visibility_range_end = 26.0
+visibility_range_end_margin = 6.0
+multimesh = ExtResource("55_303k1")
+metadata/veg_class = "turf"
+
+[node name="turf1_0_-1" type="MultiMeshInstance3D" parent="Vegetation" unique_id=656149449 groups=["env_vegetation"]]
+cast_shadow = 0
+gi_mode = 0
+visibility_range_end = 26.0
+visibility_range_end_margin = 6.0
+multimesh = ExtResource("56_qhyxd")
+metadata/veg_class = "turf"
+
+[node name="turf1_-1_-1" type="MultiMeshInstance3D" parent="Vegetation" unique_id=523186642 groups=["env_vegetation"]]
+cast_shadow = 0
+gi_mode = 0
+visibility_range_end = 26.0
+visibility_range_end_margin = 6.0
+multimesh = ExtResource("57_fifts")
+metadata/veg_class = "turf"
+
+[node name="turf1_-1_0" type="MultiMeshInstance3D" parent="Vegetation" unique_id=896514483 groups=["env_vegetation"]]
+cast_shadow = 0
+gi_mode = 0
+visibility_range_end = 26.0
+visibility_range_end_margin = 6.0
+multimesh = ExtResource("58_ou724")
+metadata/veg_class = "turf"
+
+[node name="turf1_0_-2" type="MultiMeshInstance3D" parent="Vegetation" unique_id=9975117 groups=["env_vegetation"]]
+cast_shadow = 0
+gi_mode = 0
+visibility_range_end = 26.0
+visibility_range_end_margin = 6.0
+multimesh = ExtResource("59_xrt0h")
+metadata/veg_class = "turf"
+
+[node name="turf1_-1_-2" type="MultiMeshInstance3D" parent="Vegetation" unique_id=1434153985 groups=["env_vegetation"]]
+cast_shadow = 0
+gi_mode = 0
+visibility_range_end = 26.0
+visibility_range_end_margin = 6.0
+multimesh = ExtResource("60_0u58n")
+metadata/veg_class = "turf"
+
+[node name="turf1_0_-3" type="MultiMeshInstance3D" parent="Vegetation" unique_id=1220141424 groups=["env_vegetation"]]
+cast_shadow = 0
+gi_mode = 0
+visibility_range_end = 26.0
+visibility_range_end_margin = 6.0
+multimesh = ExtResource("61_lrsl3")
+metadata/veg_class = "turf"
+
+[node name="turf1_0_0" type="MultiMeshInstance3D" parent="Vegetation" unique_id=1696664081 groups=["env_vegetation"]]
+cast_shadow = 0
+gi_mode = 0
+visibility_range_end = 26.0
+visibility_range_end_margin = 6.0
+multimesh = ExtResource("62_sbjbt")
+metadata/veg_class = "turf"
+
+[node name="grass0_0_-1" type="MultiMeshInstance3D" parent="Vegetation" unique_id=1940383180 groups=["env_vegetation"]]
+cast_shadow = 0
+gi_mode = 0
+visibility_range_end = 46.0
+visibility_range_end_margin = 6.0
+multimesh = ExtResource("63_lcarf")
+metadata/veg_class = "tall_grass"
+
+[node name="grass0_0_0" type="MultiMeshInstance3D" parent="Vegetation" unique_id=1676035357 groups=["env_vegetation"]]
+cast_shadow = 0
+gi_mode = 0
+visibility_range_end = 46.0
+visibility_range_end_margin = 6.0
+multimesh = ExtResource("64_kdobs")
+metadata/veg_class = "tall_grass"
+
+[node name="grass0_-1_0" type="MultiMeshInstance3D" parent="Vegetation" unique_id=1835127985 groups=["env_vegetation"]]
+cast_shadow = 0
+gi_mode = 0
+visibility_range_end = 46.0
+visibility_range_end_margin = 6.0
+multimesh = ExtResource("65_vkcpl")
+metadata/veg_class = "tall_grass"
+
+[node name="grass0_-1_-3" type="MultiMeshInstance3D" parent="Vegetation" unique_id=702300096 groups=["env_vegetation"]]
+cast_shadow = 0
+gi_mode = 0
+visibility_range_end = 46.0
+visibility_range_end_margin = 6.0
+multimesh = ExtResource("66_awwpg")
+metadata/veg_class = "tall_grass"
+
+[node name="grass0_0_-3" type="MultiMeshInstance3D" parent="Vegetation" unique_id=2077998102 groups=["env_vegetation"]]
+cast_shadow = 0
+gi_mode = 0
+visibility_range_end = 46.0
+visibility_range_end_margin = 6.0
+multimesh = ExtResource("67_2qajd")
+metadata/veg_class = "tall_grass"
+
+[node name="grass0_-1_-2" type="MultiMeshInstance3D" parent="Vegetation" unique_id=793124122 groups=["env_vegetation"]]
+cast_shadow = 0
+gi_mode = 0
+visibility_range_end = 46.0
+visibility_range_end_margin = 6.0
+multimesh = ExtResource("68_btqnb")
+metadata/veg_class = "tall_grass"
+
+[node name="grass0_0_-2" type="MultiMeshInstance3D" parent="Vegetation" unique_id=1069872192 groups=["env_vegetation"]]
+cast_shadow = 0
+gi_mode = 0
+visibility_range_end = 46.0
+visibility_range_end_margin = 6.0
+multimesh = ExtResource("69_v61sb")
+metadata/veg_class = "tall_grass"
+
+[node name="grass0_-1_-1" type="MultiMeshInstance3D" parent="Vegetation" unique_id=1430698062 groups=["env_vegetation"]]
+cast_shadow = 0
+gi_mode = 0
+visibility_range_end = 46.0
+visibility_range_end_margin = 6.0
+multimesh = ExtResource("70_wrx4v")
+metadata/veg_class = "tall_grass"
+
+[node name="grass0_1_0" type="MultiMeshInstance3D" parent="Vegetation" unique_id=1203554635 groups=["env_vegetation"]]
+cast_shadow = 0
+gi_mode = 0
+visibility_range_end = 46.0
+visibility_range_end_margin = 6.0
+multimesh = ExtResource("71_tp4te")
+metadata/veg_class = "tall_grass"
+
+[node name="grass0_1_-2" type="MultiMeshInstance3D" parent="Vegetation" unique_id=1898021000 groups=["env_vegetation"]]
+cast_shadow = 0
+gi_mode = 0
+visibility_range_end = 46.0
+visibility_range_end_margin = 6.0
+multimesh = ExtResource("72_n3hoq")
+metadata/veg_class = "tall_grass"
+
+[node name="grass0_1_-3" type="MultiMeshInstance3D" parent="Vegetation" unique_id=665849388 groups=["env_vegetation"]]
+cast_shadow = 0
+gi_mode = 0
+visibility_range_end = 46.0
+visibility_range_end_margin = 6.0
+multimesh = ExtResource("73_vgtil")
+metadata/veg_class = "tall_grass"
+
+[node name="grass1_0_-2" type="MultiMeshInstance3D" parent="Vegetation" unique_id=377182805 groups=["env_vegetation"]]
+cast_shadow = 0
+gi_mode = 0
+visibility_range_end = 46.0
+visibility_range_end_margin = 6.0
+multimesh = ExtResource("74_6cwa4")
+metadata/veg_class = "tall_grass"
+
+[node name="grass1_-1_-3" type="MultiMeshInstance3D" parent="Vegetation" unique_id=461654188 groups=["env_vegetation"]]
+cast_shadow = 0
+gi_mode = 0
+visibility_range_end = 46.0
+visibility_range_end_margin = 6.0
+multimesh = ExtResource("75_ofe0n")
+metadata/veg_class = "tall_grass"
+
+[node name="grass1_0_-3" type="MultiMeshInstance3D" parent="Vegetation" unique_id=1580078927 groups=["env_vegetation"]]
+cast_shadow = 0
+gi_mode = 0
+visibility_range_end = 46.0
+visibility_range_end_margin = 6.0
+multimesh = ExtResource("76_kei45")
+metadata/veg_class = "tall_grass"
+
+[node name="grass1_0_0" type="MultiMeshInstance3D" parent="Vegetation" unique_id=1938734729 groups=["env_vegetation"]]
+cast_shadow = 0
+gi_mode = 0
+visibility_range_end = 46.0
+visibility_range_end_margin = 6.0
+multimesh = ExtResource("77_mybqu")
+metadata/veg_class = "tall_grass"
+
+[node name="grass1_-1_0" type="MultiMeshInstance3D" parent="Vegetation" unique_id=1898198166 groups=["env_vegetation"]]
+cast_shadow = 0
+gi_mode = 0
+visibility_range_end = 46.0
+visibility_range_end_margin = 6.0
+multimesh = ExtResource("78_g3cna")
+metadata/veg_class = "tall_grass"
+
+[node name="grass1_0_-1" type="MultiMeshInstance3D" parent="Vegetation" unique_id=898615820 groups=["env_vegetation"]]
+cast_shadow = 0
+gi_mode = 0
+visibility_range_end = 46.0
+visibility_range_end_margin = 6.0
+multimesh = ExtResource("79_wk3v3")
+metadata/veg_class = "tall_grass"
+
+[node name="grass1_-1_-2" type="MultiMeshInstance3D" parent="Vegetation" unique_id=920399853 groups=["env_vegetation"]]
+cast_shadow = 0
+gi_mode = 0
+visibility_range_end = 46.0
+visibility_range_end_margin = 6.0
+multimesh = ExtResource("80_at2c5")
+metadata/veg_class = "tall_grass"
+
+[node name="grass1_-1_-1" type="MultiMeshInstance3D" parent="Vegetation" unique_id=1564092534 groups=["env_vegetation"]]
+cast_shadow = 0
+gi_mode = 0
+visibility_range_end = 46.0
+visibility_range_end_margin = 6.0
+multimesh = ExtResource("81_t60ww")
+metadata/veg_class = "tall_grass"
+
+[node name="grass1_1_0" type="MultiMeshInstance3D" parent="Vegetation" unique_id=1941133962 groups=["env_vegetation"]]
+cast_shadow = 0
+gi_mode = 0
+visibility_range_end = 46.0
+visibility_range_end_margin = 6.0
+multimesh = ExtResource("82_vsnbf")
+metadata/veg_class = "tall_grass"
+
+[node name="clump_-1_-1" type="MultiMeshInstance3D" parent="Vegetation" unique_id=1507452340 groups=["env_vegetation"]]
+cast_shadow = 0
+gi_mode = 0
+visibility_range_end = 95.0
+visibility_range_end_margin = 6.0
+multimesh = ExtResource("83_c3fuf")
+metadata/veg_class = "tall_grass"
+
+[node name="clump_0_0" type="MultiMeshInstance3D" parent="Vegetation" unique_id=1388788090 groups=["env_vegetation"]]
+cast_shadow = 0
+gi_mode = 0
+visibility_range_end = 95.0
+visibility_range_end_margin = 6.0
+multimesh = ExtResource("84_tsu81")
+metadata/veg_class = "tall_grass"
+
+[node name="clump_0_-2" type="MultiMeshInstance3D" parent="Vegetation" unique_id=1284042214 groups=["env_vegetation"]]
+cast_shadow = 0
+gi_mode = 0
+visibility_range_end = 95.0
+visibility_range_end_margin = 6.0
+multimesh = ExtResource("85_crwk3")
+metadata/veg_class = "tall_grass"
+
+[node name="clump_-1_-2" type="MultiMeshInstance3D" parent="Vegetation" unique_id=1941536896 groups=["env_vegetation"]]
+cast_shadow = 0
+gi_mode = 0
+visibility_range_end = 95.0
+visibility_range_end_margin = 6.0
+multimesh = ExtResource("86_8bgsc")
+metadata/veg_class = "tall_grass"
+
+[node name="clump_0_-1" type="MultiMeshInstance3D" parent="Vegetation" unique_id=370465818 groups=["env_vegetation"]]
+cast_shadow = 0
+gi_mode = 0
+visibility_range_end = 95.0
+visibility_range_end_margin = 6.0
+multimesh = ExtResource("87_tgi7j")
+metadata/veg_class = "tall_grass"
+
+[node name="clump_-1_0" type="MultiMeshInstance3D" parent="Vegetation" unique_id=20461959 groups=["env_vegetation"]]
+cast_shadow = 0
+gi_mode = 0
+visibility_range_end = 95.0
+visibility_range_end_margin = 6.0
+multimesh = ExtResource("88_d4ul3")
+metadata/veg_class = "tall_grass"
+
+[node name="weed0_-1_0" type="MultiMeshInstance3D" parent="Vegetation" unique_id=422552346 groups=["env_vegetation"]]
+gi_mode = 0
+visibility_range_end = 42.0
+visibility_range_end_margin = 6.0
+multimesh = ExtResource("89_yjomo")
+metadata/veg_class = "weed"
+
+[node name="weed0_-1_-1" type="MultiMeshInstance3D" parent="Vegetation" unique_id=597513826 groups=["env_vegetation"]]
+gi_mode = 0
+visibility_range_end = 42.0
+visibility_range_end_margin = 6.0
+multimesh = ExtResource("90_gfr0l")
+metadata/veg_class = "weed"
+
+[node name="weed0_0_-1" type="MultiMeshInstance3D" parent="Vegetation" unique_id=972875272 groups=["env_vegetation"]]
+gi_mode = 0
+visibility_range_end = 42.0
+visibility_range_end_margin = 6.0
+multimesh = ExtResource("91_b42ug")
+metadata/veg_class = "weed"
+
+[node name="weed0_0_0" type="MultiMeshInstance3D" parent="Vegetation" unique_id=752363608 groups=["env_vegetation"]]
+gi_mode = 0
+visibility_range_end = 42.0
+visibility_range_end_margin = 6.0
+multimesh = ExtResource("92_sev0j")
+metadata/veg_class = "weed"
+
+[node name="weed2_0_0" type="MultiMeshInstance3D" parent="Vegetation" unique_id=675520903 groups=["env_vegetation"]]
+gi_mode = 0
+visibility_range_end = 42.0
+visibility_range_end_margin = 6.0
+multimesh = ExtResource("93_4u3kb")
+metadata/veg_class = "weed"
+
+[node name="weed2_0_-1" type="MultiMeshInstance3D" parent="Vegetation" unique_id=1919083242 groups=["env_vegetation"]]
+gi_mode = 0
+visibility_range_end = 42.0
+visibility_range_end_margin = 6.0
+multimesh = ExtResource("94_3e0nr")
+metadata/veg_class = "weed"
+
+[node name="weed2_-1_0" type="MultiMeshInstance3D" parent="Vegetation" unique_id=1038341975 groups=["env_vegetation"]]
+gi_mode = 0
+visibility_range_end = 42.0
+visibility_range_end_margin = 6.0
+multimesh = ExtResource("95_uj18q")
+metadata/veg_class = "weed"
+
+[node name="weed2_-1_-1" type="MultiMeshInstance3D" parent="Vegetation" unique_id=1450646757 groups=["env_vegetation"]]
+gi_mode = 0
+visibility_range_end = 42.0
+visibility_range_end_margin = 6.0
+multimesh = ExtResource("96_8q3vo")
+metadata/veg_class = "weed"
+
+[node name="weed3_-1_0" type="MultiMeshInstance3D" parent="Vegetation" unique_id=1586072525 groups=["env_vegetation"]]
+gi_mode = 0
+visibility_range_end = 42.0
+visibility_range_end_margin = 6.0
+multimesh = ExtResource("97_w18jp")
+metadata/veg_class = "weed"
+
+[node name="weed3_-1_-1" type="MultiMeshInstance3D" parent="Vegetation" unique_id=1855275647 groups=["env_vegetation"]]
+gi_mode = 0
+visibility_range_end = 42.0
+visibility_range_end_margin = 6.0
+multimesh = ExtResource("98_jft3o")
+metadata/veg_class = "weed"
+
+[node name="weed3_0_0" type="MultiMeshInstance3D" parent="Vegetation" unique_id=963756193 groups=["env_vegetation"]]
+gi_mode = 0
+visibility_range_end = 42.0
+visibility_range_end_margin = 6.0
+multimesh = ExtResource("99_cectd")
+metadata/veg_class = "weed"
+
+[node name="weed3_0_-1" type="MultiMeshInstance3D" parent="Vegetation" unique_id=874894994 groups=["env_vegetation"]]
+gi_mode = 0
+visibility_range_end = 42.0
+visibility_range_end_margin = 6.0
+multimesh = ExtResource("100_3yh5l")
+metadata/veg_class = "weed"
+
+[node name="bush_00" type="MeshInstance3D" parent="Vegetation" unique_id=1340557761 groups=["env_vegetation_single"]]
+transform = Transform3D(-0.7175116, 0, 0.3089507, 0, 0.69703364, 0, -0.3089507, 0, -0.7175116, 21.072, 1.151, -29.842)
+gi_mode = 0
+mesh = ExtResource("101_gsby2")
+metadata/veg_class = "bush"
+
+[node name="bush_01" type="MeshInstance3D" parent="Vegetation" unique_id=1991133590 groups=["env_vegetation_single"]]
+transform = Transform3D(-1.3966016, 0, -0.28806287, 0, 1.2516952, 0, 0.28806287, 0, -1.3966016, -14.931, 2.9, -47.731)
+gi_mode = 0
+mesh = ExtResource("102_h6xey")
+metadata/veg_class = "bush"
+
+[node name="bush_02" type="MeshInstance3D" parent="Vegetation" unique_id=128231122 groups=["env_vegetation_single"]]
+transform = Transform3D(-1.4016178, 0, -0.10166514, 0, 1.2537433, 0, 0.10166514, 0, -1.4016178, 4.572, 1.7, 15.798)
+gi_mode = 0
+mesh = ExtResource("103_q3a08")
+metadata/veg_class = "bush"
+
+[node name="bush_03" type="MeshInstance3D" parent="Vegetation" unique_id=1643060853 groups=["env_vegetation_single"]]
+transform = Transform3D(0.9091551, 0, 0.5995557, 0, 0.9972721, 0, -0.5995557, 0, 0.9091551, -15.931, 3.987, -57.413)
+gi_mode = 0
+mesh = ExtResource("102_h6xey")
+metadata/veg_class = "bush"
+
+[node name="bush_04" type="MeshInstance3D" parent="Vegetation" unique_id=807948270 groups=["env_vegetation_single"]]
+transform = Transform3D(-0.63840675, 0, -1.3135818, 0, 1.3797551, 0, 1.3135818, 0, -0.63840675, 18.553, 2.1430001, -27.002)
+gi_mode = 0
+mesh = ExtResource("103_q3a08")
+metadata/veg_class = "bush"
+
+[node name="bush_05" type="MeshInstance3D" parent="Vegetation" unique_id=2093809728 groups=["env_vegetation_single"]]
+transform = Transform3D(-0.76161796, 0, 0.9708608, 0, 1.1804458, 0, -0.9708608, 0, -0.76161796, 15.886, 3.456, -4.684)
+gi_mode = 0
+mesh = ExtResource("103_q3a08")
+metadata/veg_class = "bush"
+
+[node name="bush_06" type="MeshInstance3D" parent="Vegetation" unique_id=873857565 groups=["env_vegetation_single"]]
+transform = Transform3D(-1.1925853, 0, 0.06397501, 0, 1.2996454, 0, -0.06397501, 0, -1.1925853, 4.393, 3.9120002, -63.956)
+gi_mode = 0
+mesh = ExtResource("101_gsby2")
+metadata/veg_class = "bush"
+
+[node name="bush_07" type="MeshInstance3D" parent="Vegetation" unique_id=582109008 groups=["env_vegetation_single"]]
+transform = Transform3D(1.1355737, 0, -0.28173068, 0, 1.1033436, 0, 0.28173068, 0, 1.1355737, -6.586, 2.3700001, 13.957)
+gi_mode = 0
+mesh = ExtResource("101_gsby2")
+metadata/veg_class = "bush"
+
+[node name="bush_08" type="MeshInstance3D" parent="Vegetation" unique_id=2093667912 groups=["env_vegetation_single"]]
+transform = Transform3D(1.1778668, 0, 0.26586854, 0, 1.318355, 0, -0.26586854, 0, 1.1778668, 18.53, 2.548, -5.06)
+gi_mode = 0
+mesh = ExtResource("104_4hgr8")
+metadata/veg_class = "bush"
+
+[node name="bush_09" type="MeshInstance3D" parent="Vegetation" unique_id=1774534128 groups=["env_vegetation_single"]]
+transform = Transform3D(0.123753086, 0, 0.71750593, 0, 0.67909235, 0, -0.71750593, 0, 0.123753086, -18.676, 1.456, -1.884)
+gi_mode = 0
+mesh = ExtResource("101_gsby2")
+metadata/veg_class = "bush"
+
+[node name="bush_10" type="MeshInstance3D" parent="Vegetation" unique_id=1935744288 groups=["env_vegetation_single"]]
+transform = Transform3D(0.82985383, 0, -0.98202187, 0, 1.1097535, 0, 0.98202187, 0, 0.82985383, -10.035, 1.696, 16.554)
+gi_mode = 0
+mesh = ExtResource("103_q3a08")
+metadata/veg_class = "bush"
+
+[node name="bush_11" type="MeshInstance3D" parent="Vegetation" unique_id=1034517613 groups=["env_vegetation_single"]]
+transform = Transform3D(-1.1721599, 0, -0.51981366, 0, 1.2577361, 0, 0.51981366, 0, -1.1721599, 13.027, 1.477, -67.487)
+gi_mode = 0
+mesh = ExtResource("105_1tv8c")
+metadata/veg_class = "bush"
+
+[node name="bush_12" type="MeshInstance3D" parent="Vegetation" unique_id=1108406347 groups=["env_vegetation_single"]]
+transform = Transform3D(0.27002007, 0, -1.0726352, 0, 1.0624871, 0, 1.0726352, 0, 0.27002007, 21.437, 1.197, 1.627)
+gi_mode = 0
+mesh = ExtResource("101_gsby2")
+metadata/veg_class = "bush"
+
+[node name="bush_13" type="MeshInstance3D" parent="Vegetation" unique_id=134885734 groups=["env_vegetation_single"]]
+transform = Transform3D(0.9700245, 0, -0.35429022, 0, 0.993206, 0, 0.35429022, 0, 0.9700245, -16.306, 4.2330003, -57.494)
+gi_mode = 0
+mesh = ExtResource("103_q3a08")
+metadata/veg_class = "bush"
+
+[node name="bush_14" type="MeshInstance3D" parent="Vegetation" unique_id=14259554 groups=["env_vegetation_single"]]
+transform = Transform3D(-0.14710198, 0, 0.71032816, 0, 0.78532773, 0, -0.71032816, 0, -0.14710198, -11.401, 2.8730001, 11.865)
+gi_mode = 0
+mesh = ExtResource("101_gsby2")
+metadata/veg_class = "bush"
+
+[node name="bush_15" type="MeshInstance3D" parent="Vegetation" unique_id=1123450307 groups=["env_vegetation_single"]]
+transform = Transform3D(-0.33930272, 0, -0.871209, 0, 0.827972, 0, 0.871209, 0, -0.33930272, -15.316, 2.898, -27.679)
+gi_mode = 0
+mesh = ExtResource("105_1tv8c")
+metadata/veg_class = "bush"
+
+[node name="bush_16" type="MeshInstance3D" parent="Vegetation" unique_id=1775405349 groups=["env_vegetation_single"]]
+transform = Transform3D(-0.9122744, 0, 0.5266944, 0, 1.1458274, 0, -0.5266944, 0, -0.9122744, 1.029, 0.679, 11.059)
+gi_mode = 0
+mesh = ExtResource("105_1tv8c")
+metadata/veg_class = "bush"
+
+[node name="bush_17" type="MeshInstance3D" parent="Vegetation" unique_id=1469001674 groups=["env_vegetation_single"]]
+transform = Transform3D(0.08505156, 0, -0.69592196, 0, 0.71589273, 0, 0.69592196, 0, 0.08505156, -10.33, 3.401, -64.943)
+gi_mode = 0
+mesh = ExtResource("101_gsby2")
+metadata/veg_class = "bush"
+
+[node name="bush_18" type="MeshInstance3D" parent="Vegetation" unique_id=18908342 groups=["env_vegetation_single"]]
+transform = Transform3D(0.6244302, 0, 0.6896652, 0, 1.0199807, 0, -0.6896652, 0, 0.6244302, -14.533, 2.5990002, -33.381)
+gi_mode = 0
+mesh = ExtResource("105_1tv8c")
+metadata/veg_class = "bush"
+
+[node name="bush_19" type="MeshInstance3D" parent="Vegetation" unique_id=1129165037 groups=["env_vegetation_single"]]
+transform = Transform3D(-1.482306, 0, 0.10183514, 0, 1.4003894, 0, -0.10183514, 0, -1.482306, -9.547, 5.742, -61.133)
+gi_mode = 0
+mesh = ExtResource("102_h6xey")
+metadata/veg_class = "bush"
+
+[node name="bush_20" type="MeshInstance3D" parent="Vegetation" unique_id=144355442 groups=["env_vegetation_single"]]
+transform = Transform3D(-0.5129589, 0, -0.7540066, 0, 1.0017027, 0, 0.7540066, 0, -0.5129589, -2.125, 1.206, 11.737)
+gi_mode = 0
+mesh = ExtResource("104_4hgr8")
+metadata/veg_class = "bush"
+
+[node name="bush_21" type="MeshInstance3D" parent="Vegetation" unique_id=929013599 groups=["env_vegetation_single"]]
+transform = Transform3D(0.6768992, 0, 0.10438134, 0, 0.7382779, 0, -0.10438134, 0, 0.6768992, -12.229, 4.204, -25.997)
+gi_mode = 0
+mesh = ExtResource("101_gsby2")
+metadata/veg_class = "bush"
+
+[node name="bush_22" type="MeshInstance3D" parent="Vegetation" unique_id=2078262208 groups=["env_vegetation_single"]]
+transform = Transform3D(-0.3401987, 0, -1.4569591, 0, 1.5057126, 0, 1.4569591, 0, -0.3401987, -11.065, 2.795, -22.407)
+gi_mode = 0
+mesh = ExtResource("104_4hgr8")
+metadata/veg_class = "bush"
+
+[node name="bush_23" type="MeshInstance3D" parent="Vegetation" unique_id=605663452 groups=["env_vegetation_single"]]
+transform = Transform3D(1.120086, 0, 0.0056004766, 0, 1.0488667, 0, -0.0056004766, 0, 1.120086, 20.537, 1.299, -12.725)
+gi_mode = 0
+mesh = ExtResource("103_q3a08")
+metadata/veg_class = "bush"
+
+[node name="bush_24" type="MeshInstance3D" parent="Vegetation" unique_id=1722361942 groups=["env_vegetation_single"]]
+transform = Transform3D(-1.2640404, 0, 0.29142717, 0, 1.3048404, 0, -0.29142717, 0, -1.2640404, -4.431, 2.0660002, -66.835)
+gi_mode = 0
+mesh = ExtResource("102_h6xey")
+metadata/veg_class = "bush"
+
+[node name="bush_25" type="MeshInstance3D" parent="Vegetation" unique_id=1734561487 groups=["env_vegetation_single"]]
+transform = Transform3D(-0.78312385, 0, 0.860764, 0, 1.0479152, 0, -0.860764, 0, -0.78312385, 1.443, 1.644, 16.032)
+gi_mode = 0
+mesh = ExtResource("101_gsby2")
+metadata/veg_class = "bush"
+
+[node name="bush_26" type="MeshInstance3D" parent="Vegetation" unique_id=458301525 groups=["env_vegetation_single"]]
+transform = Transform3D(0.7563285, 0, -0.60189927, 0, 0.8381107, 0, 0.60189927, 0, 0.7563285, -3.304, 1.759, 15.865)
+gi_mode = 0
+mesh = ExtResource("101_gsby2")
+metadata/veg_class = "bush"
+
+[node name="bush_27" type="MeshInstance3D" parent="Vegetation" unique_id=1161226048 groups=["env_vegetation_single"]]
+transform = Transform3D(-1.0467659, 0, -0.6641814, 0, 1.3542019, 0, 0.6641814, 0, -1.0467659, 2.772, 1.697, 12.501)
+gi_mode = 0
+mesh = ExtResource("105_1tv8c")
+metadata/veg_class = "bush"
+
+[node name="bush_28" type="MeshInstance3D" parent="Vegetation" unique_id=418547848 groups=["env_vegetation_single"]]
+transform = Transform3D(-1.0204271, 0, -0.018785564, 0, 0.92740494, 0, 0.018785564, 0, -1.0204271, -9.428, 2.3200002, 14.12)
+gi_mode = 0
+mesh = ExtResource("101_gsby2")
+metadata/veg_class = "bush"
+
+[node name="bush_29" type="MeshInstance3D" parent="Vegetation" unique_id=965851705 groups=["env_vegetation_single"]]
+transform = Transform3D(0.3126683, 0, 0.8362597, 0, 0.83669287, 0, -0.8362597, 0, 0.3126683, 17.374, 2.9650002, -12.901)
+gi_mode = 0
+mesh = ExtResource("101_gsby2")
+metadata/veg_class = "bush"
+
+[node name="bush_30" type="MeshInstance3D" parent="Vegetation" unique_id=1269180459 groups=["env_vegetation_single"]]
+transform = Transform3D(-0.02743582, 0, 0.90808564, 0, 0.928519, 0, -0.90808564, 0, -0.02743582, 16.837, 4.532, -63.384)
+gi_mode = 0
+mesh = ExtResource("103_q3a08")
+metadata/veg_class = "bush"
+
+[node name="bush_31" type="MeshInstance3D" parent="Vegetation" unique_id=1523200313 groups=["env_vegetation_single"]]
+transform = Transform3D(0.41079807, 0, 0.5880172, 0, 0.7657769, 0, -0.5880172, 0, 0.41079807, 14.843, 3.6560001, -22.768)
+gi_mode = 0
+mesh = ExtResource("101_gsby2")
+metadata/veg_class = "bush"
+
+[node name="bush_32" type="MeshInstance3D" parent="Vegetation" unique_id=1815588057 groups=["env_vegetation_single"]]
+transform = Transform3D(-0.11072102, 0, 0.7960367, 0, 0.86425936, 0, -0.7960367, 0, -0.11072102, -14.01, 5.243, -58.383)
+gi_mode = 0
+mesh = ExtResource("101_gsby2")
+metadata/veg_class = "bush"
+
+[node name="bush_33" type="MeshInstance3D" parent="Vegetation" unique_id=1837710223 groups=["env_vegetation_single"]]
+transform = Transform3D(0.56212175, 0, 1.3567086, 0, 1.4175082, 0, -1.3567086, 0, 0.56212175, 20.341, 1.48, -47.835)
+gi_mode = 0
+mesh = ExtResource("104_4hgr8")
+metadata/veg_class = "bush"
+
+[node name="bush_34" type="MeshInstance3D" parent="Vegetation" unique_id=138285661 groups=["env_vegetation_single"]]
+transform = Transform3D(-1.2667744, 0, -0.31457952, 0, 1.2481335, 0, 0.31457952, 0, -1.2667744, 21.339, 2.365, 7.968)
+gi_mode = 0
+mesh = ExtResource("105_1tv8c")
+metadata/veg_class = "bush"
+
+[node name="bush_35" type="MeshInstance3D" parent="Vegetation" unique_id=546050075 groups=["env_vegetation_single"]]
+transform = Transform3D(-1.0796305, 0, 0.71911466, 0, 1.3196386, 0, -0.71911466, 0, -1.0796305, -1.498, 2.8660002, -65.523)
+gi_mode = 0
+mesh = ExtResource("102_h6xey")
+metadata/veg_class = "bush"
+
+[node name="bush_36" type="MeshInstance3D" parent="Vegetation" unique_id=644110236 groups=["env_vegetation_single"]]
+transform = Transform3D(1.0445818, 0, -1.075941, 0, 1.6201957, 0, 1.075941, 0, 1.0445818, 11.99, 5.794, -61.3)
+gi_mode = 0
+mesh = ExtResource("103_q3a08")
+metadata/veg_class = "bush"
+
+[node name="bush_37" type="MeshInstance3D" parent="Vegetation" unique_id=1527817291 groups=["env_vegetation_single"]]
+transform = Transform3D(0.79628694, 0, -0.81691605, 0, 1.0084648, 0, 0.81691605, 0, 0.79628694, -14.204, 3.2870002, 2.447)
+gi_mode = 0
+mesh = ExtResource("103_q3a08")
+metadata/veg_class = "bush"
+
+[node name="bush_38" type="MeshInstance3D" parent="Vegetation" unique_id=1277167174 groups=["env_vegetation_single"]]
+transform = Transform3D(0.62654316, 0, -1.1397957, 0, 1.2933251, 0, 1.1397957, 0, 0.62654316, 21.819, 1.8939999, -66.245)
+gi_mode = 0
+mesh = ExtResource("102_h6xey")
+metadata/veg_class = "bush"
+
+[node name="bush_39" type="MeshInstance3D" parent="Vegetation" unique_id=1095668953 groups=["env_vegetation_single"]]
+transform = Transform3D(0.48743722, 0, 1.0606024, 0, 1.2069763, 0, -1.0606024, 0, 0.48743722, -11.937, 3.3300002, -33.943)
+gi_mode = 0
+mesh = ExtResource("103_q3a08")
+metadata/veg_class = "bush"
+
+[node name="bush_40" type="MeshInstance3D" parent="Vegetation" unique_id=420885700 groups=["env_vegetation_single"]]
+transform = Transform3D(-1.3419685, 0, -0.11219019, 0, 1.2426906, 0, 0.11219019, 0, -1.3419685, 14.153, 3.516, -11.586)
+gi_mode = 0
+mesh = ExtResource("102_h6xey")
+metadata/veg_class = "bush"
+
+[node name="bush_41" type="MeshInstance3D" parent="Vegetation" unique_id=817819421 groups=["env_vegetation_single"]]
+transform = Transform3D(0.25865, 0, -1.0318257, 0, 0.91317105, 0, 1.0318257, 0, 0.25865, 19.915, 4.137, -64.053)
+gi_mode = 0
+mesh = ExtResource("105_1tv8c")
+metadata/veg_class = "bush"
+
+[node name="bush_42" type="MeshInstance3D" parent="Vegetation" unique_id=1861006702 groups=["env_vegetation_single"]]
+transform = Transform3D(0.028156666, 0, 1.183015, 0, 1.0239056, 0, -1.183015, 0, 0.028156666, -16.519, 2.371, -10.172)
+gi_mode = 0
+mesh = ExtResource("102_h6xey")
+metadata/veg_class = "bush"
+
+[node name="bush_43" type="MeshInstance3D" parent="Vegetation" unique_id=1340426148 groups=["env_vegetation_single"]]
+transform = Transform3D(-1.3477372, 0, -0.05718827, 0, 1.3515654, 0, 0.05718827, 0, -1.3477372, 18.333, 2.6030002, -54.515)
+gi_mode = 0
+mesh = ExtResource("102_h6xey")
+metadata/veg_class = "bush"
+
+[node name="bush_44" type="MeshInstance3D" parent="Vegetation" unique_id=1220751498 groups=["env_vegetation_single"]]
+transform = Transform3D(-0.9881487, 0, -1.077025, 0, 1.3434452, 0, 1.077025, 0, -0.9881487, 16.278, 3.2220001, -34.984)
+gi_mode = 0
+mesh = ExtResource("103_q3a08")
+metadata/veg_class = "bush"
+
+[node name="bush_45" type="MeshInstance3D" parent="Vegetation" unique_id=1733891930 groups=["env_vegetation_single"]]
+transform = Transform3D(1.171575, 0, 0.15436031, 0, 1.0045984, 0, -0.15436031, 0, 1.171575, -3.221, 0.871, 11.211)
+gi_mode = 0
+mesh = ExtResource("101_gsby2")
+metadata/veg_class = "bush"
+
+[node name="bush_46" type="MeshInstance3D" parent="Vegetation" unique_id=301602157 groups=["env_vegetation_single"]]
+transform = Transform3D(1.4248409, 0, -0.6077699, 0, 1.4158674, 0, 0.6077699, 0, 1.4248409, 16.091, 1.694, 18.254)
+gi_mode = 0
+mesh = ExtResource("105_1tv8c")
+metadata/veg_class = "bush"
+
+[node name="bush_47" type="MeshInstance3D" parent="Vegetation" unique_id=1897399699 groups=["env_vegetation_single"]]
+transform = Transform3D(-1.3784453, 0, 0.086393416, 0, 1.182111, 0, -0.086393416, 0, -1.3784453, -14.027, 3.329, 2.734)
+gi_mode = 0
+mesh = ExtResource("103_q3a08")
+metadata/veg_class = "bush"
+
+[node name="bush_48" type="MeshInstance3D" parent="Vegetation" unique_id=868536114 groups=["env_vegetation_single"]]
+transform = Transform3D(-1.1439596, 0, 0.5993327, 0, 1.3795669, 0, -0.5993327, 0, -1.1439596, -15.566, 2.805, -16.182)
+gi_mode = 0
+mesh = ExtResource("105_1tv8c")
+metadata/veg_class = "bush"
+
+[node name="bush_49" type="MeshInstance3D" parent="Vegetation" unique_id=1821797257 groups=["env_vegetation_single"]]
+transform = Transform3D(0.87625456, 0, -0.008925437, 0, 0.8049614, 0, 0.008925437, 0, 0.87625456, 18.067, 2.5430002, -46.619)
+gi_mode = 0
+mesh = ExtResource("103_q3a08")
+metadata/veg_class = "bush"
+
+[node name="bush_50" type="MeshInstance3D" parent="Vegetation" unique_id=2087620667 groups=["env_vegetation_single"]]
+transform = Transform3D(0.58245873, 0, -0.9594393, 0, 1.0587392, 0, 0.9594393, 0, 0.58245873, 14.701, 0.918, 19.858)
+gi_mode = 0
+mesh = ExtResource("103_q3a08")
+metadata/veg_class = "bush"
+
+[node name="bush_51" type="MeshInstance3D" parent="Vegetation" unique_id=782464821 groups=["env_vegetation_single"]]
+transform = Transform3D(-0.621334, 0, 0.31295773, 0, 0.6232123, 0, -0.31295773, 0, -0.621334, -11.999, 3.4250002, -11.402)
+gi_mode = 0
+mesh = ExtResource("101_gsby2")
+metadata/veg_class = "bush"
+
+[node name="bush_52" type="MeshInstance3D" parent="Vegetation" unique_id=964973360 groups=["env_vegetation_single"]]
+transform = Transform3D(0.5339291, 0, -1.1809595, 0, 1.221698, 0, 1.1809595, 0, 0.5339291, 15.34, 3.443, -28.148)
+gi_mode = 0
+mesh = ExtResource("104_4hgr8")
+metadata/veg_class = "bush"
+
+[node name="bush_53" type="MeshInstance3D" parent="Vegetation" unique_id=265593614 groups=["env_vegetation_single"]]
+transform = Transform3D(0.57353276, 0, -1.3319142, 0, 1.2890791, 0, 1.3319142, 0, 0.57353276, -15.965, 2.0430002, -37.48)
+gi_mode = 0
+mesh = ExtResource("104_4hgr8")
+metadata/veg_class = "bush"
+
+[node name="bush_54" type="MeshInstance3D" parent="Vegetation" unique_id=604035323 groups=["env_vegetation_single"]]
+transform = Transform3D(-1.2283504, 0, 0.12894706, 0, 1.1443678, 0, -0.12894706, 0, -1.2283504, -13.3, 4.105, -26.604)
+gi_mode = 0
+mesh = ExtResource("102_h6xey")
+metadata/veg_class = "bush"
+
+[node name="bush_55" type="MeshInstance3D" parent="Vegetation" unique_id=585634877 groups=["env_vegetation_single"]]
+transform = Transform3D(-1.0926462, 0, -0.50032717, 0, 1.1289865, 0, 0.50032717, 0, -1.0926462, -15.004, 3.138, -27.404)
+gi_mode = 0
+mesh = ExtResource("103_q3a08")
+metadata/veg_class = "bush"
+
+[node name="bush_56" type="MeshInstance3D" parent="Vegetation" unique_id=2112604390 groups=["env_vegetation_single"]]
+transform = Transform3D(-0.046343565, 0, -1.2066103, 0, 1.0609348, 0, 1.2066103, 0, -0.046343565, -14.368, 3.2250001, 7.919)
+gi_mode = 0
+mesh = ExtResource("102_h6xey")
+metadata/veg_class = "bush"
+
+[node name="bush_57" type="MeshInstance3D" parent="Vegetation" unique_id=135939631 groups=["env_vegetation_single"]]
+transform = Transform3D(0.22554056, 0, 1.180396, 0, 1.1458086, 0, -1.180396, 0, 0.22554056, -12.137, 3.647, -40.301)
+gi_mode = 0
+mesh = ExtResource("103_q3a08")
+metadata/veg_class = "bush"
+
+[node name="bush_58" type="MeshInstance3D" parent="Vegetation" unique_id=958999902 groups=["env_vegetation_single"]]
+transform = Transform3D(-0.14525568, 0, 1.1827135, 0, 1.2010841, 0, -1.1827135, 0, -0.14525568, 18.528, 2.2410002, -28.431)
+gi_mode = 0
+mesh = ExtResource("101_gsby2")
+metadata/veg_class = "bush"
+
+[node name="bush_59" type="MeshInstance3D" parent="Vegetation" unique_id=1002988541 groups=["env_vegetation_single"]]
+transform = Transform3D(-0.61908156, 0, 0.84516776, 0, 1.0405722, 0, -0.84516776, 0, -0.61908156, 20.202, 2.5210001, -65.971)
+gi_mode = 0
+mesh = ExtResource("102_h6xey")
+metadata/veg_class = "bush"
+
+[node name="bush_60" type="MeshInstance3D" parent="Vegetation" unique_id=1907909814 groups=["env_vegetation_single"]]
+transform = Transform3D(-0.62999403, 0, 0.90099275, 0, 1.0990812, 0, -0.90099275, 0, -0.62999403, -13.586, 3.5470002, 0.392)
+gi_mode = 0
+mesh = ExtResource("104_4hgr8")
+metadata/veg_class = "bush"
+
+[node name="bush_61" type="MeshInstance3D" parent="Vegetation" unique_id=114626855 groups=["env_vegetation_single"]]
+transform = Transform3D(-0.69777834, 0, -0.1541383, 0, 0.7776715, 0, 0.1541383, 0, -0.69777834, 19.079, 2.262, -15.203)
+gi_mode = 0
+mesh = ExtResource("101_gsby2")
+metadata/veg_class = "bush"
+
+[node name="bush_62" type="MeshInstance3D" parent="Vegetation" unique_id=1073885177 groups=["env_vegetation_single"]]
+transform = Transform3D(-1.2193476, 0, -0.50608253, 0, 1.4413421, 0, 0.50608253, 0, -1.2193476, -13.168, 3.8360002, 13.494)
+gi_mode = 0
+mesh = ExtResource("105_1tv8c")
+metadata/veg_class = "bush"
+
+[node name="bush_63" type="MeshInstance3D" parent="Vegetation" unique_id=2097011289 groups=["env_vegetation_single"]]
+transform = Transform3D(-0.6310768, 0, -0.87766904, 0, 1.0785275, 0, 0.87766904, 0, -0.6310768, -13.687, 5.047, -58.088)
+gi_mode = 0
+mesh = ExtResource("105_1tv8c")
+metadata/veg_class = "bush"
+
+[node name="bush_64" type="MeshInstance3D" parent="Vegetation" unique_id=1255483152 groups=["env_vegetation_single"]]
+transform = Transform3D(-1.0800847, 0, -0.74913, 0, 1.167668, 0, 0.74913, 0, -1.0800847, 14.596, 0.728, 9.397)
+gi_mode = 0
+mesh = ExtResource("104_4hgr8")
+metadata/veg_class = "bush"
+
+[node name="bush_65" type="MeshInstance3D" parent="Vegetation" unique_id=225647875 groups=["env_vegetation_single"]]
+transform = Transform3D(0.51868945, 0, 0.81137556, 0, 0.8958075, 0, -0.81137556, 0, 0.51868945, 19.953, 1.694, -54.781)
+gi_mode = 0
+mesh = ExtResource("101_gsby2")
+metadata/veg_class = "bush"
+
+[node name="bush_66" type="MeshInstance3D" parent="Vegetation" unique_id=2087110054 groups=["env_vegetation_single"]]
+transform = Transform3D(0.41919965, 0, 0.89322364, 0, 0.99515855, 0, -0.89322364, 0, 0.41919965, 18.4, 2.3860002, -40.777)
+gi_mode = 0
+mesh = ExtResource("102_h6xey")
+metadata/veg_class = "bush"
+
+[node name="bush_67" type="MeshInstance3D" parent="Vegetation" unique_id=2129246175 groups=["env_vegetation_single"]]
+transform = Transform3D(-0.66180754, 0, 0.8298716, 0, 1.159109, 0, -0.8298716, 0, -0.66180754, -14.669, 2.6430001, -32.424)
+gi_mode = 0
+mesh = ExtResource("105_1tv8c")
+metadata/veg_class = "bush"
+
+[node name="bush_68" type="MeshInstance3D" parent="Vegetation" unique_id=173378733 groups=["env_vegetation_single"]]
+transform = Transform3D(-0.967666, 0, -0.7469984, 0, 1.1190704, 0, 0.7469984, 0, -0.967666, 20.993, 1.414, -34.635)
+gi_mode = 0
+mesh = ExtResource("104_4hgr8")
+metadata/veg_class = "bush"
+
+[node name="bush_69" type="MeshInstance3D" parent="Vegetation" unique_id=1682372360 groups=["env_vegetation_single"]]
+transform = Transform3D(-0.63584685, 0, 1.3122674, 0, 1.5405902, 0, -1.3122674, 0, -0.63584685, 13.911, 3.2220001, -43.781)
+gi_mode = 0
+mesh = ExtResource("102_h6xey")
+metadata/veg_class = "bush"
+
+[node name="bush_70" type="MeshInstance3D" parent="Vegetation" unique_id=493231924 groups=["env_vegetation_single"]]
+transform = Transform3D(0.2606178, 0, 1.0258113, 0, 0.9198022, 0, -1.0258113, 0, 0.2606178, 18.745, 2.4150002, -31.791)
+gi_mode = 0
+mesh = ExtResource("101_gsby2")
+metadata/veg_class = "bush"
+
+[node name="bush_71" type="MeshInstance3D" parent="Vegetation" unique_id=195103980 groups=["env_vegetation_single"]]
+transform = Transform3D(-1.0129155, 0, 1.0441741, 0, 1.4180794, 0, -1.0441741, 0, -1.0129155, 18.334, 2.8060002, 4.521)
+gi_mode = 0
+mesh = ExtResource("105_1tv8c")
+metadata/veg_class = "bush"
+
+[node name="bush_72" type="MeshInstance3D" parent="Vegetation" unique_id=1123842878 groups=["env_vegetation_single"]]
+transform = Transform3D(-0.81729245, 0, -0.10802071, 0, 0.70199364, 0, 0.10802071, 0, -0.81729245, 13.641, 0.88399994, 32.477)
+gi_mode = 0
+mesh = ExtResource("101_gsby2")
+metadata/veg_class = "bush"
+
+[node name="bush_73" type="MeshInstance3D" parent="Vegetation" unique_id=288055059 groups=["env_vegetation_single"]]
+transform = Transform3D(0.88543624, 0, 0.010625745, 0, 0.937327, 0, -0.010625745, 0, 0.88543624, 1.556, 0.658, 11.002)
+gi_mode = 0
+mesh = ExtResource("102_h6xey")
+metadata/veg_class = "bush"
+
+[node name="bush_74" type="MeshInstance3D" parent="Vegetation" unique_id=1663461426 groups=["env_vegetation_single"]]
+transform = Transform3D(-0.94482285, 0, 0.68540674, 0, 1.154967, 0, -0.68540674, 0, -0.94482285, 13.882, 1.013, 14.21)
+gi_mode = 0
+mesh = ExtResource("105_1tv8c")
+metadata/veg_class = "bush"
+
+[node name="bush_75" type="MeshInstance3D" parent="Vegetation" unique_id=576165719 groups=["env_vegetation_single"]]
+transform = Transform3D(1.1100575, 0, 0.4420845, 0, 1.1650355, 0, -0.4420845, 0, 1.1100575, 15.917, 4.0690002, -51.581)
+gi_mode = 0
+mesh = ExtResource("102_h6xey")
+metadata/veg_class = "bush"
+
+[node name="bush_76" type="MeshInstance3D" parent="Vegetation" unique_id=1053131125 groups=["env_vegetation_single"]]
+transform = Transform3D(-0.5912168, 0, -0.9944247, 0, 1.1969967, 0, 0.9944247, 0, -0.5912168, 14.96, 3.7120001, -2.847)
+gi_mode = 0
+mesh = ExtResource("105_1tv8c")
+metadata/veg_class = "bush"
+
+[node name="bush_77" type="MeshInstance3D" parent="Vegetation" unique_id=867297141 groups=["env_vegetation_single"]]
+transform = Transform3D(-0.90207785, 0, 0.03483094, 0, 0.79744434, 0, -0.03483094, 0, -0.90207785, -14.081, 3.967, -56.866)
+gi_mode = 0
+mesh = ExtResource("105_1tv8c")
+metadata/veg_class = "bush"
+
+[node name="bush_78" type="MeshInstance3D" parent="Vegetation" unique_id=1841420706 groups=["env_vegetation_single"]]
+transform = Transform3D(0.85961515, 0, -0.50966877, 0, 1.0705707, 0, 0.50966877, 0, 0.85961515, 19.205, 1.9369999, -0.101)
+gi_mode = 0
+mesh = ExtResource("105_1tv8c")
+metadata/veg_class = "bush"
+
+[node name="bush_79" type="MeshInstance3D" parent="Vegetation" unique_id=1088445170 groups=["env_vegetation_single"]]
+transform = Transform3D(-1.3696783, 0, -0.5668711, 0, 1.5156838, 0, 0.5668711, 0, -1.3696783, 2.401, 3.8460002, -64.172)
+gi_mode = 0
+mesh = ExtResource("104_4hgr8")
+metadata/veg_class = "bush"
+
+[node name="bush_80" type="MeshInstance3D" parent="Vegetation" unique_id=1175275244 groups=["env_vegetation_single"]]
+transform = Transform3D(0.3343512, 0, 1.4488719, 0, 1.3339137, 0, -1.4488719, 0, 0.3343512, 15.099, 3.955, -42.942)
+gi_mode = 0
+mesh = ExtResource("104_4hgr8")
+metadata/veg_class = "bush"
+
+[node name="bush_81" type="MeshInstance3D" parent="Vegetation" unique_id=1364931122 groups=["env_vegetation_single"]]
+transform = Transform3D(-0.38356364, 0, 0.8425509, 0, 0.86660486, 0, -0.8425509, 0, -0.38356364, -3.698, 2.3170002, -66.474)
+gi_mode = 0
+mesh = ExtResource("105_1tv8c")
+metadata/veg_class = "bush"
+
+[node name="bush_82" type="MeshInstance3D" parent="Vegetation" unique_id=1861315730 groups=["env_vegetation_single"]]
+transform = Transform3D(0.7377259, 0, 0.91640335, 0, 1.0553864, 0, -0.91640335, 0, 0.7377259, 15.023, 3.1520002, 2.438)
+gi_mode = 0
+mesh = ExtResource("103_q3a08")
+metadata/veg_class = "bush"
+
+[node name="bush_83" type="MeshInstance3D" parent="Vegetation" unique_id=913771762 groups=["env_vegetation_single"]]
+transform = Transform3D(-0.68925697, 0, 1.0469894, 0, 1.2376708, 0, -1.0469894, 0, -0.68925697, 8.306, 3.319, -65.151)
+gi_mode = 0
+mesh = ExtResource("104_4hgr8")
+metadata/veg_class = "bush"
+
+[node name="bush_84" type="MeshInstance3D" parent="Vegetation" unique_id=1345802595 groups=["env_vegetation_single"]]
+transform = Transform3D(-0.6065343, 0, 0.39789602, 0, 0.6271466, 0, -0.39789602, 0, -0.6065343, -9.24, 3.5830002, -64.269)
+gi_mode = 0
+mesh = ExtResource("101_gsby2")
+metadata/veg_class = "bush"
+
+[node name="bush_85" type="MeshInstance3D" parent="Vegetation" unique_id=49628661 groups=["env_vegetation_single"]]
+transform = Transform3D(-0.6316443, 0, -0.8637936, 0, 1.135671, 0, 0.8637936, 0, -0.6316443, 16.688, 3.625, -35.79)
+gi_mode = 0
+mesh = ExtResource("101_gsby2")
+metadata/veg_class = "bush"
+
+[node name="bush_86" type="MeshInstance3D" parent="Vegetation" unique_id=128848154 groups=["env_vegetation_single"]]
+transform = Transform3D(-1.0227463, 0, 0.4922687, 0, 1.1633731, 0, -0.4922687, 0, -1.0227463, -12.743, 3.434, 14.807)
+gi_mode = 0
+mesh = ExtResource("103_q3a08")
+metadata/veg_class = "bush"
+
+[node name="bush_87" type="MeshInstance3D" parent="Vegetation" unique_id=1931073228 groups=["env_vegetation_single"]]
+transform = Transform3D(0.88067067, 0, 0.6142074, 0, 1.0763417, 0, -0.6142074, 0, 0.88067067, -5.741, 2.167, 13.236)
+gi_mode = 0
+mesh = ExtResource("101_gsby2")
+metadata/veg_class = "bush"
+
+[node name="bush_88" type="MeshInstance3D" parent="Vegetation" unique_id=2062267358 groups=["env_vegetation_single"]]
+transform = Transform3D(1.4091306, 0, 0.28417817, 0, 1.3542994, 0, -0.28417817, 0, 1.4091306, -11.372, 5.1470003, -62.058)
+gi_mode = 0
+mesh = ExtResource("102_h6xey")
+metadata/veg_class = "bush"
+
+[node name="bush_89" type="MeshInstance3D" parent="Vegetation" unique_id=1714738050 groups=["env_vegetation_single"]]
+transform = Transform3D(0.92812437, 0, -0.8061554, 0, 1.1360703, 0, 0.8061554, 0, 0.92812437, -14.221, 2.937, -39.392)
+gi_mode = 0
+mesh = ExtResource("105_1tv8c")
+metadata/veg_class = "bush"
+
+[node name="bush_90" type="MeshInstance3D" parent="Vegetation" unique_id=796605798 groups=["env_vegetation_single"]]
+transform = Transform3D(1.3400567, 0, 0.73730487, 0, 1.4914739, 0, -0.73730487, 0, 1.3400567, 14.163, 0.792, 17.569)
+gi_mode = 0
+mesh = ExtResource("105_1tv8c")
+metadata/veg_class = "bush"
+
+[node name="bush_91" type="MeshInstance3D" parent="Vegetation" unique_id=2112013783 groups=["env_vegetation_single"]]
+transform = Transform3D(1.0701178, 0, 1.1040416, 0, 1.5629199, 0, -1.1040416, 0, 1.0701178, 15.725, 3.9960003, -45.432)
+gi_mode = 0
+mesh = ExtResource("102_h6xey")
+metadata/veg_class = "bush"
+
+[node name="bush_92" type="MeshInstance3D" parent="Vegetation" unique_id=734373359 groups=["env_vegetation_single"]]
+transform = Transform3D(0.9167214, 0, -0.0423692, 0, 0.99695873, 0, 0.0423692, 0, 0.9167214, 15.032, 3.697, -26.552)
+gi_mode = 0
+mesh = ExtResource("102_h6xey")
+metadata/veg_class = "bush"
+
+[node name="bush_93" type="MeshInstance3D" parent="Vegetation" unique_id=1778133570 groups=["env_vegetation_single"]]
+transform = Transform3D(0.7569681, 0, 0.8177867, 0, 1.1802577, 0, -0.8177867, 0, 0.7569681, 19.094, 2.263, 2.673)
+gi_mode = 0
+mesh = ExtResource("104_4hgr8")
+metadata/veg_class = "bush"
+
+[node name="bush_94" type="MeshInstance3D" parent="Vegetation" unique_id=1343677275 groups=["env_vegetation_single"]]
+transform = Transform3D(-1.2942538, 0, 0.040902656, 0, 1.1046871, 0, -0.040902656, 0, -1.2942538, -0.786, 1.9729999, 13.396)
+gi_mode = 0
+mesh = ExtResource("102_h6xey")
+metadata/veg_class = "bush"
+
+[node name="bush_95" type="MeshInstance3D" parent="Vegetation" unique_id=126817845 groups=["env_vegetation_single"]]
+transform = Transform3D(-0.03719726, 0, 1.0561951, 0, 0.9725598, 0, -1.0561951, 0, -0.03719726, -18.993, 1.266, 8.415)
+gi_mode = 0
+mesh = ExtResource("102_h6xey")
+metadata/veg_class = "bush"
+
+[node name="bush_96" type="MeshInstance3D" parent="Vegetation" unique_id=904229604 groups=["env_vegetation_single"]]
+transform = Transform3D(0.14844611, 0, -1.0719199, 0, 1.1476032, 0, 1.0719199, 0, 0.14844611, -4.885, 1.738, -67.491)
+gi_mode = 0
+mesh = ExtResource("102_h6xey")
+metadata/veg_class = "bush"
+
+[node name="bush_97" type="MeshInstance3D" parent="Vegetation" unique_id=1386775406 groups=["env_vegetation_single"]]
+transform = Transform3D(-0.1473936, 0, 1.344344, 0, 1.1931254, 0, -1.344344, 0, -0.1473936, 20.258, 1.532, -47.35)
+gi_mode = 0
+mesh = ExtResource("102_h6xey")
+metadata/veg_class = "bush"
+
+[node name="bush_98" type="MeshInstance3D" parent="Vegetation" unique_id=1827315074 groups=["env_vegetation_single"]]
+transform = Transform3D(-0.80289423, 0, -0.46334627, 0, 0.90413797, 0, 0.46334627, 0, -0.80289423, -1.477, 3.2480001, -65.124)
+gi_mode = 0
+mesh = ExtResource("101_gsby2")
+metadata/veg_class = "bush"
+
+[node name="bush_99" type="MeshInstance3D" parent="Vegetation" unique_id=736400326 groups=["env_vegetation_single"]]
+transform = Transform3D(-0.74600047, 0, -0.85851514, 0, 1.2090095, 0, 0.85851514, 0, -0.74600047, 20.654, 1.306, -43.967)
+gi_mode = 0
+mesh = ExtResource("103_q3a08")
+metadata/veg_class = "bush"
+
+[node name="bush_100" type="MeshInstance3D" parent="Vegetation" unique_id=520940611 groups=["env_vegetation_single"]]
+transform = Transform3D(0.896675, 0, -0.32040417, 0, 1.0118771, 0, 0.32040417, 0, 0.896675, 17.799, 2.5630002, -42.012)
+gi_mode = 0
+mesh = ExtResource("105_1tv8c")
+metadata/veg_class = "bush"
+
+[node name="bush_101" type="MeshInstance3D" parent="Vegetation" unique_id=405715203 groups=["env_vegetation_single"]]
+transform = Transform3D(0.98341644, 0, 0.6684692, 0, 1.2340423, 0, -0.6684692, 0, 0.98341644, 15.154, 3.381, -29.368)
+gi_mode = 0
+mesh = ExtResource("102_h6xey")
+metadata/veg_class = "bush"
+
+[node name="bush_102" type="MeshInstance3D" parent="Vegetation" unique_id=1007218348 groups=["env_vegetation_single"]]
+transform = Transform3D(0.84049106, 0, 0.7628325, 0, 1.1436913, 0, -0.7628325, 0, 0.84049106, -14.346, 3.213, 8.005)
+gi_mode = 0
+mesh = ExtResource("103_q3a08")
+metadata/veg_class = "bush"
+
+[node name="bush_103" type="MeshInstance3D" parent="Vegetation" unique_id=624856611 groups=["env_vegetation_single"]]
+transform = Transform3D(1.0937438, 0, -0.65144503, 0, 1.1854644, 0, 0.65144503, 0, 1.0937438, -13.602, 4.576, -57.512)
+gi_mode = 0
+mesh = ExtResource("103_q3a08")
+metadata/veg_class = "bush"
+
+[node name="bush_104" type="MeshInstance3D" parent="Vegetation" unique_id=827816490 groups=["env_vegetation_single"]]
+transform = Transform3D(-1.0419569, 0, 0.08415624, 0, 1.0698541, 0, -0.08415624, 0, -1.0419569, 15.789, 3.9510002, -43.849)
+gi_mode = 0
+mesh = ExtResource("102_h6xey")
+metadata/veg_class = "bush"
+
+[node name="bush_105" type="MeshInstance3D" parent="Vegetation" unique_id=884957248 groups=["env_vegetation_single"]]
+transform = Transform3D(-0.827756, 0, -1.0461242, 0, 1.2644312, 0, 1.0461242, 0, -0.827756, -9.42, 2.328, 14.057)
+gi_mode = 0
+mesh = ExtResource("105_1tv8c")
+metadata/veg_class = "bush"
+
+[node name="bush_106" type="MeshInstance3D" parent="Vegetation" unique_id=1663161354 groups=["env_vegetation_single"]]
+transform = Transform3D(-0.20820887, 0, 1.2803816, 0, 1.342921, 0, -1.2803816, 0, -0.20820887, -14.005, 3.3200002, -14.116)
+gi_mode = 0
+mesh = ExtResource("102_h6xey")
+metadata/veg_class = "bush"
+
+[node name="bush_107" type="MeshInstance3D" parent="Vegetation" unique_id=1324227830 groups=["env_vegetation_single"]]
+transform = Transform3D(1.383775, 0, -0.6910877, 0, 1.4410361, 0, 0.6910877, 0, 1.383775, -13.457, 3.598, 8.695)
+gi_mode = 0
+mesh = ExtResource("105_1tv8c")
+metadata/veg_class = "bush"
+
+[node name="bush_108" type="MeshInstance3D" parent="Vegetation" unique_id=1631942227 groups=["env_vegetation_single"]]
+transform = Transform3D(-0.40335476, 0, -1.0326176, 0, 1.0088683, 0, 1.0326176, 0, -0.40335476, -13.288, 3.7370002, -28.378)
+gi_mode = 0
+mesh = ExtResource("102_h6xey")
+metadata/veg_class = "bush"
+
+[node name="bush_109" type="MeshInstance3D" parent="Vegetation" unique_id=1618709491 groups=["env_vegetation_single"]]
+transform = Transform3D(1.1703055, 0, 0.11860442, 0, 1.2521521, 0, -0.11860442, 0, 1.1703055, -9.76, 1.446, 11.302)
+gi_mode = 0
+mesh = ExtResource("101_gsby2")
+metadata/veg_class = "bush"
+
+[node name="bush_110" type="MeshInstance3D" parent="Vegetation" unique_id=1741480530 groups=["env_vegetation_single"]]
+transform = Transform3D(-0.93928486, 0, 0.27477202, 0, 0.85569143, 0, -0.27477202, 0, -0.93928486, -14.864, 3.0170002, -14.334)
+gi_mode = 0
+mesh = ExtResource("102_h6xey")
+metadata/veg_class = "bush"
+
+[node name="bush_111" type="MeshInstance3D" parent="Vegetation" unique_id=566706518 groups=["env_vegetation_single"]]
+transform = Transform3D(-0.85712695, 0, -0.6202397, 0, 0.95444, 0, 0.6202397, 0, -0.85712695, 7.399, 1.004, 15.764)
+gi_mode = 0
+mesh = ExtResource("104_4hgr8")
+metadata/veg_class = "bush"
+
+[node name="bush_112" type="MeshInstance3D" parent="Vegetation" unique_id=1807741380 groups=["env_vegetation_single"]]
+transform = Transform3D(0.67643124, 0, 1.1710792, 0, 1.3958323, 0, -1.1710792, 0, 0.67643124, 15.951, 1.689, 17.791)
+gi_mode = 0
+mesh = ExtResource("102_h6xey")
+metadata/veg_class = "bush"
+
+[node name="bush_113" type="MeshInstance3D" parent="Vegetation" unique_id=2077395434 groups=["env_vegetation_single"]]
+transform = Transform3D(-0.9572957, 0, 0.32105905, 0, 0.91659904, 0, -0.32105905, 0, -0.9572957, 17.065, 2.763, -29.445)
+gi_mode = 0
+mesh = ExtResource("103_q3a08")
+metadata/veg_class = "bush"
+
+[node name="bush_114" type="MeshInstance3D" parent="Vegetation" unique_id=1699758071 groups=["env_vegetation_single"]]
+transform = Transform3D(-0.9333097, 0, -0.5067318, 0, 0.9763657, 0, 0.5067318, 0, -0.9333097, -14.167, 3.528, -0.71)
+gi_mode = 0
+mesh = ExtResource("101_gsby2")
+metadata/veg_class = "bush"
+
+[node name="bush_115" type="MeshInstance3D" parent="Vegetation" unique_id=643153354 groups=["env_vegetation_single"]]
+transform = Transform3D(-0.94801056, 0, -0.74400413, 0, 1.2687407, 0, 0.74400413, 0, -0.94801056, 13.715, 3.0930002, -14.598)
+gi_mode = 0
+mesh = ExtResource("101_gsby2")
+metadata/veg_class = "bush"
+
+[node name="bush_116" type="MeshInstance3D" parent="Vegetation" unique_id=1592195489 groups=["env_vegetation_single"]]
+transform = Transform3D(-0.81099904, 0, 0.30026585, 0, 0.8886865, 0, -0.30026585, 0, -0.81099904, -12.87, 3.916, -4.368)
+gi_mode = 0
+mesh = ExtResource("103_q3a08")
+metadata/veg_class = "bush"
+
+[node name="bush_117" type="MeshInstance3D" parent="Vegetation" unique_id=95093523 groups=["env_vegetation_single"]]
+transform = Transform3D(-0.03754956, 0, 0.8685888, 0, 0.82170224, 0, -0.8685888, 0, -0.03754956, -14.554, 3.423, 14.155)
+gi_mode = 0
+mesh = ExtResource("101_gsby2")
+metadata/veg_class = "bush"
+
+[node name="bush_118" type="MeshInstance3D" parent="Vegetation" unique_id=348498094 groups=["env_vegetation_single"]]
+transform = Transform3D(1.2367789, 0, -0.9192709, 0, 1.4982783, 0, 0.9192709, 0, 1.2367789, 15.036, 3.6990001, -24.707)
+gi_mode = 0
+mesh = ExtResource("102_h6xey")
+metadata/veg_class = "bush"
+
+[node name="bush_119" type="MeshInstance3D" parent="Vegetation" unique_id=875120777 groups=["env_vegetation_single"]]
+transform = Transform3D(0.6455008, 0, -0.56067264, 0, 0.74131554, 0, 0.56067264, 0, 0.6455008, -11.472, 3.227, 13.653)
+gi_mode = 0
+mesh = ExtResource("101_gsby2")
+metadata/veg_class = "bush"
+
+[node name="bush_120" type="MeshInstance3D" parent="Vegetation" unique_id=626902278 groups=["env_vegetation_single"]]
+transform = Transform3D(-1.1673421, 0, 0.22643152, 0, 1.1424783, 0, -0.22643152, 0, -1.1673421, -12.307, 3.486, -65.301)
+gi_mode = 0
+mesh = ExtResource("103_q3a08")
+metadata/veg_class = "bush"
+
+[node name="bush_121" type="MeshInstance3D" parent="Vegetation" unique_id=623159128 groups=["env_vegetation_single"]]
+transform = Transform3D(-0.7247259, 0, -0.36577532, 0, 0.86551887, 0, 0.36577532, 0, -0.7247259, 14.609, 3.812, -12.431)
+gi_mode = 0
+mesh = ExtResource("101_gsby2")
+metadata/veg_class = "bush"
+
+[node name="bush_122" type="MeshInstance3D" parent="Vegetation" unique_id=1335043887 groups=["env_vegetation_single"]]
+transform = Transform3D(-1.023974, 0, -0.5506654, 0, 1.0638332, 0, 0.5506654, 0, -1.023974, -3.951, 2.6560001, -66.032)
+gi_mode = 0
+mesh = ExtResource("103_q3a08")
+metadata/veg_class = "bush"
+
+[node name="bush_123" type="MeshInstance3D" parent="Vegetation" unique_id=969539334 groups=["env_vegetation_single"]]
+transform = Transform3D(-0.8991665, 0, -0.121587664, 0, 0.9296517, 0, 0.121587664, 0, -0.8991665, 14.666, 3.413, -30.55)
+gi_mode = 0
+mesh = ExtResource("105_1tv8c")
+metadata/veg_class = "bush"
+
+[node name="bush_124" type="MeshInstance3D" parent="Vegetation" unique_id=209432712 groups=["env_vegetation_single"]]
+transform = Transform3D(-0.74636024, 0, -0.63301045, 0, 1.0141544, 0, 0.63301045, 0, -0.74636024, 15.905, 3.6190002, -1.524)
+gi_mode = 0
+mesh = ExtResource("105_1tv8c")
+metadata/veg_class = "bush"
+
+[node name="bush_125" type="MeshInstance3D" parent="Vegetation" unique_id=1696632545 groups=["env_vegetation_single"]]
+transform = Transform3D(-0.53840905, 0, -1.2756305, 0, 1.461427, 0, 1.2756305, 0, -0.53840905, -11.986, 5.613, -61.245)
+gi_mode = 0
+mesh = ExtResource("105_1tv8c")
+metadata/veg_class = "bush"
+
+[node name="bush_126" type="MeshInstance3D" parent="Vegetation" unique_id=369973266 groups=["env_vegetation_single"]]
+transform = Transform3D(-0.7865281, 0, 0.69205785, 0, 1.0940127, 0, -0.69205785, 0, -0.7865281, 6.263, 1.781, 16.057)
+gi_mode = 0
+mesh = ExtResource("103_q3a08")
+metadata/veg_class = "bush"
+
+[node name="bush_127" type="MeshInstance3D" parent="Vegetation" unique_id=1188279199 groups=["env_vegetation_single"]]
+transform = Transform3D(0.69090027, 0, 0.07351096, 0, 0.59796333, 0, -0.07351096, 0, 0.69090027, -12.609, 3.6450002, -32.303)
+gi_mode = 0
+mesh = ExtResource("101_gsby2")
+metadata/veg_class = "bush"
+
+[node name="bush_128" type="MeshInstance3D" parent="Vegetation" unique_id=772995732 groups=["env_vegetation_single"]]
+transform = Transform3D(-1.1018547, 0, -0.28652832, 0, 1.0561031, 0, 0.28652832, 0, -1.1018547, -13.578, 3.7600002, -23.009)
+gi_mode = 0
+mesh = ExtResource("102_h6xey")
+metadata/veg_class = "bush"
+
+[node name="bush_129" type="MeshInstance3D" parent="Vegetation" unique_id=284400678 groups=["env_vegetation_single"]]
+transform = Transform3D(1.0465052, 0, -0.28871125, 0, 0.93632656, 0, 0.28871125, 0, 1.0465052, 15.465, 4.011, -35.653)
+gi_mode = 0
+mesh = ExtResource("105_1tv8c")
+metadata/veg_class = "bush"
+
+[node name="bush_130" type="MeshInstance3D" parent="Vegetation" unique_id=1541911597 groups=["env_vegetation_single"]]
+transform = Transform3D(0.5454729, 0, 0.7874817, 0, 0.970733, 0, -0.7874817, 0, 0.5454729, -11.773, 2.153, -67.006)
+gi_mode = 0
+mesh = ExtResource("103_q3a08")
+metadata/veg_class = "bush"
+
+[node name="bush_131" type="MeshInstance3D" parent="Vegetation" unique_id=348321171 groups=["env_vegetation_single"]]
+transform = Transform3D(0.30244493, 0, -0.9860593, 0, 0.9319341, 0, 0.9860593, 0, 0.30244493, -14.569, 3.447, -27.69)
+gi_mode = 0
+mesh = ExtResource("101_gsby2")
+metadata/veg_class = "bush"
+
+[node name="bush_132" type="MeshInstance3D" parent="Vegetation" unique_id=1224808646 groups=["env_vegetation_single"]]
+transform = Transform3D(0.7452101, 0, 0.6200768, 0, 1.0575559, 0, -0.6200768, 0, 0.7452101, 16.953, 3.105, 1.309)
+gi_mode = 0
+mesh = ExtResource("102_h6xey")
+metadata/veg_class = "bush"
+
+[node name="bush_133" type="MeshInstance3D" parent="Vegetation" unique_id=1550221968 groups=["env_vegetation_single"]]
+transform = Transform3D(0.824477, 0, -0.4888353, 0, 1.0083072, 0, 0.4888353, 0, 0.824477, -6.611, 1.096, 11.293)
+gi_mode = 0
+mesh = ExtResource("101_gsby2")
+metadata/veg_class = "bush"
+
+[node name="bush_134" type="MeshInstance3D" parent="Vegetation" unique_id=571261070 groups=["env_vegetation_single"]]
+transform = Transform3D(-0.71021205, 0, -0.5830747, 0, 0.8774327, 0, 0.5830747, 0, -0.71021205, 0.992, 0.796, 11.229)
+gi_mode = 0
+mesh = ExtResource("101_gsby2")
+metadata/veg_class = "bush"
+
+[node name="bush_135" type="MeshInstance3D" parent="Vegetation" unique_id=695540817 groups=["env_vegetation_single"]]
+transform = Transform3D(1.173524, 0, 0.23666358, 0, 1.1258987, 0, -0.23666358, 0, 1.173524, 17.218, 5.2980003, -58.727)
+gi_mode = 0
+mesh = ExtResource("102_h6xey")
+metadata/veg_class = "bush"
+
+[node name="bush_136" type="MeshInstance3D" parent="Vegetation" unique_id=184799134 groups=["env_vegetation_single"]]
+transform = Transform3D(0.8955093, 0, 0.2430256, 0, 0.8306773, 0, -0.2430256, 0, 0.8955093, 19.803, 1.766, -54.842)
+gi_mode = 0
+mesh = ExtResource("101_gsby2")
+metadata/veg_class = "bush"
+
+[node name="bush_137" type="MeshInstance3D" parent="Vegetation" unique_id=174271801 groups=["env_vegetation_single"]]
+transform = Transform3D(1.0077628, 0, -0.8457054, 0, 1.2470189, 0, 0.8457054, 0, 1.0077628, -17.752, 1.732, -20.078)
+gi_mode = 0
+mesh = ExtResource("105_1tv8c")
+metadata/veg_class = "bush"
+
+[node name="bush_138" type="MeshInstance3D" parent="Vegetation" unique_id=1347520670 groups=["env_vegetation_single"]]
+transform = Transform3D(-0.045599546, 0, 1.1060604, 0, 1.0095528, 0, -1.1060604, 0, -0.045599546, -12.986, 3.5930002, -14.156)
+gi_mode = 0
+mesh = ExtResource("101_gsby2")
+metadata/veg_class = "bush"
+
+[node name="bush_139" type="MeshInstance3D" parent="Vegetation" unique_id=414536803 groups=["env_vegetation_single"]]
+transform = Transform3D(-0.6857955, 0, 0.64221394, 0, 0.8736779, 0, -0.64221394, 0, -0.6857955, -2.117, 1.571, 12.387)
+gi_mode = 0
+mesh = ExtResource("103_q3a08")
+metadata/veg_class = "bush"
+
+[node name="bush_140" type="MeshInstance3D" parent="Vegetation" unique_id=1008674935 groups=["env_vegetation_single"]]
+transform = Transform3D(-1.0845687, 0, -0.4124594, 0, 1.0465276, 0, 0.4124594, 0, -1.0845687, -1.247, 1.92, 14.554)
+gi_mode = 0
+mesh = ExtResource("103_q3a08")
+metadata/veg_class = "bush"
+
+[node name="bush_141" type="MeshInstance3D" parent="Vegetation" unique_id=292140488 groups=["env_vegetation_single"]]
+transform = Transform3D(-0.97137225, 0, 0.1523699, 0, 0.89604557, 0, -0.1523699, 0, -0.97137225, 2.141, 1.9310001, 14.55)
+gi_mode = 0
+mesh = ExtResource("103_q3a08")
+metadata/veg_class = "bush"
+
+[node name="bush_142" type="MeshInstance3D" parent="Vegetation" unique_id=1485435749 groups=["env_vegetation_single"]]
+transform = Transform3D(-1.1006045, 0, 0.26303676, 0, 1.028019, 0, -0.26303676, 0, -1.1006045, 18.695, 3.134, 8.738)
+gi_mode = 0
+mesh = ExtResource("105_1tv8c")
+metadata/veg_class = "bush"
+
+[node name="bush_143" type="MeshInstance3D" parent="Vegetation" unique_id=407019683 groups=["env_vegetation_single"]]
+transform = Transform3D(-0.13936925, 0, 0.76500845, 0, 0.70406467, 0, -0.76500845, 0, -0.13936925, -14.997, 2.989, 2.128)
+gi_mode = 0
+mesh = ExtResource("101_gsby2")
+metadata/veg_class = "bush"
+
+[node name="bush_144" type="MeshInstance3D" parent="Vegetation" unique_id=2139201814 groups=["env_vegetation_single"]]
+transform = Transform3D(0.6609846, 0, 0.64221954, 0, 0.7869746, 0, -0.64221954, 0, 0.6609846, -11.802, 3.513, -29.351)
+gi_mode = 0
+mesh = ExtResource("101_gsby2")
+metadata/veg_class = "bush"
+
+[node name="bush_145" type="MeshInstance3D" parent="Vegetation" unique_id=2053644482 groups=["env_vegetation_single"]]
+transform = Transform3D(1.237828, 0, 0.38019422, 0, 1.1577438, 0, -0.38019422, 0, 1.237828, 15.601, 4.028, -37.041)
+gi_mode = 0
+mesh = ExtResource("103_q3a08")
+metadata/veg_class = "bush"
+
+[node name="bush_146" type="MeshInstance3D" parent="Vegetation" unique_id=101961225 groups=["env_vegetation_single"]]
+transform = Transform3D(-0.39208928, 0, 1.0602751, 0, 1.2063129, 0, -1.0602751, 0, -0.39208928, 16.987, 3.561, -39.389)
+gi_mode = 0
+mesh = ExtResource("104_4hgr8")
+metadata/veg_class = "bush"
+
+[node name="bush_147" type="MeshInstance3D" parent="Vegetation" unique_id=1930047630 groups=["env_vegetation_single"]]
+transform = Transform3D(1.5018162, 0, 0.13250203, 0, 1.4264212, 0, -0.13250203, 0, 1.5018162, 18.863, 2.45, -32.892)
+gi_mode = 0
+mesh = ExtResource("103_q3a08")
+metadata/veg_class = "bush"
+
+[node name="bush_148" type="MeshInstance3D" parent="Vegetation" unique_id=1595716680 groups=["env_vegetation_single"]]
+transform = Transform3D(0.7597536, 0, -0.49905455, 0, 0.9577577, 0, 0.49905455, 0, 0.7597536, 17.228, 3.071, 7.415)
+gi_mode = 0
+mesh = ExtResource("101_gsby2")
+metadata/veg_class = "bush"
+
+[node name="bush_149" type="MeshInstance3D" parent="Vegetation" unique_id=1700515043 groups=["env_vegetation_single"]]
+transform = Transform3D(0.3085291, 0, -1.4087094, 0, 1.3628936, 0, 1.4087094, 0, 0.3085291, -16.329, 1.9369999, -42.298)
+gi_mode = 0
+mesh = ExtResource("105_1tv8c")
+metadata/veg_class = "bush"
+
+[node name="bush_150" type="MeshInstance3D" parent="Vegetation" unique_id=448978746 groups=["env_vegetation_single"]]
+transform = Transform3D(0.7427926, 0, -0.07917141, 0, 0.7529963, 0, 0.07917141, 0, 0.7427926, 20.587, 1.391, -45.22)
+gi_mode = 0
+mesh = ExtResource("101_gsby2")
+metadata/veg_class = "bush"
+
+[node name="bush_151" type="MeshInstance3D" parent="Vegetation" unique_id=64840068 groups=["env_vegetation_single"]]
+transform = Transform3D(-0.61731887, 0, 0.9097241, 0, 1.1604794, 0, -0.9097241, 0, -0.61731887, 20.649, 1.374, -14.631)
+gi_mode = 0
+mesh = ExtResource("102_h6xey")
+metadata/veg_class = "bush"
+
+[node name="bush_152" type="MeshInstance3D" parent="Vegetation" unique_id=1651403921 groups=["env_vegetation_single"]]
+transform = Transform3D(-0.87335855, 0, 1.1388783, 0, 1.2296721, 0, -1.1388783, 0, -0.87335855, -3.312, 2.0990002, 13.215)
+gi_mode = 0
+mesh = ExtResource("104_4hgr8")
+metadata/veg_class = "bush"
+
+[node name="bush_153" type="MeshInstance3D" parent="Vegetation" unique_id=1673935671 groups=["env_vegetation_single"]]
+transform = Transform3D(-0.9282995, 0, -0.27945194, 0, 1.0050284, 0, 0.27945194, 0, -0.9282995, 13.451, 2.45, -15.959)
+gi_mode = 0
+mesh = ExtResource("105_1tv8c")
+metadata/veg_class = "bush"
+
+[node name="bush_154" type="MeshInstance3D" parent="Vegetation" unique_id=1521118579 groups=["env_vegetation_single"]]
+transform = Transform3D(0.32326022, 0, 0.9262094, 0, 1.0423894, 0, -0.9262094, 0, 0.32326022, 21.513, 3.909, -62.264)
+gi_mode = 0
+mesh = ExtResource("101_gsby2")
+metadata/veg_class = "bush"
+
+[node name="bush_155" type="MeshInstance3D" parent="Vegetation" unique_id=1899066688 groups=["env_vegetation_single"]]
+transform = Transform3D(-0.2632442, 0, -1.2960358, 0, 1.4546268, 0, 1.2960358, 0, -0.2632442, -12.297, 3.607, -16.641)
+gi_mode = 0
+mesh = ExtResource("103_q3a08")
+metadata/veg_class = "bush"
+
+[node name="bush_156" type="MeshInstance3D" parent="Vegetation" unique_id=322396494 groups=["env_vegetation_single"]]
+transform = Transform3D(-1.0433034, 0, 0.5775589, 0, 1.1737887, 0, -0.5775589, 0, -1.0433034, 15.226, 3.987, -6.085)
+gi_mode = 0
+mesh = ExtResource("101_gsby2")
+metadata/veg_class = "bush"
+
+[node name="bush_157" type="MeshInstance3D" parent="Vegetation" unique_id=1936062099 groups=["env_vegetation_single"]]
+transform = Transform3D(0.28827968, 0, -1.0513947, 0, 0.92776114, 0, 1.0513947, 0, 0.28827968, -3.319, 1.708, 12.434)
+gi_mode = 0
+mesh = ExtResource("104_4hgr8")
+metadata/veg_class = "bush"
+
+[node name="bush_158" type="MeshInstance3D" parent="Vegetation" unique_id=1379566233 groups=["env_vegetation_single"]]
+transform = Transform3D(0.68880105, 0, -0.8318373, 0, 1.0711486, 0, 0.8318373, 0, 0.68880105, 2.625, 5.139, -62.102)
+gi_mode = 0
+mesh = ExtResource("101_gsby2")
+metadata/veg_class = "bush"
+
+[node name="bush_159" type="MeshInstance3D" parent="Vegetation" unique_id=1140746267 groups=["env_vegetation_single"]]
+transform = Transform3D(-0.17319766, 0, -0.9134247, 0, 0.98458564, 0, 0.9134247, 0, -0.17319766, -12.616, 4.113, -5.743)
+gi_mode = 0
+mesh = ExtResource("101_gsby2")
+metadata/veg_class = "bush"
+
+[node name="tree_00" type="MeshInstance3D" parent="Vegetation" unique_id=27466621 groups=["env_vegetation_single"]]
+transform = Transform3D(-0.3850677, 0, 0.31819415, 0, 0.49952444, 0, -0.31819415, 0, -0.3850677, -22.692, 0.21900001, -36.879)
+cast_shadow = 0
+gi_mode = 0
+mesh = ExtResource("106_dk1no")
+metadata/veg_class = "tree"
+metadata/far = true
+
+[node name="tree_01" type="MeshInstance3D" parent="Vegetation" unique_id=657548033 groups=["env_vegetation_single"]]
+transform = Transform3D(-0.18107341, 0, -1.8925046, 0, 2.0210655, 0, 1.8925046, 0, -0.18107341, -19.003, 1.016, -12.999)
+gi_mode = 0
+mesh = ExtResource("107_6644m")
+metadata/veg_class = "tree"
+
+[node name="tree_02" type="MeshInstance3D" parent="Vegetation" unique_id=568894170 groups=["env_vegetation_single"]]
+transform = Transform3D(-0.72117066, 0, 1.408529, 0, 1.6874167, 0, -1.408529, 0, -0.72117066, 20.916, 2.001, 31.739)
+cast_shadow = 0
+gi_mode = 0
+mesh = ExtResource("108_ivr01")
+metadata/veg_class = "tree"
+metadata/far = true
+
+[node name="tree_03" type="MeshInstance3D" parent="Vegetation" unique_id=1095220743 groups=["env_vegetation_single"]]
+transform = Transform3D(0.7109405, 0, 1.6014625, 0, 1.9541975, 0, -1.6014625, 0, 0.7109405, 31.278, 0.967, 11.038)
+cast_shadow = 0
+gi_mode = 0
+mesh = ExtResource("108_ivr01")
+metadata/veg_class = "tree"
+metadata/far = true
+
+[node name="tree_04" type="MeshInstance3D" parent="Vegetation" unique_id=2013389582 groups=["env_vegetation_single"]]
+transform = Transform3D(-1.6943811, 0, 0.2018885, 0, 1.8133394, 0, -0.2018885, 0, -1.6943811, 7.071, 0.24900001, -77.277)
+cast_shadow = 0
+gi_mode = 0
+mesh = ExtResource("108_ivr01")
+metadata/veg_class = "tree"
+metadata/far = true
+
+[node name="tree_05" type="MeshInstance3D" parent="Vegetation" unique_id=933100233 groups=["env_vegetation_single"]]
+transform = Transform3D(-0.18283337, 0, 0.46832263, 0, 0.5027466, 0, -0.46832263, 0, -0.18283337, -25.937, 0.51900005, -14.061)
+cast_shadow = 0
+gi_mode = 0
+mesh = ExtResource("106_dk1no")
+metadata/veg_class = "tree"
+metadata/far = true
+
+[node name="tree_06" type="MeshInstance3D" parent="Vegetation" unique_id=1908803067 groups=["env_vegetation_single"]]
+transform = Transform3D(0.7553363, 0, 1.4305598, 0, 1.7008181, 0, -1.4305598, 0, 0.7553363, 15.446, 1.1, 34.723)
+cast_shadow = 0
+gi_mode = 0
+mesh = ExtResource("108_ivr01")
+metadata/veg_class = "tree"
+metadata/far = true
+
+[node name="tree_07" type="MeshInstance3D" parent="Vegetation" unique_id=209731691 groups=["env_vegetation_single"]]
+transform = Transform3D(1.7269592, 0, 1.4634767, 0, 2.0540276, 0, -1.4634767, 0, 1.7269592, -18.617, 1.344, -2.337)
+gi_mode = 0
+mesh = ExtResource("107_6644m")
+metadata/veg_class = "tree"
+
+[node name="tree_08" type="MeshInstance3D" parent="Vegetation" unique_id=1348693818 groups=["env_vegetation_single"]]
+transform = Transform3D(1.744021, 0, 1.739151, 0, 2.573445, 0, -1.739151, 0, 1.744021, -20.107, 0.596, -71.201)
+cast_shadow = 0
+gi_mode = 0
+mesh = ExtResource("108_ivr01")
+metadata/veg_class = "tree"
+metadata/far = true
+
+[node name="tree_09" type="MeshInstance3D" parent="Vegetation" unique_id=46552836 groups=["env_vegetation_single"]]
+transform = Transform3D(1.7213305, 0, 1.1550213, 0, 2.3265843, 0, -1.1550213, 0, 1.7213305, -29.685, 0.564, -69.968)
+cast_shadow = 0
+gi_mode = 0
+mesh = ExtResource("108_ivr01")
+metadata/veg_class = "tree"
+metadata/far = true
+
+[node name="tree_10" type="MeshInstance3D" parent="Vegetation" unique_id=105297967 groups=["env_vegetation_single"]]
+transform = Transform3D(0.29709098, 0, -0.40780118, 0, 0.5045442, 0, 0.40780118, 0, 0.29709098, 14.204, 0.009000003, -71.716)
+cast_shadow = 0
+gi_mode = 0
+mesh = ExtResource("106_dk1no")
+metadata/veg_class = "tree"
+metadata/far = true
+
+[node name="tree_11" type="MeshInstance3D" parent="Vegetation" unique_id=2006037331 groups=["env_vegetation_single"]]
+transform = Transform3D(-0.3790533, 0, 1.5212224, 0, 1.5555869, 0, -1.5212224, 0, -0.3790533, 23.397, 2.624, -61.099)
+cast_shadow = 0
+gi_mode = 0
+mesh = ExtResource("108_ivr01")
+metadata/veg_class = "tree"
+metadata/far = true
+
+[node name="tree_12" type="MeshInstance3D" parent="Vegetation" unique_id=910846123 groups=["env_vegetation_single"]]
+transform = Transform3D(-0.46905482, 0, 1.4992967, 0, 1.6880279, 0, -1.4992967, 0, -0.46905482, 14.301, 0.95000005, 37.109)
+cast_shadow = 0
+gi_mode = 0
+mesh = ExtResource("108_ivr01")
+metadata/veg_class = "tree"
+metadata/far = true
+
+[node name="tree_13" type="MeshInstance3D" parent="Vegetation" unique_id=1651520960 groups=["env_vegetation_single"]]
+transform = Transform3D(1.3796091, 0, -0.31312498, 0, 1.6196408, 0, 0.31312498, 0, 1.3796091, 25.337, 0.353, -69.509)
+cast_shadow = 0
+gi_mode = 0
+mesh = ExtResource("108_ivr01")
+metadata/veg_class = "tree"
+metadata/far = true
+
+[node name="tree_14" type="MeshInstance3D" parent="Vegetation" unique_id=1048065743 groups=["env_vegetation_single"]]
+transform = Transform3D(-1.322027, 0, 1.1058497, 0, 1.6811483, 0, -1.1058497, 0, -1.322027, 23.636, 0.85800004, 1.771)
+gi_mode = 0
+mesh = ExtResource("107_6644m")
+metadata/veg_class = "tree"
+
+[node name="tree_15" type="MeshInstance3D" parent="Vegetation" unique_id=1396950000 groups=["env_vegetation_single"]]
+transform = Transform3D(0.43605882, 0, 0.18952477, 0, 0.47546497, 0, -0.18952477, 0, 0.43605882, 5.374, 0.16, -76.085)
+cast_shadow = 0
+gi_mode = 0
+mesh = ExtResource("106_dk1no")
+metadata/veg_class = "tree"
+metadata/far = true
+
+[node name="tree_16" type="MeshInstance3D" parent="Vegetation" unique_id=15146726 groups=["env_vegetation_single"]]
+transform = Transform3D(-1.3847734, 0, 1.5436321, 0, 2.1266472, 0, -1.5436321, 0, -1.3847734, -6.06, 0.47100002, 24.91)
+gi_mode = 0
+mesh = ExtResource("107_6644m")
+metadata/veg_class = "tree"
+
+[node name="tree_17" type="MeshInstance3D" parent="Vegetation" unique_id=1086288575 groups=["env_vegetation_single"]]
+transform = Transform3D(-1.3703672, 0, -0.09526653, 0, 1.3426739, 0, 0.09526653, 0, -1.3703672, -3.737, 0.36299998, 30.851)
+gi_mode = 0
+mesh = ExtResource("107_6644m")
+metadata/veg_class = "tree"
+
+[node name="tree_18" type="MeshInstance3D" parent="Vegetation" unique_id=1811816423 groups=["env_vegetation_single"]]
+transform = Transform3D(-0.8203443, 0, -1.6295049, 0, 1.8493593, 0, 1.6295049, 0, -0.8203443, -25.512, 0.40899998, -56.439)
+cast_shadow = 0
+gi_mode = 0
+mesh = ExtResource("108_ivr01")
+metadata/veg_class = "tree"
+metadata/far = true
+
+[node name="tree_19" type="MeshInstance3D" parent="Vegetation" unique_id=1929208826 groups=["env_vegetation_single"]]
+transform = Transform3D(-1.9799546, 0, 0.41289788, 0, 1.8592288, 0, -0.41289788, 0, -1.9799546, 4.953, 0.319, -83.819)
+cast_shadow = 0
+gi_mode = 0
+mesh = ExtResource("108_ivr01")
+metadata/veg_class = "tree"
+metadata/far = true
+
+[node name="tree_20" type="MeshInstance3D" parent="Vegetation" unique_id=1743945060 groups=["env_vegetation_single"]]
+transform = Transform3D(-0.42530182, 0, -0.035555746, 0, 0.4267855, 0, 0.035555746, 0, -0.42530182, 23.693, 0.433, -28.783)
+cast_shadow = 0
+gi_mode = 0
+mesh = ExtResource("106_dk1no")
+metadata/veg_class = "tree"
+metadata/far = true
+
+[node name="tree_21" type="MeshInstance3D" parent="Vegetation" unique_id=1250669525 groups=["env_vegetation_single"]]
+transform = Transform3D(-1.5016398, 0, -1.0326427, 0, 1.7706015, 0, 1.0326427, 0, -1.5016398, 22.619, 1.054, -55.154)
+cast_shadow = 0
+gi_mode = 0
+mesh = ExtResource("108_ivr01")
+metadata/veg_class = "tree"
+metadata/far = true
+
+[node name="tree_22" type="MeshInstance3D" parent="Vegetation" unique_id=1925239302 groups=["env_vegetation_single"]]
+transform = Transform3D(-1.8010216, 0, 1.148291, 0, 2.3640838, 0, -1.148291, 0, -1.8010216, 23.908, 1.319, 23.587)
+cast_shadow = 0
+gi_mode = 0
+mesh = ExtResource("108_ivr01")
+metadata/veg_class = "tree"
+metadata/far = true
+
+[node name="tree_23" type="MeshInstance3D" parent="Vegetation" unique_id=726016601 groups=["env_vegetation_single"]]
+transform = Transform3D(-1.4461929, 0, -0.7591781, 0, 1.7084184, 0, 0.7591781, 0, -1.4461929, -23.926, 0.37699997, -58.61)
+cast_shadow = 0
+gi_mode = 0
+mesh = ExtResource("108_ivr01")
+metadata/veg_class = "tree"
+metadata/far = true
+
+[node name="tree_24" type="MeshInstance3D" parent="Vegetation" unique_id=793584115 groups=["env_vegetation_single"]]
+transform = Transform3D(1.3217565, 0, 1.266367, 0, 1.9325362, 0, -1.266367, 0, 1.3217565, -21.21, 1.574, 16.102)
+gi_mode = 0
+mesh = ExtResource("107_6644m")
+metadata/veg_class = "tree"
+
+[node name="tree_25" type="MeshInstance3D" parent="Vegetation" unique_id=1520503860 groups=["env_vegetation_single"]]
+transform = Transform3D(0.3972268, 0, 0.3245203, 0, 0.5129352, 0, -0.3245203, 0, 0.3972268, -23.636, 0.074, -50.919)
+cast_shadow = 0
+gi_mode = 0
+mesh = ExtResource("106_dk1no")
+metadata/veg_class = "tree"
+metadata/far = true
+
+[node name="tree_26" type="MeshInstance3D" parent="Vegetation" unique_id=1159782018 groups=["env_vegetation_single"]]
+transform = Transform3D(-1.2645035, 0, 0.7436021, 0, 1.5464439, 0, -0.7436021, 0, -1.2645035, -21.111, 0.679, -13.829)
+gi_mode = 0
+mesh = ExtResource("107_6644m")
+metadata/veg_class = "tree"
+
+[node name="tree_27" type="MeshInstance3D" parent="Vegetation" unique_id=1888318771 groups=["env_vegetation_single"]]
+transform = Transform3D(-1.6515698, 0, -1.4236177, 0, 2.1137764, 0, 1.4236177, 0, -1.6515698, 14.004, 0.095999986, -75.264)
+cast_shadow = 0
+gi_mode = 0
+mesh = ExtResource("108_ivr01")
+metadata/veg_class = "tree"
+metadata/far = true
+
+[node name="tree_28" type="MeshInstance3D" parent="Vegetation" unique_id=825297802 groups=["env_vegetation_single"]]
+transform = Transform3D(0.13457622, 0, -1.4489799, 0, 1.328014, 0, 1.4489799, 0, 0.13457622, -22.632, 0.75600004, -14.743)
+gi_mode = 0
+mesh = ExtResource("107_6644m")
+metadata/veg_class = "tree"
+
+[node name="tree_29" type="MeshInstance3D" parent="Vegetation" unique_id=1137577848 groups=["env_vegetation_single"]]
+transform = Transform3D(-1.185244, 0, -0.81681144, 0, 1.5785904, 0, 0.81681144, 0, -1.185244, 28.097, 1.248, 15.649)
+cast_shadow = 0
+gi_mode = 0
+mesh = ExtResource("108_ivr01")
+metadata/veg_class = "tree"
+metadata/far = true
+
+[node name="tree_30" type="MeshInstance3D" parent="Vegetation" unique_id=1522443303 groups=["env_vegetation_single"]]
+transform = Transform3D(-0.57407254, 0, -0.010568395, 0, 0.5741698, 0, 0.010568395, 0, -0.57407254, -5.585, 0.58799994, -70.156)
+cast_shadow = 0
+gi_mode = 0
+mesh = ExtResource("106_dk1no")
+metadata/veg_class = "tree"
+metadata/far = true
+
+[node name="tree_31" type="MeshInstance3D" parent="Vegetation" unique_id=1049306189 groups=["env_vegetation_single"]]
+transform = Transform3D(-0.9705973, 0, -1.2625779, 0, 1.5272685, 0, 1.2625779, 0, -0.9705973, 30.792, 0.88900006, -4.295)
+cast_shadow = 0
+gi_mode = 0
+mesh = ExtResource("108_ivr01")
+metadata/veg_class = "tree"
+metadata/far = true
+
+[node name="tree_32" type="MeshInstance3D" parent="Vegetation" unique_id=35566239 groups=["env_vegetation_single"]]
+transform = Transform3D(-0.94446427, 0, 1.4409192, 0, 1.6706733, 0, -1.4409192, 0, -0.94446427, 22.016, 1.7950001, 11.812)
+gi_mode = 0
+mesh = ExtResource("107_6644m")
+metadata/veg_class = "tree"
+
+[node name="tree_33" type="MeshInstance3D" parent="Vegetation" unique_id=1270044808 groups=["env_vegetation_single"]]
+transform = Transform3D(1.9158221, 0, 0.27780122, 0, 1.8497447, 0, -0.27780122, 0, 1.9158221, 1.173, 0.41900003, -74.266)
+cast_shadow = 0
+gi_mode = 0
+mesh = ExtResource("108_ivr01")
+metadata/veg_class = "tree"
+metadata/far = true
+
+[node name="tree_34" type="MeshInstance3D" parent="Vegetation" unique_id=1406639600 groups=["env_vegetation_single"]]
+transform = Transform3D(2.4166577, 0, -0.26002645, 0, 2.2912307, 0, 0.26002645, 0, 2.4166577, 26.629, 0.51, -47.358)
+cast_shadow = 0
+gi_mode = 0
+mesh = ExtResource("108_ivr01")
+metadata/veg_class = "tree"
+metadata/far = true
+
+[node name="tree_35" type="MeshInstance3D" parent="Vegetation" unique_id=710913040 groups=["env_vegetation_single"]]
+transform = Transform3D(-0.29296443, 0, 0.5793152, 0, 0.6491797, 0, -0.5793152, 0, -0.29296443, 25.457, 0.893, 2.59)
+gi_mode = 0
+mesh = ExtResource("109_b8o0d")
+metadata/veg_class = "tree"
+
+[node name="tree_36" type="MeshInstance3D" parent="Vegetation" unique_id=812070989 groups=["env_vegetation_single"]]
+transform = Transform3D(-1.7126279, 0, 1.7236052, 0, 2.6782901, 0, -1.7236052, 0, -1.7126279, -27.89, 0.706, -68.011)
+cast_shadow = 0
+gi_mode = 0
+mesh = ExtResource("108_ivr01")
+metadata/veg_class = "tree"
+metadata/far = true
+
+[node name="tree_37" type="MeshInstance3D" parent="Vegetation" unique_id=293791713 groups=["env_vegetation_single"]]
+transform = Transform3D(-0.22628133, 0, -1.6128523, 0, 1.8129439, 0, 1.6128523, 0, -0.22628133, -0.411, 0.467, 33.185)
+cast_shadow = 0
+gi_mode = 0
+mesh = ExtResource("108_ivr01")
+metadata/veg_class = "tree"
+metadata/far = true
+
+[node name="tree_38" type="MeshInstance3D" parent="Vegetation" unique_id=678616485 groups=["env_vegetation_single"]]
+transform = Transform3D(1.8405418, 0, 0.4309507, 0, 2.077854, 0, -0.4309507, 0, 1.8405418, 29.194, 1.087, 36.489)
+cast_shadow = 0
+gi_mode = 0
+mesh = ExtResource("108_ivr01")
+metadata/veg_class = "tree"
+metadata/far = true
+
+[node name="tree_39" type="MeshInstance3D" parent="Vegetation" unique_id=952686495 groups=["env_vegetation_single"]]
+transform = Transform3D(-0.98384255, 0, -1.1368139, 0, 1.3579534, 0, 1.1368139, 0, -0.98384255, -26.633, 0.587, 11.359)
+gi_mode = 0
+mesh = ExtResource("107_6644m")
+metadata/veg_class = "tree"
+
+[node name="tree_40" type="MeshInstance3D" parent="Vegetation" unique_id=319652114 groups=["env_vegetation_single"]]
+transform = Transform3D(0.123438455, 0, -0.44843775, 0, 0.46511662, 0, 0.44843775, 0, 0.123438455, -23.61, 0.432, -26.273)
+cast_shadow = 0
+gi_mode = 0
+mesh = ExtResource("106_dk1no")
+metadata/veg_class = "tree"
+metadata/far = true
+
+[node name="tree_41" type="MeshInstance3D" parent="Vegetation" unique_id=1086041603 groups=["env_vegetation_single"]]
+transform = Transform3D(0.94868416, 0, -1.5280352, 0, 1.9521137, 0, 1.5280352, 0, 0.94868416, -29.143, 0.98300004, -7.613)
+cast_shadow = 0
+gi_mode = 0
+mesh = ExtResource("108_ivr01")
+metadata/veg_class = "tree"
+metadata/far = true
+
+[node name="tree_42" type="MeshInstance3D" parent="Vegetation" unique_id=1131412431 groups=["env_vegetation_single"]]
+transform = Transform3D(2.0620081, 0, -0.92376935, 0, 2.4625146, 0, 0.92376935, 0, 2.0620081, -19.124, 0.648, -43.839)
+cast_shadow = 0
+gi_mode = 0
+mesh = ExtResource("108_ivr01")
+metadata/veg_class = "tree"
+metadata/far = true
+
+[node name="tree_43" type="MeshInstance3D" parent="Vegetation" unique_id=1703351719 groups=["env_vegetation_single"]]
+transform = Transform3D(0.043050326, 0, 1.4443927, 0, 1.6217905, 0, -1.4443927, 0, 0.043050326, 14.412, 0.092999995, -75.72)
+cast_shadow = 0
+gi_mode = 0
+mesh = ExtResource("108_ivr01")
+metadata/veg_class = "tree"
+metadata/far = true
+
+[node name="tree_44" type="MeshInstance3D" parent="Vegetation" unique_id=1004754470 groups=["env_vegetation_single"]]
+transform = Transform3D(0.80148464, 0, 1.6516175, 0, 2.0139987, 0, -1.6516175, 0, 0.80148464, 26.538, 1.302, 17.679)
+gi_mode = 0
+mesh = ExtResource("107_6644m")
+metadata/veg_class = "tree"
+
+[node name="tree_45" type="MeshInstance3D" parent="Vegetation" unique_id=1636843424 groups=["env_vegetation_single"]]
+transform = Transform3D(1.4091487, 0, -0.68449867, 0, 1.4938667, 0, 0.68449867, 0, 1.4091487, 28.563, 0.59, -37.795)
+cast_shadow = 0
+gi_mode = 0
+mesh = ExtResource("108_ivr01")
+metadata/veg_class = "tree"
+metadata/far = true
+
+[node name="tree_46" type="MeshInstance3D" parent="Vegetation" unique_id=180357059 groups=["env_vegetation_single"]]
+transform = Transform3D(-1.1452352, 0, 1.4243393, 0, 1.9519252, 0, -1.4243393, 0, -1.1452352, 23.86, 0.371, -25.29)
+cast_shadow = 0
+gi_mode = 0
+mesh = ExtResource("108_ivr01")
+metadata/veg_class = "tree"
+metadata/far = true
+
+[node name="tree_47" type="MeshInstance3D" parent="Vegetation" unique_id=1972284677 groups=["env_vegetation_single"]]
+transform = Transform3D(-0.42204556, 0, -1.7597346, 0, 2.0083647, 0, 1.7597346, 0, -0.42204556, -23.372, 0.634, 10.73)
+gi_mode = 0
+mesh = ExtResource("107_6644m")
+metadata/veg_class = "tree"
+
+[node name="tree_48" type="MeshInstance3D" parent="Vegetation" unique_id=1490546288 groups=["env_vegetation_single"]]
+transform = Transform3D(1.6925957, 0, -0.5481361, 0, 1.82085, 0, 0.5481361, 0, 1.6925957, -22.194, 0.333, -40.058)
+cast_shadow = 0
+gi_mode = 0
+mesh = ExtResource("108_ivr01")
+metadata/veg_class = "tree"
+metadata/far = true
+
+[node name="tree_49" type="MeshInstance3D" parent="Vegetation" unique_id=133595054 groups=["env_vegetation_single"]]
+transform = Transform3D(-2.1310506, 0, -0.26433074, 0, 2.2654948, 0, 0.26433074, 0, -2.1310506, -27.36, 0.86, 11.768)
+gi_mode = 0
+mesh = ExtResource("107_6644m")
+metadata/veg_class = "tree"
+
+[node name="tree_50" type="MeshInstance3D" parent="Vegetation" unique_id=360111029 groups=["env_vegetation_single"]]
+transform = Transform3D(1.3750097, 0, -1.2865778, 0, 1.9792874, 0, 1.2865778, 0, 1.3750097, 30.868, 0.541, -50.955)
+cast_shadow = 0
+gi_mode = 0
+mesh = ExtResource("108_ivr01")
+metadata/veg_class = "tree"
+metadata/far = true
+
+[node name="tree_51" type="MeshInstance3D" parent="Vegetation" unique_id=601407993 groups=["env_vegetation_single"]]
+transform = Transform3D(1.4236722, 0, 0.7035843, 0, 1.7570196, 0, -0.7035843, 0, 1.4236722, -1.719, 0.72, -82.624)
+cast_shadow = 0
+gi_mode = 0
+mesh = ExtResource("108_ivr01")
+metadata/veg_class = "tree"
+metadata/far = true
+
+[node name="tree_52" type="MeshInstance3D" parent="Vegetation" unique_id=1572562523 groups=["env_vegetation_single"]]
+transform = Transform3D(1.1351233, 0, 1.5640801, 0, 2.0428681, 0, -1.5640801, 0, 1.1351233, -27.938, 0.319, -58.795)
+cast_shadow = 0
+gi_mode = 0
+mesh = ExtResource("108_ivr01")
+metadata/veg_class = "tree"
+metadata/far = true
+
+[node name="tree_53" type="MeshInstance3D" parent="Vegetation" unique_id=430019798 groups=["env_vegetation_single"]]
+transform = Transform3D(-1.4532317, 0, 0.3906282, 0, 1.5166554, 0, -0.3906282, 0, -1.4532317, 11.5, 0.044, 33.537)
+cast_shadow = 0
+gi_mode = 0
+mesh = ExtResource("108_ivr01")
+metadata/veg_class = "tree"
+metadata/far = true
+
+[node name="tree_54" type="MeshInstance3D" parent="Vegetation" unique_id=995375907 groups=["env_vegetation_single"]]
+transform = Transform3D(1.1495584, 0, -1.5812582, 0, 1.8529112, 0, 1.5812582, 0, 1.1495584, 24.834, 0.873, 31.234)
+cast_shadow = 0
+gi_mode = 0
+mesh = ExtResource("108_ivr01")
+metadata/veg_class = "tree"
+metadata/far = true
+
+[node name="tree_55" type="MeshInstance3D" parent="Vegetation" unique_id=938241520 groups=["env_vegetation_single"]]
+transform = Transform3D(0.08483886, 0, -1.2912046, 0, 1.3441757, 0, 1.2912046, 0, 0.08483886, -26.269, 0.561, 20.797)
+cast_shadow = 0
+gi_mode = 0
+mesh = ExtResource("108_ivr01")
+metadata/veg_class = "tree"
+metadata/far = true
+
+[node name="tree_56" type="MeshInstance3D" parent="Vegetation" unique_id=1306988950 groups=["env_vegetation_single"]]
+transform = Transform3D(-0.21323892, 0, -2.4622123, 0, 2.2858503, 0, 2.4622123, 0, -0.21323892, 22.805, 0.537, -82.848)
+cast_shadow = 0
+gi_mode = 0
+mesh = ExtResource("108_ivr01")
+metadata/veg_class = "tree"
+metadata/far = true
+
+[node name="tree_57" type="MeshInstance3D" parent="Vegetation" unique_id=1796833411 groups=["env_vegetation_single"]]
+transform = Transform3D(-1.8585322, 0, 0.19322176, 0, 1.685206, 0, -0.19322176, 0, -1.8585322, -22.076, 0.855, -65.683)
+cast_shadow = 0
+gi_mode = 0
+mesh = ExtResource("108_ivr01")
+metadata/veg_class = "tree"
+metadata/far = true
+
+[node name="tree_58" type="MeshInstance3D" parent="Vegetation" unique_id=2004700032 groups=["env_vegetation_single"]]
+transform = Transform3D(-0.11709633, 0, 1.7661448, 0, 1.9288603, 0, -1.7661448, 0, -0.11709633, -12.843, 0.91499996, -81.473)
+cast_shadow = 0
+gi_mode = 0
+mesh = ExtResource("108_ivr01")
+metadata/veg_class = "tree"
+metadata/far = true
+
+[node name="tree_59" type="MeshInstance3D" parent="Vegetation" unique_id=1493349190 groups=["env_vegetation_single"]]
+transform = Transform3D(-1.8628899, 0, 0.94298846, 0, 2.139186, 0, -0.94298846, 0, -1.8628899, 23.091, 0.33099997, -41.102)
+cast_shadow = 0
+gi_mode = 0
+mesh = ExtResource("108_ivr01")
+metadata/veg_class = "tree"
+metadata/far = true
+
+[node name="tree_60" type="MeshInstance3D" parent="Vegetation" unique_id=1349846928 groups=["env_vegetation_single"]]
+transform = Transform3D(-1.7095139, 0, -0.0109536005, 0, 1.8116424, 0, 0.0109536005, 0, -1.7095139, -24.07, 0.69, 22.821)
+cast_shadow = 0
+gi_mode = 0
+mesh = ExtResource("108_ivr01")
+metadata/veg_class = "tree"
+metadata/far = true
+
+[node name="tree_61" type="MeshInstance3D" parent="Vegetation" unique_id=2098894228 groups=["env_vegetation_single"]]
+transform = Transform3D(1.5586665, 0, 0.4975657, 0, 1.7955424, 0, -0.4975657, 0, 1.5586665, 14.771, 0.13299999, -73.648)
+cast_shadow = 0
+gi_mode = 0
+mesh = ExtResource("108_ivr01")
+metadata/veg_class = "tree"
+metadata/far = true
+
+[node name="tree_62" type="MeshInstance3D" parent="Vegetation" unique_id=659703440 groups=["env_vegetation_single"]]
+transform = Transform3D(-1.753486, 0, -0.9115635, 0, 1.7976285, 0, 0.9115635, 0, -1.753486, -5.625, 1.628, -67.59)
+cast_shadow = 0
+gi_mode = 0
+mesh = ExtResource("108_ivr01")
+metadata/veg_class = "tree"
+metadata/far = true
+
+[node name="tree_63" type="MeshInstance3D" parent="Vegetation" unique_id=1884264607 groups=["env_vegetation_single"]]
+transform = Transform3D(-1.4057693, 0, 1.1522021, 0, 1.831051, 0, -1.1522021, 0, -1.4057693, 30.881, 1.078, 2.39)
+gi_mode = 0
+mesh = ExtResource("107_6644m")
+metadata/veg_class = "tree"
+
+[node name="tree_64" type="MeshInstance3D" parent="Vegetation" unique_id=2059039779 groups=["env_vegetation_single"]]
+transform = Transform3D(-0.28096163, 0, -2.284174, 0, 2.3802855, 0, 2.284174, 0, -0.28096163, 31.662, 0.532, -9.528)
+cast_shadow = 0
+gi_mode = 0
+mesh = ExtResource("108_ivr01")
+metadata/veg_class = "tree"
+metadata/far = true
+
+[node name="tree_65" type="MeshInstance3D" parent="Vegetation" unique_id=391687821 groups=["env_vegetation_single"]]
+transform = Transform3D(0.19521584, 0, 1.8923618, 0, 1.9652658, 0, -1.8923618, 0, 0.19521584, -7.322, 0.74, -70.715)
+cast_shadow = 0
+gi_mode = 0
+mesh = ExtResource("108_ivr01")
+metadata/veg_class = "tree"
+metadata/far = true
+
+[node name="tree_66" type="MeshInstance3D" parent="Vegetation" unique_id=541976750 groups=["env_vegetation_single"]]
+transform = Transform3D(-1.7496673, 0, 0.46281374, 0, 1.8488427, 0, -0.46281374, 0, -1.7496673, 27.62, 0.408, -71.168)
+cast_shadow = 0
+gi_mode = 0
+mesh = ExtResource("108_ivr01")
+metadata/veg_class = "tree"
+metadata/far = true
+
+[node name="tree_67" type="MeshInstance3D" parent="Vegetation" unique_id=1413136803 groups=["env_vegetation_single"]]
+transform = Transform3D(1.1411744, 0, 1.8496754, 0, 2.4073167, 0, -1.8496754, 0, 1.1411744, 5.474, 2.295, -66.233)
+cast_shadow = 0
+gi_mode = 0
+mesh = ExtResource("108_ivr01")
+metadata/veg_class = "tree"
+metadata/far = true
+
+[node name="tree_68" type="MeshInstance3D" parent="Vegetation" unique_id=1624281537 groups=["env_vegetation_single"]]
+transform = Transform3D(-1.6741394, 0, 0.6659421, 0, 1.9363226, 0, -0.6659421, 0, -1.6741394, 24.195, 1.162, 28.269)
+cast_shadow = 0
+gi_mode = 0
+mesh = ExtResource("108_ivr01")
+metadata/veg_class = "tree"
+metadata/far = true
+
+[node name="tree_69" type="MeshInstance3D" parent="Vegetation" unique_id=1855815059 groups=["env_vegetation_single"]]
+transform = Transform3D(-1.0853772, 0, -0.9682143, 0, 1.5308797, 0, 0.9682143, 0, -1.0853772, -17.205, 0.537, 27.755)
+cast_shadow = 0
+gi_mode = 0
+mesh = ExtResource("108_ivr01")
+metadata/veg_class = "tree"
+metadata/far = true
+
+[node name="tree_70" type="MeshInstance3D" parent="Vegetation" unique_id=1112350994 groups=["env_vegetation_single"]]
+transform = Transform3D(-1.148285, 0, 1.5676343, 0, 1.8019893, 0, -1.5676343, 0, -1.148285, 26.23, 0.427, -22.265)
+cast_shadow = 0
+gi_mode = 0
+mesh = ExtResource("108_ivr01")
+metadata/veg_class = "tree"
+metadata/far = true
+
+[node name="tree_71" type="MeshInstance3D" parent="Vegetation" unique_id=815943148 groups=["env_vegetation_single"]]
+transform = Transform3D(-1.6074339, 0, 0.5696805, 0, 1.67168, 0, -0.5696805, 0, -1.6074339, -27.894, 0.624, 5.557)
+gi_mode = 0
+mesh = ExtResource("107_6644m")
+metadata/veg_class = "tree"
+
+[node name="tree_72" type="MeshInstance3D" parent="Vegetation" unique_id=495303344 groups=["env_vegetation_single"]]
+transform = Transform3D(-1.0019279, 0, 1.1056951, 0, 1.3552927, 0, -1.1056951, 0, -1.0019279, -27.562, 0.518, -24.348)
+cast_shadow = 0
+gi_mode = 0
+mesh = ExtResource("108_ivr01")
+metadata/veg_class = "tree"
+metadata/far = true
+
+[node name="tree_73" type="MeshInstance3D" parent="Vegetation" unique_id=1382175274 groups=["env_vegetation_single"]]
+transform = Transform3D(1.4482661, 0, 0.49444953, 0, 1.7067869, 0, -0.49444953, 0, 1.4482661, -27.205, 1.126, -80.288)
+cast_shadow = 0
+gi_mode = 0
+mesh = ExtResource("108_ivr01")
+metadata/veg_class = "tree"
+metadata/far = true
+
+[node name="tree_74" type="MeshInstance3D" parent="Vegetation" unique_id=1831038980 groups=["env_vegetation_single"]]
+transform = Transform3D(1.9964013, 0, -0.26950687, 0, 2.066277, 0, 0.26950687, 0, 1.9964013, -29.947, 0.598, -22.091)
+cast_shadow = 0
+gi_mode = 0
+mesh = ExtResource("108_ivr01")
+metadata/veg_class = "tree"
+metadata/far = true
+
+[node name="tree_75" type="MeshInstance3D" parent="Vegetation" unique_id=1536021987 groups=["env_vegetation_single"]]
+transform = Transform3D(-1.6421329, 0, 0.3270557, 0, 1.8747803, 0, -0.3270557, 0, -1.6421329, -16.15, 0.399, 21.473)
+gi_mode = 0
+mesh = ExtResource("107_6644m")
+metadata/veg_class = "tree"
+
+[node name="tree_76" type="MeshInstance3D" parent="Vegetation" unique_id=1269484955 groups=["env_vegetation_single"]]
+transform = Transform3D(-1.7261407, 0, 1.9475437, 0, 2.7325723, 0, -1.9475437, 0, -1.7261407, -19.365, 1.045, -3.664)
+gi_mode = 0
+mesh = ExtResource("107_6644m")
+metadata/veg_class = "tree"
+
+[node name="tree_77" type="MeshInstance3D" parent="Vegetation" unique_id=1453764047 groups=["env_vegetation_single"]]
+transform = Transform3D(-0.26539958, 0, 2.3985074, 0, 2.40623, 0, -2.3985074, 0, -0.26539958, -1.329, 0.496, 32.594)
+cast_shadow = 0
+gi_mode = 0
+mesh = ExtResource("108_ivr01")
+metadata/veg_class = "tree"
+metadata/far = true
+
+[node name="tree_78" type="MeshInstance3D" parent="Vegetation" unique_id=1942027870 groups=["env_vegetation_single"]]
+transform = Transform3D(0.97372794, 0, -2.1652436, 0, 2.593733, 0, 2.1652436, 0, 0.97372794, -2.405, 0.38099998, 30.326)
+gi_mode = 0
+mesh = ExtResource("107_6644m")
+metadata/veg_class = "tree"
+
+[node name="tree_79" type="MeshInstance3D" parent="Vegetation" unique_id=911457301 groups=["env_vegetation_single"]]
+transform = Transform3D(1.1154007, 0, 1.3969539, 0, 1.647802, 0, -1.3969539, 0, 1.1154007, 1.248, 0.53, -79.038)
+cast_shadow = 0
+gi_mode = 0
+mesh = ExtResource("108_ivr01")
+metadata/veg_class = "tree"
+metadata/far = true
+
+[node name="tree_80" type="MeshInstance3D" parent="Vegetation" unique_id=1055503738 groups=["env_vegetation_single"]]
+transform = Transform3D(1.9654802, 0, 1.0584841, 0, 2.4771352, 0, -1.0584841, 0, 1.9654802, -26.025, 0.743, -75.624)
+cast_shadow = 0
+gi_mode = 0
+mesh = ExtResource("108_ivr01")
+metadata/veg_class = "tree"
+metadata/far = true
+
+[node name="tree_81" type="MeshInstance3D" parent="Vegetation" unique_id=269719947 groups=["env_vegetation_single"]]
+transform = Transform3D(0.08482578, 0, 2.078095, 0, 2.3642511, 0, -2.078095, 0, 0.08482578, -29.09, 0.376, -28.236)
+cast_shadow = 0
+gi_mode = 0
+mesh = ExtResource("108_ivr01")
+metadata/veg_class = "tree"
+metadata/far = true
+
+[node name="tree_82" type="MeshInstance3D" parent="Vegetation" unique_id=1846357776 groups=["env_vegetation_single"]]
+transform = Transform3D(1.579632, 0, -0.80078065, 0, 1.8736417, 0, 0.80078065, 0, 1.579632, 14.691, 0.591, 30.29)
+cast_shadow = 0
+gi_mode = 0
+mesh = ExtResource("108_ivr01")
+metadata/veg_class = "tree"
+metadata/far = true
+
+[node name="tree_83" type="MeshInstance3D" parent="Vegetation" unique_id=1852713708 groups=["env_vegetation_single"]]
+transform = Transform3D(-1.60689, 0, 0.8686744, 0, 2.0944827, 0, -0.8686744, 0, -1.60689, -8.444, 0.781, -77.304)
+cast_shadow = 0
+gi_mode = 0
+mesh = ExtResource("108_ivr01")
+metadata/veg_class = "tree"
+metadata/far = true
+
+[node name="tree_84" type="MeshInstance3D" parent="Vegetation" unique_id=65107181 groups=["env_vegetation_single"]]
+transform = Transform3D(1.5839733, 0, 1.539005, 0, 1.9924982, 0, -1.539005, 0, 1.5839733, 25.887, 1.065, 37.806)
+cast_shadow = 0
+gi_mode = 0
+mesh = ExtResource("108_ivr01")
+metadata/veg_class = "tree"
+metadata/far = true
+
+[node name="tree_85" type="MeshInstance3D" parent="Vegetation" unique_id=2089302536 groups=["env_vegetation_single"]]
+transform = Transform3D(-1.4561286, 0, -0.304898, 0, 1.4141855, 0, 0.304898, 0, -1.4561286, -25.406, 0.634, 21.892)
+cast_shadow = 0
+gi_mode = 0
+mesh = ExtResource("108_ivr01")
+metadata/veg_class = "tree"
+metadata/far = true
+
+[node name="tree_86" type="MeshInstance3D" parent="Vegetation" unique_id=2074228868 groups=["env_vegetation_single"]]
+transform = Transform3D(-1.7935482, 0, -1.3960304, 0, 2.3233213, 0, 1.3960304, 0, -1.7935482, -1.592, 0.822, 18.59)
+gi_mode = 0
+mesh = ExtResource("107_6644m")
+metadata/veg_class = "tree"
+
+[node name="tree_87" type="MeshInstance3D" parent="Vegetation" unique_id=1780692966 groups=["env_vegetation_single"]]
+transform = Transform3D(-2.1503687, 0, -0.2776508, 0, 2.2381074, 0, 0.2776508, 0, -2.1503687, -1.951, 0.624, 19.693)
+gi_mode = 0
+mesh = ExtResource("107_6644m")
+metadata/veg_class = "tree"
+
+[node name="tree_88" type="MeshInstance3D" parent="Vegetation" unique_id=1121723904 groups=["env_vegetation_single"]]
+transform = Transform3D(0.449885, 0, 1.514242, 0, 1.5861121, 0, -1.514242, 0, 0.449885, 4.047, 1.376, 16.689)
+gi_mode = 0
+mesh = ExtResource("107_6644m")
+metadata/veg_class = "tree"
+
+[node name="Props" type="Node3D" parent="." unique_id=361032431]
+
+[node name="trash_drum" type="Node3D" parent="Props" unique_id=1501133791 instance=ExtResource("110_ect2r")]
+transform = Transform3D(0.76604444, 0, 0.6427876, 0, 1, 0, -0.6427876, 0, 0.76604444, 2.85, -0.01, 4.55)
+
+[node name="drum_left" type="Node3D" parent="Props" unique_id=2001732003 instance=ExtResource("111_0wwi4")]
+transform = Transform3D(-0.34202012, 0, 0.9396926, 0, 1, 0, -0.9396926, 0, -0.34202012, -6.95, -0.01, 5.35)
+
+[node name="bins" type="Node3D" parent="Props" unique_id=1845859878 instance=ExtResource("112_o4ukl")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -3.6, -0.01, 5.35)
+
+[node name="chair" type="Node3D" parent="Props" unique_id=453750534 instance=ExtResource("113_sleqy")]
+transform = Transform3D(-0.90630776, 0, 0.42261833, 0, 1, 0, -0.42261833, 0, -0.90630776, 3.55, 0, 4.6)
+
+[node name="picnic_table" type="Node3D" parent="Props" unique_id=1293335074 instance=ExtResource("114_mdfeo")]
+transform = Transform3D(0.034899496, 0, 0.99939084, 0, 1, 0, -0.99939084, 0, 0.034899496, -4.6, -0.01, 6.95)
+
+[node name="crate_a" type="Node3D" parent="Props" unique_id=568766668 instance=ExtResource("115_y43gg")]
+transform = Transform3D(0.90630776, 0, 0.42261827, 0, 1, 0, -0.42261827, 0, 0.90630776, -2.1, 0, 7.5)
+
+[node name="crate_b" type="Node3D" parent="Props" unique_id=1945249538 instance=ExtResource("115_y43gg")]
+transform = Transform3D(0.34202015, 0, -0.9396926, 0, 1, 0, 0.9396926, 0, 0.34202015, 6.85, 0, 4.15)
+
+[node name="crate_plastic" type="Node3D" parent="Props" unique_id=279467058 instance=ExtResource("116_rrtcr")]
+transform = Transform3D(0.9781476, 0, 0.2079117, 0, 1, 0, -0.2079117, 0, 0.9781476, 7.55, 0, 4.2)
+
+[node name="ammo_can_bench1" type="Node3D" parent="Props" unique_id=479355415 instance=ExtResource("117_4o1t5")]
+transform = Transform3D(0.34202015, 0, 0.9396926, 0, 1, 0, -0.9396926, 0, 0.34202015, -5.05, 0.921, -0.52)
+
+[node name="ammo_can_table" type="Node3D" parent="Props" unique_id=125288893 instance=ExtResource("117_4o1t5")]
+transform = Transform3D(0.9396926, 0, -0.34202012, 0, 1, 0, 0.34202012, 0, 0.9396926, 7.45, 0.921, -0.5)
+
+[node name="ammo_can_floor" type="Node3D" parent="Props" unique_id=1824776271 instance=ExtResource("117_4o1t5")]
+transform = Transform3D(-0.08715577, 0, 0.9961947, 0, 1, 0, -0.9961947, 0, -0.08715577, -0.62, 0, -0.42)
+
+[node name="bag_a" type="Node3D" parent="Props" unique_id=1294925590 instance=ExtResource("118_g4yba")]
+transform = Transform3D(0.9961947, 0, 0.08715574, 0, 1, 0, -0.08715574, 0, 0.9961947, -6.95, 0, 3.2)
+
+[node name="bag_b" type="Node3D" parent="Props" unique_id=226235436 instance=ExtResource("118_g4yba")]
+transform = Transform3D(0.99026805, 0, -0.1391731, 0, 1, 0, 0.1391731, 0, 0.99026805, -6.93, 0.17, 3.25)
+
+[node name="jerrycan" type="Node3D" parent="Props" unique_id=1120644168 instance=ExtResource("119_coe7d")]
+transform = Transform3D(0.49999997, 0, 0.86602545, 0, 1, 0, -0.86602545, 0, 0.49999997, 2.55, 0, 5)
+
+[node name="tyre_a" type="Node3D" parent="Props" unique_id=1622593347 instance=ExtResource("120_xnl6h")]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 9.55, 0.085, 2.4)
+
+[node name="tyre_b" type="Node3D" parent="Props" unique_id=1906941708 instance=ExtResource("120_xnl6h")]
+transform = Transform3D(0.76604444, 0.6427876, -2.8097137e-08, 0, -4.371139e-08, -1, -0.6427876, 0.76604444, -3.3484866e-08, 9.6, 0.25, 2.45)
+
+[node name="tyre_c" type="Node3D" parent="Props" unique_id=1461939435 instance=ExtResource("120_xnl6h")]
+transform = Transform3D(0.25881907, 0.23367861, 0.9372337, 0, 0.9702957, -0.2419219, -0.9659258, 0.062614, 0.25113103, 9.95, 0.33, 1.7)
+
+[node name="barrier" type="Node3D" parent="Props" unique_id=753023604 instance=ExtResource("121_27w33")]
+transform = Transform3D(0.1391731, 0, 0.99026805, 0, 1, 0, -0.99026805, 0, 0.1391731, 12.95, 0, 6.9)
+
+[node name="broom" type="Node3D" parent="Props" unique_id=1283816576 instance=ExtResource("122_5qt46")]
+transform = Transform3D(-4.371139e-08, -0.9848077, 0.17364822, 0, 0.17364822, 0.9848077, -1, 4.304731e-08, -7.590405e-09, -5.85, 0.02, 4.47)
+
+[node name="rocks0_-1_0" type="MultiMeshInstance3D" parent="Props" unique_id=913484515 groups=["env_vegetation"]]
+gi_mode = 0
+visibility_range_end = 90.0
+visibility_range_end_margin = 6.0
+multimesh = ExtResource("123_5dnvh")
+metadata/veg_class = "rock"
+
+[node name="rocks0_0_-1" type="MultiMeshInstance3D" parent="Props" unique_id=1742507924 groups=["env_vegetation"]]
+gi_mode = 0
+visibility_range_end = 90.0
+visibility_range_end_margin = 6.0
+multimesh = ExtResource("124_420le")
+metadata/veg_class = "rock"
+
+[node name="rocks0_-1_-2" type="MultiMeshInstance3D" parent="Props" unique_id=223802409 groups=["env_vegetation"]]
+gi_mode = 0
+visibility_range_end = 90.0
+visibility_range_end_margin = 6.0
+multimesh = ExtResource("125_d4te6")
+metadata/veg_class = "rock"
+
+[node name="rocks0_-1_-1" type="MultiMeshInstance3D" parent="Props" unique_id=122047275 groups=["env_vegetation"]]
+gi_mode = 0
+visibility_range_end = 90.0
+visibility_range_end_margin = 6.0
+multimesh = ExtResource("126_ema0y")
+metadata/veg_class = "rock"
+
+[node name="rocks0_0_0" type="MultiMeshInstance3D" parent="Props" unique_id=94800550 groups=["env_vegetation"]]
+gi_mode = 0
+visibility_range_end = 90.0
+visibility_range_end_margin = 6.0
+multimesh = ExtResource("127_43lc0")
+metadata/veg_class = "rock"
+
+[node name="rocks0_0_-2" type="MultiMeshInstance3D" parent="Props" unique_id=1365365667 groups=["env_vegetation"]]
+gi_mode = 0
+visibility_range_end = 90.0
+visibility_range_end_margin = 6.0
+multimesh = ExtResource("128_35rf3")
+metadata/veg_class = "rock"
+
+[node name="rocks1_0_-1" type="MultiMeshInstance3D" parent="Props" unique_id=348962491 groups=["env_vegetation"]]
+gi_mode = 0
+visibility_range_end = 90.0
+visibility_range_end_margin = 6.0
+multimesh = ExtResource("129_aqc25")
+metadata/veg_class = "rock"
+
+[node name="rocks1_-1_0" type="MultiMeshInstance3D" parent="Props" unique_id=1612218119 groups=["env_vegetation"]]
+gi_mode = 0
+visibility_range_end = 90.0
+visibility_range_end_margin = 6.0
+multimesh = ExtResource("130_j6p3m")
+metadata/veg_class = "rock"
+
+[node name="rocks1_0_-2" type="MultiMeshInstance3D" parent="Props" unique_id=269247420 groups=["env_vegetation"]]
+gi_mode = 0
+visibility_range_end = 90.0
+visibility_range_end_margin = 6.0
+multimesh = ExtResource("131_0txwq")
+metadata/veg_class = "rock"
+
+[node name="rocks1_-1_-1" type="MultiMeshInstance3D" parent="Props" unique_id=71442203 groups=["env_vegetation"]]
+gi_mode = 0
+visibility_range_end = 90.0
+visibility_range_end_margin = 6.0
+multimesh = ExtResource("132_oxtns")
+metadata/veg_class = "rock"
+
+[node name="rocks1_-1_-2" type="MultiMeshInstance3D" parent="Props" unique_id=1901581572 groups=["env_vegetation"]]
+gi_mode = 0
+visibility_range_end = 90.0
+visibility_range_end_margin = 6.0
+multimesh = ExtResource("133_x43d7")
+metadata/veg_class = "rock"
+
+[node name="rocks1_0_0" type="MultiMeshInstance3D" parent="Props" unique_id=102088759 groups=["env_vegetation"]]
+gi_mode = 0
+visibility_range_end = 90.0
+visibility_range_end_margin = 6.0
+multimesh = ExtResource("134_eauf0")
+metadata/veg_class = "rock"
+
+[node name="SpentBrass" type="MultiMeshInstance3D" parent="Props" unique_id=501145827]
+cast_shadow = 0
+gi_mode = 0
+visibility_range_end = 22.0
+multimesh = ExtResource("135_q8dsf")
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1192286230]
+environment = ExtResource("136_3p2qy")
+
+[node name="Sun" type="DirectionalLight3D" parent="." unique_id=1431293905]
+transform = Transform3D(0.9271838, 0.2510467, -0.27803895, 0, 0.7422158, 0.6701609, 0.37460658, -0.6213623, 0.68817055, 0, 12, 0)
+light_color = Color(1, 0.98847157, 0.9695549, 1)
+light_energy = 2.2424989
+light_angular_distance = 0.27
+shadow_enabled = true
+shadow_bias = 0.035
+shadow_normal_bias = 1.2
+directional_shadow_split_1 = 0.055
+directional_shadow_split_2 = 0.16
+directional_shadow_split_3 = 0.42
+directional_shadow_blend_splits = true
+directional_shadow_max_distance = 90.0
+sky_mode = 1
+
+[node name="Lighting" type="Node3D" parent="." unique_id=146557804]
+
+[node name="BayProbe" type="ReflectionProbe" parent="Lighting" unique_id=1042646863]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.1, 1.45, 1.85)
+blend_distance = 0.6
+max_distance = 80.0
+size = Vector3(8.5, 3.4, 5.6)
+origin_offset = Vector3(0, 0.1, -0.6)
+box_projection = true
+enable_shadows = true
+
+[node name="BayVoxelGI" type="VoxelGI" parent="Lighting" unique_id=1043574630]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5, 2.7, 0.5)
+subdiv = 2
+size = Vector3(22, 6.4, 16)
+data = ExtResource("137_anvad")

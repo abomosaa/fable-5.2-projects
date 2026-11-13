@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#" xmlns:georss="http://www.georss.org/georss">
+  <id>urn:uuid:00000000-0000-4000-8000-000000000000</id><title>No current messages</title>
+  <updated>2026-11-01T00:00:00Z</updated>
+  <author><name>NWS National Tsunami Warning Center Palmer AK</name><uri>https://www.tsunami.gov/</uri></author>
+</feed>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="dev.pocket3d.capture.logic.CaptureDecisionsTest" tests="19" skipped="0" failures="0" errors="0" timestamp="2026-11-12T10:55:19.904Z" hostname="h4-pc" time="0.029">
+  <properties/>
+  <testcase name="storageThresholds" classname="dev.pocket3d.capture.logic.CaptureDecisionsTest" time="0.004"/>
+  <testcase name="imageFlagsAreKeptAndMotionFlagsAdded" classname="dev.pocket3d.capture.logic.CaptureDecisionsTest" time="0.011"/>
+  <testcase name="neverFiresWhileTrackingIsLost" classname="dev.pocket3d.capture.logic.CaptureDecisionsTest" time="0.007"/>
+  <testcase name="tooFarFromEveryKeptViewIsLowOverlap" classname="dev.pocket3d.capture.logic.CaptureDecisionsTest" time="0.001"/>
+  <testcase name="onlyTheFireDecisionFires" classname="dev.pocket3d.capture.logic.CaptureDecisionsTest" time="0.001"/>
+  <testcase name="cleanFrameAtAGoodStepHasNoFlags" classname="dev.pocket3d.capture.logic.CaptureDecisionsTest" time="0.0"/>
+  <testcase name="fastTranslationIsFlaggedToo" classname="dev.pocket3d.capture.logic.CaptureDecisionsTest" time="0.0"/>
+  <testcase name="liveWarningsAreSpecific" classname="dev.pocket3d.capture.logic.CaptureDecisionsTest" time="0.001"/>
+  <testcase name="holdsForEveryOtherReason" classname="dev.pocket3d.capture.logic.CaptureDecisionsTest" time="0.0"/>
+  <testcase name="withoutAnyDirectionOnlyAnAlmostIdenticalImageIsADuplicate" classname="dev.pocket3d.capture.logic.CaptureDecisionsTest" time="0.001"/>
+  <testcase name="sameDirectionAndSimilarImageIsADuplicate" classname="dev.pocket3d.capture.logic.CaptureDecisionsTest" time="0.0"/>
+  <testcase name="nearDuplicateHintWaitsAfterACapture" classname="dev.pocket3d.capture.logic.CaptureDecisionsTest" time="0.0"/>
+  <testcase name="orientationEngineDoesNotNeedTracking" classname="dev.pocket3d.capture.logic.CaptureDecisionsTest" time="0.0"/>
+  <testcase name="sameDirectionButDifferentImageIsNotADuplicate" classname="dev.pocket3d.capture.logic.CaptureDecisionsTest" time="0.0"/>
+  <testcase name="firstFrameHasNoOverlapAndNoSpacingFlags" classname="dev.pocket3d.capture.logic.CaptureDecisionsTest" time="0.0"/>
+  <testcase name="firesWhenFarEnoughSteadyAndSharp" classname="dev.pocket3d.capture.logic.CaptureDecisionsTest" time="0.001"/>
+  <testcase name="trackingLostIsFlagged" classname="dev.pocket3d.capture.logic.CaptureDecisionsTest" time="0.0"/>
+  <testcase name="noSpacingWarningsWithoutADirectionOrWithoutPhotos" classname="dev.pocket3d.capture.logic.CaptureDecisionsTest" time="0.0"/>
+  <testcase name="waitsInsteadOfGuessingWithoutEvidence" classname="dev.pocket3d.capture.logic.CaptureDecisionsTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

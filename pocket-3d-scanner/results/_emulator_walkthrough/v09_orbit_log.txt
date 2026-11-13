@@ -1,0 +1,20 @@
+# orbit: first photo taken manually at yaw 0; auto capture ON; orientation-estimate mode; pose set through the emulator's physical model (camera view follows)
+start :: 1 of 12 | [Review 1 photo] | Same view as an existing photo — move on | Keep moving around the object
+orbit=  2 pos=(0.14,0,-0.00) yaw=2 :: 1 of 12 | [Review 1 photo] | Same view as an existing photo — move on | Keep moving around the object
+orbit=  4 pos=(0.28,0,-0.01) yaw=4 :: 1 of 12 | [Review 1 photo] | Same view as an existing photo — move on | Keep moving around the object
+orbit=  6 pos=(0.42,0,-0.02) yaw=6 :: 1 of 12 | [Review 1 photo] | Keep moving around the object
+orbit=  8 pos=(0.56,0,-0.04) yaw=8 :: 1 of 12 | [Review 1 photo] | Keep moving around the object
+orbit= 10 pos=(0.69,0,-0.06) yaw=10 :: 1 of 12 | [Review 1 photo] | Keep moving around the object
+orbit= 12 pos=(0.83,0,-0.09) yaw=12 :: 1 of 12 | [Review 2 photos] | A 330° side of the object has no photos yet — keep walking around it.
+orbit= 14 pos=(0.97,0,-0.12) yaw=14 :: 1 of 12 | [Review 2 photos] | Same view as an existing photo — move on | Keep moving around the object
+orbit= 16 pos=(1.10,0,-0.15) yaw=16 :: 1 of 12 | [Review 2 photos] | Keep moving around the object
+orbit= 18 pos=(1.24,0,-0.20) yaw=18 :: 1 of 12 | [Review 2 photos] | Keep moving around the object
+orbit= 20 pos=(1.37,0,-0.24) yaw=20 :: 1 of 12 | [Review 2 photos] | Keep moving around the object
+orbit= 22 pos=(1.50,0,-0.29) yaw=22 :: 1 of 12 | [Review 2 photos] | Keep moving around the object
+orbit= 24 pos=(1.63,0,-0.35) yaw=24 :: 1 of 12 | [Review 2 photos] | A 330° side of the object has no photos yet — keep walking around it.
+orbit= 26 pos=(1.75,0,-0.40) yaw=26 :: 1 of 12 | [Review 3 photos] | Same view as an existing photo — move on | Keep moving around the object
+orbit= 28 pos=(1.88,0,-0.47) yaw=28 :: 1 of 12 | [Review 3 photos] | Same view as an existing photo — move on | Keep moving around the object
+orbit= 30 pos=(2.00,0,-0.54) yaw=30 :: 1 of 12 | [Review 3 photos] | Keep moving around the object
+orbit= 32 pos=(2.12,0,-0.61) yaw=32 :: 1 of 12 | [Review 3 photos] | Keep moving around the object
+orbit= 34 pos=(2.24,0,-0.68) yaw=34 :: 1 of 12 | [Review 3 photos] | Image looks soft — hold steady or add light | Keep moving around the object
+orbit= 36 pos=(2.35,0,-0.76) yaw=36 :: 1 of 12 | [Review 3 photos] | Image looks soft — hold steady or add light | Keep moving around the object

@@ -1,0 +1,28 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    { "type": "Feature", "id": "Smithsonian_VOTW_Holocene_Volcanoes.fid-ok1", "geometry": { "type": "Point", "coordinates": [14.426, 40.821] }, "geometry_name": "GeoLocation",
+      "properties": { "Volcano_Number": 211020, "Volcano_Name": "Vesuvius", "Volcanic_Landform": "Composite", "Primary_Volcano_Type": "Stratovolcano", "Last_Eruption_Year": 1944, "Country": "Italy", "Region": "European Volcanic Regions", "Subregion": "Italian Peninsula Volcanic Provinces", "Latitude": 40.821, "Longitude": 14.426, "Elevation": 1281, "Tectonic_Setting": "Subduction zone / Continental crust (> 25 km)", "Geologic_Epoch": "Holocene", "Evidence_Category": "Eruption Observed", "Major_Rock_Type": "Phono-tephrite /  Tephri-phonolite" } },
+    { "type": "Feature", "id": "Smithsonian_VOTW_Holocene_Volcanoes.fid-ok2", "geometry": null, "geometry_name": "GeoLocation",
+      "properties": { "Volcano_Number": 999001, "Volcano_Name": "<b>Hostile</b> Seamount<script>alert(1)</script>", "Primary_Volcano_Type": "Submarine", "Last_Eruption_Year": -1050, "Country": "Undersea Features", "Region": "Test Regions", "Latitude": -20.5, "Longitude": 185.25, "Elevation": -650, "Evidence_Category": "Eruption Dated" } },
+    { "type": "Feature", "id": "Smithsonian_VOTW_Holocene_Volcanoes.fid-ok1-again", "geometry": { "type": "Point", "coordinates": [14.426, 40.821] },
+      "properties": { "Volcano_Number": 211020, "Volcano_Name": "Vesuvius (duplicate)", "Latitude": 40.821, "Longitude": 14.426 } },
+    { "type": "Feature", "id": "bad-nonumber", "geometry": { "type": "Point", "coordinates": [10.0, 10.0] },
+      "properties": { "Volcano_Number": null, "Volcano_Name": "No Number" } },
+    { "type": "Feature", "id": "bad-number", "geometry": { "type": "Point", "coordinates": [10.0, 10.0] },
+      "properties": { "Volcano_Number": "12; DROP", "Volcano_Name": "Hostile Number" } },
+    { "type": "Feature", "id": "bad-noname", "geometry": { "type": "Point", "coordinates": [10.0, 10.0] },
+      "properties": { "Volcano_Number": 999002, "Volcano_Name": "   " } },
+    { "type": "Feature", "id": "bad-nocoords", "geometry": null,
+      "properties": { "Volcano_Number": 999003, "Volcano_Name": "No Coordinates" } },
+    { "type": "Feature", "id": "bad-lat", "geometry": { "type": "Point", "coordinates": [10.0, -95.0] },
+      "properties": { "Volcano_Number": 999004, "Volcano_Name": "Below the South Pole" } },
+    { "type": "Feature", "id": "bad-props", "geometry": { "type": "Point", "coordinates": [10.0, 10.0] }, "properties": null },
+    17
+  ],
+  "totalFeatures": 10,
+  "numberMatched": 10,
+  "numberReturned": 10,
+  "timeStamp": "2026-11-10T18:00:00.000Z",
+  "crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::4326" } }
+}

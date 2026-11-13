@@ -1,0 +1,7 @@
+node_modules/
+dist/
+.cache/
+*.log
+# working copies of projects (the shipped showcases live in showcases/) and generated exports
+projects/
+exports/

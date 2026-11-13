@@ -1,0 +1,11 @@
+# Test configuration only — the companion is not packaged; the container image copies
+# pocket3d_companion/ and installs requirements.lock (see Containerfile).
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+asyncio_mode = "auto"
+asyncio_default_fixture_loop_scope = "function"
+asyncio_default_test_loop_scope = "function"
+addopts = "-p no:cacheprovider"
+filterwarnings = ["ignore::PIL.Image.DecompressionBombWarning"]
+markers = ["e2e: end-to-end reconstruction of real photographs in the companion container (slow; skipped without a container runtime/image)"]

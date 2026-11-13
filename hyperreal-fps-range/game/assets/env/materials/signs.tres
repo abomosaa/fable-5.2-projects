@@ -1,0 +1,26 @@
+[gd_resource type="ShaderMaterial" format=3]
+
+[ext_resource type="Shader" path="res://assets/env/shaders/env_pbr.gdshader" id="1_rj8mo"]
+[ext_resource type="Texture2D" path="res://assets/env/tex/macro_noise.png" id="2_sayvm"]
+[ext_resource type="Texture2D" path="res://assets/env/tex/signs_albedo.png" id="2_y7qsu"]
+
+[resource]
+render_priority = 0
+shader = ExtResource("1_rj8mo")
+shader_parameter/albedo_tex = ExtResource("2_y7qsu")
+shader_parameter/macro_tex = ExtResource("2_sayvm")
+shader_parameter/tint = Color(1, 1, 1, 1)
+shader_parameter/brightness = 1.0
+shader_parameter/saturation = 1.0
+shader_parameter/normal_strength = 1.0
+shader_parameter/roughness_mul = 0.5
+shader_parameter/roughness_add = 0.0
+shader_parameter/metallic_mul = 0.0
+shader_parameter/ao_strength = 1.0
+shader_parameter/piece_variation = 0.04
+shader_parameter/macro_variation = 0.08
+shader_parameter/dirt_color = Color(0.17, 0.13, 0.095, 1)
+shader_parameter/dirt_strength = 0.3
+shader_parameter/bleach_strength = 0.0
+shader_parameter/use_wear = 0.0
+shader_parameter/specular_level = 0.5

@@ -1,0 +1,106 @@
+{
+ "name": "02-edit-undo-save",
+ "failures": 0,
+ "steps": [
+  {
+   "label": "baseline: rocker swing [deg], motor torque [N·mm]",
+   "ok": null,
+   "detail": "{\"swing\":51.77055569454667,\"torque\":{\"peakNmm\":3.934180960190387,\"meanNmm\":-0.13911419125976107,\"provenance\":\"multiplier\",\"available\":true},\"info\":{\"status\":\"paused\",\"t\":3.578,\"mode\":\"dynamic\",\"dof\":1,\"bodies\":3,\"rows\":9,\"posError\":6.803078278494468e-8,\"maxPosError\":9.975449444254991e-8,\"samples\":895,\"stepMs\":0.0055,\"fps\":35.9,\"realtime\":1,\"events\":[],\"static\":[]}}"
+  },
+  {
+   "label": "baseline run ok",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "dimension edit applied and assembly re-solved (coupler pose moved, no issues)",
+   "ok": true,
+   "detail": "{\"couplerAngleBefore\":0.4308279287827918,\"after\":0.26321976973465966}"
+  },
+  {
+   "label": "editing reset the transient simulation, not the design",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "load of 3 N (stored as −3000 mN) placed on the rocker",
+   "ok": true,
+   "detail": "[{\"part\":\"Rocker\",\"fy\":-3000}]"
+  },
+  {
+   "label": "after edits: rocker swing [deg], motor torque [N·mm]",
+   "ok": null,
+   "detail": "{\"swing\":66.14143891790174,\"torque\":{\"peakNmm\":19.158864656980356,\"meanNmm\":-2.232334450343864,\"provenance\":\"multiplier\",\"available\":true},\"info\":{\"status\":\"paused\",\"t\":3.55,\"mode\":\"dynamic\",\"dof\":1,\"bodies\":3,\"rows\":9,\"posError\":8.97593448456746e-8,\"maxPosError\":9.996539063195087e-8,\"samples\":888,\"stepMs\":0.013,\"fps\":37.9,\"realtime\":1,\"events\":[],\"static\":[]}}"
+  },
+  {
+   "label": "shorter rocker swings through a larger angle",
+   "ok": true,
+   "detail": "{\"base\":51.77055569454667,\"now\":66.14143891790174}"
+  },
+  {
+   "label": "added load raises the peak motor torque",
+   "ok": true,
+   "detail": "{\"base\":3.934180960190387,\"now\":19.158864656980356}"
+  },
+  {
+   "label": "previous run kept for comparison (dashed overlay)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "undo ×3 walks back: load value → load removed → rocker 70 mm",
+   "ok": true,
+   "detail": "{\"s0\":{\"rocker\":55,\"loads\":1,\"fy\":-3000,\"past\":3,\"future\":0},\"s1\":{\"rocker\":55,\"loads\":1,\"fy\":-1000,\"past\":2,\"future\":1},\"s2\":{\"rocker\":55,\"loads\":0,\"fy\":null,\"past\":1,\"future\":2},\"s3\":{\"rocker\":70,\"loads\":0,\"fy\":null,\"past\":0,\"future\":3}}"
+  },
+  {
+   "label": "assembly is consistent after undo",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "redo ×3 restores rocker 55 mm and the 3 N load",
+   "ok": true,
+   "detail": "{\"rocker\":55,\"loads\":1,\"fy\":-3000,\"past\":3,\"future\":0}"
+  },
+  {
+   "label": "project reopened after reload with identical content",
+   "ok": true,
+   "detail": "{\"name\":\"My four-bar study\",\"saveState\":\"saved\"}"
+  },
+  {
+   "label": "unsaved edit recovered from autosave after reload",
+   "ok": true,
+   "detail": "{\"width\":14,\"toast\":\"Recovered unsaved changes from autosave.\"}"
+  },
+  {
+   "label": "duplicate created and listed in the Open dialog",
+   "ok": true,
+   "detail": "[\"My four-bar study copy\",\"My four-bar study\",\"Untitled mechanism\",\"Four-bar linkage\",\"Two-stage gear reduction\",\"Cam and spring follower\"]"
+  },
+  {
+   "label": "impossible assembly is diagnosed (cannot close) with the joints involved",
+   "ok": true,
+   "detail": "{\"code\":\"assembly.cannot-close\",\"title\":\"Assembly cannot be closed\",\"detail\":\"No position of the parts satisfies all joints at once. Remaining gaps after the best attempt: Crank pin 7.445 mm, Crank pivot (motor) 3.572 mm, Coupler–rocker pin 1.782 mm, Rocker pivot 1.455 mm. This usually means a link is too short or too long to reach its joints (the loop cannot close), or that two joints demand different positions for the same part. The parts were left where they were.\",\"joints\":4,\"parts\":4}"
+  },
+  {
+   "label": "project not corrupted: all parts/joints present, edit kept, no invalid numbers",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "simulation refuses to start from the open assembly and says why",
+   "ok": true,
+   "detail": "{\"status\":\"idle\",\"toast\":\"Cannot start: fix the error listed in Diagnostics first (Assembly is not closed (1 joint)).\"}"
+  },
+  {
+   "label": "undo restores the previous valid assembly exactly",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "no console/page errors",
+   "ok": true,
+   "detail": ""
+  }
+ ]
+}

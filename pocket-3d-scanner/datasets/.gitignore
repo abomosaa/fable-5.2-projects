@@ -1,0 +1,19 @@
+# Large downloaded data - re-create with ./fetch.sh (checksums in <name>/SHA256SUMS).
+/_cache/
+/textured/images/
+/concave/images/
+/concave/images_all/
+/concave/reference/author_model/
+/groundtruth/images/
+/groundtruth/reference/3d_scan/
+/groundtruth/reference/depth/
+/groundtruth/reference/masks/
+/difficult/images/
+/difficult/reference/3d_scan/
+/difficult/reference/depth/
+/difficult/reference/masks/
+*.part
+# Kept in git on purpose (small): READMEs, LICENSE.source.txt, SHA256SUMS, urls.tsv, navi_members.tsv,
+# upstream/ license proofs, cameras/, reference/annotations.json, capture_order.txt, and all of smoke/.
+# smoke_alt/ is CC BY-NC-SA 4.0 (non-commercial): decide deliberately before committing its images.
+/smoke_alt/images/

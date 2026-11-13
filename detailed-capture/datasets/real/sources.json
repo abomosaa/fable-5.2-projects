@@ -1,0 +1,4055 @@
+{
+ "generated_by": "datasets/tools/build_docs.py",
+ "method": "`datasets/tools/sanity.py`, one image pair at a time: both images are capped at 4000 px on the long side; SIFT (contrastThreshold 0.03; up to 60k overview / 12k close-up keypoints); the close-up is additionally tried at 1, 1/2, 1/4 and 1/8 of its working size and the trial with most inliers is kept; FLANN kNN + Lowe ratio 0.75; `cv2.findHomography(USAC_MAGSAC, 3 px)`. Reported: **ratio matches**, **H inliers**, **scale factor** = sqrt(|det J|) of the overview->close-up mapping at the point that lands on the close-up centre, converted to ORIGINAL pixel units of both files (close-up px per overview px; also given at the four close-up corners), **footprint** of the close-up in the overview frame, **NCC** between the overview and the close-up warped to overview resolution (a crop of the same file would give ~1.0 together with scale <= 1), and **H/F inliers** = homography inliers divided by fundamental-matrix inliers on the same matches (about 1 = one plane explains the pair; clearly below 1 = parallax, relief or lens distortion that a single homography cannot explain). `registers` = at least 25 inliers and a geometrically plausible (convex, non-degenerate) footprint. 'Independent capture' is judged from EXIF (own timestamp / camera / focal length) plus scale > 1.3. Images are read with `cv2.imread` defaults, i.e. EXIF orientation applied; all pixel sizes, footprints and homographies are in that displayed orientation. There is no ground-truth alignment: these numbers only show that a plain baseline does or does not lock on.",
+ "sets": [
+  {
+   "name": "alexander_mosaic_sailko",
+   "category": "1 - artwork / texture (flat, textured)",
+   "subject": "Alexander Mosaic (Battle of Issus), from the House of the Faun, Pompeii, c. 100 BC; Museo Archeologico Nazionale di Napoli, inv. 10020. Wall-mounted floor mosaic, roughly 5.8 x 3.1 m including border (size from literature, not measured).",
+   "description": "One photographer (Sailko), one camera (Canon PowerShot G12), one visit: overview at 11:35:44 and eleven close-ups during the following 75 seconds (2013-11-29). The close-ups overlap heavily and form a zoom hierarchy (footprints from 23% down to 0.7% of the overview frame; the three most magnified were taken at 12 mm instead of 6.1 mm focal length). All eleven are kept even though the brief asked for 3-10; closeup_11 is the most extreme and can be dropped.",
+   "caveats": [
+    "The overview file is 3188x2332, i.e. slightly cropped by the author from the camera's 3648x2736 frame, and the mosaic itself only spans about 2800 px of it (wall, rope barrier and plinth are also in frame).",
+    "Close-ups were taken from below and from the side: footprints are clearly trapezoidal and the scale factor varies by up to 2x across one close-up (see corner range).",
+    "H/F inlier ratios of 0.68-0.92 for the seven wider close-ups (01-06, 10): a single homography leaves up to a third of the geometrically consistent matches outside 3 px. Plausible causes are uncorrected wide-angle lens distortion of the compact camera and an uneven mosaic surface; cause not verified.",
+    "Daylight from windows: closeup_04, closeup_05 and closeup_10 have a blue cast and veiling glare on the right-hand (dark horses) area that is absent in the overview.",
+    "Large lacunae filled with plain mortar give big texture-less regions (more than half of closeup_01)."
+   ],
+   "directory": "datasets/real/alexander_mosaic_sailko",
+   "files": [
+    {
+     "local": "overview.jpg",
+     "role": "overview",
+     "title": "File:Battaglia di isso, prob. copia di opera del IV sec ac di philoxenos d'eretria, 125-120 ac ca. da casa del fauno a pompei, 10020, 01.JPG",
+     "author": "Sailko",
+     "uploader": "Sailko",
+     "license": "CC BY-SA 3.0",
+     "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+     "usage_terms": "Creative Commons Attribution-Share Alike 3.0",
+     "source_page": "https://commons.wikimedia.org/wiki/File:Battaglia_di_isso,_prob._copia_di_opera_del_IV_sec_ac_di_philoxenos_d%27eretria,_125-120_ac_ca._da_casa_del_fauno_a_pompei,_10020,_01.JPG",
+     "download_url": "https://upload.wikimedia.org/wikipedia/commons/d/d4/Battaglia_di_isso%2C_prob._copia_di_opera_del_IV_sec_ac_di_philoxenos_d%27eretria%2C_125-120_ac_ca._da_casa_del_fauno_a_pompei%2C_10020%2C_01.JPG",
+     "original_px": [
+      3188,
+      2332
+     ],
+     "local_px": [
+      3188,
+      2332
+     ],
+     "stored_px": [
+      3188,
+      2332
+     ],
+     "exif_orientation": 1,
+     "megapixels": 7.4,
+     "bytes": 5042592,
+     "sha1": "699acbb414e5ac1bd9d1ec84b0c17246c6130420",
+     "is_original_bytes": true,
+     "date_original": "29 November 2013, 11:35:44",
+     "notes": "whole mosaic on the museum wall",
+     "exif": {
+      "size": [
+       3188,
+       2332
+      ],
+      "Make": "Canon",
+      "Model": "Canon PowerShot G12",
+      "DateTime": "2013:11:29 11:35:44",
+      "DateTimeOriginal": "2013:11:29 11:35:44",
+      "FocalLength": 6.1,
+      "ExposureTime": 0.03333333333333333,
+      "FNumber": 2.8,
+      "ISOSpeedRatings": 250
+     }
+    },
+    {
+     "local": "closeup_01.jpg",
+     "role": "closeup",
+     "title": "File:Battaglia di isso, prob. copia di opera del IV sec ac di philoxenos d'eretria, 125-120 ac ca. da casa del fauno a pompei, 10020, 02.JPG",
+     "author": "Sailko",
+     "uploader": "Sailko",
+     "license": "CC BY-SA 3.0",
+     "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+     "usage_terms": "Creative Commons Attribution-Share Alike 3.0",
+     "source_page": "https://commons.wikimedia.org/wiki/File:Battaglia_di_isso,_prob._copia_di_opera_del_IV_sec_ac_di_philoxenos_d%27eretria,_125-120_ac_ca._da_casa_del_fauno_a_pompei,_10020,_02.JPG",
+     "download_url": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Battaglia_di_isso%2C_prob._copia_di_opera_del_IV_sec_ac_di_philoxenos_d%27eretria%2C_125-120_ac_ca._da_casa_del_fauno_a_pompei%2C_10020%2C_02.JPG",
+     "original_px": [
+      3648,
+      2736
+     ],
+     "local_px": [
+      3648,
+      2736
+     ],
+     "stored_px": [
+      3648,
+      2736
+     ],
+     "exif_orientation": 1,
+     "megapixels": 10.0,
+     "bytes": 5100776,
+     "sha1": "08498287f051da67b516c1a0623f7f612c3a8843",
+     "is_original_bytes": true,
+     "date_original": "29 November 2013, 11:36:25",
+     "notes": "left part: Alexander on Bucephalus, large mortar lacunae; strongly oblique",
+     "exif": {
+      "size": [
+       3648,
+       2736
+      ],
+      "Make": "Canon",
+      "Model": "Canon PowerShot G12",
+      "DateTime": "2013:11:29 11:36:25",
+      "DateTimeOriginal": "2013:11:29 11:36:25",
+      "FocalLength": 6.1,
+      "ExposureTime": 0.03333333333333333,
+      "FNumber": 2.8,
+      "ISOSpeedRatings": 400
+     },
+     "sanity": {
+      "inliers": 431,
+      "ratio_matches": 499,
+      "h_inlier_ratio": 0.864,
+      "fundamental_inliers": 484,
+      "h_over_f_inliers": 0.89,
+      "scale_factor": 3.684,
+      "scale_at_corners": [
+       2.906,
+       2.232,
+       4.521,
+       5.359
+      ],
+      "anisotropy": 1.133,
+      "rms_px_work": 1.2403450012207031,
+      "best_closeup_downscale": 0.25,
+      "footprint_overview_px": [
+       [
+        311.8,
+        375.6
+       ],
+       [
+        1511.9,
+        240.1
+       ],
+       [
+        1261.4,
+        1142.9
+       ],
+       [
+        490.3,
+        1136.2
+       ]
+      ],
+      "footprint_fraction_of_overview": 0.11,
+      "ncc_vs_overview": 0.838,
+      "registers": true,
+      "H_overview_to_closeup_original_px": [
+       [
+        3.0927233887138716,
+        -0.725557914372845,
+        -691.8743968560746
+       ],
+       [
+        0.23045562092644872,
+        2.041221178231185,
+        -838.4723018628981
+       ],
+       [
+        9.415813791061931e-05,
+        -0.00040804726133691633,
+        1.0
+       ]
+      ]
+     },
+     "independent_capture": "yes (own EXIF timestamp, 3.7x more px per subject unit)",
+     "verdict": "registers cleanly"
+    },
+    {
+     "local": "closeup_02.jpg",
+     "role": "closeup",
+     "title": "File:Battaglia di isso, prob. copia di opera del IV sec ac di philoxenos d'eretria, 125-120 ac ca. da casa del fauno a pompei, 10020, 03.JPG",
+     "author": "Sailko",
+     "uploader": "Sailko",
+     "license": "CC BY-SA 3.0",
+     "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+     "usage_terms": "Creative Commons Attribution-Share Alike 3.0",
+     "source_page": "https://commons.wikimedia.org/wiki/File:Battaglia_di_isso,_prob._copia_di_opera_del_IV_sec_ac_di_philoxenos_d%27eretria,_125-120_ac_ca._da_casa_del_fauno_a_pompei,_10020,_03.JPG",
+     "download_url": "https://upload.wikimedia.org/wikipedia/commons/0/0b/Battaglia_di_isso%2C_prob._copia_di_opera_del_IV_sec_ac_di_philoxenos_d%27eretria%2C_125-120_ac_ca._da_casa_del_fauno_a_pompei%2C_10020%2C_03.JPG",
+     "original_px": [
+      3648,
+      2736
+     ],
+     "local_px": [
+      3648,
+      2736
+     ],
+     "stored_px": [
+      3648,
+      2736
+     ],
+     "exif_orientation": 1,
+     "megapixels": 10.0,
+     "bytes": 5889219,
+     "sha1": "ac4233b93f983a2956bc7414c886c6e53dede576",
+     "is_original_bytes": true,
+     "date_original": "29 November 2013, 11:36:17",
+     "notes": "centre: speared Persian rider, horse heads",
+     "exif": {
+      "size": [
+       3648,
+       2736
+      ],
+      "Make": "Canon",
+      "Model": "Canon PowerShot G12",
+      "DateTime": "2013:11:29 11:36:17",
+      "DateTimeOriginal": "2013:11:29 11:36:17",
+      "FocalLength": 6.1,
+      "ExposureTime": 0.03333333333333333,
+      "FNumber": 2.8,
+      "ISOSpeedRatings": 320
+     },
+     "sanity": {
+      "inliers": 952,
+      "ratio_matches": 1316,
+      "h_inlier_ratio": 0.723,
+      "fundamental_inliers": 1300,
+      "h_over_f_inliers": 0.732,
+      "scale_factor": 5.022,
+      "scale_at_corners": [
+       3.848,
+       3.982,
+       6.297,
+       6.14
+      ],
+      "anisotropy": 1.056,
+      "rms_px_work": 1.475844383239746,
+      "best_closeup_downscale": 0.25,
+      "footprint_overview_px": [
+       [
+        941.0,
+        649.9
+       ],
+       [
+        1776.0,
+        655.1
+       ],
+       [
+        1672.4,
+        1222.6
+       ],
+       [
+        1059.2,
+        1228.5
+       ]
+      ],
+      "footprint_fraction_of_overview": 0.0558,
+      "ncc_vs_overview": 0.782,
+      "registers": true,
+      "H_overview_to_closeup_original_px": [
+       [
+        3.23785386187164,
+        -0.6611084759687352,
+        -2617.288127182068
+       ],
+       [
+        -0.016204486345502887,
+        2.6259269776846996,
+        -1691.425122046124
+       ],
+       [
+        -1.8415249994644105e-05,
+        -0.00034668394646140824,
+        1.0
+       ]
+      ]
+     },
+     "independent_capture": "yes (own EXIF timestamp, 5.0x more px per subject unit)",
+     "verdict": "registers cleanly"
+    },
+    {
+     "local": "closeup_03.jpg",
+     "role": "closeup",
+     "title": "File:Battaglia di isso, prob. copia di opera del IV sec ac di philoxenos d'eretria, 125-120 ac ca. da casa del fauno a pompei, 10020, 04.JPG",
+     "author": "Sailko",
+     "uploader": "Sailko",
+     "license": "CC BY-SA 3.0",
+     "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+     "usage_terms": "Creative Commons Attribution-Share Alike 3.0",
+     "source_page": "https://commons.wikimedia.org/wiki/File:Battaglia_di_isso,_prob._copia_di_opera_del_IV_sec_ac_di_philoxenos_d%27eretria,_125-120_ac_ca._da_casa_del_fauno_a_pompei,_10020,_04.JPG",
+     "download_url": "https://upload.wikimedia.org/wikipedia/commons/7/71/Battaglia_di_isso%2C_prob._copia_di_opera_del_IV_sec_ac_di_philoxenos_d%27eretria%2C_125-120_ac_ca._da_casa_del_fauno_a_pompei%2C_10020%2C_04.JPG",
+     "original_px": [
+      3648,
+      2736
+     ],
+     "local_px": [
+      3648,
+      2736
+     ],
+     "stored_px": [
+      3648,
+      2736
+     ],
+     "exif_orientation": 1,
+     "megapixels": 10.0,
+     "bytes": 6709345,
+     "sha1": "5930dc500b119757af89fdf01cc59bf830e7f0ca",
+     "is_original_bytes": true,
+     "date_original": "29 November 2013, 11:36:14",
+     "notes": "centre bottom: collapsed dark horse, lance on the ground",
+     "exif": {
+      "size": [
+       3648,
+       2736
+      ],
+      "Make": "Canon",
+      "Model": "Canon PowerShot G12",
+      "DateTime": "2013:11:29 11:36:14",
+      "DateTimeOriginal": "2013:11:29 11:36:14",
+      "FocalLength": 6.1,
+      "ExposureTime": 0.03333333333333333,
+      "FNumber": 2.8,
+      "ISOSpeedRatings": 320
+     },
+     "sanity": {
+      "inliers": 835,
+      "ratio_matches": 1011,
+      "h_inlier_ratio": 0.826,
+      "fundamental_inliers": 991,
+      "h_over_f_inliers": 0.843,
+      "scale_factor": 5.914,
+      "scale_at_corners": [
+       5.38,
+       5.318,
+       6.466,
+       6.532
+      ],
+      "anisotropy": 1.006,
+      "rms_px_work": 1.7194390296936035,
+      "best_closeup_downscale": 0.25,
+      "footprint_overview_px": [
+       [
+        1088.6,
+        1007.2
+       ],
+       [
+        1746.2,
+        1009.8
+       ],
+       [
+        1701.5,
+        1477.2
+       ],
+       [
+        1124.0,
+        1471.7
+       ]
+      ],
+      "footprint_fraction_of_overview": 0.0387,
+      "ncc_vs_overview": 0.755,
+      "registers": true,
+      "H_overview_to_closeup_original_px": [
+       [
+        4.472596169594775,
+        -0.3414519449892641,
+        -4524.753589748387
+       ],
+       [
+        -0.016388605874266295,
+        4.140652598106237,
+        -4152.7356204493835
+       ],
+       [
+        1.0257839719975366e-05,
+        -0.00020980971036662534,
+        1.0
+       ]
+      ]
+     },
+     "independent_capture": "yes (own EXIF timestamp, 5.9x more px per subject unit)",
+     "verdict": "registers cleanly"
+    },
+    {
+     "local": "closeup_04.jpg",
+     "role": "closeup",
+     "title": "File:Battaglia di isso, prob. copia di opera del IV sec ac di philoxenos d'eretria, 125-120 ac ca. da casa del fauno a pompei, 10020, 05.JPG",
+     "author": "Sailko",
+     "uploader": "Sailko",
+     "license": "CC BY-SA 3.0",
+     "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+     "usage_terms": "Creative Commons Attribution-Share Alike 3.0",
+     "source_page": "https://commons.wikimedia.org/wiki/File:Battaglia_di_isso,_prob._copia_di_opera_del_IV_sec_ac_di_philoxenos_d%27eretria,_125-120_ac_ca._da_casa_del_fauno_a_pompei,_10020,_05.JPG",
+     "download_url": "https://upload.wikimedia.org/wikipedia/commons/6/69/Battaglia_di_isso%2C_prob._copia_di_opera_del_IV_sec_ac_di_philoxenos_d%27eretria%2C_125-120_ac_ca._da_casa_del_fauno_a_pompei%2C_10020%2C_05.JPG",
+     "original_px": [
+      3648,
+      2736
+     ],
+     "local_px": [
+      3648,
+      2736
+     ],
+     "stored_px": [
+      3648,
+      2736
+     ],
+     "exif_orientation": 1,
+     "megapixels": 10.0,
+     "bytes": 6733737,
+     "sha1": "7c39947ed7950214a9bd41c2efeb3c7862406b7a",
+     "is_original_bytes": true,
+     "date_original": "29 November 2013, 11:35:52",
+     "notes": "right half: Darius' chariot and Persian cavalry; window glare",
+     "exif": {
+      "size": [
+       3648,
+       2736
+      ],
+      "Make": "Canon",
+      "Model": "Canon PowerShot G12",
+      "DateTime": "2013:11:29 11:35:52",
+      "DateTimeOriginal": "2013:11:29 11:35:52",
+      "FocalLength": 6.1,
+      "ExposureTime": 0.03333333333333333,
+      "FNumber": 2.8,
+      "ISOSpeedRatings": 320
+     },
+     "sanity": {
+      "inliers": 2437,
+      "ratio_matches": 3262,
+      "h_inlier_ratio": 0.747,
+      "fundamental_inliers": 3239,
+      "h_over_f_inliers": 0.752,
+      "scale_factor": 2.426,
+      "scale_at_corners": [
+       2.264,
+       2.067,
+       2.592,
+       2.804
+      ],
+      "anisotropy": 1.018,
+      "rms_px_work": 1.4789676666259766,
+      "best_closeup_downscale": 0.25,
+      "footprint_overview_px": [
+       [
+        1174.0,
+        382.6
+       ],
+       [
+        2782.7,
+        324.7
+       ],
+       [
+        2684.8,
+        1503.4
+       ],
+       [
+        1294.9,
+        1493.5
+       ]
+      ],
+      "footprint_fraction_of_overview": 0.2309,
+      "ncc_vs_overview": 0.77,
+      "registers": true,
+      "H_overview_to_closeup_original_px": [
+       [
+        2.3840017261103164,
+        -0.25932357971553666,
+        -2699.63890608426
+       ],
+       [
+        0.07607387931436803,
+        2.113053010888651,
+        -897.8616411334585
+       ],
+       [
+        3.421182938133794e-05,
+        -0.000122547303829247,
+        1.0
+       ]
+      ]
+     },
+     "independent_capture": "yes (own EXIF timestamp, 2.4x more px per subject unit)",
+     "verdict": "registers cleanly"
+    },
+    {
+     "local": "closeup_05.jpg",
+     "role": "closeup",
+     "title": "File:Battaglia di isso, prob. copia di opera del IV sec ac di philoxenos d'eretria, 125-120 ac ca. da casa del fauno a pompei, 10020, 06.JPG",
+     "author": "Sailko",
+     "uploader": "Sailko",
+     "license": "CC BY-SA 3.0",
+     "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+     "usage_terms": "Creative Commons Attribution-Share Alike 3.0",
+     "source_page": "https://commons.wikimedia.org/wiki/File:Battaglia_di_isso,_prob._copia_di_opera_del_IV_sec_ac_di_philoxenos_d%27eretria,_125-120_ac_ca._da_casa_del_fauno_a_pompei,_10020,_06.JPG",
+     "download_url": "https://upload.wikimedia.org/wikipedia/commons/9/9b/Battaglia_di_isso%2C_prob._copia_di_opera_del_IV_sec_ac_di_philoxenos_d%27eretria%2C_125-120_ac_ca._da_casa_del_fauno_a_pompei%2C_10020%2C_06.JPG",
+     "original_px": [
+      3648,
+      2736
+     ],
+     "local_px": [
+      3648,
+      2736
+     ],
+     "stored_px": [
+      3648,
+      2736
+     ],
+     "exif_orientation": 1,
+     "megapixels": 10.0,
+     "bytes": 6809622,
+     "sha1": "162f19cb6eb8d14b7956ac9d76c52673e99c5d45",
+     "is_original_bytes": true,
+     "date_original": "29 November 2013, 11:35:56",
+     "notes": "right: chariot team (dark horses), mosaic border; window glare",
+     "exif": {
+      "size": [
+       3648,
+       2736
+      ],
+      "Make": "Canon",
+      "Model": "Canon PowerShot G12",
+      "DateTime": "2013:11:29 11:35:56",
+      "DateTimeOriginal": "2013:11:29 11:35:56",
+      "FocalLength": 6.1,
+      "ExposureTime": 0.03333333333333333,
+      "FNumber": 2.8,
+      "ISOSpeedRatings": 320
+     },
+     "sanity": {
+      "inliers": 1840,
+      "ratio_matches": 2720,
+      "h_inlier_ratio": 0.676,
+      "fundamental_inliers": 2697,
+      "h_over_f_inliers": 0.682,
+      "scale_factor": 3.254,
+      "scale_at_corners": [
+       2.873,
+       2.887,
+       3.652,
+       3.637
+      ],
+      "anisotropy": 1.035,
+      "rms_px_work": 1.734075665473938,
+      "best_closeup_downscale": 0.25,
+      "footprint_overview_px": [
+       [
+        1842.9,
+        579.8
+       ],
+       [
+        3042.3,
+        584.0
+       ],
+       [
+        2970.9,
+        1440.3
+       ],
+       [
+        1945.8,
+        1439.1
+       ]
+      ],
+      "footprint_fraction_of_overview": 0.1283,
+      "ncc_vs_overview": 0.798,
+      "registers": true,
+      "H_overview_to_closeup_original_px": [
+       [
+        2.752392077158808,
+        -0.3295657326254247,
+        -4881.289856859541
+       ],
+       [
+        -0.008624976691749492,
+        2.470233260437776,
+        -1416.4007703671555
+       ],
+       [
+        -1.9128855681745376e-06,
+        -0.0001534299421179729,
+        1.0
+       ]
+      ]
+     },
+     "independent_capture": "yes (own EXIF timestamp, 3.3x more px per subject unit)",
+     "verdict": "registers cleanly"
+    },
+    {
+     "local": "closeup_06.jpg",
+     "role": "closeup",
+     "title": "File:Battaglia di isso, prob. copia di opera del IV sec ac di philoxenos d'eretria, 125-120 ac ca. da casa del fauno a pompei, 10020, 07.JPG",
+     "author": "Sailko",
+     "uploader": "Sailko",
+     "license": "CC BY-SA 3.0",
+     "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+     "usage_terms": "Creative Commons Attribution-Share Alike 3.0",
+     "source_page": "https://commons.wikimedia.org/wiki/File:Battaglia_di_isso,_prob._copia_di_opera_del_IV_sec_ac_di_philoxenos_d%27eretria,_125-120_ac_ca._da_casa_del_fauno_a_pompei,_10020,_07.JPG",
+     "download_url": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Battaglia_di_isso%2C_prob._copia_di_opera_del_IV_sec_ac_di_philoxenos_d%27eretria%2C_125-120_ac_ca._da_casa_del_fauno_a_pompei%2C_10020%2C_07.JPG",
+     "original_px": [
+      3648,
+      2736
+     ],
+     "local_px": [
+      3648,
+      2736
+     ],
+     "stored_px": [
+      3648,
+      2736
+     ],
+     "exif_orientation": 1,
+     "megapixels": 10.0,
+     "bytes": 6759365,
+     "sha1": "6581d92d46f679ba1c6c34505a25095a111dbcb9",
+     "is_original_bytes": true,
+     "date_original": "29 November 2013, 11:36:36",
+     "notes": "Darius and charioteer, chariot wheel (7.4 mm)",
+     "exif": {
+      "size": [
+       3648,
+       2736
+      ],
+      "Make": "Canon",
+      "Model": "Canon PowerShot G12",
+      "DateTime": "2013:11:29 11:36:36",
+      "DateTimeOriginal": "2013:11:29 11:36:36",
+      "FocalLength": 7.407,
+      "ExposureTime": 0.025,
+      "FNumber": 2.8,
+      "ISOSpeedRatings": 400
+     },
+     "sanity": {
+      "inliers": 1916,
+      "ratio_matches": 2128,
+      "h_inlier_ratio": 0.9,
+      "fundamental_inliers": 2087,
+      "h_over_f_inliers": 0.918,
+      "scale_factor": 4.147,
+      "scale_at_corners": [
+       3.37,
+       3.343,
+       4.975,
+       5.006
+      ],
+      "anisotropy": 1.062,
+      "rms_px_work": 1.626844882965088,
+      "best_closeup_downscale": 0.25,
+      "footprint_overview_px": [
+       [
+        1449.9,
+        515.7
+       ],
+       [
+        2432.9,
+        514.4
+       ],
+       [
+        2321.4,
+        1207.9
+       ],
+       [
+        1566.8,
+        1206.0
+       ]
+      ],
+      "footprint_fraction_of_overview": 0.0809,
+      "ncc_vs_overview": 0.791,
+      "registers": true,
+      "H_overview_to_closeup_original_px": [
+       [
+        3.198304606045801,
+        -0.5414296397383888,
+        -4358.157072016499
+       ],
+       [
+        0.0035075106276267706,
+        2.609452317431818,
+        -1350.8108149695452
+       ],
+       [
+        4.334301092669473e-06,
+        -0.0002887672965870311,
+        1.0
+       ]
+      ]
+     },
+     "independent_capture": "yes (own EXIF timestamp, 4.1x more px per subject unit)",
+     "verdict": "registers cleanly"
+    },
+    {
+     "local": "closeup_07.jpg",
+     "role": "closeup",
+     "title": "File:Battaglia di isso, prob. copia di opera del IV sec ac di philoxenos d'eretria, 125-120 ac ca. da casa del fauno a pompei, 10020, 08.JPG",
+     "author": "Sailko",
+     "uploader": "Sailko",
+     "license": "CC BY-SA 3.0",
+     "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+     "usage_terms": "Creative Commons Attribution-Share Alike 3.0",
+     "source_page": "https://commons.wikimedia.org/wiki/File:Battaglia_di_isso,_prob._copia_di_opera_del_IV_sec_ac_di_philoxenos_d%27eretria,_125-120_ac_ca._da_casa_del_fauno_a_pompei,_10020,_08.JPG",
+     "download_url": "https://upload.wikimedia.org/wikipedia/commons/0/0c/Battaglia_di_isso%2C_prob._copia_di_opera_del_IV_sec_ac_di_philoxenos_d%27eretria%2C_125-120_ac_ca._da_casa_del_fauno_a_pompei%2C_10020%2C_08.JPG",
+     "original_px": [
+      3648,
+      2736
+     ],
+     "local_px": [
+      3648,
+      2736
+     ],
+     "stored_px": [
+      3648,
+      2736
+     ],
+     "exif_orientation": 1,
+     "megapixels": 10.0,
+     "bytes": 6850116,
+     "sha1": "70946e9e877eb8029b432c878c92f5535969d123",
+     "is_original_bytes": true,
+     "date_original": "29 November 2013, 11:36:08",
+     "notes": "fallen Persian with mirror-shield, below the chariot",
+     "exif": {
+      "size": [
+       3648,
+       2736
+      ],
+      "Make": "Canon",
+      "Model": "Canon PowerShot G12",
+      "DateTime": "2013:11:29 11:36:08",
+      "DateTimeOriginal": "2013:11:29 11:36:08",
+      "FocalLength": 6.1,
+      "ExposureTime": 0.03333333333333333,
+      "FNumber": 2.8,
+      "ISOSpeedRatings": 250
+     },
+     "sanity": {
+      "inliers": 564,
+      "ratio_matches": 583,
+      "h_inlier_ratio": 0.967,
+      "fundamental_inliers": 581,
+      "h_over_f_inliers": 0.971,
+      "scale_factor": 6.48,
+      "scale_at_corners": [
+       5.83,
+       6.056,
+       7.153,
+       6.914
+      ],
+      "anisotropy": 1.017,
+      "rms_px_work": 1.46836256980896,
+      "best_closeup_downscale": 0.125,
+      "footprint_overview_px": [
+       [
+        1846.8,
+        1036.9
+       ],
+       [
+        2438.7,
+        1031.0
+       ],
+       [
+        2419.4,
+        1453.2
+       ],
+       [
+        1890.6,
+        1468.1
+       ]
+      ],
+      "footprint_fraction_of_overview": 0.0322,
+      "ncc_vs_overview": 0.738,
+      "registers": true,
+      "H_overview_to_closeup_original_px": [
+       [
+        4.492316518178668,
+        -0.45668248915186044,
+        -7822.7625055621365
+       ],
+       [
+        0.04220344101621871,
+        4.233828089512178,
+        -4467.944469756809
+       ],
+       [
+        -3.3416294430224504e-05,
+        -0.00018311254378983142,
+        1.0
+       ]
+      ]
+     },
+     "independent_capture": "yes (own EXIF timestamp, 6.5x more px per subject unit)",
+     "verdict": "registers cleanly"
+    },
+    {
+     "local": "closeup_08.jpg",
+     "role": "closeup",
+     "title": "File:Battaglia di isso, prob. copia di opera del IV sec ac di philoxenos d'eretria, 125-120 ac ca. da casa del fauno a pompei, 10020, 09.JPG",
+     "author": "Sailko",
+     "uploader": "Sailko",
+     "license": "CC BY-SA 3.0",
+     "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+     "usage_terms": "Creative Commons Attribution-Share Alike 3.0",
+     "source_page": "https://commons.wikimedia.org/wiki/File:Battaglia_di_isso,_prob._copia_di_opera_del_IV_sec_ac_di_philoxenos_d%27eretria,_125-120_ac_ca._da_casa_del_fauno_a_pompei,_10020,_09.JPG",
+     "download_url": "https://upload.wikimedia.org/wikipedia/commons/4/4e/Battaglia_di_isso%2C_prob._copia_di_opera_del_IV_sec_ac_di_philoxenos_d%27eretria%2C_125-120_ac_ca._da_casa_del_fauno_a_pompei%2C_10020%2C_09.JPG",
+     "original_px": [
+      3648,
+      2736
+     ],
+     "local_px": [
+      3648,
+      2736
+     ],
+     "stored_px": [
+      3648,
+      2736
+     ],
+     "exif_orientation": 1,
+     "megapixels": 10.0,
+     "bytes": 5912111,
+     "sha1": "5d287e5ee7363e3a733fb02841cadb9db138b5ba",
+     "is_original_bytes": true,
+     "date_original": "29 November 2013, 11:36:58",
+     "notes": "shield with reflected face, tight (12 mm zoom)",
+     "exif": {
+      "size": [
+       3648,
+       2736
+      ],
+      "Make": "Canon",
+      "Model": "Canon PowerShot G12",
+      "DateTime": "2013:11:29 11:36:58",
+      "DateTimeOriginal": "2013:11:29 11:36:58",
+      "FocalLength": 12.074,
+      "ExposureTime": 0.0125,
+      "FNumber": 3.5,
+      "ISOSpeedRatings": 800
+     },
+     "sanity": {
+      "inliers": 301,
+      "ratio_matches": 305,
+      "h_inlier_ratio": 0.987,
+      "fundamental_inliers": 303,
+      "h_over_f_inliers": 0.993,
+      "scale_factor": 10.893,
+      "scale_at_corners": [
+       10.163,
+       10.525,
+       11.64,
+       11.266
+      ],
+      "anisotropy": 1.024,
+      "rms_px_work": 0.8268396258354187,
+      "best_closeup_downscale": 0.125,
+      "footprint_overview_px": [
+       [
+        1933.7,
+        1061.1
+       ],
+       [
+        2277.1,
+        1062.8
+       ],
+       [
+        2270.1,
+        1314.0
+       ],
+       [
+        1949.4,
+        1317.9
+       ]
+      ],
+      "footprint_fraction_of_overview": 0.0113,
+      "ncc_vs_overview": 0.853,
+      "registers": true,
+      "H_overview_to_closeup_original_px": [
+       [
+        7.430754573205842,
+        -0.4532876832163511,
+        -13888.200139830355
+       ],
+       [
+        -0.035873280470784245,
+        7.1201730368033695,
+        -7485.653910167034
+       ],
+       [
+        -4.7160321307824865e-05,
+        -0.0001820737381339477,
+        1.0
+       ]
+      ]
+     },
+     "independent_capture": "yes (own EXIF timestamp, 10.9x more px per subject unit)",
+     "verdict": "registers cleanly; 11x scale gap"
+    },
+    {
+     "local": "closeup_09.jpg",
+     "role": "closeup",
+     "title": "File:Battaglia di isso, prob. copia di opera del IV sec ac di philoxenos d'eretria, 125-120 ac ca. da casa del fauno a pompei, 10020, 10.JPG",
+     "author": "Sailko",
+     "uploader": "Sailko",
+     "license": "CC BY-SA 3.0",
+     "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+     "usage_terms": "Creative Commons Attribution-Share Alike 3.0",
+     "source_page": "https://commons.wikimedia.org/wiki/File:Battaglia_di_isso,_prob._copia_di_opera_del_IV_sec_ac_di_philoxenos_d%27eretria,_125-120_ac_ca._da_casa_del_fauno_a_pompei,_10020,_10.JPG",
+     "download_url": "https://upload.wikimedia.org/wikipedia/commons/6/6b/Battaglia_di_isso%2C_prob._copia_di_opera_del_IV_sec_ac_di_philoxenos_d%27eretria%2C_125-120_ac_ca._da_casa_del_fauno_a_pompei%2C_10020%2C_10.JPG",
+     "original_px": [
+      3648,
+      2736
+     ],
+     "local_px": [
+      3648,
+      2736
+     ],
+     "stored_px": [
+      3648,
+      2736
+     ],
+     "exif_orientation": 1,
+     "megapixels": 10.0,
+     "bytes": 7225477,
+     "sha1": "17bd1bd178275c28c08655a08f62b66a6d8922df",
+     "is_original_bytes": true,
+     "date_original": "29 November 2013, 11:36:44",
+     "notes": "heads of Persian nobles right of Darius (12 mm zoom)",
+     "exif": {
+      "size": [
+       3648,
+       2736
+      ],
+      "Make": "Canon",
+      "Model": "Canon PowerShot G12",
+      "DateTime": "2013:11:29 11:36:44",
+      "DateTimeOriginal": "2013:11:29 11:36:44",
+      "FocalLength": 12.074,
+      "ExposureTime": 0.02,
+      "FNumber": 3.5,
+      "ISOSpeedRatings": 800
+     },
+     "sanity": {
+      "inliers": 497,
+      "ratio_matches": 501,
+      "h_inlier_ratio": 0.992,
+      "fundamental_inliers": 498,
+      "h_over_f_inliers": 0.998,
+      "scale_factor": 7.902,
+      "scale_at_corners": [
+       6.692,
+       6.738,
+       9.177,
+       9.126
+      ],
+      "anisotropy": 1.122,
+      "rms_px_work": 0.7203339338302612,
+      "best_closeup_downscale": 0.125,
+      "footprint_overview_px": [
+       [
+        2137.5,
+        662.1
+       ],
+       [
+        2623.8,
+        662.9
+       ],
+       [
+        2586.4,
+        1032.4
+       ],
+       [
+        2190.7,
+        1033.1
+       ]
+      ],
+      "footprint_fraction_of_overview": 0.022,
+      "ncc_vs_overview": 0.834,
+      "registers": true,
+      "H_overview_to_closeup_original_px": [
+       [
+        5.529679564055597,
+        -0.7935372508875718,
+        -11294.304337733782
+       ],
+       [
+        -0.0071694624112365775,
+        4.441080323673254,
+        -2924.9986865921965
+       ],
+       [
+        -6.277240283680374e-06,
+        -0.00037186025115585973,
+        1.0
+       ]
+      ]
+     },
+     "independent_capture": "yes (own EXIF timestamp, 7.9x more px per subject unit)",
+     "verdict": "registers cleanly"
+    },
+    {
+     "local": "closeup_10.jpg",
+     "role": "closeup",
+     "title": "File:Battaglia di isso, prob. copia di opera del IV sec ac di philoxenos d'eretria, 125-120 ac ca. da casa del fauno a pompei, 10020, 11.JPG",
+     "author": "Sailko",
+     "uploader": "Sailko",
+     "license": "CC BY-SA 3.0",
+     "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+     "usage_terms": "Creative Commons Attribution-Share Alike 3.0",
+     "source_page": "https://commons.wikimedia.org/wiki/File:Battaglia_di_isso,_prob._copia_di_opera_del_IV_sec_ac_di_philoxenos_d%27eretria,_125-120_ac_ca._da_casa_del_fauno_a_pompei,_10020,_11.JPG",
+     "download_url": "https://upload.wikimedia.org/wikipedia/commons/5/59/Battaglia_di_isso%2C_prob._copia_di_opera_del_IV_sec_ac_di_philoxenos_d%27eretria%2C_125-120_ac_ca._da_casa_del_fauno_a_pompei%2C_10020%2C_11.JPG",
+     "original_px": [
+      3648,
+      2736
+     ],
+     "local_px": [
+      3648,
+      2736
+     ],
+     "stored_px": [
+      3648,
+      2736
+     ],
+     "exif_orientation": 1,
+     "megapixels": 10.0,
+     "bytes": 7065985,
+     "sha1": "59097ed7d17cfd8c13ed60473327127596957b7c",
+     "is_original_bytes": true,
+     "date_original": "29 November 2013, 11:36:02",
+     "notes": "dark chariot horses; glare",
+     "exif": {
+      "size": [
+       3648,
+       2736
+      ],
+      "Make": "Canon",
+      "Model": "Canon PowerShot G12",
+      "DateTime": "2013:11:29 11:36:02",
+      "DateTimeOriginal": "2013:11:29 11:36:02",
+      "FocalLength": 6.1,
+      "ExposureTime": 0.03333333333333333,
+      "FNumber": 2.8,
+      "ISOSpeedRatings": 320
+     },
+     "sanity": {
+      "inliers": 929,
+      "ratio_matches": 1381,
+      "h_inlier_ratio": 0.673,
+      "fundamental_inliers": 1365,
+      "h_over_f_inliers": 0.681,
+      "scale_factor": 5.608,
+      "scale_at_corners": [
+       5.16,
+       5.071,
+       6.068,
+       6.162
+      ],
+      "anisotropy": 1.026,
+      "rms_px_work": 1.8663082122802734,
+      "best_closeup_downscale": 0.25,
+      "footprint_overview_px": [
+       [
+        2114.4,
+        840.2
+       ],
+       [
+        2797.8,
+        858.6
+       ],
+       [
+        2749.4,
+        1355.3
+       ],
+       [
+        2142.7,
+        1333.9
+       ]
+      ],
+      "footprint_fraction_of_overview": 0.043,
+      "ncc_vs_overview": 0.758,
+      "registers": true,
+      "H_overview_to_closeup_original_px": [
+       [
+        4.735988724632878,
+        -0.27115939061020206,
+        -9786.132219647847
+       ],
+       [
+        -0.1163672004522184,
+        4.3181040291432025,
+        -3381.909615413423
+       ],
+       [
+        2.0284197676801178e-05,
+        -0.00019903268401659508,
+        1.0
+       ]
+      ]
+     },
+     "independent_capture": "yes (own EXIF timestamp, 5.6x more px per subject unit)",
+     "verdict": "registers cleanly"
+    },
+    {
+     "local": "closeup_11.jpg",
+     "role": "closeup",
+     "title": "File:Battaglia di isso, prob. copia di opera del IV sec ac di philoxenos d'eretria, 125-120 ac ca. da casa del fauno a pompei, 10020, 12.JPG",
+     "author": "Sailko",
+     "uploader": "Sailko",
+     "license": "CC BY-SA 3.0",
+     "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+     "usage_terms": "Creative Commons Attribution-Share Alike 3.0",
+     "source_page": "https://commons.wikimedia.org/wiki/File:Battaglia_di_isso,_prob._copia_di_opera_del_IV_sec_ac_di_philoxenos_d%27eretria,_125-120_ac_ca._da_casa_del_fauno_a_pompei,_10020,_12.JPG",
+     "download_url": "https://upload.wikimedia.org/wikipedia/commons/e/e0/Battaglia_di_isso%2C_prob._copia_di_opera_del_IV_sec_ac_di_philoxenos_d%27eretria%2C_125-120_ac_ca._da_casa_del_fauno_a_pompei%2C_10020%2C_12.JPG",
+     "original_px": [
+      3648,
+      2736
+     ],
+     "local_px": [
+      3648,
+      2736
+     ],
+     "stored_px": [
+      3648,
+      2736
+     ],
+     "exif_orientation": 1,
+     "megapixels": 10.0,
+     "bytes": 5255071,
+     "sha1": "1b15783f4e7b85fa137a39436b3895d6df045e62",
+     "is_original_bytes": true,
+     "date_original": "29 November 2013, 11:36:51",
+     "notes": "face of the Persian under the horses, bottom right (12 mm zoom); most extreme magnification",
+     "exif": {
+      "size": [
+       3648,
+       2736
+      ],
+      "Make": "Canon",
+      "Model": "Canon PowerShot G12",
+      "DateTime": "2013:11:29 11:36:51",
+      "DateTimeOriginal": "2013:11:29 11:36:51",
+      "FocalLength": 12.074,
+      "ExposureTime": 0.016666666666666666,
+      "FNumber": 3.5,
+      "ISOSpeedRatings": 800
+     },
+     "sanity": {
+      "inliers": 97,
+      "ratio_matches": 101,
+      "h_inlier_ratio": 0.96,
+      "fundamental_inliers": 100,
+      "h_over_f_inliers": 0.97,
+      "scale_factor": 14.187,
+      "scale_at_corners": [
+       13.542,
+       14.203,
+       14.841,
+       14.17
+      ],
+      "anisotropy": 1.039,
+      "rms_px_work": 1.1056642532348633,
+      "best_closeup_downscale": 0.125,
+      "footprint_overview_px": [
+       [
+        2528.5,
+        1195.4
+       ],
+       [
+        2785.0,
+        1191.9
+       ],
+       [
+        2788.8,
+        1385.2
+       ],
+       [
+        2540.0,
+        1394.6
+       ]
+      ],
+      "footprint_fraction_of_overview": 0.0067,
+      "ncc_vs_overview": 0.812,
+      "registers": true,
+      "H_overview_to_closeup_original_px": [
+       [
+        9.283502727524947,
+        -0.539785249124108,
+        -22827.732877561502
+       ],
+       [
+        0.12135590334272608,
+        8.977284199770995,
+        -11038.194931564934
+       ],
+       [
+        -8.348686766218539e-05,
+        -9.580906144098537e-05,
+        1.0
+       ]
+      ]
+     },
+     "independent_capture": "yes (own EXIF timestamp, 14.2x more px per subject unit)",
+     "verdict": "registers, weak support (97 inliers); 14x scale gap, only matched at 1/8 size"
+    }
+   ],
+   "summary": {
+    "closeups": 11,
+    "registering": 11,
+    "scale_factor_min": 2.426,
+    "scale_factor_max": 14.187,
+    "inliers_min": 97,
+    "inliers_max": 2437
+   }
+  },
+  {
+   "name": "vatican_map_sicilia",
+   "category": "2 - text / document-like (wall map with lettering)",
+   "subject": "'Sicilia', fresco map in the Gallery of Maps (Galleria delle Carte Geografiche), Vatican Museums; Ignazio Danti and workshop, 1580-83. Flat wall painting, roughly 3 x 4 m (not measured). South is up.",
+   "description": "One photographer (Fabrizio Garrisi), same day (2022-12-10), two cameras: overview with a Canon EOS R at 24 mm, seven close-ups with a Sony ILCE-7 at 50 mm (EXIF times 67-70 minutes later; two camera clocks, so the real gap is not certain). Lettering: closeup_06 is the inscription cartouche (gold capitals on red, crisp in the close-up, smeared in the overview), closeup_07 has the 'APHRICVM MARE' title and coastal place names, closeup_02-05 the labelled city views (Messana, Syracusa, Panormus). closeup_05 contains closeup_02/03/04 at lower magnification, closeup_01 overlaps closeup_02, closeup_06 overlaps closeup_04 and closeup_07.",
+   "caveats": [
+    "The overview is NOT a straight-out-of-camera frame: saved from Adobe Photoshop (EXIF Software), perspective-corrected and cropped to 5470x4446. At 100% it shows doubled edges / smearing on fine lettering, so it may be a blend or a strongly resampled frame. It also includes the stucco frame, two busts and a railing; the map itself spans about 3900 of 5470 px.",
+    "Several close-ups were cropped by the author before upload (3550x3550, 2666x4000, 5098x4000, 3102x4654, 4670x3628 instead of the camera's 6000x4000). They are crops of their own exposures (distinct EXIF timestamps, and 5.5-5.9x the overview's pixel density), not crops of the overview or of closeup_05.",
+    "Easiest set geometrically: H/F inlier ratio 0.96-0.99, scale nearly constant across each close-up. Large blue sea areas are a repetitive wave pattern.",
+    "Licences are mixed: overview CC BY-SA 4.0, close-ups CC0."
+   ],
+   "directory": "datasets/real/vatican_map_sicilia",
+   "files": [
+    {
+     "local": "overview.jpg",
+     "role": "overview",
+     "title": "File:Sicilia - Galleria delle Carte Geografiche -FG.jpg",
+     "author": "Fabrizio Garrisi",
+     "uploader": "Fabrizio Garrisi",
+     "license": "CC BY-SA 4.0",
+     "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+     "usage_terms": "Creative Commons Attribution-Share Alike 4.0",
+     "source_page": "https://commons.wikimedia.org/wiki/File:Sicilia_-_Galleria_delle_Carte_Geografiche_-FG.jpg",
+     "download_url": "https://upload.wikimedia.org/wikipedia/commons/c/c4/Sicilia_-_Galleria_delle_Carte_Geografiche_-FG.jpg",
+     "original_px": [
+      5470,
+      4446
+     ],
+     "local_px": [
+      5470,
+      4446
+     ],
+     "stored_px": [
+      5470,
+      4446
+     ],
+     "exif_orientation": 1,
+     "megapixels": 24.3,
+     "bytes": 5496715,
+     "sha1": "029d8b532858d8953f842e9c91be6c0f2e4428e8",
+     "is_original_bytes": true,
+     "date_original": "2022-12-10 14:50:57",
+     "notes": "whole map wall bay incl. frame and title tablet; perspective-corrected in Photoshop",
+     "exif": {
+      "size": [
+       5470,
+       4446
+      ],
+      "Make": "Canon",
+      "Model": "Canon EOS R",
+      "DateTime": "2023:01:11 20:46:33",
+      "Software": "Adobe Photoshop 21.0 (Windows)",
+      "DateTimeOriginal": "2022:12:10 14:50:57",
+      "FocalLength": 24.0,
+      "ExposureTime": 0.125,
+      "FNumber": 4.0,
+      "ISOSpeedRatings": 100
+     }
+    },
+    {
+     "local": "closeup_01.jpg",
+     "role": "closeup",
+     "title": "File:Sicilia. Galleria delle carte geografiche. Musei Vaticani -FG7.jpg",
+     "author": "Fabrizio Garrisi",
+     "uploader": "Fabrizio Garrisi",
+     "license": "CC0",
+     "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+     "usage_terms": "Creative Commons Zero, Public Domain Dedication",
+     "source_page": "https://commons.wikimedia.org/wiki/File:Sicilia._Galleria_delle_carte_geografiche._Musei_Vaticani_-FG7.jpg",
+     "download_url": "https://upload.wikimedia.org/wikipedia/commons/1/14/Sicilia._Galleria_delle_carte_geografiche._Musei_Vaticani_-FG7.jpg",
+     "original_px": [
+      6000,
+      4000
+     ],
+     "local_px": [
+      6000,
+      4000
+     ],
+     "stored_px": [
+      6000,
+      4000
+     ],
+     "exif_orientation": 1,
+     "megapixels": 24.0,
+     "bytes": 5830752,
+     "sha1": "3c3d4932d87ae9be69b1191864f18c4f5cab00c6",
+     "is_original_bytes": true,
+     "date_original": "2022-12-10 15:57:51",
+     "notes": "sea and small islands left of the city-view insets, left edge of the Messana inset",
+     "exif": {
+      "size": [
+       6000,
+       4000
+      ],
+      "Make": "SONY",
+      "Model": "ILCE-7",
+      "DateTime": "2026:02:19 20:45:23",
+      "Software": "Adobe Photoshop 21.0 (Windows)",
+      "DateTimeOriginal": "2022:12:10 15:57:51",
+      "FocalLength": 50.0,
+      "FocalLengthIn35mmFilm": 50,
+      "ExposureTime": 0.0125,
+      "FNumber": 2.5,
+      "ISOSpeedRatings": 1600
+     },
+     "sanity": {
+      "inliers": 344,
+      "ratio_matches": 394,
+      "h_inlier_ratio": 0.873,
+      "fundamental_inliers": 358,
+      "h_over_f_inliers": 0.961,
+      "scale_factor": 5.457,
+      "scale_at_corners": [
+       5.459,
+       5.688,
+       5.455,
+       5.229
+      ],
+      "anisotropy": 1.021,
+      "rms_px_work": 1.206685185432434,
+      "best_closeup_downscale": 0.1667,
+      "footprint_overview_px": [
+       [
+        1234.1,
+        3315.6
+       ],
+       [
+        2306.9,
+        3342.6
+       ],
+       [
+        2307.9,
+        4073.4
+       ],
+       [
+        1204.0,
+        4066.5
+       ]
+      ],
+      "footprint_fraction_of_overview": 0.0332,
+      "ncc_vs_overview": 0.925,
+      "registers": true,
+      "H_overview_to_closeup_original_px": [
+       [
+        5.990160787565297,
+        0.2398043850722508,
+        -8187.413191019074
+       ],
+       [
+        -0.151684153317592,
+        6.034388912857454,
+        -19820.678774028976
+       ],
+       [
+        -2.881649242967228e-05,
+        4.146507011450512e-05,
+        1.0
+       ]
+      ]
+     },
+     "independent_capture": "yes (own EXIF timestamp, different camera, 5.5x more px per subject unit)",
+     "verdict": "registers cleanly"
+    },
+    {
+     "local": "closeup_02.jpg",
+     "role": "closeup",
+     "title": "File:Veduta di Messina. Sicilia. Galleria delle carte geografiche -FG.jpg",
+     "author": "Fabrizio Garrisi",
+     "uploader": "Fabrizio Garrisi",
+     "license": "CC0",
+     "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+     "usage_terms": "Creative Commons Zero, Public Domain Dedication",
+     "source_page": "https://commons.wikimedia.org/wiki/File:Veduta_di_Messina._Sicilia._Galleria_delle_carte_geografiche_-FG.jpg",
+     "download_url": "https://upload.wikimedia.org/wikipedia/commons/1/14/Veduta_di_Messina._Sicilia._Galleria_delle_carte_geografiche_-FG.jpg",
+     "original_px": [
+      3550,
+      3550
+     ],
+     "local_px": [
+      3550,
+      3550
+     ],
+     "stored_px": [
+      3550,
+      3550
+     ],
+     "exif_orientation": 1,
+     "megapixels": 12.6,
+     "bytes": 3272140,
+     "sha1": "b439ee214a59f9f0faee96551c528b7128f653a8",
+     "is_original_bytes": true,
+     "date_original": "2022-12-10 15:58:00",
+     "notes": "city view 'MESSANA' (author-cropped, square)",
+     "exif": {
+      "size": [
+       3550,
+       3550
+      ],
+      "Make": "SONY",
+      "Model": "ILCE-7",
+      "DateTime": "2026:02:19 20:52:57",
+      "Software": "Adobe Photoshop 21.0 (Windows)",
+      "DateTimeOriginal": "2022:12:10 15:58:00",
+      "FocalLength": 50.0,
+      "FocalLengthIn35mmFilm": 50,
+      "ExposureTime": 0.0125,
+      "FNumber": 2.8,
+      "ISOSpeedRatings": 1600
+     },
+     "sanity": {
+      "inliers": 100,
+      "ratio_matches": 111,
+      "h_inlier_ratio": 0.901,
+      "fundamental_inliers": 103,
+      "h_over_f_inliers": 0.971,
+      "scale_factor": 5.933,
+      "scale_at_corners": [
+       6.004,
+       5.87,
+       5.863,
+       5.997
+      ],
+      "anisotropy": 1.03,
+      "rms_px_work": 0.8396007418632507,
+      "best_closeup_downscale": 0.125,
+      "footprint_overview_px": [
+       [
+        1960.6,
+        3288.7
+       ],
+       [
+        2553.2,
+        3301.5
+       ],
+       [
+        2549.5,
+        3909.9
+       ],
+       [
+        1956.5,
+        3887.9
+       ]
+      ],
+      "footprint_fraction_of_overview": 0.0147,
+      "ncc_vs_overview": 0.924,
+      "registers": true,
+      "H_overview_to_closeup_original_px": [
+       [
+        6.435992025497352,
+        0.04387625849037224,
+        -12762.63531934819
+       ],
+       [
+        -0.1356388520877875,
+        6.273741399926865,
+        -20366.29712783038
+       ],
+       [
+        2.71296949059678e-05,
+        1.582884987393982e-06,
+        1.0
+       ]
+      ]
+     },
+     "independent_capture": "yes (own EXIF timestamp, different camera, 5.9x more px per subject unit)",
+     "verdict": "registers cleanly"
+    },
+    {
+     "local": "closeup_03.jpg",
+     "role": "closeup",
+     "title": "File:Veduta di Siracusa. Sicilia. Galleria delle carte geografiche -FG.jpg",
+     "author": "Fabrizio Garrisi",
+     "uploader": "Fabrizio Garrisi",
+     "license": "CC0",
+     "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+     "usage_terms": "Creative Commons Zero, Public Domain Dedication",
+     "source_page": "https://commons.wikimedia.org/wiki/File:Veduta_di_Siracusa._Sicilia._Galleria_delle_carte_geografiche_-FG.jpg",
+     "download_url": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Veduta_di_Siracusa._Sicilia._Galleria_delle_carte_geografiche_-FG.jpg",
+     "original_px": [
+      5098,
+      4000
+     ],
+     "local_px": [
+      5098,
+      4000
+     ],
+     "stored_px": [
+      5098,
+      4000
+     ],
+     "exif_orientation": 1,
+     "megapixels": 20.4,
+     "bytes": 5148071,
+     "sha1": "5f12ca7bccc8dbd402bfdb300c8511b98d0b30f5",
+     "is_original_bytes": true,
+     "date_original": "2022-12-10 15:58:08",
+     "notes": "city view 'SYRACVSA' (author-cropped)",
+     "exif": {
+      "size": [
+       5098,
+       4000
+      ],
+      "Make": "SONY",
+      "Model": "ILCE-7",
+      "DateTime": "2026:02:19 20:56:13",
+      "Software": "Adobe Photoshop 21.0 (Windows)",
+      "DateTimeOriginal": "2022:12:10 15:58:08",
+      "FocalLength": 50.0,
+      "FocalLengthIn35mmFilm": 50,
+      "ExposureTime": 0.0125,
+      "FNumber": 2.8,
+      "ISOSpeedRatings": 1600
+     },
+     "sanity": {
+      "inliers": 216,
+      "ratio_matches": 222,
+      "h_inlier_ratio": 0.973,
+      "fundamental_inliers": 219,
+      "h_over_f_inliers": 0.986,
+      "scale_factor": 5.631,
+      "scale_at_corners": [
+       5.513,
+       5.624,
+       5.75,
+       5.637
+      ],
+      "anisotropy": 1.018,
+      "rms_px_work": 0.6560879945755005,
+      "best_closeup_downscale": 0.0981,
+      "footprint_overview_px": [
+       [
+        2405.3,
+        3202.6
+       ],
+       [
+        3309.8,
+        3210.3
+       ],
+       [
+        3304.3,
+        3922.1
+       ],
+       [
+        2413.1,
+        3923.9
+       ]
+      ],
+      "footprint_fraction_of_overview": 0.0265,
+      "ncc_vs_overview": 0.925,
+      "registers": true,
+      "H_overview_to_closeup_original_px": [
+       [
+        5.056591577641345,
+        -0.05457764773183768,
+        -11988.029238488649
+       ],
+       [
+        -0.04247282723739162,
+        4.967469170359436,
+        -15806.542583976563
+       ],
+       [
+        -1.318806428387614e-05,
+        -1.8479276542710213e-05,
+        1.0
+       ]
+      ]
+     },
+     "independent_capture": "yes (own EXIF timestamp, different camera, 5.6x more px per subject unit)",
+     "verdict": "registers cleanly"
+    },
+    {
+     "local": "closeup_04.jpg",
+     "role": "closeup",
+     "title": "File:Veduta di Palermo. Sicilia. Galleria delle carte geografiche -FG.jpg",
+     "author": "Fabrizio Garrisi",
+     "uploader": "Fabrizio Garrisi",
+     "license": "CC0",
+     "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+     "usage_terms": "Creative Commons Zero, Public Domain Dedication",
+     "source_page": "https://commons.wikimedia.org/wiki/File:Veduta_di_Palermo._Sicilia._Galleria_delle_carte_geografiche_-FG.jpg",
+     "download_url": "https://upload.wikimedia.org/wikipedia/commons/7/73/Veduta_di_Palermo._Sicilia._Galleria_delle_carte_geografiche_-FG.jpg",
+     "original_px": [
+      2666,
+      4000
+     ],
+     "local_px": [
+      2666,
+      4000
+     ],
+     "stored_px": [
+      2666,
+      4000
+     ],
+     "exif_orientation": 1,
+     "megapixels": 10.7,
+     "bytes": 4954732,
+     "sha1": "f9ef1dd2a835e6d93c7b480c35e96b6d92d72840",
+     "is_original_bytes": true,
+     "date_original": "2022-12-10 15:58:16",
+     "notes": "city view 'PANORMVS' (author-cropped, portrait)",
+     "exif": {
+      "size": [
+       2666,
+       4000
+      ],
+      "Make": "SONY",
+      "Model": "ILCE-7",
+      "DateTime": "2026:02:19 21:01:33",
+      "Software": "Adobe Photoshop 21.0 (Windows)",
+      "DateTimeOriginal": "2022:12:10 15:58:16",
+      "FocalLength": 50.0,
+      "FocalLengthIn35mmFilm": 50,
+      "ExposureTime": 0.0125,
+      "FNumber": 3.2,
+      "ISOSpeedRatings": 1600
+     },
+     "sanity": {
+      "inliers": 218,
+      "ratio_matches": 222,
+      "h_inlier_ratio": 0.982,
+      "fundamental_inliers": 219,
+      "h_over_f_inliers": 0.995,
+      "scale_factor": 5.533,
+      "scale_at_corners": [
+       5.476,
+       5.496,
+       5.59,
+       5.57
+      ],
+      "anisotropy": 1.015,
+      "rms_px_work": 0.7195806503295898,
+      "best_closeup_downscale": 0.125,
+      "footprint_overview_px": [
+       [
+        3255.0,
+        3178.4
+       ],
+       [
+        3736.5,
+        3183.8
+       ],
+       [
+        3733.1,
+        3910.4
+       ],
+       [
+        3257.0,
+        3906.9
+       ]
+      ],
+      "footprint_fraction_of_overview": 0.0143,
+      "ncc_vs_overview": 0.872,
+      "registers": true,
+      "H_overview_to_closeup_original_px": [
+       [
+        5.1874335881459865,
+        -0.014399905255957145,
+        -16839.1871111648
+       ],
+       [
+        -0.056396984653997194,
+        5.098845379538146,
+        -16022.838116972485
+       ],
+       [
+        -4.6025065301555484e-06,
+        -1.4442446740301986e-05,
+        1.0
+       ]
+      ]
+     },
+     "independent_capture": "yes (own EXIF timestamp, different camera, 5.5x more px per subject unit)",
+     "verdict": "registers cleanly"
+    },
+    {
+     "local": "closeup_05.jpg",
+     "role": "closeup",
+     "title": "File:Vedute di Messina Siracusa e Palermo. Sicilia. Galleria delle carte geografiche -FG.jpg",
+     "author": "Fabrizio Garrisi",
+     "uploader": "Fabrizio Garrisi",
+     "license": "CC0",
+     "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+     "usage_terms": "Creative Commons Zero, Public Domain Dedication",
+     "source_page": "https://commons.wikimedia.org/wiki/File:Vedute_di_Messina_Siracusa_e_Palermo._Sicilia._Galleria_delle_carte_geografiche_-FG.jpg",
+     "download_url": "https://upload.wikimedia.org/wikipedia/commons/e/eb/Vedute_di_Messina_Siracusa_e_Palermo._Sicilia._Galleria_delle_carte_geografiche_-FG.jpg",
+     "original_px": [
+      6000,
+      4000
+     ],
+     "local_px": [
+      6000,
+      4000
+     ],
+     "stored_px": [
+      6000,
+      4000
+     ],
+     "exif_orientation": 1,
+     "megapixels": 24.0,
+     "bytes": 7647596,
+     "sha1": "296e76ebea87288a87489aff0ac099c776991b94",
+     "is_original_bytes": true,
+     "date_original": "2022-12-10 15:58:26",
+     "notes": "all three city views in one frame (full 6000x4000 frame)",
+     "exif": {
+      "size": [
+       6000,
+       4000
+      ],
+      "Make": "SONY",
+      "Model": "ILCE-7",
+      "DateTime": "2026:02:19 21:05:41",
+      "Software": "Adobe Photoshop 21.0 (Windows)",
+      "DateTimeOriginal": "2022:12:10 15:58:26",
+      "FocalLength": 50.0,
+      "FocalLengthIn35mmFilm": 50,
+      "ExposureTime": 0.0125,
+      "FNumber": 4.0,
+      "ISOSpeedRatings": 800
+     },
+     "sanity": {
+      "inliers": 1185,
+      "ratio_matches": 1229,
+      "h_inlier_ratio": 0.964,
+      "fundamental_inliers": 1193,
+      "h_over_f_inliers": 0.993,
+      "scale_factor": 3.052,
+      "scale_at_corners": [
+       3.11,
+       2.998,
+       2.994,
+       3.106
+      ],
+      "anisotropy": 1.016,
+      "rms_px_work": 0.7310885787010193,
+      "best_closeup_downscale": 0.1667,
+      "footprint_overview_px": [
+       [
+        1905.7,
+        2888.4
+       ],
+       [
+        3856.4,
+        2877.4
+       ],
+       [
+        3859.9,
+        4214.5
+       ],
+       [
+        1907.4,
+        4193.1
+       ]
+      ],
+      "footprint_fraction_of_overview": 0.106,
+      "ncc_vs_overview": 0.793,
+      "registers": true,
+      "H_overview_to_closeup_original_px": [
+       [
+        3.2371145213404984,
+        -0.004151483455734334,
+        -6157.041248322925
+       ],
+       [
+        0.01792259768240748,
+        3.1510589675503633,
+        -9135.818444547282
+       ],
+       [
+        1.310521191594554e-05,
+        6.617884081321476e-07,
+        1.0
+       ]
+      ]
+     },
+     "independent_capture": "yes (own EXIF timestamp, different camera, 3.1x more px per subject unit)",
+     "verdict": "registers cleanly"
+    },
+    {
+     "local": "closeup_06.jpg",
+     "role": "closeup",
+     "title": "File:Sicilia. Galleria delle carte geografiche, Musei Vaticani -FG4.jpg",
+     "author": "Fabrizio Garrisi",
+     "uploader": "Fabrizio Garrisi",
+     "license": "CC0",
+     "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+     "usage_terms": "Creative Commons Zero, Public Domain Dedication",
+     "source_page": "https://commons.wikimedia.org/wiki/File:Sicilia._Galleria_delle_carte_geografiche,_Musei_Vaticani_-FG4.jpg",
+     "download_url": "https://upload.wikimedia.org/wikipedia/commons/3/39/Sicilia._Galleria_delle_carte_geografiche%2C_Musei_Vaticani_-FG4.jpg",
+     "original_px": [
+      3102,
+      4654
+     ],
+     "local_px": [
+      3102,
+      4654
+     ],
+     "stored_px": [
+      3102,
+      4654
+     ],
+     "exif_orientation": 1,
+     "megapixels": 14.4,
+     "bytes": 5992987,
+     "sha1": "06360cb87e401d6fe7e1775e21e36c2224983d5b",
+     "is_original_bytes": true,
+     "date_original": "2022-12-10 16:00:20",
+     "notes": "inscription cartouche: dense gold lettering on red (author-cropped, portrait)",
+     "exif": {
+      "size": [
+       3102,
+       4654
+      ],
+      "Make": "SONY",
+      "Model": "ILCE-7",
+      "DateTime": "2026:02:19 21:09:53",
+      "Software": "Adobe Photoshop 21.0 (Windows)",
+      "DateTimeOriginal": "2022:12:10 16:00:20",
+      "FocalLength": 50.0,
+      "FocalLengthIn35mmFilm": 50,
+      "ExposureTime": 0.0125,
+      "FNumber": 2.8,
+      "ISOSpeedRatings": 1600
+     },
+     "sanity": {
+      "inliers": 897,
+      "ratio_matches": 945,
+      "h_inlier_ratio": 0.949,
+      "fundamental_inliers": 909,
+      "h_over_f_inliers": 0.987,
+      "scale_factor": 2.668,
+      "scale_at_corners": [
+       2.659,
+       2.584,
+       2.676,
+       2.752
+      ],
+      "anisotropy": 1.012,
+      "rms_px_work": 0.9347485303878784,
+      "best_closeup_downscale": 0.2149,
+      "footprint_overview_px": [
+       [
+        3576.9,
+        2414.1
+       ],
+       [
+        4748.7,
+        2395.9
+       ],
+       [
+        4752.1,
+        4164.3
+       ],
+       [
+        3606.7,
+        4149.3
+       ]
+      ],
+      "footprint_fraction_of_overview": 0.0835,
+      "ncc_vs_overview": 0.839,
+      "registers": true,
+      "H_overview_to_closeup_original_px": [
+       [
+        2.7695981897406114,
+        -0.04766067979339324,
+        -9791.38224401059
+       ],
+       [
+        0.04164981735251587,
+        2.6906171450196514,
+        -6644.272152259813
+       ],
+       [
+        1.6713554543586748e-05,
+        -1.3690288930587363e-05,
+        1.0
+       ]
+      ]
+     },
+     "independent_capture": "yes (own EXIF timestamp, different camera, 2.7x more px per subject unit)",
+     "verdict": "registers cleanly"
+    },
+    {
+     "local": "closeup_07.jpg",
+     "role": "closeup",
+     "title": "File:Sicilia. Galleria delle carte geografiche, Musei Vaticani -FG5.jpg",
+     "author": "Fabrizio Garrisi",
+     "uploader": "Fabrizio Garrisi",
+     "license": "CC0",
+     "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+     "usage_terms": "Creative Commons Zero, Public Domain Dedication",
+     "source_page": "https://commons.wikimedia.org/wiki/File:Sicilia._Galleria_delle_carte_geografiche,_Musei_Vaticani_-FG5.jpg",
+     "download_url": "https://upload.wikimedia.org/wikipedia/commons/7/78/Sicilia._Galleria_delle_carte_geografiche%2C_Musei_Vaticani_-FG5.jpg",
+     "original_px": [
+      4670,
+      3628
+     ],
+     "local_px": [
+      4670,
+      3628
+     ],
+     "stored_px": [
+      4670,
+      3628
+     ],
+     "exif_orientation": 1,
+     "megapixels": 16.9,
+     "bytes": 6437291,
+     "sha1": "8aef8bd548e6511dfe76774296af9472cfb6cf74",
+     "is_original_bytes": true,
+     "date_original": "2022-12-10 16:00:32",
+     "notes": "'APHRICVM MARE' lettering, coast with place names, ships (author-cropped)",
+     "exif": {
+      "size": [
+       4670,
+       3628
+      ],
+      "Make": "SONY",
+      "Model": "ILCE-7",
+      "DateTime": "2026:02:19 21:16:03",
+      "Software": "Adobe Photoshop 21.0 (Windows)",
+      "DateTimeOriginal": "2022:12:10 16:00:32",
+      "FocalLength": 50.0,
+      "FocalLengthIn35mmFilm": 50,
+      "ExposureTime": 0.0125,
+      "FNumber": 2.8,
+      "ISOSpeedRatings": 1600
+     },
+     "sanity": {
+      "inliers": 491,
+      "ratio_matches": 517,
+      "h_inlier_ratio": 0.95,
+      "fundamental_inliers": 498,
+      "h_over_f_inliers": 0.986,
+      "scale_factor": 2.289,
+      "scale_at_corners": [
+       2.389,
+       2.314,
+       2.19,
+       2.265
+      ],
+      "anisotropy": 1.054,
+      "rms_px_work": 1.038742184638977,
+      "best_closeup_downscale": 0.2141,
+      "footprint_overview_px": [
+       [
+        2708.3,
+        1154.3
+       ],
+       [
+        4662.9,
+        1136.3
+       ],
+       [
+        4673.0,
+        2779.9
+       ],
+       [
+        2647.1,
+        2762.4
+       ]
+      ],
+      "footprint_fraction_of_overview": 0.1331,
+      "ncc_vs_overview": 0.89,
+      "registers": true,
+      "H_overview_to_closeup_original_px": [
+       [
+        2.590090410194138,
+        0.09866263683996623,
+        -7128.670736138029
+       ],
+       [
+        0.022899515086556792,
+        2.4809957744182753,
+        -2925.8998540959005
+       ],
+       [
+        1.1990759443560163e-05,
+        2.4456306455549638e-05,
+        1.0
+       ]
+      ]
+     },
+     "independent_capture": "yes (own EXIF timestamp, different camera, 2.3x more px per subject unit)",
+     "verdict": "registers cleanly"
+    }
+   ],
+   "summary": {
+    "closeups": 7,
+    "registering": 7,
+    "scale_factor_min": 2.289,
+    "scale_factor_max": 5.933,
+    "inliers_min": 100,
+    "inliers_max": 1185
+   }
+  },
+  {
+   "name": "portonaccio_sarcophagus",
+   "category": "3 - challenging: clearly non-planar (deep relief, shifted viewpoints)",
+   "subject": "Portonaccio sarcophagus, Roman battle sarcophagus, c. AD 180; Museo Nazionale Romano, Palazzo Massimo alle Terme, Rome. Marble, very deep undercut relief in several depth layers, lid frieze above the chest, projecting corner masks. Roughly 2.4 m long (not measured).",
+   "description": "One photographer (Miguel Hermoso Cuesta), one camera (Canon EOS 600D, focal lengths 27-55 mm), 110 seconds (2014-02-28): near-frontal overview, then ten close-ups from varying positions and angles. Dark room with spot lighting, black background. Expected to break a planar model; it is the 'failure / poor consistency is fine' set.",
+   "caveats": [
+    "Non-planar: H/F inlier ratio 0.31-0.78 for eight of ten close-ups (0.95 for closeup_08, where the matched area is a single head). A homography locks onto the dominant depth layer only; expect ghosting and misalignment on the other layers.",
+    "The baseline still finds a plausible footprint for nine of ten close-ups, so the set is 'registers coarsely but not consistently' rather than 'fails outright'. Only closeup_09 fails completely.",
+    "Little overlap between close-ups (01/02 and 05/06 touch, 08/09 show the same mask); they are details, not a covering sweep.",
+    "Three files are stored landscape with an EXIF orientation tag (closeup_02, closeup_08, closeup_09). A loader that ignores EXIF orientation will see them rotated by 90 degrees."
+   ],
+   "directory": "datasets/real/portonaccio_sarcophagus",
+   "files": [
+    {
+     "local": "overview.jpg",
+     "role": "overview",
+     "title": "File:Sarcófago de Portonaccio. 01.JPG",
+     "author": "Miguel Hermoso Cuesta",
+     "uploader": "MiguelHermoso",
+     "license": "CC BY-SA 3.0",
+     "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+     "usage_terms": "Creative Commons Attribution-Share Alike 3.0",
+     "source_page": "https://commons.wikimedia.org/wiki/File:Sarc%C3%B3fago_de_Portonaccio._01.JPG",
+     "download_url": "https://upload.wikimedia.org/wikipedia/commons/2/20/Sarc%C3%B3fago_de_Portonaccio._01.JPG",
+     "original_px": [
+      5184,
+      3456
+     ],
+     "local_px": [
+      5184,
+      3456
+     ],
+     "stored_px": [
+      5184,
+      3456
+     ],
+     "exif_orientation": 1,
+     "megapixels": 17.9,
+     "bytes": 8610627,
+     "sha1": "061f1195604a17501b87810a71a6afbf07abb901",
+     "is_original_bytes": true,
+     "date_original": "2014-02-28 17:34:01",
+     "notes": "front of chest and lid, near-frontal",
+     "exif": {
+      "size": [
+       5184,
+       3456
+      ],
+      "Make": "Canon",
+      "Model": "Canon EOS 600D",
+      "DateTime": "2014:02:28 17:34:01",
+      "DateTimeOriginal": "2014:02:28 17:34:01",
+      "FocalLength": 27.0,
+      "ExposureTime": 0.025,
+      "FNumber": 4.0,
+      "ISOSpeedRatings": 500
+     }
+    },
+    {
+     "local": "closeup_01.jpg",
+     "role": "closeup",
+     "title": "File:Sarcófago de Portonaccio. 02.JPG",
+     "author": "Miguel Hermoso Cuesta",
+     "uploader": "MiguelHermoso",
+     "license": "CC BY-SA 3.0",
+     "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+     "usage_terms": "Creative Commons Attribution-Share Alike 3.0",
+     "source_page": "https://commons.wikimedia.org/wiki/File:Sarc%C3%B3fago_de_Portonaccio._02.JPG",
+     "download_url": "https://upload.wikimedia.org/wikipedia/commons/b/ba/Sarc%C3%B3fago_de_Portonaccio._02.JPG",
+     "original_px": [
+      5184,
+      3456
+     ],
+     "local_px": [
+      5184,
+      3456
+     ],
+     "stored_px": [
+      5184,
+      3456
+     ],
+     "exif_orientation": 1,
+     "megapixels": 17.9,
+     "bytes": 6819498,
+     "sha1": "9a691bad1079af8660ab38f9be439c40d3271f69",
+     "is_original_bytes": true,
+     "date_original": "2014-02-28 17:34:14",
+     "notes": "left trophy with helmet, cuirass and shields",
+     "exif": {
+      "size": [
+       5184,
+       3456
+      ],
+      "Make": "Canon",
+      "Model": "Canon EOS 600D",
+      "DateTime": "2014:02:28 17:34:14",
+      "DateTimeOriginal": "2014:02:28 17:34:14",
+      "FocalLength": 42.0,
+      "ExposureTime": 0.016666666666666666,
+      "FNumber": 5.0,
+      "ISOSpeedRatings": 1600
+     },
+     "sanity": {
+      "inliers": 265,
+      "ratio_matches": 389,
+      "h_inlier_ratio": 0.681,
+      "fundamental_inliers": 377,
+      "h_over_f_inliers": 0.703,
+      "scale_factor": 4.899,
+      "scale_at_corners": [
+       4.894,
+       5.024,
+       4.904,
+       4.775
+      ],
+      "anisotropy": 1.033,
+      "rms_px_work": 1.4748237133026123,
+      "best_closeup_downscale": 0.0965,
+      "footprint_overview_px": [
+       [
+        -2.2,
+        1108.7
+       ],
+       [
+        1037.2,
+        1109.5
+       ],
+       [
+        1067.5,
+        1815.8
+       ],
+       [
+        11.4,
+        1827.6
+       ]
+      ],
+      "footprint_fraction_of_overview": 0.0417,
+      "ncc_vs_overview": 0.812,
+      "registers": true,
+      "H_overview_to_closeup_original_px": [
+       [
+        5.031354152645638,
+        -0.09491115400402997,
+        116.04759069062204
+       ],
+       [
+        -0.004098070809925345,
+        5.017185561511398,
+        -5562.534342811993
+       ],
+       [
+        -1.7197415123942933e-05,
+        2.3981830533239055e-05,
+        1.0
+       ]
+      ]
+     },
+     "independent_capture": "yes (own EXIF timestamp, 4.9x more px per subject unit)",
+     "verdict": "registers cleanly"
+    },
+    {
+     "local": "closeup_02.jpg",
+     "role": "closeup",
+     "title": "File:Sarcófago de Portonaccio. 03.JPG",
+     "author": "Miguel Hermoso Cuesta",
+     "uploader": "MiguelHermoso",
+     "license": "CC BY-SA 3.0",
+     "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+     "usage_terms": "Creative Commons Attribution-Share Alike 3.0",
+     "source_page": "https://commons.wikimedia.org/wiki/File:Sarc%C3%B3fago_de_Portonaccio._03.JPG",
+     "download_url": "https://upload.wikimedia.org/wikipedia/commons/2/2a/Sarc%C3%B3fago_de_Portonaccio._03.JPG",
+     "original_px": [
+      3456,
+      5184
+     ],
+     "local_px": [
+      3456,
+      5184
+     ],
+     "stored_px": [
+      5184,
+      3456
+     ],
+     "exif_orientation": 8,
+     "megapixels": 17.9,
+     "bytes": 7767439,
+     "sha1": "67b6f535d769cb8e91cf2ea54edfb411beb83bb0",
+     "is_original_bytes": true,
+     "date_original": "2014-02-28 17:34:23",
+     "notes": "left pair of barbarian captives, full height (portrait)",
+     "exif": {
+      "size": [
+       5184,
+       3456
+      ],
+      "Make": "Canon",
+      "Model": "Canon EOS 600D",
+      "DateTime": "2014:02:28 17:34:23",
+      "DateTimeOriginal": "2014:02:28 17:34:23",
+      "FocalLength": 32.0,
+      "ExposureTime": 0.016666666666666666,
+      "FNumber": 4.5,
+      "ISOSpeedRatings": 2000
+     },
+     "sanity": {
+      "inliers": 112,
+      "ratio_matches": 219,
+      "h_inlier_ratio": 0.511,
+      "fundamental_inliers": 206,
+      "h_over_f_inliers": 0.544,
+      "scale_factor": 3.482,
+      "scale_at_corners": [
+       3.41,
+       3.58,
+       3.554,
+       3.385
+      ],
+      "anisotropy": 1.048,
+      "rms_px_work": 1.6643996238708496,
+      "best_closeup_downscale": 0.0965,
+      "footprint_overview_px": [
+       [
+        29.2,
+        1715.0
+       ],
+       [
+        1021.4,
+        1750.9
+       ],
+       [
+        1075.2,
+        3215.2
+       ],
+       [
+        79.8,
+        3227.5
+       ]
+      ],
+      "footprint_fraction_of_overview": 0.0825,
+      "ncc_vs_overview": 0.672,
+      "registers": true,
+      "H_overview_to_closeup_original_px": [
+       [
+        3.3985538866210887,
+        -0.11368631878702239,
+        95.8237194619115
+       ],
+       [
+        -0.1258760038075882,
+        3.47167169303007,
+        -5950.109151615451
+       ],
+       [
+        -3.254775799540645e-05,
+        4.438091371825532e-06,
+        1.0
+       ]
+      ]
+     },
+     "independent_capture": "yes (own EXIF timestamp, 3.5x more px per subject unit)",
+     "verdict": "registers cleanly"
+    },
+    {
+     "local": "closeup_03.jpg",
+     "role": "closeup",
+     "title": "File:Sarcófago de Portonaccio. 04.JPG",
+     "author": "Miguel Hermoso Cuesta",
+     "uploader": "MiguelHermoso",
+     "license": "CC BY-SA 3.0",
+     "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+     "usage_terms": "Creative Commons Attribution-Share Alike 3.0",
+     "source_page": "https://commons.wikimedia.org/wiki/File:Sarc%C3%B3fago_de_Portonaccio._04.JPG",
+     "download_url": "https://upload.wikimedia.org/wikipedia/commons/0/04/Sarc%C3%B3fago_de_Portonaccio._04.JPG",
+     "original_px": [
+      5184,
+      3456
+     ],
+     "local_px": [
+      5184,
+      3456
+     ],
+     "stored_px": [
+      5184,
+      3456
+     ],
+     "exif_orientation": 1,
+     "megapixels": 17.9,
+     "bytes": 7709641,
+     "sha1": "03d6772df81ce7bb05661c365653d2dd88a0a6ab",
+     "is_original_bytes": true,
+     "date_original": "2014-02-28 17:34:34",
+     "notes": "centre: charging Roman cavalry around the general",
+     "exif": {
+      "size": [
+       5184,
+       3456
+      ],
+      "Make": "Canon",
+      "Model": "Canon EOS 600D",
+      "DateTime": "2014:02:28 17:34:34",
+      "DateTimeOriginal": "2014:02:28 17:34:34",
+      "FocalLength": 33.0,
+      "ExposureTime": 0.02,
+      "FNumber": 4.5,
+      "ISOSpeedRatings": 640
+     },
+     "sanity": {
+      "inliers": 772,
+      "ratio_matches": 2043,
+      "h_inlier_ratio": 0.378,
+      "fundamental_inliers": 2013,
+      "h_over_f_inliers": 0.384,
+      "scale_factor": 4.029,
+      "scale_at_corners": [
+       3.936,
+       3.963,
+       4.122,
+       4.094
+      ],
+      "anisotropy": 1.007,
+      "rms_px_work": 1.6662794351577759,
+      "best_closeup_downscale": 0.1929,
+      "footprint_overview_px": [
+       [
+        2403.6,
+        1097.9
+       ],
+       [
+        3706.4,
+        1090.5
+       ],
+       [
+        3701.8,
+        1947.3
+       ],
+       [
+        2432.8,
+        1958.4
+       ]
+      ],
+      "footprint_fraction_of_overview": 0.0616,
+      "ncc_vs_overview": 0.746,
+      "registers": true,
+      "H_overview_to_closeup_original_px": [
+       [
+        3.799897598231475,
+        -0.12905790695952976,
+        -8991.678449727711
+       ],
+       [
+        0.021247603470200396,
+        3.7533135533402118,
+        -4171.70070620913
+       ],
+       [
+        -3.603408011805146e-06,
+        -2.8847066489557685e-05,
+        1.0
+       ]
+      ]
+     },
+     "independent_capture": "yes (own EXIF timestamp, 4.0x more px per subject unit)",
+     "verdict": "registers cleanly; but only 38% of the geometrically consistent matches fit the plane"
+    },
+    {
+     "local": "closeup_04.jpg",
+     "role": "closeup",
+     "title": "File:Sarcófago de Portonaccio. 05.JPG",
+     "author": "Miguel Hermoso Cuesta",
+     "uploader": "MiguelHermoso",
+     "license": "CC BY-SA 3.0",
+     "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+     "usage_terms": "Creative Commons Attribution-Share Alike 3.0",
+     "source_page": "https://commons.wikimedia.org/wiki/File:Sarc%C3%B3fago_de_Portonaccio._05.JPG",
+     "download_url": "https://upload.wikimedia.org/wikipedia/commons/d/dd/Sarc%C3%B3fago_de_Portonaccio._05.JPG",
+     "original_px": [
+      5184,
+      3456
+     ],
+     "local_px": [
+      5184,
+      3456
+     ],
+     "stored_px": [
+      5184,
+      3456
+     ],
+     "exif_orientation": 1,
+     "megapixels": 17.9,
+     "bytes": 8374115,
+     "sha1": "56bcb1dfe0a122b755f67b76a56071fc8ac1c55b",
+     "is_original_bytes": true,
+     "date_original": "2014-02-28 17:34:43",
+     "notes": "lid frieze, left scene",
+     "exif": {
+      "size": [
+       5184,
+       3456
+      ],
+      "Make": "Canon",
+      "Model": "Canon EOS 600D",
+      "DateTime": "2014:02:28 17:34:43",
+      "DateTimeOriginal": "2014:02:28 17:34:43",
+      "FocalLength": 47.0,
+      "ExposureTime": 0.0125,
+      "FNumber": 5.6,
+      "ISOSpeedRatings": 2000
+     },
+     "sanity": {
+      "inliers": 780,
+      "ratio_matches": 1198,
+      "h_inlier_ratio": 0.651,
+      "fundamental_inliers": 1160,
+      "h_over_f_inliers": 0.672,
+      "scale_factor": 5.089,
+      "scale_at_corners": [
+       4.858,
+       4.828,
+       5.324,
+       5.355
+      ],
+      "anisotropy": 1.033,
+      "rms_px_work": 1.6186515092849731,
+      "best_closeup_downscale": 0.1929,
+      "footprint_overview_px": [
+       [
+        1111.0,
+        237.9
+       ],
+       [
+        2151.7,
+        226.6
+       ],
+       [
+        2140.8,
+        915.7
+       ],
+       [
+        1165.5,
+        923.8
+       ]
+      ],
+      "footprint_fraction_of_overview": 0.0387,
+      "ncc_vs_overview": 0.82,
+      "registers": true,
+      "H_overview_to_closeup_original_px": [
+       [
+        4.906667729090981,
+        -0.3901923930695338,
+        -5358.385086765894
+       ],
+       [
+        0.05069375131710348,
+        4.632881244388835,
+        -1158.6822502125076
+       ],
+       [
+        2.9125596425870538e-06,
+        -9.010572314156398e-05,
+        1.0
+       ]
+      ]
+     },
+     "independent_capture": "yes (own EXIF timestamp, 5.1x more px per subject unit)",
+     "verdict": "registers cleanly"
+    },
+    {
+     "local": "closeup_05.jpg",
+     "role": "closeup",
+     "title": "File:Sarcófago de Portonaccio. 06.JPG",
+     "author": "Miguel Hermoso Cuesta",
+     "uploader": "MiguelHermoso",
+     "license": "CC BY-SA 3.0",
+     "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+     "usage_terms": "Creative Commons Attribution-Share Alike 3.0",
+     "source_page": "https://commons.wikimedia.org/wiki/File:Sarc%C3%B3fago_de_Portonaccio._06.JPG",
+     "download_url": "https://upload.wikimedia.org/wikipedia/commons/0/08/Sarc%C3%B3fago_de_Portonaccio._06.JPG",
+     "original_px": [
+      5184,
+      3456
+     ],
+     "local_px": [
+      5184,
+      3456
+     ],
+     "stored_px": [
+      5184,
+      3456
+     ],
+     "exif_orientation": 1,
+     "megapixels": 17.9,
+     "bytes": 7236140,
+     "sha1": "b7e62c531f76f22eee1a2269b080c63c986673ae",
+     "is_original_bytes": true,
+     "date_original": "2014-02-28 17:34:56",
+     "notes": "right trophy",
+     "exif": {
+      "size": [
+       5184,
+       3456
+      ],
+      "Make": "Canon",
+      "Model": "Canon EOS 600D",
+      "DateTime": "2014:02:28 17:34:56",
+      "DateTimeOriginal": "2014:02:28 17:34:56",
+      "FocalLength": 47.0,
+      "ExposureTime": 0.016666666666666666,
+      "FNumber": 5.6,
+      "ISOSpeedRatings": 2500
+     },
+     "sanity": {
+      "inliers": 188,
+      "ratio_matches": 248,
+      "h_inlier_ratio": 0.758,
+      "fundamental_inliers": 241,
+      "h_over_f_inliers": 0.78,
+      "scale_factor": 6.22,
+      "scale_at_corners": [
+       6.34,
+       6.571,
+       6.1,
+       5.875
+      ],
+      "anisotropy": 1.059,
+      "rms_px_work": 1.5467784404754639,
+      "best_closeup_downscale": 0.0965,
+      "footprint_overview_px": [
+       [
+        4144.4,
+        1135.0
+       ],
+       [
+        4952.2,
+        1131.0
+       ],
+       [
+        4949.2,
+        1683.8
+       ],
+       [
+        4099.3,
+        1702.1
+       ]
+      ],
+      "footprint_fraction_of_overview": 0.0259,
+      "ncc_vs_overview": 0.74,
+      "registers": true,
+      "H_overview_to_closeup_original_px": [
+       [
+        6.163060806894596,
+        0.49089114476072154,
+        -26099.646665914704
+       ],
+       [
+        0.031094657163783294,
+        6.306000262904718,
+        -7286.118934247634
+       ],
+       [
+        -2.8194311265482056e-05,
+        8.804668079574778e-05,
+        1.0
+       ]
+      ]
+     },
+     "independent_capture": "yes (own EXIF timestamp, 6.2x more px per subject unit)",
+     "verdict": "registers cleanly"
+    },
+    {
+     "local": "closeup_06.jpg",
+     "role": "closeup",
+     "title": "File:Sarcófago de Portonaccio. 07.jpg",
+     "author": "Miguel Hermoso Cuesta",
+     "uploader": "MiguelHermoso",
+     "license": "CC BY-SA 3.0",
+     "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+     "usage_terms": "Creative Commons Attribution-Share Alike 3.0",
+     "source_page": "https://commons.wikimedia.org/wiki/File:Sarc%C3%B3fago_de_Portonaccio._07.jpg",
+     "download_url": "https://upload.wikimedia.org/wikipedia/commons/3/32/Sarc%C3%B3fago_de_Portonaccio._07.jpg",
+     "original_px": [
+      5184,
+      3456
+     ],
+     "local_px": [
+      5184,
+      3456
+     ],
+     "stored_px": [
+      5184,
+      3456
+     ],
+     "exif_orientation": 1,
+     "megapixels": 17.9,
+     "bytes": 5398902,
+     "sha1": "65809d026b9183a5ea4a1b18d8af5f3e023069b0",
+     "is_original_bytes": true,
+     "date_original": "2014-02-28 17:35:02",
+     "notes": "right pair of captives, heads and shoulders",
+     "exif": {
+      "size": [
+       5184,
+       3456
+      ],
+      "Make": "Canon",
+      "Model": "Canon EOS 600D",
+      "DateTime": "2014:02:28 17:35:02",
+      "DateTimeOriginal": "2014:02:28 17:35:02",
+      "FocalLength": 55.0,
+      "ExposureTime": 0.0125,
+      "FNumber": 5.6,
+      "ISOSpeedRatings": 3200
+     },
+     "sanity": {
+      "inliers": 126,
+      "ratio_matches": 215,
+      "h_inlier_ratio": 0.586,
+      "fundamental_inliers": 205,
+      "h_over_f_inliers": 0.615,
+      "scale_factor": 6.891,
+      "scale_at_corners": [
+       6.741,
+       8.063,
+       7.041,
+       5.781
+      ],
+      "anisotropy": 1.136,
+      "rms_px_work": 1.5336884260177612,
+      "best_closeup_downscale": 0.0965,
+      "footprint_overview_px": [
+       [
+        4115.0,
+        1678.1
+       ],
+       [
+        4868.8,
+        1712.2
+       ],
+       [
+        4859.0,
+        2162.7
+       ],
+       [
+        4022.6,
+        2188.1
+       ]
+      ],
+      "footprint_fraction_of_overview": 0.0213,
+      "ncc_vs_overview": 0.681,
+      "registers": true,
+      "H_overview_to_closeup_original_px": [
+       [
+        4.513179078303925,
+        0.8175512257978936,
+        -19943.654406105186
+       ],
+       [
+        -0.2513832948930262,
+        5.550175807033872,
+        -8279.206726553475
+       ],
+       [
+        -0.00011742831773594065,
+        0.00013628678218989202,
+        1.0
+       ]
+      ]
+     },
+     "independent_capture": "yes (own EXIF timestamp, 6.9x more px per subject unit)",
+     "verdict": "registers cleanly"
+    },
+    {
+     "local": "closeup_07.jpg",
+     "role": "closeup",
+     "title": "File:Sarcófago de Portonaccio. 08.JPG",
+     "author": "Miguel Hermoso Cuesta",
+     "uploader": "MiguelHermoso",
+     "license": "CC BY-SA 3.0",
+     "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+     "usage_terms": "Creative Commons Attribution-Share Alike 3.0",
+     "source_page": "https://commons.wikimedia.org/wiki/File:Sarc%C3%B3fago_de_Portonaccio._08.JPG",
+     "download_url": "https://upload.wikimedia.org/wikipedia/commons/2/23/Sarc%C3%B3fago_de_Portonaccio._08.JPG",
+     "original_px": [
+      5184,
+      3456
+     ],
+     "local_px": [
+      5184,
+      3456
+     ],
+     "stored_px": [
+      5184,
+      3456
+     ],
+     "exif_orientation": 1,
+     "megapixels": 17.9,
+     "bytes": 8186944,
+     "sha1": "1d0d30260da89551c4e4965366210adb37be549c",
+     "is_original_bytes": true,
+     "date_original": "2014-02-28 17:35:14",
+     "notes": "battle scene upper left of centre, crossed standards",
+     "exif": {
+      "size": [
+       5184,
+       3456
+      ],
+      "Make": "Canon",
+      "Model": "Canon EOS 600D",
+      "DateTime": "2014:02:28 17:35:14",
+      "DateTimeOriginal": "2014:02:28 17:35:14",
+      "FocalLength": 55.0,
+      "ExposureTime": 0.0125,
+      "FNumber": 5.6,
+      "ISOSpeedRatings": 2000
+     },
+     "sanity": {
+      "inliers": 1012,
+      "ratio_matches": 1806,
+      "h_inlier_ratio": 0.56,
+      "fundamental_inliers": 1779,
+      "h_over_f_inliers": 0.569,
+      "scale_factor": 4.65,
+      "scale_at_corners": [
+       4.507,
+       4.711,
+       4.794,
+       4.589
+      ],
+      "anisotropy": 1.007,
+      "rms_px_work": 1.709409475326538,
+      "best_closeup_downscale": 0.1929,
+      "footprint_overview_px": [
+       [
+        1296.6,
+        997.7
+       ],
+       [
+        2414.5,
+        1012.4
+       ],
+       [
+        2405.5,
+        1747.3
+       ],
+       [
+        1300.6,
+        1754.4
+       ]
+      ],
+      "footprint_fraction_of_overview": 0.0463,
+      "ncc_vs_overview": 0.876,
+      "registers": true,
+      "H_overview_to_closeup_original_px": [
+       [
+        4.292144811724018,
+        -0.022869346710239373,
+        -5542.169878173453
+       ],
+       [
+        -0.05677516508875601,
+        4.301728069682602,
+        -4218.017890204278
+       ],
+       [
+        -2.457078609246775e-05,
+        -1.4918048259774149e-05,
+        1.0
+       ]
+      ]
+     },
+     "independent_capture": "yes (own EXIF timestamp, 4.7x more px per subject unit)",
+     "verdict": "registers cleanly"
+    },
+    {
+     "local": "closeup_08.jpg",
+     "role": "closeup",
+     "title": "File:Sarcófago de Portonaccio. 09.JPG",
+     "author": "Miguel Hermoso Cuesta",
+     "uploader": "MiguelHermoso",
+     "license": "CC BY-SA 3.0",
+     "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+     "usage_terms": "Creative Commons Attribution-Share Alike 3.0",
+     "source_page": "https://commons.wikimedia.org/wiki/File:Sarc%C3%B3fago_de_Portonaccio._09.JPG",
+     "download_url": "https://upload.wikimedia.org/wikipedia/commons/c/c8/Sarc%C3%B3fago_de_Portonaccio._09.JPG",
+     "original_px": [
+      3456,
+      5184
+     ],
+     "local_px": [
+      3456,
+      5184
+     ],
+     "stored_px": [
+      5184,
+      3456
+     ],
+     "exif_orientation": 8,
+     "megapixels": 17.9,
+     "bytes": 6437344,
+     "sha1": "353174ab928d6c47f400e545344fb56066418f35",
+     "is_original_bytes": true,
+     "date_original": "2014-02-28 17:35:34",
+     "notes": "right corner mask of the lid, seen close to the overview's direction (portrait)",
+     "exif": {
+      "size": [
+       5184,
+       3456
+      ],
+      "Make": "Canon",
+      "Model": "Canon EOS 600D",
+      "DateTime": "2014:02:28 17:35:34",
+      "DateTimeOriginal": "2014:02:28 17:35:34",
+      "FocalLength": 55.0,
+      "ExposureTime": 0.02,
+      "FNumber": 5.6,
+      "ISOSpeedRatings": 3200
+     },
+     "sanity": {
+      "inliers": 428,
+      "ratio_matches": 463,
+      "h_inlier_ratio": 0.924,
+      "fundamental_inliers": 452,
+      "h_over_f_inliers": 0.947,
+      "scale_factor": 5.37,
+      "scale_at_corners": [
+       5.289,
+       4.865,
+       5.451,
+       5.891
+      ],
+      "anisotropy": 1.072,
+      "rms_px_work": 1.2503390312194824,
+      "best_closeup_downscale": 0.0965,
+      "footprint_overview_px": [
+       [
+        4424.0,
+        171.6
+       ],
+       [
+        5097.1,
+        109.2
+       ],
+       [
+        5054.7,
+        1099.3
+       ],
+       [
+        4430.4,
+        1107.4
+       ]
+      ],
+      "footprint_fraction_of_overview": 0.0348,
+      "ncc_vs_overview": 0.927,
+      "registers": true,
+      "H_overview_to_closeup_original_px": [
+       [
+        8.134627880307757,
+        -0.05547596005056624,
+        -35978.2077909935
+       ],
+       [
+        0.7157337396366099,
+        7.725261752907863,
+        -4492.089532657325
+       ],
+       [
+        0.00011723463365084072,
+        -0.00011197920726019305,
+        1.0
+       ]
+      ]
+     },
+     "independent_capture": "yes (own EXIF timestamp, 5.4x more px per subject unit)",
+     "verdict": "registers cleanly"
+    },
+    {
+     "local": "closeup_09.jpg",
+     "role": "closeup",
+     "title": "File:Sarcófago de Portonaccio. 10.JPG",
+     "author": "Miguel Hermoso Cuesta",
+     "uploader": "MiguelHermoso",
+     "license": "CC BY-SA 3.0",
+     "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+     "usage_terms": "Creative Commons Attribution-Share Alike 3.0",
+     "source_page": "https://commons.wikimedia.org/wiki/File:Sarc%C3%B3fago_de_Portonaccio._10.JPG",
+     "download_url": "https://upload.wikimedia.org/wikipedia/commons/5/57/Sarc%C3%B3fago_de_Portonaccio._10.JPG",
+     "original_px": [
+      3456,
+      5184
+     ],
+     "local_px": [
+      3456,
+      5184
+     ],
+     "stored_px": [
+      5184,
+      3456
+     ],
+     "exif_orientation": 8,
+     "megapixels": 17.9,
+     "bytes": 6404319,
+     "sha1": "8cd9a7979a7fd5fc564b9383ca5377488ec1ae65",
+     "is_original_bytes": true,
+     "date_original": "2014-02-28 17:35:43",
+     "notes": "same right corner mask from a clearly different direction (portrait)",
+     "exif": {
+      "size": [
+       5184,
+       3456
+      ],
+      "Make": "Canon",
+      "Model": "Canon EOS 600D",
+      "DateTime": "2014:02:28 17:35:43",
+      "DateTimeOriginal": "2014:02:28 17:35:43",
+      "FocalLength": 55.0,
+      "ExposureTime": 0.01,
+      "FNumber": 5.6,
+      "ISOSpeedRatings": 3200
+     },
+     "sanity": {
+      "inliers": 5,
+      "ratio_matches": null,
+      "h_inlier_ratio": null,
+      "fundamental_inliers": null,
+      "h_over_f_inliers": null,
+      "scale_factor": null,
+      "scale_at_corners": null,
+      "anisotropy": null,
+      "rms_px_work": null,
+      "best_closeup_downscale": null,
+      "footprint_overview_px": null,
+      "footprint_fraction_of_overview": null,
+      "ncc_vs_overview": null,
+      "registers": false,
+      "H_overview_to_closeup_original_px": null
+     },
+     "independent_capture": "yes (own EXIF timestamp)",
+     "verdict": "does NOT register with the single-homography baseline (5 inliers); expected: large viewpoint change on a fully 3D head"
+    },
+    {
+     "local": "closeup_10.jpg",
+     "role": "closeup",
+     "title": "File:Sarcófago de Portonaccio. 11.JPG",
+     "author": "Miguel Hermoso Cuesta",
+     "uploader": "MiguelHermoso",
+     "license": "CC BY-SA 3.0",
+     "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+     "usage_terms": "Creative Commons Attribution-Share Alike 3.0",
+     "source_page": "https://commons.wikimedia.org/wiki/File:Sarc%C3%B3fago_de_Portonaccio._11.JPG",
+     "download_url": "https://upload.wikimedia.org/wikipedia/commons/9/96/Sarc%C3%B3fago_de_Portonaccio._11.JPG",
+     "original_px": [
+      5184,
+      3456
+     ],
+     "local_px": [
+      5184,
+      3456
+     ],
+     "stored_px": [
+      5184,
+      3456
+     ],
+     "exif_orientation": 1,
+     "megapixels": 17.9,
+     "bytes": 8077922,
+     "sha1": "89ffce09dd60c8c89b58ef6bd23b2740740f5e6b",
+     "is_original_bytes": true,
+     "date_original": "2014-02-28 17:35:51",
+     "notes": "lid frieze, right scene, taken obliquely",
+     "exif": {
+      "size": [
+       5184,
+       3456
+      ],
+      "Make": "Canon",
+      "Model": "Canon EOS 600D",
+      "DateTime": "2014:02:28 17:35:51",
+      "DateTimeOriginal": "2014:02:28 17:35:51",
+      "FocalLength": 55.0,
+      "ExposureTime": 0.0125,
+      "FNumber": 5.6,
+      "ISOSpeedRatings": 2000
+     },
+     "sanity": {
+      "inliers": 44,
+      "ratio_matches": 175,
+      "h_inlier_ratio": 0.251,
+      "fundamental_inliers": 142,
+      "h_over_f_inliers": 0.31,
+      "scale_factor": 3.859,
+      "scale_at_corners": [
+       2.76,
+       4.956,
+       5.074,
+       2.857
+      ],
+      "anisotropy": 1.29,
+      "rms_px_work": 1.6893771886825562,
+      "best_closeup_downscale": 0.1929,
+      "footprint_overview_px": [
+       [
+        2728.1,
+        -3.4
+       ],
+       [
+        4296.8,
+        364.9
+       ],
+       [
+        4222.0,
+        1023.5
+       ],
+       [
+        2654.2,
+        970.8
+       ]
+      ],
+      "footprint_fraction_of_overview": 0.0723,
+      "ncc_vs_overview": 0.582,
+      "registers": true,
+      "H_overview_to_closeup_original_px": [
+       [
+        1.4296756702357087,
+        0.10853520186676607,
+        -3899.967218029223
+       ],
+       [
+        -0.52020052777485,
+        2.2155848813172456,
+        1426.7539053604557
+       ],
+       [
+        -0.00012813213880853927,
+        -2.4957650766922583e-05,
+        1.0
+       ]
+      ]
+     },
+     "independent_capture": "yes (own EXIF timestamp, 3.9x more px per subject unit)",
+     "verdict": "registers, weak support (44 inliers); oblique view; footprint skewed (corner scales 2.8-5.1), homography fits under a third of the consistent matches"
+    }
+   ],
+   "summary": {
+    "closeups": 10,
+    "registering": 9,
+    "scale_factor_min": 3.482,
+    "scale_factor_max": 6.891,
+    "inliers_min": 44,
+    "inliers_max": 1012
+   }
+  },
+  {
+   "name": "claudian_table",
+   "category": "2 - text / document-like (inscription); harder, mixed-session variant (delivered as the optional 4th set)",
+   "subject": "Claudian Table / Lyon Tablet (Table claudienne), bronze plate with Claudius' speech of AD 48, 1.93 x 1.39 m (literature); Lugdunum museum, Lyon. Flat bronze with engraved capitals; appearance depends strongly on lighting.",
+   "description": "Mixed photographers and sessions, assembled to get dense text with readable close-ups. `overview.jpg` (Phyrexian, 2025-06-24, tablet fills the frame) and closeup_01-04 (Sukkoria, 2025-06-22, a compact camera zoomed onto ligatures in the lower right column) evidently show the tablet in the same display and lighting, two days apart (venue per the overview's Commons title; not stated for the close-ups). closeup_05 (Marie-Lan Nguyen, D850) and closeup_06 (Romainbehar, phone) were taken in January 2019 under different lighting, apparently at a temporary exhibition at the Musee des Beaux-Arts de Lyon (stated in the Commons title of closeup_06; assumed for the Nguyen photos because closeup_06 matches their lighting, not confirmed). `overview_alt.jpg` is the 34.7 MP overview from the same photographer and session as closeup_05 (two minutes earlier), included so the 2019 close-ups also have a same-lighting overview. closeup_01 lies inside closeup_02; closeup_05 overlaps closeup_02.",
+   "caveats": [
+    "Deviation from the requested layout: this directory contains a second overview, `overview_alt.jpg`. Ignore it, or use it instead of `overview.jpg` for closeup_05/06.",
+    "Against `overview.jpg`: the four same-display close-ups register (two with only 32 and 40 inliers), closeup_05 registers weakly (38 inliers), closeup_06 stays below the threshold (23 inliers). Against `overview_alt.jpg` the picture flips: closeup_05/06 get 475/444 inliers, the 2025 close-ups do not register. The two overviews give mutually consistent scales for every close-up that produced a homography against both (ratio 1.657 +/- 0.01), so the weak registrations are very likely correct; this is a cross-check, not ground truth.",
+    "Why it is hard: engraved strokes flip between bright and dark with the light direction (NCC -0.01 for closeup_06 against overview.jpg despite a consistent homography), specular bronze, and highly repetitive lettering.",
+    "Large scale gaps against overview.jpg (5.4-10.4x for the 2025 close-ups) because that overview is only 11 MP.",
+    "closeup_05 is 7878x5251 = 41.4 MP, marginally over the 40 MP guideline; original kept. closeup_06 is stored landscape with an EXIF orientation tag.",
+    "Licences are mixed: CC BY-SA 4.0 (overview, closeup_01-04), public domain (overview_alt, closeup_05), CC0 (closeup_06)."
+   ],
+   "directory": "datasets/real/claudian_table",
+   "files": [
+    {
+     "local": "overview.jpg",
+     "role": "overview",
+     "title": "File:Lyon - Lugdunum Musée et théâtres romains 6746.jpg",
+     "author": "Phyrexian",
+     "uploader": "Phyrexian",
+     "license": "CC BY-SA 4.0",
+     "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+     "usage_terms": "Creative Commons Attribution-Share Alike 4.0",
+     "source_page": "https://commons.wikimedia.org/wiki/File:Lyon_-_Lugdunum_Mus%C3%A9e_et_th%C3%A9%C3%A2tres_romains_6746.jpg",
+     "download_url": "https://upload.wikimedia.org/wikipedia/commons/f/f3/Lyon_-_Lugdunum_Mus%C3%A9e_et_th%C3%A9%C3%A2tres_romains_6746.jpg",
+     "original_px": [
+      3931,
+      2832
+     ],
+     "local_px": [
+      3931,
+      2832
+     ],
+     "stored_px": [
+      3931,
+      2832
+     ],
+     "exif_orientation": 1,
+     "megapixels": 11.1,
+     "bytes": 8326840,
+     "sha1": "8782c8e19eaf122b4a03381c3ee72f1cc99ccf60",
+     "is_original_bytes": true,
+     "date_original": "Taken on 24 June 2025",
+     "notes": "whole tablet, Lugdunum museum display, 2025; frame-filling",
+     "exif": {
+      "size": [
+       3931,
+       2832
+      ],
+      "Make": "NIKON CORPORATION",
+      "Model": "NIKON D7500",
+      "DateTime": "2025:12:26 14:36:04",
+      "Software": "Adobe Photoshop 25.7 (Windows)",
+      "DateTimeOriginal": "2025:06:24 14:27:01",
+      "FocalLength": 24.0,
+      "FocalLengthIn35mmFilm": 36,
+      "ExposureTime": 0.07692307692307693,
+      "FNumber": 5.6,
+      "ISOSpeedRatings": 800
+     }
+    },
+    {
+     "local": "overview_alt.jpg",
+     "role": "overview_alt",
+     "title": "File:Tabula Claudiana Lugdunum AD12 n1.jpg",
+     "author": "Marie-Lan Nguyen",
+     "uploader": "Jastrow",
+     "license": "Public domain",
+     "license_url": "",
+     "usage_terms": "Public domain",
+     "source_page": "https://commons.wikimedia.org/wiki/File:Tabula_Claudiana_Lugdunum_AD12_n1.jpg",
+     "download_url": "https://upload.wikimedia.org/wikipedia/commons/a/a7/Tabula_Claudiana_Lugdunum_AD12_n1.jpg",
+     "original_px": [
+      6808,
+      5103
+     ],
+     "local_px": [
+      6808,
+      5103
+     ],
+     "stored_px": [
+      6808,
+      5103
+     ],
+     "exif_orientation": 1,
+     "megapixels": 34.7,
+     "bytes": 23833229,
+     "sha1": "352a73100cb0908d25f8514a5858cc2b70e188b6",
+     "is_original_bytes": true,
+     "date_original": "2019-01-26",
+     "notes": "ALTERNATIVE overview: whole tablet, January 2019 session of closeup_05, 34.7 MP",
+     "exif": {
+      "size": [
+       6808,
+       5103
+      ],
+      "Make": "NIKON CORPORATION",
+      "Model": "NIKON D850",
+      "DateTime": "2019:01:26 12:25:58",
+      "Software": "DxO PhotoLab 2.1.2",
+      "DateTimeOriginal": "2019:01:26 12:25:58",
+      "FocalLength": 58.0,
+      "FocalLengthIn35mmFilm": 58,
+      "ExposureTime": 0.016666666666666666,
+      "FNumber": 5.6,
+      "ISOSpeedRatings": 4000
+     }
+    },
+    {
+     "local": "closeup_01.jpg",
+     "role": "closeup",
+     "title": "File:Table claudienne - ligatures - 01.jpg",
+     "author": "Sukkoria",
+     "uploader": "Sukkoria",
+     "license": "CC BY-SA 4.0",
+     "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+     "usage_terms": "Creative Commons Attribution-Share Alike 4.0",
+     "source_page": "https://commons.wikimedia.org/wiki/File:Table_claudienne_-_ligatures_-_01.jpg",
+     "download_url": "https://upload.wikimedia.org/wikipedia/commons/4/45/Table_claudienne_-_ligatures_-_01.jpg",
+     "original_px": [
+      5184,
+      3888
+     ],
+     "local_px": [
+      5184,
+      3888
+     ],
+     "stored_px": [
+      5184,
+      3888
+     ],
+     "exif_orientation": 1,
+     "megapixels": 20.2,
+     "bytes": 5752695,
+     "sha1": "0da6b5646ba9cce08ac8cb4641e658a71ddad875",
+     "is_original_bytes": true,
+     "date_original": "2025-06-22 10:46:05",
+     "notes": "ligatures, lower right column (17.8 mm zoom)",
+     "exif": {
+      "size": [
+       5184,
+       3888
+      ],
+      "Make": "Canon",
+      "Model": "Canon PowerShot SX720 HS",
+      "DateTime": "2025:06:22 10:46:05",
+      "DateTimeOriginal": "2025:06:22 10:46:05",
+      "FocalLength": 17.762,
+      "ExposureTime": 0.1,
+      "FNumber": 5.0,
+      "ISOSpeedRatings": 1600
+     },
+     "sanity": {
+      "inliers": 187,
+      "ratio_matches": 232,
+      "h_inlier_ratio": 0.806,
+      "fundamental_inliers": 189,
+      "h_over_f_inliers": 0.989,
+      "scale_factor": 8.267,
+      "scale_at_corners": [
+       8.176,
+       8.386,
+       8.358,
+       8.148
+      ],
+      "anisotropy": 1.003,
+      "rms_px_work": 0.7544607520103455,
+      "best_closeup_downscale": 0.1929,
+      "footprint_overview_px": [
+       [
+        2461.7,
+        1821.7
+       ],
+       [
+        3087.9,
+        1823.8
+       ],
+       [
+        3088.7,
+        2290.3
+       ],
+       [
+        2461.0,
+        2296.2
+       ]
+      ],
+      "footprint_fraction_of_overview": 0.0265,
+      "ncc_vs_overview": 0.908,
+      "registers": true,
+      "H_overview_to_closeup_original_px": [
+       [
+        7.697143631023605,
+        0.011209452606791973,
+        -18968.569473571617
+       ],
+       [
+        -0.02597990921495641,
+        7.766783307044542,
+        -14084.756081502215
+       ],
+       [
+        -2.54118338353107e-05,
+        4.5461292251923485e-06,
+        1.0
+       ]
+      ]
+     },
+     "independent_capture": "yes (own EXIF timestamp, different camera, 8.3x more px per subject unit)",
+     "verdict": "registers cleanly",
+     "sanity_vs_overview_alt": {
+      "inliers": 11,
+      "ratio_matches": 64,
+      "h_inlier_ratio": 0.172,
+      "fundamental_inliers": 13,
+      "h_over_f_inliers": 0.846,
+      "scale_factor": 4.968,
+      "scale_at_corners": [
+       4.889,
+       5.054,
+       5.047,
+       4.882
+      ],
+      "anisotropy": 1.001,
+      "rms_px_work": 1.4797444343566895,
+      "best_closeup_downscale": 0.1929,
+      "footprint_overview_px": [
+       [
+        4217.5,
+        3219.7
+       ],
+       [
+        5261.1,
+        3220.7
+       ],
+       [
+        5266.9,
+        3994.3
+       ],
+       [
+        4222.3,
+        4010.6
+       ]
+      ],
+      "footprint_fraction_of_overview": 0.0235,
+      "ncc_vs_overview": 0.672,
+      "registers": false,
+      "H_overview_to_closeup_original_px": [
+       [
+        4.480454948058731,
+        -0.027651739891197385,
+        -18807.09996756877
+       ],
+       [
+        -0.00440840774051303,
+        4.537718318376651,
+        -14591.300347780152
+       ],
+       [
+        -1.9369297520883998e-05,
+        1.2233434239878815e-06,
+        1.0
+       ]
+      ]
+     }
+    },
+    {
+     "local": "closeup_02.jpg",
+     "role": "closeup",
+     "title": "File:Table claudienne - ligatures - 02.jpg",
+     "author": "Sukkoria",
+     "uploader": "Sukkoria",
+     "license": "CC BY-SA 4.0",
+     "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+     "usage_terms": "Creative Commons Attribution-Share Alike 4.0",
+     "source_page": "https://commons.wikimedia.org/wiki/File:Table_claudienne_-_ligatures_-_02.jpg",
+     "download_url": "https://upload.wikimedia.org/wikipedia/commons/0/06/Table_claudienne_-_ligatures_-_02.jpg",
+     "original_px": [
+      5184,
+      3888
+     ],
+     "local_px": [
+      5184,
+      3888
+     ],
+     "stored_px": [
+      5184,
+      3888
+     ],
+     "exif_orientation": 1,
+     "megapixels": 20.2,
+     "bytes": 6507954,
+     "sha1": "f59465f18be1415d4497ba8bb8ae3a6e5902169c",
+     "is_original_bytes": true,
+     "date_original": "2025-06-22 10:46:09",
+     "notes": "ligatures, lower right column, wider (contains closeup_01)",
+     "exif": {
+      "size": [
+       5184,
+       3888
+      ],
+      "Make": "Canon",
+      "Model": "Canon PowerShot SX720 HS",
+      "DateTime": "2025:06:22 10:46:09",
+      "DateTimeOriginal": "2025:06:22 10:46:09",
+      "FocalLength": 11.862,
+      "ExposureTime": 0.07692307692307693,
+      "FNumber": 4.5,
+      "ISOSpeedRatings": 1600
+     },
+     "sanity": {
+      "inliers": 219,
+      "ratio_matches": 393,
+      "h_inlier_ratio": 0.557,
+      "fundamental_inliers": 234,
+      "h_over_f_inliers": 0.936,
+      "scale_factor": 5.374,
+      "scale_at_corners": [
+       5.296,
+       5.495,
+       5.453,
+       5.254
+      ],
+      "anisotropy": 1.003,
+      "rms_px_work": 1.2836562395095825,
+      "best_closeup_downscale": 0.3858,
+      "footprint_overview_px": [
+       [
+        2289.0,
+        1712.6
+       ],
+       [
+        3250.7,
+        1714.6
+       ],
+       [
+        3256.0,
+        2429.6
+       ],
+       [
+        2289.3,
+        2445.5
+       ]
+      ],
+      "footprint_fraction_of_overview": 0.0627,
+      "ncc_vs_overview": 0.848,
+      "registers": true,
+      "H_overview_to_closeup_original_px": [
+       [
+        5.028859140879908,
+        -0.0019357032697053047,
+        -11507.79544582901
+       ],
+       [
+        -0.010824884410962157,
+        5.09956624746969,
+        -8708.65190136309
+       ],
+       [
+        -2.4257624471929603e-05,
+        6.881653137511322e-06,
+        1.0
+       ]
+      ]
+     },
+     "independent_capture": "yes (own EXIF timestamp, different camera, 5.4x more px per subject unit)",
+     "verdict": "registers cleanly",
+     "sanity_vs_overview_alt": {
+      "inliers": 16,
+      "ratio_matches": 117,
+      "h_inlier_ratio": 0.137,
+      "fundamental_inliers": 22,
+      "h_over_f_inliers": 0.727,
+      "scale_factor": 3.232,
+      "scale_at_corners": [
+       3.218,
+       3.335,
+       3.245,
+       3.129
+      ],
+      "anisotropy": 1.005,
+      "rms_px_work": 1.2410565614700317,
+      "best_closeup_downscale": 0.1929,
+      "footprint_overview_px": [
+       [
+        3937.9,
+        3038.7
+       ],
+       [
+        5525.9,
+        3044.1
+       ],
+       [
+        5551.7,
+        4234.4
+       ],
+       [
+        3934.6,
+        4258.1
+       ]
+      ],
+      "footprint_fraction_of_overview": 0.0556,
+      "ncc_vs_overview": 0.552,
+      "registers": false,
+      "H_overview_to_closeup_original_px": [
+       [
+        3.1496626116701365,
+        0.00865868345657819,
+        -12429.468156472478
+       ],
+       [
+        -0.010952701597314837,
+        3.2095745503357773,
+        -9709.758493039566
+       ],
+       [
+        -1.4715132598406665e-05,
+        1.516252918780965e-05,
+        1.0
+       ]
+      ]
+     }
+    },
+    {
+     "local": "closeup_03.jpg",
+     "role": "closeup",
+     "title": "File:Table claudienne - ligatures - 03.jpg",
+     "author": "Sukkoria",
+     "uploader": "Sukkoria",
+     "license": "CC BY-SA 4.0",
+     "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+     "usage_terms": "Creative Commons Attribution-Share Alike 4.0",
+     "source_page": "https://commons.wikimedia.org/wiki/File:Table_claudienne_-_ligatures_-_03.jpg",
+     "download_url": "https://upload.wikimedia.org/wikipedia/commons/f/f5/Table_claudienne_-_ligatures_-_03.jpg",
+     "original_px": [
+      5184,
+      3888
+     ],
+     "local_px": [
+      5184,
+      3888
+     ],
+     "stored_px": [
+      5184,
+      3888
+     ],
+     "exif_orientation": 1,
+     "megapixels": 20.2,
+     "bytes": 5528706,
+     "sha1": "1997d2f85c229abd308600bb7360328ccc6a85a7",
+     "is_original_bytes": true,
+     "date_original": "2025-06-22 10:46:26",
+     "notes": "ligatures, bottom right corner of the text",
+     "exif": {
+      "size": [
+       5184,
+       3888
+      ],
+      "Make": "Canon",
+      "Model": "Canon PowerShot SX720 HS",
+      "DateTime": "2025:06:22 10:46:26",
+      "DateTimeOriginal": "2025:06:22 10:46:26",
+      "FocalLength": 12.539,
+      "ExposureTime": 0.125,
+      "FNumber": 4.5,
+      "ISOSpeedRatings": 1600
+     },
+     "sanity": {
+      "inliers": 32,
+      "ratio_matches": 69,
+      "h_inlier_ratio": 0.464,
+      "fundamental_inliers": 36,
+      "h_over_f_inliers": 0.889,
+      "scale_factor": 10.442,
+      "scale_at_corners": [
+       11.337,
+       10.334,
+       9.572,
+       10.55
+      ],
+      "anisotropy": 1.017,
+      "rms_px_work": 0.7627633810043335,
+      "best_closeup_downscale": 0.1929,
+      "footprint_overview_px": [
+       [
+        3310.5,
+        2237.3
+       ],
+       [
+        3793.5,
+        2237.9
+       ],
+       [
+        3802.6,
+        2624.5
+       ],
+       [
+        3295.4,
+        2599.6
+       ]
+      ],
+      "footprint_fraction_of_overview": 0.0167,
+      "ncc_vs_overview": 0.875,
+      "registers": true,
+      "H_overview_to_closeup_original_px": [
+       [
+        45.92948730095723,
+        1.9205049621880574,
+        -156346.87446876522
+       ],
+       [
+        -0.05462738116122527,
+        45.28643543636129,
+        -101137.48296677267
+       ],
+       [
+        0.000529633899034357,
+        0.0005674927174377408,
+        1.0
+       ]
+      ]
+     },
+     "independent_capture": "yes (own EXIF timestamp, different camera, 10.4x more px per subject unit)",
+     "verdict": "registers, weak support (32 inliers); 10x scale gap",
+     "sanity_vs_overview_alt": {
+      "inliers": 6,
+      "ratio_matches": null,
+      "h_inlier_ratio": null,
+      "fundamental_inliers": null,
+      "h_over_f_inliers": null,
+      "scale_factor": null,
+      "scale_at_corners": null,
+      "anisotropy": null,
+      "rms_px_work": null,
+      "best_closeup_downscale": null,
+      "footprint_overview_px": null,
+      "footprint_fraction_of_overview": null,
+      "ncc_vs_overview": null,
+      "registers": false,
+      "H_overview_to_closeup_original_px": null
+     }
+    },
+    {
+     "local": "closeup_04.jpg",
+     "role": "closeup",
+     "title": "File:Table claudienne - ligatures - 04.jpg",
+     "author": "Sukkoria",
+     "uploader": "Sukkoria",
+     "license": "CC BY-SA 4.0",
+     "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+     "usage_terms": "Creative Commons Attribution-Share Alike 4.0",
+     "source_page": "https://commons.wikimedia.org/wiki/File:Table_claudienne_-_ligatures_-_04.jpg",
+     "download_url": "https://upload.wikimedia.org/wikipedia/commons/e/e4/Table_claudienne_-_ligatures_-_04.jpg",
+     "original_px": [
+      5184,
+      3888
+     ],
+     "local_px": [
+      5184,
+      3888
+     ],
+     "stored_px": [
+      5184,
+      3888
+     ],
+     "exif_orientation": 1,
+     "megapixels": 20.2,
+     "bytes": 6068582,
+     "sha1": "bf904fe0bab9b00dd36cd37ee24dac2db0efcb1c",
+     "is_original_bytes": true,
+     "date_original": "2025-06-22 10:46:31",
+     "notes": "ligatures, right edge of the right column",
+     "exif": {
+      "size": [
+       5184,
+       3888
+      ],
+      "Make": "Canon",
+      "Model": "Canon PowerShot SX720 HS",
+      "DateTime": "2025:06:22 10:46:31",
+      "DateTimeOriginal": "2025:06:22 10:46:31",
+      "FocalLength": 12.539,
+      "ExposureTime": 0.07692307692307693,
+      "FNumber": 4.5,
+      "ISOSpeedRatings": 1600
+     },
+     "sanity": {
+      "inliers": 40,
+      "ratio_matches": 79,
+      "h_inlier_ratio": 0.506,
+      "fundamental_inliers": 47,
+      "h_over_f_inliers": 0.851,
+      "scale_factor": 9.877,
+      "scale_at_corners": [
+       9.851,
+       9.607,
+       9.904,
+       10.15
+      ],
+      "anisotropy": 1.016,
+      "rms_px_work": 0.5960718989372253,
+      "best_closeup_downscale": 0.0965,
+      "footprint_overview_px": [
+       [
+        3160.7,
+        1723.7
+       ],
+       [
+        3687.2,
+        1719.1
+       ],
+       [
+        3679.8,
+        2118.8
+       ],
+       [
+        3163.7,
+        2116.9
+       ]
+      ],
+      "footprint_fraction_of_overview": 0.0186,
+      "ncc_vs_overview": 0.802,
+      "registers": true,
+      "H_overview_to_closeup_original_px": [
+       [
+        10.13573339634865,
+        -0.07899005032458298,
+        -31899.621383790975
+       ],
+       [
+        0.0864244203834483,
+        9.814765796808658,
+        -17191.260034419338
+       ],
+       [
+        3.186964904855753e-05,
+        -5.1151852219963075e-05,
+        1.0
+       ]
+      ]
+     },
+     "independent_capture": "yes (own EXIF timestamp, different camera, 9.9x more px per subject unit)",
+     "verdict": "registers, weak support (40 inliers); 10x scale gap",
+     "sanity_vs_overview_alt": {
+      "inliers": 6,
+      "ratio_matches": null,
+      "h_inlier_ratio": null,
+      "fundamental_inliers": null,
+      "h_over_f_inliers": null,
+      "scale_factor": null,
+      "scale_at_corners": null,
+      "anisotropy": null,
+      "rms_px_work": null,
+      "best_closeup_downscale": null,
+      "footprint_overview_px": null,
+      "footprint_fraction_of_overview": null,
+      "ncc_vs_overview": null,
+      "registers": false,
+      "H_overview_to_closeup_original_px": null
+     }
+    },
+    {
+     "local": "closeup_05.jpg",
+     "role": "closeup",
+     "title": "File:Tabula Claudiana Lugdunum AD12 n2.jpg",
+     "author": "Marie-Lan Nguyen",
+     "uploader": "Jastrow",
+     "license": "Public domain",
+     "license_url": "",
+     "usage_terms": "Public domain",
+     "source_page": "https://commons.wikimedia.org/wiki/File:Tabula_Claudiana_Lugdunum_AD12_n2.jpg",
+     "download_url": "https://upload.wikimedia.org/wikipedia/commons/a/a4/Tabula_Claudiana_Lugdunum_AD12_n2.jpg",
+     "original_px": [
+      7878,
+      5251
+     ],
+     "local_px": [
+      7878,
+      5251
+     ],
+     "stored_px": [
+      7878,
+      5251
+     ],
+     "exif_orientation": 1,
+     "megapixels": 41.4,
+     "bytes": 29940753,
+     "sha1": "3f87fe63136f63a4d410a1a91cfe7d8da5263b4d",
+     "is_original_bytes": true,
+     "date_original": "2019-01-26",
+     "notes": "middle of the right column, 2019 lighting; 41.4 MP",
+     "exif": {
+      "size": [
+       7878,
+       5251
+      ],
+      "Make": "NIKON CORPORATION",
+      "Model": "NIKON D850",
+      "DateTime": "2019:01:26 12:27:51",
+      "Software": "DxO PhotoLab 2.1.2",
+      "DateTimeOriginal": "2019:01:26 12:27:51",
+      "FocalLength": 70.0,
+      "FocalLengthIn35mmFilm": 70,
+      "ExposureTime": 0.016666666666666666,
+      "FNumber": 5.6,
+      "ISOSpeedRatings": 3200
+     },
+     "sanity": {
+      "inliers": 38,
+      "ratio_matches": 98,
+      "h_inlier_ratio": 0.388,
+      "fundamental_inliers": 45,
+      "h_over_f_inliers": 0.844,
+      "scale_factor": 6.92,
+      "scale_at_corners": [
+       6.77,
+       7.056,
+       7.071,
+       6.785
+      ],
+      "anisotropy": 1.004,
+      "rms_px_work": 0.9398786425590515,
+      "best_closeup_downscale": 0.1269,
+      "footprint_overview_px": [
+       [
+        1995.3,
+        1251.7
+       ],
+       [
+        3133.6,
+        1253.1
+       ],
+       [
+        3141.3,
+        2002.3
+       ],
+       [
+        2004.8,
+        2021.9
+       ]
+      ],
+      "footprint_fraction_of_overview": 0.0776,
+      "ncc_vs_overview": 0.681,
+      "registers": true,
+      "H_overview_to_closeup_original_px": [
+       [
+        6.414028644073952,
+        -0.07924223054482865,
+        -12698.646494632281
+       ],
+       [
+        -0.007595272464131253,
+        6.48664468530016,
+        -8104.330314602925
+       ],
+       [
+        -2.2775089258644585e-05,
+        -1.4739900155834285e-06,
+        1.0
+       ]
+      ]
+     },
+     "independent_capture": "yes (own EXIF timestamp, different camera, 6.9x more px per subject unit)",
+     "verdict": "registers, weak support (38 inliers); different session and lighting (2019); 475 inliers against overview_alt.jpg",
+     "sanity_vs_overview_alt": {
+      "inliers": 475,
+      "ratio_matches": 548,
+      "h_inlier_ratio": 0.867,
+      "fundamental_inliers": 483,
+      "h_over_f_inliers": 0.983,
+      "scale_factor": 4.175,
+      "scale_at_corners": [
+       4.092,
+       4.248,
+       4.258,
+       4.101
+      ],
+      "anisotropy": 1.001,
+      "rms_px_work": 0.5725076794624329,
+      "best_closeup_downscale": 0.1269,
+      "footprint_overview_px": [
+       [
+        3447.8,
+        2279.8
+       ],
+       [
+        5336.7,
+        2274.1
+       ],
+       [
+        5350.7,
+        3516.3
+       ],
+       [
+        3465.0,
+        3553.4
+       ]
+      ],
+      "footprint_fraction_of_overview": 0.0683,
+      "ncc_vs_overview": 0.839,
+      "registers": true,
+      "H_overview_to_closeup_original_px": [
+       [
+        3.8838045825335437,
+        -0.052397849177655775,
+        -13271.001353122738
+       ],
+       [
+        0.011834925007909095,
+        3.9308274088028643,
+        -9002.389440933683
+       ],
+       [
+        -1.2473987472660428e-05,
+        -9.499938608538817e-07,
+        1.0
+       ]
+      ]
+     }
+    },
+    {
+     "local": "closeup_06.jpg",
+     "role": "closeup",
+     "title": "File:MBA Lyon - Claude 2018 - Table claudienne, haut de la fracture entre les plaques.jpg",
+     "author": "Romainbehar",
+     "uploader": "Romainbehar",
+     "license": "CC0",
+     "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+     "usage_terms": "Creative Commons Zero, Public Domain Dedication",
+     "source_page": "https://commons.wikimedia.org/wiki/File:MBA_Lyon_-_Claude_2018_-_Table_claudienne,_haut_de_la_fracture_entre_les_plaques.jpg",
+     "download_url": "https://upload.wikimedia.org/wikipedia/commons/6/6b/MBA_Lyon_-_Claude_2018_-_Table_claudienne%2C_haut_de_la_fracture_entre_les_plaques.jpg",
+     "original_px": [
+      3096,
+      4128
+     ],
+     "local_px": [
+      3096,
+      4128
+     ],
+     "stored_px": [
+      4128,
+      3096
+     ],
+     "exif_orientation": 6,
+     "megapixels": 12.8,
+     "bytes": 4564417,
+     "sha1": "ea72379606e1d0f04bf3aa5ba2c3d59133fd0c95",
+     "is_original_bytes": true,
+     "date_original": "2019-01-20 11:21:02",
+     "notes": "top of the fracture between the two plates, 2019, phone (portrait)",
+     "exif": {
+      "size": [
+       4128,
+       3096
+      ],
+      "Make": "samsung",
+      "Model": "SM-J500FN",
+      "DateTime": "2019:01:20 11:21:02",
+      "Software": "J500FNXXS1BQG1",
+      "DateTimeOriginal": "2019:01:20 11:21:02",
+      "FocalLength": 3.7,
+      "FocalLengthIn35mmFilm": 28,
+      "ExposureTime": 0.058823529411764705,
+      "FNumber": 1.9,
+      "ISOSpeedRatings": 200
+     },
+     "sanity": {
+      "inliers": 23,
+      "ratio_matches": 68,
+      "h_inlier_ratio": 0.338,
+      "fundamental_inliers": 26,
+      "h_over_f_inliers": 0.885,
+      "scale_factor": 2.409,
+      "scale_at_corners": [
+       2.514,
+       2.703,
+       2.306,
+       2.127
+      ],
+      "anisotropy": 1.014,
+      "rms_px_work": 1.1086082458496094,
+      "best_closeup_downscale": 0.2422,
+      "footprint_overview_px": [
+       [
+        1286.7,
+        -68.9
+       ],
+       [
+        2497.6,
+        -27.5
+       ],
+       [
+        2561.7,
+        1660.2
+       ],
+       [
+        1211.4,
+        1707.4
+       ]
+      ],
+      "footprint_fraction_of_overview": 0.1992,
+      "ncc_vs_overview": -0.012,
+      "registers": false,
+      "H_overview_to_closeup_original_px": [
+       [
+        2.3004402897171063,
+        0.0974302907542749,
+        -2953.191495219117
+       ],
+       [
+        -0.08379510602961646,
+        2.453449556509942,
+        276.79261459998804
+       ],
+       [
+        -3.893646431741456e-05,
+        6.116649578293772e-05,
+        1.0
+       ]
+      ]
+     },
+     "independent_capture": "yes (own EXIF timestamp, different camera, 2.4x more px per subject unit)",
+     "verdict": "does NOT pass the baseline threshold (23 inliers); different session and lighting (2019); homography is consistent with the overview_alt result but support is too thin; 444 inliers against overview_alt.jpg",
+     "sanity_vs_overview_alt": {
+      "inliers": 444,
+      "ratio_matches": 693,
+      "h_inlier_ratio": 0.641,
+      "fundamental_inliers": 549,
+      "h_over_f_inliers": 0.809,
+      "scale_factor": 1.453,
+      "scale_at_corners": [
+       1.541,
+       1.65,
+       1.367,
+       1.265
+      ],
+      "anisotropy": 1.005,
+      "rms_px_work": 1.769865870475769,
+      "best_closeup_downscale": 0.4845,
+      "footprint_overview_px": [
+       [
+        2275.9,
+        128.7
+       ],
+       [
+        4278.0,
+        182.8
+       ],
+       [
+        4403.2,
+        2968.0
+       ],
+       [
+        2125.2,
+        3053.9
+       ]
+      ],
+      "footprint_fraction_of_overview": 0.1759,
+      "ncc_vs_overview": 0.86,
+      "registers": true,
+      "H_overview_to_closeup_original_px": [
+       [
+        1.408962615534586,
+        0.07254638373312444,
+        -3215.922600573456
+       ],
+       [
+        -0.0415411807640767,
+        1.535343054047603,
+        -103.0087823020876
+       ],
+       [
+        -2.239314020114179e-05,
+        4.489488604001533e-05,
+        1.0
+       ]
+      ]
+     }
+    }
+   ],
+   "summary": {
+    "closeups": 6,
+    "registering": 5,
+    "scale_factor_min": 5.374,
+    "scale_factor_max": 10.442,
+    "inliers_min": 32,
+    "inliers_max": 219
+   }
+  }
+ ],
+ "total_bytes": 291679767,
+ "general_caveats": [
+  "No ground-truth registration exists for any set. Inlier counts and scale factors come from the baseline described above.",
+  "CC BY-SA / CC BY files require attribution (and share-alike for derivatives) if images or mosaics made from them are published; keep this file with the data.",
+  "The photographed objects are ancient or 16th-century works (no copyright in the artwork itself). Italian cultural-heritage rules can restrict commercial reuse of images of objects in Italian state museums (Naples mosaic, Rome sarcophagus) independently of copyright; not relevant for internal evaluation, not checked further.",
+  "Four files carry an EXIF orientation tag other than 1 (flagged in the tables). OpenCV's imread applies it by default; Pillow and many Android decoders do not.",
+  "Re-downloading: upload.wikimedia.org throttles scripted downloads of originals (HTTP 429 with Retry-After 600 after roughly 6-9 files); `fetch_originals.sh` waits and resumes."
+ ],
+ "rejected": [
+  "Alexander Mosaic, series by Benjamín Núñez González (Commons 'Mosaico de Issos, Nápoles, Italia, 2016 01.jpg' to '... 29.jpg', CC BY-SA 4.0, 4000x3000 each, one six-minute session; no. 10 is the overview): 28 close-ups, many overlapping, going down to tessera-level macro shots. Looked at thumbnails only; not downloaded (same subject as set 1, and about 145 MB would exceed the size budget) and NOT sanity-checked. Good next candidate for a more extreme zoom hierarchy.",
+  "Other Garrisi map series from the same gallery (Sardinia: overview + 4 'particolare' files; Corsica: 4 details): same structure as the Sicilia set; listed via the API only, not downloaded or checked.",
+  "Rosetta Stone (Commons has several visitor series): behind glass with reflections; listed only, not tested.",
+  "Repetitive-pattern subject (tiled facade / brick wall): not searched; the non-planar option was chosen for set 3.",
+  "The Met, National Gallery of Art, Rijksmuseum, Smithsonian, Library of Congress: not searched. Their 'detail' images usually come without EXIF, so separate exposures cannot be told apart from crops of one high-resolution capture as reliably as with the Commons visitor photos used here."
+ ],
+ "unverified": [
+  "Licence statements are taken from the Commons API as displayed on 2026-11-12; the uploaders' right to license was not independently checked.",
+  "Physical dimensions of the subjects are from general literature / memory, not measured; do not use them for metric scale.",
+  "Whether weak registrations (under about 50 inliers: claudian_table closeup_03-06, portonaccio closeup_10) are pixel-accurate. Their footprints were only checked for plausibility on the overlay images and, for the Claudian table, by scale consistency between the two overviews.",
+  "The cause of the 0.7-0.9 H/F inlier ratio on the (nominally flat) Alexander Mosaic.",
+  "Exactly how the Sicilia overview was processed (perspective correction is evident; stitching or blending is suspected from doubled edges, not confirmed)."
+ ]
+}

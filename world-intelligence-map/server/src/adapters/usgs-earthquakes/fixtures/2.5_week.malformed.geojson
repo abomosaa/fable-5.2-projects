@@ -1,0 +1,14 @@
+{
+  "type": "FeatureCollection",
+  "metadata": { "generated": 1794332649000, "title": "USGS Magnitude 2.5+ Earthquakes, Past Week", "count": 7 },
+  "features": [
+    { "type": "Feature", "id": "ok0001", "properties": { "mag": 5.1, "place": "10 km S of Validtown", "time": 1794300000000, "updated": 1794300600000, "url": "https://earthquake.usgs.gov/earthquakes/eventpage/ok0001", "status": "reviewed", "tsunami": 0, "type": "earthquake", "title": "M 5.1 - 10 km S of Validtown" }, "geometry": { "type": "Point", "coordinates": [142.5, 38.2, 35] } },
+    { "type": "Feature", "id": "badlat", "properties": { "mag": 4.0, "place": "latitude out of range", "time": 1794300000000, "status": "automatic", "type": "earthquake", "title": "M 4.0 - nowhere" }, "geometry": { "type": "Point", "coordinates": [10, 123.4, 5] } },
+    { "type": "Feature", "id": "nogeom", "properties": { "mag": 3.3, "place": "no geometry", "time": 1794300000000, "status": "automatic", "type": "earthquake", "title": "M 3.3 - no geometry" }, "geometry": null },
+    { "type": "Feature", "id": "notime", "properties": { "mag": 3.3, "place": "no time", "time": null, "status": "automatic", "type": "earthquake", "title": "M 3.3 - no time" }, "geometry": { "type": "Point", "coordinates": [10, 10, 5] } },
+    { "type": "Feature", "id": "strcoords", "properties": { "mag": "not-a-number", "place": "string coordinates", "time": 1794300000000, "status": "automatic", "type": "earthquake", "title": "M ? - <b>string</b> coordinates" }, "geometry": { "type": "Point", "coordinates": ["abc", "def", 5] } },
+    { "type": "Feature", "properties": null, "geometry": { "type": "Point", "coordinates": [1, 2, 3] } },
+    { "type": "Feature", "id": "deleted1", "properties": { "mag": 2.9, "place": "deleted event", "time": 1794300000000, "status": "deleted", "type": "earthquake", "title": "M 2.9 - deleted" }, "geometry": { "type": "Point", "coordinates": [20, 20, 5] } },
+    { "type": "Feature", "id": "ok0002", "properties": { "mag": 2.7, "place": "5 km <script>alert(1)</script>NE of Sanitised", "time": 1794310000000, "updated": 1794310100000, "url": "javascript:alert(1)", "status": "automatic", "tsunami": 1, "type": "earthquake", "title": "M 2.7 - 5 km NE of <img src=x onerror=alert(1)>Sanitised" }, "geometry": { "type": "Point", "coordinates": [190.5, -15.2, 10] } }
+  ]
+}

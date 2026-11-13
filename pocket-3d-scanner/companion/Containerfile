@@ -1,0 +1,66 @@
+# Pocket 3D Scanner — reconstruction companion image (CPU-only, no CUDA needed)
+# Build:  podman build -t pocket3d-companion:1.0 -f companion/Containerfile companion
+FROM docker.io/library/ubuntu:24.04 AS openmvs-build
+ENV DEBIAN_FRONTEND=noninteractive
+RUN apt-get update && apt-get install -y --no-install-recommends \
+      ca-certificates git cmake ninja-build g++ \
+      libpng-dev libjpeg-dev libtiff-dev \
+      libeigen3-dev libboost-iostreams-dev libboost-program-options-dev \
+      libboost-system-dev libboost-serialization-dev \
+      libopencv-dev libcgal-dev libceres-dev \
+    && rm -rf /var/lib/apt/lists/*
+# Pinned sources (reproducible): OpenMVS v2.3.0 (AGPL-3.0), VCGlib fork used by OpenMVS (GPL-3.0)
+ARG OPENMVS_TAG=v2.3.0
+ARG VCG_COMMIT=658ba36d0a5666650da6e066b4794efc5a463407
+RUN git clone https://github.com/cdcseacave/VCG.git /src/vcglib \
+    && git -C /src/vcglib checkout ${VCG_COMMIT} \
+    && git clone --depth 1 --branch ${OPENMVS_TAG} https://github.com/cdcseacave/openMVS.git /src/openMVS
+# Local patch (1 line, x5): Util::formatTime passes the full buffer size to snprintf even when
+# writing at an offset; glibc's _FORTIFY_SOURCE (default on Ubuntu) aborts DensifyPointCloud with
+# "buffer overflow detected". Pass the remaining size instead. No behavioural change otherwise.
+RUN sed -i 's/_sntprintf(buf+len, 128,/_sntprintf(buf+len, 128-len,/g' /src/openMVS/libs/Common/Util.h \
+    && test "$(grep -c '128-len' /src/openMVS/libs/Common/Util.h)" = 5
+# Local patch 2: Mesh::SaveOBJ indexes faceTexindices even when it is empty (single texture
+# page), which segfaults TextureMesh --export-type obj for small atlases.
+RUN sed -i 's/const auto texIdx = faceTexindices\[idxFace\];/const auto texIdx = faceTexindices.empty() ? 0 : faceTexindices[idxFace];/' /src/openMVS/libs/MVS/Mesh.cpp \
+    && test "$(grep -c 'faceTexindices.empty() ? 0 : faceTexindices\[idxFace\]' /src/openMVS/libs/MVS/Mesh.cpp)" -ge 1
+RUN cmake -S /src/openMVS -B /build -G Ninja \
+      -DCMAKE_BUILD_TYPE=Release \
+      -DVCG_ROOT=/src/vcglib \
+      -DOpenMVS_USE_CUDA=OFF \
+      -DOpenMVS_USE_PYTHON=OFF \
+      -DOpenMVS_BUILD_VIEWER=OFF \
+      -DOpenMVS_ENABLE_TESTS=OFF \
+      -DCMAKE_INSTALL_PREFIX=/opt/openmvs \
+    && cmake --build /build -j"$(nproc)" \
+    && cmake --install /build
+
+FROM docker.io/library/ubuntu:24.04 AS runtime
+ENV DEBIAN_FRONTEND=noninteractive PYTHONUNBUFFERED=1 PYTHONDONTWRITEBYTECODE=1
+RUN apt-get update && apt-get install -y --no-install-recommends \
+      ca-certificates python3 python3-venv \
+      libpng16-16t64 libjpeg-turbo8 libtiff6 libgomp1 libgl1 libegl1 libx11-6 libusb-1.0-0 libglib2.0-0t64 \
+      libboost-iostreams1.83.0 libboost-program-options1.83.0 libboost-system1.83.0 \
+      libboost-serialization1.83.0 \
+      libopencv-core406t64 libopencv-imgproc406t64 libopencv-imgcodecs406t64 \
+      libopencv-calib3d406t64 libopencv-features2d406t64 libopencv-flann406t64 \
+      libceres4t64 libgmp10 libmpfr6 \
+    && rm -rf /var/lib/apt/lists/*
+COPY --from=openmvs-build /opt/openmvs /opt/openmvs
+# licence texts of the copyleft components travel with the binaries (see NOTICE.md)
+COPY --from=openmvs-build /src/openMVS/LICENSE /opt/openmvs/licenses/OpenMVS-LICENSE
+COPY --from=openmvs-build /src/vcglib/LICENSE.txt /opt/openmvs/licenses/VCGlib-LICENSE
+COPY NOTICE.md /opt/pocket3d/NOTICE.md
+ENV POCKET3D_OPENMVS_BIN=/opt/openmvs/bin/OpenMVS
+COPY requirements.lock /opt/pocket3d/requirements.lock
+RUN python3 -m venv /opt/venv \
+    && /opt/venv/bin/pip install --no-cache-dir -r /opt/pocket3d/requirements.lock
+ENV PATH=/opt/venv/bin:$PATH
+COPY pocket3d_companion /opt/pocket3d/pocket3d_companion
+# the scripted stand-in worker exists for the server's unit tests only
+RUN rm -f /opt/pocket3d/pocket3d_companion/fake_worker.py
+ENV PYTHONPATH=/opt/pocket3d POCKET3D_DATA=/data HOME=/tmp
+VOLUME /data
+EXPOSE 8443
+ENTRYPOINT ["python3", "-m", "pocket3d_companion"]
+CMD ["serve"]

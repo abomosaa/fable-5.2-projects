@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="dev.pocket3d.core.mesh.MeshSelectionTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2026-11-12T10:55:41.106Z" hostname="h4-pc" time="0.017">
+  <properties/>
+  <testcase name="growSelectionToComponent" classname="dev.pocket3d.core.mesh.MeshSelectionTest" time="0.001"/>
+  <testcase name="lassoSelectsFacesWhoseCentroidProjectsInside" classname="dev.pocket3d.core.mesh.MeshSelectionTest" time="0.005"/>
+  <testcase name="facesInSphereUsesTriangleDistance" classname="dev.pocket3d.core.mesh.MeshSelectionTest" time="0.004"/>
+  <testcase name="occluderHidesFacesAndFacesBehindCameraAreIgnored" classname="dev.pocket3d.core.mesh.MeshSelectionTest" time="0.001"/>
+  <testcase name="visibleOnlySelectsExactlyTheFrontOfAConvexShape" classname="dev.pocket3d.core.mesh.MeshSelectionTest" time="0.006"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

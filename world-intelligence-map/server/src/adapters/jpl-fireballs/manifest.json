@@ -1,0 +1,46 @@
+{
+  "id": "jpl-fireballs",
+  "provider": "NASA JPL Center for Near Earth Object Studies (CNEOS)",
+  "dataset": "Fireball and bolide reports (SSD/CNEOS Fireball Data API)",
+  "description": "Bright meteors (fireballs / bolides) detected by U.S. Government sensors: time and location of peak brightness, radiated energy, estimated impact energy, altitude and velocity.",
+  "homepageUrl": "https://cneos.jpl.nasa.gov/fireballs/",
+  "documentationUrl": "https://ssd-api.jpl.nasa.gov/doc/fireball.html",
+  "sourceUrls": ["https://ssd-api.jpl.nasa.gov/fireball.api?date-min={YYYY-MM-DD}&req-loc=true"],
+  "allowedHosts": ["ssd-api.jpl.nasa.gov"],
+  "coverage": { "geographic": "Global", "temporal": "The five years before the current date (the archive itself starts in 1988)" },
+  "updateCadence": { "upstream": "Irregular – events are added days to weeks after they occur", "pollIntervalSec": 21600, "staleAfterSec": 172800 },
+  "auth": { "type": "none", "envVars": [] },
+  "attribution": "NASA/JPL-Caltech, Center for Near Earth Object Studies (CNEOS) fireball data",
+  "license": {
+    "name": "NASA/JPL data – generally not copyrighted; JPL asks for credit",
+    "url": "https://www.jpl.nasa.gov/jpl-image-use-policy",
+    "redistribution": "allowed-with-attribution",
+    "nonCommercialOnly": false,
+    "notes": "The API documentation asks users to avoid concurrent requests and to check the signature/version of each response. Credit NASA/JPL-Caltech (CNEOS)."
+  },
+  "limitations": [
+    "Not a complete record: only events reported by U.S. Government sensors are included, and reporting is delayed by days to weeks.",
+    "Location is the point of peak brightness, reported to 0.1 degree; many events have no reported location and are omitted (req-loc=true).",
+    "Impact energy is an estimate derived by CNEOS from the radiated energy with an empirical relation."
+  ],
+  "confidenceNotes": "CNEOS publishes no per-event confidence, so none is shown. Severity is derived by this application from the estimated impact energy (kilotons of TNT).",
+  "retention": { "note": "Events are kept for ten years after they occurred." },
+  "snapshot": "incremental",
+  "http": { "cacheTtlSec": 10800, "minIntervalMs": 1000 },
+  "enabledByDefault": true,
+  "layers": [
+    {
+      "id": "fireballs",
+      "name": "Fireballs (bolides)",
+      "description": "Bright meteors reported by U.S. Government sensors, at the location of peak brightness.",
+      "domain": "space",
+      "category": "fireball",
+      "geometry": "point",
+      "timeModel": "event",
+      "render": { "type": "point", "color": "yellow", "shape": "star" },
+      "freshForSec": 2592000,
+      "retentionDays": 3650,
+      "defaultOn": false
+    }
+  ]
+}

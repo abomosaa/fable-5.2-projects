@@ -1,0 +1,135 @@
+{
+ "job_id": "a83e773a-57a4-4066-b9e4-e36844fbe9fa",
+ "session_id": "6fbb597a-b17c-4300-8c37-e07c6242bd86",
+ "preset": "standard",
+ "settings": {},
+ "attempt": 1,
+ "originals_dir": "/runs/difficult_standard/session/originals",
+ "capture_path": "/runs/difficult_standard/session/capture.json",
+ "files": [
+  {
+   "id": "0001",
+   "name": "000.jpg",
+   "size": 1206325,
+   "sha256": "fa176db3828ffaff60a066c9a52faa55f5d26e914cef306da6f303c5edd3cd16"
+  },
+  {
+   "id": "0002",
+   "name": "001.jpg",
+   "size": 2223657,
+   "sha256": "b716a1b95aa2a1a491be3970018af701f0aa17e4687b664488059163c77fd5d0"
+  },
+  {
+   "id": "0003",
+   "name": "002.jpg",
+   "size": 2336716,
+   "sha256": "8e7546c5c571eb1148fa53afad79b46cb9da3a1d01b362c15fb00606d3a9d0f3"
+  },
+  {
+   "id": "0004",
+   "name": "003.jpg",
+   "size": 1367766,
+   "sha256": "949b023402116507ab795797a127b69f4e397849e6dcabfe62105083440e0b39"
+  },
+  {
+   "id": "0005",
+   "name": "004.jpg",
+   "size": 1852128,
+   "sha256": "fd50c7b9bde3c0cb4ff0efa5c23e9186400a73b7d432b2e43ffba44ddf04ea99"
+  },
+  {
+   "id": "0006",
+   "name": "005.jpg",
+   "size": 1647543,
+   "sha256": "aeaf800117baa7fa3db1d2a5bfa8d1c5d7e85b1bdf193971324012e92ceec833"
+  },
+  {
+   "id": "0007",
+   "name": "006.jpg",
+   "size": 1190507,
+   "sha256": "1cbf9a5fc89c38bbc7a766b87e8173b53f4de4e47560162459ef9b36ebe3ec05"
+  },
+  {
+   "id": "0008",
+   "name": "007.jpg",
+   "size": 1470266,
+   "sha256": "423a1539241176877012d2781e8a732ec72509c7cb0ac013ace2ad636aa8906c"
+  },
+  {
+   "id": "0009",
+   "name": "008.jpg",
+   "size": 1272238,
+   "sha256": "274c0358cf3217a004473c1f0c4692ee78deb6118b4f0dc143bf6b1f0f2d37c4"
+  },
+  {
+   "id": "0010",
+   "name": "009.jpg",
+   "size": 2175981,
+   "sha256": "2efb04476c9e447deda2cefaa39c4e20b95ea1ba5a1dc236843b52381ccfda3b"
+  },
+  {
+   "id": "0011",
+   "name": "010.jpg",
+   "size": 1655012,
+   "sha256": "b88be10d6f3b9a154e66e283d0a2cbcbe3800489271e25b8366ff3d8dfbada31"
+  },
+  {
+   "id": "0012",
+   "name": "011.jpg",
+   "size": 2025898,
+   "sha256": "e0de21fdf712ee261b95daa66f563a42139376fdf87f8113a119e18ad1159882"
+  },
+  {
+   "id": "0013",
+   "name": "012.jpg",
+   "size": 1574979,
+   "sha256": "e613d5744a4efd9db32fbaf2b6bbb1c2d34353be72eb8acb1e0778e43c0af966"
+  },
+  {
+   "id": "0014",
+   "name": "013.jpg",
+   "size": 1281928,
+   "sha256": "ea87dbedf6e580b870d6f81b4a5e6ea9ef92f35b67768e9182cfc88229e9e893"
+  },
+  {
+   "id": "0015",
+   "name": "014.jpg",
+   "size": 1363598,
+   "sha256": "876d5c7f72d5de71f098f7886d6384c33aeebbf35866b6fba757ab51eb8af964"
+  },
+  {
+   "id": "0016",
+   "name": "015.jpg",
+   "size": 1338866,
+   "sha256": "6761c3835271343f9d55119f3c13315fcd22eaaa3d56b5e7ca7d19b132ecbe4d"
+  },
+  {
+   "id": "0017",
+   "name": "016.jpg",
+   "size": 2193806,
+   "sha256": "6afe50a7cb5c8bb50de83c1b9f3b2f7b620345addf3964d17c9d5fc29cd3b034"
+  },
+  {
+   "id": "0018",
+   "name": "017.jpg",
+   "size": 1194094,
+   "sha256": "0385e89fbe4a38f67b23d7442ac3421d0f75f498d05012a6de3484f8c3155e00"
+  },
+  {
+   "id": "0019",
+   "name": "018.jpg",
+   "size": 1457203,
+   "sha256": "ec71690f35c8f1473ae6c247f5e1d8a340ba47d9d19ce019a5319dd9423cdb57"
+  },
+  {
+   "id": "0020",
+   "name": "019.jpg",
+   "size": 1483109,
+   "sha256": "3c17f69e90ec18e5ec393d6967381fd9e0401e24240c30143b07a345af60a683"
+  }
+ ],
+ "limits": {
+  "threads": 8,
+  "memory_mb": 5120
+ }
+}

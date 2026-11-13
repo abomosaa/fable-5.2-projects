@@ -1,0 +1,46 @@
+{
+  "id": "launch-library",
+  "provider": "The Space Devs",
+  "dataset": "Launch Library 2 – upcoming orbital launches",
+  "description": "Scheduled orbital launch attempts worldwide with launch site, vehicle, provider, launch window, status and schedule precision.",
+  "homepageUrl": "https://thespacedevs.com/llapi",
+  "documentationUrl": "https://ll.thespacedevs.com/docs/",
+  "sourceUrls": ["https://ll.thespacedevs.com/2.3.0/launches/upcoming/?limit=50&mode=normal"],
+  "allowedHosts": ["ll.thespacedevs.com"],
+  "coverage": { "geographic": "Global launch sites", "temporal": "The next 50 scheduled launches (typically several weeks ahead); past launches persist locally until retention expires" },
+  "updateCadence": { "upstream": "Continuously maintained by volunteers; schedules change frequently close to launch", "pollIntervalSec": 3600, "staleAfterSec": 21600 },
+  "auth": { "type": "none", "envVars": [] },
+  "attribution": "Launch data: The Space Devs – Launch Library 2 (thespacedevs.com)",
+  "license": {
+    "name": "The Space Devs API terms – free to use; attribution encouraged",
+    "url": "https://github.com/TheSpaceDevs/Tutorials/blob/main/faqs/faq_TSD.md",
+    "redistribution": "allowed-with-attribution",
+    "nonCommercialOnly": false,
+    "notes": "The Space Devs FAQ: \"You are free to use the data in any way, shape, or form, and share what you create with it. Please refrain from forwarding it without adding value.\" Attribution is encouraged, not mandatory. The free tier allows 15 API calls per hour per IP address, so this adapter makes one call per hour. Images referenced by the API carry their own licences and are not used."
+  },
+  "limitations": [
+    "Schedules are community-maintained estimates; dates marked with month, quarter or year precision are placeholders.",
+    "Only the next 50 launches are requested (free-tier rate limit of 15 calls per hour).",
+    "The marker is the launch pad; it says nothing about the trajectory or the payload's destination."
+  ],
+  "confidenceNotes": "Confidence is derived by this application from Launch Library's own status (Go / To Be Confirmed / To Be Determined) and the stated precision of the launch time. It describes schedule certainty only.",
+  "retention": { "note": "Launch entries are kept for 30 days after their launch window closed." },
+  "snapshot": "incremental",
+  "http": { "cacheTtlSec": 3000, "maxRetries": 1, "minIntervalMs": 2000 },
+  "enabledByDefault": true,
+  "layers": [
+    {
+      "id": "rocket-launches",
+      "name": "Upcoming rocket launches",
+      "description": "Scheduled orbital launch attempts at their launch pad, with launch window and schedule status.",
+      "domain": "space",
+      "category": "launch",
+      "geometry": "point",
+      "timeModel": "interval",
+      "render": { "type": "point", "color": "purple", "shape": "triangle" },
+      "freshForSec": 604800,
+      "retentionDays": 30,
+      "defaultOn": false
+    }
+  ]
+}

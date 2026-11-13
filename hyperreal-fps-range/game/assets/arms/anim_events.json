@@ -1,0 +1,74 @@
+{
+ "pose_grip": {
+  "duration": 0.0333,
+  "events": {}
+ },
+ "pose_trigger_touch": {
+  "duration": 0.0333,
+  "events": {}
+ },
+ "pose_trigger_sa": {
+  "duration": 0.0333,
+  "events": {}
+ },
+ "pose_trigger_break": {
+  "duration": 0.0333,
+  "events": {}
+ },
+ "reload": {
+  "duration": 3.6,
+  "events": {
+   "left_hand_leaves": 0.1,
+   "mag_release_press": 0.5667,
+   "mag_out_start": 0.6333,
+   "mag_clear": 1.02,
+   "mag_swap": 1.55,
+   "mag_in_start": 2.2,
+   "mag_seated": 2.6,
+   "regrip_done": 3.3
+  }
+ },
+ "reload_empty": {
+  "duration": 4.0,
+  "events": {
+   "left_hand_leaves": 0.1,
+   "mag_release_press": 0.5667,
+   "mag_out_start": 0.6333,
+   "mag_clear": 1.02,
+   "mag_swap": 1.55,
+   "mag_in_start": 2.2,
+   "mag_seated": 2.6,
+   "slide_stop_press": 3.2,
+   "regrip_done": 3.72
+  }
+ },
+ "inspect": {
+  "duration": 4.6,
+  "events": {
+   "left_view": 1.05,
+   "right_view": 2.35,
+   "top_view": 3.45
+  }
+ },
+ "safety_on": {
+  "duration": 0.4333,
+  "events": {
+   "lever_start": 0.17,
+   "lever_end": 0.27
+  }
+ },
+ "safety_off": {
+  "duration": 0.4333,
+  "events": {
+   "lever_start": 0.17,
+   "lever_end": 0.27
+  }
+ },
+ "hammer_cock": {
+  "duration": 0.6,
+  "events": {
+   "hammer_start": 0.27,
+   "hammer_end": 0.39
+  }
+ }
+}

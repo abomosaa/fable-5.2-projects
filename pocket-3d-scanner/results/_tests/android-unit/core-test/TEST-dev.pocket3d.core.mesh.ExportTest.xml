@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="dev.pocket3d.core.mesh.ExportTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2026-11-12T10:55:39.833Z" hostname="h4-pc" time="0.032">
+  <properties/>
+  <testcase name="plyRoundTripsThroughIndependentParser" classname="dev.pocket3d.core.mesh.ExportTest" time="0.005"/>
+  <testcase name="objWithoutUvsOrNormals" classname="dev.pocket3d.core.mesh.ExportTest" time="0.018"/>
+  <testcase name="objRoundTripsThroughIndependentParser" classname="dev.pocket3d.core.mesh.ExportTest" time="0.007"/>
+  <testcase name="plyOptionalPropertiesAndRepairedFlag" classname="dev.pocket3d.core.mesh.ExportTest" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

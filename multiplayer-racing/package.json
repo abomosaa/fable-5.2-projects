@@ -1,0 +1,48 @@
+{
+  "name": "apex-drift",
+  "version": "1.0.0",
+  "description": "Apex Drift - a 3D online multiplayer racing game with an authoritative WebSocket server and public rooms.",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "scripts": {
+    "dev": "node scripts/dev.mjs",
+    "dev:server": "tsx watch server/src/main.ts",
+    "dev:client": "vite --config client/vite.config.ts",
+    "build": "npm run build:client && npm run build:server",
+    "build:client": "vite build --config client/vite.config.ts",
+    "build:server": "node scripts/build-server.mjs",
+    "start": "node dist/server/main.js",
+    "play": "npm run build && npm run start",
+    "typecheck": "tsc -p shared/tsconfig.json && tsc -p server/tsconfig.json && tsc -p client/tsconfig.json && tsc -p tests/tsconfig.json",
+    "lint": "eslint .",
+    "test": "vitest run",
+    "test:unit": "vitest run --project unit",
+    "test:integration": "vitest run --project integration",
+    "test:e2e": "npm run build && playwright test",
+    "test:all": "npm run test && npm run test:e2e",
+    "check": "npm run typecheck && npm run lint && npm run test && npm run build",
+    "tracks": "tsx scripts/track-preview.ts"
+  },
+  "dependencies": {
+    "ws": "8.22.2"
+  },
+  "devDependencies": {
+    "@eslint/js": "10.0.1",
+    "@playwright/test": "1.63.0",
+    "@types/node": "26.6.6",
+    "@types/three": "0.187.0",
+    "@types/ws": "8.18.2",
+    "esbuild": "0.28.2",
+    "eslint": "10.14.0",
+    "globals": "17.14.0",
+    "three": "0.187.0",
+    "tsx": "4.23.15",
+    "typescript": "6.0.3",
+    "typescript-eslint": "8.72.2",
+    "vite": "8.3.7",
+    "vitest": "5.1.0"
+  }
+}

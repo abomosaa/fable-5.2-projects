@@ -1,0 +1,447 @@
+{"seq":1,"t":1794426770.08,"type":"stage_start","stage":"ingest","progress":0.0,"overall":0.0,"message":"","data":{"index":0,"count":9}}
+{"seq":2,"t":1794426770.205,"type":"stage_progress","stage":"ingest","progress":0.0149,"overall":0.0003,"message":"Checked 1/67 photos"}
+{"seq":3,"t":1794426770.21,"type":"stage_progress","stage":"ingest","progress":0.0448,"overall":0.0009,"message":"Checked 3/67 photos"}
+{"seq":4,"t":1794426770.21,"type":"stage_progress","stage":"ingest","progress":0.0746,"overall":0.0015,"message":"Checked 5/67 photos"}
+{"seq":5,"t":1794426770.215,"type":"stage_progress","stage":"ingest","progress":0.1045,"overall":0.0021,"message":"Checked 7/67 photos"}
+{"seq":6,"t":1794426770.313,"type":"stage_progress","stage":"ingest","progress":0.1343,"overall":0.0027,"message":"Checked 9/67 photos"}
+{"seq":7,"t":1794426770.325,"type":"stage_progress","stage":"ingest","progress":0.1642,"overall":0.0033,"message":"Checked 11/67 photos"}
+{"seq":8,"t":1794426770.343,"type":"stage_progress","stage":"ingest","progress":0.194,"overall":0.0039,"message":"Checked 13/67 photos"}
+{"seq":9,"t":1794426770.343,"type":"stage_progress","stage":"ingest","progress":0.2239,"overall":0.0045,"message":"Checked 15/67 photos"}
+{"seq":10,"t":1794426770.438,"type":"stage_progress","stage":"ingest","progress":0.2537,"overall":0.0051,"message":"Checked 17/67 photos"}
+{"seq":11,"t":1794426770.438,"type":"stage_progress","stage":"ingest","progress":0.2836,"overall":0.0057,"message":"Checked 19/67 photos"}
+{"seq":12,"t":1794426770.458,"type":"stage_progress","stage":"ingest","progress":0.3134,"overall":0.0063,"message":"Checked 21/67 photos"}
+{"seq":13,"t":1794426770.459,"type":"stage_progress","stage":"ingest","progress":0.3433,"overall":0.0069,"message":"Checked 23/67 photos"}
+{"seq":14,"t":1794426770.566,"type":"stage_progress","stage":"ingest","progress":0.3731,"overall":0.0075,"message":"Checked 25/67 photos"}
+{"seq":15,"t":1794426770.58,"type":"stage_progress","stage":"ingest","progress":0.403,"overall":0.0081,"message":"Checked 27/67 photos"}
+{"seq":16,"t":1794426770.581,"type":"stage_progress","stage":"ingest","progress":0.4328,"overall":0.0087,"message":"Checked 29/67 photos"}
+{"seq":17,"t":1794426770.594,"type":"stage_progress","stage":"ingest","progress":0.4627,"overall":0.0093,"message":"Checked 31/67 photos"}
+{"seq":18,"t":1794426770.726,"type":"stage_progress","stage":"ingest","progress":0.4925,"overall":0.0099,"message":"Checked 33/67 photos"}
+{"seq":19,"t":1794426770.726,"type":"stage_progress","stage":"ingest","progress":0.5224,"overall":0.0104,"message":"Checked 35/67 photos"}
+{"seq":20,"t":1794426770.728,"type":"stage_progress","stage":"ingest","progress":0.5522,"overall":0.011,"message":"Checked 37/67 photos"}
+{"seq":21,"t":1794426770.735,"type":"stage_progress","stage":"ingest","progress":0.5821,"overall":0.0116,"message":"Checked 39/67 photos"}
+{"seq":22,"t":1794426770.868,"type":"stage_progress","stage":"ingest","progress":0.6119,"overall":0.0122,"message":"Checked 41/67 photos"}
+{"seq":23,"t":1794426770.87,"type":"stage_progress","stage":"ingest","progress":0.6418,"overall":0.0128,"message":"Checked 43/67 photos"}
+{"seq":24,"t":1794426770.87,"type":"stage_progress","stage":"ingest","progress":0.6716,"overall":0.0134,"message":"Checked 45/67 photos"}
+{"seq":25,"t":1794426770.87,"type":"stage_progress","stage":"ingest","progress":0.7015,"overall":0.014,"message":"Checked 47/67 photos"}
+{"seq":26,"t":1794426771.003,"type":"stage_progress","stage":"ingest","progress":0.7313,"overall":0.0146,"message":"Checked 49/67 photos"}
+{"seq":27,"t":1794426771.01,"type":"stage_progress","stage":"ingest","progress":0.7612,"overall":0.0152,"message":"Checked 51/67 photos"}
+{"seq":28,"t":1794426771.011,"type":"stage_progress","stage":"ingest","progress":0.791,"overall":0.0158,"message":"Checked 53/67 photos"}
+{"seq":29,"t":1794426771.029,"type":"stage_progress","stage":"ingest","progress":0.8209,"overall":0.0164,"message":"Checked 55/67 photos"}
+{"seq":30,"t":1794426771.152,"type":"stage_progress","stage":"ingest","progress":0.8507,"overall":0.017,"message":"Checked 57/67 photos"}
+{"seq":31,"t":1794426771.152,"type":"stage_progress","stage":"ingest","progress":0.8806,"overall":0.0176,"message":"Checked 59/67 photos"}
+{"seq":32,"t":1794426771.152,"type":"stage_progress","stage":"ingest","progress":0.9104,"overall":0.0182,"message":"Checked 61/67 photos"}
+{"seq":33,"t":1794426771.161,"type":"stage_progress","stage":"ingest","progress":0.9403,"overall":0.0188,"message":"Checked 63/67 photos"}
+{"seq":34,"t":1794426771.247,"type":"stage_progress","stage":"ingest","progress":0.9701,"overall":0.0194,"message":"Checked 65/67 photos"}
+{"seq":35,"t":1794426771.251,"type":"stage_progress","stage":"ingest","progress":1.0,"overall":0.02,"message":"Checked 67/67 photos"}
+{"seq":36,"t":1794426771.255,"type":"stage_end","stage":"ingest","progress":1.0,"overall":0.02,"message":"","data":{"reused":false,"seconds":1.18,"skipped":false}}
+{"seq":37,"t":1794426771.256,"type":"diagnostics","stage":"ingest","progress":0.0,"overall":0.02,"message":"","data":{"input":{"frames":67,"usable":67,"rejected":[],"capture_source":"import","tracking_mode":null,"camera_groups":[{"frames":67,"width":2400,"height":1351,"focal_px_prior":2880.0,"focal_source":"default"}],"recompressed_working_copies":67,"frames_with_ar_pose":0}}}
+{"seq":38,"t":1794426771.256,"type":"warning","stage":"ingest","progress":0.0,"overall":0.02,"message":"Some photos carry no focal-length metadata; the focal length is estimated from the images alone, which is less reliable.","data":{"code":"no_focal_prior"}}
+{"seq":39,"t":1794426771.256,"type":"stage_start","stage":"features","progress":0.0,"overall":0.02,"message":"","data":{"index":1,"count":9}}
+{"seq":40,"t":1794426773.316,"type":"stage_progress","stage":"features","progress":0.0746,"overall":0.0245,"message":"Features 5/67 photos"}
+{"seq":41,"t":1794426775.222,"type":"stage_progress","stage":"features","progress":0.1493,"overall":0.029,"message":"Features 10/67 photos"}
+{"seq":42,"t":1794426777.279,"type":"stage_progress","stage":"features","progress":0.2239,"overall":0.0334,"message":"Features 15/67 photos"}
+{"seq":43,"t":1794426779.186,"type":"stage_progress","stage":"features","progress":0.2985,"overall":0.0379,"message":"Features 20/67 photos"}
+{"seq":44,"t":1794426781.243,"type":"stage_progress","stage":"features","progress":0.3731,"overall":0.0424,"message":"Features 25/67 photos"}
+{"seq":45,"t":1794426783.198,"type":"stage_progress","stage":"features","progress":0.4478,"overall":0.0469,"message":"Features 30/67 photos"}
+{"seq":46,"t":1794426785.705,"type":"stage_progress","stage":"features","progress":0.5224,"overall":0.0513,"message":"Features 35/67 photos"}
+{"seq":47,"t":1794426788.11,"type":"stage_progress","stage":"features","progress":0.597,"overall":0.0558,"message":"Features 40/67 photos"}
+{"seq":48,"t":1794426790.416,"type":"stage_progress","stage":"features","progress":0.6716,"overall":0.0603,"message":"Features 45/67 photos"}
+{"seq":49,"t":1794426792.472,"type":"stage_progress","stage":"features","progress":0.7463,"overall":0.0648,"message":"Features 50/67 photos"}
+{"seq":50,"t":1794426794.426,"type":"stage_progress","stage":"features","progress":0.8209,"overall":0.0693,"message":"Features 55/67 photos"}
+{"seq":51,"t":1794426796.28,"type":"stage_progress","stage":"features","progress":0.8955,"overall":0.0737,"message":"Features 60/67 photos"}
+{"seq":52,"t":1794426798.284,"type":"stage_progress","stage":"features","progress":0.9701,"overall":0.0782,"message":"Features 65/67 photos"}
+{"seq":53,"t":1794426800.089,"type":"stage_progress","stage":"features","progress":1.0,"overall":0.08,"message":"Features 67/67 photos"}
+{"seq":54,"t":1794426800.093,"type":"stage_end","stage":"features","progress":1.0,"overall":0.08,"message":"","data":{"reused":false,"seconds":28.84,"skipped":false}}
+{"seq":55,"t":1794426800.093,"type":"stage_start","stage":"matching","progress":0.0,"overall":0.08,"message":"","data":{"index":2,"count":9}}
+{"seq":56,"t":1794426803.744,"type":"stage_progress","stage":"matching","progress":0.0403,"overall":0.0824,"message":"Matched 89/2211 photo pairs"}
+{"seq":57,"t":1794426806.255,"type":"stage_progress","stage":"matching","progress":0.0805,"overall":0.0848,"message":"Matched 178/2211 photo pairs"}
+{"seq":58,"t":1794426809.333,"type":"stage_progress","stage":"matching","progress":0.1208,"overall":0.0872,"message":"Matched 267/2211 photo pairs"}
+{"seq":59,"t":1794426811.992,"type":"stage_progress","stage":"matching","progress":0.161,"overall":0.0897,"message":"Matched 356/2211 photo pairs"}
+{"seq":60,"t":1794426814.803,"type":"stage_progress","stage":"matching","progress":0.2013,"overall":0.0921,"message":"Matched 445/2211 photo pairs"}
+{"seq":61,"t":1794426817.341,"type":"stage_progress","stage":"matching","progress":0.2415,"overall":0.0945,"message":"Matched 534/2211 photo pairs"}
+{"seq":62,"t":1794426819.799,"type":"stage_progress","stage":"matching","progress":0.2818,"overall":0.0969,"message":"Matched 623/2211 photo pairs"}
+{"seq":63,"t":1794426822.031,"type":"stage_progress","stage":"matching","progress":0.322,"overall":0.0993,"message":"Matched 712/2211 photo pairs"}
+{"seq":64,"t":1794426824.689,"type":"stage_progress","stage":"matching","progress":0.3623,"overall":0.1017,"message":"Matched 801/2211 photo pairs"}
+{"seq":65,"t":1794426827.63,"type":"stage_progress","stage":"matching","progress":0.4025,"overall":0.1042,"message":"Matched 890/2211 photo pairs"}
+{"seq":66,"t":1794426829.938,"type":"stage_progress","stage":"matching","progress":0.4428,"overall":0.1066,"message":"Matched 979/2211 photo pairs"}
+{"seq":67,"t":1794426832.146,"type":"stage_progress","stage":"matching","progress":0.483,"overall":0.109,"message":"Matched 1068/2211 photo pairs"}
+{"seq":68,"t":1794426834.072,"type":"stage_progress","stage":"matching","progress":0.5233,"overall":0.1114,"message":"Matched 1157/2211 photo pairs"}
+{"seq":69,"t":1794426836.781,"type":"stage_progress","stage":"matching","progress":0.5635,"overall":0.1138,"message":"Matched 1246/2211 photo pairs"}
+{"seq":70,"t":1794426839.942,"type":"stage_progress","stage":"matching","progress":0.6038,"overall":0.1162,"message":"Matched 1335/2211 photo pairs"}
+{"seq":71,"t":1794426842.177,"type":"stage_progress","stage":"matching","progress":0.6441,"overall":0.1186,"message":"Matched 1424/2211 photo pairs"}
+{"seq":72,"t":1794426844.486,"type":"stage_progress","stage":"matching","progress":0.6843,"overall":0.1211,"message":"Matched 1513/2211 photo pairs"}
+{"seq":73,"t":1794426847.1,"type":"stage_progress","stage":"matching","progress":0.7246,"overall":0.1235,"message":"Matched 1602/2211 photo pairs"}
+{"seq":74,"t":1794426850.032,"type":"stage_progress","stage":"matching","progress":0.7648,"overall":0.1259,"message":"Matched 1691/2211 photo pairs"}
+{"seq":75,"t":1794426852.792,"type":"stage_progress","stage":"matching","progress":0.8051,"overall":0.1283,"message":"Matched 1780/2211 photo pairs"}
+{"seq":76,"t":1794426855.954,"type":"stage_progress","stage":"matching","progress":0.8453,"overall":0.1307,"message":"Matched 1869/2211 photo pairs"}
+{"seq":77,"t":1794426858.88,"type":"stage_progress","stage":"matching","progress":0.8856,"overall":0.1331,"message":"Matched 1958/2211 photo pairs"}
+{"seq":78,"t":1794426861.338,"type":"stage_progress","stage":"matching","progress":0.9258,"overall":0.1355,"message":"Matched 2047/2211 photo pairs"}
+{"seq":79,"t":1794426864.128,"type":"stage_progress","stage":"matching","progress":0.9661,"overall":0.138,"message":"Matched 2136/2211 photo pairs"}
+{"seq":80,"t":1794426866.234,"type":"stage_progress","stage":"matching","progress":1.0,"overall":0.14,"message":"Matched 2211/2211 photo pairs"}
+{"seq":81,"t":1794426866.236,"type":"stage_end","stage":"matching","progress":1.0,"overall":0.14,"message":"","data":{"reused":false,"seconds":66.14,"skipped":false}}
+{"seq":82,"t":1794426866.236,"type":"diagnostics","stage":"matching","progress":0.0,"overall":0.14,"message":"","data":{"features":{"median_per_image":7029,"extract_threads":5},"matching":{"mode":"exhaustive","pairs_tested":2211,"pairs_verified":2211,"inlier_matches":251219,"pairs_possible":2211}}}
+{"seq":83,"t":1794426866.236,"type":"stage_start","stage":"sfm","progress":0.0,"overall":0.14,"message":"","data":{"index":3,"count":9}}
+{"seq":84,"t":1794426866.503,"type":"stage_progress","stage":"sfm","progress":0.0299,"overall":0.1424,"message":"Registered 2/67 cameras"}
+{"seq":85,"t":1794426867.168,"type":"stage_progress","stage":"sfm","progress":0.0597,"overall":0.1448,"message":"Registered 4/67 cameras"}
+{"seq":86,"t":1794426867.751,"type":"stage_progress","stage":"sfm","progress":0.0896,"overall":0.1472,"message":"Registered 6/67 cameras"}
+{"seq":87,"t":1794426868.276,"type":"stage_progress","stage":"sfm","progress":0.1194,"overall":0.1496,"message":"Registered 8/67 cameras"}
+{"seq":88,"t":1794426868.927,"type":"stage_progress","stage":"sfm","progress":0.1493,"overall":0.1519,"message":"Registered 10/67 cameras"}
+{"seq":89,"t":1794426869.4,"type":"stage_progress","stage":"sfm","progress":0.1791,"overall":0.1543,"message":"Registered 12/67 cameras"}
+{"seq":90,"t":1794426870.069,"type":"stage_progress","stage":"sfm","progress":0.209,"overall":0.1567,"message":"Registered 14/67 cameras"}
+{"seq":91,"t":1794426870.599,"type":"stage_progress","stage":"sfm","progress":0.2388,"overall":0.1591,"message":"Registered 16/67 cameras"}
+{"seq":92,"t":1794426871.239,"type":"stage_progress","stage":"sfm","progress":0.2687,"overall":0.1615,"message":"Registered 18/67 cameras"}
+{"seq":93,"t":1794426872.064,"type":"stage_progress","stage":"sfm","progress":0.2985,"overall":0.1639,"message":"Registered 20/67 cameras"}
+{"seq":94,"t":1794426872.658,"type":"stage_progress","stage":"sfm","progress":0.3284,"overall":0.1663,"message":"Registered 22/67 cameras"}
+{"seq":95,"t":1794426873.038,"type":"stage_progress","stage":"sfm","progress":0.3582,"overall":0.1687,"message":"Registered 24/67 cameras"}
+{"seq":96,"t":1794426873.555,"type":"stage_progress","stage":"sfm","progress":0.3731,"overall":0.1699,"message":"Registered 25/67 cameras"}
+{"seq":97,"t":1794426873.814,"type":"stage_progress","stage":"sfm","progress":0.403,"overall":0.1722,"message":"Registered 27/67 cameras"}
+{"seq":98,"t":1794426874.345,"type":"stage_progress","stage":"sfm","progress":0.4179,"overall":0.1734,"message":"Registered 28/67 cameras"}
+{"seq":99,"t":1794426874.632,"type":"stage_progress","stage":"sfm","progress":0.4478,"overall":0.1758,"message":"Registered 30/67 cameras"}
+{"seq":100,"t":1794426875.215,"type":"stage_progress","stage":"sfm","progress":0.4627,"overall":0.177,"message":"Registered 31/67 cameras"}
+{"seq":101,"t":1794426875.488,"type":"stage_progress","stage":"sfm","progress":0.4925,"overall":0.1794,"message":"Registered 33/67 cameras"}
+{"seq":102,"t":1794426876.149,"type":"stage_progress","stage":"sfm","progress":0.5224,"overall":0.1818,"message":"Registered 35/67 cameras"}
+{"seq":103,"t":1794426876.324,"type":"stage_progress","stage":"sfm","progress":0.5522,"overall":0.1842,"message":"Registered 37/67 cameras"}
+{"seq":104,"t":1794426876.873,"type":"stage_progress","stage":"sfm","progress":0.5821,"overall":0.1866,"message":"Registered 39/67 cameras"}
+{"seq":105,"t":1794426877.057,"type":"stage_progress","stage":"sfm","progress":0.6119,"overall":0.189,"message":"Registered 41/67 cameras"}
+{"seq":106,"t":1794426877.595,"type":"stage_progress","stage":"sfm","progress":0.6418,"overall":0.1913,"message":"Registered 43/67 cameras"}
+{"seq":107,"t":1794426877.775,"type":"stage_progress","stage":"sfm","progress":0.6716,"overall":0.1937,"message":"Registered 45/67 cameras"}
+{"seq":108,"t":1794426878.006,"type":"stage_progress","stage":"sfm","progress":0.7015,"overall":0.1961,"message":"Registered 47/67 cameras"}
+{"seq":109,"t":1794426878.534,"type":"stage_progress","stage":"sfm","progress":0.7164,"overall":0.1973,"message":"Registered 48/67 cameras"}
+{"seq":110,"t":1794426878.812,"type":"stage_progress","stage":"sfm","progress":0.7463,"overall":0.1997,"message":"Registered 50/67 cameras"}
+{"seq":111,"t":1794426879.041,"type":"stage_progress","stage":"sfm","progress":0.7761,"overall":0.2021,"message":"Registered 52/67 cameras"}
+{"seq":112,"t":1794426879.621,"type":"stage_progress","stage":"sfm","progress":0.791,"overall":0.2033,"message":"Registered 53/67 cameras"}
+{"seq":113,"t":1794426879.823,"type":"stage_progress","stage":"sfm","progress":0.8209,"overall":0.2057,"message":"Registered 55/67 cameras"}
+{"seq":114,"t":1794426879.993,"type":"stage_progress","stage":"sfm","progress":0.8507,"overall":0.2081,"message":"Registered 57/67 cameras"}
+{"seq":115,"t":1794426880.6,"type":"stage_progress","stage":"sfm","progress":0.8806,"overall":0.2104,"message":"Registered 59/67 cameras"}
+{"seq":116,"t":1794426880.798,"type":"stage_progress","stage":"sfm","progress":0.9104,"overall":0.2128,"message":"Registered 61/67 cameras"}
+{"seq":117,"t":1794426880.97,"type":"stage_progress","stage":"sfm","progress":0.9403,"overall":0.2152,"message":"Registered 63/67 cameras"}
+{"seq":118,"t":1794426881.653,"type":"stage_progress","stage":"sfm","progress":0.9701,"overall":0.2176,"message":"Registered 65/67 cameras"}
+{"seq":119,"t":1794426882.609,"type":"stage_end","stage":"sfm","progress":1.0,"overall":0.22,"message":"","data":{"reused":false,"seconds":16.37,"skipped":false}}
+{"seq":120,"t":1794426882.741,"type":"artifact","stage":"sfm","progress":0.0,"overall":0.22,"message":"sparse_preview.json","data":{"name":"sparse_preview.json","size":643131,"sha256":"f3c3ca029cb57be86ef8505d85f783e0bf9ab3bb7aaf3975129c817b23daeaf5","kind":"preview"}}
+{"seq":121,"t":1794426882.741,"type":"diagnostics","stage":"sfm","progress":0.0,"overall":0.22,"message":"","data":{"sfm":{"input_frames":67,"registered":67,"unregistered":[],"other_models":[],"sparse_points":31123,"mean_reprojection_error_px":0.3164,"mean_track_length":4.697,"mean_observations_per_image":2181.8,"cameras":[{"camera_id":1,"model":"SIMPLE_RADIAL","width":2400,"height":1351,"params":[1629.175852,1200.0,675.5,-0.001082],"has_prior_focal_length":false}]},"scale":{"units":"arbitrary","source":"none","meters_per_unit":null,"relative_uncertainty":null,"note":"Photographs alone do not determine real-world size. Units are arbitrary (median camera-to-object distance = 1). Calibrate with a known distance to get real measurements."},"viewpoint_coverage":{"azimuth_bins":12,"elevation_edges_deg":[-90.0,20.0,50.0,90.0],"counts":[[7,4,2,2,2,2,3,2,3,2,2,3],[5,2,4,3,0,0,0,0,0,0,0,4],[1,2,1,1,2,0,3,0,1,2,1,1]],"azimuth_bins_covered":12,"bands_covered":3,"largest_azimuth_gap_deg":23.9,"azimuth_deg":[180.0,255.6,95.0,161.2,288.2,61.1,208.6,4.0,334.5,56.5,280.2,37.6,4.2,144.0,166.6,4.7,8.4,24.4,78.5,192.0,63.7,43.8,101.7,351.7,336.6,55.8,252.7,84.8,184.2,102.1,347.6,112.0,49.2,21.9,23.4,14.6,292.7,112.7,130.9,24.2,75.5,357.1,20.6,207.5,314.1,58.3,79.5,213.1,35.7,237.0,130.3,341.2,342.7,289.4,107.2,48.0,184.2,142.8,264.0,17.8,241.6,328.0,79.5,301.1,22.2,23.0,357.2],"elevation_deg":[8.9,70.3,33.9,8.0,-3.9,40.2,69.7,35.6,47.4,19.1,61.4,10.4,-22.9,2.7,5.7,7.2,20.9,31.2,29.8,65.7,24.2,-19.3,-14.0,16.0,40.0,22.4,16.6,42.7,68.0,40.8,-18.4,-10.1,-32.4,-17.3,8.2,-30.8,55.7,43.3,59.7,11.7,-18.0,56.0,33.1,13.3,-6.6,66.2,54.1,17.0,62.6,11.9,-2.7,12.6,45.6,3.3,68.2,29.7,13.2,57.1,11.8,-29.7,15.9,-12.0,-19.7,58.4,83.6,42.3,31.8],"kind":"registered_viewpoints","note":"Where registered photos were taken from, around the object. This is viewpoint coverage \u2014 it does not prove the facing surface was reconstructed."}}}
+{"seq":122,"t":1794426882.741,"type":"stage_start","stage":"undistort","progress":0.0,"overall":0.22,"message":"","data":{"index":4,"count":9}}
+{"seq":123,"t":1794426882.741,"type":"stage_progress","stage":"undistort","progress":0.02,"overall":0.2204,"message":"Undistorting photos"}
+{"seq":124,"t":1794426884.162,"type":"stage_progress","stage":"undistort","progress":0.8,"overall":0.236,"message":"Building multi-view scene"}
+{"seq":125,"t":1794426884.349,"type":"stage_end","stage":"undistort","progress":1.0,"overall":0.24,"message":"","data":{"reused":false,"seconds":1.61,"skipped":false}}
+{"seq":126,"t":1794426884.349,"type":"stage_start","stage":"dense","progress":0.0,"overall":0.24,"message":"","data":{"index":5,"count":9}}
+{"seq":127,"t":1794426889.568,"type":"stage_progress","stage":"dense","progress":0.0045,"overall":0.2418,"message":"Depth maps: first pass 1/67"}
+{"seq":128,"t":1794426891.65,"type":"stage_progress","stage":"dense","progress":0.009,"overall":0.2436,"message":"Depth maps: first pass 2/67"}
+{"seq":129,"t":1794426895.245,"type":"stage_progress","stage":"dense","progress":0.0134,"overall":0.2454,"message":"Depth maps: first pass 3/67"}
+{"seq":130,"t":1794426897.876,"type":"stage_progress","stage":"dense","progress":0.0179,"overall":0.2472,"message":"Depth maps: first pass 4/67"}
+{"seq":131,"t":1794426900.699,"type":"stage_progress","stage":"dense","progress":0.0224,"overall":0.249,"message":"Depth maps: first pass 5/67"}
+{"seq":132,"t":1794426903.739,"type":"stage_progress","stage":"dense","progress":0.0269,"overall":0.2508,"message":"Depth maps: first pass 6/67"}
+{"seq":133,"t":1794426906.153,"type":"stage_progress","stage":"dense","progress":0.0313,"overall":0.2525,"message":"Depth maps: first pass 7/67"}
+{"seq":134,"t":1794426908.458,"type":"stage_progress","stage":"dense","progress":0.0358,"overall":0.2543,"message":"Depth maps: first pass 8/67"}
+{"seq":135,"t":1794426911.702,"type":"stage_progress","stage":"dense","progress":0.0403,"overall":0.2561,"message":"Depth maps: first pass 9/67"}
+{"seq":136,"t":1794426914.125,"type":"stage_progress","stage":"dense","progress":0.0448,"overall":0.2579,"message":"Depth maps: first pass 10/67"}
+{"seq":137,"t":1794426917.565,"type":"stage_progress","stage":"dense","progress":0.0493,"overall":0.2597,"message":"Depth maps: first pass 11/67"}
+{"seq":138,"t":1794426919.451,"type":"stage_progress","stage":"dense","progress":0.0537,"overall":0.2615,"message":"Depth maps: first pass 12/67"}
+{"seq":139,"t":1794426922.496,"type":"stage_progress","stage":"dense","progress":0.0582,"overall":0.2633,"message":"Depth maps: first pass 13/67"}
+{"seq":140,"t":1794426925.227,"type":"stage_progress","stage":"dense","progress":0.0627,"overall":0.2651,"message":"Depth maps: first pass 14/67"}
+{"seq":141,"t":1794426927.76,"type":"stage_progress","stage":"dense","progress":0.0672,"overall":0.2669,"message":"Depth maps: first pass 15/67"}
+{"seq":142,"t":1794426930.738,"type":"stage_progress","stage":"dense","progress":0.0716,"overall":0.2687,"message":"Depth maps: first pass 16/67"}
+{"seq":143,"t":1794426934.11,"type":"stage_progress","stage":"dense","progress":0.0761,"overall":0.2704,"message":"Depth maps: first pass 17/67"}
+{"seq":144,"t":1794426935.044,"type":"stage_progress","stage":"dense","progress":0.0806,"overall":0.2722,"message":"Depth maps: first pass 18/67"}
+{"seq":145,"t":1794426939.131,"type":"stage_progress","stage":"dense","progress":0.0851,"overall":0.274,"message":"Depth maps: first pass 19/67"}
+{"seq":146,"t":1794426941.762,"type":"stage_progress","stage":"dense","progress":0.0895,"overall":0.2758,"message":"Depth maps: first pass 20/67"}
+{"seq":147,"t":1794426944.634,"type":"stage_progress","stage":"dense","progress":0.094,"overall":0.2776,"message":"Depth maps: first pass 21/67"}
+{"seq":148,"t":1794426946.679,"type":"stage_progress","stage":"dense","progress":0.0985,"overall":0.2794,"message":"Depth maps: first pass 22/67"}
+{"seq":149,"t":1794426948.882,"type":"stage_progress","stage":"dense","progress":0.103,"overall":0.2812,"message":"Depth maps: first pass 23/67"}
+{"seq":150,"t":1794426951.257,"type":"stage_progress","stage":"dense","progress":0.1075,"overall":0.283,"message":"Depth maps: first pass 24/67"}
+{"seq":151,"t":1794426953.238,"type":"stage_progress","stage":"dense","progress":0.1119,"overall":0.2848,"message":"Depth maps: first pass 25/67"}
+{"seq":152,"t":1794426955.446,"type":"stage_progress","stage":"dense","progress":0.1164,"overall":0.2866,"message":"Depth maps: first pass 26/67"}
+{"seq":153,"t":1794426957.731,"type":"stage_progress","stage":"dense","progress":0.1209,"overall":0.2884,"message":"Depth maps: first pass 27/67"}
+{"seq":154,"t":1794426960.061,"type":"stage_progress","stage":"dense","progress":0.1254,"overall":0.2901,"message":"Depth maps: first pass 28/67"}
+{"seq":155,"t":1794426961.981,"type":"stage_progress","stage":"dense","progress":0.1298,"overall":0.2919,"message":"Depth maps: first pass 29/67"}
+{"seq":156,"t":1794426964.201,"type":"stage_progress","stage":"dense","progress":0.1343,"overall":0.2937,"message":"Depth maps: first pass 30/67"}
+{"seq":157,"t":1794426966.573,"type":"stage_progress","stage":"dense","progress":0.1388,"overall":0.2955,"message":"Depth maps: first pass 31/67"}
+{"seq":158,"t":1794426969.368,"type":"stage_progress","stage":"dense","progress":0.1433,"overall":0.2973,"message":"Depth maps: first pass 32/67"}
+{"seq":159,"t":1794426971.131,"type":"stage_progress","stage":"dense","progress":0.1477,"overall":0.2991,"message":"Depth maps: first pass 33/67"}
+{"seq":160,"t":1794426973.146,"type":"stage_progress","stage":"dense","progress":0.1522,"overall":0.3009,"message":"Depth maps: first pass 34/67"}
+{"seq":161,"t":1794426975.557,"type":"stage_progress","stage":"dense","progress":0.1567,"overall":0.3027,"message":"Depth maps: first pass 35/67"}
+{"seq":162,"t":1794426977.966,"type":"stage_progress","stage":"dense","progress":0.1612,"overall":0.3045,"message":"Depth maps: first pass 36/67"}
+{"seq":163,"t":1794426980.214,"type":"stage_progress","stage":"dense","progress":0.1657,"overall":0.3063,"message":"Depth maps: first pass 37/67"}
+{"seq":164,"t":1794426981.952,"type":"stage_progress","stage":"dense","progress":0.1702,"overall":0.3081,"message":"Depth maps: first pass 38/67"}
+{"seq":165,"t":1794426984.132,"type":"stage_progress","stage":"dense","progress":0.1746,"overall":0.3099,"message":"Depth maps: first pass 39/67"}
+{"seq":166,"t":1794426986.761,"type":"stage_progress","stage":"dense","progress":0.1791,"overall":0.3116,"message":"Depth maps: first pass 40/67"}
+{"seq":167,"t":1794426988.361,"type":"stage_progress","stage":"dense","progress":0.1836,"overall":0.3134,"message":"Depth maps: first pass 41/67"}
+{"seq":168,"t":1794426990.335,"type":"stage_progress","stage":"dense","progress":0.1881,"overall":0.3152,"message":"Depth maps: first pass 42/67"}
+{"seq":169,"t":1794426991.942,"type":"stage_progress","stage":"dense","progress":0.1925,"overall":0.317,"message":"Depth maps: first pass 43/67"}
+{"seq":170,"t":1794426994.144,"type":"stage_progress","stage":"dense","progress":0.197,"overall":0.3188,"message":"Depth maps: first pass 44/67"}
+{"seq":171,"t":1794426996.181,"type":"stage_progress","stage":"dense","progress":0.2015,"overall":0.3206,"message":"Depth maps: first pass 45/67"}
+{"seq":172,"t":1794426998.577,"type":"stage_progress","stage":"dense","progress":0.206,"overall":0.3224,"message":"Depth maps: first pass 46/67"}
+{"seq":173,"t":1794427000.367,"type":"stage_progress","stage":"dense","progress":0.2104,"overall":0.3242,"message":"Depth maps: first pass 47/67"}
+{"seq":174,"t":1794427002.689,"type":"stage_progress","stage":"dense","progress":0.2149,"overall":0.326,"message":"Depth maps: first pass 48/67"}
+{"seq":175,"t":1794427004.88,"type":"stage_progress","stage":"dense","progress":0.2194,"overall":0.3278,"message":"Depth maps: first pass 49/67"}
+{"seq":176,"t":1794427007.879,"type":"stage_progress","stage":"dense","progress":0.2239,"overall":0.3296,"message":"Depth maps: first pass 50/67"}
+{"seq":177,"t":1794427010.47,"type":"stage_progress","stage":"dense","progress":0.2284,"overall":0.3313,"message":"Depth maps: first pass 51/67"}
+{"seq":178,"t":1794427012.79,"type":"stage_progress","stage":"dense","progress":0.2328,"overall":0.3331,"message":"Depth maps: first pass 52/67"}
+{"seq":179,"t":1794427014.997,"type":"stage_progress","stage":"dense","progress":0.2373,"overall":0.3349,"message":"Depth maps: first pass 53/67"}
+{"seq":180,"t":1794427017.824,"type":"stage_progress","stage":"dense","progress":0.2418,"overall":0.3367,"message":"Depth maps: first pass 54/67"}
+{"seq":181,"t":1794427019.545,"type":"stage_progress","stage":"dense","progress":0.2463,"overall":0.3385,"message":"Depth maps: first pass 55/67"}
+{"seq":182,"t":1794427021.716,"type":"stage_progress","stage":"dense","progress":0.2507,"overall":0.3403,"message":"Depth maps: first pass 56/67"}
+{"seq":183,"t":1794427024.672,"type":"stage_progress","stage":"dense","progress":0.2552,"overall":0.3421,"message":"Depth maps: first pass 57/67"}
+{"seq":184,"t":1794427027.242,"type":"stage_progress","stage":"dense","progress":0.2597,"overall":0.3439,"message":"Depth maps: first pass 58/67"}
+{"seq":185,"t":1794427029.043,"type":"stage_progress","stage":"dense","progress":0.2642,"overall":0.3457,"message":"Depth maps: first pass 59/67"}
+{"seq":186,"t":1794427031.93,"type":"stage_progress","stage":"dense","progress":0.2686,"overall":0.3475,"message":"Depth maps: first pass 60/67"}
+{"seq":187,"t":1794427035.483,"type":"stage_progress","stage":"dense","progress":0.2731,"overall":0.3492,"message":"Depth maps: first pass 61/67"}
+{"seq":188,"t":1794427039.508,"type":"stage_progress","stage":"dense","progress":0.2776,"overall":0.351,"message":"Depth maps: first pass 62/67"}
+{"seq":189,"t":1794427042.808,"type":"stage_progress","stage":"dense","progress":0.2821,"overall":0.3528,"message":"Depth maps: first pass 63/67"}
+{"seq":190,"t":1794427047.428,"type":"stage_progress","stage":"dense","progress":0.2866,"overall":0.3546,"message":"Depth maps: first pass 64/67"}
+{"seq":191,"t":1794427050.561,"type":"stage_progress","stage":"dense","progress":0.291,"overall":0.3564,"message":"Depth maps: first pass 65/67"}
+{"seq":192,"t":1794427054.49,"type":"stage_progress","stage":"dense","progress":0.2955,"overall":0.3582,"message":"Depth maps: first pass 66/67"}
+{"seq":193,"t":1794427055.296,"type":"stage_progress","stage":"dense","progress":0.3,"overall":0.36,"message":"Depth maps: first pass 67/67"}
+{"seq":194,"t":1794427055.941,"type":"stage_progress","stage":"dense","progress":0.3042,"overall":0.3617,"message":"Depth maps: consistency pass 1/2, 1/67"}
+{"seq":195,"t":1794427056.533,"type":"stage_progress","stage":"dense","progress":0.3084,"overall":0.3633,"message":"Depth maps: consistency pass 1/2, 2/67"}
+{"seq":196,"t":1794427057.33,"type":"stage_progress","stage":"dense","progress":0.3125,"overall":0.365,"message":"Depth maps: consistency pass 1/2, 3/67"}
+{"seq":197,"t":1794427057.898,"type":"stage_progress","stage":"dense","progress":0.3167,"overall":0.3667,"message":"Depth maps: consistency pass 1/2, 4/67"}
+{"seq":198,"t":1794427058.57,"type":"stage_progress","stage":"dense","progress":0.3209,"overall":0.3684,"message":"Depth maps: consistency pass 1/2, 5/67"}
+{"seq":199,"t":1794427059.589,"type":"stage_progress","stage":"dense","progress":0.3251,"overall":0.37,"message":"Depth maps: consistency pass 1/2, 6/67"}
+{"seq":200,"t":1794427060.301,"type":"stage_progress","stage":"dense","progress":0.3293,"overall":0.3717,"message":"Depth maps: consistency pass 1/2, 7/67"}
+{"seq":201,"t":1794427061.005,"type":"stage_progress","stage":"dense","progress":0.3334,"overall":0.3734,"message":"Depth maps: consistency pass 1/2, 8/67"}
+{"seq":202,"t":1794427061.857,"type":"stage_progress","stage":"dense","progress":0.3376,"overall":0.375,"message":"Depth maps: consistency pass 1/2, 9/67"}
+{"seq":203,"t":1794427062.495,"type":"stage_progress","stage":"dense","progress":0.3418,"overall":0.3767,"message":"Depth maps: consistency pass 1/2, 10/67"}
+{"seq":204,"t":1794427063.298,"type":"stage_progress","stage":"dense","progress":0.346,"overall":0.3784,"message":"Depth maps: consistency pass 1/2, 11/67"}
+{"seq":205,"t":1794427063.874,"type":"stage_progress","stage":"dense","progress":0.3501,"overall":0.3801,"message":"Depth maps: consistency pass 1/2, 12/67"}
+{"seq":206,"t":1794427064.554,"type":"stage_progress","stage":"dense","progress":0.3543,"overall":0.3817,"message":"Depth maps: consistency pass 1/2, 13/67"}
+{"seq":207,"t":1794427065.215,"type":"stage_progress","stage":"dense","progress":0.3585,"overall":0.3834,"message":"Depth maps: consistency pass 1/2, 14/67"}
+{"seq":208,"t":1794427065.848,"type":"stage_progress","stage":"dense","progress":0.3627,"overall":0.3851,"message":"Depth maps: consistency pass 1/2, 15/67"}
+{"seq":209,"t":1794427066.634,"type":"stage_progress","stage":"dense","progress":0.3669,"overall":0.3867,"message":"Depth maps: consistency pass 1/2, 16/67"}
+{"seq":210,"t":1794427067.536,"type":"stage_progress","stage":"dense","progress":0.371,"overall":0.3884,"message":"Depth maps: consistency pass 1/2, 17/67"}
+{"seq":211,"t":1794427068.739,"type":"stage_progress","stage":"dense","progress":0.3794,"overall":0.3918,"message":"Depth maps: consistency pass 1/2, 19/67"}
+{"seq":212,"t":1794427069.384,"type":"stage_progress","stage":"dense","progress":0.3836,"overall":0.3934,"message":"Depth maps: consistency pass 1/2, 20/67"}
+{"seq":213,"t":1794427070.191,"type":"stage_progress","stage":"dense","progress":0.3878,"overall":0.3951,"message":"Depth maps: consistency pass 1/2, 21/67"}
+{"seq":214,"t":1794427070.911,"type":"stage_progress","stage":"dense","progress":0.392,"overall":0.3968,"message":"Depth maps: consistency pass 1/2, 22/67"}
+{"seq":215,"t":1794427071.622,"type":"stage_progress","stage":"dense","progress":0.3961,"overall":0.3984,"message":"Depth maps: consistency pass 1/2, 23/67"}
+{"seq":216,"t":1794427072.509,"type":"stage_progress","stage":"dense","progress":0.4003,"overall":0.4001,"message":"Depth maps: consistency pass 1/2, 24/67"}
+{"seq":217,"t":1794427073.122,"type":"stage_progress","stage":"dense","progress":0.4045,"overall":0.4018,"message":"Depth maps: consistency pass 1/2, 25/67"}
+{"seq":218,"t":1794427074.011,"type":"stage_progress","stage":"dense","progress":0.4087,"overall":0.4035,"message":"Depth maps: consistency pass 1/2, 26/67"}
+{"seq":219,"t":1794427074.826,"type":"stage_progress","stage":"dense","progress":0.4128,"overall":0.4051,"message":"Depth maps: consistency pass 1/2, 27/67"}
+{"seq":220,"t":1794427075.723,"type":"stage_progress","stage":"dense","progress":0.417,"overall":0.4068,"message":"Depth maps: consistency pass 1/2, 28/67"}
+{"seq":221,"t":1794427076.577,"type":"stage_progress","stage":"dense","progress":0.4212,"overall":0.4085,"message":"Depth maps: consistency pass 1/2, 29/67"}
+{"seq":222,"t":1794427077.331,"type":"stage_progress","stage":"dense","progress":0.4254,"overall":0.4102,"message":"Depth maps: consistency pass 1/2, 30/67"}
+{"seq":223,"t":1794427078.184,"type":"stage_progress","stage":"dense","progress":0.4296,"overall":0.4118,"message":"Depth maps: consistency pass 1/2, 31/67"}
+{"seq":224,"t":1794427079.345,"type":"stage_progress","stage":"dense","progress":0.4337,"overall":0.4135,"message":"Depth maps: consistency pass 1/2, 32/67"}
+{"seq":225,"t":1794427080.026,"type":"stage_progress","stage":"dense","progress":0.4379,"overall":0.4152,"message":"Depth maps: consistency pass 1/2, 33/67"}
+{"seq":226,"t":1794427080.819,"type":"stage_progress","stage":"dense","progress":0.4421,"overall":0.4168,"message":"Depth maps: consistency pass 1/2, 34/67"}
+{"seq":227,"t":1794427081.698,"type":"stage_progress","stage":"dense","progress":0.4463,"overall":0.4185,"message":"Depth maps: consistency pass 1/2, 35/67"}
+{"seq":228,"t":1794427082.597,"type":"stage_progress","stage":"dense","progress":0.4504,"overall":0.4202,"message":"Depth maps: consistency pass 1/2, 36/67"}
+{"seq":229,"t":1794427083.43,"type":"stage_progress","stage":"dense","progress":0.4546,"overall":0.4218,"message":"Depth maps: consistency pass 1/2, 37/67"}
+{"seq":230,"t":1794427084.051,"type":"stage_progress","stage":"dense","progress":0.4588,"overall":0.4235,"message":"Depth maps: consistency pass 1/2, 38/67"}
+{"seq":231,"t":1794427084.861,"type":"stage_progress","stage":"dense","progress":0.463,"overall":0.4252,"message":"Depth maps: consistency pass 1/2, 39/67"}
+{"seq":232,"t":1794427085.897,"type":"stage_progress","stage":"dense","progress":0.4672,"overall":0.4269,"message":"Depth maps: consistency pass 1/2, 40/67"}
+{"seq":233,"t":1794427086.496,"type":"stage_progress","stage":"dense","progress":0.4713,"overall":0.4285,"message":"Depth maps: consistency pass 1/2, 41/67"}
+{"seq":234,"t":1794427087.276,"type":"stage_progress","stage":"dense","progress":0.4755,"overall":0.4302,"message":"Depth maps: consistency pass 1/2, 42/67"}
+{"seq":235,"t":1794427087.914,"type":"stage_progress","stage":"dense","progress":0.4797,"overall":0.4319,"message":"Depth maps: consistency pass 1/2, 43/67"}
+{"seq":236,"t":1794427088.686,"type":"stage_progress","stage":"dense","progress":0.4839,"overall":0.4336,"message":"Depth maps: consistency pass 1/2, 44/67"}
+{"seq":237,"t":1794427089.448,"type":"stage_progress","stage":"dense","progress":0.488,"overall":0.4352,"message":"Depth maps: consistency pass 1/2, 45/67"}
+{"seq":238,"t":1794427090.354,"type":"stage_progress","stage":"dense","progress":0.4922,"overall":0.4369,"message":"Depth maps: consistency pass 1/2, 46/67"}
+{"seq":239,"t":1794427091.003,"type":"stage_progress","stage":"dense","progress":0.4964,"overall":0.4386,"message":"Depth maps: consistency pass 1/2, 47/67"}
+{"seq":240,"t":1794427091.905,"type":"stage_progress","stage":"dense","progress":0.5006,"overall":0.4402,"message":"Depth maps: consistency pass 1/2, 48/67"}
+{"seq":241,"t":1794427092.718,"type":"stage_progress","stage":"dense","progress":0.5048,"overall":0.4419,"message":"Depth maps: consistency pass 1/2, 49/67"}
+{"seq":242,"t":1794427093.999,"type":"stage_progress","stage":"dense","progress":0.509,"overall":0.4436,"message":"Depth maps: consistency pass 1/2, 50/67"}
+{"seq":243,"t":1794427095.044,"type":"stage_progress","stage":"dense","progress":0.5131,"overall":0.4453,"message":"Depth maps: consistency pass 1/2, 51/67"}
+{"seq":244,"t":1794427095.867,"type":"stage_progress","stage":"dense","progress":0.5173,"overall":0.4469,"message":"Depth maps: consistency pass 1/2, 52/67"}
+{"seq":245,"t":1794427096.671,"type":"stage_progress","stage":"dense","progress":0.5215,"overall":0.4486,"message":"Depth maps: consistency pass 1/2, 53/67"}
+{"seq":246,"t":1794427097.61,"type":"stage_progress","stage":"dense","progress":0.5257,"overall":0.4503,"message":"Depth maps: consistency pass 1/2, 54/67"}
+{"seq":247,"t":1794427098.201,"type":"stage_progress","stage":"dense","progress":0.5299,"overall":0.4519,"message":"Depth maps: consistency pass 1/2, 55/67"}
+{"seq":248,"t":1794427098.843,"type":"stage_progress","stage":"dense","progress":0.534,"overall":0.4536,"message":"Depth maps: consistency pass 1/2, 56/67"}
+{"seq":249,"t":1794427099.85,"type":"stage_progress","stage":"dense","progress":0.5382,"overall":0.4553,"message":"Depth maps: consistency pass 1/2, 57/67"}
+{"seq":250,"t":1794427100.65,"type":"stage_progress","stage":"dense","progress":0.5424,"overall":0.457,"message":"Depth maps: consistency pass 1/2, 58/67"}
+{"seq":251,"t":1794427101.261,"type":"stage_progress","stage":"dense","progress":0.5466,"overall":0.4586,"message":"Depth maps: consistency pass 1/2, 59/67"}
+{"seq":252,"t":1794427102.257,"type":"stage_progress","stage":"dense","progress":0.5507,"overall":0.4603,"message":"Depth maps: consistency pass 1/2, 60/67"}
+{"seq":253,"t":1794427103.22,"type":"stage_progress","stage":"dense","progress":0.5549,"overall":0.462,"message":"Depth maps: consistency pass 1/2, 61/67"}
+{"seq":254,"t":1794427104.051,"type":"stage_progress","stage":"dense","progress":0.5591,"overall":0.4636,"message":"Depth maps: consistency pass 1/2, 62/67"}
+{"seq":255,"t":1794427104.871,"type":"stage_progress","stage":"dense","progress":0.5633,"overall":0.4653,"message":"Depth maps: consistency pass 1/2, 63/67"}
+{"seq":256,"t":1794427106.031,"type":"stage_progress","stage":"dense","progress":0.5675,"overall":0.467,"message":"Depth maps: consistency pass 1/2, 64/67"}
+{"seq":257,"t":1794427106.937,"type":"stage_progress","stage":"dense","progress":0.5716,"overall":0.4687,"message":"Depth maps: consistency pass 1/2, 65/67"}
+{"seq":258,"t":1794427107.712,"type":"stage_progress","stage":"dense","progress":0.5758,"overall":0.4703,"message":"Depth maps: consistency pass 1/2, 66/67"}
+{"seq":259,"t":1794427108.678,"type":"stage_progress","stage":"dense","progress":0.58,"overall":0.472,"message":"Depth maps: consistency pass 1/2, 67/67"}
+{"seq":260,"t":1794427109.362,"type":"stage_progress","stage":"dense","progress":0.5842,"overall":0.4737,"message":"Depth maps: consistency pass 2/2, 1/67"}
+{"seq":261,"t":1794427109.951,"type":"stage_progress","stage":"dense","progress":0.5884,"overall":0.4753,"message":"Depth maps: consistency pass 2/2, 2/67"}
+{"seq":262,"t":1794427110.715,"type":"stage_progress","stage":"dense","progress":0.5925,"overall":0.477,"message":"Depth maps: consistency pass 2/2, 3/67"}
+{"seq":263,"t":1794427111.377,"type":"stage_progress","stage":"dense","progress":0.5967,"overall":0.4787,"message":"Depth maps: consistency pass 2/2, 4/67"}
+{"seq":264,"t":1794427112.134,"type":"stage_progress","stage":"dense","progress":0.6009,"overall":0.4804,"message":"Depth maps: consistency pass 2/2, 5/67"}
+{"seq":265,"t":1794427113.008,"type":"stage_progress","stage":"dense","progress":0.6051,"overall":0.482,"message":"Depth maps: consistency pass 2/2, 6/67"}
+{"seq":266,"t":1794427113.627,"type":"stage_progress","stage":"dense","progress":0.6093,"overall":0.4837,"message":"Depth maps: consistency pass 2/2, 7/67"}
+{"seq":267,"t":1794427114.386,"type":"stage_progress","stage":"dense","progress":0.6134,"overall":0.4854,"message":"Depth maps: consistency pass 2/2, 8/67"}
+{"seq":268,"t":1794427115.232,"type":"stage_progress","stage":"dense","progress":0.6176,"overall":0.487,"message":"Depth maps: consistency pass 2/2, 9/67"}
+{"seq":269,"t":1794427115.909,"type":"stage_progress","stage":"dense","progress":0.6218,"overall":0.4887,"message":"Depth maps: consistency pass 2/2, 10/67"}
+{"seq":270,"t":1794427116.705,"type":"stage_progress","stage":"dense","progress":0.626,"overall":0.4904,"message":"Depth maps: consistency pass 2/2, 11/67"}
+{"seq":271,"t":1794427117.292,"type":"stage_progress","stage":"dense","progress":0.6301,"overall":0.4921,"message":"Depth maps: consistency pass 2/2, 12/67"}
+{"seq":272,"t":1794427118.025,"type":"stage_progress","stage":"dense","progress":0.6343,"overall":0.4937,"message":"Depth maps: consistency pass 2/2, 13/67"}
+{"seq":273,"t":1794427118.744,"type":"stage_progress","stage":"dense","progress":0.6385,"overall":0.4954,"message":"Depth maps: consistency pass 2/2, 14/67"}
+{"seq":274,"t":1794427119.351,"type":"stage_progress","stage":"dense","progress":0.6427,"overall":0.4971,"message":"Depth maps: consistency pass 2/2, 15/67"}
+{"seq":275,"t":1794427120.136,"type":"stage_progress","stage":"dense","progress":0.6469,"overall":0.4987,"message":"Depth maps: consistency pass 2/2, 16/67"}
+{"seq":276,"t":1794427121.068,"type":"stage_progress","stage":"dense","progress":0.651,"overall":0.5004,"message":"Depth maps: consistency pass 2/2, 17/67"}
+{"seq":277,"t":1794427122.233,"type":"stage_progress","stage":"dense","progress":0.6594,"overall":0.5038,"message":"Depth maps: consistency pass 2/2, 19/67"}
+{"seq":278,"t":1794427122.827,"type":"stage_progress","stage":"dense","progress":0.6636,"overall":0.5054,"message":"Depth maps: consistency pass 2/2, 20/67"}
+{"seq":279,"t":1794427123.639,"type":"stage_progress","stage":"dense","progress":0.6678,"overall":0.5071,"message":"Depth maps: consistency pass 2/2, 21/67"}
+{"seq":280,"t":1794427124.36,"type":"stage_progress","stage":"dense","progress":0.672,"overall":0.5088,"message":"Depth maps: consistency pass 2/2, 22/67"}
+{"seq":281,"t":1794427125.061,"type":"stage_progress","stage":"dense","progress":0.6761,"overall":0.5104,"message":"Depth maps: consistency pass 2/2, 23/67"}
+{"seq":282,"t":1794427125.904,"type":"stage_progress","stage":"dense","progress":0.6803,"overall":0.5121,"message":"Depth maps: consistency pass 2/2, 24/67"}
+{"seq":283,"t":1794427126.495,"type":"stage_progress","stage":"dense","progress":0.6845,"overall":0.5138,"message":"Depth maps: consistency pass 2/2, 25/67"}
+{"seq":284,"t":1794427127.321,"type":"stage_progress","stage":"dense","progress":0.6887,"overall":0.5155,"message":"Depth maps: consistency pass 2/2, 26/67"}
+{"seq":285,"t":1794427128.109,"type":"stage_progress","stage":"dense","progress":0.6928,"overall":0.5171,"message":"Depth maps: consistency pass 2/2, 27/67"}
+{"seq":286,"t":1794427128.992,"type":"stage_progress","stage":"dense","progress":0.697,"overall":0.5188,"message":"Depth maps: consistency pass 2/2, 28/67"}
+{"seq":287,"t":1794427129.717,"type":"stage_progress","stage":"dense","progress":0.7012,"overall":0.5205,"message":"Depth maps: consistency pass 2/2, 29/67"}
+{"seq":288,"t":1794427130.468,"type":"stage_progress","stage":"dense","progress":0.7054,"overall":0.5222,"message":"Depth maps: consistency pass 2/2, 30/67"}
+{"seq":289,"t":1794427131.286,"type":"stage_progress","stage":"dense","progress":0.7096,"overall":0.5238,"message":"Depth maps: consistency pass 2/2, 31/67"}
+{"seq":290,"t":1794427132.44,"type":"stage_progress","stage":"dense","progress":0.7137,"overall":0.5255,"message":"Depth maps: consistency pass 2/2, 32/67"}
+{"seq":291,"t":1794427133.107,"type":"stage_progress","stage":"dense","progress":0.7179,"overall":0.5272,"message":"Depth maps: consistency pass 2/2, 33/67"}
+{"seq":292,"t":1794427133.869,"type":"stage_progress","stage":"dense","progress":0.7221,"overall":0.5288,"message":"Depth maps: consistency pass 2/2, 34/67"}
+{"seq":293,"t":1794427134.782,"type":"stage_progress","stage":"dense","progress":0.7263,"overall":0.5305,"message":"Depth maps: consistency pass 2/2, 35/67"}
+{"seq":294,"t":1794427135.667,"type":"stage_progress","stage":"dense","progress":0.7304,"overall":0.5322,"message":"Depth maps: consistency pass 2/2, 36/67"}
+{"seq":295,"t":1794427136.582,"type":"stage_progress","stage":"dense","progress":0.7346,"overall":0.5338,"message":"Depth maps: consistency pass 2/2, 37/67"}
+{"seq":296,"t":1794427137.193,"type":"stage_progress","stage":"dense","progress":0.7388,"overall":0.5355,"message":"Depth maps: consistency pass 2/2, 38/67"}
+{"seq":297,"t":1794427138.032,"type":"stage_progress","stage":"dense","progress":0.743,"overall":0.5372,"message":"Depth maps: consistency pass 2/2, 39/67"}
+{"seq":298,"t":1794427139.118,"type":"stage_progress","stage":"dense","progress":0.7472,"overall":0.5389,"message":"Depth maps: consistency pass 2/2, 40/67"}
+{"seq":299,"t":1794427139.697,"type":"stage_progress","stage":"dense","progress":0.7513,"overall":0.5405,"message":"Depth maps: consistency pass 2/2, 41/67"}
+{"seq":300,"t":1794427140.507,"type":"stage_progress","stage":"dense","progress":0.7555,"overall":0.5422,"message":"Depth maps: consistency pass 2/2, 42/67"}
+{"seq":301,"t":1794427141.165,"type":"stage_progress","stage":"dense","progress":0.7597,"overall":0.5439,"message":"Depth maps: consistency pass 2/2, 43/67"}
+{"seq":302,"t":1794427141.909,"type":"stage_progress","stage":"dense","progress":0.7639,"overall":0.5456,"message":"Depth maps: consistency pass 2/2, 44/67"}
+{"seq":303,"t":1794427142.701,"type":"stage_progress","stage":"dense","progress":0.768,"overall":0.5472,"message":"Depth maps: consistency pass 2/2, 45/67"}
+{"seq":304,"t":1794427143.689,"type":"stage_progress","stage":"dense","progress":0.7722,"overall":0.5489,"message":"Depth maps: consistency pass 2/2, 46/67"}
+{"seq":305,"t":1794427144.373,"type":"stage_progress","stage":"dense","progress":0.7764,"overall":0.5506,"message":"Depth maps: consistency pass 2/2, 47/67"}
+{"seq":306,"t":1794427145.271,"type":"stage_progress","stage":"dense","progress":0.7806,"overall":0.5522,"message":"Depth maps: consistency pass 2/2, 48/67"}
+{"seq":307,"t":1794427146.162,"type":"stage_progress","stage":"dense","progress":0.7848,"overall":0.5539,"message":"Depth maps: consistency pass 2/2, 49/67"}
+{"seq":308,"t":1794427147.497,"type":"stage_progress","stage":"dense","progress":0.789,"overall":0.5556,"message":"Depth maps: consistency pass 2/2, 50/67"}
+{"seq":309,"t":1794427148.608,"type":"stage_progress","stage":"dense","progress":0.7931,"overall":0.5573,"message":"Depth maps: consistency pass 2/2, 51/67"}
+{"seq":310,"t":1794427149.419,"type":"stage_progress","stage":"dense","progress":0.7973,"overall":0.5589,"message":"Depth maps: consistency pass 2/2, 52/67"}
+{"seq":311,"t":1794427150.246,"type":"stage_progress","stage":"dense","progress":0.8015,"overall":0.5606,"message":"Depth maps: consistency pass 2/2, 53/67"}
+{"seq":312,"t":1794427151.217,"type":"stage_progress","stage":"dense","progress":0.8057,"overall":0.5623,"message":"Depth maps: consistency pass 2/2, 54/67"}
+{"seq":313,"t":1794427151.807,"type":"stage_progress","stage":"dense","progress":0.8099,"overall":0.5639,"message":"Depth maps: consistency pass 2/2, 55/67"}
+{"seq":314,"t":1794427152.447,"type":"stage_progress","stage":"dense","progress":0.814,"overall":0.5656,"message":"Depth maps: consistency pass 2/2, 56/67"}
+{"seq":315,"t":1794427153.53,"type":"stage_progress","stage":"dense","progress":0.8182,"overall":0.5673,"message":"Depth maps: consistency pass 2/2, 57/67"}
+{"seq":316,"t":1794427154.314,"type":"stage_progress","stage":"dense","progress":0.8224,"overall":0.569,"message":"Depth maps: consistency pass 2/2, 58/67"}
+{"seq":317,"t":1794427154.931,"type":"stage_progress","stage":"dense","progress":0.8266,"overall":0.5706,"message":"Depth maps: consistency pass 2/2, 59/67"}
+{"seq":318,"t":1794427155.902,"type":"stage_progress","stage":"dense","progress":0.8307,"overall":0.5723,"message":"Depth maps: consistency pass 2/2, 60/67"}
+{"seq":319,"t":1794427156.888,"type":"stage_progress","stage":"dense","progress":0.8349,"overall":0.574,"message":"Depth maps: consistency pass 2/2, 61/67"}
+{"seq":320,"t":1794427157.713,"type":"stage_progress","stage":"dense","progress":0.8391,"overall":0.5756,"message":"Depth maps: consistency pass 2/2, 62/67"}
+{"seq":321,"t":1794427158.544,"type":"stage_progress","stage":"dense","progress":0.8433,"overall":0.5773,"message":"Depth maps: consistency pass 2/2, 63/67"}
+{"seq":322,"t":1794427159.627,"type":"stage_progress","stage":"dense","progress":0.8475,"overall":0.579,"message":"Depth maps: consistency pass 2/2, 64/67"}
+{"seq":323,"t":1794427160.531,"type":"stage_progress","stage":"dense","progress":0.8516,"overall":0.5807,"message":"Depth maps: consistency pass 2/2, 65/67"}
+{"seq":324,"t":1794427161.294,"type":"stage_progress","stage":"dense","progress":0.8558,"overall":0.5823,"message":"Depth maps: consistency pass 2/2, 66/67"}
+{"seq":325,"t":1794427162.701,"type":"stage_progress","stage":"dense","progress":0.86,"overall":0.584,"message":"Depth maps: consistency pass 2/2, 67/67"}
+{"seq":326,"t":1794427163.16,"type":"stage_progress","stage":"dense","progress":0.8707,"overall":0.5883,"message":"Filtering depth maps"}
+{"seq":327,"t":1794427163.592,"type":"stage_progress","stage":"dense","progress":0.8863,"overall":0.5945,"message":"Filtering depth maps"}
+{"seq":328,"t":1794427164.401,"type":"stage_progress","stage":"dense","progress":0.9,"overall":0.6,"message":"Filtering depth maps"}
+{"seq":329,"t":1794427164.83,"type":"stage_progress","stage":"dense","progress":0.9012,"overall":0.6005,"message":"Fusing depth maps into points"}
+{"seq":330,"t":1794427165.342,"type":"stage_progress","stage":"dense","progress":0.9096,"overall":0.6038,"message":"Fusing depth maps into points"}
+{"seq":331,"t":1794427165.799,"type":"stage_progress","stage":"dense","progress":0.9167,"overall":0.6067,"message":"Fusing depth maps into points"}
+{"seq":332,"t":1794427166.345,"type":"stage_progress","stage":"dense","progress":0.9251,"overall":0.61,"message":"Fusing depth maps into points"}
+{"seq":333,"t":1794427166.854,"type":"stage_progress","stage":"dense","progress":0.9334,"overall":0.6134,"message":"Fusing depth maps into points"}
+{"seq":334,"t":1794427167.396,"type":"stage_progress","stage":"dense","progress":0.9406,"overall":0.6162,"message":"Fusing depth maps into points"}
+{"seq":335,"t":1794427167.842,"type":"stage_progress","stage":"dense","progress":0.9478,"overall":0.6191,"message":"Fusing depth maps into points"}
+{"seq":336,"t":1794427168.265,"type":"stage_progress","stage":"dense","progress":0.9561,"overall":0.6224,"message":"Fusing depth maps into points"}
+{"seq":337,"t":1794427168.737,"type":"stage_progress","stage":"dense","progress":0.9609,"overall":0.6244,"message":"Fusing depth maps into points"}
+{"seq":338,"t":1794427169.246,"type":"stage_progress","stage":"dense","progress":0.9693,"overall":0.6277,"message":"Fusing depth maps into points"}
+{"seq":339,"t":1794427169.707,"type":"stage_progress","stage":"dense","progress":0.9764,"overall":0.6306,"message":"Fusing depth maps into points"}
+{"seq":340,"t":1794427171.674,"type":"stage_end","stage":"dense","progress":1.0,"overall":0.64,"message":"","data":{"reused":false,"seconds":287.33,"skipped":false}}
+{"seq":341,"t":1794427171.675,"type":"diagnostics","stage":"dense","progress":0.0,"overall":0.64,"message":"","data":{"dense":{"dense_points":4461367,"depth_maps":67,"depth_map_max_side":1200}}}
+{"seq":342,"t":1794427171.675,"type":"stage_start","stage":"mesh","progress":0.0,"overall":0.64,"message":"","data":{"index":6,"count":9}}
+{"seq":343,"t":1794427171.708,"type":"stage_progress","stage":"mesh","progress":0.0375,"overall":0.6438,"message":"Dense points loaded"}
+{"seq":344,"t":1794427172.518,"type":"stage_progress","stage":"mesh","progress":0.0375,"overall":0.6438,"message":"Dense points loaded"}
+{"seq":345,"t":1794427173.87,"type":"stage_progress","stage":"mesh","progress":0.0383,"overall":0.6438,"message":"Tetrahedralising dense points"}
+{"seq":346,"t":1794427174.369,"type":"stage_progress","stage":"mesh","progress":0.0445,"overall":0.6445,"message":"Tetrahedralising dense points"}
+{"seq":347,"t":1794427174.769,"type":"stage_progress","stage":"mesh","progress":0.0498,"overall":0.645,"message":"Tetrahedralising dense points"}
+{"seq":348,"t":1794427175.169,"type":"stage_progress","stage":"mesh","progress":0.0555,"overall":0.6455,"message":"Tetrahedralising dense points"}
+{"seq":349,"t":1794427175.57,"type":"stage_progress","stage":"mesh","progress":0.0615,"overall":0.6462,"message":"Tetrahedralising dense points"}
+{"seq":350,"t":1794427176.07,"type":"stage_progress","stage":"mesh","progress":0.0732,"overall":0.6473,"message":"Tetrahedralising dense points"}
+{"seq":351,"t":1794427176.57,"type":"stage_progress","stage":"mesh","progress":0.0853,"overall":0.6485,"message":"Tetrahedralising dense points"}
+{"seq":352,"t":1794427177.07,"type":"stage_progress","stage":"mesh","progress":0.0965,"overall":0.6497,"message":"Tetrahedralising dense points"}
+{"seq":353,"t":1794427177.569,"type":"stage_progress","stage":"mesh","progress":0.1074,"overall":0.6507,"message":"Tetrahedralising dense points"}
+{"seq":354,"t":1794427177.969,"type":"stage_progress","stage":"mesh","progress":0.1157,"overall":0.6516,"message":"Tetrahedralising dense points"}
+{"seq":355,"t":1794427178.37,"type":"stage_progress","stage":"mesh","progress":0.1235,"overall":0.6523,"message":"Tetrahedralising dense points"}
+{"seq":356,"t":1794427178.77,"type":"stage_progress","stage":"mesh","progress":0.1332,"overall":0.6533,"message":"Tetrahedralising dense points"}
+{"seq":357,"t":1794427179.17,"type":"stage_progress","stage":"mesh","progress":0.1423,"overall":0.6542,"message":"Tetrahedralising dense points"}
+{"seq":358,"t":1794427179.57,"type":"stage_progress","stage":"mesh","progress":0.1511,"overall":0.6551,"message":"Tetrahedralising dense points"}
+{"seq":359,"t":1794427179.97,"type":"stage_progress","stage":"mesh","progress":0.1605,"overall":0.6561,"message":"Tetrahedralising dense points"}
+{"seq":360,"t":1794427180.37,"type":"stage_progress","stage":"mesh","progress":0.1699,"overall":0.657,"message":"Tetrahedralising dense points"}
+{"seq":361,"t":1794427180.77,"type":"stage_progress","stage":"mesh","progress":0.1793,"overall":0.6579,"message":"Tetrahedralising dense points"}
+{"seq":362,"t":1794427181.17,"type":"stage_progress","stage":"mesh","progress":0.1881,"overall":0.6588,"message":"Tetrahedralising dense points"}
+{"seq":363,"t":1794427181.57,"type":"stage_progress","stage":"mesh","progress":0.1975,"overall":0.6598,"message":"Tetrahedralising dense points"}
+{"seq":364,"t":1794427181.97,"type":"stage_progress","stage":"mesh","progress":0.2071,"overall":0.6607,"message":"Tetrahedralising dense points"}
+{"seq":365,"t":1794427182.47,"type":"stage_progress","stage":"mesh","progress":0.2193,"overall":0.6619,"message":"Tetrahedralising dense points"}
+{"seq":366,"t":1794427182.986,"type":"stage_progress","stage":"mesh","progress":0.225,"overall":0.6625,"message":"Tetrahedralising dense points"}
+{"seq":367,"t":1794427188.882,"type":"stage_progress","stage":"mesh","progress":0.2257,"overall":0.6626,"message":"Weighting visibility"}
+{"seq":368,"t":1794427189.382,"type":"stage_progress","stage":"mesh","progress":0.2326,"overall":0.6633,"message":"Weighting visibility"}
+{"seq":369,"t":1794427189.782,"type":"stage_progress","stage":"mesh","progress":0.2359,"overall":0.6636,"message":"Weighting visibility"}
+{"seq":370,"t":1794427190.182,"type":"stage_progress","stage":"mesh","progress":0.2435,"overall":0.6643,"message":"Weighting visibility"}
+{"seq":371,"t":1794427190.582,"type":"stage_progress","stage":"mesh","progress":0.2524,"overall":0.6652,"message":"Weighting visibility"}
+{"seq":372,"t":1794427190.982,"type":"stage_progress","stage":"mesh","progress":0.2615,"overall":0.6662,"message":"Weighting visibility"}
+{"seq":373,"t":1794427191.382,"type":"stage_progress","stage":"mesh","progress":0.2678,"overall":0.6668,"message":"Weighting visibility"}
+{"seq":374,"t":1794427191.782,"type":"stage_progress","stage":"mesh","progress":0.2719,"overall":0.6672,"message":"Weighting visibility"}
+{"seq":375,"t":1794427192.182,"type":"stage_progress","stage":"mesh","progress":0.2768,"overall":0.6677,"message":"Weighting visibility"}
+{"seq":376,"t":1794427192.582,"type":"stage_progress","stage":"mesh","progress":0.2797,"overall":0.668,"message":"Weighting visibility"}
+{"seq":377,"t":1794427192.984,"type":"stage_progress","stage":"mesh","progress":0.2833,"overall":0.6683,"message":"Weighting visibility"}
+{"seq":378,"t":1794427193.482,"type":"stage_progress","stage":"mesh","progress":0.2873,"overall":0.6687,"message":"Weighting visibility"}
+{"seq":379,"t":1794427193.882,"type":"stage_progress","stage":"mesh","progress":0.2906,"overall":0.6691,"message":"Weighting visibility"}
+{"seq":380,"t":1794427194.282,"type":"stage_progress","stage":"mesh","progress":0.295,"overall":0.6695,"message":"Weighting visibility"}
+{"seq":381,"t":1794427194.682,"type":"stage_progress","stage":"mesh","progress":0.3045,"overall":0.6704,"message":"Weighting visibility"}
+{"seq":382,"t":1794427195.082,"type":"stage_progress","stage":"mesh","progress":0.3175,"overall":0.6717,"message":"Weighting visibility"}
+{"seq":383,"t":1794427195.483,"type":"stage_progress","stage":"mesh","progress":0.3279,"overall":0.6728,"message":"Weighting visibility"}
+{"seq":384,"t":1794427195.883,"type":"stage_progress","stage":"mesh","progress":0.3377,"overall":0.6738,"message":"Weighting visibility"}
+{"seq":385,"t":1794427196.383,"type":"stage_progress","stage":"mesh","progress":0.349,"overall":0.6749,"message":"Weighting visibility"}
+{"seq":386,"t":1794427196.783,"type":"stage_progress","stage":"mesh","progress":0.3592,"overall":0.6759,"message":"Weighting visibility"}
+{"seq":387,"t":1794427197.183,"type":"stage_progress","stage":"mesh","progress":0.3719,"overall":0.6772,"message":"Weighting visibility"}
+{"seq":388,"t":1794427197.583,"type":"stage_progress","stage":"mesh","progress":0.3829,"overall":0.6783,"message":"Weighting visibility"}
+{"seq":389,"t":1794427197.983,"type":"stage_progress","stage":"mesh","progress":0.3926,"overall":0.6793,"message":"Weighting visibility"}
+{"seq":390,"t":1794427198.383,"type":"stage_progress","stage":"mesh","progress":0.3992,"overall":0.6799,"message":"Weighting visibility"}
+{"seq":391,"t":1794427198.783,"type":"stage_progress","stage":"mesh","progress":0.4048,"overall":0.6805,"message":"Weighting visibility"}
+{"seq":392,"t":1794427199.283,"type":"stage_progress","stage":"mesh","progress":0.413,"overall":0.6813,"message":"Weighting visibility"}
+{"seq":393,"t":1794427199.683,"type":"stage_progress","stage":"mesh","progress":0.4178,"overall":0.6818,"message":"Weighting visibility"}
+{"seq":394,"t":1794427200.083,"type":"stage_progress","stage":"mesh","progress":0.4264,"overall":0.6826,"message":"Weighting visibility"}
+{"seq":395,"t":1794427200.483,"type":"stage_progress","stage":"mesh","progress":0.43,"overall":0.683,"message":"Weighting visibility"}
+{"seq":396,"t":1794427200.883,"type":"stage_progress","stage":"mesh","progress":0.4342,"overall":0.6834,"message":"Weighting visibility"}
+{"seq":397,"t":1794427201.283,"type":"stage_progress","stage":"mesh","progress":0.4398,"overall":0.684,"message":"Weighting visibility"}
+{"seq":398,"t":1794427201.683,"type":"stage_progress","stage":"mesh","progress":0.4439,"overall":0.6844,"message":"Weighting visibility"}
+{"seq":399,"t":1794427202.083,"type":"stage_progress","stage":"mesh","progress":0.4493,"overall":0.6849,"message":"Weighting visibility"}
+{"seq":400,"t":1794427202.483,"type":"stage_progress","stage":"mesh","progress":0.4528,"overall":0.6853,"message":"Weighting visibility"}
+{"seq":401,"t":1794427202.883,"type":"stage_progress","stage":"mesh","progress":0.4595,"overall":0.686,"message":"Weighting visibility"}
+{"seq":402,"t":1794427203.283,"type":"stage_progress","stage":"mesh","progress":0.4655,"overall":0.6866,"message":"Weighting visibility"}
+{"seq":403,"t":1794427203.683,"type":"stage_progress","stage":"mesh","progress":0.4689,"overall":0.6869,"message":"Weighting visibility"}
+{"seq":404,"t":1794427204.083,"type":"stage_progress","stage":"mesh","progress":0.4715,"overall":0.6872,"message":"Weighting visibility"}
+{"seq":405,"t":1794427204.484,"type":"stage_progress","stage":"mesh","progress":0.4752,"overall":0.6875,"message":"Weighting visibility"}
+{"seq":406,"t":1794427204.884,"type":"stage_progress","stage":"mesh","progress":0.4781,"overall":0.6878,"message":"Weighting visibility"}
+{"seq":407,"t":1794427205.284,"type":"stage_progress","stage":"mesh","progress":0.481,"overall":0.6881,"message":"Weighting visibility"}
+{"seq":408,"t":1794427205.784,"type":"stage_progress","stage":"mesh","progress":0.4863,"overall":0.6886,"message":"Weighting visibility"}
+{"seq":409,"t":1794427221.525,"type":"stage_progress","stage":"mesh","progress":0.615,"overall":0.7015,"message":"Surface extracted"}
+{"seq":410,"t":1794427222.616,"type":"stage_progress","stage":"mesh","progress":0.63,"overall":0.703,"message":"Cleaning mesh"}
+{"seq":411,"t":1794427233.716,"type":"stage_progress","stage":"mesh","progress":0.69,"overall":0.709,"message":"Cleaning mesh"}
+{"seq":412,"t":1794427240.46,"type":"stage_progress","stage":"mesh","progress":0.69,"overall":0.709,"message":"Cleaning mesh"}
+{"seq":413,"t":1794427243.455,"type":"stage_progress","stage":"mesh","progress":0.69,"overall":0.709,"message":"Cleaning mesh"}
+{"seq":414,"t":1794427243.636,"type":"stage_progress","stage":"mesh","progress":0.7425,"overall":0.7142,"message":"Mesh saved"}
+{"seq":415,"t":1794427245.528,"type":"stage_progress","stage":"mesh","progress":0.775,"overall":0.7175,"message":"Analysing dense points"}
+{"seq":416,"t":1794427246.162,"type":"stage_progress","stage":"mesh","progress":0.825,"overall":0.7225,"message":"Separating object from surroundings"}
+{"seq":417,"t":1794427248.508,"type":"stage_progress","stage":"mesh","progress":0.875,"overall":0.7275,"message":"Checking photographic support"}
+{"seq":418,"t":1794427251.043,"type":"stage_progress","stage":"mesh","progress":0.925,"overall":0.7325,"message":"Simplifying to triangle budget"}
+{"seq":419,"t":1794427273.036,"type":"stage_progress","stage":"mesh","progress":1.0,"overall":0.74,"message":"Mesh cleaned"}
+{"seq":420,"t":1794427273.045,"type":"stage_end","stage":"mesh","progress":1.0,"overall":0.74,"message":"","data":{"reused":false,"seconds":101.37,"skipped":false}}
+{"seq":421,"t":1794427273.046,"type":"stage_start","stage":"texture","progress":0.0,"overall":0.74,"message":"","data":{"index":7,"count":9}}
+{"seq":422,"t":1794427273.046,"type":"stage_progress","stage":"texture","progress":0.01,"overall":0.7422,"message":"Texturing"}
+{"seq":423,"t":1794427273.667,"type":"stage_progress","stage":"texture","progress":0.0333,"overall":0.7473,"message":"Projecting photos onto the surface"}
+{"seq":424,"t":1794427273.904,"type":"stage_progress","stage":"texture","progress":0.0595,"overall":0.7531,"message":"Projecting photos onto the surface"}
+{"seq":425,"t":1794427274.13,"type":"stage_progress","stage":"texture","progress":0.0858,"overall":0.7589,"message":"Projecting photos onto the surface"}
+{"seq":426,"t":1794427274.34,"type":"stage_progress","stage":"texture","progress":0.1088,"overall":0.7639,"message":"Projecting photos onto the surface"}
+{"seq":427,"t":1794427274.576,"type":"stage_progress","stage":"texture","progress":0.1318,"overall":0.769,"message":"Projecting photos onto the surface"}
+{"seq":428,"t":1794427274.808,"type":"stage_progress","stage":"texture","progress":0.1581,"overall":0.7748,"message":"Projecting photos onto the surface"}
+{"seq":429,"t":1794427275.029,"type":"stage_progress","stage":"texture","progress":0.1811,"overall":0.7798,"message":"Projecting photos onto the surface"}
+{"seq":430,"t":1794427275.246,"type":"stage_progress","stage":"texture","progress":0.2106,"overall":0.7863,"message":"Projecting photos onto the surface"}
+{"seq":431,"t":1794427275.504,"type":"stage_progress","stage":"texture","progress":0.2369,"overall":0.7921,"message":"Projecting photos onto the surface"}
+{"seq":432,"t":1794427299.404,"type":"stage_progress","stage":"texture","progress":0.25,"overall":0.795,"message":"Projecting photos onto the surface"}
+{"seq":433,"t":1794427299.404,"type":"stage_progress","stage":"texture","progress":0.8,"overall":0.916,"message":"Building texture atlas"}
+{"seq":434,"t":1794427303.133,"type":"stage_progress","stage":"texture","progress":0.95,"overall":0.949,"message":"Texture atlas built"}
+{"seq":435,"t":1794427303.144,"type":"stage_progress","stage":"texture","progress":0.97,"overall":0.9534,"message":"Texture done"}
+{"seq":436,"t":1794427303.907,"type":"stage_progress","stage":"texture","progress":0.99,"overall":0.9578,"message":"Textured mesh saved"}
+{"seq":437,"t":1794427304.033,"type":"stage_end","stage":"texture","progress":1.0,"overall":0.96,"message":"","data":{"reused":false,"seconds":30.99,"skipped":false}}
+{"seq":438,"t":1794427304.033,"type":"stage_start","stage":"package","progress":0.0,"overall":0.96,"message":"","data":{"index":8,"count":9}}
+{"seq":439,"t":1794427304.035,"type":"stage_progress","stage":"package","progress":0.05,"overall":0.962,"message":"Reading textured mesh"}
+{"seq":440,"t":1794427304.972,"type":"stage_progress","stage":"package","progress":0.2,"overall":0.968,"message":"Measuring photographic support"}
+{"seq":441,"t":1794427309.836,"type":"stage_progress","stage":"package","progress":0.6,"overall":0.984,"message":"Writing model"}
+{"seq":442,"t":1794427310.697,"type":"stage_progress","stage":"package","progress":0.95,"overall":0.998,"message":"Model written"}
+{"seq":443,"t":1794427310.703,"type":"stage_end","stage":"package","progress":1.0,"overall":1.0,"message":"","data":{"seconds":6.67,"skipped":false}}
+{"seq":444,"t":1794427310.712,"type":"artifact","stage":"package","progress":0.0,"overall":1.0,"message":"model.glb","data":{"name":"model.glb","size":13064732,"sha256":"a11ba9d4285f5a9b82f3ce99e6b7884d9688980b2d2f43e59abf0812e5fc2a67","kind":"model"}}
+{"seq":445,"t":1794427310.712,"type":"artifact","stage":"package","progress":0.0,"overall":1.0,"message":"cameras.json","data":{"name":"cameras.json","size":20067,"sha256":"e029a343939e0055d26f9b9a3ea62ff49efcb52c24a1b9089f01918fff1442cd","kind":"cameras"}}
+{"seq":446,"t":1794427310.712,"type":"artifact","stage":"package","progress":0.0,"overall":1.0,"message":"diagnostics.json","data":{"name":"diagnostics.json","size":6746,"sha256":"6da2f5e34b5c4fede9f290ce07859b2a98a7cb0034b7b96d14b7c6305480c6f0","kind":"diagnostics"}}
+{"seq":447,"t":1794427310.712,"type":"diagnostics","stage":"package","progress":0.0,"overall":1.0,"message":"","data":{"mesh":{"vertices":113343,"welded_vertices":100907,"faces":200000,"surface_area":2.409187,"bbox_min":[-0.583461,-0.353522,-0.564578],"bbox_max":[0.588357,0.432211,0.571892],"boundary":{"boundary_edges":1852,"boundary_loops":23,"boundary_length":7.29495},"winding_flipped_for_consistency":false,"object_region":{"faces":121006,"surface_area":1.255346,"well_supported_area_fraction":0.9992,"weak_area_fraction":0.0006,"unsupported_area_fraction":0.0001,"boundary":{"boundary_edges":322,"boundary_loops":4,"boundary_length":1.77185},"size":[0.686612,0.810158,0.662036]},"views_per_vertex_median":19.0,"untextured_area_fraction":0.0},"texture":{"pages":[{"width":4096,"height":4096,"bytes":4508100,"format":"jpeg"},{"width":4096,"height":4096,"bytes":2072525,"format":"jpeg"}]},"surface_coverage":{"azimuth_bins":12,"bands":["facing_down","sideways","facing_up"],"supported_area_fraction":[[0.01003,0.01028,0.00967,0.01,0.0094,0.00411,0.0037,0.00266,0.00107,0.00355,0.00423,0.00665],[0.05927,0.06693,0.06456,0.06865,0.06766,0.04492,0.08781,0.06738,0.06103,0.07056,0.0869,0.04959],[0.0125,0.01512,0.0134,0.01157,0.01014,0.00994,0.00945,0.00887,0.01021,0.00982,0.00885,0.00875]],"weak_area_fraction":[[3e-05,0.0,8e-05,6e-05,1e-05,4e-05,0.00014,0.0001,0.0,0.0,1e-05,0.0],[4e-05,0.00017,9e-05,1e-05,0.0,0.0,0.0,0.0,0.0,0.0,1e-05,0.0],[0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0]],"sideways_bins_supported":12,"kind":"verified_surface","note":"Share of the object-region surface area with photographic support, by the direction the surface faces. Derived from the reconstructed mesh and its evidence."},"timings_s":{"ingest":1.18,"features":28.84,"matching":66.14,"sfm":16.37,"undistort":1.61,"dense":287.33,"mesh":101.37,"texture":30.99,"package":6.67,"total":540.5},"peak_rss_mb_by_stage":{"ingest":578.2,"features":5140.8,"matching":1366.0,"sfm":1520.4,"undistort":1532.0,"dense":4862.6,"mesh":5061.4,"texture":4880.4,"package":2899.4},"mesh_cleanup":{"raw_faces":2806912,"faces_in_region":2548992,"unsupported_faces_removed":334,"unsupported_area_fraction":0.0074,"stray_components_removed":3,"stray_faces_removed":50,"decimated":true,"nonmanifold_vertices_split":15,"faces":200000,"vertices":100907},"warnings":[{"code":"no_focal_prior","message":"Some photos carry no focal-length metadata; the focal length is estimated from the images alone, which is less reliable."}]}}

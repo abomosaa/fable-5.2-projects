@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="dev.pocket3d.core.edit.EditModelTest" tests="10" skipped="0" failures="0" errors="0" timestamp="2026-11-12T10:55:38.853Z" hostname="h4-pc" time="0.124">
+  <properties/>
+  <testcase name="documentSurvivesSerialisation" classname="dev.pocket3d.core.edit.EditModelTest" time="0.047"/>
+  <testcase name="userCalibrationOverridesReconstructionScaleAndCanBeCleared" classname="dev.pocket3d.core.edit.EditModelTest" time="0.0"/>
+  <testcase name="repairedSurfaceStaysMarkedThroughSimplification" classname="dev.pocket3d.core.edit.EditModelTest" time="0.061"/>
+  <testcase name="deleteFacesIsSkippedWhenItNoLongerMatchesTheMesh" classname="dev.pocket3d.core.edit.EditModelTest" time="0.001"/>
+  <testcase name="strayPiecesAndHoleRepairAreExplicitAndFlagged" classname="dev.pocket3d.core.edit.EditModelTest" time="0.006"/>
+  <testcase name="measurementsStayAttachedThroughReorientAndUndo" classname="dev.pocket3d.core.edit.EditModelTest" time="0.005"/>
+  <testcase name="centerOnGroundPutsLowestPointAtZeroAndCentreOnAxis" classname="dev.pocket3d.core.edit.EditModelTest" time="0.001"/>
+  <testcase name="undoRedoReplayIsExactAndBaseIsNeverMutated" classname="dev.pocket3d.core.edit.EditModelTest" time="0.002"/>
+  <testcase name="editsThatWouldDeleteEverythingAreRefusedWithANote" classname="dev.pocket3d.core.edit.EditModelTest" time="0.0"/>
+  <testcase name="reorientNeverChangesSize" classname="dev.pocket3d.core.edit.EditModelTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

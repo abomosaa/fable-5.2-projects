@@ -1,0 +1,177 @@
+[
+ {
+  "name": "Leather White (PBR texture)",
+  "author": "Rob Tuytel (All)",
+  "source_url": "https://polyhaven.com/a/leather_white",
+  "download_url": [
+   "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/leather_white/leather_white_diff_2k.jpg",
+   "https://dl.polyhaven.org/file/ph-assets/Textures/png/2k/leather_white/leather_white_nor_gl_2k.png",
+   "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/leather_white/leather_white_rough_2k.jpg",
+   "https://dl.polyhaven.org/file/ph-assets/Textures/png/2k/leather_white/leather_white_disp_2k.png"
+  ],
+  "license": "CC0 1.0 Universal",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "local_paths": [
+   "assets_src/arms/ph_tex_leather_white/leather_white_diff_2k.jpg",
+   "assets_src/arms/ph_tex_leather_white/leather_white_nor_gl_2k.png",
+   "assets_src/arms/ph_tex_leather_white/leather_white_rough_2k.jpg",
+   "assets_src/arms/ph_tex_leather_white/leather_white_disp_2k.png"
+  ],
+  "sha256": {
+   "leather_white_diff_2k.jpg": "5b2d3f7c2f6f10ea65a644353a9f4e0ce87a6737e09b4cb38c1e1ad3257c86a4",
+   "leather_white_nor_gl_2k.png": "7766d7a06e2f1d84cb87a1b82e36bff13cc2b3daaf9a02bca15e14b491f414b6",
+   "leather_white_rough_2k.jpg": "ccf43d38aadaf2b16bf10b587c082a81928cf63f028bd59d061181fb7967af8c",
+   "leather_white_disp_2k.png": "44c81aef15d1e5aa09e51ccad9b8fc7bd7709a4e1e37f648c76127f90c20b60b"
+  },
+  "used_for": "glove leather (palm, finger pads, reinforcement panels, cuff strap): grain normal/height, roughness and albedo variation"
+ },
+ {
+  "name": "Scuba Suede (PBR texture)",
+  "author": "colormass (Photography), Rico Cilliers (Processing)",
+  "source_url": "https://polyhaven.com/a/scuba_suede",
+  "download_url": [
+   "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/scuba_suede/scuba_suede_diff_2k.jpg",
+   "https://dl.polyhaven.org/file/ph-assets/Textures/png/2k/scuba_suede/scuba_suede_nor_gl_2k.png",
+   "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/scuba_suede/scuba_suede_rough_2k.jpg",
+   "https://dl.polyhaven.org/file/ph-assets/Textures/png/2k/scuba_suede/scuba_suede_disp_2k.png"
+  ],
+  "license": "CC0 1.0 Universal",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "local_paths": [
+   "assets_src/arms/ph_tex_scuba_suede/scuba_suede_diff_2k.jpg",
+   "assets_src/arms/ph_tex_scuba_suede/scuba_suede_nor_gl_2k.png",
+   "assets_src/arms/ph_tex_scuba_suede/scuba_suede_rough_2k.jpg",
+   "assets_src/arms/ph_tex_scuba_suede/scuba_suede_disp_2k.png"
+  ],
+  "sha256": {
+   "scuba_suede_diff_2k.jpg": "9c0b3ed2ffc4862c571940b139680ac6f612041b9454bbddff21f90dc027033c",
+   "scuba_suede_nor_gl_2k.png": "6d63ff495e1a079fceaad03c09ad7cd12b5f4be433af0c152216f926e09b67db",
+   "scuba_suede_rough_2k.jpg": "fc43e105b4cffb5246753d7cbf43bb2cda79c084bd159daf28ce8cfa82573a30",
+   "scuba_suede_disp_2k.png": "fd413074935ae9b6a0688370fb3ab0dfee4c7fef39aeeac3033666f5e9ec7f86"
+  },
+  "used_for": "glove cuff (neoprene/synthetic suede) and sleeve elbow reinforcement: fibre normal/height, roughness and albedo variation"
+ },
+ {
+  "name": "Bi Stretch (PBR texture)",
+  "author": "colormass (Photography), Rico Cilliers (Processing)",
+  "source_url": "https://polyhaven.com/a/bi_stretch",
+  "download_url": [
+   "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/bi_stretch/bi_stretch_diff_2k.jpg",
+   "https://dl.polyhaven.org/file/ph-assets/Textures/png/2k/bi_stretch/bi_stretch_nor_gl_2k.png",
+   "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/bi_stretch/bi_stretch_rough_2k.jpg",
+   "https://dl.polyhaven.org/file/ph-assets/Textures/png/2k/bi_stretch/bi_stretch_disp_2k.png"
+  ],
+  "license": "CC0 1.0 Universal",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "local_paths": [
+   "assets_src/arms/ph_tex_bi_stretch/bi_stretch_diff_2k.jpg",
+   "assets_src/arms/ph_tex_bi_stretch/bi_stretch_nor_gl_2k.png",
+   "assets_src/arms/ph_tex_bi_stretch/bi_stretch_rough_2k.jpg",
+   "assets_src/arms/ph_tex_bi_stretch/bi_stretch_disp_2k.png"
+  ],
+  "sha256": {
+   "bi_stretch_diff_2k.jpg": "67cd1633c6417a39448eb03b76c15b974f728691e95429d86cd493276f20f6b0",
+   "bi_stretch_nor_gl_2k.png": "18d10f3bae15323abad12bbe83b8fe7eebfd8ff06a3592cf2ac45c00d60c9d95",
+   "bi_stretch_rough_2k.jpg": "bf04b6f037688dd155568b7582df52d7bf1555d1873daf2f0d1b59c3d77ecbec",
+   "bi_stretch_disp_2k.png": "21a614196e52bfe72407d1da61f921f80e5f1eeeac7453fe4632b7338c5d387b"
+  },
+  "used_for": "glove back-of-hand / finger-back stretch woven (softshell): weave normal/height, roughness and albedo variation"
+ },
+ {
+  "name": "Rough Linen (PBR texture)",
+  "author": "colormass (Photography), Rico Cilliers (Processing)",
+  "source_url": "https://polyhaven.com/a/rough_linen",
+  "download_url": [
+   "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/rough_linen/rough_linen_diff_2k.jpg",
+   "https://dl.polyhaven.org/file/ph-assets/Textures/png/2k/rough_linen/rough_linen_nor_gl_2k.png",
+   "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/rough_linen/rough_linen_rough_2k.jpg",
+   "https://dl.polyhaven.org/file/ph-assets/Textures/png/2k/rough_linen/rough_linen_disp_2k.png"
+  ],
+  "license": "CC0 1.0 Universal",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "local_paths": [
+   "assets_src/arms/ph_tex_rough_linen/rough_linen_diff_2k.jpg",
+   "assets_src/arms/ph_tex_rough_linen/rough_linen_nor_gl_2k.png",
+   "assets_src/arms/ph_tex_rough_linen/rough_linen_rough_2k.jpg",
+   "assets_src/arms/ph_tex_rough_linen/rough_linen_disp_2k.png"
+  ],
+  "sha256": {
+   "rough_linen_diff_2k.jpg": "e71016e08dfebea1dd4e8a2a675e3b617a889a782af782f1abb795906f4db1b4",
+   "rough_linen_nor_gl_2k.png": "1de2d1e782a54340b9a047a78382c1a0218cc1933bdffb331d6ed5fa2164e932",
+   "rough_linen_rough_2k.jpg": "48400d48fa203882bf5d984d5beb2f95edb1550309924601c018f2c4f3f80731",
+   "rough_linen_disp_2k.png": "f50d326854357cfcce3b8af26169502d7065282f787439e0b63a7fed23444a55"
+  },
+  "used_for": "sleeve fabric (plain-weave cotton): weave normal/height, roughness and albedo variation"
+ },
+ {
+  "name": "Denim Fabric 05 (PBR texture)",
+  "author": "colormass (Photography), Rico Cilliers (Processing)",
+  "source_url": "https://polyhaven.com/a/denim_fabric_05",
+  "download_url": [
+   "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/denim_fabric_05/denim_fabric_05_diff_2k.jpg",
+   "https://dl.polyhaven.org/file/ph-assets/Textures/png/2k/denim_fabric_05/denim_fabric_05_nor_gl_2k.png",
+   "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/denim_fabric_05/denim_fabric_05_rough_2k.jpg",
+   "https://dl.polyhaven.org/file/ph-assets/Textures/png/2k/denim_fabric_05/denim_fabric_05_disp_2k.png"
+  ],
+  "license": "CC0 1.0 Universal",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "local_paths": [
+   "assets_src/arms/ph_tex_denim_fabric_05/denim_fabric_05_diff_2k.jpg",
+   "assets_src/arms/ph_tex_denim_fabric_05/denim_fabric_05_nor_gl_2k.png",
+   "assets_src/arms/ph_tex_denim_fabric_05/denim_fabric_05_rough_2k.jpg",
+   "assets_src/arms/ph_tex_denim_fabric_05/denim_fabric_05_disp_2k.png"
+  ],
+  "sha256": {
+   "denim_fabric_05_diff_2k.jpg": "cc35e9f17127c0ecea382adcf0d568d78cb8ac1ae26f2ea0b58736ba6c5559f0",
+   "denim_fabric_05_nor_gl_2k.png": "43d2311dde535ad749decf73a1e646404f33a25c0e12eaae8731f8a17be8793b",
+   "denim_fabric_05_rough_2k.jpg": "ee18a2cf8484fddf8aaf4a6011aec138b7b18cd1439dd5ff88fdaf7f643fe01f",
+   "denim_fabric_05_disp_2k.png": "37043a7fd50980fa3e22becc080e7e960d6622d321ae1c5cd2c08ac3f20f233e"
+  },
+  "used_for": "sleeve fabric (cotton twill): weave normal/height, roughness and albedo variation"
+ },
+ {
+  "name": "9mm Pistol | First Person Animations (first-person arms: mesh, UVs, skin weights, glove panel/seam layout)",
+  "author": "1Matzh (rig/animation; https://sketchfab.com/1Matzh); gloved arms from \"Modern Soldier\" by Blue-Spirit (https://sketchfab.com/3d-models/modern-soldier-358b4fb07f0146cb9b9063342db5897a, CC-BY); pistol \"9mm Pistol\" by Urpo (CC-BY; pistol not used for the arms)",
+  "source_url": "https://sketchfab.com/3d-models/9mm-pistol-first-person-animations-c26d7f5aa72f4b01a6da4578caa8f07f",
+  "download_url": [
+   "https://raw.githubusercontent.com/VixidDev/Heatstroke/96fdc4c94ba6c37786b0af6e8caf44b6cf2913f0/Game/assets/guns/pistol2/scene.gltf",
+   "https://raw.githubusercontent.com/VixidDev/Heatstroke/96fdc4c94ba6c37786b0af6e8caf44b6cf2913f0/Game/assets/guns/pistol2/scene.bin",
+   "https://raw.githubusercontent.com/VixidDev/Heatstroke/96fdc4c94ba6c37786b0af6e8caf44b6cf2913f0/Game/assets/guns/pistol2/textures/Gloves_baseColor.png",
+   "https://raw.githubusercontent.com/VixidDev/Heatstroke/96fdc4c94ba6c37786b0af6e8caf44b6cf2913f0/Game/assets/guns/pistol2/textures/Gloves_emissive.png"
+  ],
+  "license": "Creative Commons Attribution 4.0 International (CC-BY-4.0) - credit required",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "local_paths": [
+   "assets_src/models/fp_arms_pistol_1matzh/files/scene.gltf",
+   "assets_src/models/fp_arms_pistol_1matzh/files/scene.bin",
+   "assets_src/models/fp_arms_pistol_1matzh/files/textures/Gloves_baseColor.png",
+   "assets_src/models/fp_arms_pistol_1matzh/files/textures/Gloves_emissive.png",
+   "assets_src/models/fp_arms_pistol_1matzh/SOURCE.txt"
+  ],
+  "sha256": {
+   "scene.gltf": "c933b5f0815109ec7ec92fea122385289942b60c8be2501bb168bcce7a8890c3",
+   "scene.bin": "2d814a210049c419cb56de71b0c986e377634d4ad1d8f73e0167cb0d929f0cdb",
+   "textures/Gloves_baseColor.png": "f79b26e53f810841a85cfd738bd88ae259a11250c087594a91d2ff19478e5818",
+   "textures/Gloves_emissive.png": "a73fcc9970e4601ab3335a6bfacda86c8a26ae786928aabf1b50c75bd8ab9f7a"
+  },
+  "used_for": "arms mesh (Sleeves, Gloves) incl. UVs and skin weights; Gloves_emissive.png (UV-island outlines) gives the glove seam lines, Gloves_baseColor.png (panel luminance) gives the glove reinforcement-panel zones. The stylised colour/emissive/logo content itself is NOT carried over."
+ },
+ {
+  "name": "Fists (2023) | First Person Animations (same arms; sleeve cloth-fold normal map)",
+  "author": "1Matzh (https://sketchfab.com/1Matzh); gloved arms from \"Modern Soldier\" by Blue-Spirit (https://sketchfab.com/3d-models/modern-soldier-358b4fb07f0146cb9b9063342db5897a, CC-BY)",
+  "source_url": "https://sketchfab.com/3d-models/fists-ultimate-fps-animations-b178e95c4b7f4e95b52a12752aff57d0",
+  "download_url": [
+   "https://raw.githubusercontent.com/VixidDev/Heatstroke/96fdc4c94ba6c37786b0af6e8caf44b6cf2913f0/Game/assets/guns/fists/textures/Uniform_normal.png"
+  ],
+  "license": "Creative Commons Attribution 4.0 International (CC-BY-4.0) - credit required",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "local_paths": [
+   "assets_src/models/fp_arms_fists_1matzh/files/textures/Uniform_normal.png",
+   "assets_src/models/fp_arms_fists_1matzh/SOURCE.txt"
+  ],
+  "sha256": {
+   "textures/Uniform_normal.png": "24b430735b31c9a2aa49c78cc7b65f2bc9c36eaa2a65a0ac3b4e578b1ad3cff3"
+  },
+  "used_for": "sleeve cloth folds: low-pass filtered Uniform_normal.png re-baked to the new sleeve UV layout (game/assets/arms/textures/sleeves_normal.png)"
+ }
+]

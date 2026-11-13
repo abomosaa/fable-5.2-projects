@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="dev.pocket3d.viewer.ExportTest" tests="11" skipped="0" failures="0" errors="0" timestamp="2026-11-12T10:56:41.844Z" hostname="h4-pc" time="0.186">
+  <properties/>
+  <testcase name="emptyMeshIsRefused" classname="dev.pocket3d.viewer.ExportTest" time="0.001"/>
+  <testcase name="safeBaseNames" classname="dev.pocket3d.viewer.ExportTest" time="0.001"/>
+  <testcase name="missingOriginalExtrasStillProduceAScaleStatement" classname="dev.pocket3d.viewer.ExportTest" time="0.004"/>
+  <testcase name="arEstimatedScaleIsLabelledAsSuch" classname="dev.pocket3d.viewer.ExportTest" time="0.008"/>
+  <testcase name="realModelExportsAndVerifies" classname="dev.pocket3d.viewer.ExportTest" time="0.14"/>
+  <testcase name="objZipContainsEverythingNeeded" classname="dev.pocket3d.viewer.ExportTest" time="0.022"/>
+  <testcase name="calibratedGlbIsBakedToMetres" classname="dev.pocket3d.viewer.ExportTest" time="0.002"/>
+  <testcase name="exportMetadataDoesNotRepeatStatementsThatEditsMadeUntrue" classname="dev.pocket3d.viewer.ExportTest" time="0.002"/>
+  <testcase name="plyKeepsEvidenceAndRepairedFlags" classname="dev.pocket3d.viewer.ExportTest" time="0.001"/>
+  <testcase name="selfCheckCatchesCorruptedWrites" classname="dev.pocket3d.viewer.ExportTest" time="0.003"/>
+  <testcase name="uncalibratedGlbStaysInArbitraryUnitsAndSaysSo" classname="dev.pocket3d.viewer.ExportTest" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,111 @@
+{
+ "name": "06-review-regressions",
+ "failures": 0,
+ "steps": [
+  {
+   "label": "layout fits 1280×800: no horizontal overflow, inspector and all top-bar controls on screen",
+   "ok": true,
+   "detail": "{\"iw\":1280,\"ih\":800,\"scrollW\":1280,\"offscreen\":[],\"rightPanel\":[996,1280],\"topbarRight\":1280,\"help\":1236}"
+  },
+  {
+   "label": "layout fits 1366×768: no horizontal overflow, inspector and all top-bar controls on screen",
+   "ok": true,
+   "detail": "{\"iw\":1366,\"ih\":768,\"scrollW\":1366,\"offscreen\":[],\"rightPanel\":[1050,1366],\"topbarRight\":1366,\"help\":1322}"
+  },
+  {
+   "label": "layout fits 1100×700: no horizontal overflow, inspector and all top-bar controls on screen",
+   "ok": true,
+   "detail": "{\"iw\":1100,\"ih\":700,\"scrollW\":1100,\"offscreen\":[],\"rightPanel\":[856,1100],\"topbarRight\":1100,\"help\":1066}"
+  },
+  {
+   "label": "Tab commits a field; Ctrl+Z with focus in the next field undoes it and the field shows the model value",
+   "ok": true,
+   "detail": "{\"afterTab\":{\"width\":14,\"past\":[\"Add Link\",\"Edit Link · Width\"]},\"width\":10,\"shown\":\"10\",\"past\":[\"Add Link\"]}"
+  },
+  {
+   "label": "redo from a focused field",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "Esc discards the typed draft: no commit, no undo step",
+   "ok": true,
+   "detail": "{\"width\":14,\"past\":[\"Add Link\",\"Edit Link · Width\"]}"
+  },
+  {
+   "label": "Ctrl+Z with an uncommitted draft only discards the draft",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "Ctrl+Z right after ticking a checkbox undoes it",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "five ↑ nudges are one undo step",
+   "ok": true,
+   "detail": "{\"width\":19,\"steps\":1}"
+  },
+  {
+   "label": "↑ after typing nudges from the typed value",
+   "ok": true,
+   "detail": "{\"width\":31}"
+  },
+  {
+   "label": "scientific notation and mixed-unit sums are accepted",
+   "ok": true,
+   "detail": "{\"sci\":60,\"sum\":85.4}"
+  },
+  {
+   "label": "after clicking a toolbar button with the mouse, Space still means Play/Pause",
+   "ok": true,
+   "detail": "running"
+  },
+  {
+   "label": "7 files with invalid values are rejected with a specific message; open project untouched; nothing stored",
+   "ok": true,
+   "detail": "{\"string length\":\"Cannot open file: the file contains 1 invalid value: part #1 \\\"Link\\\": Length A–B must be a finite number (found \\\"abc\\\"). Nothing was opened.\",\"negative length\":\"Cannot open file: the file contains 1 invalid value: part #1 \\\"Link\\\": Length A–B = -30 is outside the allowed range 1 … 10000. Nothing was opened.\",\"string pose\":\"Cannot open file: the file contains 1 invalid value: part #1 \\\"Link\\\": pose x must be a finite number (found \\\"left\\\"). Nothing was opened.\",\"garbage joints\":\"Cannot open file: the file contains 3 invalid values: joint #1 is not an object; joint #2 is not an object; joint #3: id must be a non-empty text. Not\",\"holes not a list\":\"Cannot open file: the file contains 1 invalid value: part #2 \\\"Plate\\\": Holes must be a list. Nothing was opened.\",\"garbage sim\":\"Cannot open file: the file contains 3 invalid values: sim.gravity must be an object; sim.floor must be an object; sim.dt (timestep) must be a finite n\",\"dt zero\":\"Cannot open file: the file contains 1 invalid value: sim.dt (timestep) = 0 is outside the allowed range 0.00001 … 0.02. Nothing was opened.\"}"
+  },
+  {
+   "label": "no uncaught exceptions while feeding corrupted files",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "Slide tool: a click inside the guide's slot attaches the slider to the guide (same layer, no interference)",
+   "ok": true,
+   "detail": "{\"a\":\"Slotted guide\",\"b\":\"Slider block\",\"type\":\"prismatic\",\"sameLayer\":true,\"events\":[]}"
+  },
+  {
+   "label": "ground pivot pins the hole where it is (the part does not jump)",
+   "ok": true,
+   "detail": "{\"pose\":{\"x\":12,\"y\":-12,\"angle\":0,\"z\":5.5},\"a\":\"ground\",\"anchorA\":{\"x\":12,\"y\":-12}}"
+  },
+  {
+   "label": "Gear mesh gear→link and Cam contact link→gear are refused at pick time with the reason; no joint is created",
+   "ok": true,
+   "detail": "{\"r1\":{\"toast\":\"Gear mesh needs two spur gears; \\\"Link\\\" is a link. No joint was created.\",\"joints\":2},\"r2\":{\"toast\":\"Cam contact needs exactly one plate cam and one follower. No joint was created.\",\"joints\":2}}"
+  },
+  {
+   "label": "link whose holes are as wide as the link: error in the inspector and diagnostics; STL export refused, nothing downloaded",
+   "ok": true,
+   "detail": "{\"errText\":\"Error: Pin holes ⌀12.2 mm (pin 12 + clearance 0.2) are as wide as the 12 mm link, so they were NOT cut: this link has no\",\"toast\":\"Link was NOT exported: Model: Pin holes ⌀12.2 mm (pin 12 + clearance 0.2) are as wide as the 12 mm link, so they were NOT cut: this link has no pivot holes. Widen the link or use a smaller pin. Export refused: the solid would not be the part that was specified.\",\"downloads\":0,\"checkClass\":\"check-item error\",\"diag\":[\"Link: part cannot be built as specified\"]}"
+  },
+  {
+   "label": "inch preset: status bar, inspector read-outs and the export check line all use inch / lb / lbf units",
+   "ok": true,
+   "detail": "{\"status\":\"pan · Wheel: zoom\\nin · lb · lbf · lbf·in\",\"line\":\"P1 Slotted guide\\n4.567 × 0.8661 × 0.1969 in · 0.4592 in³ · 320 tris · closed manifold\",\"inertia\":\"Inertia (about COM, Z)\\n0.004095 lb·in²\"}"
+  },
+  {
+   "label": "DC motor: an empty stall torque is rejected in the inspector (a default was set on switching type)",
+   "ok": true,
+   "detail": "{\"maxTorque\":100000,\"type\":\"dc\"}"
+  },
+  {
+   "label": "no console/page errors in the whole session",
+   "ok": true,
+   "detail": ""
+  }
+ ]
+}

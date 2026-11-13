@@ -1,0 +1,51 @@
+{
+  "id": "gvp-holocene-volcanoes",
+  "provider": "Smithsonian Institution – Global Volcanism Program (GVP)",
+  "dataset": "Volcanoes of the World (VOTW) – Holocene volcano list (WFS)",
+  "description": "Reference list of the roughly 1,200 volcanoes known or thought to have erupted during the Holocene (the past ~12,000 years), with volcano type, last known eruption year, elevation, tectonic setting and evidence category.",
+  "homepageUrl": "https://volcano.si.edu/",
+  "documentationUrl": "https://volcano.si.edu/database/webservices.cfm",
+  "sourceUrls": [
+    "https://webservices.volcano.si.edu/geoserver/GVP-VOTW/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=GVP-VOTW:Smithsonian_VOTW_Holocene_Volcanoes&outputFormat=application/json&propertyName={facts-only property list}"
+  ],
+  "allowedHosts": ["webservices.volcano.si.edu"],
+  "coverage": {
+    "geographic": "Global, including submarine volcanoes.",
+    "temporal": "Reference data: volcanoes with Holocene activity; the last-eruption year reflects the current database version."
+  },
+  "updateCadence": { "upstream": "Database versions are released a few times a year (VOTW 5.x)", "pollIntervalSec": 604800, "staleAfterSec": 2592000 },
+  "auth": { "type": "none", "envVars": [] },
+  "attribution": "Global Volcanism Program, Smithsonian Institution – Volcanoes of the World (https://doi.org/10.5479/si.GVP.VOTW5-2026.5.4)",
+  "license": {
+    "name": "Smithsonian Institution Terms of Use – usage conditions apply (non-commercial use; cite GVP Volcanoes of the World)",
+    "url": "https://www.si.edu/termsofuse",
+    "redistribution": "restricted",
+    "nonCommercialOnly": true,
+    "notes": "The WFS capabilities document states Fees: NONE and AccessConstraints: NONE but no licence. Smithsonian content that is not marked CC0 may be used for personal, educational and other non-commercial purposes; commercial use needs prior permission. GVP asks for the citation 'Global Volcanism Program, 2026. [Database] Volcanoes of the World (v. 5.4.0). Distributed by Smithsonian Institution, compiled by Venzke, E.' The Smithsonian documentation and terms pages are behind a browser verification challenge and could not be read directly when this adapter was written; this entry rests on search-engine excerpts of those pages and should be re-checked by a human before any commercial use. To stay conservative the adapter requests facts only (no geological summaries, photos or captions) and links to the GVP volcano page."
+  },
+  "limitations": [
+    "A reference catalogue, not a monitoring feed: it does not say whether a volcano is erupting now (see the weekly volcanic activity layer).",
+    "Last-eruption years are those of the current database version; negative years are BCE and many volcanoes have no dated eruption.",
+    "A single summit coordinate represents each volcano, including large volcanic fields and calderas.",
+    "The evidence category ranges from observed eruptions to uncertain evidence of Holocene activity."
+  ],
+  "confidenceNotes": "No confidence value is assigned. GVP's own 'evidence category' (Eruption Observed, Eruption Dated, Evidence Credible, Evidence Uncertain, Unrest / Holocene) is kept verbatim as an attribute. No severity: this is reference data.",
+  "retention": { "note": "Reference data: kept while the volcano is listed upstream; replaced on every successful weekly fetch." },
+  "snapshot": "full",
+  "http": { "minIntervalMs": 5000, "timeoutMs": 90000, "cacheTtlSec": 86400 },
+  "enabledByDefault": true,
+  "layers": [
+    {
+      "id": "volcanoes-holocene",
+      "name": "Holocene volcanoes (GVP)",
+      "description": "Volcanoes active in the past ~12,000 years from the Smithsonian Global Volcanism Program, with type and last known eruption.",
+      "domain": "hazards",
+      "category": "volcano",
+      "geometry": "point",
+      "timeModel": "reference",
+      "render": { "type": "point", "color": "brown", "shape": "triangle", "minZoom": 2 },
+      "retentionDays": null,
+      "defaultOn": false
+    }
+  ]
+}

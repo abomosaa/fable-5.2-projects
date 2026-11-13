@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="data:," />
+    <title>Terraforge export viewer (stock three.js)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      html,
+      body {
+        margin: 0;
+        height: 100%;
+        overflow: hidden;
+        background: #9db4c8;
+        font: 12px/1.45 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+        color: #e8eef2;
+      }
+      canvas {
+        display: block;
+        width: 100vw;
+        height: 100vh;
+      }
+      #hud {
+        position: fixed;
+        left: 10px;
+        top: 10px;
+        max-width: 46ch;
+        padding: 8px 10px;
+        background: rgba(12, 18, 24, 0.72);
+        border-radius: 6px;
+        white-space: pre-wrap;
+        pointer-events: none;
+      }
+      #hud.error {
+        background: rgba(120, 20, 20, 0.9);
+      }
+      #hud:empty {
+        display: none;
+      }
+    </style>
+    <!-- Served by tools/verify-export.mjs: /three/ -> node_modules/three/, /export/ -> the export folder -->
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "/three/build/three.module.js",
+          "three/addons/": "/three/examples/jsm/"
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div id="hud">loading…</div>
+    <script type="module" src="./viewer.js"></script>
+  </body>
+</html>

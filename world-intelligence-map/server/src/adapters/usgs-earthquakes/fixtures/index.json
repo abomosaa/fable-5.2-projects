@@ -1,0 +1,13 @@
+{
+  "capturedAt": "2026-11-10T17:44:00Z",
+  "notes": "Captured from the live USGS summary feeds and trimmed (largest events plus an even sample). The malformed variant was authored by hand from the same schema.",
+  "routes": [
+    {
+      "match": "/summary/2.5_week.geojson",
+      "file": "2.5_week.geojson",
+      "lastModified": "Tue, 10 Nov 2026 17:43:37 GMT",
+      "variants": { "malformed": "2.5_week.malformed.geojson" }
+    },
+    { "match": "/summary/4.5_month.geojson", "file": "4.5_month.geojson", "lastModified": "Tue, 10 Nov 2026 17:43:37 GMT" }
+  ]
+}

@@ -1,0 +1,11 @@
+[gd_resource type="StandardMaterial3D" format=3]
+
+[ext_resource type="Texture2D" path="res://assets/env/tex/paper_target.png" id="1_728y0"]
+
+[resource]
+cull_mode = 2
+albedo_color = Color(0.9, 0.9, 0.88, 1)
+albedo_texture = ExtResource("1_728y0")
+roughness = 0.9
+backlight_enabled = true
+backlight = Color(0.25, 0.24, 0.2, 1)

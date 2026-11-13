@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="dev.pocket3d.viewer.DataParsingTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2026-11-12T10:56:40.669Z" hostname="h4-pc" time="0.148">
+  <properties/>
+  <testcase name="sparsePreviewRejectsDamagedFilesWithReadableMessages" classname="dev.pocket3d.viewer.DataParsingTest" time="0.015"/>
+  <testcase name="corruptModelFilesGiveClearErrorsNotCrashes" classname="dev.pocket3d.viewer.DataParsingTest" time="0.01"/>
+  <testcase name="realSparsePreviewParses" classname="dev.pocket3d.viewer.DataParsingTest" time="0.043"/>
+  <testcase name="realGlbExtrasCamerasAndDiagnostics" classname="dev.pocket3d.viewer.DataParsingTest" time="0.079"/>
+  <testcase name="extrasAndDiagnosticsAreLenient" classname="dev.pocket3d.viewer.DataParsingTest" time="0.001"/>
+  <testcase name="sparsePreviewDecodesLittleEndianFloatsAndColours" classname="dev.pocket3d.viewer.DataParsingTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

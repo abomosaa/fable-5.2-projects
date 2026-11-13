@@ -1,0 +1,27 @@
+{
+  "name": "world-intelligence-map",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Public-source intelligence world map: many independent public datasets normalised into one explorable operational view.",
+  "license": "MIT",
+  "type": "module",
+  "engines": { "node": ">=22.13" },
+  "workspaces": ["server", "web"],
+  "scripts": {
+    "start": "npm run build && node server/dist/index.js --mode=live",
+    "demo": "npm run build && node server/dist/index.js --mode=fixture",
+    "dev": "node scripts/dev.mjs",
+    "build": "npm run build -w web && npm run build -w server",
+    "typecheck": "npm run typecheck -w server && npm run typecheck -w web && tsc --noEmit -p e2e/tsconfig.json",
+    "test": "npm run test -w server && npm run test -w web",
+    "test:e2e": "playwright test -c e2e/playwright.config.ts",
+    "bench": "npm run bench -w server",
+    "manifest": "npm run manifest -w server",
+    "verify": "node scripts/verify.mjs"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "^4.10.0",
+    "@playwright/test": "^1.50.0",
+    "typescript": "^5.7.0"
+  }
+}

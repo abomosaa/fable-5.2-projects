@@ -1,0 +1,68 @@
+{
+  "id": "opensky",
+  "provider": "The OpenSky Network",
+  "dataset": "Live aircraft state vectors (REST API /states/all)",
+  "description": "Current ADS-B / Mode S state vectors of airborne aircraft received by the volunteer OpenSky sensor network: position, altitude, velocity, track, vertical rate, squawk and callsign exactly as broadcast.",
+  "homepageUrl": "https://opensky-network.org/",
+  "documentationUrl": "https://openskynetwork.github.io/opensky-api/rest.html",
+  "sourceUrls": [
+    "https://opensky-network.org/api/states/all",
+    "https://auth.opensky-network.org/auth/realms/opensky-network/protocol/openid-connect/token"
+  ],
+  "allowedHosts": ["opensky-network.org", "auth.opensky-network.org"],
+  "coverage": {
+    "geographic": "Only where volunteer receivers of the network have line of sight: dense over Europe and North America, sparse or absent over oceans, most of Africa, and large parts of Asia and South America.",
+    "temporal": "Current state only. Anonymous requests always return the most recent state vectors at 10-second resolution; a state vector disappears about 15 seconds after the last message."
+  },
+  "updateCadence": {
+    "upstream": "State vectors are refreshed every 5 s (authenticated) or 10 s (anonymous)",
+    "pollIntervalSec": 900,
+    "staleAfterSec": 3600
+  },
+  "auth": {
+    "type": "oauth",
+    "envVars": [
+      { "name": "OPENSKY_CLIENT_ID", "required": false, "description": "client_id of an OpenSky API client (OAuth2 client-credentials flow). Optional: without it the anonymous quota applies." },
+      { "name": "OPENSKY_CLIENT_SECRET", "required": false, "description": "client_secret belonging to OPENSKY_CLIENT_ID. Both must be set for authenticated requests." }
+    ],
+    "setup": "IMPORTANT: OpenSky's terms require a prior written agreement for any operational use of the REST API (integration into a live product, service or automated system, even internal and even for non-profit or government users) and a written licence for any commercial entity. Obtain that agreement first (contact@opensky-network.org); this source is therefore disabled by default. Credentials are optional: log in to your OpenSky account, open the Account page, create an API client and set OPENSKY_CLIENT_ID and OPENSKY_CLIENT_SECRET. The adapter exchanges them for a 30-minute Bearer token at auth.opensky-network.org. Without credentials the anonymous quota (400 credits/day, 4 credits per global query) applies, which is what the 15-minute poll interval is sized for. Do not register multiple accounts.",
+    "obtainUrl": "https://opensky-network.org/"
+  },
+  "attribution": "The OpenSky Network, https://opensky-network.org – Schäfer, Strohmeier, Lenders, Martinovic, Wilhelm: \"Bringing up OpenSky: A large-scale ADS-B sensor network for research\", ACM/IEEE IPSN 2014",
+  "license": {
+    "name": "OpenSky Network General Terms of Use & Data License Agreement – non-profit research and education only; written licence required for operational or commercial use",
+    "url": "https://opensky-network.org/about/terms-of-use",
+    "redistribution": "restricted",
+    "nonCommercialOnly": true,
+    "notes": "Terms as read on 2026-11-10 (copy archived 2026-10-14): the licence is limited to non-profit research and non-profit education. Any use by a for-profit or commercial entity, and any operational use of the REST API in a live product, service or automated system (even internal, even non-profit or governmental), requires a previous written agreement with OpenSky Network. The data may not be distributed or made available to third parties (section 3.iii); publications must cite the IPSN 2014 paper and de-identify aircraft identifiers (sections 3.i, 4.i); copies must be expunged when the research ends. For these reasons this source ships disabled and its bundled fixture is synthetic, not captured OpenSky data."
+  },
+  "limitations": [
+    "Licence: running this adapter in a deployed, automatically polling system is 'operational use' under OpenSky's terms and needs a prior written agreement; without one, use is limited to non-profit research and education and data must not be passed on to third parties.",
+    "Crowd-sourced receiver coverage: aircraft outside receiver range (oceans, remote regions) and aircraft without ADS-B/Mode S transponders are simply absent – absence is not evidence that no aircraft is there.",
+    "The REST API carries no MLAT positions; some military, government and privacy-flagged aircraft are not distributed by the network.",
+    "Anonymous quota is 400 credits per day and a global query costs 4, so positions are refreshed only every 15 minutes: the map shows a sparse snapshot, not a continuous track.",
+    "OpenSky may block requests from cloud/hyperscaler IP ranges.",
+    "Callsign, squawk and altitude are self-reported by the transponder and can be wrong or deliberately misleading; 'originCountry' is only the state that allocated the ICAO 24-bit address block, not the operator's nationality or the aircraft's location."
+  ],
+  "confidenceNotes": "No per-record confidence is published. Positions are transponder self-reports relayed by volunteer receivers without independent verification. Severity 3 is assigned by this application only to the emergency transponder codes 7500, 7600 and 7700 as broadcast; such codes are frequently set by mistake.",
+  "retention": { "note": "Only the latest position per aircraft plus the short recent path are kept; observations are purged after 1 day, in line with OpenSky's requirement not to retain data longer than needed." },
+  "snapshot": "full",
+  "http": { "timeoutMs": 45000, "maxRetries": 1, "minIntervalMs": 10000 },
+  "enabledByDefault": false,
+  "layers": [
+    {
+      "id": "aircraft",
+      "name": "Aircraft (OpenSky)",
+      "description": "Airborne aircraft from the latest OpenSky state-vector snapshot, with identifiers exactly as broadcast (ICAO24 address, callsign). Aircraft on the ground are not shown.",
+      "domain": "transport",
+      "category": "aircraft",
+      "geometry": "track",
+      "timeModel": "snapshot",
+      "render": { "type": "track", "color": "teal", "shape": "plane" },
+      "freshForSec": 900,
+      "liveMaxAgeSec": 1800,
+      "retentionDays": 1,
+      "defaultOn": false
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+[
+ {"wait": 2.5, "do": "screenshot", "name": "spawn"},
+ {"wait": 0.2, "do": "look", "yaw": 150, "pitch": 5, "dur": 0.4},
+ {"wait": 0.8, "do": "screenshot", "name": "back"},
+ {"wait": 0.2, "do": "look", "yaw": 60, "pitch": -10, "dur": 0.4},
+ {"wait": 0.8, "do": "screenshot", "name": "left_wall"},
+ {"wait": 0.2, "do": "look", "yaw": 150, "pitch": -50, "dur": 0.4},
+ {"wait": 0.8, "do": "screenshot", "name": "down_bay"},
+ {"wait": 0.2, "do": "look", "yaw": 0, "pitch": 55, "dur": 0.3},
+ {"wait": 0.3, "do": "press", "action": "aim"},
+ {"wait": 0.9, "do": "screenshot", "name": "ads_bay"},
+ {"wait": 0.2, "do": "release", "action": "aim"},
+ {"wait": 0.3, "do": "teleport", "x": 2.0, "z": -9.0, "yaw": 180},
+ {"wait": 1.2, "do": "screenshot", "name": "bay_from_downrange"},
+ {"wait": 0.2, "do": "state", "tag": "end"},
+ {"wait": 0.2, "do": "quit"}
+]

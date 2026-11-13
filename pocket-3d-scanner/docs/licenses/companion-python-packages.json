@@ -1,0 +1,534 @@
+[
+ {
+  "name": "aiohappyeyeballs",
+  "version": "2.7.1",
+  "license": "PSF-2.0",
+  "direct": false,
+  "home": ""
+ },
+ {
+  "name": "aiohttp",
+  "version": "3.14.5",
+  "license": "Apache-2.0 AND MIT",
+  "direct": true,
+  "home": ""
+ },
+ {
+  "name": "aiosignal",
+  "version": "1.4.0",
+  "license": "Apache 2.0",
+  "direct": false,
+  "home": "https://github.com/aio-libs/aiosignal"
+ },
+ {
+  "name": "annotated-types",
+  "version": "0.8.0",
+  "license": "MIT",
+  "direct": false,
+  "home": ""
+ },
+ {
+  "name": "asttokens",
+  "version": "3.0.2",
+  "license": "Apache 2.0",
+  "direct": false,
+  "home": "https://github.com/gristlabs/asttokens"
+ },
+ {
+  "name": "attrs",
+  "version": "26.1.0",
+  "license": "MIT",
+  "direct": false,
+  "home": ""
+ },
+ {
+  "name": "blinker",
+  "version": "1.9.0",
+  "license": "MIT License",
+  "direct": false,
+  "home": ""
+ },
+ {
+  "name": "certifi",
+  "version": "2026.10.23",
+  "license": "MPL-2.0",
+  "direct": false,
+  "home": "https://github.com/certifi/python-certifi"
+ },
+ {
+  "name": "cffi",
+  "version": "2.1.1",
+  "license": "MIT-0",
+  "direct": false,
+  "home": ""
+ },
+ {
+  "name": "charset-normalizer",
+  "version": "3.5.2",
+  "license": "MIT",
+  "direct": false,
+  "home": ""
+ },
+ {
+  "name": "click",
+  "version": "8.5.1",
+  "license": "BSD-3-Clause",
+  "direct": false,
+  "home": ""
+ },
+ {
+  "name": "comm",
+  "version": "0.2.3",
+  "license": "BSD 3-Clause License",
+  "direct": false,
+  "home": ""
+ },
+ {
+  "name": "ConfigArgParse",
+  "version": "1.9.0",
+  "license": "MIT",
+  "direct": false,
+  "home": "https://github.com/bw2/ConfigArgParse"
+ },
+ {
+  "name": "cryptography",
+  "version": "50.0.2",
+  "license": "Apache-2.0 OR BSD-3-Clause",
+  "direct": true,
+  "home": ""
+ },
+ {
+  "name": "dash",
+  "version": "4.5.0",
+  "license": "MIT",
+  "direct": false,
+  "home": "https://plotly.com/dash"
+ },
+ {
+  "name": "executing",
+  "version": "2.3.0",
+  "license": "MIT",
+  "direct": false,
+  "home": ""
+ },
+ {
+  "name": "fastjsonschema",
+  "version": "2.22.3",
+  "license": "BSD-3-Clause",
+  "direct": false,
+  "home": "https://github.com/horejsek/python-fastjsonschema"
+ },
+ {
+  "name": "Flask",
+  "version": "3.1.3",
+  "license": "BSD-3-Clause",
+  "direct": false,
+  "home": ""
+ },
+ {
+  "name": "frozenlist",
+  "version": "1.8.0",
+  "license": "Apache-2.0",
+  "direct": false,
+  "home": "https://github.com/aio-libs/frozenlist"
+ },
+ {
+  "name": "idna",
+  "version": "3.20",
+  "license": "BSD-3-Clause",
+  "direct": false,
+  "home": ""
+ },
+ {
+  "name": "importlib_metadata",
+  "version": "10.2.0",
+  "license": "Apache-2.0",
+  "direct": false,
+  "home": ""
+ },
+ {
+  "name": "ipython",
+  "version": "9.18.1",
+  "license": "BSD-3-Clause",
+  "direct": false,
+  "home": ""
+ },
+ {
+  "name": "ipython_pygments_lexers",
+  "version": "1.1.1",
+  "license": "BSD License",
+  "direct": false,
+  "home": ""
+ },
+ {
+  "name": "ipywidgets",
+  "version": "8.1.9",
+  "license": "BSD 3-Clause License",
+  "direct": false,
+  "home": "http://jupyter.org"
+ },
+ {
+  "name": "itsdangerous",
+  "version": "2.2.0",
+  "license": "BSD License",
+  "direct": false,
+  "home": ""
+ },
+ {
+  "name": "janus",
+  "version": "2.0.0",
+  "license": "Apache 2",
+  "direct": false,
+  "home": "https://github.com/aio-libs/janus"
+ },
+ {
+  "name": "jedi",
+  "version": "0.20.1",
+  "license": "MIT",
+  "direct": false,
+  "home": "https://github.com/davidhalter/jedi"
+ },
+ {
+  "name": "Jinja2",
+  "version": "3.1.6",
+  "license": "BSD License",
+  "direct": false,
+  "home": ""
+ },
+ {
+  "name": "jsonschema",
+  "version": "4.26.0",
+  "license": "MIT",
+  "direct": false,
+  "home": ""
+ },
+ {
+  "name": "jsonschema-specifications",
+  "version": "2025.9.1",
+  "license": "MIT",
+  "direct": false,
+  "home": ""
+ },
+ {
+  "name": "jupyter_core",
+  "version": "5.9.1",
+  "license": "BSD-3-Clause",
+  "direct": false,
+  "home": ""
+ },
+ {
+  "name": "jupyterlab_widgets",
+  "version": "3.0.17",
+  "license": "Copyright (c) 2015 Project Jupyter Contributors",
+  "direct": false,
+  "home": ""
+ },
+ {
+  "name": "lazy-importer",
+  "version": "0.1.0",
+  "license": "Apache-2.0",
+  "direct": false,
+  "home": ""
+ },
+ {
+  "name": "MarkupSafe",
+  "version": "3.0.4",
+  "license": "BSD-3-Clause",
+  "direct": false,
+  "home": ""
+ },
+ {
+  "name": "matplotlib-inline",
+  "version": "0.2.2",
+  "license": "BSD-3-Clause",
+  "direct": false,
+  "home": ""
+ },
+ {
+  "name": "multidict",
+  "version": "7.2.1",
+  "license": "Apache-2.0",
+  "direct": false,
+  "home": ""
+ },
+ {
+  "name": "narwhals",
+  "version": "2.28.0",
+  "license": "MIT",
+  "direct": false,
+  "home": ""
+ },
+ {
+  "name": "nbformat",
+  "version": "5.11.1",
+  "license": "BSD 3-Clause License",
+  "direct": false,
+  "home": ""
+ },
+ {
+  "name": "nest-asyncio",
+  "version": "1.6.0",
+  "license": "BSD",
+  "direct": false,
+  "home": "https://github.com/erdewit/nest_asyncio"
+ },
+ {
+  "name": "numpy",
+  "version": "2.5.4",
+  "license": "BSD-3-Clause AND 0BSD AND MIT AND Zlib AND CC0-1.0",
+  "direct": true,
+  "home": ""
+ },
+ {
+  "name": "open3d",
+  "version": "0.20.0",
+  "license": "MIT",
+  "direct": true,
+  "home": "https://www.open3d.org"
+ },
+ {
+  "name": "packaging",
+  "version": "26.3",
+  "license": "Apache-2.0 OR BSD-2-Clause",
+  "direct": false,
+  "home": ""
+ },
+ {
+  "name": "parso",
+  "version": "0.8.7",
+  "license": "MIT",
+  "direct": false,
+  "home": "https://github.com/davidhalter/parso"
+ },
+ {
+  "name": "pexpect",
+  "version": "4.9.0",
+  "license": "ISC license",
+  "direct": false,
+  "home": "https://pexpect.readthedocs.io/"
+ },
+ {
+  "name": "pillow",
+  "version": "13.0.0",
+  "license": "MIT-CMU",
+  "direct": true,
+  "home": ""
+ },
+ {
+  "name": "pillow_heif",
+  "version": "1.8.1",
+  "license": "BSD-3-Clause",
+  "direct": false,
+  "home": "https://github.com/bigcat88/pillow_heif"
+ },
+ {
+  "name": "pip",
+  "version": "24.0",
+  "license": "MIT",
+  "direct": false,
+  "home": ""
+ },
+ {
+  "name": "platformdirs",
+  "version": "4.14.5",
+  "license": "MIT",
+  "direct": false,
+  "home": ""
+ },
+ {
+  "name": "plotly",
+  "version": "7.1.0",
+  "license": "MIT",
+  "direct": false,
+  "home": ""
+ },
+ {
+  "name": "prompt_toolkit",
+  "version": "3.0.53",
+  "license": "BSD License",
+  "direct": false,
+  "home": ""
+ },
+ {
+  "name": "propcache",
+  "version": "0.5.4",
+  "license": "Apache-2.0",
+  "direct": false,
+  "home": "https://github.com/aio-libs/propcache"
+ },
+ {
+  "name": "psutil",
+  "version": "7.2.2",
+  "license": "BSD-3-Clause",
+  "direct": true,
+  "home": "https://github.com/giampaolo/psutil"
+ },
+ {
+  "name": "ptyprocess",
+  "version": "0.7.0",
+  "license": "UNKNOWN",
+  "direct": false,
+  "home": "https://github.com/pexpect/ptyprocess"
+ },
+ {
+  "name": "pure_eval",
+  "version": "0.2.4",
+  "license": "MIT",
+  "direct": false,
+  "home": "http://github.com/alexmojaki/pure_eval"
+ },
+ {
+  "name": "pycolmap",
+  "version": "4.2.1",
+  "license": "BSD-3-Clause",
+  "direct": true,
+  "home": ""
+ },
+ {
+  "name": "pycparser",
+  "version": "3.12",
+  "license": "BSD-3-Clause",
+  "direct": false,
+  "home": ""
+ },
+ {
+  "name": "pydantic",
+  "version": "2.14.3",
+  "license": "MIT",
+  "direct": false,
+  "home": ""
+ },
+ {
+  "name": "pydantic_core",
+  "version": "2.50.4",
+  "license": "MIT",
+  "direct": false,
+  "home": "https://github.com/pydantic/pydantic"
+ },
+ {
+  "name": "Pygments",
+  "version": "2.21.0",
+  "license": "BSD-2-Clause",
+  "direct": false,
+  "home": ""
+ },
+ {
+  "name": "qrcode",
+  "version": "8.2",
+  "license": "BSD",
+  "direct": true,
+  "home": "https://github.com/lincolnloop/python-qrcode"
+ },
+ {
+  "name": "referencing",
+  "version": "0.37.0",
+  "license": "MIT",
+  "direct": false,
+  "home": ""
+ },
+ {
+  "name": "requests",
+  "version": "2.34.2",
+  "license": "Apache-2.0",
+  "direct": false,
+  "home": ""
+ },
+ {
+  "name": "retrying",
+  "version": "1.4.2",
+  "license": "Apache-2.0",
+  "direct": false,
+  "home": ""
+ },
+ {
+  "name": "rpds-py",
+  "version": "2026.9.1",
+  "license": "MIT",
+  "direct": false,
+  "home": ""
+ },
+ {
+  "name": "scipy",
+  "version": "1.18.1",
+  "license": "BSD-3-Clause",
+  "direct": true,
+  "home": ""
+ },
+ {
+  "name": "setuptools",
+  "version": "84.2.1",
+  "license": "MIT",
+  "direct": false,
+  "home": ""
+ },
+ {
+  "name": "stack-data",
+  "version": "0.6.3",
+  "license": "MIT",
+  "direct": false,
+  "home": "http://github.com/alexmojaki/stack_data"
+ },
+ {
+  "name": "traitlets",
+  "version": "5.16.1",
+  "license": "BSD 3-Clause License",
+  "direct": false,
+  "home": ""
+ },
+ {
+  "name": "typing-inspection",
+  "version": "0.4.5",
+  "license": "MIT",
+  "direct": false,
+  "home": ""
+ },
+ {
+  "name": "typing_extensions",
+  "version": "4.16.0",
+  "license": "PSF-2.0",
+  "direct": false,
+  "home": ""
+ },
+ {
+  "name": "urllib3",
+  "version": "2.8.0",
+  "license": "MIT",
+  "direct": false,
+  "home": ""
+ },
+ {
+  "name": "wcwidth",
+  "version": "0.9.4",
+  "license": "MIT License",
+  "direct": false,
+  "home": ""
+ },
+ {
+  "name": "Werkzeug",
+  "version": "3.1.9",
+  "license": "BSD-3-Clause",
+  "direct": false,
+  "home": ""
+ },
+ {
+  "name": "widgetsnbextension",
+  "version": "4.0.16",
+  "license": "BSD 3-Clause License",
+  "direct": false,
+  "home": "http://jupyter.org"
+ },
+ {
+  "name": "yarl",
+  "version": "1.25.1",
+  "license": "Apache-2.0",
+  "direct": false,
+  "home": "https://github.com/aio-libs/yarl"
+ },
+ {
+  "name": "zipp",
+  "version": "4.1.2",
+  "license": "MIT",
+  "direct": false,
+  "home": ""
+ }
+]

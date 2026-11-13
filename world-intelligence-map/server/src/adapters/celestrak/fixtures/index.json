@@ -1,0 +1,10 @@
+{
+  "capturedAt": "2026-11-10T17:49:00Z",
+  "notes": "Captured from the live CelesTrak GP API (FORMAT=json) on 2026-11-10 and trimmed to at most 40 objects per group (stations: all 19, including ISS (ZARYA) and CSS (TIANHE)). Element epochs are as captured (2026-11-09/10), i.e. under two days old at the fixture epoch. Positions are computed by the adapter at the fixture clock's time, so no re-timing is needed. The malformed variant is hand-authored.",
+  "routes": [
+    { "match": "GROUP=stations", "file": "gp-stations.json", "variants": { "malformed": "gp-stations.malformed.json" } },
+    { "match": "GROUP=gnss", "file": "gp-gnss.json" },
+    { "match": "GROUP=weather", "file": "gp-weather.json" },
+    { "match": "GROUP=resource", "file": "gp-resource.json" }
+  ]
+}

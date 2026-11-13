@@ -1,0 +1,8 @@
+file            status    reasons  warnings                            inl   scale  gain  zncc  resPx  pairs  via       mask  sigma
+closeup_01.jpg  accepted           color_profile_unknown               569   5.46   5.46  0.98  1.63   2      overview  0.0   1.31 
+closeup_02.jpg  accepted           partial_mask,color_profile_unknown  181   5.93   5.93  0.93  1.65   3      overview  0.06  0.98 
+closeup_03.jpg  accepted           color_profile_unknown               425   5.63   5.63  0.98  1.95   3      overview  0.0   0.87 
+closeup_04.jpg  accepted           partial_mask,color_profile_unknown  326   5.54   5.54  0.94  2.16   3      overview  0.1   0.94 
+closeup_05.jpg  accepted           partial_mask,color_profile_unknown  1481  3.05   3.05  0.98  2.08   5      overview  0.2   0.93 
+closeup_06.jpg  accepted           partial_mask,color_profile_unknown  1332  2.67   2.25  0.97  1.79   3      overview  0.08  1.07 
+closeup_07.jpg  accepted           color_profile_unknown               886   2.29   2.29  0.98  1.44   1      overview  0.0   1.1  

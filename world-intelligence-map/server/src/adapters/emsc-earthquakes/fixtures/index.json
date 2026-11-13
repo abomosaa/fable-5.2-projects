@@ -1,0 +1,7 @@
+{
+  "capturedAt": "2026-11-10T17:56:00Z",
+  "notes": "Captured from the live SeismicPortal FDSN event service (format=json, minmag=4, start=2026-11-03) and trimmed from 248 to 138 events: every M5+ event plus every second smaller one; metadata.count adjusted to match. The malformed variant was authored by hand from the same schema.",
+  "routes": [
+    { "match": "/fdsnws/event/1/query", "file": "query.json", "variants": { "malformed": "query.malformed.json" } }
+  ]
+}

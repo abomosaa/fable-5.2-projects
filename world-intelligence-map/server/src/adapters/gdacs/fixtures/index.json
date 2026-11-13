@@ -1,0 +1,8 @@
+{
+  "capturedAt": "2026-11-10T17:56:00Z",
+  "notes": "Both files were captured from the live GDACS services. rss.xml is https://www.gdacs.org/xml/rss.xml trimmed from 287 to 69 items (all 7 earthquakes, 3 cyclones, 16 floods and 9 droughts; every eighth current and every sixth non-current forest fire); the 'Records number' comment was adjusted and the UTF-8 byte-order mark dropped, items are otherwise unmodified. search.json is the untrimmed response of the event-list API for eventlist=TC;FL;VO;DR, fromDate=2026-10-27, toDate=2026-11-10 (50 events, 28 of which are also in the RSS feed). The malformed variants were authored by hand from the same schemas.",
+  "routes": [
+    { "match": "/xml/rss.xml", "file": "rss.xml", "lastModified": "Tue, 10 Nov 2026 17:55:45 GMT", "variants": { "malformed": "rss.malformed.xml" } },
+    { "match": "/geteventlist/SEARCH", "file": "search.json", "variants": { "malformed": "search.malformed.json" } }
+  ]
+}

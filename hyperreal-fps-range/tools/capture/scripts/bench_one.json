@@ -1,0 +1,8 @@
+[
+ {"wait": 3.0, "do": "bench_begin", "tag": "spawn"},
+ {"wait": 4.0, "do": "bench_end"},
+ {"wait": 0.2, "do": "teleport", "x": 6.4, "z": 0.6, "yaw": 0},
+ {"wait": 2.0, "do": "bench_begin", "tag": "pad"},
+ {"wait": 4.0, "do": "bench_end"},
+ {"wait": 0.2, "do": "quit"}
+]

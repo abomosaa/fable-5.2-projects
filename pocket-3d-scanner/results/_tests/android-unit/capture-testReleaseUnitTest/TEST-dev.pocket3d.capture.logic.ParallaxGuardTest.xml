@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="dev.pocket3d.capture.logic.ParallaxGuardTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2026-11-12T10:55:29.299Z" hostname="h4-pc" time="0.034">
+  <properties/>
+  <testcase name="orbitingKeepsTheObjectCentredAndIsNotFlagged" classname="dev.pocket3d.capture.logic.ParallaxGuardTest" time="0.01"/>
+  <testcase name="flatOrUnrelatedFramesGiveNoShiftRatherThanAWrongOne" classname="dev.pocket3d.capture.logic.ParallaxGuardTest" time="0.007"/>
+  <testcase name="turningOnTheSpotIsFlaggedAfterTwoStepsAndPausesAutoCapture" classname="dev.pocket3d.capture.logic.ParallaxGuardTest" time="0.001"/>
+  <testcase name="abstainsWhenTheCentreCannotBeTrackedOrTheStepIsTiny" classname="dev.pocket3d.capture.logic.ParallaxGuardTest" time="0.003"/>
+  <testcase name="usesATypicalFocalLengthWhenTheCameraReportsNone" classname="dev.pocket3d.capture.logic.ParallaxGuardTest" time="0.002"/>
+  <testcase name="measuresKnownShiftsOfTheCentreWithSubPixelAccuracy" classname="dev.pocket3d.capture.logic.ParallaxGuardTest" time="0.01"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

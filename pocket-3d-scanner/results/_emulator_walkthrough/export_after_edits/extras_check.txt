@@ -1,0 +1,8 @@
+holes_preserved = false
+repaired_note = "Holes were closed with synthetic surface on the phone (explicit repair). Those faces were not photographed; they use the material flagged pocket3d_repaired and have zero confidence."
+suggested_crop = "<absent>"
+edit_ops = ["Crop to box", "Remove stray pieces", "Repair holes (synthetic)", "Simplify to 50k faces", "Delete selection"]
+scale = {"units": "meters", "source": "user_reference", "meters_per_unit": 1.0, "relative_uncertainty": 0.05692308801518694, "note": "Scale from a user-marked reference distance, baked into the coordinates. One-sigma relative uncertainty as stated."}
+units = "<absent>"
+materials ['scan_0', 'Repaired (unobserved)']
+{"file":"results/_emulator_walkthrough/export_after_edits/final_check_edit.glb","validatorVersion":"2.0.0-dev.3.10","errors":0,"warnings":0,"infos":1,"hints":0,"generator":"Pocket 3D Scanner","drawCalls":2,"vertices":30572,"triangles":49984,"materials":2,"hasTextures":true,"images":["image/jpeg 4096x4096"],"messages":[],"otherCodes":["UNUSED_OBJECT"]}

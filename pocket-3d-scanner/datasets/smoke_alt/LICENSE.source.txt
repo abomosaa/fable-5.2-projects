@@ -1,0 +1,13 @@
+DATASET   : smoke_alt - 12 downscaled photographs derived from ../concave ("The Townley Well-head",
+            British Museum, photographs by Daniel Pett)
+LICENSE   : Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)
+            *** NON-COMMERCIAL, SHARE-ALIKE *** - as an adaptation it must stay under CC BY-NC-SA 4.0.
+SOURCE    : https://github.com/BritishMuseumDH/townleyRomanWellhead (commit 6d0f9240f1e54404a611c3cbec33d4707bef3d31)
+VERIFIED  : 2026-11-11 - see ../concave/LICENSE.source.txt for the verbatim excerpts and
+            ../concave/upstream/LICENSE.md for the full legal text.
+ATTRIBUTION: "The Townley Well-head", photographs by Daniel Pett, British Museum, CC BY-NC-SA 4.0.
+
+STATEMENT OF CHANGES
+  The 12 images are MODIFIED copies: each was downscaled from 4928x3264 to 1200x795 and re-encoded as JPEG
+  (ImageMagick, quality 90). See README.md. Do not commit these files to a repository distributed under a
+  more permissive license without this notice.

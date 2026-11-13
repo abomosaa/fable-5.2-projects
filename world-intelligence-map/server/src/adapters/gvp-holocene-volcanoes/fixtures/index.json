@@ -1,0 +1,7 @@
+{
+  "capturedAt": "2026-11-10T18:08:00Z",
+  "notes": "Captured from the live GVP WFS (GetFeature with the adapter's facts-only propertyName list) and trimmed from 1,214 to 155 volcanoes: an even sample of every GVP region in proportion to its size, plus well-known volcanoes (Etna, Vesuvius, Kilauea, Fuji, Krakatau, Merapi, Popocatepetl, St. Helens, Eyjafjallajokull, Erebus, Nyiragongo, Pinatubo, …) and border volcanoes with two-country strings. Features are unmodified; totalFeatures/numberMatched/numberReturned were adjusted to 155. The malformed variant was authored by hand from the same schema.",
+  "routes": [
+    { "match": "typeName=GVP-VOTW:Smithsonian_VOTW_Holocene_Volcanoes", "file": "holocene_volcanoes.json", "variants": { "malformed": "holocene_volcanoes.malformed.json" } }
+  ]
+}

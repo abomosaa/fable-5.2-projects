@@ -1,0 +1,8 @@
+{
+  "capturedAt": "2026-11-10T17:49:00Z",
+  "notes": "Captured from the live EONET v3 API. events.recent.json is the response to status=all&days=30 trimmed from 877 to 159 events: all 16 tropical cyclones, all 29 IRWIN wildfires, every still-open and every multi-position GDACS wildfire plus every eighth closed one, the 10 flood events with the smallest polygons (the full response carries flood outlines of up to 120 KB each) and 6 of 11 icebergs. events.open-longlived.json is the response to status=open&category=volcanoes,seaLakeIce,severeStorms trimmed from 70 to 50 events (all volcanoes and storms, 15 of 35 icebergs). Events are unmodified; only whole events were dropped. The malformed variant was authored by hand from the same schema (it also contains a valid storm that crosses the antimeridian).",
+  "routes": [
+    { "match": "/api/v3/events?status=all&days=30", "file": "events.recent.json", "variants": { "malformed": "events.recent.malformed.json" } },
+    { "match": "/api/v3/events?status=open&category=", "file": "events.open-longlived.json" }
+  ]
+}

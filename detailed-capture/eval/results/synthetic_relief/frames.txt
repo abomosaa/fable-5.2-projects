@@ -1,0 +1,10 @@
+file            status     reasons       warnings      inl   scale  gain  zncc  resPx  pairs  via                 mask  sigma
+closeup_01.jpg  accepted                 partial_mask  653   2.51   2.51  1.0   0.76   1      overview+neighbour  0.36  1.19 
+closeup_02.jpg  accepted                 partial_mask  1193  2.53   1.86  1.0   0.64   3      overview            0.18  1.22 
+closeup_03.jpg  accepted                               70    2.51   2.51  1.0   0.0    0      overview            0.0   0.7  
+closeup_04.jpg  accepted                 partial_mask  1495  2.51   1.96  1.0   0.0    0      overview            0.43  1.38 
+closeup_05.jpg  rejected   inconsistent                1137  2.56   2.56  1.0   0.65   4      overview            0.52  1.3  
+closeup_06.jpg  accepted                 partial_mask  557   2.54   2.54  1.0   0.73   2      overview            0.34  1.16 
+closeup_07.jpg  uncertain  parallax                    1653  2.54   2.11  1.0   1.0    1      overview            0.21  1.38 
+closeup_08.jpg  rejected   inconsistent                879   2.55   1.82  1.0   0.47   1      overview            0.56  1.9  
+closeup_09.jpg  accepted                 partial_mask  970   2.53   1.81  1.0   0.0    0      overview            0.3   1.54 

@@ -1,0 +1,8 @@
+{
+  "capturedAt": "2026-11-10T18:01:00Z",
+  "notes": "Both population files are the complete, unmodified live responses of the UNHCR population API for limit=1000&page=1&yearFrom=2023&yearTo=2026 with coo_all=true (622 rows) and coa_all=true (537 rows); reporting years 2023–2025 are present (2026 is not published yet). The malformed variant of the origin view was authored by hand from the same schema.",
+  "routes": [
+    { "match": "coo_all=true", "file": "population.coo_all.json", "variants": { "malformed": "population.coo_all.malformed.json" } },
+    { "match": "coa_all=true", "file": "population.coa_all.json" }
+  ]
+}

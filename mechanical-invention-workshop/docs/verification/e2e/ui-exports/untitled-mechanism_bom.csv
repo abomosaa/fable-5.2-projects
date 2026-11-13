@@ -1,0 +1,3 @@
+item,part_numbers,name,qty,category,kind,spec,material,process,mass_each_g,mass_total_g,note
+1,P1,Sketched part,1,custom,plate,"Sketched part ""Sketch 1"" 60 × 20 × 5 mm",PLA (printed),3D print (FDM),7.27,7.27,
+2,,Dowel pin / shoulder screw,1,purchased,pin,Dowel pin / shoulder screw ⌀4.2 × 9 mm,Steel,Purchased,0.979,0.979,"For joint: ""Pivot"". Length = stack height of the joined parts; pick the next standard length and add axial retention."

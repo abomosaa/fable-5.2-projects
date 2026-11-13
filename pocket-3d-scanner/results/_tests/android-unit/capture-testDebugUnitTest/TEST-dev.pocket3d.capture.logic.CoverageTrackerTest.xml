@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="dev.pocket3d.capture.logic.CoverageTrackerTest" tests="18" skipped="0" failures="0" errors="0" timestamp="2026-11-12T10:55:19.937Z" hostname="h4-pc" time="0.024">
+  <properties/>
+  <testcase name="sameFrameIdIsNeverCountedTwice" classname="dev.pocket3d.capture.logic.CoverageTrackerTest" time="0.006"/>
+  <testcase name="fiftyPhotosWithHandShakeStillFillOneCell" classname="dev.pocket3d.capture.logic.CoverageTrackerTest" time="0.003"/>
+  <testcase name="halfRingLeavesHalfTheSectorsEmpty" classname="dev.pocket3d.capture.logic.CoverageTrackerTest" time="0.006"/>
+  <testcase name="cameraAtTheCentreFallsBackToTheOrientationEstimate" classname="dev.pocket3d.capture.logic.CoverageTrackerTest" time="0.0"/>
+  <testcase name="nearestAngleIsInfiniteWithoutPhotosAndSmallAtAKeptView" classname="dev.pocket3d.capture.logic.CoverageTrackerTest" time="0.0"/>
+  <testcase name="lookingDownRaisesTheEstimatedElevation" classname="dev.pocket3d.capture.logic.CoverageTrackerTest" time="0.001"/>
+  <testcase name="arCameraQuatDirectionIsTheReverseOfForward" classname="dev.pocket3d.capture.logic.CoverageTrackerTest" time="0.0"/>
+  <testcase name="uprightPhoneLooksHorizontally" classname="dev.pocket3d.capture.logic.CoverageTrackerTest" time="0.0"/>
+  <testcase name="rotationVectorWithoutScalarComponentIsCompleted" classname="dev.pocket3d.capture.logic.CoverageTrackerTest" time="0.001"/>
+  <testcase name="angularSpeedEstimatorConvergesToTheTrueRate" classname="dev.pocket3d.capture.logic.CoverageTrackerTest" time="0.001"/>
+  <testcase name="undoEmptiesTheCellAgain" classname="dev.pocket3d.capture.logic.CoverageTrackerTest" time="0.001"/>
+  <testcase name="recenterRecomputesOnlyTheGivenSegment" classname="dev.pocket3d.capture.logic.CoverageTrackerTest" time="0.0"/>
+  <testcase name="fiftyPhotosFromOneSpotFillExactlyOneCell" classname="dev.pocket3d.capture.logic.CoverageTrackerTest" time="0.001"/>
+  <testcase name="turningAFullCircleFillsAllSectorsButStandingStillFillsOne" classname="dev.pocket3d.capture.logic.CoverageTrackerTest" time="0.001"/>
+  <testcase name="linearSpeedEstimatorConvergesToTheTrueRate" classname="dev.pocket3d.capture.logic.CoverageTrackerTest" time="0.001"/>
+  <testcase name="fullRingOfThirtyPosesFillsAllTwelveSectorsOfOneBand" classname="dev.pocket3d.capture.logic.CoverageTrackerTest" time="0.0"/>
+  <testcase name="bandBoundariesMatchTheGrid" classname="dev.pocket3d.capture.logic.CoverageTrackerTest" time="0.0"/>
+  <testcase name="threeElevationRingsFillThreeBands" classname="dev.pocket3d.capture.logic.CoverageTrackerTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

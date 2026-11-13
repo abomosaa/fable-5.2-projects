@@ -1,0 +1,13 @@
+{
+  "capturedAt": "2026-11-10T17:49:00Z",
+  "notes": "WeeklyVolcanoRSS.xml is the complete, unmodified live feed (27 volcanoes, ISO-8859-1 encoded, 37 KB). When captured, the feed had last been modified on 2026-10-15 and still carried the report for 8–14 October 2026. The malformed variant was authored by hand from the same item structure (UTF-8).",
+  "routes": [
+    {
+      "match": "/news/WeeklyVolcanoRSS.xml",
+      "file": "WeeklyVolcanoRSS.xml",
+      "contentType": "text/xml",
+      "lastModified": "Thu, 15 Oct 2026 19:11:09 GMT",
+      "variants": { "malformed": "WeeklyVolcanoRSS.malformed.xml" }
+    }
+  ]
+}

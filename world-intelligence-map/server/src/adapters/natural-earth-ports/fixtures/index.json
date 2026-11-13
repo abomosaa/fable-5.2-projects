@@ -1,0 +1,12 @@
+{
+  "capturedAt": "2026-11-10T17:52:00Z",
+  "notes": "ne_10m_ports.geojson is the complete, unmodified file captured from the official Natural Earth GitHub repository (nvkelso/natural-earth-vector, master, VERSION 5.2.0-pre): 1,081 ports, 279 KB. It replaces the NGA World Port Index, whose API (https://msi.nga.mil/api/publications/world-port-index?output=json) and documentation page returned HTTP 503 with an Akamai maintenance page on every attempt on the capture date. Reference data without timestamps. The malformed variant was authored by hand.",
+  "routes": [
+    {
+      "match": "/geojson/ne_10m_ports.geojson",
+      "file": "ne_10m_ports.geojson",
+      "etag": "\"848eb618b04496161aa772a783af0ce7cf5de6e002112c12907acb220e2e73f8\"",
+      "variants": { "malformed": "ne_10m_ports.malformed.geojson" }
+    }
+  ]
+}

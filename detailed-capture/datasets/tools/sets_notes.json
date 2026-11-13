@@ -1,0 +1,166 @@
+{
+ "order": [
+  "alexander_mosaic_sailko",
+  "vatican_map_sicilia",
+  "portonaccio_sarcophagus",
+  "claudian_table"
+ ],
+ "intro": "Four sets of real photographs (one overview + separately exposed close-ups of the same physical subject), all downloaded from Wikimedia Commons as original, unmodified bytes (SHA-1 checked against the Commons API). Layout: `datasets/real/<set>/overview.jpg`, `closeup_NN.jpg`. Machine-readable copy of everything below, plus the estimated homographies and footprints: `datasets/real/sources.json`. Scripts used for collection and QA: `datasets/tools/` (`commons.py`, `make_urls.py`, `fetch_originals.sh`, `sanity.py`, `build_docs.py`); raw check output and footprint overlays: `datasets/tools/out/`. Licence, author and date come from the Commons API (`extmetadata`) as of 2026-11-12.",
+ "method": "`datasets/tools/sanity.py`, one image pair at a time: both images are capped at 4000 px on the long side; SIFT (contrastThreshold 0.03; up to 60k overview / 12k close-up keypoints); the close-up is additionally tried at 1, 1/2, 1/4 and 1/8 of its working size and the trial with most inliers is kept; FLANN kNN + Lowe ratio 0.75; `cv2.findHomography(USAC_MAGSAC, 3 px)`. Reported: **ratio matches**, **H inliers**, **scale factor** = sqrt(|det J|) of the overview->close-up mapping at the point that lands on the close-up centre, converted to ORIGINAL pixel units of both files (close-up px per overview px; also given at the four close-up corners), **footprint** of the close-up in the overview frame, **NCC** between the overview and the close-up warped to overview resolution (a crop of the same file would give ~1.0 together with scale <= 1), and **H/F inliers** = homography inliers divided by fundamental-matrix inliers on the same matches (about 1 = one plane explains the pair; clearly below 1 = parallax, relief or lens distortion that a single homography cannot explain). `registers` = at least 25 inliers and a geometrically plausible (convex, non-degenerate) footprint. 'Independent capture' is judged from EXIF (own timestamp / camera / focal length) plus scale > 1.3. Images are read with `cv2.imread` defaults, i.e. EXIF orientation applied; all pixel sizes, footprints and homographies are in that displayed orientation. There is no ground-truth alignment: these numbers only show that a plain baseline does or does not lock on.",
+ "sets": {
+  "alexander_mosaic_sailko": {
+   "category": "1 - artwork / texture (flat, textured)",
+   "subject": "Alexander Mosaic (Battle of Issus), from the House of the Faun, Pompeii, c. 100 BC; Museo Archeologico Nazionale di Napoli, inv. 10020. Wall-mounted floor mosaic, roughly 5.8 x 3.1 m including border (size from literature, not measured).",
+   "description": "One photographer (Sailko), one camera (Canon PowerShot G12), one visit: overview at 11:35:44 and eleven close-ups during the following 75 seconds (2013-11-29). The close-ups overlap heavily and form a zoom hierarchy (footprints from 23% down to 0.7% of the overview frame; the three most magnified were taken at 12 mm instead of 6.1 mm focal length). All eleven are kept even though the brief asked for 3-10; closeup_11 is the most extreme and can be dropped.",
+   "caveats": [
+    "The overview file is 3188x2332, i.e. slightly cropped by the author from the camera's 3648x2736 frame, and the mosaic itself only spans about 2800 px of it (wall, rope barrier and plinth are also in frame).",
+    "Close-ups were taken from below and from the side: footprints are clearly trapezoidal and the scale factor varies by up to 2x across one close-up (see corner range).",
+    "H/F inlier ratios of 0.68-0.92 for the seven wider close-ups (01-06, 10): a single homography leaves up to a third of the geometrically consistent matches outside 3 px. Plausible causes are uncorrected wide-angle lens distortion of the compact camera and an uneven mosaic surface; cause not verified.",
+    "Daylight from windows: closeup_04, closeup_05 and closeup_10 have a blue cast and veiling glare on the right-hand (dark horses) area that is absent in the overview.",
+    "Large lacunae filled with plain mortar give big texture-less regions (more than half of closeup_01)."
+   ],
+   "file_notes": {
+    "overview.jpg": "whole mosaic on the museum wall",
+    "closeup_01.jpg": "left part: Alexander on Bucephalus, large mortar lacunae; strongly oblique",
+    "closeup_02.jpg": "centre: speared Persian rider, horse heads",
+    "closeup_03.jpg": "centre bottom: collapsed dark horse, lance on the ground",
+    "closeup_04.jpg": "right half: Darius' chariot and Persian cavalry; window glare",
+    "closeup_05.jpg": "right: chariot team (dark horses), mosaic border; window glare",
+    "closeup_06.jpg": "Darius and charioteer, chariot wheel (7.4 mm)",
+    "closeup_07.jpg": "fallen Persian with mirror-shield, below the chariot",
+    "closeup_08.jpg": "shield with reflected face, tight (12 mm zoom)",
+    "closeup_09.jpg": "heads of Persian nobles right of Darius (12 mm zoom)",
+    "closeup_10.jpg": "dark chariot horses; glare",
+    "closeup_11.jpg": "face of the Persian under the horses, bottom right (12 mm zoom); most extreme magnification"
+   },
+   "verdicts": {
+    "closeup_11.jpg": {
+     "note": "14x scale gap, only matched at 1/8 size"
+    },
+    "closeup_08.jpg": {
+     "note": "11x scale gap"
+    }
+   }
+  },
+  "vatican_map_sicilia": {
+   "category": "2 - text / document-like (wall map with lettering)",
+   "subject": "'Sicilia', fresco map in the Gallery of Maps (Galleria delle Carte Geografiche), Vatican Museums; Ignazio Danti and workshop, 1580-83. Flat wall painting, roughly 3 x 4 m (not measured). South is up.",
+   "description": "One photographer (Fabrizio Garrisi), same day (2022-12-10), two cameras: overview with a Canon EOS R at 24 mm, seven close-ups with a Sony ILCE-7 at 50 mm (EXIF times 67-70 minutes later; two camera clocks, so the real gap is not certain). Lettering: closeup_06 is the inscription cartouche (gold capitals on red, crisp in the close-up, smeared in the overview), closeup_07 has the 'APHRICVM MARE' title and coastal place names, closeup_02-05 the labelled city views (Messana, Syracusa, Panormus). closeup_05 contains closeup_02/03/04 at lower magnification, closeup_01 overlaps closeup_02, closeup_06 overlaps closeup_04 and closeup_07.",
+   "caveats": [
+    "The overview is NOT a straight-out-of-camera frame: saved from Adobe Photoshop (EXIF Software), perspective-corrected and cropped to 5470x4446. At 100% it shows doubled edges / smearing on fine lettering, so it may be a blend or a strongly resampled frame. It also includes the stucco frame, two busts and a railing; the map itself spans about 3900 of 5470 px.",
+    "Several close-ups were cropped by the author before upload (3550x3550, 2666x4000, 5098x4000, 3102x4654, 4670x3628 instead of the camera's 6000x4000). They are crops of their own exposures (distinct EXIF timestamps, and 5.5-5.9x the overview's pixel density), not crops of the overview or of closeup_05.",
+    "Easiest set geometrically: H/F inlier ratio 0.96-0.99, scale nearly constant across each close-up. Large blue sea areas are a repetitive wave pattern.",
+    "Licences are mixed: overview CC BY-SA 4.0, close-ups CC0."
+   ],
+   "file_notes": {
+    "overview.jpg": "whole map wall bay incl. frame and title tablet; perspective-corrected in Photoshop",
+    "closeup_01.jpg": "sea and small islands left of the city-view insets, left edge of the Messana inset",
+    "closeup_02.jpg": "city view 'MESSANA' (author-cropped, square)",
+    "closeup_03.jpg": "city view 'SYRACVSA' (author-cropped)",
+    "closeup_04.jpg": "city view 'PANORMVS' (author-cropped, portrait)",
+    "closeup_05.jpg": "all three city views in one frame (full 6000x4000 frame)",
+    "closeup_06.jpg": "inscription cartouche: dense gold lettering on red (author-cropped, portrait)",
+    "closeup_07.jpg": "'APHRICVM MARE' lettering, coast with place names, ships (author-cropped)"
+   },
+   "verdicts": {}
+  },
+  "portonaccio_sarcophagus": {
+   "category": "3 - challenging: clearly non-planar (deep relief, shifted viewpoints)",
+   "subject": "Portonaccio sarcophagus, Roman battle sarcophagus, c. AD 180; Museo Nazionale Romano, Palazzo Massimo alle Terme, Rome. Marble, very deep undercut relief in several depth layers, lid frieze above the chest, projecting corner masks. Roughly 2.4 m long (not measured).",
+   "description": "One photographer (Miguel Hermoso Cuesta), one camera (Canon EOS 600D, focal lengths 27-55 mm), 110 seconds (2014-02-28): near-frontal overview, then ten close-ups from varying positions and angles. Dark room with spot lighting, black background. Expected to break a planar model; it is the 'failure / poor consistency is fine' set.",
+   "caveats": [
+    "Non-planar: H/F inlier ratio 0.31-0.78 for eight of ten close-ups (0.95 for closeup_08, where the matched area is a single head). A homography locks onto the dominant depth layer only; expect ghosting and misalignment on the other layers.",
+    "The baseline still finds a plausible footprint for nine of ten close-ups, so the set is 'registers coarsely but not consistently' rather than 'fails outright'. Only closeup_09 fails completely.",
+    "Little overlap between close-ups (01/02 and 05/06 touch, 08/09 show the same mask); they are details, not a covering sweep.",
+    "Three files are stored landscape with an EXIF orientation tag (closeup_02, closeup_08, closeup_09). A loader that ignores EXIF orientation will see them rotated by 90 degrees."
+   ],
+   "file_notes": {
+    "overview.jpg": "front of chest and lid, near-frontal",
+    "closeup_01.jpg": "left trophy with helmet, cuirass and shields",
+    "closeup_02.jpg": "left pair of barbarian captives, full height (portrait)",
+    "closeup_03.jpg": "centre: charging Roman cavalry around the general",
+    "closeup_04.jpg": "lid frieze, left scene",
+    "closeup_05.jpg": "right trophy",
+    "closeup_06.jpg": "right pair of captives, heads and shoulders",
+    "closeup_07.jpg": "battle scene upper left of centre, crossed standards",
+    "closeup_08.jpg": "right corner mask of the lid, seen close to the overview's direction (portrait)",
+    "closeup_09.jpg": "same right corner mask from a clearly different direction (portrait)",
+    "closeup_10.jpg": "lid frieze, right scene, taken obliquely"
+   },
+   "verdicts": {
+    "closeup_09.jpg": {
+     "note": "expected: large viewpoint change on a fully 3D head"
+    },
+    "closeup_10.jpg": {
+     "note": "oblique view; footprint skewed (corner scales 2.8-5.1), homography fits under a third of the consistent matches"
+    },
+    "closeup_03.jpg": {
+     "note": "but only 38% of the geometrically consistent matches fit the plane"
+    }
+   }
+  },
+  "claudian_table": {
+   "category": "2 - text / document-like (inscription); harder, mixed-session variant (delivered as the optional 4th set)",
+   "subject": "Claudian Table / Lyon Tablet (Table claudienne), bronze plate with Claudius' speech of AD 48, 1.93 x 1.39 m (literature); Lugdunum museum, Lyon. Flat bronze with engraved capitals; appearance depends strongly on lighting.",
+   "description": "Mixed photographers and sessions, assembled to get dense text with readable close-ups. `overview.jpg` (Phyrexian, 2025-06-24, tablet fills the frame) and closeup_01-04 (Sukkoria, 2025-06-22, a compact camera zoomed onto ligatures in the lower right column) evidently show the tablet in the same display and lighting, two days apart (venue per the overview's Commons title; not stated for the close-ups). closeup_05 (Marie-Lan Nguyen, D850) and closeup_06 (Romainbehar, phone) were taken in January 2019 under different lighting, apparently at a temporary exhibition at the Musee des Beaux-Arts de Lyon (stated in the Commons title of closeup_06; assumed for the Nguyen photos because closeup_06 matches their lighting, not confirmed). `overview_alt.jpg` is the 34.7 MP overview from the same photographer and session as closeup_05 (two minutes earlier), included so the 2019 close-ups also have a same-lighting overview. closeup_01 lies inside closeup_02; closeup_05 overlaps closeup_02.",
+   "caveats": [
+    "Deviation from the requested layout: this directory contains a second overview, `overview_alt.jpg`. Ignore it, or use it instead of `overview.jpg` for closeup_05/06.",
+    "Against `overview.jpg`: the four same-display close-ups register (two with only 32 and 40 inliers), closeup_05 registers weakly (38 inliers), closeup_06 stays below the threshold (23 inliers). Against `overview_alt.jpg` the picture flips: closeup_05/06 get 475/444 inliers, the 2025 close-ups do not register. The two overviews give mutually consistent scales for every close-up that produced a homography against both (ratio 1.657 +/- 0.01), so the weak registrations are very likely correct; this is a cross-check, not ground truth.",
+    "Why it is hard: engraved strokes flip between bright and dark with the light direction (NCC -0.01 for closeup_06 against overview.jpg despite a consistent homography), specular bronze, and highly repetitive lettering.",
+    "Large scale gaps against overview.jpg (5.4-10.4x for the 2025 close-ups) because that overview is only 11 MP.",
+    "closeup_05 is 7878x5251 = 41.4 MP, marginally over the 40 MP guideline; original kept. closeup_06 is stored landscape with an EXIF orientation tag.",
+    "Licences are mixed: CC BY-SA 4.0 (overview, closeup_01-04), public domain (overview_alt, closeup_05), CC0 (closeup_06)."
+   ],
+   "alt_overview": {
+    "file": "overview_alt.jpg",
+    "json": "claudian_table_alt.json",
+    "text": "Scale factors here are relative to the 6808 px alternative overview."
+   },
+   "file_notes": {
+    "overview.jpg": "whole tablet, Lugdunum museum display, 2025; frame-filling",
+    "overview_alt.jpg": "ALTERNATIVE overview: whole tablet, January 2019 session of closeup_05, 34.7 MP",
+    "closeup_01.jpg": "ligatures, lower right column (17.8 mm zoom)",
+    "closeup_02.jpg": "ligatures, lower right column, wider (contains closeup_01)",
+    "closeup_03.jpg": "ligatures, bottom right corner of the text",
+    "closeup_04.jpg": "ligatures, right edge of the right column",
+    "closeup_05.jpg": "middle of the right column, 2019 lighting; 41.4 MP",
+    "closeup_06.jpg": "top of the fracture between the two plates, 2019, phone (portrait)"
+   },
+   "verdicts": {
+    "closeup_05.jpg": {
+     "note": "different session and lighting (2019); 475 inliers against overview_alt.jpg"
+    },
+    "closeup_06.jpg": {
+     "note": "different session and lighting (2019); homography is consistent with the overview_alt result but support is too thin; 444 inliers against overview_alt.jpg"
+    },
+    "closeup_03.jpg": {
+     "note": "10x scale gap"
+    },
+    "closeup_04.jpg": {
+     "note": "10x scale gap"
+    }
+   }
+  }
+ },
+ "general_caveats": [
+  "No ground-truth registration exists for any set. Inlier counts and scale factors come from the baseline described above.",
+  "CC BY-SA / CC BY files require attribution (and share-alike for derivatives) if images or mosaics made from them are published; keep this file with the data.",
+  "The photographed objects are ancient or 16th-century works (no copyright in the artwork itself). Italian cultural-heritage rules can restrict commercial reuse of images of objects in Italian state museums (Naples mosaic, Rome sarcophagus) independently of copyright; not relevant for internal evaluation, not checked further.",
+  "Four files carry an EXIF orientation tag other than 1 (flagged in the tables). OpenCV's imread applies it by default; Pillow and many Android decoders do not.",
+  "Re-downloading: upload.wikimedia.org throttles scripted downloads of originals (HTTP 429 with Retry-After 600 after roughly 6-9 files); `fetch_originals.sh` waits and resumes."
+ ],
+ "rejected": [
+  "Alexander Mosaic, series by Benjamín Núñez González (Commons 'Mosaico de Issos, Nápoles, Italia, 2016 01.jpg' to '... 29.jpg', CC BY-SA 4.0, 4000x3000 each, one six-minute session; no. 10 is the overview): 28 close-ups, many overlapping, going down to tessera-level macro shots. Looked at thumbnails only; not downloaded (same subject as set 1, and about 145 MB would exceed the size budget) and NOT sanity-checked. Good next candidate for a more extreme zoom hierarchy.",
+  "Other Garrisi map series from the same gallery (Sardinia: overview + 4 'particolare' files; Corsica: 4 details): same structure as the Sicilia set; listed via the API only, not downloaded or checked.",
+  "Rosetta Stone (Commons has several visitor series): behind glass with reflections; listed only, not tested.",
+  "Repetitive-pattern subject (tiled facade / brick wall): not searched; the non-planar option was chosen for set 3.",
+  "The Met, National Gallery of Art, Rijksmuseum, Smithsonian, Library of Congress: not searched. Their 'detail' images usually come without EXIF, so separate exposures cannot be told apart from crops of one high-resolution capture as reliably as with the Commons visitor photos used here."
+ ],
+ "unverified": [
+  "Licence statements are taken from the Commons API as displayed on 2026-11-12; the uploaders' right to license was not independently checked.",
+  "Physical dimensions of the subjects are from general literature / memory, not measured; do not use them for metric scale.",
+  "Whether weak registrations (under about 50 inliers: claudian_table closeup_03-06, portonaccio closeup_10) are pixel-accurate. Their footprints were only checked for plausibility on the overlay images and, for the Claudian table, by scale consistency between the two overviews.",
+  "The cause of the 0.7-0.9 H/F inlier ratio on the (nominally flat) Alexander Mosaic.",
+  "Exactly how the Sicilia overview was processed (perspective correction is evident; stitching or blending is suspected from doubled edges, not confirmed)."
+ ]
+}

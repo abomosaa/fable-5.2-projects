@@ -1,0 +1,7 @@
+# Evaluation / QA tooling (not needed to run the product). Independent of the companion's
+# own GLB code on purpose: trimesh is used as the independent glTF loader.
+trimesh==4.11.2
+numpy==2.5.4
+scipy==1.18.1
+pillow==13.0.0
+open3d==0.20.0

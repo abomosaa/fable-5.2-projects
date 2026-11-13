@@ -1,0 +1,43 @@
+{
+ "id": "alps_field",
+ "source": "assets_src/env/ph_hdri_alps_field/alps_field_8k.hdr",
+ "size": [
+  8192,
+  4096
+ ],
+ "sun_elevation_deg": 42.07948503639759,
+ "sun_azimuth_from_back_deg": 22.0,
+ "sun_dir_to_sun": [
+  -0.27803894819370245,
+  0.6701609088232391,
+  0.6881705454119276
+ ],
+ "light_travel_dir": [
+  0.27803894819370245,
+  -0.6701609088232391,
+  -0.6881705454119276
+ ],
+ "disc_radius_deg": 3.0,
+ "clamp_luminance": 5.868693709373474,
+ "peak_luminance_before": 116483.3828125,
+ "peak_luminance_after": 8.398975372314453,
+ "median_sky_luminance": 0.2579304873943329,
+ "removed_sun_irradiance_rgb": [
+  7.0450180776790905,
+  6.861667585774379,
+  6.566905830464638
+ ],
+ "sky_horizontal_irradiance_rgb": [
+  0.7776934540257462,
+  1.1406627392692765,
+  1.8614241967131773
+ ],
+ "sun_to_sky_horizontal_ratio": 4.132801314000415,
+ "light_color_linear": [
+  1.0,
+  0.9739744469236175,
+  0.9321347025738276
+ ],
+ "light_energy": 2.242498902468779,
+ "roll_pixels": -322
+}

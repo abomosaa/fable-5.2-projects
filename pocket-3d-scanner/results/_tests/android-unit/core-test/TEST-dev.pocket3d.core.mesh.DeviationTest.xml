@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="dev.pocket3d.core.mesh.DeviationTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-11-12T10:55:39.668Z" hostname="h4-pc" time="0.164">
+  <properties/>
+  <testcase name="deviationIsOneSidedAndAreaWeighted" classname="dev.pocket3d.core.mesh.DeviationTest" time="0.089"/>
+  <testcase name="deviationBetweenConcentricSpheres" classname="dev.pocket3d.core.mesh.DeviationTest" time="0.064"/>
+  <testcase name="deterministicPerSeed" classname="dev.pocket3d.core.mesh.DeviationTest" time="0.011"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

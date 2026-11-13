@@ -1,0 +1,22 @@
+# turn_in_place: first photo taken manually at yaw 0; auto capture ON; orientation-estimate mode; pose set through the emulator's physical model (camera view follows)
+start :: 1 of 12 | [Review 1 photo] | Same view as an existing photo — move on | Keep moving around the object
+yaw=  3 pos=(0,0,0) :: 1 of 12 | [Review 1 photo] | Same view as an existing photo — move on | Keep moving around the object
+yaw=  6 pos=(0,0,0) :: 1 of 12 | [Review 1 photo] | Keep moving around the object
+yaw=  9 pos=(0,0,0) :: 1 of 12 | [Review 1 photo] | Keep moving around the object
+yaw= 12 pos=(0,0,0) :: 1 of 12 | [Review 2 photos] | A 330° side of the object has no photos yet — keep walking around it.
+yaw= 15 pos=(0,0,0) :: 1 of 12 | [Review 2 photos] | Same view as an existing photo — move on | Keep moving around the object
+yaw= 18 pos=(0,0,0) :: 1 of 12 | [Review 2 photos] | Keep moving around the object
+yaw= 21 pos=(0,0,0) :: 1 of 12 | [Review 2 photos] | Auto capture paused — the picture slides as if the phone were only turning. Walk around the object.
+yaw= 24 pos=(0,0,0) :: 1 of 12 | [Review 2 photos] | Auto capture paused — the picture slides as if the phone were only turning. Walk around the object.
+yaw= 27 pos=(0,0,0) :: 1 of 12 | [Review 2 photos] | Auto capture paused — the picture slides as if the phone were only turning. Walk around the object.
+yaw= 30 pos=(0,0,0) :: 1 of 12 | [Review 2 photos] | Auto capture paused — the picture slides as if the phone were only turning. Walk around the object.
+yaw= 33 pos=(0,0,0) :: 1 of 12 | [Review 2 photos] | Auto capture paused — the picture slides as if the phone were only turning. Walk around the object.
+yaw= 36 pos=(0,0,0) :: 1 of 12 | [Review 2 photos] | Auto capture paused — the picture slides as if the phone were only turning. Walk around the object.
+yaw= 39 pos=(0,0,0) :: 1 of 12 | [Review 2 photos] | Auto capture paused — the picture slides as if the phone were only turning. Walk around the object.
+yaw= 42 pos=(0,0,0) :: 1 of 12 | [Review 2 photos] | Auto capture paused — the picture slides as if the phone were only turning. Walk around the object.
+yaw= 45 pos=(0,0,0) :: 1 of 12 | [Review 2 photos] | Far from your other photos — little overlap, go back a bit | Auto capture paused — the picture slides as if the phone were only turning. Walk around the object.
+yaw= 48 pos=(0,0,0) :: 1 of 12 | [Review 2 photos] | Far from your other photos — little overlap, go back a bit | Auto capture paused — the picture slides as if the phone were only turning. Walk around the object.
+yaw= 51 pos=(0,0,0) :: 1 of 12 | [Review 2 photos] | Far from your other photos — little overlap, go back a bit | Auto capture paused — the picture slides as if the phone were only turning. Walk around the object.
+yaw= 54 pos=(0,0,0) :: 1 of 12 | [Review 2 photos] | Far from your other photos — little overlap, go back a bit | Auto capture paused — the picture slides as if the phone were only turning. Walk around the object.
+yaw= 57 pos=(0,0,0) :: 1 of 12 | [Review 2 photos] | Far from your other photos — little overlap, go back a bit | Auto capture paused — the picture slides as if the phone were only turning. Walk around the object.
+yaw= 60 pos=(0,0,0) :: 1 of 12 | [Review 2 photos] | Far from your other photos — little overlap, go back a bit | Auto capture paused — the picture slides as if the phone were only turning. Walk around the object.

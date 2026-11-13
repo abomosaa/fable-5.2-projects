@@ -1,0 +1,17 @@
+{
+  "capturedAt": "2026-11-10T17:57:00Z",
+  "notes": "Captured from the live Open-Meteo Air Quality API on 2026-11-10 for the 157 cities in cities.json (two batched requests, untrimmed). Snapshot fixture: current.time was re-timed from 2026-11-10T17:00:00Z to 2026-11-10T23:50:00Z (ten minutes before the fixture epoch); all values are as captured. The malformed variant is the first batch with individual locations broken by hand (null current block, bad time, missing PM2.5, null entry, error object, sentinel value, unexpected unit with markup, far-future time, missing AQI).",
+  "routes": [
+    {
+      "match": "?latitude=34.5186,-8.8363,",
+      "file": "air-quality-batch-1.json",
+      "variants": {
+        "malformed": "air-quality-batch-1.malformed.json"
+      }
+    },
+    {
+      "match": "?latitude=52.3519,59.9186,",
+      "file": "air-quality-batch-2.json"
+    }
+  ]
+}

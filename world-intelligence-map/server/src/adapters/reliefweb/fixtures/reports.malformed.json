@@ -1,0 +1,180 @@
+{
+ "href": "https://api.reliefweb.int/v2/reports?appname=REPLACE-WITH-APP-NAME",
+ "time": 9,
+ "links": {
+  "self": {
+   "href": "https://api.reliefweb.int/v2/reports?appname=REPLACE-WITH-APP-NAME"
+  }
+ },
+ "totalCount": 6,
+ "count": 6,
+ "data": [
+  {
+   "id": 9990001,
+   "score": 1,
+   "href": "https://api.reliefweb.int/v2/reports/9990001",
+   "fields": {
+    "id": 9990001,
+    "title": "Kenya: Humanitarian Situation Update No. 7 (Nov 2026)",
+    "date": {
+     "created": "2026-11-09T11:45:00+00:00",
+     "original": "2026-11-08T00:00:00+00:00"
+    },
+    "primary_country": {
+     "name": "Kenya",
+     "shortname": "Kenya",
+     "iso3": "ken"
+    },
+    "source": [
+     {
+      "name": "UN Office for the Coordination of Humanitarian Affairs",
+      "shortname": "OCHA"
+     }
+    ],
+    "format": [
+     {
+      "name": "Situation Report"
+     }
+    ],
+    "headline": {
+     "title": "<b>Kenya</b>: situation update <script>alert(1)</script>published by OCHA",
+     "summary": "<p>Fictional example summary with <a href=\"javascript:alert(1)\">markup</a>.</p> Partners continue to deliver assistance in the affected counties while access remains constrained in several areas. Partners continue to deliver assistance in the affected counties while access remains constrained in several areas. Partners continue to deliver assistance in the affected counties while access remains constrained in several areas. Partners continue to deliver assistance in the affected counties while access remains constrained in several areas. Partners continue to deliver assistance in the affected counties while access remains constrained in several areas. "
+    },
+    "url": "https://reliefweb.int/node/9990001",
+    "url_alias": "javascript:alert(1)"
+   }
+  },
+  {
+   "id": 9990002,
+   "score": 1,
+   "href": "https://api.reliefweb.int/v2/reports/9990002",
+   "fields": {
+    "id": 9990002,
+    "title": "",
+    "date": {
+     "created": "2026-11-09T11:45:00+00:00",
+     "original": "2026-11-08T00:00:00+00:00"
+    },
+    "primary_country": {
+     "name": "Kenya",
+     "shortname": "Kenya",
+     "iso3": "ken"
+    },
+    "source": [
+     {
+      "name": "UN Office for the Coordination of Humanitarian Affairs",
+      "shortname": "OCHA"
+     }
+    ],
+    "format": [
+     {
+      "name": "Situation Report"
+     }
+    ],
+    "headline": {},
+    "url": "https://reliefweb.int/node/9990002",
+    "url_alias": "https://reliefweb.int/report/kenya/kenya-humanitarian-situation-update-no-7-nov-2026"
+   }
+  },
+  {
+   "id": 9990003,
+   "score": 1,
+   "href": "https://api.reliefweb.int/v2/reports/9990003",
+   "fields": {
+    "id": 9990003,
+    "title": "Kenya: Humanitarian Situation Update No. 7 (Nov 2026)",
+    "date": {
+     "created": "yesterday"
+    },
+    "primary_country": {
+     "name": "Kenya",
+     "shortname": "Kenya",
+     "iso3": "ken"
+    },
+    "source": [
+     {
+      "name": "UN Office for the Coordination of Humanitarian Affairs",
+      "shortname": "OCHA"
+     }
+    ],
+    "format": [
+     {
+      "name": "Situation Report"
+     }
+    ],
+    "headline": {
+     "title": "Kenya: situation update published by OCHA",
+     "summary": "Routine update on the humanitarian situation. [Fictional example item authored for the test fixture.]"
+    },
+    "url": "https://reliefweb.int/node/9990003",
+    "url_alias": "https://reliefweb.int/report/kenya/kenya-humanitarian-situation-update-no-7-nov-2026"
+   }
+  },
+  {
+   "id": 9990004,
+   "score": 1,
+   "href": "https://api.reliefweb.int/v2/reports/9990004",
+   "fields": {
+    "id": 9990004,
+    "title": "Global: Funding Snapshot (Nov 2026)",
+    "date": {
+     "created": "2026-11-09T11:45:00+00:00",
+     "original": "2026-11-08T00:00:00+00:00"
+    },
+    "primary_country": {
+     "name": "World",
+     "shortname": "World",
+     "iso3": "wld"
+    },
+    "source": {
+     "name": "Example Organization"
+    },
+    "format": [
+     {
+      "name": "Situation Report"
+     }
+    ],
+    "headline": {
+     "title": "Global funding snapshot released",
+     "summary": "Snapshot of funding received against requirements. [Fictional example item authored for the test fixture.]"
+    },
+    "url": "https://reliefweb.int/node/9990004",
+    "url_alias": "https://reliefweb.int/report/kenya/kenya-humanitarian-situation-update-no-7-nov-2026"
+   }
+  },
+  {
+   "id": 9990005,
+   "score": 1
+  },
+  {
+   "id": 9990006,
+   "score": 1,
+   "href": "https://api.reliefweb.int/v2/reports/9990006",
+   "fields": {
+    "id": 9990006,
+    "title": "South Sudan: Flash Update No. 2 (Nov 2026)",
+    "date": {
+     "created": "2026-11-07T23:30:00-05:00"
+    },
+    "primary_country": {
+     "name": "South Sudan",
+     "iso3": "ssd"
+    },
+    "source": [
+     {
+      "name": "UN Office for the Coordination of Humanitarian Affairs",
+      "shortname": "OCHA"
+     }
+    ],
+    "format": [
+     {
+      "name": "Situation Report"
+     }
+    ],
+    "headline": null,
+    "url": "https://reliefweb.int/node/9990006",
+    "url_alias": null
+   }
+  }
+ ]
+}

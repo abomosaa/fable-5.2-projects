@@ -1,0 +1,24 @@
+file              status    reasons               warnings           inl   scale  gain  zncc  resPx  pairs  via                 mask  sigma
+closeup_01.jpg    accepted                        overexposed        161   3.24   3.24  1.0   0.66   2      overview            0.0   0.47 
+closeup_02.jpg    accepted                                           97    3.07   3.07  1.0   0.27   3      chain               0.0   0.24 
+closeup_03.jpg    accepted                        overexposed,glare  271   3.06   3.06  1.0   0.11   2      chain               0.0   0.2  
+closeup_04.jpg    accepted                                           182   2.98   2.98  1.0   0.21   2      chain               0.0   0.2  
+closeup_05.jpg    accepted                        overexposed,glare  182   3.02   3.02  1.0   0.28   5      chain+overview      0.0   0.43 
+closeup_06.jpg    accepted                                           195   3.16   3.16  1.0   0.22   5      chain+overview      0.0   0.31 
+closeup_07.jpg    accepted                                           265   2.92   2.92  1.0   0.23   6      chain+overview      0.0   0.2  
+closeup_08.jpg    accepted                                           240   3.07   3.07  1.0   0.25   5      chain+overview      0.0   0.2  
+closeup_09.jpg    accepted                                           688   3.06   3.06  1.0   0.38   7      chain+overview      0.0   0.98 
+closeup_10.jpg    accepted                                           1009  2.97   2.97  1.0   0.35   7      overview            0.0   0.61 
+closeup_11.jpg    accepted                                           396   3.14   3.14  1.0   0.32   5      chain+overview      0.0   0.46 
+closeup_12.jpg    accepted                                           91    2.93   2.93  1.0   0.36   5      chain+overview      0.0   1.03 
+closeup_13.jpg    accepted                                           230   6.76   5.73  1.0   0.46   2      chain+overview      0.0   1.06 
+closeup_14.jpg    accepted                                           196   6.72   5.76  1.0   0.51   4      chain+overview      0.0   1.05 
+closeup_15.jpg    accepted                                           213   6.83   5.88  1.0   0.52   3      chain+overview      0.0   1.05 
+closeup_16.jpg    accepted                        overexposed,glare  170   6.86   5.84  1.0   0.46   2      chain+overview      0.0   1.06 
+closeup_17.jpg    accepted                                           70    6.49   6.49  1.0   0.71   2      overview            0.0   1.03 
+closeup_18.jpg    accepted                                           81    6.42   6.42  1.0   0.86   3      overview(landmark)  0.0   1.03 
+closeup_19.jpg    rejected  no_match,textureless                     0     0      0     -1    0      None                       0     1.08 
+closeup_20.jpg    rejected  bad_geometry                             327   0      0     -1    0      None                       0     1.08 
+x_blurred.jpg     rejected  blurry                                   121   2.97   0.53  0.96  1.53   1      overview            0.71  5.02 
+x_foreign.jpg     rejected  bad_geometry                             25    0      0     -1    0      None                       0     1.97 
+x_same_scale.jpg  rejected  no_detail_gain                           3501  1.08   1.08  1.0   1.06   5      overview            0.0   0.65 

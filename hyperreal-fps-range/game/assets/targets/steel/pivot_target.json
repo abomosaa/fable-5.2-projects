@@ -1,0 +1,175 @@
+{
+ "pivot": [
+  0.0,
+  0.12,
+  0.0
+ ],
+ "pivot_axis": [
+  1,
+  0,
+  0
+ ],
+ "plate_center_local": [
+  0,
+  0.45,
+  0
+ ],
+ "arm_front_z_local": -0.004962,
+ "fall_direction": "arm rotates about +X by a negative angle (top moves toward -Z, downrange); stop tab blocks positive rotation",
+ "base_colliders": [
+  {
+   "name": "runner_l",
+   "center": [
+    -0.205,
+    0.003,
+    0
+   ],
+   "size": [
+    0.04,
+    0.006,
+    0.4
+   ],
+   "rot_deg": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "surface": "steel"
+  },
+  {
+   "name": "runner_r",
+   "center": [
+    0.205,
+    0.003,
+    0
+   ],
+   "size": [
+    0.04,
+    0.006,
+    0.4
+   ],
+   "rot_deg": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "surface": "steel"
+  },
+  {
+   "name": "cross",
+   "center": [
+    0,
+    0.003,
+    0
+   ],
+   "size": [
+    0.37,
+    0.006,
+    0.05
+   ],
+   "rot_deg": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "surface": "steel"
+  },
+  {
+   "name": "lug_l",
+   "center": [
+    -0.0275,
+    0.083,
+    0.0
+   ],
+   "size": [
+    0.006,
+    0.154,
+    0.04
+   ],
+   "rot_deg": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "surface": "steel"
+  },
+  {
+   "name": "lug_r",
+   "center": [
+    0.0275,
+    0.083,
+    0.0
+   ],
+   "size": [
+    0.006,
+    0.154,
+    0.04
+   ],
+   "rot_deg": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "surface": "steel"
+  },
+  {
+   "name": "stop_tab",
+   "center": [
+    0,
+    0.146,
+    -0.0016
+   ],
+   "size": [
+    0.067,
+    0.018,
+    0.006
+   ],
+   "rot_deg": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "surface": "steel"
+  }
+ ],
+ "arm_colliders": [
+  {
+   "name": "arm_bar",
+   "center": [
+    0.0,
+    0.222,
+    -0.007963
+   ],
+   "size": [
+    0.025,
+    0.456,
+    0.006
+   ],
+   "rot_deg": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "surface": "steel"
+  },
+  {
+   "name": "arm_sleeve",
+   "center": [
+    0,
+    0,
+    0
+   ],
+   "size": [
+    0.025,
+    0.02,
+    0.02
+   ],
+   "rot_deg": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "surface": "steel"
+  }
+ ]
+}

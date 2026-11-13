@@ -1,0 +1,257 @@
+{
+ "format": "mechanism-workshop",
+ "version": 1,
+ "id": "proj_mwc07juq2149d0o",
+ "name": "Untitled mechanism",
+ "description": "",
+ "createdAt": "2026-11-11T10:56:31.298Z",
+ "modifiedAt": "2026-11-11T10:56:39.082Z",
+ "parts": [
+  {
+   "id": "part_mwc07jx931cbjni",
+   "name": "Sketched part",
+   "kind": "plate",
+   "params": {
+    "sketchId": "sk_mwc07jx8",
+    "thickness": 5
+   },
+   "pose": {
+    "x": 0,
+    "y": 0,
+    "angle": 0,
+    "z": 0
+   },
+   "grounded": false,
+   "materialId": "pla"
+  }
+ ],
+ "joints": [
+  {
+   "type": "revolute",
+   "a": "ground",
+   "b": "part_mwc07jx931cbjni",
+   "anchorA": {
+    "x": -21,
+    "y": 1
+   },
+   "anchorB": {
+    "port": "c1"
+   },
+   "id": "joint_mwc07pux4dlwpqx",
+   "name": "Pivot"
+  }
+ ],
+ "loads": [],
+ "probes": [],
+ "plots": [],
+ "groups": [],
+ "sketches": [
+  {
+   "id": "sk_mwc07jx8",
+   "name": "Sketch 1",
+   "points": [
+    {
+     "id": "p1",
+     "x": -31,
+     "y": -9
+    },
+    {
+     "id": "p2",
+     "x": 28.999999999999996,
+     "y": -9
+    },
+    {
+     "id": "p3",
+     "x": 28.999999999999996,
+     "y": 11
+    },
+    {
+     "id": "p4",
+     "x": -31,
+     "y": 11
+    },
+    {
+     "id": "p5",
+     "x": -20.99999999999993,
+     "y": 1.0000000000000007
+    },
+    {
+     "id": "p6",
+     "x": 18.999999999999925,
+     "y": 0.9999999999999997
+    }
+   ],
+   "entities": [
+    {
+     "id": "l1",
+     "type": "line",
+     "p1": "p1",
+     "p2": "p2"
+    },
+    {
+     "id": "l2",
+     "type": "line",
+     "p1": "p2",
+     "p2": "p3"
+    },
+    {
+     "id": "l3",
+     "type": "line",
+     "p1": "p3",
+     "p2": "p4"
+    },
+    {
+     "id": "l4",
+     "type": "line",
+     "p1": "p4",
+     "p2": "p1"
+    },
+    {
+     "id": "c1",
+     "type": "circle",
+     "center": "p5",
+     "r": 2.1
+    },
+    {
+     "id": "c2",
+     "type": "circle",
+     "center": "p6",
+     "r": 2.0999999999999
+    }
+   ],
+   "constraints": [
+    {
+     "type": "horizontal",
+     "line": "l1",
+     "id": "k1"
+    },
+    {
+     "type": "vertical",
+     "line": "l2",
+     "id": "k2"
+    },
+    {
+     "type": "horizontal",
+     "line": "l3",
+     "id": "k3"
+    },
+    {
+     "type": "vertical",
+     "line": "l4",
+     "id": "k4"
+    },
+    {
+     "type": "fixed",
+     "point": "p1",
+     "x": -31,
+     "y": -9,
+     "id": "k5"
+    },
+    {
+     "type": "distance",
+     "a": "p1",
+     "b": "p2",
+     "value": 60,
+     "id": "k6"
+    },
+    {
+     "type": "distance",
+     "a": "p1",
+     "b": "p4",
+     "value": 20,
+     "id": "k7"
+    },
+    {
+     "type": "distance",
+     "a": "p1",
+     "b": "p5",
+     "value": 14.142135623731,
+     "id": "k8"
+    },
+    {
+     "type": "distance",
+     "a": "p4",
+     "b": "p5",
+     "value": 14.142135623731,
+     "id": "k9"
+    },
+    {
+     "type": "distance",
+     "a": "p2",
+     "b": "p6",
+     "value": 14.142135623731,
+     "id": "k10"
+    },
+    {
+     "type": "distance",
+     "a": "p3",
+     "b": "p6",
+     "value": 14.142135623731,
+     "id": "k11"
+    },
+    {
+     "type": "radius",
+     "entity": "c1",
+     "value": 2.1,
+     "id": "k12"
+    },
+    {
+     "type": "radius",
+     "entity": "c2",
+     "value": 2.1,
+     "id": "k13"
+    }
+   ]
+  }
+ ],
+ "variants": [],
+ "views": [],
+ "sim": {
+  "mode": "dynamic",
+  "dt": 0.001,
+  "gravity": {
+   "x": 0,
+   "y": -9806.65
+  },
+  "gravityEnabled": true,
+  "floor": {
+   "enabled": false,
+   "y": 0,
+   "friction": 0.8
+  },
+  "stopOnInterference": false,
+  "sampleRate": 250
+ },
+ "clearances": {
+  "hole": 0.2,
+  "slide": 0.15,
+  "backlash": 0.1,
+  "minFeature": 0.8
+ },
+ "units": {
+  "length": "mm",
+  "angle": "deg",
+  "mass": "g",
+  "time": "s",
+  "force": "N",
+  "torque": "N·mm",
+  "speed": "mm/s",
+  "angularSpeed": "rpm",
+  "acceleration": "m/s²",
+  "angularAcceleration": "rad/s²",
+  "stiffness": "N/mm",
+  "torsionStiffness": "N·mm/rad",
+  "damping": "N·s/m",
+  "rotDamping": "N·mm·s/rad",
+  "density": "g/cm³",
+  "power": "W",
+  "energy": "mJ",
+  "inertia": "g·mm²",
+  "area": "mm²",
+  "volume": "cm³",
+  "frequency": "Hz",
+  "ratio": "",
+  "count": ""
+ },
+ "materials": []
+}

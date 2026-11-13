@@ -1,0 +1,15 @@
+DATASET   : smoke - 12 downscaled photographs derived from ../groundtruth (NAVI v1.0, object dino_5,
+            scene multiview-13-canon_t4i)
+LICENSE   : same as the source: CC-BY (per the NAVI paper; version not stated, assume CC BY 4.0), with the
+            Apache License 2.0 text published on the NAVI project page. Permissive; commercial use allowed.
+SOURCE    : https://navidataset.github.io/ , https://github.com/google/navi ,
+            https://storage.googleapis.com/gresearch/navi-dataset/navi_v1.0.tar.gz
+VERIFIED  : 2026-11-11 - see ../groundtruth/LICENSE.source.txt for the verbatim excerpts, URLs and the
+            saved license texts (../groundtruth/upstream/).
+ATTRIBUTION: Jampani et al., "NAVI: Category-Agnostic Image Collections with High-Quality 3D Shape and Pose
+            Annotations", NeurIPS 2023, https://navidataset.github.io/ . Copyright Google LLC.
+
+STATEMENT OF CHANGES (required by CC BY / Apache-2.0)
+  The 12 images are MODIFIED copies: each was downscaled from 5184x3456 to 1200x800 and re-encoded as JPEG
+  (ImageMagick, quality 90) and renamed. reference/annotations.json is the matching subset of the NAVI
+  annotations with filename / image_size / focal_length rewritten for the resized images. See README.md.

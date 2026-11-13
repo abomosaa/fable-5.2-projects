@@ -1,0 +1,13 @@
+{
+ "radius": 0.038503,
+ "height": 0.075,
+ "mass": 0.055161,
+ "open_top": false,
+ "materials": [
+  "can_b_tin"
+ ],
+ "surface_area_m2": 0.028108,
+ "source_scale": 2.0,
+ "tris": 652,
+ "note": "condensed-milk can; source model is half real size, scaled x2 (GOST no.7 can: 76 mm dia)"
+}

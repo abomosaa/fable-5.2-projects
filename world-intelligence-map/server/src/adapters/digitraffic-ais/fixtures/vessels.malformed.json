@@ -1,0 +1,5 @@
+[
+{"callSign":"OJAA","destination":"<script>alert(1)</script>HELSINKI","draught":-5,"eta":0,"imo":0,"mmsi":230000001,"name":"<img src=x onerror=alert(1)>EVIL QUEEN","posType":1,"referencePointA":0,"referencePointB":0,"referencePointC":0,"referencePointD":0,"shipType":"seventy","timestamp":1794355000000},
+"not-an-object",
+{"callSign":"OJBB","destination":"TURKU","draught":50,"name":"NO MMSI","shipType":70,"timestamp":1794355000000}
+]

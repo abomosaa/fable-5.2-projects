@@ -1,0 +1,51 @@
+{
+  "id": "noaa-tsunami",
+  "provider": "NOAA National Weather Service – U.S. Tsunami Warning System (NTWC and PTWC)",
+  "dataset": "Tsunami message Atom feeds of the National Tsunami Warning Center (PAAQ) and the Pacific Tsunami Warning Center (PHEB)",
+  "description": "Latest tsunami messages (warning, advisory, watch, threat or information statement) issued by the two U.S. tsunami warning centres after potentially tsunamigenic earthquakes, located at the earthquake epicentre, with category, preliminary magnitude and links to the bulletin text and CAP document.",
+  "homepageUrl": "https://www.tsunami.gov/",
+  "documentationUrl": "https://www.tsunami.gov/?page=message_definitions",
+  "sourceUrls": ["https://www.tsunami.gov/events/xml/PAAQAtom.xml", "https://www.tsunami.gov/events/xml/PHEBAtom.xml"],
+  "allowedHosts": ["www.tsunami.gov"],
+  "coverage": {
+    "geographic": "Messages for the United States, Canada, U.S. Pacific and Caribbean territories and (PTWC) international partners in the Pacific and Caribbean; triggering earthquakes can be anywhere.",
+    "temporal": "Only the most recent message of each centre is in its feed; earlier bulletins persist locally until retention expires."
+  },
+  "updateCadence": { "upstream": "Within minutes of a qualifying earthquake; follow-up messages during an event", "pollIntervalSec": 120, "staleAfterSec": 1800 },
+  "auth": { "type": "none", "envVars": [] },
+  "attribution": "NOAA National Weather Service, U.S. Tsunami Warning System (tsunami.gov)",
+  "license": {
+    "name": "U.S. Government work – public domain (NWS data may be used for any lawful purpose without implying endorsement)",
+    "url": "https://www.weather.gov/disclaimer",
+    "redistribution": "allowed",
+    "nonCommercialOnly": false,
+    "notes": "tsunami.gov links to the NWS disclaimer: information on NWS web pages is in the public domain unless noted otherwise and must not be modified and then presented as official government material."
+  },
+  "limitations": [
+    "Not an alerting service: this map can lag the official feeds by minutes. Follow official local warnings.",
+    "Each feed carries only its centre's latest message, so messages issued and replaced between two polls are missed.",
+    "The point shown is the earthquake epicentre, not the coastline under warning; affected areas are described in the linked bulletin.",
+    "Magnitudes are preliminary and message categories are frequently upgraded, downgraded or cancelled by follow-up messages.",
+    "Coverage reflects the U.S. centres' areas of responsibility; other national tsunami services are not included."
+  ],
+  "confidenceNotes": "Messages are official products; they carry no confidence value. Severity is derived by this application from the message category: Warning → extreme (4), Advisory or (international) Threat → severe (3), Watch → moderate (2), Information statement and cancellations → info (0). Unknown categories get no severity.",
+  "retention": { "note": "Bulletins are kept for 30 days after their issue time." },
+  "snapshot": "incremental",
+  "http": { "minIntervalMs": 1000 },
+  "enabledByDefault": true,
+  "layers": [
+    {
+      "id": "tsunami-bulletins",
+      "name": "Tsunami messages (NOAA)",
+      "description": "Latest tsunami warnings, advisories, watches and information statements from the U.S. National and Pacific Tsunami Warning Centers, shown at the triggering earthquake.",
+      "domain": "hazards",
+      "category": "tsunami",
+      "geometry": "point",
+      "timeModel": "event",
+      "render": { "type": "point", "color": "blue", "shape": "diamond" },
+      "freshForSec": 21600,
+      "retentionDays": 30,
+      "defaultOn": true
+    }
+  ]
+}

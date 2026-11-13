@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="dev.pocket3d.core.mesh.HolesTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2026-11-12T10:55:40.957Z" hostname="h4-pc" time="0.042">
+  <properties/>
+  <testcase name="findsHoleOfSphereWithCapRemoved" classname="dev.pocket3d.core.mesh.HolesTest" time="0.004"/>
+  <testcase name="outerRimIsReportedAndCanBeLeftOpen" classname="dev.pocket3d.core.mesh.HolesTest" time="0.004"/>
+  <testcase name="fillIsDeterministic" classname="dev.pocket3d.core.mesh.HolesTest" time="0.006"/>
+  <testcase name="pinchedHolesAreFilledSeparately" classname="dev.pocket3d.core.mesh.HolesTest" time="0.001"/>
+  <testcase name="repairedFlagSurvivesGlbRoundTripAndSecondFillReusesMaterial" classname="dev.pocket3d.core.mesh.HolesTest" time="0.007"/>
+  <testcase name="fillsTriangleAndQuadHolesAndMeshesWithoutAttributes" classname="dev.pocket3d.core.mesh.HolesTest" time="0.0"/>
+  <testcase name="fillClosesSphereAndFlagsRepairedSurface" classname="dev.pocket3d.core.mesh.HolesTest" time="0.015"/>
+  <testcase name="fillsNonConvexHoleWithoutFlippedTriangles" classname="dev.pocket3d.core.mesh.HolesTest" time="0.004"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

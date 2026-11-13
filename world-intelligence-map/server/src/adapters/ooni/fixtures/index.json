@@ -1,0 +1,13 @@
+{
+  "capturedAt": "2026-11-10T17:51:50Z",
+  "notes": "Captured from the live OONI aggregation API (api.ooni.io/api/v1/aggregation) with since=2026-11-04&until=2026-11-11&time_grain=day&axis_x=probe_cc&axis_y=measurement_start_day, one request per test name – exactly the requests the adapter makes at the fixture epoch. Each response keeps its envelope (v, dimension_count, db_stats) and is trimmed to a country sample: 86 countries for web_connectivity (including low-volume country-days below the 50-measurement threshold and a territory missing from the gazetteer, GP) and the same 36 countries for the six app tests. Values are untouched. 2026-11-10 was still in progress at capture time (17:51 UTC), so its counts are partial. The malformed variant of the web_connectivity route was authored by hand from the same schema.",
+  "routes": [
+    { "match": "test_name=web_connectivity&", "file": "web_connectivity.json", "variants": { "malformed": "web_connectivity.malformed.json" } },
+    { "match": "test_name=whatsapp&", "file": "whatsapp.json" },
+    { "match": "test_name=telegram&", "file": "telegram.json" },
+    { "match": "test_name=signal&", "file": "signal.json" },
+    { "match": "test_name=facebook_messenger&", "file": "facebook_messenger.json" },
+    { "match": "test_name=tor&", "file": "tor.json" },
+    { "match": "test_name=psiphon&", "file": "psiphon.json" }
+  ]
+}

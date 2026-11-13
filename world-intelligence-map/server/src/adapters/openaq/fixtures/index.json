@@ -1,0 +1,11 @@
+{
+  "capturedAt": "2026-11-10T18:00:00Z",
+  "notes": "AUTHORED, not captured: the OpenAQ v3 API requires an X-API-Key and none was available (the live endpoint answered HTTP 401 'A valid API key must be provided in the X-API-Key header'). The fixture follows the documented LatestResponse schema of GET /v3/parameters/{parameters_id}/latest exactly (meta{name,website,page,limit,found}; results[]{datetime{utc,local}, value, coordinates{latitude,longitude}, sensorsId, locationsId}) as published in https://api.openaq.org/openapi.json and https://docs.openaq.org/resources/latest. It contains 80 synthetic stations placed in 80 major cities worldwide (coordinates jittered around the city centre, invented sensor and location ids, PM2.5 values loosely scaled from the modelled values captured for the same cities on 2026-11-10, local times with approximate UTC offsets). Snapshot fixture: measurement times lie between 23:50 and 23:58 UTC on 2026-11-10, i.e. within the ten minutes before the fixture epoch. No real station data are included. The malformed variant was authored by hand.",
+  "routes": [
+    {
+      "match": "/v3/parameters/2/latest",
+      "file": "pm25-latest.json",
+      "variants": { "malformed": "pm25-latest.malformed.json" }
+    }
+  ]
+}

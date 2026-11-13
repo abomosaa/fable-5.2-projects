@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="dev.pocket3d.core.mesh.MeshTopologyTest" tests="12" skipped="0" failures="0" errors="0" timestamp="2026-11-12T10:55:41.124Z" hostname="h4-pc" time="0.01">
+  <properties/>
+  <testcase name="torusEulerCharacteristicIsZero" classname="dev.pocket3d.core.mesh.MeshTopologyTest" time="0.001"/>
+  <testcase name="boundaryLoopsOfOpenCylinderAreOrderedAndClosed" classname="dev.pocket3d.core.mesh.MeshTopologyTest" time="0.0"/>
+  <testcase name="emptyMesh" classname="dev.pocket3d.core.mesh.MeshTopologyTest" time="0.0"/>
+  <testcase name="negativeZeroWeldsWithPositiveZero" classname="dev.pocket3d.core.mesh.MeshTopologyTest" time="0.0"/>
+  <testcase name="detectsNonManifoldEdge" classname="dev.pocket3d.core.mesh.MeshTopologyTest" time="0.0"/>
+  <testcase name="planeHasOneBoundaryLoop" classname="dev.pocket3d.core.mesh.MeshTopologyTest" time="0.001"/>
+  <testcase name="degenerateFacesAreIsolated" classname="dev.pocket3d.core.mesh.MeshTopologyTest" time="0.0"/>
+  <testcase name="bowTieBoundaryLoopsAreSeparated" classname="dev.pocket3d.core.mesh.MeshTopologyTest" time="0.0"/>
+  <testcase name="faceComponentsOfDisjointMeshes" classname="dev.pocket3d.core.mesh.MeshTopologyTest" time="0.0"/>
+  <testcase name="fixturesAreClosedAndOutwardOriented" classname="dev.pocket3d.core.mesh.MeshTopologyTest" time="0.007"/>
+  <testcase name="weldsSeamDuplicates" classname="dev.pocket3d.core.mesh.MeshTopologyTest" time="0.001"/>
+  <testcase name="pinchedHoleLoopsAreSeparated" classname="dev.pocket3d.core.mesh.MeshTopologyTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

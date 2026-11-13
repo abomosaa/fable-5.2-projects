@@ -1,0 +1,11 @@
+{
+  "capturedAt": "2026-11-10T17:52:00Z",
+  "notes": "Captured from the WRI GitHub repository (output_database/global_power_plant_database.csv, v1.3.0, 12.0 MB, 34,936 plants) and trimmed without altering any kept line (CRLF line endings preserved): the header, all 195 nuclear plants, an even sample of 992 plants of 50 MW or more across the other 14 fuels (in file order, so spread over 100+ countries), and 56 plants below 50 MW that the adapter must skip. The requested ~1,200 non-nuclear rows did not fit the 450 KB budget because rows average about 350 bytes. Static reference data (2021) without per-record timestamps. The malformed variant was authored by hand.",
+  "routes": [
+    {
+      "match": "/output_database/global_power_plant_database.csv",
+      "file": "global_power_plant_database.csv",
+      "variants": { "malformed": "global_power_plant_database.malformed.csv" }
+    }
+  ]
+}

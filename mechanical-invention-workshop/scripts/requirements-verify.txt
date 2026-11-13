@@ -1,0 +1,7 @@
+# Independent export verifier (scripts/verify_exports.py). Python 3.14.
+# uv venv .venv && uv pip install --python .venv/bin/python -r scripts/requirements-verify.txt
+trimesh==5.2.0
+numpy==2.5.4
+ezdxf==1.4.5
+lxml==6.1.3
+networkx==3.7

@@ -1,0 +1,18 @@
+{
+  "capturedAt": "2026-11-10T17:49:00Z",
+  "notes": "PAAQAtom.xml and PHEBAtom.xml are the complete, unmodified live feeds (each carries only the centre's latest message: an NTWC information statement of 2026-11-05 and a PTWC information statement of 2026-11-08). No warning, advisory or watch was in effect on the capture day, so the 'escalated' variants were AUTHORED by hand from the same entry structure to exercise the category mapping, follow-up messages and a message present in both feeds; they do not describe real events. The 'malformed' variants were also authored by hand. 'empty' is a feed without entries.",
+  "routes": [
+    {
+      "match": "/events/xml/PAAQAtom.xml",
+      "file": "PAAQAtom.xml",
+      "lastModified": "Thu, 05 Nov 2026 05:02:12 GMT",
+      "variants": { "malformed": "PAAQAtom.malformed.xml", "escalated": "PAAQAtom.escalated.xml", "empty": "Atom.empty.xml" }
+    },
+    {
+      "match": "/events/xml/PHEBAtom.xml",
+      "file": "PHEBAtom.xml",
+      "lastModified": "Sun, 08 Nov 2026 06:35:18 GMT",
+      "variants": { "escalated": "PHEBAtom.escalated.xml", "empty": "Atom.empty.xml" }
+    }
+  ]
+}

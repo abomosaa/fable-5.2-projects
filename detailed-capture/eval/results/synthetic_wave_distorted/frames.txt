@@ -1,0 +1,13 @@
+file            status    reasons  warnings         inl   scale  gain  zncc  resPx  pairs  via       mask  sigma
+closeup_01.jpg  accepted           lens_distortion  766   2.91   2.91  1.0   1.24   3      overview  0.0   1.25 
+closeup_02.jpg  accepted           lens_distortion  1360  2.97   2.25  1.0   1.77   5      overview  0.0   1.36 
+closeup_03.jpg  accepted           lens_distortion  626   3.08   3.08  1.0   1.44   5      overview  0.0   0.81 
+closeup_04.jpg  accepted           lens_distortion  28    3.15   3.15  1.0   5.34   2      overview  0.0   0.69 
+closeup_05.jpg  accepted           lens_distortion  1750  3.07   2.12  1.0   0.99   5      overview  0.0   1.47 
+closeup_06.jpg  accepted           lens_distortion  1430  3.16   2.31  1.0   2.31   8      overview  0.0   1.5  
+closeup_07.jpg  accepted           lens_distortion  558   3.15   2.06  1.0   0.82   7      overview  0.0   1.38 
+closeup_08.jpg  accepted           lens_distortion  379   3.05   3.05  1.0   1.02   5      overview  0.0   1.03 
+closeup_09.jpg  accepted           lens_distortion  1530  3.06   1.73  1.0   1.7    3      overview  0.0   1.9  
+closeup_10.jpg  accepted           lens_distortion  1263  3.12   2.39  1.0   3.02   5      overview  0.0   1.65 
+closeup_11.jpg  accepted           lens_distortion  1146  2.96   2.07  1.0   1.59   5      overview  0.0   1.55 
+closeup_12.jpg  accepted           lens_distortion  963   2.96   1.72  1.0   1.28   3      overview  0.0   1.96 

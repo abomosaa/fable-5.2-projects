@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <feed xmlns="http://www.w3.org/2005/Atom" xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#" xmlns:georss="http://www.georss.org/georss">
+    <id>urn:uuid:33333333-0000-4000-8000-000000000001</id><title>Tsunami Advisory Number 2</title>
+    <updated>2026-11-09T12:00:00Z</updated>
+    <author>
+      <name>NWS National Tsunami Warning Center Palmer AK</name>
+<uri>https://www.tsunami.gov/</uri>
+     <email>ntwc@noaa.gov</email>
+    </author>
+   <entry>
+    <title>10 miles N of &lt;script&gt;alert(1)&lt;/script&gt;Hostile &lt;b&gt;Harbor&lt;/b&gt;</title><updated>2026-11-09T12:00:00Z</updated>
+<geo:lat>51.500</geo:lat>
+<geo:long>181.250</geo:long>
+<summary type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml">
+     <strong>Category:</strong> Advisory<br/><strong>Bulletin Issue Time: </strong> 2026.11.09 12:00:00 UTC <br/><strong>Preliminary Magnitude: </strong>7.2(Mwp)<br/><strong>Lat/Lon: </strong>51.500 / 181.250<br/><strong>Affected Region: </strong>10 miles N of Hostile Harbor<br/><b>Note:</b>  * <img src=x onerror=alert(1)/>Strong currents.<br/><strong>Definition: </strong>Authored test entry. <a href="https://www.tsunami.gov/events/PAAQ/2026/11/09/bad001/2/WEAK53/WEAK53.txt">View bulletin</a>  </div></summary>
+    <id>urn:uuid:f0000000-0000-4000-8000-000000000001</id><link rel="related" title="CapXML document" href="https://www.tsunami.gov/events/PAAQ/2026/11/09/bad001/2/WEAK53/WEAK53CAP.xml" type="application/cap+xml" />
+<link rel="alternate" title="Bulletin" href="https://www.tsunami.gov/events/PAAQ/2026/11/09/bad001/2/WEAK53/WEAK53.txt" type="application/xml" />
+</entry>
+   <entry>
+    <title>Entry with an impossible latitude</title><updated>2026-11-09T12:00:00Z</updated>
+<geo:lat>151.500</geo:lat>
+<geo:long>-160.000</geo:long>
+<summary type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml">
+     <strong>Category:</strong> Information<br/><strong>Bulletin Issue Time: </strong> 2026.11.09 12:00:00 UTC <br/><strong>Preliminary Magnitude: </strong>5.0(Ml)<br/><strong>Lat/Lon: </strong>151.500 / -160.000<br/><strong>Affected Region: </strong>Nowhere<br/><b>Note:</b>  x<br/><strong>Definition: </strong>Authored test entry. <a href="https://www.tsunami.gov/events/PAAQ/2026/11/09/bad002/1/WEAK53/WEAK53.txt">View bulletin</a>  </div></summary>
+    <id>urn:uuid:f0000000-0000-4000-8000-000000000002</id><link rel="related" title="CapXML document" href="https://www.tsunami.gov/events/PAAQ/2026/11/09/bad002/1/WEAK53/WEAK53CAP.xml" type="application/cap+xml" />
+<link rel="alternate" title="Bulletin" href="https://www.tsunami.gov/events/PAAQ/2026/11/09/bad002/1/WEAK53/WEAK53.txt" type="application/xml" />
+</entry>
+   <entry>
+    <title>Entry without coordinates</title><updated>2026-11-09T12:00:00Z</updated>
+    <summary type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><strong>Category:</strong> Information<br/></div></summary>
+    <id>urn:uuid:f0000000-0000-4000-8000-000000000003</id>
+   </entry>
+   <entry>
+    <title>Entry without any usable time</title><updated>recently</updated>
+<geo:lat>10.0</geo:lat>
+<geo:long>-100.0</geo:long>
+    <summary type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><strong>Category:</strong> Information<br/><strong>Bulletin Issue Time: </strong> soon <br/></div></summary>
+    <id>urn:uuid:f0000000-0000-4000-8000-000000000004</id>
+   </entry>
+   <entry>
+    <title>Entry without id</title><updated>2026-11-09T12:00:00Z</updated>
+<geo:lat>10.0</geo:lat>
+<geo:long>-100.0</geo:long>
+    <summary type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><strong>Category:</strong> Information<br/></div></summary>
+   </entry>
+   <entry>
+    <updated>2026-11-09T12:00:00Z</updated>
+<geo:lat>10.0</geo:lat>
+<geo:long>-100.0</geo:long>
+    <id>urn:uuid:f0000000-0000-4000-8000-000000000006</id>
+   </entry>
+   <entry>
+    <title>Entry with an unknown category and no links</title><updated>2026-11-09T11:00:00Z</updated>
+<geo:lat>-5.5</geo:lat>
+<geo:long>152.0</geo:long>
+    <summary type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><strong>Category:</strong> Seismic Bulletin<br/><strong>Preliminary Magnitude: </strong>6.6<br/></div></summary>
+    <id>urn:uuid:f0000000-0000-4000-8000-000000000007</id>
+    <link rel="alternate" title="Bulletin" href="javascript:alert(1)" type="application/xml" />
+   </entry>
+</feed>

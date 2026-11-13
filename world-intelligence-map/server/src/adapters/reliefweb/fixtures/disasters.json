@@ -1,0 +1,1767 @@
+{
+ "href": "https://api.reliefweb.int/v2/disasters?appname=REPLACE-WITH-APP-NAME",
+ "time": 14,
+ "links": {
+  "self": {
+   "href": "https://api.reliefweb.int/v2/disasters?appname=REPLACE-WITH-APP-NAME"
+  }
+ },
+ "totalCount": 35,
+ "count": 35,
+ "data": [
+  {
+   "id": 99001,
+   "score": 1,
+   "href": "https://api.reliefweb.int/v2/disasters/99001",
+   "fields": {
+    "id": 99001,
+    "name": "Philippines: Tropical Cyclone - Nov 2026",
+    "glide": "TC-2026-009001-PHL",
+    "status": "alert",
+    "type": [
+     {
+      "id": 4602,
+      "name": "Tropical Cyclone",
+      "code": "TC",
+      "primary": true
+     }
+    ],
+    "primary_type": {
+     "id": 4602,
+     "name": "Tropical Cyclone",
+     "code": "TC"
+    },
+    "country": [
+     {
+      "id": 1001,
+      "name": "Philippines",
+      "shortname": "Philippines",
+      "iso3": "phl",
+      "primary": true
+     },
+     {
+      "id": 1002,
+      "name": "Viet Nam",
+      "shortname": "Viet Nam",
+      "iso3": "vnm"
+     }
+    ],
+    "primary_country": {
+     "id": 1001,
+     "name": "Philippines",
+     "shortname": "Philippines",
+     "iso3": "phl"
+    },
+    "date": {
+     "created": "2026-11-09T07:00:00+00:00",
+     "changed": "2026-11-10T09:15:00+00:00",
+     "event": "2026-11-08T00:00:00+00:00"
+    },
+    "url": "https://reliefweb.int/disaster/tc-2026-009001-phl",
+    "url_alias": "https://reliefweb.int/disaster/tc-2026-009001-phl"
+   }
+  },
+  {
+   "id": 99002,
+   "score": 1,
+   "href": "https://api.reliefweb.int/v2/disasters/99002",
+   "fields": {
+    "id": 99002,
+    "name": "Indonesia: Volcanic Activity - Nov 2026",
+    "glide": "VO-2026-009002-IDN",
+    "status": "alert",
+    "type": [
+     {
+      "id": 4606,
+      "name": "Volcano",
+      "code": "VO",
+      "primary": true
+     }
+    ],
+    "primary_type": {
+     "id": 4606,
+     "name": "Volcano",
+     "code": "VO"
+    },
+    "country": [
+     {
+      "id": 1017,
+      "name": "Indonesia",
+      "shortname": "Indonesia",
+      "iso3": "idn",
+      "primary": true
+     }
+    ],
+    "primary_country": {
+     "id": 1017,
+     "name": "Indonesia",
+     "shortname": "Indonesia",
+     "iso3": "idn"
+    },
+    "date": {
+     "created": "2026-11-07T08:07:00+00:00",
+     "changed": "2026-11-09T04:40:00+00:00",
+     "event": "2026-11-06T00:00:00+00:00"
+    },
+    "url": "https://reliefweb.int/disaster/vo-2026-009002-idn",
+    "url_alias": "https://reliefweb.int/disaster/vo-2026-009002-idn"
+   }
+  },
+  {
+   "id": 99003,
+   "score": 1,
+   "href": "https://api.reliefweb.int/v2/disasters/99003",
+   "fields": {
+    "id": 99003,
+    "name": "Sri Lanka: Floods and Landslides - Nov 2026",
+    "glide": "FL-2026-009003-LKA",
+    "status": "alert",
+    "type": [
+     {
+      "id": 4600,
+      "name": "Flood",
+      "code": "FL",
+      "primary": true
+     },
+     {
+      "id": 4608,
+      "name": "Land Slide",
+      "code": "LS"
+     }
+    ],
+    "primary_type": {
+     "id": 4600,
+     "name": "Flood",
+     "code": "FL"
+    },
+    "country": [
+     {
+      "id": 1033,
+      "name": "Sri Lanka",
+      "shortname": "Sri Lanka",
+      "iso3": "lka",
+      "primary": true
+     }
+    ],
+    "primary_country": {
+     "id": 1033,
+     "name": "Sri Lanka",
+     "shortname": "Sri Lanka",
+     "iso3": "lka"
+    },
+    "date": {
+     "created": "2026-11-06T09:14:00+00:00",
+     "changed": "2026-11-09T12:00:00+00:00",
+     "event": "2026-11-04T00:00:00+00:00"
+    },
+    "url": "https://reliefweb.int/disaster/fl-2026-009003-lka",
+    "url_alias": "https://reliefweb.int/disaster/fl-2026-009003-lka"
+   }
+  },
+  {
+   "id": 99020,
+   "score": 1,
+   "href": "https://api.reliefweb.int/v2/disasters/99020",
+   "fields": {
+    "id": 99020,
+    "name": "Tajikistan: Cold Wave - Nov 2026",
+    "glide": "CW-2026-009020-TJK",
+    "status": "current",
+    "type": [
+     {
+      "id": 4609,
+      "name": "Cold Wave",
+      "code": "CW",
+      "primary": true
+     }
+    ],
+    "primary_type": {
+     "id": 4609,
+     "name": "Cold Wave",
+     "code": "CW"
+    },
+    "country": [
+     {
+      "id": 1043,
+      "name": "Tajikistan",
+      "shortname": "Tajikistan",
+      "iso3": "tjk",
+      "primary": true
+     }
+    ],
+    "primary_country": {
+     "id": 1043,
+     "name": "Tajikistan",
+     "shortname": "Tajikistan",
+     "iso3": "tjk"
+    },
+    "date": {
+     "created": "2026-11-04T08:13:00+00:00",
+     "changed": "2026-11-08T08:00:00+00:00",
+     "event": "2026-11-01T00:00:00+00:00"
+    },
+    "url": "https://reliefweb.int/disaster/cw-2026-009020-tjk",
+    "url_alias": "https://reliefweb.int/disaster/cw-2026-009020-tjk"
+   }
+  },
+  {
+   "id": 99013,
+   "score": 1,
+   "href": "https://api.reliefweb.int/v2/disasters/99013",
+   "fields": {
+    "id": 99013,
+    "name": "Chile: Wild Fires - Oct 2026",
+    "glide": "WF-2026-009013-CHL",
+    "status": "current",
+    "type": [
+     {
+      "id": 4605,
+      "name": "Wild Fire",
+      "code": "WF",
+      "primary": true
+     }
+    ],
+    "primary_type": {
+     "id": 4605,
+     "name": "Wild Fire",
+     "code": "WF"
+    },
+    "country": [
+     {
+      "id": 1041,
+      "name": "Chile",
+      "shortname": "Chile",
+      "iso3": "chl",
+      "primary": true
+     }
+    ],
+    "primary_country": {
+     "id": 1041,
+     "name": "Chile",
+     "shortname": "Chile",
+     "iso3": "chl"
+    },
+    "date": {
+     "created": "2026-11-01T10:24:00+00:00",
+     "changed": "2026-11-08T22:10:00+00:00",
+     "event": "2026-10-30T00:00:00+00:00"
+    },
+    "url": "https://reliefweb.int/disaster/wf-2026-009013-chl",
+    "url_alias": "https://reliefweb.int/disaster/wf-2026-009013-chl"
+   }
+  },
+  {
+   "id": 99004,
+   "score": 1,
+   "href": "https://api.reliefweb.int/v2/disasters/99004",
+   "fields": {
+    "id": 99004,
+    "name": "Afghanistan: Earthquake - Oct 2026",
+    "glide": "EQ-2026-009004-AFG",
+    "status": "current",
+    "type": [
+     {
+      "id": 4603,
+      "name": "Earthquake",
+      "code": "EQ",
+      "primary": true
+     }
+    ],
+    "primary_type": {
+     "id": 4603,
+     "name": "Earthquake",
+     "code": "EQ"
+    },
+    "country": [
+     {
+      "id": 1014,
+      "name": "Afghanistan",
+      "shortname": "Afghanistan",
+      "iso3": "afg",
+      "primary": true
+     },
+     {
+      "id": 1015,
+      "name": "Pakistan",
+      "shortname": "Pakistan",
+      "iso3": "pak"
+     }
+    ],
+    "primary_country": {
+     "id": 1014,
+     "name": "Afghanistan",
+     "shortname": "Afghanistan",
+     "iso3": "afg"
+    },
+    "date": {
+     "created": "2026-10-27T10:21:00+00:00",
+     "changed": "2026-11-08T07:30:00+00:00",
+     "event": "2026-10-27T00:00:00+00:00"
+    },
+    "url": "https://reliefweb.int/disaster/eq-2026-009004-afg",
+    "url_alias": "https://reliefweb.int/disaster/eq-2026-009004-afg"
+   }
+  },
+  {
+   "id": 99018,
+   "score": 1,
+   "href": "https://api.reliefweb.int/v2/disasters/99018",
+   "fields": {
+    "id": 99018,
+    "name": "Vanuatu: Tropical Cyclone - Oct 2026",
+    "glide": "TC-2026-009018-VUT",
+    "status": "current",
+    "type": [
+     {
+      "id": 4602,
+      "name": "Tropical Cyclone",
+      "code": "TC",
+      "primary": true
+     }
+    ],
+    "primary_type": {
+     "id": 4602,
+     "name": "Tropical Cyclone",
+     "code": "TC"
+    },
+    "country": [
+     {
+      "id": 1019,
+      "name": "Vanuatu",
+      "shortname": "Vanuatu",
+      "iso3": "vut",
+      "primary": true
+     },
+     {
+      "id": 1020,
+      "name": "Fiji",
+      "shortname": "Fiji",
+      "iso3": "fji"
+     }
+    ],
+    "primary_country": {
+     "id": 1019,
+     "name": "Vanuatu",
+     "shortname": "Vanuatu",
+     "iso3": "vut"
+    },
+    "date": {
+     "created": "2026-10-25T15:59:00+00:00",
+     "changed": "2026-11-05T21:00:00+00:00",
+     "event": "2026-10-24T00:00:00+00:00"
+    },
+    "url": "https://reliefweb.int/disaster/tc-2026-009018-vut",
+    "url_alias": "https://reliefweb.int/disaster/tc-2026-009018-vut"
+   }
+  },
+  {
+   "id": 99011,
+   "score": 1,
+   "href": "https://api.reliefweb.int/v2/disasters/99011",
+   "fields": {
+    "id": 99011,
+    "name": "Mozambique: Tropical Cyclone - Oct 2026",
+    "glide": "TC-2026-009011-MOZ",
+    "status": "current",
+    "type": [
+     {
+      "id": 4602,
+      "name": "Tropical Cyclone",
+      "code": "TC",
+      "primary": true
+     },
+     {
+      "id": 4600,
+      "name": "Flood",
+      "code": "FL"
+     }
+    ],
+    "primary_type": {
+     "id": 4602,
+     "name": "Tropical Cyclone",
+     "code": "TC"
+    },
+    "country": [
+     {
+      "id": 1003,
+      "name": "Mozambique",
+      "shortname": "Mozambique",
+      "iso3": "moz",
+      "primary": true
+     },
+     {
+      "id": 1004,
+      "name": "Madagascar",
+      "shortname": "Madagascar",
+      "iso3": "mdg"
+     }
+    ],
+    "primary_country": {
+     "id": 1003,
+     "name": "Mozambique",
+     "shortname": "Mozambique",
+     "iso3": "moz"
+    },
+    "date": {
+     "created": "2026-10-19T08:10:00+00:00",
+     "changed": "2026-11-04T13:00:00+00:00",
+     "event": "2026-10-18T00:00:00+00:00"
+    },
+    "url": "https://reliefweb.int/disaster/tc-2026-009011-moz",
+    "url_alias": "https://reliefweb.int/disaster/tc-2026-009011-moz"
+   }
+  },
+  {
+   "id": 99017,
+   "score": 1,
+   "href": "https://api.reliefweb.int/v2/disasters/99017",
+   "fields": {
+    "id": 99017,
+    "name": "Papua New Guinea: Volcanic Eruption - Oct 2026",
+    "glide": "VO-2026-009017-PNG",
+    "status": "current",
+    "type": [
+     {
+      "id": 4606,
+      "name": "Volcano",
+      "code": "VO",
+      "primary": true
+     }
+    ],
+    "primary_type": {
+     "id": 4606,
+     "name": "Volcano",
+     "code": "VO"
+    },
+    "country": [
+     {
+      "id": 1018,
+      "name": "Papua New Guinea",
+      "shortname": "Papua New Guinea",
+      "iso3": "png",
+      "primary": true
+     }
+    ],
+    "primary_country": {
+     "id": 1018,
+     "name": "Papua New Guinea",
+     "shortname": "Papua New Guinea",
+     "iso3": "png"
+    },
+    "date": {
+     "created": "2026-10-12T14:52:00+00:00",
+     "changed": "2026-11-02T03:00:00+00:00",
+     "event": "2026-10-11T00:00:00+00:00"
+    },
+    "url": "https://reliefweb.int/disaster/vo-2026-009017-png",
+    "url_alias": "https://reliefweb.int/disaster/vo-2026-009017-png"
+   }
+  },
+  {
+   "id": 99014,
+   "score": 1,
+   "href": "https://api.reliefweb.int/v2/disasters/99014",
+   "fields": {
+    "id": 99014,
+    "name": "Türkiye: Earthquake - Oct 2026",
+    "glide": "EQ-2026-009014-TUR",
+    "status": "current",
+    "type": [
+     {
+      "id": 4603,
+      "name": "Earthquake",
+      "code": "EQ",
+      "primary": true
+     }
+    ],
+    "primary_type": {
+     "id": 4603,
+     "name": "Earthquake",
+     "code": "EQ"
+    },
+    "country": [
+     {
+      "id": 1028,
+      "name": "Türkiye",
+      "shortname": "Türkiye",
+      "iso3": "tur",
+      "primary": true
+     },
+     {
+      "id": 1029,
+      "name": "Syrian Arab Republic",
+      "shortname": "Syria",
+      "iso3": "syr"
+     }
+    ],
+    "primary_country": {
+     "id": 1028,
+     "name": "Türkiye",
+     "shortname": "Türkiye",
+     "iso3": "tur"
+    },
+    "date": {
+     "created": "2026-10-05T11:31:00+00:00",
+     "changed": "2026-11-01T10:30:00+00:00",
+     "event": "2026-10-05T00:00:00+00:00"
+    },
+    "url": "https://reliefweb.int/disaster/eq-2026-009014-tur",
+    "url_alias": "https://reliefweb.int/disaster/eq-2026-009014-tur"
+   }
+  },
+  {
+   "id": 99016,
+   "score": 1,
+   "href": "https://api.reliefweb.int/v2/disasters/99016",
+   "fields": {
+    "id": 99016,
+    "name": "Nepal: Floods and Landslides - Sep 2026",
+    "glide": "FF-2026-009016-NPL",
+    "status": "current",
+    "type": [
+     {
+      "id": 4601,
+      "name": "Flash Flood",
+      "code": "FF",
+      "primary": true
+     },
+     {
+      "id": 4608,
+      "name": "Land Slide",
+      "code": "LS"
+     }
+    ],
+    "primary_type": {
+     "id": 4601,
+     "name": "Flash Flood",
+     "code": "FF"
+    },
+    "country": [
+     {
+      "id": 1016,
+      "name": "Nepal",
+      "shortname": "Nepal",
+      "iso3": "npl",
+      "primary": true
+     }
+    ],
+    "primary_country": {
+     "id": 1016,
+     "name": "Nepal",
+     "shortname": "Nepal",
+     "iso3": "npl"
+    },
+    "date": {
+     "created": "2026-09-29T13:45:00+00:00",
+     "changed": "2026-10-26T05:00:00+00:00",
+     "event": "2026-09-28T00:00:00+00:00"
+    },
+    "url": "https://reliefweb.int/disaster/ff-2026-009016-npl",
+    "url_alias": "https://reliefweb.int/disaster/ff-2026-009016-npl"
+   }
+  },
+  {
+   "id": 99022,
+   "score": 1,
+   "href": "https://api.reliefweb.int/v2/disasters/99022",
+   "fields": {
+    "id": 99022,
+    "name": "Cuba: Hurricane - Sep 2026",
+    "glide": "TC-2026-009022-CUB",
+    "status": "past",
+    "type": [
+     {
+      "id": 4602,
+      "name": "Tropical Cyclone",
+      "code": "TC",
+      "primary": true
+     }
+    ],
+    "primary_type": {
+     "id": 4602,
+     "name": "Tropical Cyclone",
+     "code": "TC"
+    },
+    "country": [
+     {
+      "id": 1022,
+      "name": "Cuba",
+      "shortname": "Cuba",
+      "iso3": "cub",
+      "primary": true
+     },
+     {
+      "id": 1021,
+      "name": "Haiti",
+      "shortname": "Haiti",
+      "iso3": "hti"
+     }
+    ],
+    "primary_country": {
+     "id": 1022,
+     "name": "Cuba",
+     "shortname": "Cuba",
+     "iso3": "cub"
+    },
+    "date": {
+     "created": "2026-09-22T10:27:00+00:00",
+     "changed": "2026-10-28T14:00:00+00:00",
+     "event": "2026-09-21T00:00:00+00:00"
+    },
+    "url": "https://reliefweb.int/disaster/tc-2026-009022-cub",
+    "url_alias": "https://reliefweb.int/disaster/tc-2026-009022-cub"
+   }
+  },
+  {
+   "id": 99005,
+   "score": 1,
+   "href": "https://api.reliefweb.int/v2/disasters/99005",
+   "fields": {
+    "id": 99005,
+    "name": "South Sudan: Floods - Sep 2026",
+    "glide": "FL-2026-009005-SSD",
+    "status": "current",
+    "type": [
+     {
+      "id": 4600,
+      "name": "Flood",
+      "code": "FL",
+      "primary": true
+     }
+    ],
+    "primary_type": {
+     "id": 4600,
+     "name": "Flood",
+     "code": "FL"
+    },
+    "country": [
+     {
+      "id": 1008,
+      "name": "South Sudan",
+      "shortname": "South Sudan",
+      "iso3": "ssd",
+      "primary": true
+     }
+    ],
+    "primary_country": {
+     "id": 1008,
+     "name": "South Sudan",
+     "shortname": "South Sudan",
+     "iso3": "ssd"
+    },
+    "date": {
+     "created": "2026-09-15T11:28:00+00:00",
+     "changed": "2026-11-05T10:00:00+00:00",
+     "event": "2026-09-12T00:00:00+00:00"
+    },
+    "url": "https://reliefweb.int/disaster/fl-2026-009005-ssd",
+    "url_alias": "https://reliefweb.int/disaster/fl-2026-009005-ssd"
+   }
+  },
+  {
+   "id": 99034,
+   "score": 1,
+   "href": "https://api.reliefweb.int/v2/disasters/99034",
+   "fields": {
+    "id": 99034,
+    "name": "Indonesia: Earthquake and Tsunami - Sep 2026",
+    "glide": "TS-2026-009034-IDN",
+    "status": "past",
+    "type": [
+     {
+      "id": 4612,
+      "name": "Tsunami",
+      "code": "TS",
+      "primary": true
+     },
+     {
+      "id": 4603,
+      "name": "Earthquake",
+      "code": "EQ"
+     }
+    ],
+    "primary_type": {
+     "id": 4612,
+     "name": "Tsunami",
+     "code": "TS"
+    },
+    "country": [
+     {
+      "id": 1017,
+      "name": "Indonesia",
+      "shortname": "Indonesia",
+      "iso3": "idn",
+      "primary": true
+     }
+    ],
+    "primary_country": {
+     "id": 1017,
+     "name": "Indonesia",
+     "shortname": "Indonesia",
+     "iso3": "idn"
+    },
+    "date": {
+     "created": "2026-09-03T13:51:00+00:00",
+     "changed": "2026-10-24T02:00:00+00:00",
+     "event": "2026-09-03T00:00:00+00:00"
+    },
+    "url": "https://reliefweb.int/disaster/ts-2026-009034-idn",
+    "url_alias": "https://reliefweb.int/disaster/ts-2026-009034-idn"
+   }
+  },
+  {
+   "id": 99025,
+   "score": 1,
+   "href": "https://api.reliefweb.int/v2/disasters/99025",
+   "fields": {
+    "id": 99025,
+    "name": "Bolivia: Wild Fires - Aug 2026",
+    "glide": "WF-2026-009025-BOL",
+    "status": "past",
+    "type": [
+     {
+      "id": 4605,
+      "name": "Wild Fire",
+      "code": "WF",
+      "primary": true
+     }
+    ],
+    "primary_type": {
+     "id": 4605,
+     "name": "Wild Fire",
+     "code": "WF"
+    },
+    "country": [
+     {
+      "id": 1027,
+      "name": "Bolivia (Plurinational State of)",
+      "shortname": "Bolivia",
+      "iso3": "bol",
+      "primary": true
+     }
+    ],
+    "primary_country": {
+     "id": 1027,
+     "name": "Bolivia (Plurinational State of)",
+     "shortname": "Bolivia",
+     "iso3": "bol"
+    },
+    "date": {
+     "created": "2026-09-02T13:48:00+00:00",
+     "changed": "2026-10-20T19:00:00+00:00",
+     "event": "2026-08-28T00:00:00+00:00"
+    },
+    "url": "https://reliefweb.int/disaster/wf-2026-009025-bol",
+    "url_alias": "https://reliefweb.int/disaster/wf-2026-009025-bol"
+   }
+  },
+  {
+   "id": 99015,
+   "score": 1,
+   "href": "https://api.reliefweb.int/v2/disasters/99015",
+   "fields": {
+    "id": 99015,
+    "name": "Yemen: Floods - Aug 2026",
+    "glide": "FL-2026-009015-YEM",
+    "status": "current",
+    "type": [
+     {
+      "id": 4600,
+      "name": "Flood",
+      "code": "FL",
+      "primary": true
+     }
+    ],
+    "primary_type": {
+     "id": 4600,
+     "name": "Flood",
+     "code": "FL"
+    },
+    "country": [
+     {
+      "id": 1030,
+      "name": "Yemen",
+      "shortname": "Yemen",
+      "iso3": "yem",
+      "primary": true
+     }
+    ],
+    "primary_country": {
+     "id": 1030,
+     "name": "Yemen",
+     "shortname": "Yemen",
+     "iso3": "yem"
+    },
+    "date": {
+     "created": "2026-08-28T12:38:00+00:00",
+     "changed": "2026-10-17T07:45:00+00:00",
+     "event": "2026-08-25T00:00:00+00:00"
+    },
+    "url": "https://reliefweb.int/disaster/fl-2026-009015-yem",
+    "url_alias": "https://reliefweb.int/disaster/fl-2026-009015-yem"
+   }
+  },
+  {
+   "id": 99006,
+   "score": 1,
+   "href": "https://api.reliefweb.int/v2/disasters/99006",
+   "fields": {
+    "id": 99006,
+    "name": "West and Central Africa: Floods - Aug 2026",
+    "glide": "FL-2026-009006-NGA",
+    "status": "current",
+    "type": [
+     {
+      "id": 4600,
+      "name": "Flood",
+      "code": "FL",
+      "primary": true
+     }
+    ],
+    "primary_type": {
+     "id": 4600,
+     "name": "Flood",
+     "code": "FL"
+    },
+    "country": [
+     {
+      "id": 1012,
+      "name": "Nigeria",
+      "shortname": "Nigeria",
+      "iso3": "nga",
+      "primary": true
+     },
+     {
+      "id": 1011,
+      "name": "Niger",
+      "shortname": "Niger",
+      "iso3": "ner"
+     },
+     {
+      "id": 1010,
+      "name": "Chad",
+      "shortname": "Chad",
+      "iso3": "tcd"
+     }
+    ],
+    "primary_country": {
+     "id": 1012,
+     "name": "Nigeria",
+     "shortname": "Nigeria",
+     "iso3": "nga"
+    },
+    "date": {
+     "created": "2026-08-24T12:35:00+00:00",
+     "changed": "2026-11-03T15:20:00+00:00",
+     "event": "2026-08-20T00:00:00+00:00"
+    },
+    "url": "https://reliefweb.int/disaster/fl-2026-009006-nga",
+    "url_alias": "https://reliefweb.int/disaster/fl-2026-009006-nga"
+   }
+  },
+  {
+   "id": 99032,
+   "score": 1,
+   "href": "https://api.reliefweb.int/v2/disasters/99032",
+   "fields": {
+    "id": 99032,
+    "name": "Uganda: Landslides - Aug 2026",
+    "glide": "LS-2026-009032-UGA",
+    "status": "past",
+    "type": [
+     {
+      "id": 4608,
+      "name": "Land Slide",
+      "code": "LS",
+      "primary": true
+     }
+    ],
+    "primary_type": {
+     "id": 4608,
+     "name": "Land Slide",
+     "code": "LS"
+    },
+    "country": [
+     {
+      "id": 1037,
+      "name": "Uganda",
+      "shortname": "Uganda",
+      "iso3": "uga",
+      "primary": true
+     }
+    ],
+    "primary_country": {
+     "id": 1037,
+     "name": "Uganda",
+     "shortname": "Uganda",
+     "iso3": "uga"
+    },
+    "date": {
+     "created": "2026-08-18T11:37:00+00:00",
+     "changed": "2026-09-29T13:00:00+00:00",
+     "event": "2026-08-16T00:00:00+00:00"
+    },
+    "url": "https://reliefweb.int/disaster/ls-2026-009032-uga",
+    "url_alias": "https://reliefweb.int/disaster/ls-2026-009032-uga"
+   }
+  },
+  {
+   "id": 99023,
+   "score": 1,
+   "href": "https://api.reliefweb.int/v2/disasters/99023",
+   "fields": {
+    "id": 99023,
+    "name": "Peru: Earthquake - Aug 2026",
+    "glide": "EQ-2026-009023-PER",
+    "status": "past",
+    "type": [
+     {
+      "id": 4603,
+      "name": "Earthquake",
+      "code": "EQ",
+      "primary": true
+     }
+    ],
+    "primary_type": {
+     "id": 4603,
+     "name": "Earthquake",
+     "code": "EQ"
+    },
+    "country": [
+     {
+      "id": 1026,
+      "name": "Peru",
+      "shortname": "Peru",
+      "iso3": "per",
+      "primary": true
+     }
+    ],
+    "primary_country": {
+     "id": 1026,
+     "name": "Peru",
+     "shortname": "Peru",
+     "iso3": "per"
+    },
+    "date": {
+     "created": "2026-08-09T11:34:00+00:00",
+     "changed": "2026-09-30T12:00:00+00:00",
+     "event": "2026-08-09T00:00:00+00:00"
+    },
+    "url": "https://reliefweb.int/disaster/eq-2026-009023-per",
+    "url_alias": "https://reliefweb.int/disaster/eq-2026-009023-per"
+   }
+  },
+  {
+   "id": 99033,
+   "score": 1,
+   "href": "https://api.reliefweb.int/v2/disasters/99033",
+   "fields": {
+    "id": 99033,
+    "name": "Ethiopia: Floods - Aug 2026",
+    "glide": "FL-2026-009033-ETH",
+    "status": "past",
+    "type": [
+     {
+      "id": 4600,
+      "name": "Flood",
+      "code": "FL",
+      "primary": true
+     }
+    ],
+    "primary_type": {
+     "id": 4600,
+     "name": "Flood",
+     "code": "FL"
+    },
+    "country": [
+     {
+      "id": 1006,
+      "name": "Ethiopia",
+      "shortname": "Ethiopia",
+      "iso3": "eth",
+      "primary": true
+     }
+    ],
+    "primary_country": {
+     "id": 1006,
+     "name": "Ethiopia",
+     "shortname": "Ethiopia",
+     "iso3": "eth"
+    },
+    "date": {
+     "created": "2026-08-08T12:44:00+00:00",
+     "changed": "2026-10-08T10:00:00+00:00",
+     "event": "2026-08-05T00:00:00+00:00"
+    },
+    "url": "https://reliefweb.int/disaster/fl-2026-009033-eth",
+    "url_alias": "https://reliefweb.int/disaster/fl-2026-009033-eth"
+   }
+  },
+  {
+   "id": 99012,
+   "score": 1,
+   "href": "https://api.reliefweb.int/v2/disasters/99012",
+   "fields": {
+    "id": 99012,
+    "name": "Bangladesh: Floods - Aug 2026",
+    "glide": "FL-2026-009012-BGD",
+    "status": "current",
+    "type": [
+     {
+      "id": 4600,
+      "name": "Flood",
+      "code": "FL",
+      "primary": true
+     },
+     {
+      "id": 4601,
+      "name": "Flash Flood",
+      "code": "FF"
+     }
+    ],
+    "primary_type": {
+     "id": 4600,
+     "name": "Flood",
+     "code": "FL"
+    },
+    "country": [
+     {
+      "id": 1000,
+      "name": "Bangladesh",
+      "shortname": "Bangladesh",
+      "iso3": "bgd",
+      "primary": true
+     }
+    ],
+    "primary_country": {
+     "id": 1000,
+     "name": "Bangladesh",
+     "shortname": "Bangladesh",
+     "iso3": "bgd"
+    },
+    "date": {
+     "created": "2026-08-04T09:17:00+00:00",
+     "changed": "2026-10-21T06:00:00+00:00",
+     "event": "2026-08-02T00:00:00+00:00"
+    },
+    "url": "https://reliefweb.int/disaster/fl-2026-009012-bgd",
+    "url_alias": "https://reliefweb.int/disaster/fl-2026-009012-bgd"
+   }
+  },
+  {
+   "id": 99030,
+   "score": 1,
+   "href": "https://api.reliefweb.int/v2/disasters/99030",
+   "fields": {
+    "id": 99030,
+    "name": "Mali: Severe Local Storms - Jul 2026",
+    "glide": "ST-2026-009030-MLI",
+    "status": "past",
+    "type": [
+     {
+      "id": 4611,
+      "name": "Severe Local Storm",
+      "code": "ST",
+      "primary": true
+     }
+    ],
+    "primary_type": {
+     "id": 4611,
+     "name": "Severe Local Storm",
+     "code": "ST"
+    },
+    "country": [
+     {
+      "id": 1039,
+      "name": "Mali",
+      "shortname": "Mali",
+      "iso3": "mli",
+      "primary": true
+     },
+     {
+      "id": 1040,
+      "name": "Burkina Faso",
+      "shortname": "Burkina Faso",
+      "iso3": "bfa"
+     }
+    ],
+    "primary_country": {
+     "id": 1039,
+     "name": "Mali",
+     "shortname": "Mali",
+     "iso3": "mli"
+    },
+    "date": {
+     "created": "2026-08-03T09:23:00+00:00",
+     "changed": "2026-09-18T11:30:00+00:00",
+     "event": "2026-07-30T00:00:00+00:00"
+    },
+    "url": "https://reliefweb.int/disaster/st-2026-009030-mli",
+    "url_alias": "https://reliefweb.int/disaster/st-2026-009030-mli"
+   }
+  },
+  {
+   "id": 99026,
+   "score": 1,
+   "href": "https://api.reliefweb.int/v2/disasters/99026",
+   "fields": {
+    "id": 99026,
+    "name": "Iran: Heat Wave - Jul 2026",
+    "glide": "HT-2026-009026-IRN",
+    "status": "past",
+    "type": [
+     {
+      "id": 4610,
+      "name": "Heat Wave",
+      "code": "HT",
+      "primary": true
+     }
+    ],
+    "primary_type": {
+     "id": 4610,
+     "name": "Heat Wave",
+     "code": "HT"
+    },
+    "country": [
+     {
+      "id": 1031,
+      "name": "Iran (Islamic Republic of)",
+      "shortname": "Iran",
+      "iso3": "irn",
+      "primary": true
+     }
+    ],
+    "primary_country": {
+     "id": 1031,
+     "name": "Iran (Islamic Republic of)",
+     "shortname": "Iran",
+     "iso3": "irn"
+    },
+    "date": {
+     "created": "2026-07-25T14:55:00+00:00",
+     "changed": "2026-09-05T06:00:00+00:00",
+     "event": "2026-07-22T00:00:00+00:00"
+    },
+    "url": "https://reliefweb.int/disaster/ht-2026-009026-irn",
+    "url_alias": "https://reliefweb.int/disaster/ht-2026-009026-irn"
+   }
+  },
+  {
+   "id": 99021,
+   "score": 1,
+   "href": "https://api.reliefweb.int/v2/disasters/99021",
+   "fields": {
+    "id": 99021,
+    "name": "Pakistan: Floods - Jul 2026",
+    "glide": "FL-2026-009021-PAK",
+    "status": "past",
+    "type": [
+     {
+      "id": 4600,
+      "name": "Flood",
+      "code": "FL",
+      "primary": true
+     }
+    ],
+    "primary_type": {
+     "id": 4600,
+     "name": "Flood",
+     "code": "FL"
+    },
+    "country": [
+     {
+      "id": 1015,
+      "name": "Pakistan",
+      "shortname": "Pakistan",
+      "iso3": "pak",
+      "primary": true
+     }
+    ],
+    "primary_country": {
+     "id": 1015,
+     "name": "Pakistan",
+     "shortname": "Pakistan",
+     "iso3": "pak"
+    },
+    "date": {
+     "created": "2026-07-16T09:20:00+00:00",
+     "changed": "2026-10-15T09:00:00+00:00",
+     "event": "2026-07-14T00:00:00+00:00"
+    },
+    "url": "https://reliefweb.int/disaster/fl-2026-009021-pak",
+    "url_alias": "https://reliefweb.int/disaster/fl-2026-009021-pak"
+   }
+  },
+  {
+   "id": 99010,
+   "score": 1,
+   "href": "https://api.reliefweb.int/v2/disasters/99010",
+   "fields": {
+    "id": 99010,
+    "name": "Haiti: Cholera Outbreak - Jul 2026",
+    "glide": "EP-2026-009010-HTI",
+    "status": "current",
+    "type": [
+     {
+      "id": 4607,
+      "name": "Epidemic",
+      "code": "EP",
+      "primary": true
+     }
+    ],
+    "primary_type": {
+     "id": 4607,
+     "name": "Epidemic",
+     "code": "EP"
+    },
+    "country": [
+     {
+      "id": 1021,
+      "name": "Haiti",
+      "shortname": "Haiti",
+      "iso3": "hti",
+      "primary": true
+     }
+    ],
+    "primary_country": {
+     "id": 1021,
+     "name": "Haiti",
+     "shortname": "Haiti",
+     "iso3": "hti"
+    },
+    "date": {
+     "created": "2026-07-08T07:03:00+00:00",
+     "changed": "2026-10-29T09:00:00+00:00",
+     "event": "2026-07-03T00:00:00+00:00"
+    },
+    "url": "https://reliefweb.int/disaster/ep-2026-009010-hti",
+    "url_alias": "https://reliefweb.int/disaster/ep-2026-009010-hti"
+   }
+  },
+  {
+   "id": 99031,
+   "score": 1,
+   "href": "https://api.reliefweb.int/v2/disasters/99031",
+   "fields": {
+    "id": 99031,
+    "name": "Burundi: Cholera Outbreak - Jun 2026",
+    "glide": "EP-2026-009031-BDI",
+    "status": "past",
+    "type": [
+     {
+      "id": 4607,
+      "name": "Epidemic",
+      "code": "EP",
+      "primary": true
+     }
+    ],
+    "primary_type": {
+     "id": 4607,
+     "name": "Epidemic",
+     "code": "EP"
+    },
+    "country": [
+     {
+      "id": 1038,
+      "name": "Burundi",
+      "shortname": "Burundi",
+      "iso3": "bdi",
+      "primary": true
+     }
+    ],
+    "primary_country": {
+     "id": 1038,
+     "name": "Burundi",
+     "shortname": "Burundi",
+     "iso3": "bdi"
+    },
+    "date": {
+     "created": "2026-07-02T10:30:00+00:00",
+     "changed": "2026-10-02T09:00:00+00:00",
+     "event": "2026-06-25T00:00:00+00:00"
+    },
+    "url": "https://reliefweb.int/disaster/ep-2026-009031-bdi",
+    "url_alias": "https://reliefweb.int/disaster/ep-2026-009031-bdi"
+   }
+  },
+  {
+   "id": 99019,
+   "score": 1,
+   "href": "https://api.reliefweb.int/v2/disasters/99019",
+   "fields": {
+    "id": 99019,
+    "name": "Sudan: Cholera Outbreak - Jun 2026",
+    "glide": "EP-2026-009019-SDN",
+    "status": "current",
+    "type": [
+     {
+      "id": 4607,
+      "name": "Epidemic",
+      "code": "EP",
+      "primary": true
+     }
+    ],
+    "primary_type": {
+     "id": 4607,
+     "name": "Epidemic",
+     "code": "EP"
+    },
+    "country": [
+     {
+      "id": 1009,
+      "name": "Sudan",
+      "shortname": "Sudan",
+      "iso3": "sdn",
+      "primary": true
+     },
+     {
+      "id": 1010,
+      "name": "Chad",
+      "shortname": "Chad",
+      "iso3": "tcd"
+     }
+    ],
+    "primary_country": {
+     "id": 1009,
+     "name": "Sudan",
+     "shortname": "Sudan",
+     "iso3": "sdn"
+    },
+    "date": {
+     "created": "2026-06-26T07:06:00+00:00",
+     "changed": "2026-11-09T16:00:00+00:00",
+     "event": "2026-06-20T00:00:00+00:00"
+    },
+    "url": "https://reliefweb.int/disaster/ep-2026-009019-sdn",
+    "url_alias": "https://reliefweb.int/disaster/ep-2026-009019-sdn"
+   }
+  },
+  {
+   "id": 99024,
+   "score": 1,
+   "href": "https://api.reliefweb.int/v2/disasters/99024",
+   "fields": {
+    "id": 99024,
+    "name": "Guatemala: Floods - Jun 2026",
+    "glide": "FL-2026-009024-GTM",
+    "status": "past",
+    "type": [
+     {
+      "id": 4600,
+      "name": "Flood",
+      "code": "FL",
+      "primary": true
+     }
+    ],
+    "primary_type": {
+     "id": 4600,
+     "name": "Flood",
+     "code": "FL"
+    },
+    "country": [
+     {
+      "id": 1023,
+      "name": "Guatemala",
+      "shortname": "Guatemala",
+      "iso3": "gtm",
+      "primary": true
+     },
+     {
+      "id": 1024,
+      "name": "Honduras",
+      "shortname": "Honduras",
+      "iso3": "hnd"
+     }
+    ],
+    "primary_country": {
+     "id": 1023,
+     "name": "Guatemala",
+     "shortname": "Guatemala",
+     "iso3": "gtm"
+    },
+    "date": {
+     "created": "2026-06-19T12:41:00+00:00",
+     "changed": "2026-09-12T10:00:00+00:00",
+     "event": "2026-06-17T00:00:00+00:00"
+    },
+    "url": "https://reliefweb.int/disaster/fl-2026-009024-gtm",
+    "url_alias": "https://reliefweb.int/disaster/fl-2026-009024-gtm"
+   }
+  },
+  {
+   "id": 99029,
+   "score": 1,
+   "href": "https://api.reliefweb.int/v2/disasters/99029",
+   "fields": {
+    "id": 99029,
+    "name": "Afghanistan: Flash Floods - Jun 2026",
+    "glide": "FF-2026-009029-AFG",
+    "status": "past",
+    "type": [
+     {
+      "id": 4601,
+      "name": "Flash Flood",
+      "code": "FF",
+      "primary": true
+     }
+    ],
+    "primary_type": {
+     "id": 4601,
+     "name": "Flash Flood",
+     "code": "FF"
+    },
+    "country": [
+     {
+      "id": 1014,
+      "name": "Afghanistan",
+      "shortname": "Afghanistan",
+      "iso3": "afg",
+      "primary": true
+     }
+    ],
+    "primary_country": {
+     "id": 1014,
+     "name": "Afghanistan",
+     "shortname": "Afghanistan",
+     "iso3": "afg"
+    },
+    "date": {
+     "created": "2026-06-09T08:16:00+00:00",
+     "changed": "2026-08-25T07:00:00+00:00",
+     "event": "2026-06-08T00:00:00+00:00"
+    },
+    "url": "https://reliefweb.int/disaster/ff-2026-009029-afg",
+    "url_alias": "https://reliefweb.int/disaster/ff-2026-009029-afg"
+   }
+  },
+  {
+   "id": 99007,
+   "score": 1,
+   "href": "https://api.reliefweb.int/v2/disasters/99007",
+   "fields": {
+    "id": 99007,
+    "name": "Horn of Africa: Drought - Jun 2026",
+    "glide": "DR-2026-009007-SOM",
+    "status": "current",
+    "type": [
+     {
+      "id": 4604,
+      "name": "Drought",
+      "code": "DR",
+      "primary": true
+     }
+    ],
+    "primary_type": {
+     "id": 4604,
+     "name": "Drought",
+     "code": "DR"
+    },
+    "country": [
+     {
+      "id": 1005,
+      "name": "Somalia",
+      "shortname": "Somalia",
+      "iso3": "som",
+      "primary": true
+     },
+     {
+      "id": 1006,
+      "name": "Ethiopia",
+      "shortname": "Ethiopia",
+      "iso3": "eth"
+     },
+     {
+      "id": 1007,
+      "name": "Kenya",
+      "shortname": "Kenya",
+      "iso3": "ken"
+     }
+    ],
+    "primary_country": {
+     "id": 1005,
+     "name": "Somalia",
+     "shortname": "Somalia",
+     "iso3": "som"
+    },
+    "date": {
+     "created": "2026-06-21T13:42:00+00:00",
+     "changed": "2026-11-07T08:00:00+00:00",
+     "event": "2026-06-01T00:00:00+00:00"
+    },
+    "url": "https://reliefweb.int/disaster/dr-2026-009007-som",
+    "url_alias": "https://reliefweb.int/disaster/dr-2026-009007-som"
+   }
+  },
+  {
+   "id": 99027,
+   "score": 1,
+   "href": "https://api.reliefweb.int/v2/disasters/99027",
+   "fields": {
+    "id": 99027,
+    "name": "Colombia: Floods and Landslides - May 2026",
+    "glide": "FL-2026-009027-COL",
+    "status": "past",
+    "type": [
+     {
+      "id": 4600,
+      "name": "Flood",
+      "code": "FL",
+      "primary": true
+     },
+     {
+      "id": 4608,
+      "name": "Land Slide",
+      "code": "LS"
+     }
+    ],
+    "primary_type": {
+     "id": 4600,
+     "name": "Flood",
+     "code": "FL"
+    },
+    "country": [
+     {
+      "id": 1025,
+      "name": "Colombia",
+      "shortname": "Colombia",
+      "iso3": "col",
+      "primary": true
+     },
+     {
+      "id": 1042,
+      "name": "Ecuador",
+      "shortname": "Ecuador",
+      "iso3": "ecu"
+     }
+    ],
+    "primary_country": {
+     "id": 1025,
+     "name": "Colombia",
+     "shortname": "Colombia",
+     "iso3": "col"
+    },
+    "date": {
+     "created": "2026-06-01T15:02:00+00:00",
+     "changed": "2026-08-19T15:00:00+00:00",
+     "event": "2026-05-30T00:00:00+00:00"
+    },
+    "url": "https://reliefweb.int/disaster/fl-2026-009027-col",
+    "url_alias": "https://reliefweb.int/disaster/fl-2026-009027-col"
+   }
+  },
+  {
+   "id": 99028,
+   "score": 1,
+   "href": "https://api.reliefweb.int/v2/disasters/99028",
+   "fields": {
+    "id": 99028,
+    "name": "Myanmar: Tropical Cyclone - May 2026",
+    "glide": "TC-2026-009028-MMR",
+    "status": "past",
+    "type": [
+     {
+      "id": 4602,
+      "name": "Tropical Cyclone",
+      "code": "TC",
+      "primary": true
+     }
+    ],
+    "primary_type": {
+     "id": 4602,
+     "name": "Tropical Cyclone",
+     "code": "TC"
+    },
+    "country": [
+     {
+      "id": 1032,
+      "name": "Myanmar",
+      "shortname": "Myanmar",
+      "iso3": "mmr",
+      "primary": true
+     },
+     {
+      "id": 1000,
+      "name": "Bangladesh",
+      "shortname": "Bangladesh",
+      "iso3": "bgd"
+     }
+    ],
+    "primary_country": {
+     "id": 1032,
+     "name": "Myanmar",
+     "shortname": "Myanmar",
+     "iso3": "mmr"
+    },
+    "date": {
+     "created": "2026-05-23T07:09:00+00:00",
+     "changed": "2026-08-01T08:00:00+00:00",
+     "event": "2026-05-22T00:00:00+00:00"
+    },
+    "url": "https://reliefweb.int/disaster/tc-2026-009028-mmr",
+    "url_alias": "https://reliefweb.int/disaster/tc-2026-009028-mmr"
+   }
+  },
+  {
+   "id": 99035,
+   "score": 1,
+   "href": "https://api.reliefweb.int/v2/disasters/99035",
+   "fields": {
+    "id": 99035,
+    "name": "Bolivia: Drought - May 2026",
+    "glide": "DR-2026-009035-BOL",
+    "status": "past",
+    "type": [
+     {
+      "id": 4604,
+      "name": "Drought",
+      "code": "DR",
+      "primary": true
+     }
+    ],
+    "primary_type": {
+     "id": 4604,
+     "name": "Drought",
+     "code": "DR"
+    },
+    "country": [
+     {
+      "id": 1027,
+      "name": "Bolivia (Plurinational State of)",
+      "shortname": "Bolivia",
+      "iso3": "bol",
+      "primary": true
+     },
+     {
+      "id": 1026,
+      "name": "Peru",
+      "shortname": "Peru",
+      "iso3": "per"
+     }
+    ],
+    "primary_country": {
+     "id": 1027,
+     "name": "Bolivia (Plurinational State of)",
+     "shortname": "Bolivia",
+     "iso3": "bol"
+    },
+    "date": {
+     "created": "2026-06-04T14:58:00+00:00",
+     "changed": "2026-10-01T16:00:00+00:00",
+     "event": "2026-05-20T00:00:00+00:00"
+    },
+    "url": "https://reliefweb.int/disaster/dr-2026-009035-bol",
+    "url_alias": "https://reliefweb.int/disaster/dr-2026-009035-bol"
+   }
+  },
+  {
+   "id": 99009,
+   "score": 1,
+   "href": "https://api.reliefweb.int/v2/disasters/99009",
+   "fields": {
+    "id": 99009,
+    "name": "DR Congo: Ebola Disease Outbreak - May 2026",
+    "glide": "EP-2026-009009-COD",
+    "status": "current",
+    "type": [
+     {
+      "id": 4607,
+      "name": "Epidemic",
+      "code": "EP",
+      "primary": true
+     }
+    ],
+    "primary_type": {
+     "id": 4607,
+     "name": "Epidemic",
+     "code": "EP"
+    },
+    "country": [
+     {
+      "id": 1013,
+      "name": "Democratic Republic of the Congo",
+      "shortname": "DR Congo",
+      "iso3": "cod",
+      "primary": true
+     },
+     {
+      "id": 1037,
+      "name": "Uganda",
+      "shortname": "Uganda",
+      "iso3": "uga"
+     }
+    ],
+    "primary_country": {
+     "id": 1013,
+     "name": "Democratic Republic of the Congo",
+     "shortname": "DR Congo",
+     "iso3": "cod"
+    },
+    "date": {
+     "created": "2026-05-17T15:56:00+00:00",
+     "changed": "2026-11-06T18:00:00+00:00",
+     "event": "2026-05-15T00:00:00+00:00"
+    },
+    "url": "https://reliefweb.int/disaster/ep-2026-009009-cod",
+    "url_alias": "https://reliefweb.int/disaster/ep-2026-009009-cod"
+   }
+  },
+  {
+   "id": 99008,
+   "score": 1,
+   "href": "https://api.reliefweb.int/v2/disasters/99008",
+   "fields": {
+    "id": 99008,
+    "name": "Southern Africa: Drought - Mar 2026",
+    "glide": "DR-2026-009008-ZWE",
+    "status": "current",
+    "type": [
+     {
+      "id": 4604,
+      "name": "Drought",
+      "code": "DR",
+      "primary": true
+     }
+    ],
+    "primary_type": {
+     "id": 4604,
+     "name": "Drought",
+     "code": "DR"
+    },
+    "country": [
+     {
+      "id": 1036,
+      "name": "Zimbabwe",
+      "shortname": "Zimbabwe",
+      "iso3": "zwe",
+      "primary": true
+     },
+     {
+      "id": 1035,
+      "name": "Zambia",
+      "shortname": "Zambia",
+      "iso3": "zmb"
+     },
+     {
+      "id": 1034,
+      "name": "Malawi",
+      "shortname": "Malawi",
+      "iso3": "mwi"
+     }
+    ],
+    "primary_country": {
+     "id": 1036,
+     "name": "Zimbabwe",
+     "shortname": "Zimbabwe",
+     "iso3": "zwe"
+    },
+    "date": {
+     "created": "2026-03-27T14:49:00+00:00",
+     "changed": "2026-10-30T11:00:00+00:00",
+     "event": "2026-03-15T00:00:00+00:00"
+    },
+    "url": "https://reliefweb.int/disaster/dr-2026-009008-zwe",
+    "url_alias": "https://reliefweb.int/disaster/dr-2026-009008-zwe"
+   }
+  }
+ ]
+}

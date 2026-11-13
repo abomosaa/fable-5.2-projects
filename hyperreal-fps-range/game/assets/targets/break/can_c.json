@@ -1,0 +1,13 @@
+{
+ "radius": 0.046204,
+ "height": 0.04049,
+ "mass": 0.052004,
+ "open_top": false,
+ "materials": [
+  "can_c_tin"
+ ],
+ "surface_area_m2": 0.026499,
+ "source_scale": 2.0,
+ "tris": 652,
+ "note": "flat sprat tin; source model is half real size, scaled x2"
+}

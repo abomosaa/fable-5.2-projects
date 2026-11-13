@@ -1,0 +1,54 @@
+{
+  "id": "nasa-firms",
+  "provider": "NASA FIRMS (Fire Information for Resource Management System)",
+  "dataset": "VIIRS 375 m active fire detections, NOAA-20, near real-time (Area API)",
+  "description": "Thermal anomalies / active fire pixels detected by the VIIRS instrument on NOAA-20 during the last two days, worldwide.",
+  "homepageUrl": "https://firms.modaps.eosdis.nasa.gov/",
+  "documentationUrl": "https://firms.modaps.eosdis.nasa.gov/api/area/",
+  "sourceUrls": ["https://firms.modaps.eosdis.nasa.gov/api/area/csv/{FIRMS_MAP_KEY}/VIIRS_NOAA20_NRT/world/2"],
+  "allowedHosts": ["firms.modaps.eosdis.nasa.gov"],
+  "coverage": { "geographic": "Global", "temporal": "Most recent two days of near-real-time detections" },
+  "updateCadence": { "upstream": "Within about three hours of each satellite overpass", "pollIntervalSec": 3600, "staleAfterSec": 21600 },
+  "auth": {
+    "type": "api_key",
+    "envVars": [{ "name": "FIRMS_MAP_KEY", "required": true, "description": "Free FIRMS MAP_KEY (32 characters) used in the Area API path." }],
+    "setup": "Request a free MAP_KEY with your e-mail address at the FIRMS site, then set FIRMS_MAP_KEY in .env. The key allows 5,000 transactions per 10 minutes.",
+    "obtainUrl": "https://firms.modaps.eosdis.nasa.gov/api/map_key/"
+  },
+  "attribution": "NASA FIRMS / LANCE – VIIRS 375 m active fire product (NOAA-20)",
+  "license": {
+    "name": "NASA Earth Science data – free and open; FIRMS asks for acknowledgement",
+    "url": "https://www.earthdata.nasa.gov/engage/open-data-services-software-policies/data-use-guidance",
+    "redistribution": "allowed-with-attribution",
+    "nonCommercialOnly": false,
+    "notes": "NASA EOSDIS data are free and open. Acknowledge: \"We acknowledge the use of data and/or imagery from NASA's Fire Information for Resource Management System (FIRMS), part of NASA's Earth Science Data and Information System (ESDIS).\""
+  },
+  "limitations": [
+    "A detection is a thermal anomaly in a ~375 m pixel, not a confirmed wildfire: gas flares, volcanoes, industrial heat and sun glint also trigger detections.",
+    "Cloud and thick smoke hide fires; each satellite sees a place only a few times per day, so short-lived fires are missed.",
+    "Near-real-time data are preliminary and are later replaced by standard-quality processing.",
+    "At most 100,000 detections per fetch are kept (highest fire radiative power first) to bound storage; low-confidence detections are kept and labelled.",
+    "The Suomi NPP VIIRS product suggested by older documentation no longer delivers new data; this adapter uses NOAA-20."
+  ],
+  "confidenceNotes": "FIRMS classifies each VIIRS detection as low, nominal or high confidence. This application maps those classes to 0.3 / 0.6 / 0.9 (a derived, ordinal convenience – not a probability).",
+  "retention": { "note": "Detections are purged three days after acquisition." },
+  "snapshot": "incremental",
+  "http": { "timeoutMs": 90000, "cacheTtlSec": 1800, "minIntervalMs": 2000 },
+  "enabledByDefault": true,
+  "layers": [
+    {
+      "id": "active-fires",
+      "name": "Active fire detections (VIIRS)",
+      "description": "Satellite thermal anomalies from the last two days: density heat map at low zoom, individual detections when zoomed in.",
+      "domain": "hazards",
+      "category": "wildfire",
+      "geometry": "point",
+      "timeModel": "event",
+      "render": { "type": "heatmap", "color": "red", "shape": "circle", "heatmapBelowZoom": 6 },
+      "freshForSec": 43200,
+      "retentionDays": 3,
+      "defaultOn": false,
+      "correlationClass": "wildfire"
+    }
+  ]
+}

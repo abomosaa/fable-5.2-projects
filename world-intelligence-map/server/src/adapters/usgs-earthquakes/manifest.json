@@ -1,0 +1,52 @@
+{
+  "id": "usgs-earthquakes",
+  "provider": "U.S. Geological Survey (USGS)",
+  "dataset": "Earthquake Hazards Program – real-time GeoJSON summary feeds",
+  "description": "Global earthquake origins (and a few other seismic event types) with magnitude, depth, review status, PAGER alert level and tsunami flag.",
+  "homepageUrl": "https://earthquake.usgs.gov/earthquakes/map/",
+  "documentationUrl": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/geojson.php",
+  "sourceUrls": [
+    "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/2.5_week.geojson",
+    "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/4.5_month.geojson"
+  ],
+  "allowedHosts": ["earthquake.usgs.gov"],
+  "coverage": {
+    "geographic": "Global for M4.5+; M2.5+ coverage is densest in the United States and adjacent regions.",
+    "temporal": "M2.5+ for the past 7 days and M4.5+ for the past 30 days; older events persist locally until retention expires."
+  },
+  "updateCadence": { "upstream": "Feeds regenerate every minute", "pollIntervalSec": 300, "staleAfterSec": 1800 },
+  "auth": { "type": "none", "envVars": [] },
+  "attribution": "U.S. Geological Survey, Earthquake Hazards Program",
+  "license": {
+    "name": "U.S. Government work – public domain (USGS asks for credit)",
+    "url": "https://www.usgs.gov/information-policies-and-instructions/copyrights-and-credits",
+    "redistribution": "allowed",
+    "nonCommercialOnly": false
+  },
+  "limitations": [
+    "Automatic solutions are preliminary: magnitude and location are routinely revised and events are occasionally deleted.",
+    "Outside the United States only events of roughly M4.5 and larger are reliably present.",
+    "Feed also carries non-tectonic events (quarry blasts, explosions); they are labelled in the sub-category."
+  ],
+  "confidenceNotes": "Confidence reflects the USGS review status only: 'reviewed' solutions score 0.95, 'automatic' solutions 0.7. Severity is derived by this application from magnitude and the PAGER alert colour.",
+  "retention": { "note": "Events are kept for 45 days after they occurred, then purged." },
+  "snapshot": "incremental",
+  "http": { "minIntervalMs": 500 },
+  "enabledByDefault": true,
+  "layers": [
+    {
+      "id": "earthquakes",
+      "name": "Earthquakes (USGS)",
+      "description": "Seismic events M2.5+ from the past week and M4.5+ from the past month.",
+      "domain": "hazards",
+      "category": "earthquake",
+      "geometry": "point",
+      "timeModel": "event",
+      "render": { "type": "point", "color": "orange", "shape": "circle" },
+      "freshForSec": 86400,
+      "retentionDays": 45,
+      "defaultOn": true,
+      "correlationClass": "earthquake"
+    }
+  ]
+}

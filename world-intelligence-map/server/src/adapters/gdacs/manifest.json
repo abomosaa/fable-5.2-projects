@@ -1,0 +1,125 @@
+{
+  "id": "gdacs",
+  "provider": "Global Disaster Alert and Coordination System (GDACS) – European Commission JRC / UN OCHA",
+  "dataset": "GDACS disaster alerts (RSS feed of current events and event-list API)",
+  "description": "Automatic multi-hazard disaster alerts with an estimated humanitarian impact level (Green/Orange/Red) for tropical cyclones, floods, droughts, earthquakes, volcanic eruptions and forest fires, including population-exposure estimates and alert scores.",
+  "homepageUrl": "https://www.gdacs.org/",
+  "documentationUrl": "https://www.gdacs.org/gdacsapi/swagger/index.html",
+  "sourceUrls": [
+    "https://www.gdacs.org/xml/rss.xml",
+    "https://www.gdacs.org/gdacsapi/api/events/geteventlist/SEARCH?eventlist=TC;FL;VO;DR&fromDate={YYYY-MM-DD}&toDate={YYYY-MM-DD}&alertlevel=Green;Orange;Red&pageSize=100&pageNumber=1"
+  ],
+  "allowedHosts": ["www.gdacs.org"],
+  "coverage": {
+    "geographic": "Global.",
+    "temporal": "Events GDACS currently lists in its main feed (roughly the past week, longer for droughts) plus cyclone, flood, volcano and drought events that were active in the past 14 days."
+  },
+  "updateCadence": { "upstream": "Feeds are regenerated about every 6 minutes", "pollIntervalSec": 900, "staleAfterSec": 7200 },
+  "auth": { "type": "none", "envVars": [] },
+  "attribution": "GDACS – Global Disaster Alert and Coordination System, © European Union (CC BY 4.0)",
+  "license": {
+    "name": "European Union copyright notice in the GDACS feeds: CC BY 4.0, reuse allowed with credit to GDACS",
+    "url": "https://www.gdacs.org/About/termofuse.aspx",
+    "redistribution": "allowed-with-attribution",
+    "nonCommercialOnly": false,
+    "notes": "Every item of the RSS feed carries \"Copyright notice: European Union (CC BY 4.0), reuse is allowed, provided appropriate credit to GDACS is given.\" (the channel element itself says \"public domain\"). The GDACS terms-of-use page states no licence; it is a disclaimer: information is provided as is, alerts are automatic and must not be used for decision making without confirmation from official sources."
+  },
+  "limitations": [
+    "Alerts for earthquakes, tsunamis and tropical cyclones are produced automatically by models and are not reviewed by experts before publication; impact estimates carry large uncertainties.",
+    "The alert level estimates the likely need for international humanitarian assistance, not the physical size of the event; GDACS does not replace official national warnings.",
+    "Each event is shown at a single centroid point; cyclone tracks, flood extents and drought areas are not included.",
+    "The main feed lists only the earthquakes GDACS currently notifies (a small subset of all earthquakes); population exposure is available only for events present in that feed.",
+    "The 'current' flag is taken from GDACS as is and is occasionally inconsistent with the event text (e.g. long droughts)."
+  ],
+  "confidenceNotes": "GDACS publishes no confidence value, so records carry none; the 'temporary' flag of preliminary events is kept as an attribute. Severity is derived by this application from the GDACS alert colour of the event: Green → minor (1), Orange → severe (3), Red → extreme (4); the colour itself is kept as the severity label.",
+  "retention": { "note": "Events are kept for 30 days after they ended or were last listed as current (droughts: 90 days)." },
+  "snapshot": "incremental",
+  "http": { "minIntervalMs": 2000, "timeoutMs": 60000 },
+  "enabledByDefault": true,
+  "layers": [
+    {
+      "id": "gdacs-cyclones",
+      "name": "Tropical cyclone alerts (GDACS)",
+      "description": "Tropical cyclones with the GDACS humanitarian impact alert level, maximum wind speed and exposed population.",
+      "domain": "hazards",
+      "category": "tropical-cyclone",
+      "geometry": "point",
+      "timeModel": "interval",
+      "render": { "type": "point", "color": "purple", "shape": "star" },
+      "freshForSec": 43200,
+      "retentionDays": 30,
+      "defaultOn": true,
+      "correlationClass": "tropical_cyclone"
+    },
+    {
+      "id": "gdacs-floods",
+      "name": "Flood alerts (GDACS)",
+      "description": "Flood events detected by GDACS/GLOFAS with their alert level and affected-population estimate.",
+      "domain": "hazards",
+      "category": "flood",
+      "geometry": "point",
+      "timeModel": "interval",
+      "render": { "type": "point", "color": "blue", "shape": "square" },
+      "freshForSec": 86400,
+      "retentionDays": 30,
+      "defaultOn": false,
+      "correlationClass": "flood"
+    },
+    {
+      "id": "gdacs-droughts",
+      "name": "Drought alerts (GDACS)",
+      "description": "Agricultural drought events from the Global Drought Observatory with GDACS alert level and affected area.",
+      "domain": "hazards",
+      "category": "drought",
+      "geometry": "point",
+      "timeModel": "interval",
+      "render": { "type": "point", "color": "yellow", "shape": "pentagon" },
+      "freshForSec": 604800,
+      "retentionDays": 90,
+      "defaultOn": false,
+      "correlationClass": "drought"
+    },
+    {
+      "id": "gdacs-earthquakes",
+      "name": "Earthquake impact alerts (GDACS)",
+      "description": "Earthquakes notified by GDACS with the estimated humanitarian impact level and population exposed to shaking.",
+      "domain": "hazards",
+      "category": "earthquake",
+      "geometry": "point",
+      "timeModel": "interval",
+      "render": { "type": "point", "color": "orange", "shape": "circle" },
+      "freshForSec": 86400,
+      "retentionDays": 30,
+      "defaultOn": false,
+      "correlationClass": "earthquake"
+    },
+    {
+      "id": "gdacs-volcanoes",
+      "name": "Volcanic eruption alerts (GDACS)",
+      "description": "Volcanic eruptions registered by GDACS (from volcanic ash advisories) with their alert level.",
+      "domain": "hazards",
+      "category": "volcano",
+      "geometry": "point",
+      "timeModel": "interval",
+      "render": { "type": "point", "color": "brown", "shape": "triangle" },
+      "freshForSec": 172800,
+      "retentionDays": 30,
+      "defaultOn": false,
+      "correlationClass": "volcano"
+    },
+    {
+      "id": "gdacs-wildfires",
+      "name": "Forest fire alerts (GDACS)",
+      "description": "Large forest fires detected by GDACS/GWIS with alert level and burned area.",
+      "domain": "hazards",
+      "category": "wildfire",
+      "geometry": "point",
+      "timeModel": "interval",
+      "render": { "type": "point", "color": "red", "shape": "diamond" },
+      "freshForSec": 86400,
+      "retentionDays": 30,
+      "defaultOn": false,
+      "correlationClass": "wildfire"
+    }
+  ]
+}

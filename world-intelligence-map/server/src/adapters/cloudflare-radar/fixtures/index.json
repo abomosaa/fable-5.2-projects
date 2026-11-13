@@ -1,0 +1,7 @@
+{
+  "capturedAt": "2026-11-10T18:10:00Z",
+  "notes": "AUTHORED, not captured: the Radar API requires a Cloudflare API token and none was available (an unauthenticated request on 2026-11-10 returned HTTP 400, code 9106 \"Missing X-Auth-Key, X-Auth-Email or Authorization headers\"). outages.json was written strictly from the documented response schema and 200 example of GET /radar/annotations/outages (https://developers.cloudflare.com/api/resources/radar/subresources/annotations/subresources/outages/methods/get/ and https://developers.cloudflare.com/radar/investigate/outages/): 26 annotations using the documented fields and enum values, with start dates between 2026-11-04 and 2026-11-10 (six still open at the fixture epoch). The events are ILLUSTRATIVE, NOT REAL: every description says so, reference links point to example.org and networks use documentation-reserved AS numbers (64496–64511). outages.malformed.json was authored by hand (two valid entries next to individually broken ones).",
+  "routes": [
+    { "match": "/radar/annotations/outages", "file": "outages.json", "variants": { "malformed": "outages.malformed.json" } }
+  ]
+}

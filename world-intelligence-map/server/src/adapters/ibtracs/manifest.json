@@ -1,0 +1,51 @@
+{
+  "id": "ibtracs",
+  "provider": "NOAA National Centers for Environmental Information (NCEI)",
+  "dataset": "International Best Track Archive for Climate Stewardship (IBTrACS) v04r01 – ACTIVE storms",
+  "description": "Provisional best-track positions (3-hourly fixes with wind and pressure) of every tropical cyclone worldwide that was active in the past seven days, merged by NOAA NCEI from the tracks of the responsible WMO centres and U.S. agencies.",
+  "homepageUrl": "https://www.ncei.noaa.gov/products/international-best-track-archive",
+  "documentationUrl": "https://www.ncei.noaa.gov/products/international-best-track-archive",
+  "sourceUrls": ["https://www.ncei.noaa.gov/data/international-best-track-archive-for-climate-stewardship-ibtracs/v04r01/access/csv/ibtracs.ACTIVE.list.v04r01.csv"],
+  "allowedHosts": ["www.ncei.noaa.gov"],
+  "coverage": {
+    "geographic": "Global – all tropical cyclone basins.",
+    "temporal": "Storms active within the past 7 days, each with its full track since genesis."
+  },
+  "updateCadence": { "upstream": "Provisional tracks are refreshed about daily; the full v04r01 archive three times a week", "pollIntervalSec": 21600, "staleAfterSec": 345600 },
+  "auth": { "type": "none", "envVars": [] },
+  "attribution": "NOAA's International Best Track Archive for Climate Stewardship (IBTrACS), NOAA NCEI",
+  "license": {
+    "name": "NOAA NCEI open data – no licence or restriction stated on the product page; citation requested (doi:10.25921/82ty-9e16)",
+    "url": "https://www.ncei.noaa.gov/products/international-best-track-archive",
+    "redistribution": "allowed-with-attribution",
+    "nonCommercialOnly": false,
+    "notes": "The product page describes IBTrACS as global, open and publicly reviewed, and asks users to cite Knapp et al. (2010) and the dataset (Gahtan et al., doi:10.25921/82ty-9e16), or 'NOAA's International Best Track Archive for Climate Stewardship (IBTrACS) data, accessed on [date]'. The formal NCEI metadata record (use/access constraints) could not be retrieved when this adapter was written, so the classification rests on the product page and on NOAA's general open-data practice. Tracks originate from WMO regional centres and other agencies named in the data."
+  },
+  "limitations": [
+    "Tracks of recent storms are PROVISIONAL: they come from operational advisories (e.g. tcvitals, NHC working best track) and are replaced by reanalysed best tracks months later.",
+    "The file is refreshed about once a day, so the last fix can be up to a day or more behind the real storm.",
+    "Wind speeds from different agencies use different averaging periods (1-minute for U.S. agencies, 10-minute for most WMO centres) and are not strictly comparable; the adapter reports the WMO value when present and otherwise the U.S. agency value.",
+    "Positions between the 6-hourly agency fixes are interpolated by IBTrACS to 3-hourly resolution."
+  ],
+  "confidenceNotes": "IBTrACS gives no per-storm confidence value; provisional tracks are labelled as such in the attributes. Severity is derived by this application from the highest sustained wind along the track: below 34 kt minor, 34–63 kt moderate, 64–95 kt severe, 96 kt and above extreme.",
+  "retention": { "note": "A track is kept while the storm is in the ACTIVE list (7 days after its last fix) and for 30 days after its last fix." },
+  "snapshot": "full",
+  "http": { "minIntervalMs": 2000, "timeoutMs": 60000, "cacheTtlSec": 3600 },
+  "enabledByDefault": true,
+  "layers": [
+    {
+      "id": "cyclone-tracks",
+      "name": "Tropical cyclone tracks (IBTrACS)",
+      "description": "Observed tracks of tropical cyclones active in the past week, worldwide, with peak wind and minimum pressure (provisional best tracks).",
+      "domain": "hazards",
+      "category": "tropical-cyclone",
+      "geometry": "track",
+      "timeModel": "interval",
+      "render": { "type": "line", "color": "purple", "shape": "circle" },
+      "freshForSec": 172800,
+      "retentionDays": 30,
+      "defaultOn": false,
+      "correlationClass": "tropical_cyclone"
+    }
+  ]
+}

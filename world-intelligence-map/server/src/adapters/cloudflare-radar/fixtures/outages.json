@@ -1,0 +1,1081 @@
+{
+ "result": {
+  "annotations": [
+   {
+    "id": "9026",
+    "asns": [],
+    "asnsDetails": [],
+    "dataSource": "ALL",
+    "description": "[Illustrative fixture entry – not a real event] Grid failure; connectivity partially degraded.",
+    "endDate": null,
+    "entities": [
+     {
+      "entityLocation": "LY",
+      "entityName": "Libya",
+      "entityType": "GEOLOCATION",
+      "entityValue": "LY"
+     }
+    ],
+    "eventType": "OUTAGE",
+    "geoIds": [],
+    "linkedUrl": "https://example.org/fixture/outage-9026",
+    "locations": [
+     "LY"
+    ],
+    "locationsDetails": [
+     {
+      "code": "LY",
+      "name": "Libya"
+     }
+    ],
+    "origins": [],
+    "originsDetails": [],
+    "outage": {
+     "outageCause": "POWER_OUTAGE",
+     "outageType": "REGIONAL"
+    },
+    "scope": "Tripoli and western districts",
+    "startDate": "2026-11-10T18:00:00Z",
+    "tags": []
+   },
+   {
+    "id": "9025",
+    "asns": [],
+    "asnsDetails": [],
+    "dataSource": "ALL",
+    "description": "[Illustrative fixture entry – not a real event] Nationwide shutdown ordered by the authorities.",
+    "endDate": null,
+    "entities": [
+     {
+      "entityLocation": "AF",
+      "entityName": "Afghanistan",
+      "entityType": "GEOLOCATION",
+      "entityValue": "AF"
+     }
+    ],
+    "eventType": "OUTAGE",
+    "geoIds": [],
+    "linkedUrl": "https://example.org/fixture/outage-9025",
+    "locations": [
+     "AF"
+    ],
+    "locationsDetails": [
+     {
+      "code": "AF",
+      "name": "Afghanistan"
+     }
+    ],
+    "origins": [],
+    "originsDetails": [],
+    "outage": {
+     "outageCause": "GOVERNMENT_DIRECTED",
+     "outageType": "NATIONWIDE"
+    },
+    "scope": null,
+    "startDate": "2026-11-10T13:30:00Z",
+    "tags": []
+   },
+   {
+    "id": "9024",
+    "asns": [],
+    "asnsDetails": [],
+    "dataSource": "ALL",
+    "description": null,
+    "endDate": "2026-11-10T14:45:00Z",
+    "entities": [
+     {
+      "entityLocation": "NG",
+      "entityName": "Nigeria",
+      "entityType": "GEOLOCATION",
+      "entityValue": "NG"
+     }
+    ],
+    "eventType": "OUTAGE",
+    "geoIds": [],
+    "linkedUrl": null,
+    "locations": [
+     "NG"
+    ],
+    "locationsDetails": [
+     {
+      "code": "NG",
+      "name": "Nigeria"
+     }
+    ],
+    "origins": [],
+    "originsDetails": [],
+    "outage": {
+     "outageCause": "UNKNOWN",
+     "outageType": "REGIONAL"
+    },
+    "scope": null,
+    "startDate": "2026-11-10T12:00:00Z",
+    "tags": []
+   },
+   {
+    "id": "9023",
+    "asns": [],
+    "asnsDetails": [],
+    "dataSource": "ALL",
+    "description": "[Illustrative fixture entry – not a real event] Elevated error rates at a cloud region.",
+    "endDate": "2026-11-10T09:50:00.000Z",
+    "entities": [],
+    "eventType": "OUTAGE",
+    "geoIds": [],
+    "linkedUrl": "https://example.org/fixture/outage-9023",
+    "locations": [],
+    "locationsDetails": [],
+    "origins": [
+     "amazon-us-east-1"
+    ],
+    "originsDetails": [
+     {
+      "name": "us-east-1 Amazon Web Services",
+      "origin": "amazon-us-east-1"
+     }
+    ],
+    "outage": {
+     "outageCause": "TECHNICAL_PROBLEM",
+     "outageType": "PLATFORM"
+    },
+    "scope": "us-east-1",
+    "startDate": "2026-11-10T07:15:00.000Z",
+    "tags": [
+     "ORIGIN"
+    ]
+   },
+   {
+    "id": "9022",
+    "asns": [
+     64503,
+     64504
+    ],
+    "asnsDetails": [
+     {
+      "asn": "64503",
+      "location": {
+       "code": "ZA",
+       "name": "South Africa"
+      },
+      "name": "EXAMPLE-NET-8"
+     },
+     {
+      "asn": "64504",
+      "location": {
+       "code": "ZA",
+       "name": "South Africa"
+      },
+      "name": "EXAMPLE-NET-9"
+     }
+    ],
+    "dataSource": "ALL",
+    "description": "[Illustrative fixture entry – not a real event] Fibre damage affecting two networks.",
+    "endDate": null,
+    "entities": [
+     {
+      "entityLocation": "ZA",
+      "entityName": "South Africa",
+      "entityType": "GEOLOCATION",
+      "entityValue": "ZA"
+     }
+    ],
+    "eventType": "OUTAGE",
+    "geoIds": [],
+    "linkedUrl": null,
+    "locations": [
+     "ZA"
+    ],
+    "locationsDetails": [
+     {
+      "code": "ZA",
+      "name": "South Africa"
+     }
+    ],
+    "origins": [],
+    "originsDetails": [],
+    "outage": {
+     "outageCause": "CABLE_CUT",
+     "outageType": "NETWORK"
+    },
+    "scope": "EXAMPLE-NET-8, EXAMPLE-NET-9",
+    "startDate": "2026-11-10T05:00:00Z",
+    "tags": []
+   },
+   {
+    "id": "9021",
+    "asns": [],
+    "asnsDetails": [],
+    "dataSource": "ALL",
+    "description": "[Illustrative fixture entry – not a real event] Disruption following an earthquake.",
+    "endDate": "2026-11-10T06:00:00Z",
+    "entities": [
+     {
+      "entityLocation": "ID",
+      "entityName": "Indonesia",
+      "entityType": "GEOLOCATION",
+      "entityValue": "ID"
+     }
+    ],
+    "eventType": "OUTAGE",
+    "geoIds": [],
+    "linkedUrl": "https://example.org/fixture/outage-9021",
+    "locations": [
+     "ID"
+    ],
+    "locationsDetails": [
+     {
+      "code": "ID",
+      "name": "Indonesia"
+     }
+    ],
+    "origins": [],
+    "originsDetails": [],
+    "outage": {
+     "outageCause": "NATURAL_DISASTER",
+     "outageType": "REGIONAL"
+    },
+    "scope": "North Sulawesi",
+    "startDate": "2026-11-09T21:00:00Z",
+    "tags": []
+   },
+   {
+    "id": "9020",
+    "asns": [
+     64496
+    ],
+    "asnsDetails": [
+     {
+      "asn": "64496",
+      "location": {
+       "code": "US",
+       "name": "United States"
+      },
+      "name": "EXAMPLE-NET-1"
+     }
+    ],
+    "dataSource": "ALL",
+    "description": "[Illustrative fixture entry – not a real event] Routing incident at a single provider.",
+    "endDate": "2026-11-09T18:05:00Z",
+    "entities": [
+     {
+      "entityLocation": "US",
+      "entityName": "United States",
+      "entityType": "GEOLOCATION",
+      "entityValue": "US"
+     }
+    ],
+    "eventType": "OUTAGE",
+    "geoIds": [],
+    "linkedUrl": "https://example.org/fixture/outage-9020",
+    "locations": [
+     "US"
+    ],
+    "locationsDetails": [
+     {
+      "code": "US",
+      "name": "United States"
+     }
+    ],
+    "origins": [],
+    "originsDetails": [],
+    "outage": {
+     "outageCause": "TECHNICAL_PROBLEM",
+     "outageType": "NETWORK"
+    },
+    "scope": "EXAMPLE-NET-1",
+    "startDate": "2026-11-09T16:20:00Z",
+    "tags": []
+   },
+   {
+    "id": "9019",
+    "asns": [],
+    "asnsDetails": [],
+    "dataSource": "ALL",
+    "description": "[Illustrative fixture entry – not a real event] Telecommunications infrastructure damaged.",
+    "endDate": null,
+    "entities": [
+     {
+      "entityLocation": "SD",
+      "entityName": "Sudan",
+      "entityType": "GEOLOCATION",
+      "entityValue": "SD"
+     }
+    ],
+    "eventType": "OUTAGE",
+    "geoIds": [],
+    "linkedUrl": "https://example.org/fixture/outage-9019",
+    "locations": [
+     "SD"
+    ],
+    "locationsDetails": [
+     {
+      "code": "SD",
+      "name": "Sudan"
+     }
+    ],
+    "origins": [],
+    "originsDetails": [],
+    "outage": {
+     "outageCause": "MILITARY_ACTION",
+     "outageType": "REGIONAL"
+    },
+    "scope": "North Darfur",
+    "startDate": "2026-11-09T08:00:00Z",
+    "tags": []
+   },
+   {
+    "id": "9018",
+    "asns": [],
+    "asnsDetails": [],
+    "dataSource": "ALL",
+    "description": "[Illustrative fixture entry – not a real event] Shutdown during national examinations.",
+    "endDate": "2026-11-09T06:30:00Z",
+    "entities": [
+     {
+      "entityLocation": "SY",
+      "entityName": "Syria",
+      "entityType": "GEOLOCATION",
+      "entityValue": "SY"
+     }
+    ],
+    "eventType": "OUTAGE",
+    "geoIds": [],
+    "linkedUrl": "https://example.org/fixture/outage-9018",
+    "locations": [
+     "SY"
+    ],
+    "locationsDetails": [
+     {
+      "code": "SY",
+      "name": "Syria"
+     }
+    ],
+    "origins": [],
+    "originsDetails": [],
+    "outage": {
+     "outageCause": "GOVERNMENT_DIRECTED",
+     "outageType": "NATIONWIDE"
+    },
+    "scope": null,
+    "startDate": "2026-11-09T03:00:00Z",
+    "tags": []
+   },
+   {
+    "id": "9017",
+    "asns": [
+     64507
+    ],
+    "asnsDetails": [
+     {
+      "asn": "64507",
+      "location": {
+       "code": "KZ",
+       "name": "Kazakhstan"
+      },
+      "name": "EXAMPLE-NET-12"
+     }
+    ],
+    "dataSource": "ALL",
+    "description": "[Illustrative fixture entry – not a real event] Route leak withdrawn after 50 minutes.",
+    "endDate": "2026-11-08T19:50:00Z",
+    "entities": [],
+    "eventType": "OUTAGE",
+    "geoIds": [],
+    "linkedUrl": "https://example.org/fixture/outage-9017",
+    "locations": [],
+    "locationsDetails": [],
+    "origins": [],
+    "originsDetails": [],
+    "outage": {
+     "outageCause": "MISCONFIGURATION",
+     "outageType": "NETWORK"
+    },
+    "scope": "EXAMPLE-NET-12",
+    "startDate": "2026-11-08T19:00:00Z",
+    "tags": []
+   },
+   {
+    "id": "9016",
+    "asns": [
+     64502
+    ],
+    "asnsDetails": [
+     {
+      "asn": "64502",
+      "location": {
+       "code": "BR",
+       "name": "Brazil"
+      },
+      "name": "EXAMPLE-NET-7"
+     }
+    ],
+    "dataSource": "ALL",
+    "description": "[Illustrative fixture entry – not a real event] Fire at a data centre.",
+    "endDate": "2026-11-08T17:10:00Z",
+    "entities": [
+     {
+      "entityLocation": "BR",
+      "entityName": "Brazil",
+      "entityType": "GEOLOCATION",
+      "entityValue": "BR"
+     }
+    ],
+    "eventType": "OUTAGE",
+    "geoIds": [],
+    "linkedUrl": "https://example.org/fixture/outage-9016",
+    "locations": [
+     "BR"
+    ],
+    "locationsDetails": [
+     {
+      "code": "BR",
+      "name": "Brazil"
+     }
+    ],
+    "origins": [],
+    "originsDetails": [],
+    "outage": {
+     "outageCause": "FIRE",
+     "outageType": "NETWORK"
+    },
+    "scope": "EXAMPLE-NET-7",
+    "startDate": "2026-11-08T13:40:00Z",
+    "tags": []
+   },
+   {
+    "id": "9015",
+    "asns": [],
+    "asnsDetails": [],
+    "dataSource": "ALL",
+    "description": "[Illustrative fixture entry – not a real event] Submarine cable fault affecting two countries.",
+    "endDate": "2026-11-08T21:30:00Z",
+    "entities": [
+     {
+      "entityLocation": "TZ",
+      "entityName": "Tanzania",
+      "entityType": "GEOLOCATION",
+      "entityValue": "TZ"
+     },
+     {
+      "entityLocation": "KE",
+      "entityName": "Kenya",
+      "entityType": "GEOLOCATION",
+      "entityValue": "KE"
+     }
+    ],
+    "eventType": "OUTAGE",
+    "geoIds": [],
+    "linkedUrl": "https://example.org/fixture/outage-9015",
+    "locations": [
+     "TZ",
+     "KE"
+    ],
+    "locationsDetails": [
+     {
+      "code": "TZ",
+      "name": "Tanzania"
+     },
+     {
+      "code": "KE",
+      "name": "Kenya"
+     }
+    ],
+    "origins": [],
+    "originsDetails": [],
+    "outage": {
+     "outageCause": "CABLE_CUT",
+     "outageType": "REGIONAL"
+    },
+    "scope": "Multiple networks",
+    "startDate": "2026-11-08T10:00:00Z",
+    "tags": []
+   },
+   {
+    "id": "9014",
+    "asns": [],
+    "asnsDetails": [],
+    "dataSource": "ALL",
+    "description": "[Illustrative fixture entry – not a real event] Shutdown during national examinations.",
+    "endDate": "2026-11-08T05:00:00Z",
+    "entities": [
+     {
+      "entityLocation": "IQ",
+      "entityName": "Iraq",
+      "entityType": "GEOLOCATION",
+      "entityValue": "IQ"
+     }
+    ],
+    "eventType": "OUTAGE",
+    "geoIds": [],
+    "linkedUrl": "https://example.org/fixture/outage-9014",
+    "locations": [
+     "IQ"
+    ],
+    "locationsDetails": [
+     {
+      "code": "IQ",
+      "name": "Iraq"
+     }
+    ],
+    "origins": [],
+    "originsDetails": [],
+    "outage": {
+     "outageCause": "GOVERNMENT_DIRECTED",
+     "outageType": "NATIONWIDE"
+    },
+    "scope": null,
+    "startDate": "2026-11-08T03:00:00Z",
+    "tags": []
+   },
+   {
+    "id": "9013",
+    "asns": [],
+    "asnsDetails": [],
+    "dataSource": "ALL",
+    "description": "[Illustrative fixture entry – not a real event] Mobile data restricted in one province.",
+    "endDate": null,
+    "entities": [
+     {
+      "entityLocation": "IR",
+      "entityName": "Iran",
+      "entityType": "GEOLOCATION",
+      "entityValue": "IR"
+     }
+    ],
+    "eventType": "OUTAGE",
+    "geoIds": [],
+    "linkedUrl": "https://example.org/fixture/outage-9013",
+    "locations": [
+     "IR"
+    ],
+    "locationsDetails": [
+     {
+      "code": "IR",
+      "name": "Iran"
+     }
+    ],
+    "origins": [],
+    "originsDetails": [],
+    "outage": {
+     "outageCause": "GOVERNMENT_DIRECTED",
+     "outageType": "REGIONAL"
+    },
+    "scope": "Sistan and Baluchestan",
+    "startDate": "2026-11-07T14:00:00Z",
+    "tags": []
+   },
+   {
+    "id": "9012",
+    "asns": [
+     64505
+    ],
+    "asnsDetails": [
+     {
+      "asn": "64505",
+      "location": {
+       "code": "FR",
+       "name": "France"
+      },
+      "name": "EXAMPLE-NET-10"
+     }
+    ],
+    "dataSource": "ALL",
+    "description": "[Illustrative fixture entry – not a real event] Provider reported a DDoS attack.",
+    "endDate": "2026-11-07T11:20:00Z",
+    "entities": [
+     {
+      "entityLocation": "FR",
+      "entityName": "France",
+      "entityType": "GEOLOCATION",
+      "entityValue": "FR"
+     }
+    ],
+    "eventType": "OUTAGE",
+    "geoIds": [],
+    "linkedUrl": "https://example.org/fixture/outage-9012",
+    "locations": [
+     "FR"
+    ],
+    "locationsDetails": [
+     {
+      "code": "FR",
+      "name": "France"
+     }
+    ],
+    "origins": [],
+    "originsDetails": [],
+    "outage": {
+     "outageCause": "CYBERATTACK",
+     "outageType": "NETWORK"
+    },
+    "scope": "EXAMPLE-NET-10",
+    "startDate": "2026-11-07T09:00:00Z",
+    "tags": []
+   },
+   {
+    "id": "9011",
+    "asns": [],
+    "asnsDetails": [],
+    "dataSource": "ALL",
+    "description": "[Illustrative fixture entry – not a real event] Typhoon damage to power and fibre.",
+    "endDate": "2026-11-07T20:00:00Z",
+    "entities": [
+     {
+      "entityLocation": "PH",
+      "entityName": "Philippines",
+      "entityType": "GEOLOCATION",
+      "entityValue": "PH"
+     }
+    ],
+    "eventType": "OUTAGE",
+    "geoIds": [],
+    "linkedUrl": "https://example.org/fixture/outage-9011",
+    "locations": [
+     "PH"
+    ],
+    "locationsDetails": [
+     {
+      "code": "PH",
+      "name": "Philippines"
+     }
+    ],
+    "origins": [],
+    "originsDetails": [],
+    "outage": {
+     "outageCause": "NATURAL_DISASTER",
+     "outageType": "REGIONAL"
+    },
+    "scope": "Cebu",
+    "startDate": "2026-11-07T01:00:00Z",
+    "tags": []
+   },
+   {
+    "id": "9010",
+    "asns": [
+     64501
+    ],
+    "asnsDetails": [
+     {
+      "asn": "64501",
+      "location": {
+       "code": "VE",
+       "name": "Venezuela"
+      },
+      "name": "EXAMPLE-NET-6"
+     }
+    ],
+    "dataSource": "ALL",
+    "description": null,
+    "endDate": "2026-11-07T03:30:00Z",
+    "entities": [
+     {
+      "entityLocation": "VE",
+      "entityName": "Venezuela",
+      "entityType": "GEOLOCATION",
+      "entityValue": "VE"
+     }
+    ],
+    "eventType": "OUTAGE",
+    "geoIds": [],
+    "linkedUrl": "https://example.org/fixture/outage-9010",
+    "locations": [
+     "VE"
+    ],
+    "locationsDetails": [
+     {
+      "code": "VE",
+      "name": "Venezuela"
+     }
+    ],
+    "origins": [],
+    "originsDetails": [],
+    "outage": {
+     "outageCause": "POWER_OUTAGE",
+     "outageType": "NETWORK"
+    },
+    "scope": "EXAMPLE-NET-6",
+    "startDate": "2026-11-06T23:00:00Z",
+    "tags": []
+   },
+   {
+    "id": "9009",
+    "asns": [],
+    "asnsDetails": [],
+    "dataSource": "ALL",
+    "description": "[Illustrative fixture entry – not a real event] Terrestrial fibre cut on the international route.",
+    "endDate": "2026-11-06T23:00:00Z",
+    "entities": [
+     {
+      "entityLocation": "TD",
+      "entityName": "Chad",
+      "entityType": "GEOLOCATION",
+      "entityValue": "TD"
+     }
+    ],
+    "eventType": "OUTAGE",
+    "geoIds": [],
+    "linkedUrl": "https://example.org/fixture/outage-9009",
+    "locations": [
+     "TD"
+    ],
+    "locationsDetails": [
+     {
+      "code": "TD",
+      "name": "Chad"
+     }
+    ],
+    "origins": [],
+    "originsDetails": [],
+    "outage": {
+     "outageCause": "CABLE_CUT",
+     "outageType": "NATIONWIDE"
+    },
+    "scope": null,
+    "startDate": "2026-11-06T15:00:00Z",
+    "tags": []
+   },
+   {
+    "id": "9008",
+    "asns": [
+     64508
+    ],
+    "asnsDetails": [
+     {
+      "asn": "64508",
+      "location": {
+       "code": "TR",
+       "name": "Türkiye"
+      },
+      "name": "EXAMPLE-NET-13"
+     }
+    ],
+    "dataSource": "ALL",
+    "description": "[Illustrative fixture entry – not a real event] Resolver failure at one provider.",
+    "endDate": "2026-11-06T10:50:00Z",
+    "entities": [
+     {
+      "entityLocation": "TR",
+      "entityName": "Türkiye",
+      "entityType": "GEOLOCATION",
+      "entityValue": "TR"
+     }
+    ],
+    "eventType": "OUTAGE",
+    "geoIds": [],
+    "linkedUrl": "https://example.org/fixture/outage-9008",
+    "locations": [
+     "TR"
+    ],
+    "locationsDetails": [
+     {
+      "code": "TR",
+      "name": "Türkiye"
+     }
+    ],
+    "origins": [],
+    "originsDetails": [],
+    "outage": {
+     "outageCause": "DNS",
+     "outageType": "NETWORK"
+    },
+    "scope": "EXAMPLE-NET-13",
+    "startDate": "2026-11-06T10:05:00Z",
+    "tags": []
+   },
+   {
+    "id": "9007",
+    "asns": [],
+    "asnsDetails": [],
+    "dataSource": "ALL",
+    "description": "[Illustrative fixture entry – not a real event] Power infrastructure damaged.",
+    "endDate": "2026-11-06T19:00:00Z",
+    "entities": [
+     {
+      "entityLocation": "UA",
+      "entityName": "Ukraine",
+      "entityType": "GEOLOCATION",
+      "entityValue": "UA"
+     }
+    ],
+    "eventType": "OUTAGE",
+    "geoIds": [],
+    "linkedUrl": "https://example.org/fixture/outage-9007",
+    "locations": [
+     "UA"
+    ],
+    "locationsDetails": [
+     {
+      "code": "UA",
+      "name": "Ukraine"
+     }
+    ],
+    "origins": [],
+    "originsDetails": [],
+    "outage": {
+     "outageCause": "POWER_OUTAGE",
+     "outageType": "REGIONAL"
+    },
+    "scope": "Kharkiv, Sumy",
+    "startDate": "2026-11-06T04:30:00Z",
+    "tags": []
+   },
+   {
+    "id": "9006",
+    "asns": [],
+    "asnsDetails": [],
+    "dataSource": "ALL",
+    "description": "[Illustrative fixture entry – not a real event] Collapse of the national electrical grid.",
+    "endDate": "2026-11-07T09:40:00Z",
+    "entities": [
+     {
+      "entityLocation": "CU",
+      "entityName": "Cuba",
+      "entityType": "GEOLOCATION",
+      "entityValue": "CU"
+     }
+    ],
+    "eventType": "OUTAGE",
+    "geoIds": [],
+    "linkedUrl": "https://example.org/fixture/outage-9006",
+    "locations": [
+     "CU"
+    ],
+    "locationsDetails": [
+     {
+      "code": "CU",
+      "name": "Cuba"
+     }
+    ],
+    "origins": [],
+    "originsDetails": [],
+    "outage": {
+     "outageCause": "POWER_OUTAGE",
+     "outageType": "NATIONWIDE"
+    },
+    "scope": null,
+    "startDate": "2026-11-05T22:10:00Z",
+    "tags": []
+   },
+   {
+    "id": "9005",
+    "asns": [
+     64506
+    ],
+    "asnsDetails": [
+     {
+      "asn": "64506",
+      "location": {
+       "code": "GB",
+       "name": "United Kingdom"
+      },
+      "name": "EXAMPLE-NET-11"
+     }
+    ],
+    "dataSource": "ALL",
+    "description": "[Illustrative fixture entry – not a real event] Planned maintenance overran.",
+    "endDate": "2026-11-05T02:10:00Z",
+    "entities": [
+     {
+      "entityLocation": "GB",
+      "entityName": "United Kingdom",
+      "entityType": "GEOLOCATION",
+      "entityValue": "GB"
+     }
+    ],
+    "eventType": "OUTAGE",
+    "geoIds": [],
+    "linkedUrl": "https://example.org/fixture/outage-9005",
+    "locations": [
+     "GB"
+    ],
+    "locationsDetails": [
+     {
+      "code": "GB",
+      "name": "United Kingdom"
+     }
+    ],
+    "origins": [],
+    "originsDetails": [],
+    "outage": {
+     "outageCause": "MAINTENANCE",
+     "outageType": "NETWORK"
+    },
+    "scope": "EXAMPLE-NET-11",
+    "startDate": "2026-11-05T01:00:00Z",
+    "tags": []
+   },
+   {
+    "id": "9004",
+    "asns": [],
+    "asnsDetails": [],
+    "dataSource": "ALL",
+    "description": "[Illustrative fixture entry – not a real event] Regional shutdown.",
+    "endDate": null,
+    "entities": [
+     {
+      "entityLocation": "MM",
+      "entityName": "Myanmar",
+      "entityType": "GEOLOCATION",
+      "entityValue": "MM"
+     }
+    ],
+    "eventType": "OUTAGE",
+    "geoIds": [],
+    "linkedUrl": "https://example.org/fixture/outage-9004",
+    "locations": [
+     "MM"
+    ],
+    "locationsDetails": [
+     {
+      "code": "MM",
+      "name": "Myanmar"
+     }
+    ],
+    "origins": [],
+    "originsDetails": [],
+    "outage": {
+     "outageCause": "GOVERNMENT_DIRECTED",
+     "outageType": "REGIONAL"
+    },
+    "scope": "Rakhine",
+    "startDate": "2026-11-05T00:00:00Z",
+    "tags": []
+   },
+   {
+    "id": "9003",
+    "asns": [],
+    "asnsDetails": [],
+    "dataSource": "ALL",
+    "description": "[Illustrative fixture entry – not a real event] Hurricane landfall.",
+    "endDate": "2026-11-06T12:00:00Z",
+    "entities": [
+     {
+      "entityLocation": "JM",
+      "entityName": "Jamaica",
+      "entityType": "GEOLOCATION",
+      "entityValue": "JM"
+     }
+    ],
+    "eventType": "OUTAGE",
+    "geoIds": [],
+    "linkedUrl": "https://example.org/fixture/outage-9003",
+    "locations": [
+     "JM"
+    ],
+    "locationsDetails": [
+     {
+      "code": "JM",
+      "name": "Jamaica"
+     }
+    ],
+    "origins": [],
+    "originsDetails": [],
+    "outage": {
+     "outageCause": "WEATHER",
+     "outageType": "NATIONWIDE"
+    },
+    "scope": null,
+    "startDate": "2026-11-04T18:00:00Z",
+    "tags": []
+   },
+   {
+    "id": "9002",
+    "asns": [
+     64500
+    ],
+    "asnsDetails": [
+     {
+      "asn": "64500",
+      "location": {
+       "code": "PK",
+       "name": "Pakistan"
+      },
+      "name": "EXAMPLE-NET-5"
+     }
+    ],
+    "dataSource": "ALL",
+    "description": "[Illustrative fixture entry – not a real event] Fibre cut affecting one network.",
+    "endDate": "2026-11-05T02:00:00Z",
+    "entities": [
+     {
+      "entityLocation": "PK",
+      "entityName": "Pakistan",
+      "entityType": "GEOLOCATION",
+      "entityValue": "PK"
+     }
+    ],
+    "eventType": "OUTAGE",
+    "geoIds": [],
+    "linkedUrl": "https://example.org/fixture/outage-9002",
+    "locations": [
+     "PK"
+    ],
+    "locationsDetails": [
+     {
+      "code": "PK",
+      "name": "Pakistan"
+     }
+    ],
+    "origins": [],
+    "originsDetails": [],
+    "outage": {
+     "outageCause": "CABLE_CUT",
+     "outageType": "REGIONAL"
+    },
+    "scope": "Sindh",
+    "startDate": "2026-11-04T11:00:00Z",
+    "tags": []
+   },
+   {
+    "id": "9001",
+    "asns": [
+     64499
+    ],
+    "asnsDetails": [
+     {
+      "asn": "64499",
+      "location": {
+       "code": "HT",
+       "name": "Haiti"
+      },
+      "name": "EXAMPLE-NET-4"
+     }
+    ],
+    "dataSource": "ALL",
+    "description": "[Illustrative fixture entry – not a real event] Equipment failure.",
+    "endDate": "2026-11-04T16:00:00.000Z",
+    "entities": [
+     {
+      "entityLocation": "HT",
+      "entityName": "Haiti",
+      "entityType": "GEOLOCATION",
+      "entityValue": "HT"
+     }
+    ],
+    "eventType": "OUTAGE",
+    "geoIds": [],
+    "linkedUrl": "https://example.org/fixture/outage-9001",
+    "locations": [
+     "HT"
+    ],
+    "locationsDetails": [
+     {
+      "code": "HT",
+      "name": "Haiti"
+     }
+    ],
+    "origins": [],
+    "originsDetails": [],
+    "outage": {
+     "outageCause": "MECHANICAL",
+     "outageType": "NETWORK"
+    },
+    "scope": "EXAMPLE-NET-4",
+    "startDate": "2026-11-04T08:00:00.000Z",
+    "tags": []
+   }
+  ]
+ },
+ "success": true,
+ "errors": []
+}

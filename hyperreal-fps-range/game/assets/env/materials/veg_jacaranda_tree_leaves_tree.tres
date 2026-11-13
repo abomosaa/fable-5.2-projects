@@ -1,0 +1,23 @@
+[gd_resource type="ShaderMaterial" format=3]
+
+[ext_resource type="Shader" path="res://assets/env/shaders/foliage.gdshader" id="1_6ccqa"]
+[ext_resource type="Texture2D" path="res://assets/env/veg/jacaranda_tree_leaves_albedo.png" id="2_bmgi4"]
+[ext_resource type="Texture2D" path="res://assets/env/veg/jacaranda_tree_leaves_normal.jpg" id="3_fd3gi"]
+[ext_resource type="Texture2D" path="res://assets/env/veg/jacaranda_tree_leaves_orm.jpg" id="4_x8pyd"]
+
+[resource]
+render_priority = 0
+shader = ExtResource("1_6ccqa")
+shader_parameter/albedo_tex = ExtResource("2_bmgi4")
+shader_parameter/normal_tex = ExtResource("3_fd3gi")
+shader_parameter/orm_tex = ExtResource("4_x8pyd")
+shader_parameter/tint = Color(1, 1, 1, 1)
+shader_parameter/tint_dry = Color(1.15, 1, 0.7, 1)
+shader_parameter/brightness = 0.85
+shader_parameter/alpha_cut = 0.3
+shader_parameter/backlight = 0.3
+shader_parameter/wind_strength = 0.06
+shader_parameter/wind_speed = 0.9
+shader_parameter/sway_height = 9.0
+shader_parameter/roughness_add = 0.0
+shader_parameter/normal_strength = 1.0

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="dev.pocket3d.data.CompanionClientTest" tests="10" skipped="0" failures="0" errors="0" timestamp="2026-11-12T10:55:55.898Z" hostname="h4-pc" time="1.373">
+  <properties/>
+  <testcase name="cleartextAndMalformedAddressesAreRejectedUpFront" classname="dev.pocket3d.data.CompanionClientTest" time="0.114"/>
+  <testcase name="uploadIsChunkedAndResumesAfterADroppedConnectionWithoutResendingStoredBytes" classname="dev.pocket3d.data.CompanionClientTest" time="0.418"/>
+  <testcase name="persistentChecksumMismatchEndsAsIntegrityErrorNotAsSuccess" classname="dev.pocket3d.data.CompanionClientTest" time="0.189"/>
+  <testcase name="aDifferentCertificateIsRefusedEvenThoughTheServerAnswers" classname="dev.pocket3d.data.CompanionClientTest" time="0.025"/>
+  <testcase name="downloadVerifiesChecksumAndResumesWithRange" classname="dev.pocket3d.data.CompanionClientTest" time="0.101"/>
+  <testcase name="errorEnvelopeBecomesTypedExceptionAndNeverContainsTheToken" classname="dev.pocket3d.data.CompanionClientTest" time="0.181"/>
+  <testcase name="damagedDownloadIsRejectedAndLeavesNoFile" classname="dev.pocket3d.data.CompanionClientTest" time="0.099"/>
+  <testcase name="unreachableIsDistinguishedFromEverythingElse" classname="dev.pocket3d.data.CompanionClientTest" time="0.009"/>
+  <testcase name="uploadStartsAtTheGivenOffsetAndFollowsTheServerOnMismatch" classname="dev.pocket3d.data.CompanionClientTest" time="0.137"/>
+  <testcase name="pinnedCertificateIsAcceptedAndBearerTokenIsSent" classname="dev.pocket3d.data.CompanionClientTest" time="0.097"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[Nov 12, 2026 1:55:56 PM okhttp3.mockwebserver.MockWebServer$SocketHandler handle
+WARNING: MockWebServer[47303] connection from /127.0.0.1 didn't make a request
+]]></system-err>
+</testsuite>

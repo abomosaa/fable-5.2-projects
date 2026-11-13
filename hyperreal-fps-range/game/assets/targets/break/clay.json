@@ -1,0 +1,149 @@
+{
+ "mass": 0.105,
+ "height": 0.025,
+ "radius": 0.055,
+ "ring_radius": 0.0486,
+ "rim_height": 0.011,
+ "shell": 0.003,
+ "volume_m3": 5.1e-05,
+ "seed": 8308,
+ "intact_tris": 3968,
+ "materials": [
+  "clay_orange",
+  "clay_black"
+ ],
+ "pieces": [
+  {
+   "name": "frag_00",
+   "centroid": [
+    -0.010898,
+    0.021699,
+    -0.011674
+   ],
+   "volume_frac": 0.073609,
+   "tag": "dome",
+   "tris": 868
+  },
+  {
+   "name": "frag_01",
+   "centroid": [
+    0.017787,
+    0.021538,
+    0.003127
+   ],
+   "volume_frac": 0.060499,
+   "tag": "dome",
+   "tris": 704
+  },
+  {
+   "name": "frag_02",
+   "centroid": [
+    -0.006776,
+    0.021246,
+    0.018872
+   ],
+   "volume_frac": 0.055111,
+   "tag": "dome",
+   "tris": 604
+  },
+  {
+   "name": "frag_03",
+   "centroid": [
+    0.031879,
+    0.01158,
+    -0.029236
+   ],
+   "volume_frac": 0.115464,
+   "tag": "wedge",
+   "tris": 726
+  },
+  {
+   "name": "frag_04",
+   "centroid": [
+    -0.040155,
+    0.011269,
+    0.018537
+   ],
+   "volume_frac": 0.0946,
+   "tag": "wedge",
+   "tris": 644
+  },
+  {
+   "name": "frag_05",
+   "centroid": [
+    0.002207,
+    0.010843,
+    -0.044699
+   ],
+   "volume_frac": 0.100879,
+   "tag": "wedge",
+   "tris": 646
+  },
+  {
+   "name": "frag_06",
+   "centroid": [
+    0.035779,
+    0.010622,
+    0.028509
+   ],
+   "volume_frac": 0.071888,
+   "tag": "wedge",
+   "tris": 502
+  },
+  {
+   "name": "frag_07",
+   "centroid": [
+    0.014864,
+    0.010608,
+    0.043187
+   ],
+   "volume_frac": 0.074532,
+   "tag": "wedge",
+   "tris": 536
+  },
+  {
+   "name": "frag_08",
+   "centroid": [
+    -0.029994,
+    0.01026,
+    -0.034606
+   ],
+   "volume_frac": 0.095099,
+   "tag": "wedge",
+   "tris": 604
+  },
+  {
+   "name": "frag_09",
+   "centroid": [
+    -0.045602,
+    0.010137,
+    -0.008601
+   ],
+   "volume_frac": 0.07101,
+   "tag": "wedge",
+   "tris": 490
+  },
+  {
+   "name": "frag_10",
+   "centroid": [
+    -0.016558,
+    0.010083,
+    0.042835
+   ],
+   "volume_frac": 0.09979,
+   "tag": "wedge",
+   "tris": 596
+  },
+  {
+   "name": "frag_11",
+   "centroid": [
+    0.046364,
+    0.009936,
+    0.001374
+   ],
+   "volume_frac": 0.087518,
+   "tag": "wedge",
+   "tris": 564
+  }
+ ]
+}

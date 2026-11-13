@@ -1,0 +1,30 @@
+DATASET   : AliceVision "Buddha Dataset" (Version 1.0)
+LICENSE   : Creative Commons Attribution 4.0 International (CC BY 4.0)
+AUTHORS   : Simone Gasparini, Fabien Castan, Yann Lanthony (AliceVision / LADIO project)
+RETRIEVED : 2026-11-11
+
+WHERE THE LICENSE WAS VERIFIED
+  1. https://github.com/alicevision/dataset_buddha  (README.md, section "License"),
+     file fetched at commit 9067f679eb5a772c3e818b7a12dc35882c071858 and saved as upstream/README.md:
+       "## License
+        This dataset is released under the Creative Commons Attribution 4.0 license (see [LICENSE.md](LICENSE.md))"
+  2. https://github.com/alicevision/dataset_buddha/blob/9067f679eb5a772c3e818b7a12dc35882c071858/LICENSE.md
+     Full CC BY 4.0 legal text, saved verbatim as upstream/LICENSE.md
+     (GitHub API reports spdx_id "CC-BY-4.0" for the repository).
+  3. Zenodo record https://zenodo.org/records/1203283 (DOI 10.5281/zenodo.1203283):
+     API field metadata.license.id = "cc-by-4.0", title "Buddha Dataset".
+
+REQUIRED ATTRIBUTION (citation requested by the authors)
+  Simone Gasparini, Fabien Castan, & Yann Lanthony. (2017). Buddha Dataset (Version 1.0) [Data set].
+  Zenodo. http://doi.org/10.5281/zenodo.1203283
+  Acknowledgement from the README: "This dataset has been developed during the LADIO project funded by the
+  European Union's Horizon 2020 research and innovation programme under grant agreement No 731970."
+
+CHANGES MADE HERE
+  None to the image or camera files (byte-identical to the pinned commit; see SHA256SUMS).
+  The upstream `*_seeds.bin` files and the `buddha_mini6/` folder were not downloaded.
+  cameras/intrinsics_from_P.json is a file derived by us from the upstream `*_P.txt` matrices.
+
+License summary (not a substitute for upstream/LICENSE.md): you may share and adapt the material for any
+purpose, including commercially, provided you give appropriate credit, link to the license
+(https://creativecommons.org/licenses/by/4.0/) and indicate if changes were made.

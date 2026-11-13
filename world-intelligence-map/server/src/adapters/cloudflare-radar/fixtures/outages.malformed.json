@@ -1,0 +1,99 @@
+{
+  "success": true,
+  "errors": [],
+  "result": {
+    "annotations": [
+      {
+        "id": "m-ok-1",
+        "asns": [],
+        "asnsDetails": [],
+        "dataSource": "ALL",
+        "description": "[Illustrative fixture entry – not a real event] Valid entry next to broken ones.",
+        "endDate": "2026-11-09T12:00:00Z",
+        "eventType": "OUTAGE",
+        "geoIds": [],
+        "linkedUrl": "https://example.org/fixture/outage-m-ok-1",
+        "locations": ["KE"],
+        "locationsDetails": [{ "code": "KE", "name": "Kenya" }],
+        "origins": [],
+        "originsDetails": [],
+        "outage": { "outageCause": "CABLE_CUT", "outageType": "NATIONWIDE" },
+        "scope": null,
+        "startDate": "2026-11-09T06:00:00Z",
+        "tags": []
+      },
+      {
+        "id": "m-ok-2",
+        "asns": ["64496", "abc", -5, 64497.5],
+        "asnsDetails": [{ "asn": "64496", "location": { "code": "XK", "name": "Kosovo" }, "name": "<img src=x onerror=alert(1)>EXAMPLE-NET-1" }, "broken"],
+        "dataSource": "<b>ALL</b>",
+        "description": "<script>alert('x')</script>Hostile <b>markup</b> &amp; entities<iframe src=\"https://evil.example\"></iframe>",
+        "endDate": null,
+        "eventType": "OUTAGE",
+        "linkedUrl": "javascript:alert(1)",
+        "locations": ["xk"],
+        "outage": { "outageCause": "<i>POWER_OUTAGE</i>", "outageType": "<b>NATIONWIDE</b>" },
+        "scope": "<a href=\"javascript:alert(1)\">Pristina</a>",
+        "startDate": "2026-11-10T20:00:00+02:00",
+        "tags": ["<u>x</u>", 7]
+      },
+      {
+        "id": "m-bad-1",
+        "locations": ["IQ"],
+        "outage": { "outageCause": "UNKNOWN", "outageType": "NATIONWIDE" },
+        "endDate": "2026-11-09T12:00:00Z"
+      },
+      {
+        "id": "m-bad-2",
+        "locations": ["IQ"],
+        "outage": { "outageCause": "UNKNOWN", "outageType": "NATIONWIDE" },
+        "startDate": "last tuesday",
+        "endDate": null
+      },
+      {
+        "id": "m-bad-3",
+        "locations": ["IQ"],
+        "outage": { "outageCause": "UNKNOWN", "outageType": "NATIONWIDE" },
+        "startDate": "2026-11-09T06:00:00Z",
+        "endDate": "soon"
+      },
+      {
+        "id": "m-bad-4",
+        "locations": ["IQ"],
+        "outage": { "outageCause": "UNKNOWN", "outageType": "NATIONWIDE" },
+        "startDate": "2026-11-09T06:00:00Z",
+        "endDate": "2026-11-08T06:00:00Z"
+      },
+      {
+        "id": "m-bad-5",
+        "locations": ["ZZ"],
+        "outage": { "outageCause": "UNKNOWN", "outageType": "NATIONWIDE" },
+        "startDate": "2026-11-09T06:00:00Z",
+        "endDate": null
+      },
+      {
+        "id": "m-bad-6",
+        "locations": "IQ",
+        "outage": { "outageCause": "UNKNOWN", "outageType": "NATIONWIDE" },
+        "startDate": "2026-11-09T06:00:00Z",
+        "endDate": null
+      },
+      {
+        "id": "m-bad-7",
+        "locations": ["IQ"],
+        "outage": { "outageCause": "UNKNOWN", "outageType": "NATIONWIDE" },
+        "startDate": "2027-03-01T00:00:00Z",
+        "endDate": null
+      },
+      {
+        "id": "m-ok-1",
+        "locations": ["UG"],
+        "outage": { "outageCause": "UNKNOWN", "outageType": "REGIONAL" },
+        "startDate": "2026-11-09T07:00:00Z",
+        "endDate": null
+      },
+      null,
+      "oops"
+    ]
+  }
+}

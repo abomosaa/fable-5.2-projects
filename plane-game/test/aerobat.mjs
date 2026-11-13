@@ -1,0 +1,16 @@
+import def from '../src/aircraft/aerobat.js';
+import * as T from './lib.mjs';
+T.groundStatic(def);
+console.log('ref', JSON.stringify(def.ref, (k, v) => typeof v === 'number' ? +v.toFixed(3) : v), 'vs kt', T.kt(def.ref.vs));
+T.takeoff(def, { pitch: 10 });
+T.cruise(def, 160, 600);
+T.cruise(def, 90, 600);
+T.maxSpeed(def, 100, 170);
+T.climb(def, 95, 200);
+T.glide(def, 90);
+T.stall(def, 1500, 0);
+T.rollRate(def, 160);
+T.rollRate(def, 100);
+T.pullUp(def, 160);
+T.pullUp(def, 200);
+T.pullUp(def, 160, 1500, -1);

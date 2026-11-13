@@ -1,0 +1,11 @@
+file            status     reasons                      warnings                        inl   scale  gain  zncc  resPx  pairs  via       mask  sigma
+closeup_01.jpg  rejected   inconsistent                 glare                           434   4.91   1.4   0.72  0.0    0      overview  0.66  4.08 
+closeup_02.jpg  rejected   inconsistent                 exposure_mismatch               250   3.48   1.11  0.53  0.0    0      overview  0.78  3.87 
+closeup_03.jpg  rejected   inconsistent                                                 810   3.94   1.03  0.73  0.0    0      overview  0.57  4.09 
+closeup_04.jpg  uncertain  high_residual                partial_mask                    914   5.08   1.33  0.92  0.0    0      overview  0.33  4.48 
+closeup_05.jpg  rejected   inconsistent                                                 283   6.24   2.3   0.67  0.0    0      overview  0.81  4.4  
+closeup_06.jpg  rejected   inconsistent                 color_converted                 202   6.96   2.42  0.47  0.0    0      overview  0.89  5.02 
+closeup_07.jpg  uncertain  high_residual                partial_mask                    1040  4.64   1.21  0.94  0.0    0      overview  0.23  4.08 
+closeup_08.jpg  accepted                                partial_mask,overexposed,glare  534   5.36   1.95  0.97  0.0    0      overview  0.07  4.14 
+closeup_09.jpg  rejected   content_mismatch                                             58    4.28   1.61  0.21  0.0    0      overview  0.95  4.75 
+closeup_10.jpg  rejected   low_similarity,inconsistent                                  234   3.86   1.17  0.37  0.0    0      overview  0.91  3.9  

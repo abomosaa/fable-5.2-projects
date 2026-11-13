@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="dev.pocket3d.viewer.CropGizmoTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2026-11-12T10:56:40.663Z" hostname="h4-pc" time="0.005">
+  <properties/>
+  <testcase name="draggingFollowsThePointerRayAlongTheFaceNormal" classname="dev.pocket3d.viewer.CropGizmoTest" time="0.003"/>
+  <testcase name="rayParallelToTheAxisLeavesTheBoxUnchanged" classname="dev.pocket3d.viewer.CropGizmoTest" time="0.0"/>
+  <testcase name="edgesConnectTheCorners" classname="dev.pocket3d.viewer.CropGizmoTest" time="0.001"/>
+  <testcase name="aFaceCannotBePushedThroughTheOppositeOne" classname="dev.pocket3d.viewer.CropGizmoTest" time="0.0"/>
+  <testcase name="handlesSitOnTheFacesAndPointOutwards" classname="dev.pocket3d.viewer.CropGizmoTest" time="0.0"/>
+  <testcase name="grabOffsetPreventsAJumpWhenTheHandleIsTouchedOffCentre" classname="dev.pocket3d.viewer.CropGizmoTest" time="0.0"/>
+  <testcase name="moveAndRotateKeepSizeAndHeight" classname="dev.pocket3d.viewer.CropGizmoTest" time="0.0"/>
+  <testcase name="axisParamFindsTheClosestPoint" classname="dev.pocket3d.viewer.CropGizmoTest" time="0.0"/>
+  <testcase name="movingAFaceKeepsTheOppositeFaceFixed" classname="dev.pocket3d.viewer.CropGizmoTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

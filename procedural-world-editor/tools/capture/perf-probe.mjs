@@ -1,0 +1,30 @@
+// Dev probe: toggles engine subsystems and reports the average frame time for each configuration.
+import { chromium } from 'playwright';
+const query = process.argv[2] || 'preset=alpine&res=2049&coarse=1025';
+const browser = await chromium.launch({ headless: true, channel: 'chromium', args: ['--use-angle=vulkan', '--enable-features=Vulkan', '--enable-gpu', '--ignore-gpu-blocklist', '--disable-frame-rate-limit', '--disable-gpu-vsync'] });
+const page = await browser.newPage({ viewport: { width: 1920, height: 1080 } });
+await page.goto(`http://127.0.0.1:5173/dev.html?${query}`);
+await page.waitForFunction(() => window.__dbg && (window.__dbg.ready || window.__dbg.errors.length), null, { timeout: 180000 });
+await page.evaluate(() => { const d = window.__dbg; const m = d.mid; const g = d.ground(m.x + 9, m.z + 4); d.look(m.x + 9, g + 1.7, m.z + 4, m.x - 20, g - 1.5, m.z - 40); });
+await page.waitForTimeout(3000);
+const measure = async (label, setup, teardown) => {
+  if (setup) await page.evaluate(setup);
+  await page.waitForTimeout(600);
+  await page.evaluate(() => { window.__dbg.engine.frameIdx = 0; });
+  await page.waitForTimeout(2500);
+  const r = await page.evaluate(() => ({ s: window.__dbg.engine.frameStats(), st: window.__dbg.engine.stats }));
+  console.log(label.padEnd(26), `avg ${r.s.avg.toFixed(2)} ms  p95 ${r.s.p95.toFixed(1)}  fps ${r.s.fps.toFixed(1)}  cpu ${r.st.ms.toFixed(1)} ms  calls ${r.st.calls}  tris ${(r.st.triangles / 1e6).toFixed(1)}M`);
+  if (teardown) await page.evaluate(teardown);
+};
+await measure('baseline');
+await measure('no shadows', () => { window.__dbg.engine.shadows.enabled = false; }, () => { window.__dbg.engine.shadows.enabled = true; });
+await measure('no reflection', () => { window.__dbg.engine.quality.reflectionScale = 0.02; }, () => { window.__dbg.engine.quality.reflectionScale = 0.5; });
+await measure('no vegetation', () => { window.__dbg.engine.vegetation.group.visible = false; }, () => { window.__dbg.engine.vegetation.group.visible = true; });
+await measure('no terrain', () => { window.__dbg.engine.terrain.group.visible = false; }, () => { window.__dbg.engine.terrain.group.visible = true; });
+await measure('no water', () => { window.__dbg.engine.water._hw = true; window.__dbg.engine.water.hasWater = false; }, () => { window.__dbg.engine.water.hasWater = true; });
+await measure('no AO', () => { window.__dbg.engine.quality.ao = false; }, () => { window.__dbg.engine.quality.ao = true; });
+await measure('no msaa', () => { window.__dbg.engine.quality.msaa = 0; }, () => { window.__dbg.engine.quality.msaa = 4; });
+await measure('paused sim', () => { window.__dbg.engine.paused = true; }, () => { window.__dbg.engine.paused = false; });
+await measure('clouds off', () => { window.__dbg.world.project.env.cloudCover = 0; window.__dbg.engine.applyEnvironment(); });
+console.log('errors', await page.evaluate(() => window.__dbg.errors.slice(0, 3)));
+await browser.close();

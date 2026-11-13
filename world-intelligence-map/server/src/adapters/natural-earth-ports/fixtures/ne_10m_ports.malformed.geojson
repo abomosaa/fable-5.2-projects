@@ -1,0 +1,11 @@
+{"type":"FeatureCollection","name":"ne_10m_ports","features":[
+{"type":"Feature","properties":{"scalerank":3,"featurecla":"Port","name":"Valid Harbour","website":"www.example.org/port","natlscale":75,"ne_id":1999000001},"geometry":{"type":"Point","coordinates":[4.3,51.9]}},
+{"type":"Feature","properties":{"scalerank":8,"featurecla":"Port","name":"<img src=x onerror=alert(1)>Sanitised Port","website":"javascript:alert(1)","natlscale":5},"geometry":{"type":"Point","coordinates":[103.8,1.26]}},
+{"type":"Feature","properties":{"scalerank":8,"featurecla":"Port","name":"No Geometry","website":null,"natlscale":5,"ne_id":1999000003},"geometry":null},
+{"type":"Feature","properties":{"scalerank":8,"featurecla":"Port","name":"Latitude Out Of Range","website":null,"natlscale":5,"ne_id":1999000004},"geometry":{"type":"Point","coordinates":[10,123.4]}},
+{"type":"Feature","properties":{"scalerank":8,"featurecla":"Port","name":"Text Coordinates","website":null,"natlscale":5,"ne_id":1999000005},"geometry":{"type":"Point","coordinates":["10","20"]}},
+{"type":"Feature","properties":{"scalerank":8,"featurecla":"Port","name":"A Line, Not A Port","website":null,"natlscale":5,"ne_id":1999000006},"geometry":{"type":"LineString","coordinates":[[0,0],[1,1]]}},
+{"type":"Feature","properties":{"scalerank":8,"featurecla":"Port","name":null,"website":null,"natlscale":5,"ne_id":1999000007},"geometry":{"type":"Point","coordinates":[10,20]}},
+{"type":"Feature","properties":null,"geometry":{"type":"Point","coordinates":[10,20]}},
+{"type":"Feature","properties":{"scalerank":3,"featurecla":"Port","name":"Duplicate Of Valid Harbour","website":null,"natlscale":75,"ne_id":1999000001},"geometry":{"type":"Point","coordinates":[4.4,51.9]}}
+]}

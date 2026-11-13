@@ -1,0 +1,202 @@
+{
+ "base": "https://127.0.0.1:18443",
+ "fingerprint_pinned": "dc5aa60a338f4edf\u2026",
+ "steps": [
+  {
+   "step": "wrong_fingerprint_rejected",
+   "t": 0.0,
+   "ok": true
+  },
+  {
+   "step": "hello",
+   "t": 0.0,
+   "status": 200,
+   "product": "pocket3d-companion",
+   "api": 1,
+   "version": "1.0.0"
+  },
+  {
+   "step": "status_without_token",
+   "t": 0.0,
+   "status": 401
+  },
+  {
+   "step": "paired",
+   "t": 0.01,
+   "status": 200,
+   "server": "22412851a296"
+  },
+  {
+   "step": "pairing_code_is_single_use",
+   "t": 0.01,
+   "status": 403
+  },
+  {
+   "step": "status",
+   "t": 0.01,
+   "hardware": {
+    "cpu_model": "Intel(R) Core(TM) i7-14700K",
+    "cpu_threads": 28,
+    "mem_total_mb": 8192,
+    "gpu": null
+   },
+   "resources": {
+    "max_parallel_jobs": 1,
+    "job_threads": 6,
+    "job_memory_mb": 3584,
+    "disk_free_mb": 329802
+   },
+   "presets": [
+    "preview",
+    "standard",
+    "high"
+   ]
+  },
+  {
+   "step": "session_created",
+   "t": 0.01,
+   "files": 12,
+   "bytes": 1167562
+  },
+  {
+   "step": "resumable_upload",
+   "t": 0.04,
+   "interrupted_at": 52969,
+   "resumed_from": 52969,
+   "wrong_offset_status": 409
+  },
+  {
+   "step": "checksum_mismatch_rejected",
+   "t": 0.04,
+   "status": 422
+  },
+  {
+   "step": "upload_complete",
+   "t": 0.1,
+   "bytes": 1167562
+  },
+  {
+   "step": "job_submitted",
+   "t": 0.1,
+   "state": "running"
+  },
+  {
+   "step": "job_state",
+   "t": 0.61,
+   "state": "running",
+   "stage": "features",
+   "overall": 0.02,
+   "message": "Checked 12/12 photos"
+  },
+  {
+   "step": "provisional_preview_while_running",
+   "t": 3.13,
+   "provisional": true,
+   "points": 432,
+   "cameras": 8,
+   "stage_at_download": "dense"
+  },
+  {
+   "step": "job_state",
+   "t": 15.36,
+   "state": "succeeded",
+   "stage": "package",
+   "overall": 1.0,
+   "message": "Model written"
+  },
+  {
+   "step": "job_finished",
+   "t": 15.36,
+   "state": "succeeded",
+   "error": null,
+   "stages": [
+    "ingest",
+    "features",
+    "matching",
+    "sfm",
+    "undistort",
+    "dense",
+    "mesh",
+    "texture",
+    "package"
+   ],
+   "progress_events": 75
+  },
+  {
+   "step": "range_resume_download",
+   "t": 15.36,
+   "first": 533398,
+   "rest": 1066798
+  },
+  {
+   "step": "artifacts_verified",
+   "t": 15.36,
+   "artifacts": {
+    "sparse_preview.json": 12206,
+    "model.glb": 1600196,
+    "cameras.json": 2920,
+    "diagnostics.json": 6297,
+    "pipeline.log": 20428
+   }
+  },
+  {
+   "step": "done",
+   "t": 15.36,
+   "registered": 8,
+   "input": 12,
+   "faces": 41191,
+   "timings_s": {
+    "ingest": 0.02,
+    "features": 1.92,
+    "matching": 0.32,
+    "sfm": 0.14,
+    "undistort": 0.14,
+    "dense": 10.27,
+    "mesh": 0.89,
+    "texture": 0.83,
+    "package": 0.23,
+    "total": 14.76
+   },
+   "peak_rss_mb": 1095.8,
+   "warnings": [
+    "no_focal_prior",
+    "unregistered_frames",
+    "few_photos",
+    "coverage_gap"
+   ],
+   "session_id": "cad20184-aa93-4ca9-8766-f908371a11bc",
+   "job_id": "3b9dcf5f-e38e-4445-94a3-7d054b3c36c8"
+  },
+  {
+   "step": "session_deleted_on_companion",
+   "t": 15.37,
+   "status": 204
+  }
+ ],
+ "summary": {
+  "registered": 8,
+  "input": 12,
+  "faces": 41191,
+  "timings_s": {
+   "ingest": 0.02,
+   "features": 1.92,
+   "matching": 0.32,
+   "sfm": 0.14,
+   "undistort": 0.14,
+   "dense": 10.27,
+   "mesh": 0.89,
+   "texture": 0.83,
+   "package": 0.23,
+   "total": 14.76
+  },
+  "peak_rss_mb": 1095.8,
+  "warnings": [
+   "no_focal_prior",
+   "unregistered_frames",
+   "few_photos",
+   "coverage_gap"
+  ],
+  "session_id": "cad20184-aa93-4ca9-8766-f908371a11bc",
+  "job_id": "3b9dcf5f-e38e-4445-94a3-7d054b3c36c8"
+ }
+}

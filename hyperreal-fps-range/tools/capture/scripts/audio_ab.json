@@ -1,0 +1,18 @@
+[
+ {"wait": 2.0, "do": "press", "action": "aim"},
+ {"wait": 1.0, "do": "tap", "action": "fire", "hold": 0.25},
+ {"wait": 1.8, "do": "tap", "action": "fire"},
+ {"wait": 1.8, "do": "tap", "action": "fire"},
+ {"wait": 1.8, "do": "tap", "action": "fire"},
+ {"wait": 2.2, "do": "release", "action": "aim"},
+ {"wait": 0.3, "do": "teleport", "x": 6.4, "z": 0.6, "yaw": 0},
+ {"wait": 1.2, "do": "press", "action": "aim"},
+ {"wait": 1.0, "do": "tap", "action": "fire"},
+ {"wait": 1.8, "do": "tap", "action": "fire"},
+ {"wait": 1.8, "do": "tap", "action": "fire"},
+ {"wait": 1.8, "do": "tap", "action": "fire"},
+ {"wait": 2.5, "do": "release", "action": "aim"},
+ {"wait": 0.3, "do": "tap", "action": "reload"},
+ {"wait": 4.5, "do": "state", "tag": "end"},
+ {"wait": 0.2, "do": "quit"}
+]

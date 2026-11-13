@@ -1,0 +1,126 @@
+{
+ "note": "nominal pinhole intrinsics (NAVI annotation focal length scaled to the resized image; principal point at image centre; no distortion model)",
+ "resize_long_side_px": 1200,
+ "images": [
+  {
+   "filename": "00_navi031_IMG_3424.jpg",
+   "source": "groundtruth/images/031.jpg",
+   "filename_original": "IMG_3424",
+   "width": 1200,
+   "height": 800,
+   "focal_length_px": 1608.940601348877,
+   "cx": 600.0,
+   "cy": 400.0
+  },
+  {
+   "filename": "01_navi039_IMG_3425.jpg",
+   "source": "groundtruth/images/039.jpg",
+   "filename_original": "IMG_3425",
+   "width": 1200,
+   "height": 800,
+   "focal_length_px": 1608.940601348877,
+   "cx": 600.0,
+   "cy": 400.0
+  },
+  {
+   "filename": "02_navi030_IMG_3426.jpg",
+   "source": "groundtruth/images/030.jpg",
+   "filename_original": "IMG_3426",
+   "width": 1200,
+   "height": 800,
+   "focal_length_px": 1608.940601348877,
+   "cx": 600.0,
+   "cy": 400.0
+  },
+  {
+   "filename": "03_navi041_IMG_3427.jpg",
+   "source": "groundtruth/images/041.jpg",
+   "filename_original": "IMG_3427",
+   "width": 1200,
+   "height": 800,
+   "focal_length_px": 1608.940601348877,
+   "cx": 600.0,
+   "cy": 400.0
+  },
+  {
+   "filename": "04_navi016_IMG_3428.jpg",
+   "source": "groundtruth/images/016.jpg",
+   "filename_original": "IMG_3428",
+   "width": 1200,
+   "height": 800,
+   "focal_length_px": 1608.940601348877,
+   "cx": 600.0,
+   "cy": 400.0
+  },
+  {
+   "filename": "05_navi033_IMG_3429.jpg",
+   "source": "groundtruth/images/033.jpg",
+   "filename_original": "IMG_3429",
+   "width": 1200,
+   "height": 800,
+   "focal_length_px": 1608.940601348877,
+   "cx": 600.0,
+   "cy": 400.0
+  },
+  {
+   "filename": "06_navi015_IMG_3430.jpg",
+   "source": "groundtruth/images/015.jpg",
+   "filename_original": "IMG_3430",
+   "width": 1200,
+   "height": 800,
+   "focal_length_px": 1608.940601348877,
+   "cx": 600.0,
+   "cy": 400.0
+  },
+  {
+   "filename": "07_navi026_IMG_3431.jpg",
+   "source": "groundtruth/images/026.jpg",
+   "filename_original": "IMG_3431",
+   "width": 1200,
+   "height": 800,
+   "focal_length_px": 1608.940601348877,
+   "cx": 600.0,
+   "cy": 400.0
+  },
+  {
+   "filename": "08_navi019_IMG_3432.jpg",
+   "source": "groundtruth/images/019.jpg",
+   "filename_original": "IMG_3432",
+   "width": 1200,
+   "height": 800,
+   "focal_length_px": 1608.940601348877,
+   "cx": 600.0,
+   "cy": 400.0
+  },
+  {
+   "filename": "09_navi005_IMG_3433.jpg",
+   "source": "groundtruth/images/005.jpg",
+   "filename_original": "IMG_3433",
+   "width": 1200,
+   "height": 800,
+   "focal_length_px": 1608.940601348877,
+   "cx": 600.0,
+   "cy": 400.0
+  },
+  {
+   "filename": "10_navi048_IMG_3434.jpg",
+   "source": "groundtruth/images/048.jpg",
+   "filename_original": "IMG_3434",
+   "width": 1200,
+   "height": 800,
+   "focal_length_px": 1608.940601348877,
+   "cx": 600.0,
+   "cy": 400.0
+  },
+  {
+   "filename": "11_navi045_IMG_3435.jpg",
+   "source": "groundtruth/images/045.jpg",
+   "filename_original": "IMG_3435",
+   "width": 1200,
+   "height": 800,
+   "focal_length_px": 1608.940601348877,
+   "cx": 600.0,
+   "cy": 400.0
+  }
+ ]
+}

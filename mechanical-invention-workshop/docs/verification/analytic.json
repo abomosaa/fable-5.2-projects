@@ -1,0 +1,186 @@
+{
+ "generated": "2026-11-11T10:58:23.392Z",
+ "node": "v26.13.0",
+ "rows": [
+  {
+   "case": "Compound pendulum (200 mm bar, 5° amplitude)",
+   "quantity": "period",
+   "reference": "0.740528 s",
+   "measured": "0.740525 s",
+   "error": "2.82e-6 rel",
+   "tolerance": "1e-4 rel",
+   "settings": "dt 1 ms, 10 s"
+  },
+  {
+   "case": "Compound pendulum",
+   "quantity": "total energy change over 10 s (13 periods)",
+   "reference": "0",
+   "measured": "-7.35e-3 µJ",
+   "error": "7.30e-7 rel",
+   "tolerance": "1e-5 rel",
+   "settings": "dt 1 ms"
+  },
+  {
+   "case": "Compound pendulum",
+   "quantity": "pivot joint error (max)",
+   "reference": "0",
+   "measured": "9.99e-8 mm",
+   "error": "9.99e-8 mm",
+   "tolerance": "1e-6 mm",
+   "settings": "dt 1 ms"
+  },
+  {
+   "case": "Spring–mass (k = 0.4 N/mm, m = 100 g, A = 10 mm)",
+   "quantity": "max |x − A·cos ωt| / A over 5 periods",
+   "reference": "0",
+   "measured": "4.98e-3",
+   "error": "4.98e-3",
+   "tolerance": "5e-3",
+   "settings": "dt 1 ms (ω·h = 0.063)"
+  },
+  {
+   "case": "Spring–mass",
+   "quantity": "same, dt halved / quartered",
+   "reference": "÷4 per halving (2nd order)",
+   "measured": "1.24e-3 / 3.11e-4",
+   "error": "ratios 4.00, 4.00",
+   "tolerance": "3.2–4.8",
+   "settings": "dt 0.5 / 0.25 ms"
+  },
+  {
+   "case": "Gear pair 18 : 45, module 2",
+   "quantity": "speed ratio ω₂/ω₁",
+   "reference": "-0.400000000",
+   "measured": "-0.400000000",
+   "error": "5.39e-13",
+   "tolerance": "1e-10",
+   "settings": "dt 1 ms, 20 s"
+  },
+  {
+   "case": "Gear pair",
+   "quantity": "motor torque for 100 N·mm load",
+   "reference": "40.0000 N·mm",
+   "measured": "40.0000 N·mm",
+   "error": "1.92e-10",
+   "tolerance": "1e-4 N·mm",
+   "settings": "steady state"
+  },
+  {
+   "case": "Gear pair",
+   "quantity": "accumulated phase error z₁θ₁ + z₂θ₂ after 33 input revolutions",
+   "reference": "0",
+   "measured": "4.55e-13 tooth·rad",
+   "error": "4.55e-13",
+   "tolerance": "1e-6",
+   "settings": "holonomic constraint, no drift"
+  },
+  {
+   "case": "Slider-crank r = 20, l = 70 mm (kinematic)",
+   "quantity": "slider position vs r·cosθ + √(l² − r²sin²θ)",
+   "reference": "closed form",
+   "measured": "2.14e-7 mm max",
+   "error": "2.14e-7 mm",
+   "tolerance": "1e-6 mm",
+   "settings": "dt 1 ms, 3 revolutions"
+  },
+  {
+   "case": "Slider-crank (kinematic)",
+   "quantity": "slider velocity vs closed form (peak 207 mm/s)",
+   "reference": "closed form",
+   "measured": "1.49e-8 mm/s max",
+   "error": "1.49e-8 mm/s",
+   "tolerance": "1e-6 mm/s",
+   "settings": "90 rpm"
+  },
+  {
+   "case": "Slider-crank r = 20, l = 70 mm (dynamic)",
+   "quantity": "slider position vs r·cosθ + √(l² − r²sin²θ)",
+   "reference": "closed form",
+   "measured": "2.14e-7 mm max",
+   "error": "2.14e-7 mm",
+   "tolerance": "1e-6 mm",
+   "settings": "dt 1 ms, 3 revolutions"
+  },
+  {
+   "case": "Slider-crank (dynamic)",
+   "quantity": "slider velocity vs closed form (peak 207 mm/s)",
+   "reference": "closed form",
+   "measured": "1.14e+0 mm/s max",
+   "error": "1.14e+0 mm/s",
+   "tolerance": "1.5 mm/s (mid-step velocity, O(h))",
+   "settings": "90 rpm"
+  },
+  {
+   "case": "Four-bar showcase, 60 s (60 000 steps, 40 crank revolutions)",
+   "quantity": "closed-loop joint error after projection (max over run)",
+   "reference": "0",
+   "measured": "9.98e-8 mm",
+   "error": "9.98e-8 mm",
+   "tolerance": "1e-6 mm",
+   "settings": "dt 1 ms, dynamic"
+  },
+  {
+   "case": "Four-bar showcase",
+   "quantity": "drift produced by one step before projection (max)",
+   "reference": "—",
+   "measured": "1.69e-4 mm",
+   "error": "removed each step",
+   "tolerance": "reported, not hidden",
+   "settings": "dt 1 ms"
+  },
+  {
+   "case": "Cam + roller follower, 120 rpm (kinematic)",
+   "quantity": "follower height vs base + roller + lift(θ) of the motion program",
+   "reference": "cam program",
+   "measured": "1.04e-7 mm max",
+   "error": "1.04e-7 mm",
+   "tolerance": "1e-6 mm",
+   "settings": "dt 0.5 ms, 2 revolutions"
+  },
+  {
+   "case": "Cam + roller follower, 120 rpm (dynamic)",
+   "quantity": "follower height vs base + roller + lift(θ) of the motion program",
+   "reference": "cam program",
+   "measured": "2.83e-4 mm max",
+   "error": "2.83e-4 mm",
+   "tolerance": "2e-3 mm",
+   "settings": "dt 0.5 ms, 2 revolutions"
+  },
+  {
+   "case": "Block on floor, μ = 0.5",
+   "quantity": "displacement after 1 s, push 0.45·m·g (below μ·m·g)",
+   "reference": "0 mm (sticks)",
+   "measured": "1.17e-15 mm",
+   "error": "1.17e-15 mm",
+   "tolerance": "1e-3 mm",
+   "settings": "dt 1 ms"
+  },
+  {
+   "case": "Block on floor, μ = 0.5",
+   "quantity": "displacement after 1 s, push 0.8·m·g",
+   "reference": "1471.00 mm (a = 0.3 g)",
+   "measured": "1471.00 mm",
+   "error": "3.09e-15 rel",
+   "tolerance": "1e-2 rel",
+   "settings": "dt 1 ms"
+  },
+  {
+   "case": "Walker showcase, 2 s replayed twice (contact + friction)",
+   "quantity": "state after 2000 steps, run A vs run B",
+   "reference": "identical",
+   "measured": "bit-for-bit identical",
+   "error": "0",
+   "tolerance": "exact",
+   "settings": "dt 1 ms, 38 bodies"
+  },
+  {
+   "case": "Walker showcase",
+   "quantity": "total mass / weight",
+   "reference": "—",
+   "measured": "181.3 g / 1.778 N",
+   "error": "—",
+   "tolerance": "—",
+   "settings": "density × volume + motor"
+  }
+ ]
+}

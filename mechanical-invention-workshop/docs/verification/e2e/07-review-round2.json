@@ -1,0 +1,171 @@
+{
+ "name": "07-review-round2",
+ "failures": 0,
+ "steps": [
+  {
+   "label": "1024×768: nothing clipped at the right edge and no view-toolbar button is covered",
+   "ok": true,
+   "detail": "{\"iw\":1024,\"scrollW\":1024,\"off\":[],\"hidden\":[]}"
+  },
+  {
+   "label": "undo with focus in the edited field: the field follows the model and a later blur does not re-commit",
+   "ok": true,
+   "detail": "{\"a1\":{\"width\":10,\"text\":\"10\",\"past\":1,\"future\":1},\"a2\":{\"width\":10,\"past\":1,\"future\":1}}"
+  },
+  {
+   "label": "redo with focus in that field works on the first press and updates the text",
+   "ok": true,
+   "detail": "{\"width\":13,\"text\":\"13\"}"
+  },
+  {
+   "label": "two typed commits are two undo steps (only nudges merge)",
+   "ok": true,
+   "detail": "{\"past\":4,\"future\":0}"
+  },
+  {
+   "label": "files with invalid variant values or non-boolean flags are rejected with the reason",
+   "ok": true,
+   "detail": "[\"Cannot open file: the file contains 1 invalid value: variant \\\"Bad\\\": part:part_mwc08r8e36kd3ii:length must be a finite number (found \\\"long\\\").\",\"Cannot open file: the file contains 2 invalid values: variant \\\"Huge\\\": part:part_mwc08r8e36kd3ii:length = 1000000000 is outside the allowed range 1 … 10000; vari\",\"Cannot open file: the file contains 1 invalid value: part #1 \\\"Link\\\": grounded must be true or false. Nothing was opened.\"]"
+  },
+  {
+   "label": "a valid file too large for browser storage opens with an explicit \"NOT stored\" warning and is not shown as saved",
+   "ok": true,
+   "detail": "{\"toast\":\"The project is open but could NOT be stored in this browser (storage is full or unavailable). Use File → Export project \",\"saveState\":\"edited\"}"
+  },
+  {
+   "label": "no uncaught exceptions during imports",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "DXF, profile SVG and drawing of an unbuildable part are refused like its STL",
+   "ok": true,
+   "detail": "{\"n2d\":0,\"sample\":\"Crank was NOT exported: Model: Pin holes ⌀12.2 mm (pin 12 + clearance 0.2) are as wide as \"}"
+  },
+  {
+   "label": "assembly 3MF says which part it left out; BOM marks the part as not buildable",
+   "ok": true,
+   "detail": "{\"t3\":\"3MF written with 3 of 4 parts. NOT included (see Export check): Crank.\"}"
+  },
+  {
+   "label": "Play is refused while the design has an error (unbuildable part)",
+   "ok": true,
+   "detail": "{\"status\":\"idle\",\"toast\":\"Cannot start: fix the error listed in Diagnostics first (Crank: part cannot be built as specified).\"}"
+  },
+  {
+   "label": "Auto-stack layers fixes the lowered coupler only (motor, crank and rocker stay on their layers)",
+   "ok": true,
+   "detail": "{\"before\":2,\"after\":0,\"z\":{\"Frame plate\":0,\"Motor\":0,\"Crank\":4.5,\"Rocker\":4.5,\"Coupler\":9}}"
+  },
+  {
+   "label": "deleting a part removes the plots that only showed its probes",
+   "ok": true,
+   "detail": "[[\"Rocker angle\",1],[\"Motor torque\",1],[\"Closed-loop joint error\",2]]"
+  },
+  {
+   "label": "turning the guide 30° turns the slider with it and keeps it on the axis",
+   "ok": true,
+   "detail": "{\"rel\":0,\"off\":0,\"issues\":0}"
+  },
+  {
+   "label": "Rack & pinion (picked rack first): roles are ordered, the pitch line is brought tangent to the pitch circle (20 mm), no error",
+   "ok": true,
+   "detail": "{\"a\":\"gear\",\"b\":\"rack\",\"side\":20,\"errors\":[]}"
+  },
+  {
+   "label": "Tab / Shift+Tab stay inside an open dialog; the 3D canvas has an accessible name",
+   "ok": true,
+   "detail": "{\"inside\":true,\"label\":\"3D viewport of the mechanism. Drag to or\"}"
+  },
+  {
+   "label": "sketch: clicking a line selects it and Horizontal applies to it",
+   "ok": true,
+   "detail": "{\"pts\":[[-20,13],[10,13]],\"cons\":[\"horizontal\"]}"
+  },
+  {
+   "label": "double-clicking a sketched part opens its sketch again",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "batch STL export names the unbuildable part it skipped; the on-screen BOM marks it",
+   "ok": true,
+   "detail": "{\"stlToast\":\"Exported 3 STL files (millimetres). NOT exported (see Export check): Crank.\"}"
+  },
+  {
+   "label": "inch preset: the Diagnostics header shows the joint error in inches",
+   "ok": true,
+   "detail": "1.1e-14 in"
+  },
+  {
+   "label": "typed value then nudges: two undo steps, and undo returns to the typed value",
+   "ok": true,
+   "detail": "{\"steps\":2}"
+  },
+  {
+   "label": "a typed position that the joints do not allow is explained, the field returns to the model value and no undo step is left",
+   "ok": true,
+   "detail": "{\"toast\":\"\\\"Rocker\\\" is held by its joints, so that position could not be reached from this pose; nothing was changed. Drag the mechanism to pose it, move the part it is attached to, or remove the joint.\",\"x\":99.99999999999999,\"heldField\":\"100\"}"
+  },
+  {
+   "label": "a typed rotation that re-poses the linkage says so, shows the resulting angle in the field, and is one undo step",
+   "ok": true,
+   "detail": "{\"toast\":\"\\\"Rocker\\\" is held by its joints, so the requested value could not be kept: the mechanism was re-posed to another assembly that keeps all joints closed (rotation -138.49 deg). Ctrl+Z restores the previous pose.\",\"steps\":4,\"angle\":-138.4890422567436,\"issues\":0,\"flipField\":\"-138.489\"}"
+  },
+  {
+   "label": "retyping the displayed rotation from the other branch restores it without a \"could not be kept\" message",
+   "ok": true,
+   "detail": "{\"toast\":\"\",\"angle\":105.091,\"shownAngle\":\"105.091\"}"
+  },
+  {
+   "label": "a refused nudge in a pose field shows the model value again and adds no undo step",
+   "ok": true,
+   "detail": "{\"field\":\"100\",\"past\":3,\"future\":2,\"toast\":\"\\\"Rocker\\\" is held by its joints, so that position could not be reached from this pose; nothing was changed. Drag the mechanism to pose it, move the part it is attached to, or remove the joint.\"}"
+  },
+  {
+   "label": "arrow key on a part held by its joints: explained, no undo step, redo stack untouched",
+   "ok": true,
+   "detail": "{\"kSteps\":{\"past\":3,\"future\":2},\"ka\":{\"past\":3,\"future\":2,\"toast\":\"\\\"Rocker\\\" is held by its joints, so that position could not be reached from this pose; nothing was changed. Drag the mechanism to pose it, move the part it is attached to, or remove the joint.\",\"dirty\":true}}"
+  },
+  {
+   "label": "Q on the four-bar rocker poses the mechanism: +15 deg met exactly, the crank follows, one undo step, no message",
+   "ok": true,
+   "detail": "{\"rk0\":{\"rocker\":1.8341761763579916,\"crank\":1.5707963267948966},\"kq\":{\"past\":4,\"toast\":\"\",\"issues\":0,\"rocker\":2.095975564157141,\"crank\":2.193461203883346}}"
+  },
+  {
+   "label": "typed X on a part of a free jointed pair: value met exactly, the pair moves together, one undo step, no message",
+   "ok": true,
+   "detail": "{\"pair\":{\"ids\":[\"part_mwc09e7b483ag2t\",\"part_mwc09e7b5g5pidc\"],\"ax\":300,\"bx\":360,\"past\":4},\"pairAfter\":{\"ax\":310,\"bx\":370,\"past\":5,\"toast\":\"\",\"issues\":0},\"pairField\":\"310\"}"
+  },
+  {
+   "label": "typed rotation on a ground-pivoted link with a link hanging from it: 40 deg met exactly, the hanging link follows, one undo step, no message",
+   "ok": true,
+   "detail": "{\"arm\":{\"past\":6,\"issues\":0,\"joints\":7},\"armAfter\":{\"angle\":40,\"ax\":310,\"pinGap\":2.842170943040401e-14,\"past\":7,\"toast\":\"\",\"issues\":0},\"armField\":\"40\"}"
+  },
+  {
+   "label": "reload after an unstorable project: no misleading \"missing or damaged\" message",
+   "ok": true,
+   "detail": "{\"toast\":\"\",\"name\":\"Untitled mechanism 3\"}"
+  },
+  {
+   "label": "arrow key on a meshed gear: either met exactly, or refused / re-posed WITH a message (never a silent adjusted move)",
+   "ok": true,
+   "detail": "{\"gk0\":{\"x\":60.11985362223225,\"y\":21.945459677148882,\"past\":0},\"gk1\":{\"x\":59.93996869880927,\"y\":22.432123225093196,\"past\":1,\"toast\":\"\\\"Gear 48T\\\" is held by its joints, so the requested value could not be kept: the mechanism was re-posed to another assembly that keeps all joints closed (X 59.94 mm, Y 22.432 mm). Ctrl+Z restores the previous pose.\"}}"
+  },
+  {
+   "label": "walker: typed Rotation on a crank web turns the crank by exactly that much, the chassis stays where it is, one undo step, no message",
+   "ok": true,
+   "detail": "{\"wk0\":{\"crank\":90,\"plate\":{\"x\":0,\"y\":-6.8,\"angle\":0,\"z\":0},\"past\":0,\"grounded\":0},\"wk1\":{\"crank\":119.99999999999999,\"plate\":{\"x\":0,\"y\":-6.8,\"angle\":0,\"z\":0},\"past\":1,\"toast\":\"\",\"issues\":0,\"grounded\":0}}"
+  },
+  {
+   "label": "walker with the re-phased crank still runs: no error events, joints closed",
+   "ok": true,
+   "detail": "{\"t\":1.4159999999999549,\"maxPosError\":9.708417003650993e-8,\"status\":\"paused\",\"errors\":[],\"x\":143.79212233022488}"
+  },
+  {
+   "label": "no console/page errors in the whole session",
+   "ok": true,
+   "detail": ""
+  }
+ ]
+}

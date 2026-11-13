@@ -1,0 +1,12 @@
+{
+  "capturedAt": "2026-11-10T17:49:00Z",
+  "notes": "ibtracs.ACTIVE.list.v04r01.csv is the complete, unmodified live file (4 storms, 214 fixes, 174 columns, second header row with units). The upstream file had no storm crossing the antimeridian on the capture day; the hand-authored malformed variant therefore also contains a valid storm that does (plus a single-fix storm, a storm with individually broken fixes and a storm whose every fix is broken). It reuses the two real header rows.",
+  "routes": [
+    {
+      "match": "/csv/ibtracs.ACTIVE.list.v04r01.csv",
+      "file": "ibtracs.ACTIVE.list.v04r01.csv",
+      "lastModified": "Tue, 10 Nov 2026 10:02:28 GMT",
+      "variants": { "malformed": "ibtracs.ACTIVE.malformed.csv" }
+    }
+  ]
+}

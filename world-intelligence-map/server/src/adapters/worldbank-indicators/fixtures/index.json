@@ -1,0 +1,41 @@
+{
+  "capturedAt": "2026-11-10T17:45:00Z",
+  "notes": "Captured from the live World Bank Indicators API with mrv=3 (three most recent years, all economies and aggregates). The malformed variant was authored by hand.",
+  "routes": [
+    {
+      "match": "/indicator/SP.POP.TOTL?",
+      "file": "SP.POP.TOTL.json",
+      "variants": {
+        "malformed": "SP.POP.TOTL.malformed.json"
+      }
+    },
+    {
+      "match": "/indicator/NY.GDP.PCAP.CD?",
+      "file": "NY.GDP.PCAP.CD.json"
+    },
+    {
+      "match": "/indicator/SP.DYN.LE00.IN?",
+      "file": "SP.DYN.LE00.IN.json"
+    },
+    {
+      "match": "/indicator/SH.DYN.MORT?",
+      "file": "SH.DYN.MORT.json"
+    },
+    {
+      "match": "/indicator/IT.NET.USER.ZS?",
+      "file": "IT.NET.USER.ZS.json"
+    },
+    {
+      "match": "/indicator/EG.ELC.ACCS.ZS?",
+      "file": "EG.ELC.ACCS.ZS.json"
+    },
+    {
+      "match": "/indicator/FP.CPI.TOTL.ZG?",
+      "file": "FP.CPI.TOTL.ZG.json"
+    },
+    {
+      "match": "/indicator/SL.UEM.TOTL.ZS?",
+      "file": "SL.UEM.TOTL.ZS.json"
+    }
+  ]
+}

@@ -1,0 +1,210 @@
+{
+ "mass": 0.48,
+ "height": 0.3,
+ "radius": 0.03725,
+ "neck_radius": 0.0142,
+ "wall": 0.003,
+ "radial_segments": {
+  "body": 48,
+  "base_and_shoulder_top": 24,
+  "neck": 16,
+  "bore": 8
+ },
+ "uv": "u = angle/2pi, v = 1 - y/height",
+ "volume_m3": 0.000206,
+ "seed": 8110,
+ "intact_tris": 1936,
+ "materials": [
+  "glass",
+  "glass_break"
+ ],
+ "pieces": [
+  {
+   "name": "frag_00",
+   "centroid": [
+    -5.4e-05,
+    0.254747,
+    0.0
+   ],
+   "volume_frac": 0.193324,
+   "tag": "neck",
+   "tris": 706
+  },
+  {
+   "name": "frag_01",
+   "centroid": [
+    0.001327,
+    0.173119,
+    -0.033301
+   ],
+   "volume_frac": 0.040528,
+   "tag": "body",
+   "tris": 304
+  },
+  {
+   "name": "frag_02",
+   "centroid": [
+    -0.023931,
+    0.168898,
+    0.023359
+   ],
+   "volume_frac": 0.044541,
+   "tag": "body",
+   "tris": 310
+  },
+  {
+   "name": "frag_03",
+   "centroid": [
+    -0.033758,
+    0.168202,
+    -0.001223
+   ],
+   "volume_frac": 0.038132,
+   "tag": "body",
+   "tris": 296
+  },
+  {
+   "name": "frag_04",
+   "centroid": [
+    0.025714,
+    0.16632,
+    -0.021899
+   ],
+   "volume_frac": 0.041417,
+   "tag": "body",
+   "tris": 286
+  },
+  {
+   "name": "frag_05",
+   "centroid": [
+    0.03361,
+    0.163888,
+    0.003927
+   ],
+   "volume_frac": 0.043785,
+   "tag": "body",
+   "tris": 294
+  },
+  {
+   "name": "frag_06",
+   "centroid": [
+    0.022416,
+    0.161735,
+    0.025845
+   ],
+   "volume_frac": 0.036868,
+   "tag": "body",
+   "tris": 242
+  },
+  {
+   "name": "frag_07",
+   "centroid": [
+    -0.024422,
+    0.159052,
+    -0.024021
+   ],
+   "volume_frac": 0.039425,
+   "tag": "body",
+   "tris": 266
+  },
+  {
+   "name": "frag_08",
+   "centroid": [
+    -0.000425,
+    0.157543,
+    0.034173
+   ],
+   "volume_frac": 0.042532,
+   "tag": "body",
+   "tris": 266
+  },
+  {
+   "name": "frag_09",
+   "centroid": [
+    0.006656,
+    0.079165,
+    -0.034017
+   ],
+   "volume_frac": 0.041509,
+   "tag": "body",
+   "tris": 178
+  },
+  {
+   "name": "frag_10",
+   "centroid": [
+    -0.034369,
+    0.076064,
+    -0.002557
+   ],
+   "volume_frac": 0.042097,
+   "tag": "body",
+   "tris": 206
+  },
+  {
+   "name": "frag_11",
+   "centroid": [
+    -0.019607,
+    0.072916,
+    -0.028724
+   ],
+   "volume_frac": 0.037154,
+   "tag": "body",
+   "tris": 180
+  },
+  {
+   "name": "frag_12",
+   "centroid": [
+    0.030748,
+    0.070521,
+    -0.015379
+   ],
+   "volume_frac": 0.045247,
+   "tag": "body",
+   "tris": 198
+  },
+  {
+   "name": "frag_13",
+   "centroid": [
+    0.031022,
+    0.069249,
+    0.015398
+   ],
+   "volume_frac": 0.037809,
+   "tag": "body",
+   "tris": 178
+  },
+  {
+   "name": "frag_14",
+   "centroid": [
+    -0.021988,
+    0.068565,
+    0.026245
+   ],
+   "volume_frac": 0.045294,
+   "tag": "body",
+   "tris": 202
+  },
+  {
+   "name": "frag_15",
+   "centroid": [
+    0.008945,
+    0.067005,
+    0.033499
+   ],
+   "volume_frac": 0.036694,
+   "tag": "body",
+   "tris": 178
+  },
+  {
+   "name": "frag_16",
+   "centroid": [
+    -0.00036,
+    0.012142,
+    -0.000444
+   ],
+   "volume_frac": 0.193644,
+   "tag": "base",
+   "tris": 666
+  }
+ ]
+}

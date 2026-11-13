@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="dev.pocket3d.core.mesh.GlbTest" tests="17" skipped="0" failures="0" errors="0" timestamp="2026-11-12T10:55:39.870Z" hostname="h4-pc" time="1.084">
+  <properties/>
+  <testcase name="survivesRandomCorruption" classname="dev.pocket3d.core.mesh.GlbTest" time="0.572"/>
+  <testcase name="readsKhronosDuck" classname="dev.pocket3d.core.mesh.GlbTest" time="0.114"/>
+  <testcase name="bakesNormalsWithInverseTransposeAndMirror" classname="dev.pocket3d.core.mesh.GlbTest" time="0.0"/>
+  <testcase name="writerSanitisesBadInput" classname="dev.pocket3d.core.mesh.GlbTest" time="0.001"/>
+  <testcase name="writerProducesTheDocumentedGltfStructure" classname="dev.pocket3d.core.mesh.GlbTest" time="0.005"/>
+  <testcase name="rejectsUnsupportedContentWithClearMessages" classname="dev.pocket3d.core.mesh.GlbTest" time="0.007"/>
+  <testcase name="rejectsBrokenContainers" classname="dev.pocket3d.core.mesh.GlbTest" time="0.003"/>
+  <testcase name="bakesNodeHierarchyWithTrsMatrixAndMirror" classname="dev.pocket3d.core.mesh.GlbTest" time="0.001"/>
+  <testcase name="readsMaterialsImagesAndIgnoresUnusedFeatures" classname="dev.pocket3d.core.mesh.GlbTest" time="0.001"/>
+  <testcase name="readsKhronosBoxTextured" classname="dev.pocket3d.core.mesh.GlbTest" time="0.001"/>
+  <testcase name="rejectsEveryTruncation" classname="dev.pocket3d.core.mesh.GlbTest" time="0.3"/>
+  <testcase name="rejectsBrokenJsonAndReferences" classname="dev.pocket3d.core.mesh.GlbTest" time="0.022"/>
+  <testcase name="roundTripSingleMaterialIsExact" classname="dev.pocket3d.core.mesh.GlbTest" time="0.014"/>
+  <testcase name="emptyMeshRoundTrips" classname="dev.pocket3d.core.mesh.GlbTest" time="0.0"/>
+  <testcase name="meshWithoutUvsNormalsOrMaterials" classname="dev.pocket3d.core.mesh.GlbTest" time="0.01"/>
+  <testcase name="roundTripMultiMaterialKeepsFlagsAreasAndSharedImage" classname="dev.pocket3d.core.mesh.GlbTest" time="0.024"/>
+  <testcase name="readsAccessorVariants" classname="dev.pocket3d.core.mesh.GlbTest" time="0.008"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

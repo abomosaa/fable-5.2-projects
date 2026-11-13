@@ -1,0 +1,6 @@
+{
+  "name": "pocket3d-gltf-validate",
+  "private": true,
+  "description": "Runs the Khronos glTF-Validator (independent of all Pocket 3D Scanner code) on exported models.",
+  "dependencies": { "gltf-validator": "2.0.0-dev.3.10" }
+}

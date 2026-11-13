@@ -1,0 +1,11 @@
+{
+  "capturedAt": "2026-11-10T17:52:00Z",
+  "notes": "Captured from the live https://aviationweather.gov/api/data/sigmet?format=json on 2026-11-10 (134 SIGMETs, untrimmed: 131 international, 3 U.S. convective; includes AREAS multi-polygons with longitudes above 180 at the antimeridian, unclosed rings and repeated vertices exactly as served). All machine-readable times (validTimeFrom, validTimeTo, validTime, receiptTime, issueTime) were shifted forward by a constant +6 h so that the set looks as it would just before the fixture epoch: 113 SIGMETs are valid at 2026-11-11T00:00Z, the other 21 expired in the preceding minutes. Times inside the raw SIGMET text (rawSigmet) were left as captured and therefore read 6 h earlier. The malformed variant was authored by hand.",
+  "routes": [
+    {
+      "match": "/api/data/sigmet",
+      "file": "sigmet.json",
+      "variants": { "malformed": "sigmet.malformed.json" }
+    }
+  ]
+}

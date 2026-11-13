@@ -1,0 +1,21 @@
+{
+  "page": 1,
+  "short-url": "malformed",
+  "maxPages": 1,
+  "total": [],
+  "items": [
+    { "year": 2025, "coo_id": 2, "coo_name": "Afghanistan", "coo": "AFG", "coo_iso": "AFG", "coa_id": "-", "coa_name": "-", "coa": "-", "coa_iso": "-", "refugees": 2671560, "asylum_seekers": 270007, "returned_refugees": 1947183, "idps": 3199023, "returned_idps": 8056, "stateless": "0", "ooc": 1008969, "oip": 1030958, "hst": 600000 },
+    { "year": "2025", "coo_id": 4, "coo_name": "Algeria<script>alert(1)</script>", "coo": "ALG", "coo_iso": "DZA", "coa_id": "-", "coa_name": "-", "coa": "-", "coa_iso": "-", "refugees": "9174", "asylum_seekers": "-", "returned_refugees": "0", "idps": "0", "returned_idps": "0", "stateless": "0", "ooc": 629, "oip": "-", "hst": "0" },
+    { "year": 2025, "coo_id": 999, "coo_name": "Kosovo", "coo": "KOS", "coo_iso": "XKX", "coa_id": "-", "coa_name": "-", "coa": "-", "coa_iso": "-", "refugees": 1200, "asylum_seekers": 300, "returned_refugees": "0", "idps": "-", "returned_idps": "0", "stateless": "0", "ooc": "0", "oip": "-", "hst": "0" },
+    { "year": 2025, "coo_id": 2, "coo_name": "Afghanistan (duplicate row)", "coo": "AFG", "coo_iso": "AFG", "coa_id": "-", "coa_name": "-", "coa": "-", "coa_iso": "-", "refugees": 1, "asylum_seekers": 1, "returned_refugees": "0", "idps": 1, "returned_idps": "0", "stateless": "0", "ooc": "0", "oip": "-", "hst": "0" },
+    { "year": 2025, "coo_id": 300, "coo_name": "Unknown ", "coo": "UKN", "coo_iso": "UNK", "coa_id": "-", "coa_name": "-", "coa": "-", "coa_iso": "-", "refugees": 126784, "asylum_seekers": 1572774, "returned_refugees": "0", "idps": "0", "returned_idps": "0", "stateless": "0", "ooc": "0", "oip": 103809, "hst": "0" },
+    { "year": 2025, "coo_id": 301, "coo_name": "Stateless", "coo": "STA", "coo_iso": "XXA", "coa_id": "-", "coa_name": "-", "coa": "-", "coa_iso": "-", "refugees": 34736, "asylum_seekers": 3934, "returned_refugees": "0", "idps": "0", "returned_idps": "0", "stateless": "0", "ooc": "0", "oip": "-", "hst": "0" },
+    { "year": 2025, "coo_id": 5, "coo_name": "Andorra", "coo": "AND", "coo_iso": "AND", "coa_id": "-", "coa_name": "-", "coa": "-", "coa_iso": "-", "refugees": "0", "asylum_seekers": "0", "returned_refugees": "0", "idps": "0", "returned_idps": "0", "stateless": "0", "ooc": "0", "oip": "-", "hst": "0" },
+    { "year": "next year", "coo_id": 6, "coo_name": "Angola", "coo": "ANG", "coo_iso": "AGO", "coa_id": "-", "coa_name": "-", "coa": "-", "coa_iso": "-", "refugees": 8000, "asylum_seekers": 5000, "returned_refugees": "0", "idps": "0", "returned_idps": "0", "stateless": "0", "ooc": "0", "oip": "-", "hst": "0" },
+    { "year": 2025, "coo_id": 7, "coo_name": "Armenia", "coo": "ARM", "coo_iso": "ARM", "coa_id": "-", "coa_name": "-", "coa": "-", "coa_iso": "-", "refugees": "many", "asylum_seekers": 5000, "returned_refugees": "0", "idps": "0", "returned_idps": "0", "stateless": "0", "ooc": "0", "oip": "-", "hst": "0" },
+    { "year": 2025, "coo_id": 8, "coo_name": "Azerbaijan", "coo": "AZE", "coo_iso": "AZE", "coa_id": "-", "coa_name": "-", "coa": "-", "coa_iso": "-", "refugees": 9000, "asylum_seekers": 5000, "returned_refugees": "0", "idps": -5, "returned_idps": "0", "stateless": "0", "ooc": "0", "oip": "-", "hst": "0" },
+    { "year": 2025, "coo_id": "-", "coo_name": "-", "coo": "-", "coo_iso": "-", "coa_id": "-", "coa_name": "-", "coa": "-", "coa_iso": "-", "refugees": 31000000, "asylum_seekers": 8000000, "returned_refugees": "0", "idps": 60000000, "returned_idps": "0", "stateless": "0", "ooc": "0", "oip": "-", "hst": "0" },
+    null,
+    { "year": 2025, "coo_id": 9, "coo_name": "Bangladesh", "coo": "BGD", "coo_iso": "BGD", "coa_id": "-", "coa_name": "-", "coa": "-", "coa_iso": "-", "refugees": 30000, "asylum_seekers": { "value": 5 }, "returned_refugees": "0", "idps": "0", "returned_idps": "0", "stateless": "0", "ooc": "0", "oip": "-", "hst": "0" }
+  ]
+}

@@ -1,0 +1,11 @@
+[gd_resource type="StandardMaterial3D" format=3]
+
+[ext_resource type="Texture2D" path="res://assets/env/veg/tree_small_02_branch_albedo.jpg" id="1_8r036"]
+[ext_resource type="Texture2D" path="res://assets/env/veg/tree_small_02_branch_normal.jpg" id="2_7hb3m"]
+
+[resource]
+albedo_color = Color(0.85, 0.85, 0.85, 1)
+albedo_texture = ExtResource("1_8r036")
+roughness = 0.9
+normal_enabled = true
+normal_texture = ExtResource("2_7hb3m")

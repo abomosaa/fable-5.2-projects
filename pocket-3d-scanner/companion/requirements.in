@@ -1,0 +1,11 @@
+# Direct runtime dependencies of the companion (resolved+pinned in requirements.lock)
+pycolmap
+open3d
+numpy
+scipy
+pillow
+pillow-heif
+aiohttp
+cryptography
+qrcode
+psutil

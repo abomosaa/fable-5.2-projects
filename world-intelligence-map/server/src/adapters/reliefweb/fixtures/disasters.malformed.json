@@ -1,0 +1,353 @@
+{
+ "href": "https://api.reliefweb.int/v2/disasters?appname=REPLACE-WITH-APP-NAME",
+ "time": 9,
+ "links": {
+  "self": {
+   "href": "https://api.reliefweb.int/v2/disasters?appname=REPLACE-WITH-APP-NAME"
+  }
+ },
+ "totalCount": 10,
+ "count": 10,
+ "data": [
+  {
+   "id": 99901,
+   "score": 1,
+   "href": "https://api.reliefweb.int/v2/disasters/99901",
+   "fields": {
+    "id": 99901,
+    "name": "Kenya: Floods - Nov 2026",
+    "glide": "FL-2026-009901-KEN",
+    "status": "alert",
+    "type": [
+     {
+      "name": "Flood",
+      "code": "FL",
+      "primary": true
+     }
+    ],
+    "primary_type": {
+     "name": "Flood",
+     "code": "FL"
+    },
+    "country": [
+     {
+      "name": "Kenya",
+      "iso3": "ken",
+      "primary": true
+     }
+    ],
+    "primary_country": {
+     "name": "Kenya",
+     "shortname": "Kenya",
+     "iso3": "ken"
+    },
+    "date": {
+     "created": "2026-11-05T09:30:00+00:00",
+     "changed": "2026-11-09T14:00:00+00:00",
+     "event": "2026-11-03T00:00:00+00:00"
+    },
+    "url": "https://reliefweb.int/disaster/fl-2026-009901-ken",
+    "url_alias": "https://reliefweb.int/disaster/fl-2026-009901-ken"
+   }
+  },
+  {
+   "id": 99902,
+   "score": 1,
+   "href": "https://api.reliefweb.int/v2/disasters/99902",
+   "fields": {
+    "id": 99902,
+    "name": "<script>alert(1)</script>Peru: Wild Fires <img src=x onerror=alert(2)>- Oct 2026",
+    "glide": "WF-2026-009902-PER",
+    "status": "current",
+    "type": [
+     {
+      "name": "Wild Fire",
+      "code": "WF",
+      "primary": true
+     },
+     {
+      "name": "Drought",
+      "code": "DR"
+     }
+    ],
+    "primary_type": {
+     "name": "Wild Fire",
+     "code": "WF"
+    },
+    "country": [
+     {
+      "name": "Peru",
+      "iso3": "per",
+      "primary": true
+     },
+     {
+      "name": "Atlantis",
+      "iso3": "xxx"
+     },
+     {
+      "name": "Bolivia (Plurinational State of)",
+      "iso3": "bol"
+     }
+    ],
+    "primary_country": {
+     "name": "Peru",
+     "iso3": "per"
+    },
+    "date": {
+     "created": "2026-10-20T08:00:00+02:00",
+     "changed": "2026-11-01T10:00:00+00:00",
+     "event": "2026-10-18T00:00:00+00:00"
+    },
+    "url": "javascript:alert(3)",
+    "url_alias": "https://evil.example.com/disaster/x"
+   }
+  },
+  {
+   "id": 99903,
+   "score": 1,
+   "href": "https://api.reliefweb.int/v2/disasters/99903"
+  },
+  {
+   "id": 99904,
+   "score": 1,
+   "href": "https://api.reliefweb.int/v2/disasters/99904",
+   "fields": {
+    "id": 99904,
+    "name": "Kenya: Floods - Nov 2026",
+    "glide": "FL-2026-009901-KEN",
+    "status": "archive",
+    "type": [
+     {
+      "name": "Flood",
+      "code": "FL",
+      "primary": true
+     }
+    ],
+    "primary_type": {
+     "name": "Flood",
+     "code": "FL"
+    },
+    "country": [
+     {
+      "name": "Kenya",
+      "iso3": "ken",
+      "primary": true
+     }
+    ],
+    "primary_country": {
+     "name": "Kenya",
+     "shortname": "Kenya",
+     "iso3": "ken"
+    },
+    "date": {
+     "created": "2026-11-05T09:30:00+00:00",
+     "changed": "2026-11-09T14:00:00+00:00",
+     "event": "2026-11-03T00:00:00+00:00"
+    },
+    "url": "https://reliefweb.int/disaster/fl-2026-009901-ken",
+    "url_alias": "https://reliefweb.int/disaster/fl-2026-009901-ken"
+   }
+  },
+  {
+   "id": 99905,
+   "score": 1,
+   "href": "https://api.reliefweb.int/v2/disasters/99905",
+   "fields": {
+    "id": 99905,
+    "name": "Kenya: Floods - Nov 2026",
+    "glide": "FL-2026-009901-KEN",
+    "status": "alert",
+    "type": [
+     {
+      "name": "Flood",
+      "code": "FL",
+      "primary": true
+     }
+    ],
+    "primary_type": {
+     "name": "Flood",
+     "code": "FL"
+    },
+    "country": [
+     {
+      "name": "Kenya",
+      "iso3": "ken",
+      "primary": true
+     }
+    ],
+    "primary_country": {
+     "name": "Kenya",
+     "shortname": "Kenya",
+     "iso3": "ken"
+    },
+    "date": {
+     "created": null,
+     "event": "soon"
+    },
+    "url": "https://reliefweb.int/disaster/fl-2026-009901-ken",
+    "url_alias": "https://reliefweb.int/disaster/fl-2026-009901-ken"
+   }
+  },
+  {
+   "id": 99906,
+   "score": 1,
+   "href": "https://api.reliefweb.int/v2/disasters/99906",
+   "fields": {
+    "id": 99906,
+    "name": "Kenya: Floods - Nov 2026",
+    "glide": "FL-2026-009901-KEN",
+    "status": "alert",
+    "type": [
+     {
+      "name": "Flood",
+      "code": "FL",
+      "primary": true
+     }
+    ],
+    "primary_type": {
+     "name": "Flood",
+     "code": "FL"
+    },
+    "country": [
+     {
+      "name": "World",
+      "iso3": "wld"
+     }
+    ],
+    "primary_country": {
+     "name": "World",
+     "iso3": "wld"
+    },
+    "date": {
+     "created": "2026-11-05T09:30:00+00:00",
+     "changed": "2026-11-09T14:00:00+00:00",
+     "event": "2026-11-03T00:00:00+00:00"
+    },
+    "url": "https://reliefweb.int/disaster/fl-2026-009901-ken",
+    "url_alias": "https://reliefweb.int/disaster/fl-2026-009901-ken"
+   }
+  },
+  {
+   "id": 99907,
+   "score": 1,
+   "href": "https://api.reliefweb.int/v2/disasters/99907",
+   "fields": {
+    "id": 99907,
+    "name": "   ",
+    "glide": "FL-2026-009901-KEN",
+    "status": "alert",
+    "type": [
+     {
+      "name": "Flood",
+      "code": "FL",
+      "primary": true
+     }
+    ],
+    "primary_type": {
+     "name": "Flood",
+     "code": "FL"
+    },
+    "country": [
+     {
+      "name": "Kenya",
+      "iso3": "ken",
+      "primary": true
+     }
+    ],
+    "primary_country": {
+     "name": "Kenya",
+     "shortname": "Kenya",
+     "iso3": "ken"
+    },
+    "date": {
+     "created": "2026-11-05T09:30:00+00:00",
+     "changed": "2026-11-09T14:00:00+00:00",
+     "event": "2026-11-03T00:00:00+00:00"
+    },
+    "url": "https://reliefweb.int/disaster/fl-2026-009901-ken",
+    "url_alias": "https://reliefweb.int/disaster/fl-2026-009901-ken"
+   }
+  },
+  null,
+  {
+   "id": 99901,
+   "score": 1,
+   "href": "https://api.reliefweb.int/v2/disasters/99901",
+   "fields": {
+    "id": 99901,
+    "name": "Kenya: Floods - Nov 2026 (duplicate)",
+    "glide": "FL-2026-009901-KEN",
+    "status": "alert",
+    "type": [
+     {
+      "name": "Flood",
+      "code": "FL",
+      "primary": true
+     }
+    ],
+    "primary_type": {
+     "name": "Flood",
+     "code": "FL"
+    },
+    "country": [
+     {
+      "name": "Kenya",
+      "iso3": "ken",
+      "primary": true
+     }
+    ],
+    "primary_country": {
+     "name": "Kenya",
+     "shortname": "Kenya",
+     "iso3": "ken"
+    },
+    "date": {
+     "created": "2026-11-05T09:30:00+00:00",
+     "changed": "2026-11-09T14:00:00+00:00",
+     "event": "2026-11-03T00:00:00+00:00"
+    },
+    "url": "https://reliefweb.int/disaster/fl-2026-009901-ken",
+    "url_alias": "https://reliefweb.int/disaster/fl-2026-009901-ken"
+   }
+  },
+  {
+   "id": 99910,
+   "score": 1,
+   "href": "https://api.reliefweb.int/v2/disasters/99910",
+   "fields": {
+    "id": 99910,
+    "name": "Nepal: Earthquake - Sep 2026",
+    "glide": "EQ-2026-009910-NPL",
+    "status": "past",
+    "type": [
+     {
+      "name": "Earthquake",
+      "code": "EQ",
+      "primary": true
+     }
+    ],
+    "primary_type": {
+     "name": "Earthquake",
+     "code": "EQ"
+    },
+    "country": [
+     {
+      "name": "Nepal",
+      "iso3": "npl",
+      "primary": true
+     }
+    ],
+    "primary_country": {
+     "name": "Nepal",
+     "iso3": "npl"
+    },
+    "date": {
+     "created": "2026-09-14T06:00:00+00:00",
+     "changed": "2026-10-30T12:00:00+00:00"
+    },
+    "url": "https://reliefweb.int/disaster/eq-2026-009910-npl",
+    "url_alias": null
+   }
+  }
+ ]
+}

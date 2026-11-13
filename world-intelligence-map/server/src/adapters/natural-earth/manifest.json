@@ -1,0 +1,62 @@
+{
+  "id": "natural-earth",
+  "provider": "Natural Earth",
+  "dataset": "Natural Earth 1:50m cultural vectors – populated places and breakaway / disputed areas",
+  "description": "Public-domain geographic context: about 1,250 capitals and major cities with population estimates, and 28 breakaway, disputed and indeterminate areas with Natural Earth's notes on who administers and who claims them.",
+  "homepageUrl": "https://www.naturalearthdata.com/",
+  "documentationUrl": "https://www.naturalearthdata.com/downloads/50m-cultural-vectors/",
+  "sourceUrls": [
+    "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/geojson/ne_50m_populated_places_simple.geojson",
+    "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/geojson/ne_50m_admin_0_breakaway_disputed_areas.geojson"
+  ],
+  "allowedHosts": ["raw.githubusercontent.com"],
+  "coverage": { "geographic": "Global, generalised for 1:50 million scale", "temporal": "Static reference data, revised with Natural Earth releases (5.x)" },
+  "updateCadence": { "upstream": "Occasional Natural Earth releases (months to years apart)", "pollIntervalSec": 2592000, "staleAfterSec": 15552000 },
+  "auth": { "type": "none", "envVars": [] },
+  "attribution": "Made with Natural Earth. Free vector and raster map data @ naturalearthdata.com.",
+  "license": {
+    "name": "Public domain (Natural Earth terms of use)",
+    "url": "https://www.naturalearthdata.com/about/terms-of-use/",
+    "redistribution": "allowed",
+    "nonCommercialOnly": false,
+    "notes": "\"All versions of Natural Earth raster + vector map data found on this website are in the public domain.\" No permission or credit is required. Files are fetched from the project's official GitHub repository (nvkelso/natural-earth-vector)."
+  },
+  "limitations": [
+    "Boundaries and names of disputed areas are cartographic depictions by Natural Earth, which shows de-facto control; they are NOT an endorsement of any territorial claim by this application, and other authorities draw them differently.",
+    "The administering / claiming notes are Natural Earth's short editorial summaries and can be outdated (the status of several areas has changed since they were compiled).",
+    "Outlines are generalised for 1:50 million scale and are unsuitable for measuring or for locating a point relative to a line of control.",
+    "Population figures are estimates of metropolitan areas from mixed years (mostly 2000s–2010s), not current census values; the city list is a cartographic selection, not a complete gazetteer.",
+    "The country attached to a city is Natural Earth's de-facto admin-0 assignment (e.g. Somaliland, Northern Cyprus are separate units)."
+  ],
+  "confidenceNotes": "No per-record confidence is published. Volunteer-maintained cartographic reference data intended for small-scale maps; positions of cities are reliable to a few kilometres, disputed-area outlines are indicative only.",
+  "retention": { "note": "Reference data: a feature is kept for as long as the current file lists it." },
+  "snapshot": "full",
+  "http": { "cacheTtlSec": 604800, "timeoutMs": 45000, "minIntervalMs": 500 },
+  "enabledByDefault": true,
+  "layers": [
+    {
+      "id": "populated-places",
+      "name": "Cities & capitals",
+      "description": "Capitals and major populated places from Natural Earth (1:50m) with population estimate and capital status.",
+      "domain": "reference",
+      "category": "populated-place",
+      "geometry": "point",
+      "timeModel": "reference",
+      "render": { "type": "point", "color": "gray", "shape": "circle", "minZoom": 2 },
+      "retentionDays": null,
+      "defaultOn": false
+    },
+    {
+      "id": "disputed-areas",
+      "name": "Disputed & breakaway areas",
+      "description": "Breakaway, disputed and indeterminate areas as depicted by Natural Earth (de-facto control), with its note on who administers and who claims each area. A depiction, not an endorsement.",
+      "domain": "reference",
+      "category": "disputed-area",
+      "geometry": "polygon",
+      "timeModel": "reference",
+      "render": { "type": "polygon", "color": "pink" },
+      "retentionDays": null,
+      "defaultOn": false
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="dev.pocket3d.viewer.SceneGeometryTest" tests="11" skipped="0" failures="0" errors="0" timestamp="2026-11-12T10:56:42.096Z" hostname="h4-pc" time="0.172">
+  <properties/>
+  <testcase name="selectionBufferHoldsExactlyTheSelectedFaces" classname="dev.pocket3d.viewer.SceneGeometryTest" time="0.0"/>
+  <testcase name="realModelBuffersAndAnalysis" classname="dev.pocket3d.viewer.SceneGeometryTest" time="0.165"/>
+  <testcase name="thumbnailPixelsAreFlippedAndAveraged" classname="dev.pocket3d.viewer.SceneGeometryTest" time="0.0"/>
+  <testcase name="wideLineVerticesFormTwoTrianglesPerSegment" classname="dev.pocket3d.viewer.SceneGeometryTest" time="0.001"/>
+  <testcase name="holeListIsOrderedByPerimeterAndFlagsTheRim" classname="dev.pocket3d.viewer.SceneGeometryTest" time="0.002"/>
+  <testcase name="meshBuffersInterleaveAndGroupByMaterial" classname="dev.pocket3d.viewer.SceneGeometryTest" time="0.0"/>
+  <testcase name="texturePolicyRespectsGpuLimitAndBudget" classname="dev.pocket3d.viewer.SceneGeometryTest" time="0.0"/>
+  <testcase name="straySliderIsLogarithmicAndInvertible" classname="dev.pocket3d.viewer.SceneGeometryTest" time="0.003"/>
+  <testcase name="evidenceSharesAddUp" classname="dev.pocket3d.viewer.SceneGeometryTest" time="0.001"/>
+  <testcase name="gridAndGuides" classname="dev.pocket3d.viewer.SceneGeometryTest" time="0.0"/>
+  <testcase name="wireEdgesAreUnique" classname="dev.pocket3d.viewer.SceneGeometryTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

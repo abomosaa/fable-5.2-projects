@@ -1,0 +1,11 @@
+[
+ {"wait": 1.0, "do": "teleport", "x": 6.4, "z": 0.6, "yaw": 0},
+ {"wait": 2.0, "do": "screenshot", "name": "pad_hip"},
+ {"wait": 0.2, "do": "press", "action": "aim"},
+ {"wait": 0.9, "do": "screenshot", "name": "pad_ads"},
+ {"wait": 0.2, "do": "release", "action": "aim"},
+ {"wait": 0.4, "do": "tap", "action": "inspect"},
+ {"wait": 1.1, "do": "screenshot", "name": "pad_inspect_left"},
+ {"wait": 1.3, "do": "screenshot", "name": "pad_inspect_right"},
+ {"wait": 0.3, "do": "quit"}
+]

@@ -1,0 +1,153 @@
+[
+{
+"wait": 2.0,
+"do": "set",
+"key": "weapon_sway",
+"value": 0.0
+},
+{
+"wait": 0.1,
+"do": "press",
+"action": "aim"
+},
+{
+"wait": 0.6,
+"do": "aim_node",
+"path": "Gong0/Plate",
+"dur": 0.4
+},
+{
+"wait": 0.5,
+"do": "aim_at",
+"x": -1.6,
+"y": 0.3,
+"z": -40.0,
+"dur": 0.3
+},
+{
+"wait": 0.4,
+"do": "tap",
+"action": "fire",
+"hold": 0.3
+},
+{
+"wait": 2.5,
+"do": "tap",
+"action": "fire"
+},
+{
+"wait": 2.5,
+"do": "aim_node",
+"path": "Gong0/Plate",
+"dur": 0.4
+},
+{
+"wait": 0.5,
+"do": "tap",
+"action": "fire",
+"hold": 0.3
+},
+{
+"wait": 2.5,
+"do": "aim_node",
+"path": "Gong0/Plate",
+"dur": 0.3
+},
+{
+"wait": 0.4,
+"do": "tap",
+"action": "fire"
+},
+{
+"wait": 2.5,
+"do": "aim_node",
+"path": "Gong1/Plate",
+"dur": 0.4
+},
+{
+"wait": 0.5,
+"do": "tap",
+"action": "fire"
+},
+{
+"wait": 2.5,
+"do": "aim_node",
+"path": "Gong1/Plate",
+"dur": 0.5
+},
+{
+"wait": 0.6,
+"do": "tap",
+"action": "fire"
+},
+{
+"wait": 2.5,
+"do": "aim_node",
+"path": "Gong1/Plate",
+"dur": 0.3
+},
+{
+"wait": 0.6,
+"do": "tap",
+"action": "fire"
+},
+{
+"wait": 2.5,
+"do": "release",
+"action": "aim"
+},
+{
+"wait": 0.3,
+"do": "teleport",
+"x": -4.8,
+"z": 0.55,
+"yaw": 0
+},
+{
+"wait": 0.6,
+"do": "press",
+"action": "aim"
+},
+{
+"wait": 0.6,
+"do": "aim_node",
+"path": "Breakables/bottle_wine_5",
+"oy": 0.12,
+"dur": 0.4
+},
+{
+"wait": 0.5,
+"do": "tap",
+"action": "fire"
+},
+{
+"wait": 2.0,
+"do": "aim_node",
+"path": "Breakables/clay_3",
+"dur": 0.3
+},
+{
+"wait": 0.5,
+"do": "tap",
+"action": "fire"
+},
+{
+"wait": 2.0,
+"do": "release",
+"action": "aim"
+},
+{
+"wait": 0.3,
+"do": "tap",
+"action": "reload"
+},
+{
+"wait": 4.5,
+"do": "state",
+"tag": "end"
+},
+{
+"wait": 0.3,
+"do": "quit"
+}
+]

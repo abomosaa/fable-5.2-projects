@@ -1,0 +1,169 @@
+{
+  "capturedAt": "2026-11-10T16:30:00Z",
+  "notes": "Authored from the documented schema; provider terms do not permit redistributing captured data (RIPEstat Service Terms and Conditions, Art. 3.3). Every value in these files is SYNTHETIC: the 40 per-country responses reproduce the envelope and field structure of the live country-resource-stats data call (resolution=1h, starttime=2026-11-09T00:00, run-length encoded `timeline` periods, -1 sentinels for the *_stats fields, occasional fractional hourly aggregates) but the prefix and ASN counts are invented: base levels are a straight line over the watch-list position, with small pseudo-random hourly steps. They are not measurements and say nothing about any country's real routing. To give the diverging layer something to show, invented episodes were written into 2026-11-10: IR −42 % (05:00–10:00 UTC), SD −69 % (from 08:00), MM −20 % (01:00–03:00), CU −88 % (11:00–12:00), KZ +14 % (from 09:00); ET is a hand-written series used by the exact-value test. The files were produced once by a throw-away generator script (not committed) and are static. `capturedAt` is the authoring time. Hourly values run from 2026-11-09T00:00Z to 2026-11-10T15:00Z, which is what the adapter requests at the fixture epoch (48 h before 2026-11-11T00:00Z), so records exist for 2026-11-10 00:00–15:00 UTC. ua.malformed.json is hand-authored (broken entries next to three valid hours).",
+  "routes": [
+    {
+      "match": "/country-resource-stats/data.json?resource=us&",
+      "file": "us.json"
+    },
+    {
+      "match": "/country-resource-stats/data.json?resource=cn&",
+      "file": "cn.json"
+    },
+    {
+      "match": "/country-resource-stats/data.json?resource=in&",
+      "file": "in.json"
+    },
+    {
+      "match": "/country-resource-stats/data.json?resource=jp&",
+      "file": "jp.json"
+    },
+    {
+      "match": "/country-resource-stats/data.json?resource=de&",
+      "file": "de.json"
+    },
+    {
+      "match": "/country-resource-stats/data.json?resource=gb&",
+      "file": "gb.json"
+    },
+    {
+      "match": "/country-resource-stats/data.json?resource=fr&",
+      "file": "fr.json"
+    },
+    {
+      "match": "/country-resource-stats/data.json?resource=br&",
+      "file": "br.json"
+    },
+    {
+      "match": "/country-resource-stats/data.json?resource=ru&",
+      "file": "ru.json"
+    },
+    {
+      "match": "/country-resource-stats/data.json?resource=kr&",
+      "file": "kr.json"
+    },
+    {
+      "match": "/country-resource-stats/data.json?resource=it&",
+      "file": "it.json"
+    },
+    {
+      "match": "/country-resource-stats/data.json?resource=ca&",
+      "file": "ca.json"
+    },
+    {
+      "match": "/country-resource-stats/data.json?resource=au&",
+      "file": "au.json"
+    },
+    {
+      "match": "/country-resource-stats/data.json?resource=mx&",
+      "file": "mx.json"
+    },
+    {
+      "match": "/country-resource-stats/data.json?resource=id&",
+      "file": "id.json"
+    },
+    {
+      "match": "/country-resource-stats/data.json?resource=tr&",
+      "file": "tr.json"
+    },
+    {
+      "match": "/country-resource-stats/data.json?resource=sa&",
+      "file": "sa.json"
+    },
+    {
+      "match": "/country-resource-stats/data.json?resource=za&",
+      "file": "za.json"
+    },
+    {
+      "match": "/country-resource-stats/data.json?resource=ng&",
+      "file": "ng.json"
+    },
+    {
+      "match": "/country-resource-stats/data.json?resource=eg&",
+      "file": "eg.json"
+    },
+    {
+      "match": "/country-resource-stats/data.json?resource=ir&",
+      "file": "ir.json"
+    },
+    {
+      "match": "/country-resource-stats/data.json?resource=iq&",
+      "file": "iq.json"
+    },
+    {
+      "match": "/country-resource-stats/data.json?resource=sy&",
+      "file": "sy.json"
+    },
+    {
+      "match": "/country-resource-stats/data.json?resource=ua&",
+      "file": "ua.json",
+      "variants": {
+        "malformed": "ua.malformed.json"
+      }
+    },
+    {
+      "match": "/country-resource-stats/data.json?resource=mm&",
+      "file": "mm.json"
+    },
+    {
+      "match": "/country-resource-stats/data.json?resource=et&",
+      "file": "et.json"
+    },
+    {
+      "match": "/country-resource-stats/data.json?resource=sd&",
+      "file": "sd.json"
+    },
+    {
+      "match": "/country-resource-stats/data.json?resource=ve&",
+      "file": "ve.json"
+    },
+    {
+      "match": "/country-resource-stats/data.json?resource=cu&",
+      "file": "cu.json"
+    },
+    {
+      "match": "/country-resource-stats/data.json?resource=pk&",
+      "file": "pk.json"
+    },
+    {
+      "match": "/country-resource-stats/data.json?resource=bd&",
+      "file": "bd.json"
+    },
+    {
+      "match": "/country-resource-stats/data.json?resource=af&",
+      "file": "af.json"
+    },
+    {
+      "match": "/country-resource-stats/data.json?resource=ye&",
+      "file": "ye.json"
+    },
+    {
+      "match": "/country-resource-stats/data.json?resource=ly&",
+      "file": "ly.json"
+    },
+    {
+      "match": "/country-resource-stats/data.json?resource=kz&",
+      "file": "kz.json"
+    },
+    {
+      "match": "/country-resource-stats/data.json?resource=by&",
+      "file": "by.json"
+    },
+    {
+      "match": "/country-resource-stats/data.json?resource=cd&",
+      "file": "cd.json"
+    },
+    {
+      "match": "/country-resource-stats/data.json?resource=il&",
+      "file": "il.json"
+    },
+    {
+      "match": "/country-resource-stats/data.json?resource=ps&",
+      "file": "ps.json"
+    },
+    {
+      "match": "/country-resource-stats/data.json?resource=lb&",
+      "file": "lb.json"
+    }
+  ]
+}

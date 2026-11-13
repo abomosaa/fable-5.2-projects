@@ -1,0 +1,567 @@
+{
+ "set": "claudian_alt",
+ "overview": {
+  "file": "overview.jpg",
+  "original_size": [
+   6808,
+   5103
+  ],
+  "exif": {
+   "size": [
+    6808,
+    5103
+   ],
+   "Make": "NIKON CORPORATION",
+   "Model": "NIKON D850",
+   "DateTime": "2019:01:26 12:25:58",
+   "Software": "DxO PhotoLab 2.1.2",
+   "DateTimeOriginal": "2019:01:26 12:25:58",
+   "FocalLength": 58.0,
+   "FocalLengthIn35mmFilm": 58,
+   "ExposureTime": 0.016666666666666666,
+   "FNumber": 5.6,
+   "ISOSpeedRatings": 4000
+  },
+  "work_scale": 0.5875440658049353,
+  "keypoints": 60000
+ },
+ "params": {
+  "max_side": 4000,
+  "ratio": 0.75,
+  "ransac": "USAC_MAGSAC thr 3 px (work px)"
+ },
+ "closeups": [
+  {
+   "file": "closeup_01.jpg",
+   "exif": {
+    "size": [
+     5184,
+     3888
+    ],
+    "Make": "Canon",
+    "Model": "Canon PowerShot SX720 HS",
+    "DateTime": "2025:06:22 10:46:05",
+    "DateTimeOriginal": "2025:06:22 10:46:05",
+    "FocalLength": 17.762,
+    "ExposureTime": 0.1,
+    "FNumber": 5.0,
+    "ISOSpeedRatings": 1600
+   },
+   "original_size": [
+    5184,
+    3888
+   ],
+   "trials": [
+    {
+     "closeup_downscale": 0.7716049382716049,
+     "keypoints": 2912,
+     "ratio_matches": 64,
+     "inliers": 5,
+     "rms_px_work": 9.553513518767431e-05
+    },
+    {
+     "closeup_downscale": 0.38580246913580246,
+     "keypoints": 2820,
+     "ratio_matches": 69,
+     "inliers": 7,
+     "rms_px_work": 0.00011418632493587211
+    },
+    {
+     "closeup_downscale": 0.19290123456790123,
+     "keypoints": 2795,
+     "ratio_matches": 64,
+     "inliers": 11,
+     "rms_px_work": 1.4797444343566895
+    },
+    {
+     "closeup_downscale": 0.09645061728395062,
+     "keypoints": 2354,
+     "ratio_matches": 61,
+     "inliers": 9,
+     "rms_px_work": 0.7551417350769043
+    }
+   ],
+   "fundamental_inliers": 13,
+   "h_over_f_inliers": 0.846,
+   "h_inlier_ratio": 0.172,
+   "inliers": 11,
+   "ratio_matches": 64,
+   "best_closeup_downscale": 0.1929,
+   "rms_px_work": 1.4797444343566895,
+   "scale_factor": 4.968,
+   "scale_at_corners": [
+    4.889,
+    5.054,
+    5.047,
+    4.882
+   ],
+   "anisotropy": 1.001,
+   "footprint_overview_px": [
+    [
+     4217.5,
+     3219.7
+    ],
+    [
+     5261.1,
+     3220.7
+    ],
+    [
+     5266.9,
+     3994.3
+    ],
+    [
+     4222.3,
+     4010.6
+    ]
+   ],
+   "footprint_fraction_of_overview": 0.0235,
+   "footprint_convex": true,
+   "ncc_vs_overview": 0.672,
+   "H_overview_to_closeup_original_px": [
+    [
+     4.480454948058731,
+     -0.027651739891197385,
+     -18807.09996756877
+    ],
+    [
+     -0.00440840774051303,
+     4.537718318376651,
+     -14591.300347780152
+    ],
+    [
+     -1.9369297520883998e-05,
+     1.2233434239878815e-06,
+     1.0
+    ]
+   ],
+   "registers": false
+  },
+  {
+   "file": "closeup_02.jpg",
+   "exif": {
+    "size": [
+     5184,
+     3888
+    ],
+    "Make": "Canon",
+    "Model": "Canon PowerShot SX720 HS",
+    "DateTime": "2025:06:22 10:46:09",
+    "DateTimeOriginal": "2025:06:22 10:46:09",
+    "FocalLength": 11.862,
+    "ExposureTime": 0.07692307692307693,
+    "FNumber": 4.5,
+    "ISOSpeedRatings": 1600
+   },
+   "original_size": [
+    5184,
+    3888
+   ],
+   "trials": [
+    {
+     "closeup_downscale": 0.7716049382716049,
+     "keypoints": 12000,
+     "ratio_matches": 199,
+     "inliers": 7,
+     "rms_px_work": 0.0016914558364078403
+    },
+    {
+     "closeup_downscale": 0.38580246913580246,
+     "keypoints": 12000,
+     "ratio_matches": 173,
+     "inliers": 6,
+     "rms_px_work": 8.721124322619289e-05
+    },
+    {
+     "closeup_downscale": 0.19290123456790123,
+     "keypoints": 6167,
+     "ratio_matches": 117,
+     "inliers": 16,
+     "rms_px_work": 1.2410565614700317
+    },
+    {
+     "closeup_downscale": 0.09645061728395062,
+     "keypoints": 1252,
+     "ratio_matches": 32,
+     "inliers": 13,
+     "rms_px_work": 0.563988983631134
+    }
+   ],
+   "fundamental_inliers": 22,
+   "h_over_f_inliers": 0.727,
+   "h_inlier_ratio": 0.137,
+   "inliers": 16,
+   "ratio_matches": 117,
+   "best_closeup_downscale": 0.1929,
+   "rms_px_work": 1.2410565614700317,
+   "scale_factor": 3.232,
+   "scale_at_corners": [
+    3.218,
+    3.335,
+    3.245,
+    3.129
+   ],
+   "anisotropy": 1.005,
+   "footprint_overview_px": [
+    [
+     3937.9,
+     3038.7
+    ],
+    [
+     5525.9,
+     3044.1
+    ],
+    [
+     5551.7,
+     4234.4
+    ],
+    [
+     3934.6,
+     4258.1
+    ]
+   ],
+   "footprint_fraction_of_overview": 0.0556,
+   "footprint_convex": true,
+   "ncc_vs_overview": 0.552,
+   "H_overview_to_closeup_original_px": [
+    [
+     3.1496626116701365,
+     0.00865868345657819,
+     -12429.468156472478
+    ],
+    [
+     -0.010952701597314837,
+     3.2095745503357773,
+     -9709.758493039566
+    ],
+    [
+     -1.4715132598406665e-05,
+     1.516252918780965e-05,
+     1.0
+    ]
+   ],
+   "registers": false
+  },
+  {
+   "file": "closeup_03.jpg",
+   "exif": {
+    "size": [
+     5184,
+     3888
+    ],
+    "Make": "Canon",
+    "Model": "Canon PowerShot SX720 HS",
+    "DateTime": "2025:06:22 10:46:26",
+    "DateTimeOriginal": "2025:06:22 10:46:26",
+    "FocalLength": 12.539,
+    "ExposureTime": 0.125,
+    "FNumber": 4.5,
+    "ISOSpeedRatings": 1600
+   },
+   "original_size": [
+    5184,
+    3888
+   ],
+   "trials": [
+    {
+     "closeup_downscale": 0.7716049382716049,
+     "keypoints": 1575,
+     "ratio_matches": 45,
+     "inliers": 4,
+     "rms_px_work": 0.0019370850641280413
+    },
+    {
+     "closeup_downscale": 0.38580246913580246,
+     "keypoints": 1480,
+     "ratio_matches": 40,
+     "inliers": 5,
+     "rms_px_work": 0.0
+    },
+    {
+     "closeup_downscale": 0.19290123456790123,
+     "keypoints": 1520,
+     "ratio_matches": 38,
+     "inliers": 6,
+     "rms_px_work": 1.1353483200073242
+    },
+    {
+     "closeup_downscale": 0.09645061728395062,
+     "keypoints": 1143,
+     "ratio_matches": 24,
+     "inliers": 5,
+     "rms_px_work": 4.166585495113395e-05
+    }
+   ],
+   "inliers": 6,
+   "registers": false,
+   "verdict": "no homography found"
+  },
+  {
+   "file": "closeup_04.jpg",
+   "exif": {
+    "size": [
+     5184,
+     3888
+    ],
+    "Make": "Canon",
+    "Model": "Canon PowerShot SX720 HS",
+    "DateTime": "2025:06:22 10:46:31",
+    "DateTimeOriginal": "2025:06:22 10:46:31",
+    "FocalLength": 12.539,
+    "ExposureTime": 0.07692307692307693,
+    "FNumber": 4.5,
+    "ISOSpeedRatings": 1600
+   },
+   "original_size": [
+    5184,
+    3888
+   ],
+   "trials": [
+    {
+     "closeup_downscale": 0.7716049382716049,
+     "keypoints": 11750,
+     "ratio_matches": 167,
+     "inliers": 6,
+     "rms_px_work": 1.16781747341156
+    },
+    {
+     "closeup_downscale": 0.38580246913580246,
+     "keypoints": 7351,
+     "ratio_matches": 116,
+     "inliers": 6,
+     "rms_px_work": 7.047732651699334e-05
+    },
+    {
+     "closeup_downscale": 0.19290123456790123,
+     "keypoints": 4277,
+     "ratio_matches": 67,
+     "inliers": 5,
+     "rms_px_work": 0.05211341753602028
+    },
+    {
+     "closeup_downscale": 0.09645061728395062,
+     "keypoints": 1430,
+     "ratio_matches": 26,
+     "inliers": 6,
+     "rms_px_work": 0.8159209489822388
+    }
+   ],
+   "inliers": 6,
+   "registers": false,
+   "verdict": "no homography found"
+  },
+  {
+   "file": "closeup_05.jpg",
+   "exif": {
+    "size": [
+     7878,
+     5251
+    ],
+    "Make": "NIKON CORPORATION",
+    "Model": "NIKON D850",
+    "DateTime": "2019:01:26 12:27:51",
+    "Software": "DxO PhotoLab 2.1.2",
+    "DateTimeOriginal": "2019:01:26 12:27:51",
+    "FocalLength": 70.0,
+    "FocalLengthIn35mmFilm": 70,
+    "ExposureTime": 0.016666666666666666,
+    "FNumber": 5.6,
+    "ISOSpeedRatings": 3200
+   },
+   "original_size": [
+    7878,
+    5251
+   ],
+   "trials": [
+    {
+     "closeup_downscale": 0.5077430820005078,
+     "keypoints": 12000,
+     "ratio_matches": 283,
+     "inliers": 174,
+     "rms_px_work": 1.3452869653701782
+    },
+    {
+     "closeup_downscale": 0.2538715410002539,
+     "keypoints": 12000,
+     "ratio_matches": 422,
+     "inliers": 312,
+     "rms_px_work": 1.010817050933838
+    },
+    {
+     "closeup_downscale": 0.12693577050012694,
+     "keypoints": 7606,
+     "ratio_matches": 548,
+     "inliers": 475,
+     "rms_px_work": 0.5725076794624329
+    },
+    {
+     "closeup_downscale": 0.06346788525006347,
+     "keypoints": 2051,
+     "ratio_matches": 195,
+     "inliers": 176,
+     "rms_px_work": 0.36177974939346313
+    }
+   ],
+   "fundamental_inliers": 483,
+   "h_over_f_inliers": 0.983,
+   "h_inlier_ratio": 0.867,
+   "inliers": 475,
+   "ratio_matches": 548,
+   "best_closeup_downscale": 0.1269,
+   "rms_px_work": 0.5725076794624329,
+   "scale_factor": 4.175,
+   "scale_at_corners": [
+    4.092,
+    4.248,
+    4.258,
+    4.101
+   ],
+   "anisotropy": 1.001,
+   "footprint_overview_px": [
+    [
+     3447.8,
+     2279.8
+    ],
+    [
+     5336.7,
+     2274.1
+    ],
+    [
+     5350.7,
+     3516.3
+    ],
+    [
+     3465.0,
+     3553.4
+    ]
+   ],
+   "footprint_fraction_of_overview": 0.0683,
+   "footprint_convex": true,
+   "ncc_vs_overview": 0.839,
+   "H_overview_to_closeup_original_px": [
+    [
+     3.8838045825335437,
+     -0.052397849177655775,
+     -13271.001353122738
+    ],
+    [
+     0.011834925007909095,
+     3.9308274088028643,
+     -9002.389440933683
+    ],
+    [
+     -1.2473987472660428e-05,
+     -9.499938608538817e-07,
+     1.0
+    ]
+   ],
+   "registers": true
+  },
+  {
+   "file": "closeup_06.jpg",
+   "exif": {
+    "size": [
+     4128,
+     3096
+    ],
+    "Make": "samsung",
+    "Model": "SM-J500FN",
+    "DateTime": "2019:01:20 11:21:02",
+    "Software": "J500FNXXS1BQG1",
+    "DateTimeOriginal": "2019:01:20 11:21:02",
+    "FocalLength": 3.7,
+    "FocalLengthIn35mmFilm": 28,
+    "ExposureTime": 0.058823529411764705,
+    "FNumber": 1.9,
+    "ISOSpeedRatings": 200
+   },
+   "original_size": [
+    3096,
+    4128
+   ],
+   "trials": [
+    {
+     "closeup_downscale": 0.9689922480620154,
+     "keypoints": 12001,
+     "ratio_matches": 394,
+     "inliers": 161,
+     "rms_px_work": 1.5542900562286377
+    },
+    {
+     "closeup_downscale": 0.4844961240310077,
+     "keypoints": 12000,
+     "ratio_matches": 693,
+     "inliers": 444,
+     "rms_px_work": 1.769865870475769
+    },
+    {
+     "closeup_downscale": 0.24224806201550386,
+     "keypoints": 3644,
+     "ratio_matches": 355,
+     "inliers": 301,
+     "rms_px_work": 1.2448159456253052
+    },
+    {
+     "closeup_downscale": 0.12112403100775193,
+     "keypoints": 1337,
+     "ratio_matches": 120,
+     "inliers": 99,
+     "rms_px_work": 0.6727442145347595
+    }
+   ],
+   "fundamental_inliers": 549,
+   "h_over_f_inliers": 0.809,
+   "h_inlier_ratio": 0.641,
+   "inliers": 444,
+   "ratio_matches": 693,
+   "best_closeup_downscale": 0.4845,
+   "rms_px_work": 1.769865870475769,
+   "scale_factor": 1.453,
+   "scale_at_corners": [
+    1.541,
+    1.65,
+    1.367,
+    1.265
+   ],
+   "anisotropy": 1.005,
+   "footprint_overview_px": [
+    [
+     2275.9,
+     128.7
+    ],
+    [
+     4278.0,
+     182.8
+    ],
+    [
+     4403.2,
+     2968.0
+    ],
+    [
+     2125.2,
+     3053.9
+    ]
+   ],
+   "footprint_fraction_of_overview": 0.1759,
+   "footprint_convex": true,
+   "ncc_vs_overview": 0.86,
+   "H_overview_to_closeup_original_px": [
+    [
+     1.408962615534586,
+     0.07254638373312444,
+     -3215.922600573456
+    ],
+    [
+     -0.0415411807640767,
+     1.535343054047603,
+     -103.0087823020876
+    ],
+    [
+     -2.239314020114179e-05,
+     4.489488604001533e-05,
+     1.0
+    ]
+   ],
+   "registers": true
+  }
+ ]
+}

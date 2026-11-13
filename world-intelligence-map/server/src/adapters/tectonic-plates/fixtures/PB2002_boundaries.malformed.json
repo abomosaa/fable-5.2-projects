@@ -1,0 +1,12 @@
+{"type":"FeatureCollection","features":[
+{"type":"Feature","properties":{"LAYER":"plate boundary","Name":"PA-NA","Source":"Test digitisation, 2002","PlateA":"PA","PlateB":"NA","Type":""},"geometry":{"type":"LineString","coordinates":[[-125.0,40.0],[-124.5,41.0],[-124.0,42.0]]}},
+{"type":"Feature","properties":{"LAYER":"plate boundary","Name":"TO/PA","Source":"<script>alert(1)</script>Hostile source","PlateA":"TO","PlateB":"PA","Type":"subduction"},"geometry":{"type":"LineString","coordinates":[[178.0,-10.0],[179.5,-10.5],[-179.5,-11.0],[-178.0,-11.5]]}},
+{"type":"Feature","properties":{"LAYER":"plate boundary","Name":"PA-NA","Source":"No geometry","PlateA":"PA","PlateB":"NA","Type":""},"geometry":null},
+{"type":"Feature","properties":{"LAYER":"plate boundary","Name":"PA-NA","Source":"Single position","PlateA":"PA","PlateB":"NA","Type":""},"geometry":{"type":"LineString","coordinates":[[-120.0,35.0]]}},
+{"type":"Feature","properties":{"LAYER":"plate boundary","Name":"PA-NA","Source":"Latitude out of range","PlateA":"PA","PlateB":"NA","Type":""},"geometry":{"type":"LineString","coordinates":[[-120.0,35.0],[-119.0,135.0]]}},
+{"type":"Feature","properties":{"LAYER":"plate boundary","Name":"PA-NA","Source":"Text coordinates","PlateA":"PA","PlateB":"NA","Type":""},"geometry":{"type":"LineString","coordinates":[["-120","35"],["-119","36"]]}},
+{"type":"Feature","properties":{"LAYER":"plate boundary","Source":"No names"},"geometry":{"type":"LineString","coordinates":[[0,0],[1,1]]}},
+{"type":"Feature","properties":{"LAYER":"plate boundary","Name":"XX-PA","Source":"A polygon","PlateA":"XX","PlateB":"PA","Type":""},"geometry":{"type":"Polygon","coordinates":[[[0,0],[1,0],[1,1],[0,0]]]}},
+"not-a-feature",
+{"type":"Feature","properties":{"LAYER":"plate boundary","Name":"PA-NA","Source":"Valid again","PlateA":"PA","PlateB":"NA","Type":""},"geometry":{"type":"LineString","coordinates":[[-130.0,50.0],[-131.0,51.0]]}}
+]}

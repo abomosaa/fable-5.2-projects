@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="dev.pocket3d.data.LiveCompanionTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-11-12T11:58:34.300Z" hostname="h4-pc" time="20.921">
+  <properties/>
+  <testcase name="pairUploadReconstructDownloadVerifyAgainstTheRealCompanion" classname="dev.pocket3d.data.LiveCompanionTest" time="20.921"/>
+  <system-out><![CDATA[LIVE stages seen while running: [features, matching, sfm, undistort, dense, mesh, texture, package]; sparse preview while running: true
+LIVE model: 41944 faces, 8/12 cameras, glb 1624932 bytes
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

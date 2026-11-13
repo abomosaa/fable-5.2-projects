@@ -1,0 +1,371 @@
+[
+ {
+  "name": "Cardboard004 (ambientCG material)",
+  "author": "ambientCG.com (Lennart Demes)",
+  "source_url": "https://ambientcg.com/a/Cardboard004",
+  "download_url": [
+   "https://ambientcg.com/get?file=Cardboard004_2K-JPG.zip"
+  ],
+  "license": "CC0 1.0 Universal",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "local_paths": [
+   "assets_src/targets/acg_Cardboard004/Cardboard004.png",
+   "assets_src/targets/acg_Cardboard004/Cardboard004_2K-JPG.zip",
+   "assets_src/targets/acg_Cardboard004/Cardboard004_2K-JPG_Color.jpg",
+   "assets_src/targets/acg_Cardboard004/Cardboard004_2K-JPG_Displacement.jpg",
+   "assets_src/targets/acg_Cardboard004/Cardboard004_2K-JPG_NormalDX.jpg",
+   "assets_src/targets/acg_Cardboard004/Cardboard004_2K-JPG_NormalGL.jpg",
+   "assets_src/targets/acg_Cardboard004/Cardboard004_2K-JPG_Roughness.jpg"
+  ],
+  "sha256": {
+   "Cardboard004.png": "4fad29789dbc48442666cb6f4a36b40016efc0f1d34a461eee02e2c285ee1718",
+   "Cardboard004_2K-JPG.zip": "c75c518d8ab2cc54eb496a8c01d83236de29c8110590e0f8e599ef8e62e2caae",
+   "Cardboard004_2K-JPG_Color.jpg": "0904604c6692ab6eb46887cb4c452cb65ac64ef55d43846ed900460069668b53",
+   "Cardboard004_2K-JPG_Displacement.jpg": "81fbb87a42b5525bb187e7d29d872b92df76b0e2a6834edcb16ffbc15033cbcc",
+   "Cardboard004_2K-JPG_NormalDX.jpg": "6d9f96c01316fd7d8ef68b482a336a069444b1fabd900c2961298d8a8a4bad2a",
+   "Cardboard004_2K-JPG_NormalGL.jpg": "76aeae8902da177755083e343f22ac56ab012561be0363a98291d0a849fcd20e",
+   "Cardboard004_2K-JPG_Roughness.jpg": "d821359d9591556657be2094554c7a7764cfc4eae1497c193b4cf09441d8cf78"
+  },
+  "used_for": "corrugated cardboard backer of the paper targets (game/assets/targets/textures/cardboard_*.jpg)"
+ },
+ {
+  "name": "Wood096 (ambientCG material)",
+  "author": "ambientCG.com (Lennart Demes)",
+  "source_url": "https://ambientcg.com/a/Wood096",
+  "download_url": [
+   "https://ambientcg.com/get?file=Wood096_2K-JPG.zip"
+  ],
+  "license": "CC0 1.0 Universal",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "local_paths": [
+   "assets_src/targets/acg_Wood096/Wood096.png",
+   "assets_src/targets/acg_Wood096/Wood096_2K-JPG.zip",
+   "assets_src/targets/acg_Wood096/Wood096_2K-JPG_Color.jpg",
+   "assets_src/targets/acg_Wood096/Wood096_2K-JPG_Displacement.jpg",
+   "assets_src/targets/acg_Wood096/Wood096_2K-JPG_NormalDX.jpg",
+   "assets_src/targets/acg_Wood096/Wood096_2K-JPG_NormalGL.jpg",
+   "assets_src/targets/acg_Wood096/Wood096_2K-JPG_Roughness.jpg"
+  ],
+  "sha256": {
+   "Wood096.png": "67bf7b142ba191f5caa9279d6d8f2ce600a7280d6199b5f0f1384c8197af2a14",
+   "Wood096_2K-JPG.zip": "2082aa6b88ed87e3d056970249e0bb2785e76e80e680f4f9351385969fed7d9d",
+   "Wood096_2K-JPG_Color.jpg": "421925658a123eaaf1f6ad09086d7d9556948d9a1ae92d353523bf6721271893",
+   "Wood096_2K-JPG_Displacement.jpg": "2c38f61a64e418a131b5275219d9a04fcaea4b0154384bc3f75d8e2fb9f8fc45",
+   "Wood096_2K-JPG_NormalDX.jpg": "fac7090bec5616d3f1091a40cb72f7dfaf2cd92bbf6e0e5545f2559737f3e291",
+   "Wood096_2K-JPG_NormalGL.jpg": "6f076b249a7f27d1ba5fee873c5ea2446066efa57129bf75a86824b6b258e142",
+   "Wood096_2K-JPG_Roughness.jpg": "965677a9a4aea97fa72a71495ba4b59345537bb08ae6131aee5fed5f15e80c46"
+  },
+  "used_for": "new pine of the furring-strip uprights and the clay-pigeon holders (target_stand.glb, clay_holder.glb)"
+ },
+ {
+  "name": "Metal053B (ambientCG material)",
+  "author": "ambientCG.com (Lennart Demes)",
+  "source_url": "https://ambientcg.com/a/Metal053B",
+  "download_url": [
+   "https://ambientcg.com/get?file=Metal053B_1K-JPG.zip"
+  ],
+  "license": "CC0 1.0 Universal",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "local_paths": [
+   "assets_src/targets/acg_Metal053B/Metal053B.png",
+   "assets_src/targets/acg_Metal053B/Metal053B_1K-JPG.zip",
+   "assets_src/targets/acg_Metal053B/Metal053B_1K-JPG_Color.jpg",
+   "assets_src/targets/acg_Metal053B/Metal053B_1K-JPG_Displacement.jpg",
+   "assets_src/targets/acg_Metal053B/Metal053B_1K-JPG_Metalness.jpg",
+   "assets_src/targets/acg_Metal053B/Metal053B_1K-JPG_NormalDX.jpg",
+   "assets_src/targets/acg_Metal053B/Metal053B_1K-JPG_NormalGL.jpg",
+   "assets_src/targets/acg_Metal053B/Metal053B_1K-JPG_Roughness.jpg"
+  ],
+  "sha256": {
+   "Metal053B.png": "f77395f99d6c55210c51c2f67d15e2d82cba47de4a73e895a2394506a26bf63a",
+   "Metal053B_1K-JPG.zip": "7f992f1000ff2b0db8a574b24fa077e0d76a393d8d09385111965296c50db9f6",
+   "Metal053B_1K-JPG_Color.jpg": "836567960fc7d21c64d4e2cd0c0828fc66f0bb34069a38e9e9204dcad02e4abc",
+   "Metal053B_1K-JPG_Displacement.jpg": "2ecd726fb76556b73f8ed1747d79a7e047b4d988a7a73f9fb9b9ba78d415a283",
+   "Metal053B_1K-JPG_Metalness.jpg": "ac2544fe6f24b9d35b379f0dac19e1354e7354c8fa9a3ed4e1e6ae3fdfe36fce",
+   "Metal053B_1K-JPG_NormalDX.jpg": "ca08ed348041e9577ce50715d88fd103faeee2560f2559faf5e990da08cb2d63",
+   "Metal053B_1K-JPG_NormalGL.jpg": "e15fdef8ed2b6a225d091b881406bf0ce2d05e7e9e9d555788e7e67245a535b3",
+   "Metal053B_1K-JPG_Roughness.jpg": "d0febdfbc9970dc5c136f19a1669a8caf769a2449670db9c5af4d6f911872cd5"
+  },
+  "used_for": "painted steel of the gong stand and pivot-target base; white plate paint base (gong_stand.glb, pivot_target.glb, plate_*.glb)"
+ },
+ {
+  "name": "Metal032 (ambientCG material)",
+  "author": "ambientCG.com (Lennart Demes)",
+  "source_url": "https://ambientcg.com/a/Metal032",
+  "download_url": [
+   "https://ambientcg.com/get?file=Metal032_1K-JPG.zip"
+  ],
+  "license": "CC0 1.0 Universal",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "local_paths": [
+   "assets_src/targets/acg_Metal032/Metal032.png",
+   "assets_src/targets/acg_Metal032/Metal032_1K-JPG.zip",
+   "assets_src/targets/acg_Metal032/Metal032_1K-JPG_Color.jpg",
+   "assets_src/targets/acg_Metal032/Metal032_1K-JPG_Displacement.jpg",
+   "assets_src/targets/acg_Metal032/Metal032_1K-JPG_Metalness.jpg",
+   "assets_src/targets/acg_Metal032/Metal032_1K-JPG_NormalDX.jpg",
+   "assets_src/targets/acg_Metal032/Metal032_1K-JPG_NormalGL.jpg",
+   "assets_src/targets/acg_Metal032/Metal032_1K-JPG_Roughness.jpg"
+  ],
+  "sha256": {
+   "Metal032.png": "e30dc81a01d8f89463b77d767b434df15129879faed4a22a467625a172f508ae",
+   "Metal032_1K-JPG.zip": "9e4f363905a647958c273154fa125d2a6440892d0e583f9b3af24bb08b5afc3c",
+   "Metal032_1K-JPG_Color.jpg": "49493d6ade78ccbbbd270c6a15e4b4c9b1a097e66ddf28a1073de3e85712d9af",
+   "Metal032_1K-JPG_Displacement.jpg": "b8ce7b052ca7ae31d5adb7fbd51c6d1b19d69c0ba3ae622be5c2886a172eb821",
+   "Metal032_1K-JPG_Metalness.jpg": "843102638fa0a5bf897888868877efab8ccdc4cb84a48e57bdb52bfb30f5e714",
+   "Metal032_1K-JPG_NormalDX.jpg": "183a78f21818a02886954776d0725751733b6b9f55c151201bca6a1da4d3bb92",
+   "Metal032_1K-JPG_NormalGL.jpg": "8537c1015de5cc33d20231e5b6aa27309edcb983e1c37e608d08bb00f733747d",
+   "Metal032_1K-JPG_Roughness.jpg": "55d3eee2b69008ad3701b18977495531d0e3515105102e56f40a4d1098d10bce"
+  },
+  "used_for": "zinc-plated chain, screws, bolts (chain.glb, target_stand.glb, pivot_target.glb)"
+ },
+ {
+  "name": "Metal016 (ambientCG material)",
+  "author": "ambientCG.com (Lennart Demes)",
+  "source_url": "https://ambientcg.com/a/Metal016",
+  "download_url": [
+   "https://ambientcg.com/get?file=Metal016_1K-JPG.zip"
+  ],
+  "license": "CC0 1.0 Universal",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "local_paths": [
+   "assets_src/targets/acg_Metal016/Metal016.png",
+   "assets_src/targets/acg_Metal016/Metal016_1K-JPG.zip",
+   "assets_src/targets/acg_Metal016/Metal016_1K-JPG_Color.jpg",
+   "assets_src/targets/acg_Metal016/Metal016_1K-JPG_Displacement.jpg",
+   "assets_src/targets/acg_Metal016/Metal016_1K-JPG_Metalness.jpg",
+   "assets_src/targets/acg_Metal016/Metal016_1K-JPG_NormalDX.jpg",
+   "assets_src/targets/acg_Metal016/Metal016_1K-JPG_NormalGL.jpg",
+   "assets_src/targets/acg_Metal016/Metal016_1K-JPG_Roughness.jpg"
+  ],
+  "sha256": {
+   "Metal016.png": "f95e30b34fa284918fe53be1ab59345617c436ca43988e2a542e4f381a8bf89a",
+   "Metal016_1K-JPG.zip": "6bb721f1ede08d8d55a5e697de501776f2696267295195323ffac9a5d6d5713a",
+   "Metal016_1K-JPG_Color.jpg": "52aa55b60ef6dbd26d16593fed422e7f1f7941de108434db73e802ddc5f121f3",
+   "Metal016_1K-JPG_Displacement.jpg": "23d7f9b513ccc954deb4d82f1a5b24ad425591d933a3e3c0b3ba17f8c4164f70",
+   "Metal016_1K-JPG_Metalness.jpg": "1d0fe9eb93ee8124bc4512115fabbe75b1ad37b72d638b240b77dd3a309f4365",
+   "Metal016_1K-JPG_NormalDX.jpg": "d6ac13e68b94a19846ace5d72f309bdd8c270c7f69d6096c6fdfc732aa58d486",
+   "Metal016_1K-JPG_NormalGL.jpg": "aac7e81d76cdc271177e812830ae2f7f3dac1d2b13d61821a9824bcf7311fce3",
+   "Metal016_1K-JPG_Roughness.jpg": "473e613c789fb6fe93889fa3887d8bb4ef2c9e6ba9dbed2c8e51f2571edd24cf"
+  },
+  "used_for": "rusted bare steel: plate rims, weld areas, stand rust patches (plate_*.glb, gong_stand.glb, pivot_target.glb)"
+ },
+ {
+  "name": "Brown Planks 09 (Poly Haven texture id: brown_planks_09)",
+  "author": "Rob Tuytel (All)",
+  "source_url": "https://polyhaven.com/a/brown_planks_09",
+  "download_url": [
+   "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/4k/brown_planks_09/brown_planks_09_arm_4k.jpg",
+   "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/4k/brown_planks_09/brown_planks_09_diff_4k.jpg",
+   "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/4k/brown_planks_09/brown_planks_09_nor_gl_4k.jpg"
+  ],
+  "license": "CC0 1.0 Universal",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "local_paths": [
+   "assets_src/env/ph_tex_brown_planks_09/brown_planks_09_arm_4k.jpg",
+   "assets_src/env/ph_tex_brown_planks_09/brown_planks_09_diff_4k.jpg",
+   "assets_src/env/ph_tex_brown_planks_09/brown_planks_09_nor_gl_4k.jpg"
+  ],
+  "sha256": {
+   "brown_planks_09_arm_4k.jpg": "09091d787b139c664b2ba8af4a14dadaf1b1bfda8fb3bc51a3c5fa1fc81e2a7f",
+   "brown_planks_09_diff_4k.jpg": "0d476f8733c6406d717648d671164513bd706ddec2938f00606d4e6b811a3078",
+   "brown_planks_09_nor_gl_4k.jpg": "2139a746059ba1a1c0dfa10c753c5fa2aad873c365e563a24a0f2e15983cd172"
+  },
+  "used_for": "weathered construction lumber of the stand bases and the shelf plank (target_stand.glb, shelf.glb)"
+ },
+ {
+  "name": "Granular Concrete (Poly Haven texture id: granular_concrete)",
+  "author": "Dario Barresi (Processing), Michael Jenkins (Photography)",
+  "source_url": "https://polyhaven.com/a/granular_concrete",
+  "download_url": [
+   "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/granular_concrete/granular_concrete_arm_2k.jpg",
+   "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/granular_concrete/granular_concrete_diff_2k.jpg",
+   "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/granular_concrete/granular_concrete_nor_gl_2k.jpg"
+  ],
+  "license": "CC0 1.0 Universal",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "local_paths": [
+   "assets_src/env/ph_tex_granular_concrete/granular_concrete_arm_2k.jpg",
+   "assets_src/env/ph_tex_granular_concrete/granular_concrete_diff_2k.jpg",
+   "assets_src/env/ph_tex_granular_concrete/granular_concrete_nor_gl_2k.jpg"
+  ],
+  "sha256": {
+   "granular_concrete_arm_2k.jpg": "5b28835f860e7532195ed03c05c55b9538bc572e1e095dc8500d95439162f247",
+   "granular_concrete_diff_2k.jpg": "37b70522207aff7a3ca7c70118b80ecc2d07a9fee983c2d544c5838e5fe8c8f5",
+   "granular_concrete_nor_gl_2k.jpg": "56308c513a2aaebf532a01afcc7e9c0a5a0760b76a45ca2b6706215616a1ebd4"
+  },
+  "used_for": "hollow concrete blocks of the shelves (shelf.glb)"
+ },
+ {
+  "name": "Planter Pot Clay (Poly Haven model id: planter_pot_clay)",
+  "author": "Amal Kumar (All)",
+  "source_url": "https://polyhaven.com/a/planter_pot_clay",
+  "download_url": [
+   "https://dl.polyhaven.org/file/ph-assets/Models/gltf/2k/planter_pot_clay/planter_pot_clay_2k.gltf",
+   "https://dl.polyhaven.org/file/ph-assets/Models/gltf/4k/planter_pot_clay/planter_pot_clay.bin",
+   "https://dl.polyhaven.org/file/ph-assets/Models/jpg/2k/planter_pot_clay/planter_pot_clay_arm_2k.jpg",
+   "https://dl.polyhaven.org/file/ph-assets/Models/jpg/2k/planter_pot_clay/planter_pot_clay_diff_2k.jpg",
+   "https://dl.polyhaven.org/file/ph-assets/Models/jpg/2k/planter_pot_clay/planter_pot_clay_nor_gl_2k.jpg"
+  ],
+  "license": "CC0 1.0 Universal",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "local_paths": [
+   "assets_src/models/ph_planter_pot_clay/planter_pot_clay.bin",
+   "assets_src/models/ph_planter_pot_clay/planter_pot_clay_2k.gltf",
+   "assets_src/models/ph_planter_pot_clay/textures/planter_pot_clay_arm_2k.jpg",
+   "assets_src/models/ph_planter_pot_clay/textures/planter_pot_clay_diff_2k.jpg",
+   "assets_src/models/ph_planter_pot_clay/textures/planter_pot_clay_nor_gl_2k.jpg"
+  ],
+  "sha256": {
+   "planter_pot_clay.bin": "effd0a038a75a054e55e2f5f71a84c57c1c6efc4e453ae3e62d4ce5167a2913c",
+   "planter_pot_clay_2k.gltf": "04d36b78db26de0771456fb88dd5f07db2e2b5b1ab15b81056159bac6ef89299",
+   "textures/planter_pot_clay_arm_2k.jpg": "0f315973c8126a62261660b28b45d7727628a9b3e912c9fd435f99dfd309a25b",
+   "textures/planter_pot_clay_diff_2k.jpg": "df68fcd5f8be67b2e61f82619a60de71b21176df1e4d19afc2635bc9fc1c70d3",
+   "textures/planter_pot_clay_nor_gl_2k.jpg": "db5ec3351dc70c1148ec11c62abc9613ffb87534e3da4475df391b6589dc41fb"
+  },
+  "used_for": "terracotta pot: mesh + textures, pre-fractured by script (break/pot.glb)"
+ },
+ {
+  "name": "Can Rusted (Poly Haven model id: can_rusted)",
+  "author": "Rahul Chaudhary (All)",
+  "source_url": "https://polyhaven.com/a/can_rusted",
+  "download_url": [
+   "https://dl.polyhaven.org/file/ph-assets/Models/gltf/2k/can_rusted/can_rusted_2k.gltf",
+   "https://dl.polyhaven.org/file/ph-assets/Models/gltf/8k/can_rusted/can_rusted.bin",
+   "https://dl.polyhaven.org/file/ph-assets/Models/jpg/2k/can_rusted/can_rusted_arm_2k.jpg",
+   "https://dl.polyhaven.org/file/ph-assets/Models/jpg/2k/can_rusted/can_rusted_diff_2k.jpg",
+   "https://dl.polyhaven.org/file/ph-assets/Models/jpg/2k/can_rusted/can_rusted_nor_gl_2k.jpg"
+  ],
+  "license": "CC0 1.0 Universal",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "local_paths": [
+   "assets_src/models/ph_can_rusted/can_rusted.bin",
+   "assets_src/models/ph_can_rusted/can_rusted_2k.gltf",
+   "assets_src/models/ph_can_rusted/textures/can_rusted_arm_2k.jpg",
+   "assets_src/models/ph_can_rusted/textures/can_rusted_diff_2k.jpg",
+   "assets_src/models/ph_can_rusted/textures/can_rusted_nor_gl_2k.jpg"
+  ],
+  "sha256": {
+   "can_rusted.bin": "169b333e0cbbb987f2874fa4d4af1b0d9bc710a39156e0e9b11b3b2283b2ccae",
+   "can_rusted_2k.gltf": "2cf970e314e0790881cadc70240cb21f73a37fcc820fc108f7588ff08d6d66ff",
+   "textures/can_rusted_arm_2k.jpg": "132819a9e521c1f2a02ff069ae3840fa8278cb488e1d3eb835443d5b76e3c315",
+   "textures/can_rusted_diff_2k.jpg": "cdda6d418d6a41c5949e2ef5cd89aa605908fd804e2566353338c9d69341a54c",
+   "textures/can_rusted_nor_gl_2k.jpg": "5e2ceabc4bca7bda14b23a20fd6ab08b41f17359c9f7943d3883f5991e22132f"
+  },
+  "used_for": "tin can A: mesh + textures, rescaled (break/can_a.glb)"
+ },
+ {
+  "name": "Russian Food Cans 01 (Poly Haven model id: russian_food_cans_01)",
+  "author": "Kosan Aziz (All)",
+  "source_url": "https://polyhaven.com/a/russian_food_cans_01",
+  "download_url": [
+   "https://dl.polyhaven.org/file/ph-assets/Models/gltf/2k/russian_food_cans_01/russian_food_cans_01_2k.gltf",
+   "https://dl.polyhaven.org/file/ph-assets/Models/gltf/4k/russian_food_cans_01/russian_food_cans_01.bin",
+   "https://dl.polyhaven.org/file/ph-assets/Models/jpg/2k/russian_food_cans_01/russian_food_cans_01_arm_2k.jpg",
+   "https://dl.polyhaven.org/file/ph-assets/Models/jpg/2k/russian_food_cans_01/russian_food_cans_01_diff_2k.jpg",
+   "https://dl.polyhaven.org/file/ph-assets/Models/jpg/2k/russian_food_cans_01/russian_food_cans_01_nor_gl_2k.jpg"
+  ],
+  "license": "CC0 1.0 Universal",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "local_paths": [
+   "assets_src/models/ph_russian_food_cans_01/russian_food_cans_01.bin",
+   "assets_src/models/ph_russian_food_cans_01/russian_food_cans_01_2k.gltf",
+   "assets_src/models/ph_russian_food_cans_01/textures/russian_food_cans_01_arm_2k.jpg",
+   "assets_src/models/ph_russian_food_cans_01/textures/russian_food_cans_01_diff_2k.jpg",
+   "assets_src/models/ph_russian_food_cans_01/textures/russian_food_cans_01_nor_gl_2k.jpg"
+  ],
+  "sha256": {
+   "russian_food_cans_01.bin": "8d2470449464756e656401478e16987cfd1a4aaa3635194cff56191adf9015cf",
+   "russian_food_cans_01_2k.gltf": "a67f75fe4829b18a4f632829ee7ad75414b5f6d9300f00d49affff54f55d72e4",
+   "textures/russian_food_cans_01_arm_2k.jpg": "943128f93486f9bc3736dc6f1bc49ed00d2bffdaae5de942a5699ef572e352c2",
+   "textures/russian_food_cans_01_diff_2k.jpg": "01522bbfcdb6b09c8e74d49fd17abc4e7890765fd01ffd440f8a0eb8cc563794",
+   "textures/russian_food_cans_01_nor_gl_2k.jpg": "e434601ead8cc64c0e25e8e10eb89d9395a7706589d2d710611b7df5814b5a1c"
+  },
+  "used_for": "tin cans B and C: meshes + textures (break/can_b.glb, break/can_c.glb)"
+ },
+ {
+  "name": "Wine Bottles 01 (Poly Haven model id: wine_bottles_01)",
+  "author": "Rico Cilliers (modeling), Jurita Burger (graphic design)",
+  "source_url": "https://polyhaven.com/a/wine_bottles_01",
+  "download_url": [
+   "https://dl.polyhaven.org/file/ph-assets/Models/gltf/2k/wine_bottles_01/wine_bottles_01_2k.gltf",
+   "https://dl.polyhaven.org/file/ph-assets/Models/gltf/8k/wine_bottles_01/wine_bottles_01.bin",
+   "https://dl.polyhaven.org/file/ph-assets/Models/jpg/2k/wine_bottles_01/wine_bottles_01_arm_2k.jpg",
+   "https://dl.polyhaven.org/file/ph-assets/Models/jpg/2k/wine_bottles_01/wine_bottles_01_diff_2k.jpg",
+   "https://dl.polyhaven.org/file/ph-assets/Models/jpg/2k/wine_bottles_01/wine_bottles_01_label_clearwater_crystals_01_arm_2k.jpg",
+   "https://dl.polyhaven.org/file/ph-assets/Models/jpg/2k/wine_bottles_01/wine_bottles_01_label_clearwater_crystals_01_diff_2k.jpg",
+   "https://dl.polyhaven.org/file/ph-assets/Models/jpg/2k/wine_bottles_01/wine_bottles_01_label_ftero_vinea_01_arm_2k.jpg",
+   "https://dl.polyhaven.org/file/ph-assets/Models/jpg/2k/wine_bottles_01/wine_bottles_01_label_ftero_vinea_01_diff_2k.jpg",
+   "https://dl.polyhaven.org/file/ph-assets/Models/jpg/2k/wine_bottles_01/wine_bottles_01_label_ftero_vinea_02_arm_2k.jpg",
+   "https://dl.polyhaven.org/file/ph-assets/Models/jpg/2k/wine_bottles_01/wine_bottles_01_label_ftero_vinea_02_diff_2k.jpg",
+   "https://dl.polyhaven.org/file/ph-assets/Models/jpg/2k/wine_bottles_01/wine_bottles_01_label_intertwine_01_arm_2k.jpg",
+   "https://dl.polyhaven.org/file/ph-assets/Models/jpg/2k/wine_bottles_01/wine_bottles_01_label_intertwine_01_diff_2k.jpg",
+   "https://dl.polyhaven.org/file/ph-assets/Models/jpg/2k/wine_bottles_01/wine_bottles_01_nor_gl_2k.jpg",
+   "https://dl.polyhaven.org/file/ph-assets/Models/jpg/2k/wine_bottles_01/wine_bottles_01_paper_nor_gl_2k.jpg"
+  ],
+  "license": "CC0 1.0 Universal",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "local_paths": [
+   "assets_src/models/ph_wine_bottles_01/textures/wine_bottles_01_arm_2k.jpg",
+   "assets_src/models/ph_wine_bottles_01/textures/wine_bottles_01_diff_2k.jpg",
+   "assets_src/models/ph_wine_bottles_01/textures/wine_bottles_01_label_clearwater_crystals_01_arm_2k.jpg",
+   "assets_src/models/ph_wine_bottles_01/textures/wine_bottles_01_label_clearwater_crystals_01_diff_2k.jpg",
+   "assets_src/models/ph_wine_bottles_01/textures/wine_bottles_01_label_ftero_vinea_01_arm_2k.jpg",
+   "assets_src/models/ph_wine_bottles_01/textures/wine_bottles_01_label_ftero_vinea_01_diff_2k.jpg",
+   "assets_src/models/ph_wine_bottles_01/textures/wine_bottles_01_label_ftero_vinea_02_arm_2k.jpg",
+   "assets_src/models/ph_wine_bottles_01/textures/wine_bottles_01_label_ftero_vinea_02_diff_2k.jpg",
+   "assets_src/models/ph_wine_bottles_01/textures/wine_bottles_01_label_intertwine_01_arm_2k.jpg",
+   "assets_src/models/ph_wine_bottles_01/textures/wine_bottles_01_label_intertwine_01_diff_2k.jpg",
+   "assets_src/models/ph_wine_bottles_01/textures/wine_bottles_01_nor_gl_2k.jpg",
+   "assets_src/models/ph_wine_bottles_01/textures/wine_bottles_01_paper_nor_gl_2k.jpg",
+   "assets_src/models/ph_wine_bottles_01/wine_bottles_01.bin",
+   "assets_src/models/ph_wine_bottles_01/wine_bottles_01_2k.gltf"
+  ],
+  "sha256": {
+   "textures/wine_bottles_01_arm_2k.jpg": "af73092a48537dda93ef885c28d13032ef4cb939263a2d75009ef8fa79294538",
+   "textures/wine_bottles_01_diff_2k.jpg": "a3460b9052dc2954fe7d9ff9af06192e8d9cab9a43b228d8e59e3380d1f87244",
+   "textures/wine_bottles_01_label_clearwater_crystals_01_arm_2k.jpg": "c13f3573c534730bb7371868c6d0cc1ef4bacf1f4705ec9d9dc8fb104515279f",
+   "textures/wine_bottles_01_label_clearwater_crystals_01_diff_2k.jpg": "ee32f1b3ab93d8120ab5de768c8de01eb4aab96da3502ff6ae60fe5aba19bc9b",
+   "textures/wine_bottles_01_label_ftero_vinea_01_arm_2k.jpg": "4c48fb76a4a7aa7b2dfb08682926bf4bacb74c23135a88fabcbefd73960ac460",
+   "textures/wine_bottles_01_label_ftero_vinea_01_diff_2k.jpg": "5ba3f2be8845921fc96d15ea2efee77b60d331a0fdbd081e1b27015b34d6e7cc",
+   "textures/wine_bottles_01_label_ftero_vinea_02_arm_2k.jpg": "90210bcf394932bc63f498c554c9c25d9e2b43443d234743feda2e777e74d9ac",
+   "textures/wine_bottles_01_label_ftero_vinea_02_diff_2k.jpg": "5a8e52e25571557201d200de12e87425097f2aea21bebf336b4b709caea3d8e5",
+   "textures/wine_bottles_01_label_intertwine_01_arm_2k.jpg": "beae321c3091a8e7d36bcc71bcda8e6834d61fa44557ded4e1d6469d6495bb93",
+   "textures/wine_bottles_01_label_intertwine_01_diff_2k.jpg": "1ca56cb67df30923d31ec6fde479ca3d656f3117c34ea9dded05a63333ebf1ab",
+   "textures/wine_bottles_01_nor_gl_2k.jpg": "7805b7059b65f903118c4b4a1f9db930f7db9b512e50386ce82c535aab9dad11",
+   "textures/wine_bottles_01_paper_nor_gl_2k.jpg": "69ebe9036fbb9fb7e656da7ec9171b0e26cfe3558f46ea5e842be0f0e331868d",
+   "wine_bottles_01.bin": "a520b717c7f9d15b7f114d1be5f454f18b2cfd056757fb4d4c5f5054de5db6d6",
+   "wine_bottles_01_2k.gltf": "58e63c8d21b6deb7b2383028a4dd5c888382f56a4c82afdb40ccf1aaf5bf7768"
+  },
+  "used_for": "proportion reference only for the scripted wine-bottle model; no mesh or texture data from it is shipped"
+ },
+ {
+  "name": "Liberation Sans (Regular, Bold)",
+  "author": "Red Hat, Inc. / Steve Matteson (Ascender)",
+  "source_url": "https://github.com/liberationfonts/liberation-fonts",
+  "download_url": [],
+  "license": "SIL Open Font License 1.1",
+  "license_url": "https://openfontlicense.org/open-font-license-official-text/",
+  "local_paths": [
+   "/usr/share/fonts/liberation/LiberationSans-Regular.ttf",
+   "/usr/share/fonts/liberation/LiberationSans-Bold.ttf"
+  ],
+  "sha256": {},
+  "used_for": "system font, only rasterised by tools/build/targets/gen_textures.py into the numerals and captions of the target faces; the font files are not shipped"
+ },
+ {
+  "name": "Procedural textures (no third-party input)",
+  "author": "generated by tools/build/targets/gen_textures.py for this project",
+  "source_url": "",
+  "download_url": [],
+  "license": "project-owned (generated)",
+  "license_url": "",
+  "local_paths": [
+   "game/assets/fx/tex/",
+   "game/assets/targets/faces/",
+   "game/assets/targets/stamps/"
+  ],
+  "sha256": {},
+  "used_for": "target face artwork, bullet-hole / lead-splash stamps, impact decals, dust and muzzle-flash sprites"
+ }
+]

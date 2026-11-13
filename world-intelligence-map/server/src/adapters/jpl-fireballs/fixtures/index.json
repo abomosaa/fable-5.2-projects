@@ -1,0 +1,5 @@
+{
+  "capturedAt": "2026-11-10T17:49:43Z",
+  "notes": "Complete, unmodified response of https://ssd-api.jpl.nasa.gov/fireball.api?date-min=2021-11-11&req-loc=true captured from the live API (173 events, newest 2026-10-04). The malformed variant is hand-authored.",
+  "routes": [{ "match": "/fireball.api", "file": "fireball.json", "variants": { "malformed": "fireball.malformed.json" } }]
+}

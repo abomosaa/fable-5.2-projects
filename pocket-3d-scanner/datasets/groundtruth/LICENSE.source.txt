@@ -1,0 +1,48 @@
+DATASET   : NAVI v1.0 - "NAVI: Category-Agnostic Image Collections with High-Quality 3D Shape and Pose
+            Annotations" (NeurIPS 2023 Datasets & Benchmarks), object dino_5 / scene multiview-13-canon_t4i
+LICENSE   : CC-BY (dataset, as stated by the authors in the paper; version number not stated) -
+            the project page's "[License]" link points to the Apache License 2.0 text.
+            Both are permissive, attribution-style licenses that allow redistribution and commercial use.
+AUTHORS   : Varun Jampani, Kevis-Kokitsi Maninis, Andreas Engelhardt, Karen Truong, Arjun Karpur, Kyle Sargent,
+            Stefan Popov, Andre Araujo, Ricardo Martin-Brualla, Kaushal Patel, Daniel Vlasic, Vittorio Ferrari,
+            Ameesh Makadia, Ce Liu, Yuanzhen Li, Howard Zhou (Google). Copyright Google LLC.
+RETRIEVED : 2026-11-11
+
+WHERE THE LICENSE WAS VERIFIED
+  1. Paper, arXiv:2306.09109v2 (https://arxiv.org/pdf/2306.09109v2), Appendix
+     "A.5 Data license, access details, and intended usage" - verbatim (text extracted with pdftotext):
+       "The dataset is released under the CC-BY license. The accompanying code that shows the dataset use
+        is released under the Apache License 2.0. The authors of the dataset bear all responsibility in case of
+        violation of rights.
+        All contents of this submission (code, paper, data) can be accessed from our project page:
+        https://navidataset.github.io. The data is hosted on Google Cloud by Google Research."
+  2. Project page https://navidataset.github.io/ - link row, verbatim HTML:
+       <a href="https://github.com/google/navi" target="_blank">[Dataset**]</a>
+       <a href="navidataset_files/LICENSE.txt" target="_blank">[License]</a>
+     https://navidataset.github.io/navidataset_files/LICENSE.txt is the Apache License, Version 2.0;
+     saved verbatim as upstream/NAVI_project_page_LICENSE.txt.
+  3. https://github.com/google/navi (commit 3fcfd406aba3dbd43760ad100afb04a6320b7d1c): LICENSE = Apache-2.0
+     (saved as upstream/NAVI_github_LICENSE_Apache-2.0.txt); README.md (saved as
+     upstream/NAVI_github_README.md) documents the download URL
+     https://storage.googleapis.com/gresearch/navi-dataset/navi_v1.0.tar.gz and the file formats, and
+     contains no additional license statement for the data.
+
+  NOTE ON THE AMBIGUITY: the paper says "CC-BY" without a version, and no CC legal text ships with the data;
+  the only license *file* published with the project is Apache-2.0. We treat the data as CC BY (assume 4.0,
+  https://creativecommons.org/licenses/by/4.0/) and additionally keep the Apache-2.0 text; complying with
+  both (attribution + license notice + statement of changes) is straightforward and is what we do.
+
+REQUIRED ATTRIBUTION / CITATION
+  @inproceedings{jampani2023navi,
+    title={{NAVI}: Category-Agnostic Image Collections with High-Quality 3D Shape and Pose Annotations},
+    author={Jampani, Varun and Maninis, Kevis-Kokitsi and Engelhardt, Andreas and Truong, Karen and Karpur, Arjun
+            and Sargent, Kyle and Popov, Stefan and Araujo, Andre and Martin-Brualla, Ricardo and Patel, Kaushal
+            and Vlasic, Daniel and Ferrari, Vittorio and Makadia, Ameesh and Liu, Ce and Li, Yuanzhen and Zhou, Howard},
+    booktitle={NeurIPS}, url={https://navidataset.github.io/}, year={2023}
+  }
+
+CHANGES MADE HERE
+  None to file contents (each file is byte-identical to the member of navi_v1.0.tar.gz listed in
+  navi_members.tsv; see SHA256SUMS). Files were re-arranged: images/ ; reference/{annotations.json,
+  masks/, depth/, 3d_scan/}. Only one scene of one object was extracted; the .glb duplicate of the scan
+  was not kept. capture_order.txt is a file derived by us from reference/annotations.json.

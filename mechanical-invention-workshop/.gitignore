@@ -1,0 +1,8 @@
+node_modules/
+dist/
+.venv/
+*.log
+test-results/
+.DS_Store
+exports/
+scratch/

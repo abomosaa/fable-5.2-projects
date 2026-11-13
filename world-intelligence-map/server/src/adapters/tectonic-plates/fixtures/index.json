@@ -1,0 +1,12 @@
+{
+  "capturedAt": "2026-11-10T17:52:00Z",
+  "notes": "PB2002_boundaries.json is the complete, unmodified file captured from github.com/fraxen/tectonicplates (master): 241 boundary segments, 6,292 vertices, 226 KB – no vertex decimation was needed. Static reference data without timestamps. The malformed variant was authored by hand.",
+  "routes": [
+    {
+      "match": "/GeoJSON/PB2002_boundaries.json",
+      "file": "PB2002_boundaries.json",
+      "etag": "\"f37d44cdae4de6dffaa03373d62cc053d4fe9faf51e72a0d6498d5063a46b9c6\"",
+      "variants": { "malformed": "PB2002_boundaries.malformed.json" }
+    }
+  ]
+}

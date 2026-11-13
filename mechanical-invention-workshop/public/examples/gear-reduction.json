@@ -1,0 +1,596 @@
+{
+ "format": "mechanism-workshop",
+ "version": 1,
+ "id": "example-gears",
+ "name": "Two-stage gear reduction",
+ "description": "A two-stage reduction: 16-tooth pinion → 48-tooth gear, sharing a lay shaft with a 14-tooth pinion → 56-tooth output gear (module 2). Overall ratio (48/16)·(56/14) = 12 : 1. A constant 0.3 N·m torque loads the output drum.\n\nChange any tooth count: the involute geometry is regenerated, the shafts (and their holes in the plate) move to the new centre distance m·(z₁+z₂)/2, the teeth are re-phased, and the speed ratio and motor torque in the plots follow.\n\nGear meshes are IDEAL rolling couplings at the pitch point (no tooth-by-tooth contact, backlash dynamics or friction losses). The drawn teeth are true involutes phased consistently with that constraint; the interference checker verifies they do not overlap.\n\nThe motor is torque-limited (50 N·mm) and the load behaves like a weight on the drum: when the ratio or the load asks for more than the limit, the diagnostics report the motor saturating and being driven backwards.",
+ "createdAt": "2026-01-01T00:00:00.000Z",
+ "modifiedAt": "2026-01-01T00:00:00.000Z",
+ "parts": [
+  {
+   "id": "p1",
+   "name": "Gearbox plate",
+   "kind": "baseplate",
+   "params": {
+    "width": 260,
+    "height": 150,
+    "thickness": 4,
+    "cornerRadius": 8,
+    "holes": [
+     {
+      "x": -63.97186157098869,
+      "y": -14,
+      "d": 5
+     },
+     {
+      "x": -3.8520079487564445,
+      "y": 7.945459677148886,
+      "d": 5
+     },
+     {
+      "x": 63.97186157098869,
+      "y": -9.37281747066772,
+      "d": 6
+     }
+    ]
+   },
+   "pose": {
+    "x": 63.97186157098869,
+    "y": 14,
+    "angle": 0,
+    "z": 0
+   },
+   "grounded": true,
+   "materialId": "aluminum"
+  },
+  {
+   "id": "p2",
+   "name": "Motor",
+   "kind": "motor",
+   "params": {
+    "shape": "square",
+    "size": 28,
+    "bodyLength": 32,
+    "shaftDiameter": 5,
+    "shaftLength": 10.3,
+    "mass": 0.14
+   },
+   "pose": {
+    "x": 0,
+    "y": 0,
+    "angle": 0,
+    "z": 0
+   },
+   "grounded": false,
+   "materialId": "motor"
+  },
+  {
+   "id": "p3",
+   "name": "Pinion 16T",
+   "kind": "gear",
+   "params": {
+    "module": 2,
+    "teeth": 16,
+    "pressureAngle": 0.3490658503988659,
+    "thickness": 6,
+    "boreDiameter": 5,
+    "pinRadius": 0,
+    "pinDiameter": 4
+   },
+   "pose": {
+    "x": 0,
+    "y": 0,
+    "angle": 0,
+    "z": 4.5
+   },
+   "grounded": false,
+   "materialId": "pla",
+   "color": "#e8a33d"
+  },
+  {
+   "id": "p4",
+   "name": "Gear 48T",
+   "kind": "gear",
+   "params": {
+    "module": 2,
+    "teeth": 48,
+    "pressureAngle": 0.3490658503988659,
+    "thickness": 6,
+    "boreDiameter": 5,
+    "pinRadius": 0,
+    "pinDiameter": 4
+   },
+   "pose": {
+    "x": 60.11985362223225,
+    "y": 21.945459677148882,
+    "angle": 0.008517738018155585,
+    "z": 4.5
+   },
+   "grounded": false,
+   "materialId": "pla",
+   "color": "#4c9fd8"
+  },
+  {
+   "id": "p5",
+   "name": "Pinion 14T",
+   "kind": "gear",
+   "params": {
+    "module": 2,
+    "teeth": 14,
+    "pressureAngle": 0.3490658503988659,
+    "thickness": 6,
+    "boreDiameter": 5,
+    "pinRadius": 0,
+    "pinDiameter": 4
+   },
+   "pose": {
+    "x": 60.11985362223225,
+    "y": 21.94545967714888,
+    "angle": 0.0085177380181638,
+    "z": 11
+   },
+   "grounded": false,
+   "materialId": "pla",
+   "color": "#4c9fd8"
+  },
+  {
+   "id": "p6",
+   "name": "Output gear 56T",
+   "kind": "gear",
+   "params": {
+    "module": 2,
+    "teeth": 56,
+    "pressureAngle": 0.3490658503988659,
+    "thickness": 6,
+    "boreDiameter": 6,
+    "pinRadius": 0,
+    "pinDiameter": 4
+   },
+   "pose": {
+    "x": 127.94372314197739,
+    "y": 4.627182529332279,
+    "angle": -0.03413009043402363,
+    "z": 11
+   },
+   "grounded": false,
+   "materialId": "pla",
+   "color": "#62c370"
+  },
+  {
+   "id": "p7",
+   "name": "Lay shaft",
+   "kind": "shaft",
+   "params": {
+    "diameter": 5,
+    "length": 18
+   },
+   "pose": {
+    "x": 60.11985362223225,
+    "y": 21.94545967714888,
+    "angle": 0.008517738018166953,
+    "z": 0
+   },
+   "grounded": false,
+   "materialId": "steel"
+  },
+  {
+   "id": "p8",
+   "name": "Output shaft",
+   "kind": "shaft",
+   "params": {
+    "diameter": 6,
+    "length": 33
+   },
+   "pose": {
+    "x": 127.94372314197739,
+    "y": 4.627182529332281,
+    "angle": -0.0341300904340236,
+    "z": 0
+   },
+   "grounded": false,
+   "materialId": "steel"
+  },
+  {
+   "id": "p9",
+   "name": "Load drum",
+   "kind": "pulley",
+   "params": {
+    "pitchDiameter": 30,
+    "beltWidth": 8,
+    "beltThickness": 1,
+    "flangeHeight": 2.5,
+    "flangeThickness": 1.5,
+    "boreDiameter": 6,
+    "pinRadius": 0,
+    "pinDiameter": 4
+   },
+   "pose": {
+    "x": 127.94372314197739,
+    "y": 4.6271825293322815,
+    "angle": -0.034130090434023576,
+    "z": 18
+   },
+   "grounded": false,
+   "materialId": "aluminum",
+   "color": "#c9ced6"
+  }
+ ],
+ "joints": [
+  {
+   "type": "rigid",
+   "a": "p1",
+   "b": "p2",
+   "anchorA": {
+    "port": "H1"
+   },
+   "anchorB": {
+    "port": "shaft"
+   },
+   "angle": 0,
+   "id": "j1",
+   "name": "Motor mount"
+  },
+  {
+   "type": "rigid",
+   "a": "p7",
+   "b": "p4",
+   "anchorA": {
+    "port": "center"
+   },
+   "anchorB": {
+    "port": "center"
+   },
+   "angle": 0,
+   "id": "j2",
+   "name": "Gear 48T on lay shaft"
+  },
+  {
+   "type": "rigid",
+   "a": "p7",
+   "b": "p5",
+   "anchorA": {
+    "port": "center"
+   },
+   "anchorB": {
+    "port": "center"
+   },
+   "angle": 0,
+   "id": "j3",
+   "name": "Pinion 14T on lay shaft"
+  },
+  {
+   "type": "rigid",
+   "a": "p8",
+   "b": "p6",
+   "anchorA": {
+    "port": "center"
+   },
+   "anchorB": {
+    "port": "center"
+   },
+   "angle": 0,
+   "id": "j4",
+   "name": "Output gear on shaft"
+  },
+  {
+   "type": "rigid",
+   "a": "p8",
+   "b": "p9",
+   "anchorA": {
+    "port": "center"
+   },
+   "anchorB": {
+    "port": "center"
+   },
+   "angle": 0,
+   "id": "j5",
+   "name": "Drum on shaft"
+  },
+  {
+   "type": "revolute",
+   "a": "p1",
+   "b": "p3",
+   "anchorA": {
+    "port": "H1"
+   },
+   "anchorB": {
+    "port": "center"
+   },
+   "id": "j6",
+   "name": "Input bearing (motor)",
+   "pinDiameter": 5,
+   "motor": {
+    "enabled": true,
+    "type": "servo",
+    "speed": 25.132741228718345,
+    "maxTorque": 50000,
+    "rampTime": 0.4,
+    "profile": "constant"
+   }
+  },
+  {
+   "type": "revolute",
+   "a": "p1",
+   "b": "p7",
+   "anchorA": {
+    "port": "H2"
+   },
+   "anchorB": {
+    "port": "center"
+   },
+   "id": "j7",
+   "name": "Lay shaft bearing",
+   "pinDiameter": 5,
+   "friction": 0
+  },
+  {
+   "type": "revolute",
+   "a": "p1",
+   "b": "p8",
+   "anchorA": {
+    "port": "H3"
+   },
+   "anchorB": {
+    "port": "center"
+   },
+   "id": "j8",
+   "name": "Output bearing",
+   "pinDiameter": 6
+  },
+  {
+   "type": "gear",
+   "a": "p3",
+   "b": "p4",
+   "anchorA": {
+    "port": "center"
+   },
+   "anchorB": {
+    "port": "center"
+   },
+   "id": "j9",
+   "name": "Mesh 16:48"
+  },
+  {
+   "type": "gear",
+   "a": "p5",
+   "b": "p6",
+   "anchorA": {
+    "port": "center"
+   },
+   "anchorB": {
+    "port": "center"
+   },
+   "id": "j10",
+   "name": "Mesh 14:56"
+  }
+ ],
+ "loads": [
+  {
+   "id": "l1",
+   "name": "Output load torque",
+   "type": "torque",
+   "part": "p9",
+   "anchor": {
+    "x": 0,
+    "y": 0
+   },
+   "fx": 0,
+   "fy": 0,
+   "torque": -300000,
+   "frame": "world",
+   "enabled": true
+  }
+ ],
+ "probes": [
+  {
+   "id": "pr1",
+   "name": "Input (motor)",
+   "target": {
+    "kind": "joint",
+    "joint": "j6"
+   },
+   "trace": false,
+   "color": "#f2b44a"
+  },
+  {
+   "id": "pr2",
+   "name": "Output shaft",
+   "target": {
+    "kind": "joint",
+    "joint": "j8"
+   },
+   "trace": false,
+   "color": "#4cc2ff"
+  },
+  {
+   "id": "pr3",
+   "name": "Mesh 16:48",
+   "target": {
+    "kind": "joint",
+    "joint": "j9"
+   },
+   "trace": false,
+   "color": "#7ee081"
+  },
+  {
+   "id": "pr4",
+   "name": "Mesh 14:56",
+   "target": {
+    "kind": "joint",
+    "joint": "j10"
+   },
+   "trace": false,
+   "color": "#ff7b72"
+  }
+ ],
+ "plots": [
+  {
+   "id": "plot1",
+   "title": "Shaft speeds",
+   "channels": [
+    {
+     "probe": "pr1",
+     "quantity": "rate"
+    },
+    {
+     "probe": "pr2",
+     "quantity": "rate"
+    }
+   ]
+  },
+  {
+   "id": "plot2",
+   "title": "Motor torque",
+   "channels": [
+    {
+     "probe": "pr1",
+     "quantity": "torque"
+    }
+   ]
+  },
+  {
+   "id": "plot3",
+   "title": "Tooth forces (ideal mesh)",
+   "channels": [
+    {
+     "probe": "pr3",
+     "quantity": "toothForce"
+    },
+    {
+     "probe": "pr4",
+     "quantity": "toothForce"
+    }
+   ]
+  },
+  {
+   "id": "plot4",
+   "title": "Motor power",
+   "channels": [
+    {
+     "probe": "pr1",
+     "quantity": "power"
+    }
+   ]
+  }
+ ],
+ "groups": [],
+ "sketches": [],
+ "variants": [
+  {
+   "id": "v1",
+   "name": "12 : 1  (16:48 × 14:56)",
+   "note": "Baseline. Motor torque ≈ load / 12.",
+   "values": {
+    "part:p3:teeth": 16,
+    "part:p4:teeth": 48,
+    "part:p5:teeth": 14,
+    "part:p6:teeth": 56,
+    "load:l1:torque": -300000
+   }
+  },
+  {
+   "id": "v2",
+   "name": "5.5 : 1  (20:44 × 20:50)",
+   "note": "Taller gearing: the same load now needs 54.5 N·mm, more than the motor's 50 N·mm limit — the load overhauls the motor.",
+   "values": {
+    "part:p3:teeth": 20,
+    "part:p4:teeth": 44,
+    "part:p5:teeth": 20,
+    "part:p6:teeth": 50,
+    "load:l1:torque": -300000
+   }
+  },
+  {
+   "id": "v3",
+   "name": "12 : 1 with triple load",
+   "note": "Load raised to 0.9 N·m: needs 75 N·mm at the motor, more than its limit — the load drives the train backwards.",
+   "values": {
+    "part:p3:teeth": 16,
+    "part:p4:teeth": 48,
+    "part:p5:teeth": 14,
+    "part:p6:teeth": 56,
+    "load:l1:torque": -900000
+   }
+  }
+ ],
+ "views": [
+  {
+   "name": "Front",
+   "position": [
+    63.97186157098869,
+    14,
+    500
+   ],
+   "target": [
+    63.97186157098869,
+    14,
+    8
+   ],
+   "ortho": true,
+   "zoom": 2.4
+  },
+  {
+   "name": "Three-quarter",
+   "position": [
+    253.9718615709887,
+    144,
+    300
+   ],
+   "target": [
+    63.97186157098869,
+    14,
+    8
+   ],
+   "ortho": false
+  }
+ ],
+ "sim": {
+  "mode": "dynamic",
+  "dt": 0.001,
+  "gravity": {
+   "x": 0,
+   "y": -9806.65
+  },
+  "gravityEnabled": true,
+  "floor": {
+   "enabled": false,
+   "y": 0,
+   "friction": 0.8
+  },
+  "stopOnInterference": false,
+  "sampleRate": 250
+ },
+ "clearances": {
+  "hole": 0.2,
+  "slide": 0.15,
+  "backlash": 0.1,
+  "minFeature": 0.8
+ },
+ "units": {
+  "length": "mm",
+  "angle": "deg",
+  "mass": "g",
+  "time": "s",
+  "force": "N",
+  "torque": "N·mm",
+  "speed": "mm/s",
+  "angularSpeed": "rpm",
+  "acceleration": "m/s²",
+  "angularAcceleration": "rad/s²",
+  "stiffness": "N/mm",
+  "torsionStiffness": "N·mm/rad",
+  "damping": "N·s/m",
+  "rotDamping": "N·mm·s/rad",
+  "density": "g/cm³",
+  "power": "W",
+  "energy": "mJ",
+  "inertia": "g·mm²",
+  "area": "mm²",
+  "volume": "cm³",
+  "frequency": "Hz",
+  "ratio": "",
+  "count": ""
+ },
+ "materials": [],
+ "activeVariant": "v1"
+}

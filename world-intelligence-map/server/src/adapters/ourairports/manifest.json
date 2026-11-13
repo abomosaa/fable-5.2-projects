@@ -1,0 +1,58 @@
+{
+  "id": "ourairports",
+  "provider": "OurAirports",
+  "dataset": "OurAirports open data – airports.csv",
+  "description": "Community-maintained world airport directory: large airports and medium airports with scheduled airline service, with IATA/ICAO codes, elevation and municipality.",
+  "homepageUrl": "https://ourairports.com/",
+  "documentationUrl": "https://ourairports.com/help/data-dictionary.html",
+  "sourceUrls": ["https://davidmegginson.github.io/ourairports-data/airports.csv"],
+  "allowedHosts": ["davidmegginson.github.io"],
+  "coverage": { "geographic": "Global", "temporal": "Current state of the directory; no history" },
+  "updateCadence": { "upstream": "Regenerated nightly from community edits", "pollIntervalSec": 604800, "staleAfterSec": 2592000 },
+  "auth": { "type": "none", "envVars": [] },
+  "attribution": "OurAirports (ourairports.com), public domain",
+  "license": {
+    "name": "Public domain (OurAirports open data)",
+    "url": "https://ourairports.com/data/",
+    "redistribution": "allowed",
+    "nonCommercialOnly": false,
+    "notes": "Downloads page: \"All data is released to the Public Domain, and comes with no guarantee of accuracy or fitness for use.\" Credit is appreciated but not required. Files are hosted in the GitHub repository davidmegginson/ourairports-data."
+  },
+  "limitations": [
+    "Volunteer-edited data without guarantee of accuracy; not for navigation or flight planning.",
+    "The size classes (large / medium) are editorial judgements by contributors, not an official classification, and 'scheduled service' may lag behind real schedules.",
+    "Only large airports and medium airports with scheduled service are shown; small airfields, heliports, seaplane bases, balloonports and closed airports are deliberately left out.",
+    "Coordinates are a single reference point per airport."
+  ],
+  "confidenceNotes": "No per-record confidence is published. Crowd-sourced reference data: codes and positions of major airports are generally reliable, details of minor airports less so.",
+  "retention": { "note": "Reference data: an airport is kept for as long as the current file lists it in one of the shown classes." },
+  "snapshot": "full",
+  "http": { "cacheTtlSec": 86400, "timeoutMs": 60000 },
+  "enabledByDefault": true,
+  "layers": [
+    {
+      "id": "airports-large",
+      "name": "Large airports",
+      "description": "Airports classed as 'large_airport' by OurAirports (major international and national hubs).",
+      "domain": "transport",
+      "category": "airport",
+      "geometry": "point",
+      "timeModel": "reference",
+      "render": { "type": "point", "color": "gray", "shape": "square" },
+      "retentionDays": null,
+      "defaultOn": false
+    },
+    {
+      "id": "airports-medium",
+      "name": "Medium airports (scheduled service)",
+      "description": "Airports classed as 'medium_airport' by OurAirports that currently have scheduled airline service.",
+      "domain": "transport",
+      "category": "airport",
+      "geometry": "point",
+      "timeModel": "reference",
+      "render": { "type": "point", "color": "gray", "shape": "square", "minZoom": 4 },
+      "retentionDays": null,
+      "defaultOn": false
+    }
+  ]
+}

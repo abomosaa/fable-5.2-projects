@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="dev.pocket3d.viewer.OrbitCameraTest" tests="12" skipped="0" failures="0" errors="0" timestamp="2026-11-12T10:56:41.056Z" hostname="h4-pc" time="0.008">
+  <properties/>
+  <testcase name="pickerFindsTheCameraUnderTheTap" classname="dev.pocket3d.viewer.OrbitCameraTest" time="0.002"/>
+  <testcase name="panMovesTheSceneWithTheFinger" classname="dev.pocket3d.viewer.OrbitCameraTest" time="0.0"/>
+  <testcase name="defaultCameraLooksDownMinusZFromFront" classname="dev.pocket3d.viewer.OrbitCameraTest" time="0.0"/>
+  <testcase name="orbitKeepsPivotAndDistanceAndNeverFlips" classname="dev.pocket3d.viewer.OrbitCameraTest" time="0.001"/>
+  <testcase name="magnifierCentresTheTouchedPoint" classname="dev.pocket3d.viewer.OrbitCameraTest" time="0.0"/>
+  <testcase name="lerpEndsExactlyAndTakesTheShortWayRound" classname="dev.pocket3d.viewer.OrbitCameraTest" time="0.001"/>
+  <testcase name="fitKeepsWholeBoundsInsideFrustum" classname="dev.pocket3d.viewer.OrbitCameraTest" time="0.002"/>
+  <testcase name="zoomScalesDistanceWithinLimits" classname="dev.pocket3d.viewer.OrbitCameraTest" time="0.0"/>
+  <testcase name="lookFromReproducesArbitraryPoses" classname="dev.pocket3d.viewer.OrbitCameraTest" time="0.0"/>
+  <testcase name="rayAndProjectRoundTrip" classname="dev.pocket3d.viewer.OrbitCameraTest" time="0.0"/>
+  <testcase name="photoFieldOfViewFitsTheWholeFrame" classname="dev.pocket3d.viewer.OrbitCameraTest" time="0.0"/>
+  <testcase name="lookFromMatchesEveryRealSourceCamera" classname="dev.pocket3d.viewer.OrbitCameraTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

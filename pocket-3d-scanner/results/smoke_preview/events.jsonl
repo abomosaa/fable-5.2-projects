@@ -1,0 +1,106 @@
+{"seq":1,"t":1794492175.79,"type":"stage_start","stage":"ingest","progress":0.0,"overall":0.0,"message":"Checking photos","data":{"index":0,"count":9}}
+{"seq":2,"t":1794492175.797,"type":"stage_progress","stage":"ingest","progress":0.0833,"overall":0.0017,"message":"Checked 1/12 photos"}
+{"seq":3,"t":1794492175.798,"type":"stage_progress","stage":"ingest","progress":0.1667,"overall":0.0033,"message":"Checked 2/12 photos"}
+{"seq":4,"t":1794492175.799,"type":"stage_progress","stage":"ingest","progress":0.25,"overall":0.005,"message":"Checked 3/12 photos"}
+{"seq":5,"t":1794492175.799,"type":"stage_progress","stage":"ingest","progress":0.3333,"overall":0.0067,"message":"Checked 4/12 photos"}
+{"seq":6,"t":1794492175.799,"type":"stage_progress","stage":"ingest","progress":0.4167,"overall":0.0083,"message":"Checked 5/12 photos"}
+{"seq":7,"t":1794492175.799,"type":"stage_progress","stage":"ingest","progress":0.5,"overall":0.01,"message":"Checked 6/12 photos"}
+{"seq":8,"t":1794492175.799,"type":"stage_progress","stage":"ingest","progress":0.5833,"overall":0.0117,"message":"Checked 7/12 photos"}
+{"seq":9,"t":1794492175.799,"type":"stage_progress","stage":"ingest","progress":0.6667,"overall":0.0133,"message":"Checked 8/12 photos"}
+{"seq":10,"t":1794492175.799,"type":"stage_progress","stage":"ingest","progress":0.75,"overall":0.015,"message":"Checked 9/12 photos"}
+{"seq":11,"t":1794492175.799,"type":"stage_progress","stage":"ingest","progress":0.8333,"overall":0.0167,"message":"Checked 10/12 photos"}
+{"seq":12,"t":1794492175.799,"type":"stage_progress","stage":"ingest","progress":0.9167,"overall":0.0183,"message":"Checked 11/12 photos"}
+{"seq":13,"t":1794492175.799,"type":"stage_progress","stage":"ingest","progress":1.0,"overall":0.02,"message":"Checked 12/12 photos"}
+{"seq":14,"t":1794492175.81,"type":"stage_end","stage":"ingest","progress":1.0,"overall":0.02,"message":"","data":{"reused":false,"seconds":0.02,"skipped":false}}
+{"seq":15,"t":1794492175.81,"type":"diagnostics","stage":"ingest","progress":0.0,"overall":0.02,"message":"","data":{"input":{"frames":12,"usable":12,"rejected":[],"capture_source":"import","tracking_mode":null,"camera_groups":[{"frames":12,"width":1200,"height":800,"focal_px_prior":1440.0,"focal_source":"default"}],"recompressed_working_copies":0,"frames_with_ar_pose":0}}}
+{"seq":16,"t":1794492175.81,"type":"warning","stage":"ingest","progress":0.0,"overall":0.02,"message":"Some photos have no usable focal-length metadata (missing, or present but not trusted because the file may have been resized after capture); the focal length is estimated from the images alone, which is less reliable.","data":{"code":"no_focal_prior"}}
+{"seq":17,"t":1794492175.81,"type":"stage_start","stage":"features","progress":0.0,"overall":0.02,"message":"Finding image features","data":{"index":1,"count":9}}
+{"seq":18,"t":1794492176.213,"type":"stage_progress","stage":"features","progress":0.4167,"overall":0.045,"message":"Features 5/12 photos"}
+{"seq":19,"t":1794492176.716,"type":"stage_progress","stage":"features","progress":0.8333,"overall":0.07,"message":"Features 10/12 photos"}
+{"seq":20,"t":1794492177.118,"type":"stage_progress","stage":"features","progress":1.0,"overall":0.08,"message":"Features 12/12 photos"}
+{"seq":21,"t":1794492177.13,"type":"stage_end","stage":"features","progress":1.0,"overall":0.08,"message":"","data":{"reused":false,"seconds":1.32,"skipped":false}}
+{"seq":22,"t":1794492177.13,"type":"stage_start","stage":"matching","progress":0.0,"overall":0.08,"message":"Matching photos","data":{"index":2,"count":9}}
+{"seq":23,"t":1794492177.339,"type":"stage_progress","stage":"matching","progress":0.9091,"overall":0.1345,"message":"Matched 60/66 photo pairs"}
+{"seq":24,"t":1794492177.442,"type":"stage_progress","stage":"matching","progress":1.0,"overall":0.14,"message":"Matched 66/66 photo pairs"}
+{"seq":25,"t":1794492177.461,"type":"stage_end","stage":"matching","progress":1.0,"overall":0.14,"message":"","data":{"reused":false,"seconds":0.33,"skipped":false}}
+{"seq":26,"t":1794492177.461,"type":"diagnostics","stage":"matching","progress":0.0,"overall":0.14,"message":"","data":{"features":{"median_per_image":1529,"extract_threads":5},"matching":{"mode":"exhaustive","pairs_tested":66,"pairs_verified":66,"inlier_matches":3114,"pairs_possible":66,"pair_configurations":{"UNCALIBRATED":27},"pairs_without_3d_evidence":0,"pairs_classified":27}}}
+{"seq":27,"t":1794492177.461,"type":"stage_start","stage":"sfm","progress":0.0,"overall":0.14,"message":"Solving camera positions","data":{"index":3,"count":9}}
+{"seq":28,"t":1794492177.479,"type":"stage_progress","stage":"sfm","progress":0.1667,"overall":0.1533,"message":"Registered 2/12 cameras"}
+{"seq":29,"t":1794492177.499,"type":"stage_progress","stage":"sfm","progress":0.25,"overall":0.16,"message":"Registered 3/12 cameras"}
+{"seq":30,"t":1794492177.51,"type":"stage_progress","stage":"sfm","progress":0.3333,"overall":0.1667,"message":"Registered 4/12 cameras"}
+{"seq":31,"t":1794492177.529,"type":"stage_progress","stage":"sfm","progress":0.4167,"overall":0.1733,"message":"Registered 5/12 cameras"}
+{"seq":32,"t":1794492177.547,"type":"stage_progress","stage":"sfm","progress":0.5,"overall":0.18,"message":"Registered 6/12 cameras"}
+{"seq":33,"t":1794492177.569,"type":"stage_progress","stage":"sfm","progress":0.5833,"overall":0.1867,"message":"Registered 7/12 cameras"}
+{"seq":34,"t":1794492177.588,"type":"stage_progress","stage":"sfm","progress":0.6667,"overall":0.1933,"message":"Registered 8/12 cameras"}
+{"seq":35,"t":1794492177.626,"type":"stage_end","stage":"sfm","progress":1.0,"overall":0.22,"message":"","data":{"reused":false,"seconds":0.16,"skipped":false}}
+{"seq":36,"t":1794492177.655,"type":"warning","stage":"sfm","progress":0.0,"overall":0.22,"message":"4 of 12 photos could not be registered and do not contribute to the model.","data":{"code":"unregistered_frames"}}
+{"seq":37,"t":1794492177.655,"type":"warning","stage":"sfm","progress":0.0,"overall":0.22,"message":"Only 8 photos are registered. Small sets leave gaps and make the camera solution fragile; 30\u201380 overlapping photos are recommended.","data":{"code":"few_photos"}}
+{"seq":38,"t":1794492177.655,"type":"warning","stage":"sfm","progress":0.0,"overall":0.22,"message":"No registered photo covers a 312\u00b0 sector around the object; the surface facing that side is likely missing.","data":{"code":"coverage_gap"}}
+{"seq":39,"t":1794492177.656,"type":"artifact","stage":"sfm","progress":0.0,"overall":0.22,"message":"sparse_preview.json","data":{"name":"sparse_preview.json","size":12221,"sha256":"91455c0cb6934816688366fa40da2503ed4fa5aa470b0f5552cce7031f5363ee","kind":"preview"}}
+{"seq":40,"t":1794492177.656,"type":"diagnostics","stage":"sfm","progress":0.0,"overall":0.22,"message":"","data":{"sfm":{"input_frames":12,"registered":8,"unregistered":[{"id":"0001","reason":"no_reliable_matches"},{"id":"0002","reason":"no_reliable_matches"},{"id":"0003","reason":"no_reliable_matches"},{"id":"0004","reason":"no_reliable_matches"}],"other_models":[],"sparse_points":487,"mean_reprojection_error_px":0.3705,"mean_track_length":3.54,"mean_observations_per_image":215.5,"cameras":[{"camera_id":1,"model":"SIMPLE_RADIAL","width":1200,"height":800,"params":[1578.184253,600.0,400.0,0.006142],"has_prior_focal_length":false}],"focal_length_fixed_from_device_calibration":false},"scale":{"units":"arbitrary","source":"none","meters_per_unit":null,"relative_uncertainty":null,"note":"Photographs alone do not determine real-world size. Units are arbitrary (median camera-to-object distance = 1). Calibrate with a known distance to get real measurements."},"viewpoint_coverage":{"azimuth_bins":12,"elevation_edges_deg":[-90.0,20.0,50.0,90.0],"counts":[[0,0,0,0,0,0,5,2,0,0,0,0],[0,0,0,0,0,0,1,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0,0,0]],"azimuth_bins_covered":2,"bands_covered":2,"largest_azimuth_gap_deg":311.5,"azimuth_deg":[180.0,187.4,190.1,190.9,204.8,207.7,221.1,228.5],"elevation_deg":[-16.4,-16.7,-8.2,6.2,13.7,23.3,11.1,-1.3],"kind":"registered_viewpoints","note":"Where registered photos were taken from, around the object. This is viewpoint coverage \u2014 it does not prove the facing surface was reconstructed."}}}
+{"seq":41,"t":1794492177.656,"type":"stage_start","stage":"undistort","progress":0.0,"overall":0.22,"message":"Removing lens distortion","data":{"index":4,"count":9}}
+{"seq":42,"t":1794492177.656,"type":"stage_progress","stage":"undistort","progress":0.02,"overall":0.2204,"message":"Undistorting photos"}
+{"seq":43,"t":1794492177.746,"type":"stage_progress","stage":"undistort","progress":0.8,"overall":0.236,"message":"Building multi-view scene"}
+{"seq":44,"t":1794492177.821,"type":"stage_end","stage":"undistort","progress":1.0,"overall":0.24,"message":"","data":{"reused":false,"seconds":0.17,"skipped":false}}
+{"seq":45,"t":1794492177.821,"type":"stage_start","stage":"dense","progress":0.0,"overall":0.24,"message":"Starting dense depth maps","data":{"index":5,"count":9}}
+{"seq":46,"t":1794492180.384,"type":"stage_progress","stage":"dense","progress":0.0375,"overall":0.255,"message":"Depth maps: first pass 1/8"}
+{"seq":47,"t":1794492181.821,"type":"stage_progress","stage":"dense","progress":0.075,"overall":0.27,"message":"Depth maps: first pass 2/8"}
+{"seq":48,"t":1794492182.692,"type":"stage_progress","stage":"dense","progress":0.1125,"overall":0.285,"message":"Depth maps: first pass 3/8"}
+{"seq":49,"t":1794492183.733,"type":"stage_progress","stage":"dense","progress":0.15,"overall":0.3,"message":"Depth maps: first pass 4/8"}
+{"seq":50,"t":1794492184.744,"type":"stage_progress","stage":"dense","progress":0.1875,"overall":0.315,"message":"Depth maps: first pass 5/8"}
+{"seq":51,"t":1794492185.562,"type":"stage_progress","stage":"dense","progress":0.225,"overall":0.33,"message":"Depth maps: first pass 6/8"}
+{"seq":52,"t":1794492186.529,"type":"stage_progress","stage":"dense","progress":0.2625,"overall":0.345,"message":"Depth maps: first pass 7/8"}
+{"seq":53,"t":1794492186.529,"type":"stage_progress","stage":"dense","progress":0.3,"overall":0.36,"message":"Depth maps: first pass 8/8"}
+{"seq":54,"t":1794492187.004,"type":"stage_progress","stage":"dense","progress":0.335,"overall":0.374,"message":"Depth maps: consistency pass 1/2, 1/8"}
+{"seq":55,"t":1794492187.155,"type":"stage_progress","stage":"dense","progress":0.37,"overall":0.388,"message":"Depth maps: consistency pass 1/2, 2/8"}
+{"seq":56,"t":1794492187.386,"type":"stage_progress","stage":"dense","progress":0.405,"overall":0.402,"message":"Depth maps: consistency pass 1/2, 3/8"}
+{"seq":57,"t":1794492187.649,"type":"stage_progress","stage":"dense","progress":0.44,"overall":0.416,"message":"Depth maps: consistency pass 1/2, 4/8"}
+{"seq":58,"t":1794492187.77,"type":"stage_progress","stage":"dense","progress":0.475,"overall":0.43,"message":"Depth maps: consistency pass 1/2, 5/8"}
+{"seq":59,"t":1794492187.942,"type":"stage_progress","stage":"dense","progress":0.51,"overall":0.444,"message":"Depth maps: consistency pass 1/2, 6/8"}
+{"seq":60,"t":1794492188.134,"type":"stage_progress","stage":"dense","progress":0.545,"overall":0.458,"message":"Depth maps: consistency pass 1/2, 7/8"}
+{"seq":61,"t":1794492188.135,"type":"stage_progress","stage":"dense","progress":0.58,"overall":0.472,"message":"Depth maps: consistency pass 1/2, 8/8"}
+{"seq":62,"t":1794492188.62,"type":"stage_progress","stage":"dense","progress":0.615,"overall":0.486,"message":"Depth maps: consistency pass 2/2, 1/8"}
+{"seq":63,"t":1794492188.74,"type":"stage_progress","stage":"dense","progress":0.65,"overall":0.5,"message":"Depth maps: consistency pass 2/2, 2/8"}
+{"seq":64,"t":1794492188.942,"type":"stage_progress","stage":"dense","progress":0.685,"overall":0.514,"message":"Depth maps: consistency pass 2/2, 3/8"}
+{"seq":65,"t":1794492189.157,"type":"stage_progress","stage":"dense","progress":0.72,"overall":0.528,"message":"Depth maps: consistency pass 2/2, 4/8"}
+{"seq":66,"t":1794492189.278,"type":"stage_progress","stage":"dense","progress":0.755,"overall":0.542,"message":"Depth maps: consistency pass 2/2, 5/8"}
+{"seq":67,"t":1794492189.448,"type":"stage_progress","stage":"dense","progress":0.79,"overall":0.556,"message":"Depth maps: consistency pass 2/2, 6/8"}
+{"seq":68,"t":1794492189.614,"type":"stage_progress","stage":"dense","progress":0.825,"overall":0.57,"message":"Depth maps: consistency pass 2/2, 7/8"}
+{"seq":69,"t":1794492189.614,"type":"stage_progress","stage":"dense","progress":0.86,"overall":0.584,"message":"Depth maps: consistency pass 2/2, 8/8"}
+{"seq":70,"t":1794492189.784,"type":"stage_progress","stage":"dense","progress":0.9,"overall":0.6,"message":"Filtering depth maps"}
+{"seq":71,"t":1794492189.784,"type":"stage_progress","stage":"dense","progress":0.97,"overall":0.628,"message":"Fusing depth maps into points"}
+{"seq":72,"t":1794492189.785,"type":"stage_progress","stage":"dense","progress":0.99,"overall":0.636,"message":"Fused 100,626 dense points"}
+{"seq":73,"t":1794492189.842,"type":"stage_end","stage":"dense","progress":1.0,"overall":0.64,"message":"","data":{"reused":false,"seconds":12.02,"skipped":false}}
+{"seq":74,"t":1794492189.842,"type":"diagnostics","stage":"dense","progress":0.0,"overall":0.64,"message":"","data":{"dense":{"dense_points":100626,"depth_maps":8,"depth_map_max_side":800}}}
+{"seq":75,"t":1794492189.842,"type":"stage_start","stage":"mesh","progress":0.0,"overall":0.64,"message":"Building surface","data":{"index":6,"count":9}}
+{"seq":76,"t":1794492189.863,"type":"stage_progress","stage":"mesh","progress":0.0375,"overall":0.6438,"message":"Dense points loaded"}
+{"seq":77,"t":1794492190.06,"type":"stage_progress","stage":"mesh","progress":0.1509,"overall":0.6551,"message":"Tetrahedralising dense points"}
+{"seq":78,"t":1794492190.066,"type":"stage_progress","stage":"mesh","progress":0.225,"overall":0.6625,"message":"Tetrahedralising dense points"}
+{"seq":79,"t":1794492190.221,"type":"stage_progress","stage":"mesh","progress":0.4843,"overall":0.6884,"message":"Weighting visibility"}
+{"seq":80,"t":1794492190.311,"type":"stage_progress","stage":"mesh","progress":0.615,"overall":0.7015,"message":"Surface extracted"}
+{"seq":81,"t":1794492190.39,"type":"stage_progress","stage":"mesh","progress":0.69,"overall":0.709,"message":"Cleaning mesh"}
+{"seq":82,"t":1794492190.471,"type":"stage_progress","stage":"mesh","progress":0.7425,"overall":0.7142,"message":"Mesh saved"}
+{"seq":83,"t":1794492190.649,"type":"stage_progress","stage":"mesh","progress":0.775,"overall":0.7175,"message":"Analysing dense points"}
+{"seq":84,"t":1794492190.669,"type":"stage_progress","stage":"mesh","progress":0.825,"overall":0.7225,"message":"Separating object from surroundings"}
+{"seq":85,"t":1794492190.697,"type":"stage_progress","stage":"mesh","progress":0.875,"overall":0.7275,"message":"Checking photographic support"}
+{"seq":86,"t":1794492190.727,"type":"stage_progress","stage":"mesh","progress":0.925,"overall":0.7325,"message":"Simplifying to triangle budget"}
+{"seq":87,"t":1794492190.752,"type":"stage_progress","stage":"mesh","progress":1.0,"overall":0.74,"message":"Mesh cleaned"}
+{"seq":88,"t":1794492190.766,"type":"stage_end","stage":"mesh","progress":1.0,"overall":0.74,"message":"","data":{"reused":false,"seconds":0.92,"skipped":false}}
+{"seq":89,"t":1794492190.767,"type":"stage_start","stage":"texture","progress":0.0,"overall":0.74,"message":"Texturing","data":{"index":7,"count":9}}
+{"seq":90,"t":1794492190.767,"type":"stage_progress","stage":"texture","progress":0.01,"overall":0.7422,"message":"Texturing"}
+{"seq":91,"t":1794492191.257,"type":"stage_progress","stage":"texture","progress":0.25,"overall":0.795,"message":"Projecting photos onto the surface"}
+{"seq":92,"t":1794492191.257,"type":"stage_progress","stage":"texture","progress":0.8,"overall":0.916,"message":"Building texture atlas"}
+{"seq":93,"t":1794492191.386,"type":"stage_progress","stage":"texture","progress":0.95,"overall":0.949,"message":"Texture atlas built"}
+{"seq":94,"t":1794492191.387,"type":"stage_progress","stage":"texture","progress":0.97,"overall":0.9534,"message":"Texture done"}
+{"seq":95,"t":1794492191.433,"type":"stage_progress","stage":"texture","progress":0.99,"overall":0.9578,"message":"Textured mesh saved"}
+{"seq":96,"t":1794492191.494,"type":"stage_end","stage":"texture","progress":1.0,"overall":0.96,"message":"","data":{"reused":false,"seconds":0.73,"skipped":false}}
+{"seq":97,"t":1794492191.494,"type":"stage_start","stage":"package","progress":0.0,"overall":0.96,"message":"Packaging model","data":{"index":8,"count":9}}
+{"seq":98,"t":1794492191.494,"type":"stage_progress","stage":"package","progress":0.05,"overall":0.962,"message":"Reading textured mesh"}
+{"seq":99,"t":1794492191.598,"type":"stage_progress","stage":"package","progress":0.2,"overall":0.968,"message":"Measuring photographic support"}
+{"seq":100,"t":1794492191.633,"type":"stage_progress","stage":"package","progress":0.6,"overall":0.984,"message":"Writing model"}
+{"seq":101,"t":1794492191.708,"type":"stage_progress","stage":"package","progress":0.95,"overall":0.998,"message":"Model written"}
+{"seq":102,"t":1794492191.71,"type":"stage_end","stage":"package","progress":1.0,"overall":1.0,"message":"","data":{"seconds":0.22,"skipped":false}}
+{"seq":103,"t":1794492191.711,"type":"artifact","stage":"package","progress":0.0,"overall":1.0,"message":"model.glb","data":{"name":"model.glb","size":1616440,"sha256":"aa55efb02c72fbafc90bcfdb6a10d31dad89fdb6b08e378613099802ded1182f","kind":"model"}}
+{"seq":104,"t":1794492191.711,"type":"artifact","stage":"package","progress":0.0,"overall":1.0,"message":"cameras.json","data":{"name":"cameras.json","size":3333,"sha256":"008a0b6f6ae75b95d30c1b81d0af029164a2ccdf22986546979256660fe98b84","kind":"cameras"}}
+{"seq":105,"t":1794492191.711,"type":"artifact","stage":"package","progress":0.0,"overall":1.0,"message":"diagnostics.json","data":{"name":"diagnostics.json","size":6821,"sha256":"aec779e7d7730a432b4b6ed6c0a7396db901901cf2fd87c7469fc969b905056f","kind":"diagnostics"}}
+{"seq":106,"t":1794492191.711,"type":"diagnostics","stage":"package","progress":0.0,"overall":1.0,"message":"","data":{"mesh":{"vertices":23872,"welded_vertices":20868,"faces":41261,"surface_area":0.148581,"bbox_min":[-0.193315,-0.185751,-0.129144],"bbox_max":[0.201427,0.082716,0.251332],"boundary":{"boundary_edges":493,"boundary_loops":13,"boundary_length":6.09396},"winding_flipped_for_consistency":false,"object_region":{"faces":30409,"surface_area":0.096961,"well_supported_area_fraction":0.6952,"weak_area_fraction":0.1183,"unsupported_area_fraction":0.1866,"boundary":{"boundary_edges":309,"boundary_loops":15,"boundary_length":3.68373,"cut_edges_excluded":280},"size":[0.438732,0.20743,0.427056]},"views_per_vertex_median":7.0,"untextured_area_fraction":0.1369},"texture":{"pages":[{"width":1024,"height":1024,"bytes":258650,"format":"jpeg"}]},"surface_coverage":{"azimuth_bins":12,"bands":["facing_down","sideways","facing_up"],"supported_area_fraction":[[0.01065,0.02226,0.00721,0.00454,0.0008,1e-05,0.0,3e-05,1e-05,1e-05,1e-05,6e-05],[0.19014,0.11359,0.04493,0.02838,0.03821,0.0186,0.00068,5e-05,0.0,2e-05,0.007,0.02948],[0.03118,0.01799,0.01196,0.00947,0.01798,0.02324,0.0073,0.00364,0.00575,0.00666,0.01222,0.03108]],"weak_area_fraction":[[0.00824,0.00434,0.00216,0.00145,0.00319,0.00252,0.00926,0.00371,0.03245,0.0019,0.00639,0.00546],[0.01349,0.00878,0.00658,0.00733,0.01506,0.0412,0.02606,0.01134,0.00584,0.00253,0.01512,0.02692],[0.00069,0.00124,0.00057,0.00169,0.00286,0.00523,0.01291,0.00235,0.00347,0.0039,0.00693,0.00168]],"sideways_bins_supported":7,"kind":"verified_surface","note":"Share of the object-region surface area with photographic support, by the direction the surface faces. Derived from the reconstructed mesh and its evidence."},"timings_s":{"ingest":0.02,"features":1.32,"matching":0.33,"sfm":0.16,"undistort":0.17,"dense":12.02,"mesh":0.92,"texture":0.73,"package":0.22,"total":15.89},"peak_rss_mb_by_stage":{"ingest":0.0,"features":1617.9,"matching":484.8,"sfm":0.0,"undistort":0.0,"dense":746.4,"mesh":576.6,"texture":698.6,"package":0.0},"mesh_cleanup":{"raw_faces":57158,"faces_in_region":41814,"unsupported_faces_removed":533,"unsupported_area_fraction":0.4165,"stray_components_removed":1,"stray_faces_removed":20,"decimated":false,"nonmanifold_vertices_split":21,"faces":41261,"vertices":20868,"min_point_distance_px":2.5},"warnings":[{"code":"no_focal_prior","message":"Some photos have no usable focal-length metadata (missing, or present but not trusted because the file may have been resized after capture); the focal length is estimated from the images alone, which is less reliable."},{"code":"unregistered_frames","message":"4 of 12 photos could not be registered and do not contribute to the model."},{"code":"few_photos","message":"Only 8 photos are registered. Small sets leave gaps and make the camera solution fragile; 30\u201380 overlapping photos are recommended."},{"code":"coverage_gap","message":"No registered photo covers a 312\u00b0 sector around the object; the surface facing that side is likely missing."}]}}

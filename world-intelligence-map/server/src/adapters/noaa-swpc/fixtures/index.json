@@ -1,0 +1,16 @@
+{
+  "capturedAt": "2026-11-10T17:49:45Z",
+  "notes": "Both files were captured from the live services.swpc.noaa.gov on 2026-11-10. ovation_aurora_latest.json (920 KB, 65,160 cells) was trimmed to two contiguous latitude bands that contain both auroral ovals – 60°N…80°N and 88°S…48°S, all 360 longitudes, 22,320 cells, values untouched – and re-serialised compactly with the envelope (Observation Time, Forecast Time, Data Format, type) intact. Snapshot fixture: Observation Time was re-timed from 2026-11-10T17:43:00Z to 2026-11-10T23:52:00Z (eight minutes before the fixture epoch) and Forecast Time by the same offset from 18:26:00Z to 2026-11-11T00:35:00Z – the forecast's valid time is by nature 43 minutes after the observation and therefore falls after the epoch; the adapter uses the Observation Time as the record time. Geomagnetic activity was low at capture (maximum probability 21 %). alerts.json is the complete, unmodified capture (69 messages from 2026-10-11 to 2026-11-10 05:01 UTC, 21 of them within the 7 days before the epoch); no re-timing was needed. The two malformed variants were authored by hand.",
+  "routes": [
+    {
+      "match": "/json/ovation_aurora_latest.json",
+      "file": "ovation_aurora_latest.json",
+      "variants": { "malformed": "ovation_aurora_latest.malformed.json" }
+    },
+    {
+      "match": "/products/alerts.json",
+      "file": "alerts.json",
+      "variants": { "malformed": "alerts.malformed.json" }
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+file            status     reasons           warnings  inl   scale  gain  zncc  resPx  pairs  via                 mask  sigma
+closeup_01.jpg  uncertain  ambiguous_repeat            39    0      0     -1    0      None                       0     1.02 
+closeup_02.jpg  uncertain  ambiguous_repeat            12    0      0     -1    0      None                       0     1.03 
+closeup_03.jpg  accepted                               971   2.89   2.73  1.0   0.0    0      overview(landmark)  0.0   1.02 
+closeup_04.jpg  uncertain  ambiguous_repeat            20    0      0     -1    0      None                       0     1.02 
+closeup_05.jpg  uncertain  ambiguous_repeat            64    0      0     -1    0      None                       0     1.02 
+closeup_06.jpg  uncertain  ambiguous_repeat            59    0      0     -1    0      None                       0     1.03 
+closeup_07.jpg  accepted                               1079  3.06   2.86  1.0   0.0    0      overview(landmark)  0.0   1.02 
+closeup_08.jpg  uncertain  ambiguous_repeat            34    0      0     -1    0      None                       0     1.02 
+closeup_09.jpg  uncertain  ambiguous_repeat            34    0      0     -1    0      None                       0     1.02 

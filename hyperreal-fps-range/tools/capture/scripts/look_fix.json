@@ -1,0 +1,19 @@
+[
+ {"wait": 2.5, "do": "screenshot", "name": "spawn"},
+ {"wait": 0.2, "do": "look", "yaw": 150, "pitch": 5, "dur": 0.4},
+ {"wait": 0.8, "do": "screenshot", "name": "back"},
+ {"wait": 0.2, "do": "look", "yaw": -150, "pitch": -65, "dur": 0.4},
+ {"wait": 0.8, "do": "screenshot", "name": "down_bay"},
+ {"wait": 0.2, "do": "look", "yaw": 0, "pitch": 60, "dur": 0.3},
+ {"wait": 0.3, "do": "press", "action": "aim"},
+ {"wait": 0.9, "do": "screenshot", "name": "ads_bay"},
+ {"wait": 0.2, "do": "release", "action": "aim"},
+ {"wait": 0.3, "do": "teleport", "x": 6.4, "z": 1.8, "yaw": 0},
+ {"wait": 1.5, "do": "look", "yaw": -35, "pitch": -45, "dur": 0.3},
+ {"wait": 0.8, "do": "screenshot", "name": "down_pad_shadow"},
+ {"wait": 0.2, "do": "look", "yaw": 35, "pitch": 45, "dur": 0.3},
+ {"wait": 0.8, "do": "screenshot", "name": "pad"},
+ {"wait": 0.2, "do": "teleport", "x": 2.0, "z": -9.0, "yaw": 180},
+ {"wait": 1.2, "do": "screenshot", "name": "bay_from_downrange"},
+ {"wait": 0.2, "do": "quit"}
+]

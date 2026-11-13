@@ -1,0 +1,11 @@
+{
+  "capturedAt": "2026-11-10T17:49:00Z",
+  "notes": "CurrentStorms.json is the unmodified live file (one active storm, Tropical Storm Pena in the Central Pacific, advisory 16). Variants: 'empty' is the documented no-active-storms document {\"activeStorms\": []}; 'nhc-sample-2023' is NHC's own published example file https://www.nhc.noaa.gov/productexamples/NHC_JSON_Sample.json (four storms from August 2023), unmodified; 'malformed' was authored by hand from the documented schema.",
+  "routes": [
+    {
+      "match": "/CurrentStorms.json",
+      "file": "CurrentStorms.json",
+      "variants": { "malformed": "CurrentStorms.malformed.json", "empty": "CurrentStorms.empty.json", "nhc-sample-2023": "CurrentStorms.nhc-sample-2023.json" }
+    }
+  ]
+}

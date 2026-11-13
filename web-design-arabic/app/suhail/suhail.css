@@ -1,0 +1,1332 @@
+/* مرصد سُهيل — ليل عميق، خطوط كوفية، وتفاصيل نحاسية. */
+
+.sh-root {
+  --night: #060914;
+  --night-2: #0a0f26;
+  --panel: rgb(255 255 255 / 0.035);
+  --line: rgb(226 228 255 / 0.14);
+  --line-strong: rgb(226 228 255 / 0.28);
+  --text: #e9e9f4;
+  --soft: #b4b7d3;
+  --muted: #8387a8;
+  --gold: #e6c27a;
+  --gold-deep: #c79a4b;
+  --kufi: var(--font-kufi), "Reem Kufi", sans-serif;
+  --sans: var(--font-plex-arabic), "IBM Plex Sans Arabic", system-ui, sans-serif;
+  --mono: var(--font-plex-mono), ui-monospace, "SFMono-Regular", Menlo, monospace;
+
+  position: relative;
+  min-height: 100dvh;
+  overflow-x: clip;
+  background: var(--night);
+  color: var(--text);
+  font-family: var(--sans);
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 1.9;
+}
+
+.sh-root ::selection {
+  background: var(--gold);
+  color: var(--night);
+}
+
+.sh-root a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.sh-root :focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 4px;
+  border-radius: 4px;
+}
+
+.sh-root [dir="ltr"],
+.sh-num {
+  font-family: var(--mono);
+  unicode-bidi: isolate;
+}
+
+.sh-wrap {
+  width: min(100% - clamp(40px, 8vw, 128px), 1240px);
+  margin-inline: auto;
+}
+
+/* ——— الأزرار ——— */
+
+.sh-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 11px 30px 13px;
+  border-radius: 999px;
+  background: var(--gold);
+  color: #17120a !important;
+  font-family: var(--kufi);
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.5;
+  word-spacing: 0.14em;
+  cursor: pointer;
+  box-shadow: 0 0 0 0 rgb(230 194 122 / 0.4);
+  transition:
+    box-shadow 0.35s,
+    background 0.25s,
+    transform 0.25s;
+}
+
+.sh-btn:hover {
+  background: #f3d596;
+  box-shadow: 0 0 0 7px rgb(230 194 122 / 0.14);
+}
+
+.sh-btn:active {
+  transform: scale(0.98);
+}
+
+.sh-btn-small {
+  padding: 6px 22px 8px;
+  font-size: 16px;
+}
+
+.sh-link {
+  display: inline-flex;
+  gap: 10px;
+  padding-block: 4px;
+  border-bottom: 1px solid var(--line-strong);
+  font-weight: 400;
+  transition:
+    color 0.25s,
+    border-color 0.25s;
+}
+
+.sh-link span,
+.sh-card-foot a span {
+  transition: transform 0.3s;
+}
+
+.sh-link:hover {
+  color: var(--gold);
+  border-color: var(--gold);
+}
+
+.sh-link:hover span,
+.sh-card-foot a:hover span {
+  transform: translateX(-5px);
+}
+
+/* ——— الشريط العلوي ——— */
+
+.sh-nav {
+  position: absolute;
+  inset: 0 0 auto;
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 22px clamp(20px, 4vw, 64px);
+}
+
+.sh-logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  font-family: var(--kufi);
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 1.4;
+}
+
+.sh-mark {
+  width: 30px;
+  height: 30px;
+  color: var(--gold);
+}
+
+.sh-nav nav {
+  display: flex;
+  gap: clamp(18px, 2.6vw, 40px);
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--soft);
+}
+
+.sh-nav nav a {
+  position: relative;
+  padding-block: 4px;
+  transition: color 0.25s;
+}
+
+.sh-nav nav a::after {
+  content: "";
+  position: absolute;
+  inset: auto 50% -4px auto;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: var(--gold);
+  opacity: 0;
+  transform: translate(-50%, -4px);
+  transition:
+    opacity 0.25s,
+    transform 0.25s;
+}
+
+.sh-nav nav a:hover {
+  color: var(--text);
+}
+
+.sh-nav nav a:hover::after {
+  opacity: 1;
+  transform: translate(-50%, 0);
+}
+
+/* ——— الواجهة ——— */
+
+.sh-hero {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: max(100dvh, 720px);
+  padding: 120px clamp(20px, 4vw, 64px) 210px;
+  overflow: hidden;
+  isolation: isolate;
+  background:
+    radial-gradient(90% 46% at 50% 100%, rgb(214 137 84 / 0.2) 0%, transparent 70%),
+    radial-gradient(120% 70% at 50% 100%, #1c1d52 0%, transparent 62%),
+    linear-gradient(180deg, #04060f 0%, #070b1e 45%, #0d1236 100%);
+}
+
+.sh-stars {
+  position: absolute;
+  inset: 0;
+  z-index: -3;
+  width: 100%;
+  height: 100%;
+}
+
+.sh-tw {
+  animation: sh-twinkle 4.5s ease-in-out infinite;
+}
+
+.sh-tw1 {
+  animation-duration: 6.5s;
+  animation-delay: -2s;
+}
+
+.sh-tw2 {
+  animation-duration: 3.4s;
+  animation-delay: -1.2s;
+}
+
+@keyframes sh-twinkle {
+  50% {
+    opacity: 0.12;
+  }
+}
+
+.sh-milky {
+  position: absolute;
+  z-index: -3;
+  inset: -30% -10%;
+  background:
+    radial-gradient(42% 9% at 50% 50%, rgb(190 200 255 / 0.13), transparent 70%),
+    radial-gradient(60% 16% at 46% 52%, rgb(150 140 230 / 0.09), transparent 72%);
+  transform: rotate(-28deg);
+  filter: blur(6px);
+}
+
+.sh-astrolabe {
+  position: absolute;
+  z-index: -2;
+  inset-inline-end: clamp(-360px, -16vw, -140px);
+  top: 50%;
+  width: clamp(560px, 62vw, 980px);
+  height: auto;
+  translate: 0 -54%;
+  fill: none;
+  stroke: var(--gold);
+  stroke-width: 1;
+  opacity: 0.5;
+  -webkit-mask-image: radial-gradient(closest-side, #000 62%, rgb(0 0 0 / 0.55) 100%);
+  mask-image: radial-gradient(closest-side, #000 62%, rgb(0 0 0 / 0.55) 100%);
+}
+
+.sh-astro-outer,
+.sh-astro-rete {
+  transform-origin: 400px 400px;
+}
+
+.sh-astro-outer {
+  animation: sh-spin 420s linear infinite;
+}
+
+.sh-astro-rete {
+  stroke: #cfd4ff;
+  opacity: 0.75;
+  animation: sh-spin 260s linear infinite reverse;
+}
+
+.sh-astro-ticks {
+  opacity: 0.8;
+}
+
+.sh-astro-outer text {
+  fill: var(--gold);
+  stroke: none;
+  font-family: var(--kufi);
+  font-size: 19px;
+}
+
+.sh-astro-dot {
+  fill: var(--gold);
+  stroke: none;
+}
+
+@keyframes sh-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.sh-hero-copy {
+  max-width: 760px;
+}
+
+.sh-eyebrow {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px 14px;
+  font-size: 15px;
+  font-weight: 400;
+  color: var(--soft);
+}
+
+.sh-eyebrow span {
+  padding: 1px 10px;
+  border: 1px solid rgb(230 194 122 / 0.5);
+  border-radius: 999px;
+  color: var(--gold);
+  font-size: 13px;
+}
+
+.sh-hero h1 {
+  margin-block: 18px 22px;
+  font-family: var(--kufi);
+  font-weight: 500;
+  font-size: clamp(50px, 8.4vw, 128px);
+  line-height: 1.22;
+}
+
+.sh-hero h1 em {
+  font-style: normal;
+  color: var(--gold);
+}
+
+.sh-hero-lede {
+  max-width: 30em;
+  font-size: clamp(18px, 1.6vw, 22px);
+  line-height: 1.9;
+  color: var(--soft);
+}
+
+.sh-hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 16px 32px;
+  margin-top: 36px;
+}
+
+.sh-canopus {
+  position: absolute;
+  z-index: -1;
+  inset-inline-start: 57%;
+  bottom: 236px;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.sh-canopus i {
+  position: relative;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: #fff6de;
+  box-shadow:
+    0 0 0 5px rgb(230 194 122 / 0.16),
+    0 0 26px 9px rgb(230 194 122 / 0.6),
+    0 0 80px 30px rgb(230 194 122 / 0.18);
+  animation: sh-pulse 5s ease-in-out infinite;
+}
+
+.sh-canopus i::before,
+.sh-canopus i::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 76px;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgb(255 240 205 / 0.9), transparent);
+  translate: -50% -50%;
+}
+
+.sh-canopus i::after {
+  rotate: 90deg;
+}
+
+@keyframes sh-pulse {
+  50% {
+    box-shadow:
+      0 0 0 7px rgb(230 194 122 / 0.1),
+      0 0 34px 12px rgb(230 194 122 / 0.75),
+      0 0 100px 40px rgb(230 194 122 / 0.22);
+  }
+}
+
+.sh-canopus span {
+  display: grid;
+  padding-inline-start: 16px;
+  border-inline-start: 1px solid rgb(230 194 122 / 0.5);
+  font-family: var(--kufi);
+  font-size: 19px;
+  line-height: 1.5;
+  color: var(--gold);
+}
+
+.sh-canopus small {
+  font-size: 11.5px;
+  color: var(--muted);
+}
+
+.sh-dunes {
+  position: absolute;
+  z-index: -1;
+  inset: auto 0 0;
+  width: 100%;
+  height: clamp(170px, 24vh, 260px);
+}
+
+.sh-facts {
+  position: absolute;
+  inset: auto clamp(20px, 4vw, 64px) 30px;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  border-top: 1px solid var(--line);
+}
+
+.sh-facts div {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 2px;
+  padding: 16px clamp(12px, 2vw, 28px) 0;
+  border-inline-start: 1px solid var(--line);
+}
+
+.sh-facts div:first-child {
+  padding-inline-start: 0;
+  border-inline-start: 0;
+}
+
+.sh-facts dt {
+  font-size: 14px;
+  color: var(--muted);
+}
+
+.sh-facts dd {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 2px 10px;
+  font-size: clamp(22px, 2.3vw, 32px);
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+.sh-facts dd span {
+  font-weight: 400;
+}
+
+.sh-facts small {
+  font-size: 0.5em;
+  color: var(--gold);
+}
+
+/* ——— عناوين الأقسام ——— */
+
+.sh-index {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 15px;
+  font-weight: 400;
+  color: var(--gold);
+}
+
+.sh-index span {
+  font-size: 12.5px;
+  color: var(--muted);
+}
+
+.sh-index::after {
+  content: "";
+  width: 44px;
+  height: 1px;
+  background: rgb(230 194 122 / 0.5);
+}
+
+.sh-head {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 26em);
+  align-items: end;
+  gap: 10px clamp(32px, 6vw, 96px);
+  margin-bottom: clamp(36px, 5vw, 64px);
+}
+
+.sh-head .sh-index {
+  grid-column: 1 / -1;
+  justify-self: start;
+}
+
+.sh-head h2 {
+  font-family: var(--kufi);
+  font-weight: 500;
+  font-size: clamp(36px, 5vw, 68px);
+  line-height: 1.35;
+}
+
+.sh-head h2 .sh-num {
+  font-size: 0.72em;
+  color: var(--gold);
+}
+
+.sh-head > p:last-child {
+  padding-bottom: 0.6em;
+  color: var(--soft);
+}
+
+/* ——— عن المرصد ——— */
+
+.sh-about {
+  padding-block: clamp(72px, 10vw, 150px) clamp(64px, 8vw, 120px);
+}
+
+.sh-statement {
+  max-width: 17em;
+  margin-top: 20px;
+  font-family: var(--kufi);
+  font-weight: 400;
+  font-size: clamp(32px, 5vw, 70px);
+  line-height: 1.5;
+  text-wrap: balance;
+}
+
+.sh-statement span {
+  color: var(--gold);
+}
+
+.sh-about-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: clamp(32px, 6vw, 96px);
+  margin-top: clamp(40px, 6vw, 84px);
+  padding-top: clamp(32px, 4vw, 56px);
+  border-top: 1px solid var(--line);
+}
+
+.sh-about-text {
+  display: grid;
+  align-content: start;
+  gap: 1.1em;
+  font-size: clamp(17px, 1.4vw, 19.5px);
+  color: var(--soft);
+}
+
+.sh-saying {
+  position: relative;
+  margin: 0;
+  padding: clamp(24px, 3vw, 40px);
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background:
+    radial-gradient(90% 120% at 0% 0%, rgb(230 194 122 / 0.09), transparent 60%),
+    var(--panel);
+}
+
+.sh-saying blockquote {
+  font-family: var(--kufi);
+  font-weight: 500;
+  font-size: clamp(27px, 3vw, 42px);
+  line-height: 1.6;
+  color: var(--gold);
+}
+
+.sh-saying figcaption {
+  margin-top: 22px;
+  padding-top: 18px;
+  border-top: 1px solid var(--line);
+  font-size: 15.5px;
+  color: var(--soft);
+}
+
+.sh-saying strong {
+  display: block;
+  font-weight: 500;
+  color: var(--text);
+}
+
+/* ——— خريطة النجوم ——— */
+
+.sh-sky {
+  padding-block: clamp(64px, 8vw, 120px);
+  background:
+    radial-gradient(60% 50% at 78% 50%, rgb(60 70 170 / 0.2), transparent 70%),
+    linear-gradient(180deg, var(--night) 0%, var(--night-2) 18%, var(--night-2) 82%, var(--night) 100%);
+  border-block: 1px solid var(--line);
+  scroll-margin-top: 0;
+}
+
+.sh-chart {
+  display: grid;
+  grid-template-columns: minmax(0, 1.08fr) minmax(0, 1fr);
+  gap: clamp(28px, 5vw, 72px);
+  align-items: start;
+}
+
+.sh-chart-map svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  overflow: visible;
+}
+
+.sh-chart-grid line {
+  stroke: rgb(207 216 255 / 0.09);
+  stroke-width: 1;
+}
+
+.sh-chart-grid .sh-chart-equator {
+  stroke: rgb(230 194 122 / 0.3);
+  stroke-dasharray: 2 6;
+}
+
+.sh-chart-figure line {
+  stroke: rgb(207 216 255 / 0.5);
+  stroke-width: 1.1;
+}
+
+.sh-chart-pointer {
+  stroke: rgb(230 194 122 / 0.55);
+  stroke-width: 1;
+  stroke-dasharray: 1 7;
+  stroke-linecap: round;
+}
+
+.sh-chart-rim {
+  fill: none;
+  stroke: rgb(230 194 122 / 0.55);
+  stroke-width: 1;
+}
+
+.sh-chart-rim-outer {
+  stroke: rgb(230 194 122 / 0.25);
+  stroke-dasharray: 1 5;
+}
+
+.sh-chart-compass {
+  fill: var(--muted);
+  font-family: var(--sans);
+  font-size: 12.5px;
+  text-anchor: middle;
+}
+
+.sh-star {
+  cursor: pointer;
+}
+
+.sh-star text {
+  fill: #c3c7e4;
+  font-family: var(--kufi);
+  font-size: 16.5px;
+  transition: fill 0.25s;
+  paint-order: stroke;
+  stroke: #0b1130;
+  stroke-width: 5px;
+  stroke-linejoin: round;
+}
+
+.sh-star-on text {
+  fill: var(--gold);
+}
+
+.sh-star-ring {
+  fill: none;
+  stroke: var(--gold);
+  stroke-width: 1.2;
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: sh-ring 0.5s cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+
+@keyframes sh-ring {
+  from {
+    opacity: 0;
+    transform: scale(2.2);
+  }
+}
+
+.sh-chart-caption {
+  max-width: 34em;
+  margin: 18px auto 0;
+  font-size: 14.5px;
+  line-height: 1.8;
+  text-align: center;
+  color: var(--muted);
+}
+
+.sh-chart-side {
+  display: grid;
+  gap: 22px;
+}
+
+.sh-chart-list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.sh-chart-list button {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  column-gap: 10px;
+  width: 100%;
+  height: 100%;
+  padding: 10px 14px 11px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--panel);
+  color: var(--soft);
+  text-align: start;
+  line-height: 1.5;
+  cursor: pointer;
+  transition:
+    border-color 0.25s,
+    background 0.25s,
+    color 0.25s;
+}
+
+.sh-chart-list i {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  box-shadow: 0 0 10px 1px currentColor;
+}
+
+.sh-chart-list button span:first-of-type {
+  font-family: var(--kufi);
+  font-size: 17px;
+}
+
+.sh-chart-list button span:last-of-type {
+  grid-column: 2;
+  font-size: 11.5px;
+  color: var(--muted);
+  text-align: right;
+}
+
+.sh-chart-list button:hover,
+.sh-chart-list button[aria-pressed="true"] {
+  border-color: rgb(230 194 122 / 0.7);
+  background: rgb(230 194 122 / 0.08);
+  color: var(--gold);
+}
+
+.sh-chart-card {
+  padding: clamp(22px, 2.6vw, 34px);
+  border: 1px solid var(--line-strong);
+  border-radius: 18px;
+  background:
+    radial-gradient(80% 100% at 100% 0%, rgb(230 194 122 / 0.1), transparent 60%),
+    rgb(8 12 34 / 0.7);
+}
+
+.sh-chart-card header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 4px 16px;
+}
+
+.sh-chart-card h3 {
+  font-family: var(--kufi);
+  font-weight: 500;
+  font-size: clamp(30px, 3.2vw, 44px);
+  line-height: 1.4;
+  color: var(--gold);
+}
+
+.sh-chart-card header p {
+  font-size: 14px;
+  color: var(--muted);
+}
+
+.sh-chart-note {
+  min-height: 5.7em;
+  margin-top: 10px;
+  color: var(--soft);
+}
+
+.sh-chart-card dl {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin-top: 20px;
+  border-top: 1px solid var(--line);
+}
+
+.sh-chart-card dl div {
+  display: grid;
+  align-content: start;
+  gap: 2px;
+  padding: 16px 16px 0;
+  border-inline-start: 1px solid var(--line);
+}
+
+.sh-chart-card dl div:first-child {
+  padding-inline-start: 0;
+  border-inline-start: 0;
+}
+
+.sh-chart-card dt {
+  font-size: 13.5px;
+  line-height: 1.6;
+  color: var(--muted);
+}
+
+.sh-chart-card dd {
+  font-size: clamp(21px, 2vw, 27px);
+  line-height: 1.5;
+  text-align: right;
+}
+
+.sh-chart-card .sh-chart-kind {
+  font-family: var(--kufi);
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+/* ——— الليالي ——— */
+
+.sh-nights {
+  padding-block: clamp(72px, 9vw, 136px) clamp(56px, 7vw, 104px);
+}
+
+.sh-cards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(14px, 1.6vw, 22px);
+}
+
+.sh-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: clamp(22px, 2.4vw, 34px);
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background: var(--panel);
+  transition:
+    border-color 0.3s,
+    transform 0.4s cubic-bezier(0.2, 0.7, 0.2, 1),
+    background 0.3s;
+}
+
+.sh-card:hover {
+  border-color: rgb(230 194 122 / 0.55);
+  transform: translateY(-5px);
+}
+
+.sh-card-featured {
+  border-color: rgb(230 194 122 / 0.5);
+  background:
+    radial-gradient(100% 70% at 50% 0%, rgb(230 194 122 / 0.13), transparent 70%),
+    var(--panel);
+}
+
+.sh-card-no {
+  font-size: 13px;
+  color: var(--muted);
+  text-align: right;
+}
+
+.sh-card-flag {
+  position: absolute;
+  top: clamp(20px, 2.2vw, 30px);
+  inset-inline-end: clamp(22px, 2.4vw, 34px);
+  padding: 0 12px 1px;
+  border-radius: 999px;
+  background: var(--gold);
+  color: #17120a;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.sh-card h3,
+.sh-events h3,
+.sh-chart-kind,
+.sh-logo,
+.sh-card-foot a {
+  word-spacing: 0.12em;
+}
+
+.sh-card h3 {
+  margin-block: 34px 10px;
+  font-family: var(--kufi);
+  font-weight: 500;
+  font-size: clamp(27px, 2.6vw, 36px);
+  line-height: 1.4;
+}
+
+.sh-card-text {
+  flex: 1;
+  font-size: 16px;
+  color: var(--soft);
+}
+
+.sh-card-meta {
+  display: grid;
+  gap: 4px;
+  margin-top: 22px;
+  padding-top: 18px;
+  border-top: 1px solid var(--line);
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.sh-card-meta li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.sh-card-meta li::before {
+  content: "";
+  width: 5px;
+  height: 5px;
+  rotate: 45deg;
+  background: var(--gold);
+}
+
+.sh-card-foot {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 16px;
+  margin-top: 26px;
+}
+
+.sh-card-foot p {
+  display: grid;
+  line-height: 1.4;
+}
+
+.sh-card-foot p span {
+  font-size: clamp(30px, 2.8vw, 40px);
+  text-align: right;
+}
+
+.sh-card-foot small {
+  font-size: 13.5px;
+  color: var(--muted);
+}
+
+.sh-card-foot a {
+  display: inline-flex;
+  gap: 10px;
+  padding: 6px 20px 8px;
+  border: 1px solid var(--line-strong);
+  border-radius: 999px;
+  font-family: var(--kufi);
+  font-size: 16px;
+  transition:
+    background 0.25s,
+    color 0.25s,
+    border-color 0.25s;
+}
+
+.sh-card-foot a:hover,
+.sh-card-featured .sh-card-foot a {
+  border-color: var(--gold);
+  background: var(--gold);
+  color: #17120a;
+}
+
+/* ——— التقويم ——— */
+
+.sh-calendar {
+  padding-block: clamp(40px, 5vw, 72px) clamp(72px, 9vw, 136px);
+}
+
+.sh-calendar .sh-head {
+  margin-bottom: clamp(20px, 3vw, 36px);
+}
+
+.sh-events {
+  border-top: 1px solid var(--line-strong);
+}
+
+.sh-events li {
+  display: grid;
+  grid-template-columns: 9.5rem minmax(0, 0.9fr) minmax(0, 1.5fr) auto;
+  align-items: center;
+  gap: 8px clamp(16px, 3vw, 44px);
+  padding: 20px 14px;
+  border-bottom: 1px solid var(--line);
+  transition: background 0.3s;
+}
+
+.sh-events li:hover {
+  background: linear-gradient(to left, rgb(230 194 122 / 0.07), transparent 80%);
+}
+
+.sh-event-date {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--soft);
+}
+
+.sh-event-date span {
+  font-size: 34px;
+  line-height: 1.2;
+  color: var(--gold);
+}
+
+.sh-events h3 {
+  font-family: var(--kufi);
+  font-weight: 500;
+  font-size: clamp(21px, 2vw, 26px);
+  line-height: 1.5;
+}
+
+.sh-event-text {
+  font-size: 16px;
+  color: var(--soft);
+}
+
+.sh-event-tag {
+  justify-self: end;
+  padding: 1px 14px 2px;
+  border: 1px solid var(--line-strong);
+  border-radius: 999px;
+  font-size: 13.5px;
+  font-weight: 400;
+  white-space: nowrap;
+  color: var(--soft);
+}
+
+/* ——— الحجز ——— */
+
+.sh-book {
+  position: relative;
+  padding-block: clamp(80px, 10vw, 150px);
+  overflow: hidden;
+  isolation: isolate;
+  border-top: 1px solid var(--line);
+  background:
+    radial-gradient(70% 90% at 50% 120%, rgb(214 137 84 / 0.2), transparent 70%),
+    radial-gradient(110% 100% at 50% 100%, #191a4c 0%, transparent 70%), var(--night);
+  text-align: center;
+  scroll-margin-top: 0;
+}
+
+.sh-book-ring {
+  position: absolute;
+  z-index: -1;
+  left: 50%;
+  top: 50%;
+  width: min(1100px, 150vw);
+  aspect-ratio: 1;
+  translate: -50% -50%;
+  border-radius: 50%;
+  border: 1px solid rgb(230 194 122 / 0.22);
+}
+
+.sh-book-ring::before,
+.sh-book-ring::after {
+  content: "";
+  position: absolute;
+  inset: 8%;
+  border-radius: 50%;
+  border: 1px dashed rgb(226 228 255 / 0.12);
+}
+
+.sh-book-ring::after {
+  inset: 19%;
+  border: 1px solid rgb(230 194 122 / 0.14);
+}
+
+.sh-book h2 {
+  margin-block: 18px 16px;
+  font-family: var(--kufi);
+  font-weight: 500;
+  font-size: clamp(34px, 5.4vw, 76px);
+  line-height: 1.4;
+}
+
+.sh-book .sh-wrap > p:not(.sh-index) {
+  max-width: 30em;
+  margin-inline: auto;
+  color: var(--soft);
+}
+
+.sh-form {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: min(100%, 520px);
+  margin: 34px auto 0;
+  padding: 6px;
+  padding-inline-start: 22px;
+  border: 1px solid var(--line-strong);
+  border-radius: 999px;
+  background: rgb(6 9 20 / 0.6);
+  transition: border-color 0.25s;
+}
+
+.sh-form:focus-within {
+  border-color: var(--gold);
+}
+
+.sh-form label {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+}
+
+.sh-form input {
+  flex: 1;
+  min-width: 0;
+  background: transparent;
+  color: var(--text);
+  font-size: 15px;
+  text-align: left;
+  outline: none;
+}
+
+.sh-form input::placeholder {
+  color: var(--muted);
+}
+
+.sh-form .sh-btn {
+  padding: 8px 26px 10px;
+  font-size: 17px;
+}
+
+/* ——— التذييل ——— */
+
+.sh-footer {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.7fr);
+  gap: 28px clamp(32px, 6vw, 96px);
+  padding-block: clamp(40px, 5vw, 64px) 28px;
+  font-size: 15.5px;
+}
+
+.sh-footer-brand p {
+  max-width: 22em;
+  margin-top: 12px;
+  color: var(--muted);
+}
+
+.sh-footer dl {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px clamp(16px, 3vw, 40px);
+}
+
+.sh-footer dt {
+  margin-bottom: 4px;
+  font-size: 13.5px;
+  color: var(--gold);
+}
+
+.sh-footer dd {
+  color: var(--soft);
+  line-height: 1.8;
+}
+
+.sh-footer dd [dir="ltr"],
+.sh-footer-coords {
+  font-size: 13.5px;
+}
+
+.sh-footer-coords {
+  text-align: right;
+}
+
+.sh-footer-base {
+  grid-column: 1 / -1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 8px 24px;
+  padding-top: 18px;
+  border-top: 1px solid var(--line);
+  font-size: 14px;
+  color: var(--muted);
+}
+
+.sh-footer-base a {
+  display: inline-flex;
+  gap: 8px;
+  transition: color 0.25s;
+}
+
+.sh-footer-base a:hover {
+  color: var(--gold);
+}
+
+/* ——— الشاشات الصغيرة ——— */
+
+@media (max-width: 1020px) {
+  .sh-chart {
+    grid-template-columns: 1fr;
+  }
+
+  .sh-chart-map {
+    width: min(100%, 620px);
+    margin-inline: auto;
+  }
+
+  .sh-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .sh-card h3,
+.sh-events h3,
+.sh-chart-kind,
+.sh-logo,
+.sh-card-foot a {
+  word-spacing: 0.12em;
+}
+
+.sh-card h3 {
+    margin-top: 20px;
+  }
+
+  .sh-events li {
+    grid-template-columns: 8.5rem minmax(0, 1fr) auto;
+  }
+
+  .sh-event-text {
+    grid-column: 2 / -1;
+    grid-row: 2;
+  }
+}
+
+@media (max-width: 760px) {
+  .sh-root {
+    font-size: 16px;
+  }
+
+  .sh-nav nav {
+    display: none;
+  }
+
+  .sh-hero {
+    justify-content: flex-start;
+    padding-top: 128px;
+    padding-bottom: 300px;
+  }
+
+  .sh-astrolabe {
+    inset-inline-end: -46%;
+    top: 34%;
+    width: 150vw;
+    opacity: 0.3;
+  }
+
+  .sh-canopus {
+    inset-inline-start: 24px;
+    bottom: 262px;
+  }
+
+  .sh-facts {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    row-gap: 14px;
+  }
+
+  .sh-facts div:nth-child(odd) {
+    padding-inline-start: 0;
+    border-inline-start: 0;
+  }
+
+  .sh-head,
+  .sh-about-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .sh-chart-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .sh-star text {
+    font-size: 21px;
+  }
+
+  .sh-chart-card dl {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .sh-chart-card dl div:nth-child(3) {
+    grid-column: 1 / -1;
+    padding-inline-start: 0;
+    border-inline-start: 0;
+  }
+
+  .sh-events li {
+    grid-template-columns: 1fr auto;
+    padding-inline: 0;
+  }
+
+  .sh-events h3,
+  .sh-event-text {
+    grid-column: 1 / -1;
+    grid-row: auto;
+  }
+
+  .sh-event-tag {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .sh-footer,
+  .sh-footer dl {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 420px) {
+  .sh-form {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 14px;
+    border-radius: 22px;
+  }
+
+  .sh-form input {
+    padding: 4px 6px 10px;
+  }
+}

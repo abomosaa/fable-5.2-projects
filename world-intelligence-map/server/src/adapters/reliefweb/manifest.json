@@ -1,0 +1,74 @@
+{
+  "id": "reliefweb",
+  "provider": "ReliefWeb (UN OCHA)",
+  "dataset": "ReliefWeb API v2 – disasters and headline reports",
+  "description": "Disasters tracked by ReliefWeb editors (name, GLIDE number, type, status, affected countries) and the latest humanitarian reports selected as headlines (title, short summary and link only).",
+  "homepageUrl": "https://reliefweb.int/",
+  "documentationUrl": "https://apidoc.reliefweb.int/",
+  "sourceUrls": [
+    "https://api.reliefweb.int/v2/disasters?appname={RELIEFWEB_APPNAME}",
+    "https://api.reliefweb.int/v2/reports?appname={RELIEFWEB_APPNAME}"
+  ],
+  "allowedHosts": ["api.reliefweb.int"],
+  "coverage": {
+    "geographic": "Global, with emphasis on countries with humanitarian operations.",
+    "temporal": "Disasters with status alert or current, plus disasters whose event date lies in the last 180 days; the 150 most recent headline reports."
+  },
+  "updateCadence": { "upstream": "Continuous: content appears in the API as soon as it is added or updated on ReliefWeb", "pollIntervalSec": 1800, "staleAfterSec": 21600 },
+  "auth": {
+    "type": "app_identifier",
+    "envVars": [
+      { "name": "RELIEFWEB_APPNAME", "required": true, "description": "Pre-approved ReliefWeb API appname, sent as the appname query parameter on every request." }
+    ],
+    "setup": "ReliefWeb API v2 only answers requests that carry a pre-approved 'appname' (unapproved names get HTTP 403). Request one with the short form linked from https://apidoc.reliefweb.int/#appname (suggested pattern: organisation name, purpose and a few random characters); ReliefWeb reviews the request and replies by e-mail. Then set RELIEFWEB_APPNAME to the approved value and restart. No password or key is involved.",
+    "obtainUrl": "https://apidoc.reliefweb.int/parameters#appname"
+  },
+  "attribution": "ReliefWeb (UN OCHA) and the original sources named on each report",
+  "license": {
+    "name": "ReliefWeb Terms & Conditions (personal, non-commercial use; no redistribution); report content © original sources",
+    "url": "https://reliefweb.int/terms-conditions",
+    "redistribution": "restricted",
+    "nonCommercialOnly": true,
+    "notes": "The ReliefWeb terms grant permission to download and copy materials 'for the User's personal, non-commercial use, without any right to resell or redistribute them or to compile or create derivative works therefrom'. The API documentation adds that anyone may use the API, that reports 'may include material owned by the original source' and to 'respect those rights when reusing content'. This application therefore stores only disaster metadata and, for reports, the title, the editors' headline summary cut to 300 characters, the source acronym and a link back to reliefweb.int – never report bodies or attachments."
+  },
+  "limitations": [
+    "Disasters are attached to countries, not to precise locations: a record is shown at country level for every country ReliefWeb lists, with the primary country first. The marker position is the country's label point, not the affected area.",
+    "ReliefWeb publishes no end date. A disaster is treated as ongoing while its status is 'alert' or 'current'; for 'past' disasters the interval ends at the last modification of the entry, which is only an approximation.",
+    "The disaster list is editorial and selective: it reflects events with international humanitarian relevance, not every hazard event.",
+    "Reports are other organisations' publications. Only items selected as headlines by ReliefWeb editors are fetched; they describe situations in the primary country and are not located events.",
+    "API quota: at most 1,000 items per call and 10,000 calls per day per appname."
+  ],
+  "confidenceNotes": "Curated by ReliefWeb editors from reports of humanitarian organisations and governments; no per-item confidence is published and none is assigned. Disaster type and status are copied from ReliefWeb. Headline reports express the views of their originating sources, not established facts.",
+  "retention": { "note": "Disasters are kept for 365 days after they end; headline reports for 45 days after publication." },
+  "snapshot": "incremental",
+  "http": { "minIntervalMs": 1000, "cacheTtlSec": 900, "timeoutMs": 40000 },
+  "enabledByDefault": true,
+  "layers": [
+    {
+      "id": "reliefweb-disasters",
+      "name": "Disasters (ReliefWeb)",
+      "description": "Disasters tracked by ReliefWeb with status alert, current or recently past, shown at country level for the affected countries.",
+      "domain": "humanitarian",
+      "category": "disaster",
+      "geometry": "country",
+      "timeModel": "interval",
+      "render": { "type": "point", "color": "red", "shape": "hexagon" },
+      "freshForSec": 604800,
+      "retentionDays": 365,
+      "defaultOn": true
+    },
+    {
+      "id": "reliefweb-reports",
+      "name": "Humanitarian headlines (ReliefWeb)",
+      "description": "Latest reports selected as headlines by ReliefWeb editors: title, short summary and link, shown on the report's primary country.",
+      "domain": "humanitarian",
+      "category": "report",
+      "geometry": "country",
+      "timeModel": "event",
+      "render": { "type": "point", "color": "teal", "shape": "square" },
+      "freshForSec": 172800,
+      "retentionDays": 45,
+      "defaultOn": false
+    }
+  ]
+}

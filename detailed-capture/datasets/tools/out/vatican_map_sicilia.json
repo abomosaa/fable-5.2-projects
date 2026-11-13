@@ -1,0 +1,783 @@
+{
+ "set": "vatican_map_sicilia",
+ "overview": {
+  "file": "overview.jpg",
+  "original_size": [
+   5470,
+   4446
+  ],
+  "exif": {
+   "size": [
+    5470,
+    4446
+   ],
+   "Make": "Canon",
+   "Model": "Canon EOS R",
+   "DateTime": "2023:01:11 20:46:33",
+   "Software": "Adobe Photoshop 21.0 (Windows)",
+   "DateTimeOriginal": "2022:12:10 14:50:57",
+   "FocalLength": 24.0,
+   "ExposureTime": 0.125,
+   "FNumber": 4.0,
+   "ISOSpeedRatings": 100
+  },
+  "work_scale": 0.7312614259597806,
+  "keypoints": 50001
+ },
+ "params": {
+  "max_side": 4000,
+  "ratio": 0.75,
+  "ransac": "USAC_MAGSAC thr 3 px (work px)"
+ },
+ "closeups": [
+  {
+   "file": "closeup_01.jpg",
+   "exif": {
+    "size": [
+     6000,
+     4000
+    ],
+    "Make": "SONY",
+    "Model": "ILCE-7",
+    "DateTime": "2026:02:19 20:45:23",
+    "Software": "Adobe Photoshop 21.0 (Windows)",
+    "DateTimeOriginal": "2022:12:10 15:57:51",
+    "FocalLength": 50.0,
+    "FocalLengthIn35mmFilm": 50,
+    "ExposureTime": 0.0125,
+    "FNumber": 2.5,
+    "ISOSpeedRatings": 1600
+   },
+   "original_size": [
+    6000,
+    4000
+   ],
+   "trials": [
+    {
+     "closeup_downscale": 0.6666666666666666,
+     "keypoints": 12000,
+     "ratio_matches": 196,
+     "inliers": 55,
+     "rms_px_work": 1.855329155921936
+    },
+    {
+     "closeup_downscale": 0.3333333333333333,
+     "keypoints": 12000,
+     "ratio_matches": 229,
+     "inliers": 136,
+     "rms_px_work": 1.5603857040405273
+    },
+    {
+     "closeup_downscale": 0.16666666666666666,
+     "keypoints": 8116,
+     "ratio_matches": 394,
+     "inliers": 344,
+     "rms_px_work": 1.206685185432434
+    },
+    {
+     "closeup_downscale": 0.08333333333333333,
+     "keypoints": 1935,
+     "ratio_matches": 337,
+     "inliers": 330,
+     "rms_px_work": 0.6441938877105713
+    }
+   ],
+   "fundamental_inliers": 358,
+   "h_over_f_inliers": 0.961,
+   "h_inlier_ratio": 0.873,
+   "inliers": 344,
+   "ratio_matches": 394,
+   "best_closeup_downscale": 0.1667,
+   "rms_px_work": 1.206685185432434,
+   "scale_factor": 5.457,
+   "scale_at_corners": [
+    5.459,
+    5.688,
+    5.455,
+    5.229
+   ],
+   "anisotropy": 1.021,
+   "footprint_overview_px": [
+    [
+     1234.1,
+     3315.6
+    ],
+    [
+     2306.9,
+     3342.6
+    ],
+    [
+     2307.9,
+     4073.4
+    ],
+    [
+     1204.0,
+     4066.5
+    ]
+   ],
+   "footprint_fraction_of_overview": 0.0332,
+   "footprint_convex": true,
+   "ncc_vs_overview": 0.925,
+   "H_overview_to_closeup_original_px": [
+    [
+     5.990160787565297,
+     0.2398043850722508,
+     -8187.413191019074
+    ],
+    [
+     -0.151684153317592,
+     6.034388912857454,
+     -19820.678774028976
+    ],
+    [
+     -2.881649242967228e-05,
+     4.146507011450512e-05,
+     1.0
+    ]
+   ],
+   "registers": true
+  },
+  {
+   "file": "closeup_02.jpg",
+   "exif": {
+    "size": [
+     3550,
+     3550
+    ],
+    "Make": "SONY",
+    "Model": "ILCE-7",
+    "DateTime": "2026:02:19 20:52:57",
+    "Software": "Adobe Photoshop 21.0 (Windows)",
+    "DateTimeOriginal": "2022:12:10 15:58:00",
+    "FocalLength": 50.0,
+    "FocalLengthIn35mmFilm": 50,
+    "ExposureTime": 0.0125,
+    "FNumber": 2.8,
+    "ISOSpeedRatings": 1600
+   },
+   "original_size": [
+    3550,
+    3550
+   ],
+   "trials": [
+    {
+     "closeup_downscale": 1.0,
+     "keypoints": 12000,
+     "ratio_matches": 58,
+     "inliers": 5,
+     "rms_px_work": 5.459150270326063e-05
+    },
+    {
+     "closeup_downscale": 0.5,
+     "keypoints": 12000,
+     "ratio_matches": 108,
+     "inliers": 26,
+     "rms_px_work": 1.6728994846343994
+    },
+    {
+     "closeup_downscale": 0.25,
+     "keypoints": 6699,
+     "ratio_matches": 123,
+     "inliers": 88,
+     "rms_px_work": 1.6413888931274414
+    },
+    {
+     "closeup_downscale": 0.125,
+     "keypoints": 1629,
+     "ratio_matches": 111,
+     "inliers": 100,
+     "rms_px_work": 0.8396007418632507
+    }
+   ],
+   "fundamental_inliers": 103,
+   "h_over_f_inliers": 0.971,
+   "h_inlier_ratio": 0.901,
+   "inliers": 100,
+   "ratio_matches": 111,
+   "best_closeup_downscale": 0.125,
+   "rms_px_work": 0.8396007418632507,
+   "scale_factor": 5.933,
+   "scale_at_corners": [
+    6.004,
+    5.87,
+    5.863,
+    5.997
+   ],
+   "anisotropy": 1.03,
+   "footprint_overview_px": [
+    [
+     1960.6,
+     3288.7
+    ],
+    [
+     2553.2,
+     3301.5
+    ],
+    [
+     2549.5,
+     3909.9
+    ],
+    [
+     1956.5,
+     3887.9
+    ]
+   ],
+   "footprint_fraction_of_overview": 0.0147,
+   "footprint_convex": true,
+   "ncc_vs_overview": 0.924,
+   "H_overview_to_closeup_original_px": [
+    [
+     6.435992025497352,
+     0.04387625849037224,
+     -12762.63531934819
+    ],
+    [
+     -0.1356388520877875,
+     6.273741399926865,
+     -20366.29712783038
+    ],
+    [
+     2.71296949059678e-05,
+     1.582884987393982e-06,
+     1.0
+    ]
+   ],
+   "registers": true
+  },
+  {
+   "file": "closeup_03.jpg",
+   "exif": {
+    "size": [
+     5098,
+     4000
+    ],
+    "Make": "SONY",
+    "Model": "ILCE-7",
+    "DateTime": "2026:02:19 20:56:13",
+    "Software": "Adobe Photoshop 21.0 (Windows)",
+    "DateTimeOriginal": "2022:12:10 15:58:08",
+    "FocalLength": 50.0,
+    "FocalLengthIn35mmFilm": 50,
+    "ExposureTime": 0.0125,
+    "FNumber": 2.8,
+    "ISOSpeedRatings": 1600
+   },
+   "original_size": [
+    5098,
+    4000
+   ],
+   "trials": [
+    {
+     "closeup_downscale": 0.7846214201647705,
+     "keypoints": 12000,
+     "ratio_matches": 142,
+     "inliers": 26,
+     "rms_px_work": 1.798122525215149
+    },
+    {
+     "closeup_downscale": 0.39231071008238527,
+     "keypoints": 12000,
+     "ratio_matches": 241,
+     "inliers": 149,
+     "rms_px_work": 1.7114893198013306
+    },
+    {
+     "closeup_downscale": 0.19615535504119264,
+     "keypoints": 6000,
+     "ratio_matches": 244,
+     "inliers": 209,
+     "rms_px_work": 1.2431881427764893
+    },
+    {
+     "closeup_downscale": 0.09807767752059632,
+     "keypoints": 1675,
+     "ratio_matches": 222,
+     "inliers": 216,
+     "rms_px_work": 0.6560879945755005
+    }
+   ],
+   "fundamental_inliers": 219,
+   "h_over_f_inliers": 0.986,
+   "h_inlier_ratio": 0.973,
+   "inliers": 216,
+   "ratio_matches": 222,
+   "best_closeup_downscale": 0.0981,
+   "rms_px_work": 0.6560879945755005,
+   "scale_factor": 5.631,
+   "scale_at_corners": [
+    5.513,
+    5.624,
+    5.75,
+    5.637
+   ],
+   "anisotropy": 1.018,
+   "footprint_overview_px": [
+    [
+     2405.3,
+     3202.6
+    ],
+    [
+     3309.8,
+     3210.3
+    ],
+    [
+     3304.3,
+     3922.1
+    ],
+    [
+     2413.1,
+     3923.9
+    ]
+   ],
+   "footprint_fraction_of_overview": 0.0265,
+   "footprint_convex": true,
+   "ncc_vs_overview": 0.925,
+   "H_overview_to_closeup_original_px": [
+    [
+     5.056591577641345,
+     -0.05457764773183768,
+     -11988.029238488649
+    ],
+    [
+     -0.04247282723739162,
+     4.967469170359436,
+     -15806.542583976563
+    ],
+    [
+     -1.318806428387614e-05,
+     -1.8479276542710213e-05,
+     1.0
+    ]
+   ],
+   "registers": true
+  },
+  {
+   "file": "closeup_04.jpg",
+   "exif": {
+    "size": [
+     2666,
+     4000
+    ],
+    "Make": "SONY",
+    "Model": "ILCE-7",
+    "DateTime": "2026:02:19 21:01:33",
+    "Software": "Adobe Photoshop 21.0 (Windows)",
+    "DateTimeOriginal": "2022:12:10 15:58:16",
+    "FocalLength": 50.0,
+    "FocalLengthIn35mmFilm": 50,
+    "ExposureTime": 0.0125,
+    "FNumber": 3.2,
+    "ISOSpeedRatings": 1600
+   },
+   "original_size": [
+    2666,
+    4000
+   ],
+   "trials": [
+    {
+     "closeup_downscale": 1.0,
+     "keypoints": 12000,
+     "ratio_matches": 107,
+     "inliers": 24,
+     "rms_px_work": 1.899338960647583
+    },
+    {
+     "closeup_downscale": 0.5,
+     "keypoints": 12001,
+     "ratio_matches": 192,
+     "inliers": 101,
+     "rms_px_work": 1.715796947479248
+    },
+    {
+     "closeup_downscale": 0.25,
+     "keypoints": 9280,
+     "ratio_matches": 241,
+     "inliers": 209,
+     "rms_px_work": 1.3605971336364746
+    },
+    {
+     "closeup_downscale": 0.125,
+     "keypoints": 2318,
+     "ratio_matches": 222,
+     "inliers": 218,
+     "rms_px_work": 0.7195806503295898
+    }
+   ],
+   "fundamental_inliers": 219,
+   "h_over_f_inliers": 0.995,
+   "h_inlier_ratio": 0.982,
+   "inliers": 218,
+   "ratio_matches": 222,
+   "best_closeup_downscale": 0.125,
+   "rms_px_work": 0.7195806503295898,
+   "scale_factor": 5.533,
+   "scale_at_corners": [
+    5.476,
+    5.496,
+    5.59,
+    5.57
+   ],
+   "anisotropy": 1.015,
+   "footprint_overview_px": [
+    [
+     3255.0,
+     3178.4
+    ],
+    [
+     3736.5,
+     3183.8
+    ],
+    [
+     3733.1,
+     3910.4
+    ],
+    [
+     3257.0,
+     3906.9
+    ]
+   ],
+   "footprint_fraction_of_overview": 0.0143,
+   "footprint_convex": true,
+   "ncc_vs_overview": 0.872,
+   "H_overview_to_closeup_original_px": [
+    [
+     5.1874335881459865,
+     -0.014399905255957145,
+     -16839.1871111648
+    ],
+    [
+     -0.056396984653997194,
+     5.098845379538146,
+     -16022.838116972485
+    ],
+    [
+     -4.6025065301555484e-06,
+     -1.4442446740301986e-05,
+     1.0
+    ]
+   ],
+   "registers": true
+  },
+  {
+   "file": "closeup_05.jpg",
+   "exif": {
+    "size": [
+     6000,
+     4000
+    ],
+    "Make": "SONY",
+    "Model": "ILCE-7",
+    "DateTime": "2026:02:19 21:05:41",
+    "Software": "Adobe Photoshop 21.0 (Windows)",
+    "DateTimeOriginal": "2022:12:10 15:58:26",
+    "FocalLength": 50.0,
+    "FocalLengthIn35mmFilm": 50,
+    "ExposureTime": 0.0125,
+    "FNumber": 4.0,
+    "ISOSpeedRatings": 800
+   },
+   "original_size": [
+    6000,
+    4000
+   ],
+   "trials": [
+    {
+     "closeup_downscale": 0.6666666666666666,
+     "keypoints": 12000,
+     "ratio_matches": 343,
+     "inliers": 205,
+     "rms_px_work": 1.5962735414505005
+    },
+    {
+     "closeup_downscale": 0.3333333333333333,
+     "keypoints": 12001,
+     "ratio_matches": 680,
+     "inliers": 593,
+     "rms_px_work": 1.2083723545074463
+    },
+    {
+     "closeup_downscale": 0.16666666666666666,
+     "keypoints": 8613,
+     "ratio_matches": 1229,
+     "inliers": 1185,
+     "rms_px_work": 0.7310885787010193
+    },
+    {
+     "closeup_downscale": 0.08333333333333333,
+     "keypoints": 2493,
+     "ratio_matches": 749,
+     "inliers": 741,
+     "rms_px_work": 0.397784024477005
+    }
+   ],
+   "fundamental_inliers": 1193,
+   "h_over_f_inliers": 0.993,
+   "h_inlier_ratio": 0.964,
+   "inliers": 1185,
+   "ratio_matches": 1229,
+   "best_closeup_downscale": 0.1667,
+   "rms_px_work": 0.7310885787010193,
+   "scale_factor": 3.052,
+   "scale_at_corners": [
+    3.11,
+    2.998,
+    2.994,
+    3.106
+   ],
+   "anisotropy": 1.016,
+   "footprint_overview_px": [
+    [
+     1905.7,
+     2888.4
+    ],
+    [
+     3856.4,
+     2877.4
+    ],
+    [
+     3859.9,
+     4214.5
+    ],
+    [
+     1907.4,
+     4193.1
+    ]
+   ],
+   "footprint_fraction_of_overview": 0.106,
+   "footprint_convex": true,
+   "ncc_vs_overview": 0.793,
+   "H_overview_to_closeup_original_px": [
+    [
+     3.2371145213404984,
+     -0.004151483455734334,
+     -6157.041248322925
+    ],
+    [
+     0.01792259768240748,
+     3.1510589675503633,
+     -9135.818444547282
+    ],
+    [
+     1.310521191594554e-05,
+     6.617884081321476e-07,
+     1.0
+    ]
+   ],
+   "registers": true
+  },
+  {
+   "file": "closeup_06.jpg",
+   "exif": {
+    "size": [
+     3102,
+     4654
+    ],
+    "Make": "SONY",
+    "Model": "ILCE-7",
+    "DateTime": "2026:02:19 21:09:53",
+    "Software": "Adobe Photoshop 21.0 (Windows)",
+    "DateTimeOriginal": "2022:12:10 16:00:20",
+    "FocalLength": 50.0,
+    "FocalLengthIn35mmFilm": 50,
+    "ExposureTime": 0.0125,
+    "FNumber": 2.8,
+    "ISOSpeedRatings": 1600
+   },
+   "original_size": [
+    3102,
+    4654
+   ],
+   "trials": [
+    {
+     "closeup_downscale": 0.8594455190199871,
+     "keypoints": 12000,
+     "ratio_matches": 413,
+     "inliers": 210,
+     "rms_px_work": 1.7973884344100952
+    },
+    {
+     "closeup_downscale": 0.42972275950999356,
+     "keypoints": 12000,
+     "ratio_matches": 581,
+     "inliers": 417,
+     "rms_px_work": 1.337937355041504
+    },
+    {
+     "closeup_downscale": 0.21486137975499678,
+     "keypoints": 9375,
+     "ratio_matches": 945,
+     "inliers": 897,
+     "rms_px_work": 0.9347485303878784
+    },
+    {
+     "closeup_downscale": 0.10743068987749839,
+     "keypoints": 2598,
+     "ratio_matches": 762,
+     "inliers": 750,
+     "rms_px_work": 0.5044376254081726
+    }
+   ],
+   "fundamental_inliers": 909,
+   "h_over_f_inliers": 0.987,
+   "h_inlier_ratio": 0.949,
+   "inliers": 897,
+   "ratio_matches": 945,
+   "best_closeup_downscale": 0.2149,
+   "rms_px_work": 0.9347485303878784,
+   "scale_factor": 2.668,
+   "scale_at_corners": [
+    2.659,
+    2.584,
+    2.676,
+    2.752
+   ],
+   "anisotropy": 1.012,
+   "footprint_overview_px": [
+    [
+     3576.9,
+     2414.1
+    ],
+    [
+     4748.7,
+     2395.9
+    ],
+    [
+     4752.1,
+     4164.3
+    ],
+    [
+     3606.7,
+     4149.3
+    ]
+   ],
+   "footprint_fraction_of_overview": 0.0835,
+   "footprint_convex": true,
+   "ncc_vs_overview": 0.839,
+   "H_overview_to_closeup_original_px": [
+    [
+     2.7695981897406114,
+     -0.04766067979339324,
+     -9791.38224401059
+    ],
+    [
+     0.04164981735251587,
+     2.6906171450196514,
+     -6644.272152259813
+    ],
+    [
+     1.6713554543586748e-05,
+     -1.3690288930587363e-05,
+     1.0
+    ]
+   ],
+   "registers": true
+  },
+  {
+   "file": "closeup_07.jpg",
+   "exif": {
+    "size": [
+     4670,
+     3628
+    ],
+    "Make": "SONY",
+    "Model": "ILCE-7",
+    "DateTime": "2026:02:19 21:16:03",
+    "Software": "Adobe Photoshop 21.0 (Windows)",
+    "DateTimeOriginal": "2022:12:10 16:00:32",
+    "FocalLength": 50.0,
+    "FocalLengthIn35mmFilm": 50,
+    "ExposureTime": 0.0125,
+    "FNumber": 2.8,
+    "ISOSpeedRatings": 1600
+   },
+   "original_size": [
+    4670,
+    3628
+   ],
+   "trials": [
+    {
+     "closeup_downscale": 0.8565310492505354,
+     "keypoints": 12000,
+     "ratio_matches": 236,
+     "inliers": 71,
+     "rms_px_work": 1.8918836116790771
+    },
+    {
+     "closeup_downscale": 0.4282655246252677,
+     "keypoints": 12000,
+     "ratio_matches": 442,
+     "inliers": 318,
+     "rms_px_work": 1.602022409439087
+    },
+    {
+     "closeup_downscale": 0.21413276231263384,
+     "keypoints": 5557,
+     "ratio_matches": 517,
+     "inliers": 491,
+     "rms_px_work": 1.038742184638977
+    },
+    {
+     "closeup_downscale": 0.10706638115631692,
+     "keypoints": 1591,
+     "ratio_matches": 447,
+     "inliers": 444,
+     "rms_px_work": 0.5379259586334229
+    }
+   ],
+   "fundamental_inliers": 498,
+   "h_over_f_inliers": 0.986,
+   "h_inlier_ratio": 0.95,
+   "inliers": 491,
+   "ratio_matches": 517,
+   "best_closeup_downscale": 0.2141,
+   "rms_px_work": 1.038742184638977,
+   "scale_factor": 2.289,
+   "scale_at_corners": [
+    2.389,
+    2.314,
+    2.19,
+    2.265
+   ],
+   "anisotropy": 1.054,
+   "footprint_overview_px": [
+    [
+     2708.3,
+     1154.3
+    ],
+    [
+     4662.9,
+     1136.3
+    ],
+    [
+     4673.0,
+     2779.9
+    ],
+    [
+     2647.1,
+     2762.4
+    ]
+   ],
+   "footprint_fraction_of_overview": 0.1331,
+   "footprint_convex": true,
+   "ncc_vs_overview": 0.89,
+   "H_overview_to_closeup_original_px": [
+    [
+     2.590090410194138,
+     0.09866263683996623,
+     -7128.670736138029
+    ],
+    [
+     0.022899515086556792,
+     2.4809957744182753,
+     -2925.8998540959005
+    ],
+    [
+     1.1990759443560163e-05,
+     2.4456306455549638e-05,
+     1.0
+    ]
+   ],
+   "registers": true
+  }
+ ]
+}

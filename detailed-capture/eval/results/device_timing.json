@@ -1,0 +1,34 @@
+{
+ "device": "Android 16 (API 36) emulator, x86_64 system image, 2048 MB RAM, software GPU (swiftshader), app limited itself to 1 worker thread and 512 px render blocks; host CPU as above",
+ "rows": [
+  [
+   "wave set (16 photos of 1.9 MP): analysis + registration of 15 close-ups (timer starts a few seconds after the picker closes)",
+   "17.5–24.7 s (three runs)"
+  ],
+  [
+   "wave set: fusion to 4672×3504 (16.4 MP, 70 blocks) incl. re-check",
+   "17.0 s"
+  ],
+  [
+   "wave set: fusion killed at block 26/70, relaunch, resume",
+   "9.5 s to finish"
+  ],
+  [
+   "wave set: flat PNG export 4672×3504 (19.6 MB)",
+   "7.9 s"
+  ],
+  [
+   "wave set: tile package (112 files, 29.6 MB zip) / project archive (8.1 MB)",
+   "4.9 s / 4.9 s"
+  ],
+  [
+   "Vatican set (8 photos, 9.5–24.3 MP): analysis + registration of 7 close-ups",
+   "72.7 s"
+  ],
+  [
+   "Vatican set: fusion to 22208×18051 (401 MP, 1584 blocks, 548 MB of tiles), killed after ≈ 25 s at block 365 and resumed",
+   "≈ 25 s + 318.9 s"
+  ]
+ ],
+ "note": "Emulator timings are indicative only: they measure x86_64 host code under virtualisation with one worker thread. They are not phone timings; no physical device was available. The wave rows are from the final APK (scripts/emulator_e2e.py, log in docs/evidence/emulator/steps_log.txt); the Vatican rows are from an earlier build of the same day (docs/evidence/emulator_real/steps_log.txt)."
+}

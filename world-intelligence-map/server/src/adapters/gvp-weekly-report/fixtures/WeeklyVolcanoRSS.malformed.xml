@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:georss="http://www.georss.org/georss" xmlns:atom="https://www.w3.org/2005/Atom">
+<channel>
+<title>Smithsonian / USGS Weekly Volcanic Activity Report</title>
+<link>https://volcano.si.edu/reports_weekly.cfm</link>
+<copyright>Smithsonian Institution</copyright>
+<pubDate>Thu, 05 Nov 2026 03:11:08 -0500</pubDate>
+
+<item>
+<title>Popocatépetl (Mexico) - Report for 28 October-3 November 2026 - Continuing Eruptive Activity</title>
+<description>
+&lt;p&gt;The Centro Nacional de Prevención de Desastres (CENAPRED) reported that eruptive activity continued at Popocatépetl during 28 October-3 November. &lt;script&gt;alert(1)&lt;/script&gt;The seismic network recorded 12-55 long-period events per day that were accompanied by steam-and-gas emissions.&lt;/p&gt;
+&lt;p&gt;Source: Centro Nacional de Prevención de Desastres (CENAPRED)&lt;/p&gt;
+</description>
+<link>https://volcano.si.edu/reports_weekly.cfm</link>
+<guid isPermaLink="true">https://volcano.si.edu/reports_weekly.cfm#vn_341090</guid>
+<pubDate>Thu, 05 Nov 2026 03:11:08 -0500</pubDate>
+<georss:point>19.0230 -98.6220</georss:point>
+</item>
+
+<item>
+<title>Yearturn (Testland) - Report for 30 December-5 January 2027 - New Eruptive Activity</title>
+<description>&lt;p&gt;A title whose report week spans the turn of the year.&lt;/p&gt;</description>
+<link>javascript:alert(1)</link>
+<guid isPermaLink="true">javascript:alert(2)</guid>
+<pubDate>Thu, 05 Nov 2026 03:11:08 -0500</pubDate>
+<georss:point>-39.2800 175.5700</georss:point>
+</item>
+
+<item>
+<title>Unusual title without a report period</title>
+<description>&lt;p&gt;Falls back to the publication time.&lt;/p&gt;</description>
+<guid isPermaLink="true">https://volcano.si.edu/reports_weekly.cfm#vn_300270</guid>
+<pubDate>Thu, 05 Nov 2026 03:11:08 -0500</pubDate>
+<georss:point>56.6530 161.3600</georss:point>
+</item>
+
+<item>
+<title>Popocatépetl (Mexico) - Report for 28 October-3 November 2026 - Continuing Eruptive Activity</title>
+<description>&lt;p&gt;Exact duplicate of the first item.&lt;/p&gt;</description>
+<guid isPermaLink="true">https://volcano.si.edu/reports_weekly.cfm#vn_341090</guid>
+<pubDate>Thu, 05 Nov 2026 03:11:08 -0500</pubDate>
+<georss:point>19.0230 -98.6220</georss:point>
+</item>
+
+<item>
+<title>Nopoint (Italy) - Report for 28 October-3 November 2026 - New Eruptive Activity</title>
+<description>&lt;p&gt;No georss point.&lt;/p&gt;</description>
+<guid isPermaLink="true">https://volcano.si.edu/reports_weekly.cfm#vn_211060</guid>
+<pubDate>Thu, 05 Nov 2026 03:11:08 -0500</pubDate>
+</item>
+
+<item>
+<title>Badpoint (Italy) - Report for 28 October-3 November 2026 - New Eruptive Activity</title>
+<description>&lt;p&gt;Latitude out of range.&lt;/p&gt;</description>
+<guid isPermaLink="true">https://volcano.si.edu/reports_weekly.cfm#vn_211040</guid>
+<pubDate>Thu, 05 Nov 2026 03:11:08 -0500</pubDate>
+<georss:point>137.7480 14.9990</georss:point>
+</item>
+
+<item>
+<title>Timeless (Japan)</title>
+<description>&lt;p&gt;Neither a report period nor a usable publication date.&lt;/p&gt;</description>
+<guid isPermaLink="true">https://volcano.si.edu/reports_weekly.cfm#vn_282080</guid>
+<pubDate>last Thursday</pubDate>
+<georss:point>31.5772 130.6589</georss:point>
+</item>
+
+<item>
+<description>&lt;p&gt;No title at all.&lt;/p&gt;</description>
+<georss:point>31.5772 130.6589</georss:point>
+</item>
+
+</channel></rss>
